@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="Url Upgrade Mode">
+    <Property Id="URL_DEFAULT" Value="update.eidss.info" />
+
+    <SetProperty
+      Action="SetMAIN_URL"
+      Id="MAIN_URL"
+      Value="https://[URL_DEFAULT]"
+      After="ReadConfig"
+      Sequence="ui">Not Installed And Not WIX_UPGRADE_DETECTED And Not MAIN_URL</SetProperty>
+    <SetProperty
+      Action="SetSECONDARY_URL"
+      Id="SECONDARY_URL"
+      Value="http://[URL_DEFAULT]"
+      After="ReadConfig"
+      Sequence="ui">Not Installed And Not WIX_UPGRADE_DETECTED And Not SECONDARY_URL</SetProperty>
+    <UI>
+      <ProgressText Action="SetMAIN_URL">!(loc.SetMainUrl)</ProgressText>
+      <ProgressText Action="SetSECONDARY_URL">!(loc.SetSecondaryUrl)</ProgressText>
+    </UI>
+  </Fragment>
+</Wix>

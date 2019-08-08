@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?include "$(var.ProjectDir)ProductInfo.wxi" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <Fragment Id="Configuration">
+    <CustomActionRef Id="ReadConfig" />
+
+    <PropertyRef Id="MACHINE_LEVEL" />
+    <PropertyRef Id="SYNC_INTERVAL" />
+    <PropertyRef Id="UPDATE_INTERVAL" />
+    <PropertyRef Id="BACKUPS" />
+
+    <CustomActionRef Id="SetMAIN_URL" />
+    <CustomActionRef Id="SetSECONDARY_URL" />
+
+    <ComponentGroup Id="Configuration" Directory="ApplicationFolder">
+      <Component Id="bvupdater.config">
+        <File Id="bvupdater.config" Source="$(var.bvupdater.config)" KeyPath="yes" />
+
+        <util:XmlFile
+          Id="config.MachineLevel"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/level"
+          SelectionLanguage="XPath"
+          Name="value"
+          Sequence="2"
+          Value="[MACHINE_LEVEL]" />
+        <util:XmlFile
+          Id="config.BackupPath"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/backupdir"
+          SelectionLanguage="XPath"
+          Name="path"
+          Sequence="4"
+          Value="[BACKUPS]" />
+        <util:XmlFile
+          Id="config.SyncInterval"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/rund"
+          SelectionLanguage="XPath"
+          Name="interval"
+          Sequence="9"
+          Value="[SYNC_INTERVAL]" />
+        <util:XmlFile
+          Id="config.UpdateInterval"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/runu"
+          SelectionLanguage="XPath"
+          Name="interval"
+          Sequence="10"
+          Value="[UPDATE_INTERVAL]" />
+        <util:XmlFile
+          Id="config.UpdateUrl"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/updateurl"
+          SelectionLanguage="XPath"
+          Name="url"
+          Sequence="12"
+          Value="[MAIN_URL]" />
+        <util:XmlFile
+          Id="config.SecondaryUpdateUrl"
+          File="[#bvupdater.config]"
+          Action="setValue"
+          ElementPath="//config/updateurl"
+          SelectionLanguage="XPath"
+          Name="reserve"
+          Sequence="13"
+          Value="[SECONDARY_URL]" />
+      </Component>
+
+      <ComponentGroupRef Id="Permissions" />
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment Id="ReadConfig">
+    <CustomAction Id="ReadConfig" DllEntry="ReadConfig" BinaryKey="CustomActions" Execute="firstSequence" />
+    <InstallExecuteSequence>
+      <Custom Action="ReadConfig" After="CostFinalize">1</Custom>
+    </InstallExecuteSequence>
+    <UI>
+      <InstallUISequence>
+        <Custom Action="ReadConfig" After="CostFinalize">Not REMOVE~="ALL"</Custom>
+      </InstallUISequence>
+      <ProgressText Action="ReadConfig">!(loc.ReadConfig)</ProgressText>
+    </UI>
+  </Fragment>
+
+  <Fragment Id="Machine Level">
+    <Property Id="MACHINE_LEVEL" Secure="yes" />
+    <Property Id="DEFAULT_MACHINE_LEVEL" Value="1" />
+    <SetProperty
+      Action="SetMACHINE_LEVEL"
+      Id="MACHINE_LEVEL"
+      Value="[DEFAULT_MACHINE_LEVEL]"
+      After="ReadConfig">Not REMOVE~="ALL" And Not MACHINE_LEVEL</SetProperty>
+    <UI>
+      <ProgressText Action="SetMACHINE_LEVEL">!(loc.SetMachineLevel)</ProgressText>
+    </UI>
+  </Fragment>
+
+  <Fragment Id="Folder permissions">
+    <ComponentGroup Id="Permissions" Directory="ApplicationFolder">
+      <Component Id="CommonRights" Guid="{153A90E3-5F55-4E60-9DD5-9B7D50FF4F97}" KeyPath="yes">
+        <CreateFolder>
+          <util:PermissionEx
+            User="LocalSystem"
+            Traverse="yes"
+            GenericRead="yes"
+            Read="yes"
+            ReadAttributes="yes"
+            ReadExtendedAttributes="yes"
+            CreateFile="yes"
+            CreateChild="yes"
+            WriteAttributes="yes"
+            WriteExtendedAttributes="yes"
+            GenericWrite="yes"
+            GenericExecute="yes"
+            Delete="yes"
+            ReadPermission="yes" />
+          <util:PermissionEx
+            User="LocalService"
+            Traverse="yes"
+            GenericRead="yes"
+            Read="yes"
+            ReadAttributes="yes"
+            ReadExtendedAttributes="yes"
+            CreateFile="yes"
+            CreateChild="yes"
+            WriteAttributes="yes"
+            WriteExtendedAttributes="yes"
+            GenericWrite="yes"
+            GenericExecute="yes"
+            Delete="yes"
+            ReadPermission="yes" />
+          <util:PermissionEx
+            User="NetworkService"
+            Traverse="yes"
+            GenericRead="yes"
+            Read="yes"
+            ReadAttributes="yes"
+            ReadExtendedAttributes="yes"
+            CreateFile="yes"
+            CreateChild="yes"
+            WriteAttributes="yes"
+            WriteExtendedAttributes="yes"
+            GenericWrite="yes"
+            GenericExecute="yes"
+            Delete="yes"
+            ReadPermission="yes" />
+        </CreateFolder>
+      </Component>
+
+      <ComponentGroupRef Id="Folders" />
+    </ComponentGroup>
+
+    <ComponentGroup Id="Folders">
+      <Component Id="AUMupdate" Guid="{5654E389-8CA9-40C4-B4F4-166705F31B91}" Directory="AUMupdate" KeyPath="yes">
+        <CreateFolder />
+      </Component>
+      <Component Id="AUMlogFolder" Guid="{6BD782D6-CB63-4AEA-A724-7BF7953E2AD7}" Directory="AUMlog" KeyPath="yes">
+        <CreateFolder />
+      </Component>
+      <Component Id="AUMlogBackupFolder" Guid="{E3FF0F20-22C1-4694-859A-6229CBF910FA}" Directory="AUMlogBackup" KeyPath="yes">
+        <CreateFolder />
+      </Component>
+      <Component Id="TempFolder" Guid="{13148E0B-80E1-4E1E-8EA6-8ADA4E91C409}" Directory="temp" KeyPath="yes">
+        <CreateFolder />
+      </Component>
+      <Component Id="BackupsFolder" Guid="{97E4FC33-2616-494F-AA42-D7DF15F3E7CF}" Directory="BACKUPS" KeyPath="yes">
+        <CreateFolder />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment Id="Time intervals">
+    <Property Id="SYNC_INTERVAL" Secure="yes" />
+    <Property Id="DEFAULT_SYNC_INTERVAL_HOURS" Value="03" />
+    <Property Id="DEFAULT_SYNC_INTERVAL_MINUTES" Value="00" />
+    <SetProperty
+      Action ="SetSYNC_INTERVAL"
+      Id="SYNC_INTERVAL"
+      Value="[DEFAULT_SYNC_INTERVAL_HOURS]:[DEFAULT_SYNC_INTERVAL_MINUTES]"
+      After="ReadConfig">Not REMOVE~="ALL" And Not SYNC_INTERVAL</SetProperty>
+    <SetProperty
+      Action ="SetSyncIntervalHours"
+      Id="SyncIntervalHours"
+      Value="[DEFAULT_SYNC_INTERVAL_HOURS]"
+      After="ReadConfig"
+      Sequence="ui">Not REMOVE~="ALL" And Not SyncIntervalHours</SetProperty>
+    <SetProperty
+      Action ="SetSyncIntervalMinutes"
+      Id="SyncIntervalMinutes"
+      Value="[DEFAULT_SYNC_INTERVAL_MINUTES]"
+      After="ReadConfig"
+      Sequence="ui">Not REMOVE~="ALL" And Not SyncIntervalMinutes</SetProperty>
+    <UI>
+      <ProgressText Action="SetSYNC_INTERVAL">!(loc.SetSyncInterval)</ProgressText>
+      <ProgressText Action="SetSyncIntervalHours">!(loc.SetSyncInterval)</ProgressText>
+      <ProgressText Action="SetSyncIntervalMinutes">!(loc.SetSyncInterval)</ProgressText>
+    </UI>
+
+    <Property Id="UPDATE_INTERVAL" Secure="yes" />
+    <Property Id="DEFAULT_UPDATE_INTERVAL_HOURS" Value="04" />
+    <Property Id="DEFAULT_UPDATE_INTERVAL_MINUTES" Value="00" />
+    <SetProperty
+      Action ="SetUPDATE_INTERVAL"
+      Id="UPDATE_INTERVAL"
+      Value="[DEFAULT_UPDATE_INTERVAL_HOURS]:[DEFAULT_UPDATE_INTERVAL_MINUTES]"
+      After="ReadConfig">Not REMOVE~="ALL" And Not UPDATE_INTERVAL</SetProperty>
+    <SetProperty
+      Action ="SetUpdateIntervalHours"
+      Id="UpdateIntervalHours"
+      Value="[DEFAULT_UPDATE_INTERVAL_HOURS]"
+      After="ReadConfig"
+      Sequence="ui">Not REMOVE~="ALL" And Not UpdateIntervalHours</SetProperty>
+    <SetProperty
+      Action ="SetUpdateIntervalMinutes"
+      Id="UpdateIntervalMinutes"
+      Value="[DEFAULT_UPDATE_INTERVAL_MINUTES]"
+      After="ReadConfig"
+      Sequence="ui">Not REMOVE~="ALL" And Not UpdateIntervalMinutes</SetProperty>
+    <UI>
+      <ProgressText Action="SetUPDATE_INTERVAL">!(loc.SetUpdateInterval)</ProgressText>
+      <ProgressText Action="SetUpdateIntervalHours">!(loc.SetUpdateInterval)</ProgressText>
+      <ProgressText Action="SetUpdateIntervalMinutes">!(loc.SetUpdateInterval)</ProgressText>
+    </UI>
+  </Fragment>
+
+  <Fragment Id="Working Paths">
+    <Property Id="BACKUPS_VOLUME" Secure="yes" />
+    <Property Id="BACKUPS" Secure="yes" />
+    <SetProperty
+      Id="BACKUPS_VOLUME"
+      Value="[ROOTDRIVE]"
+      After="CostInitialize"
+      Sequence="first">Not BACKUPS_VOLUME</SetProperty>
+    <SetProperty
+      Action="SetBackups"
+      Id="BACKUPS"
+      Value="[BACKUPS_VOLUME]$(var.ProductNameAbbreviation)$(var.MajorVersion)$(var.FuzzyMinorVersion)\backups\"
+      Before="CostFinalize"
+      Sequence="execute">NOT (BACKUPS Or REMOVE~="ALL")</SetProperty>
+  </Fragment>
+</Wix>

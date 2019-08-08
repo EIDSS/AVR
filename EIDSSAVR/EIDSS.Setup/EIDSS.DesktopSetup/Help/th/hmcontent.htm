@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>ระบบเฝ้าระวังโรคอิเล็กทรอนิกส์แบบบูรณาการ (EIDSS)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="human_surveillance.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">การเฝ้าระวังผู้ป่วย</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="hc_intro.htm" target="hmcontent"><span class="heading2" id="s1.1">บทนำ</span></a>
+</li>
+<li class="heading2" id="i1.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="hc_operations.htm" target="hmcontent"><span class="heading2" id="s1.2" ondblclick="return dblclicked(this)">การใส่ข้อมูลในเคสผู้ป่วย&nbsp;</span></a>
+<ul id="ul1.2" style="list-style-type:none">
+<li class="heading3" id="i1.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.1" href="hc_urgent_notification.htm" target="hmcontent"><span class="heading3" id="s1.2.1">การสร้างการเเจ้งเตือนเเบบเร่งด่วน&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.2" href="hc_detailed.htm" target="hmcontent"><span class="heading3" id="s1.2.2">ใส่ข้อมูลการสอบสวนอย่างละเอียด&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.3" href="hc_register_samples.htm" target="hmcontent"><span class="heading3" id="s1.2.3">ใส่รายการตัวอย่างสำหรับผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.4" href="hc_add_contact.htm" target="hmcontent"><span class="heading3" id="s1.2.4">เพิ่มบุคคลติดต่อของผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.5" href="hc_register_tests.htm" target="hmcontent"><span class="heading3" id="s1.2.5">ใส่รายการผลการทดสอบในผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.6" href="hc_review_tests.htm" target="hmcontent"><span class="heading3" id="s1.2.6">รีวิวผลการทดสอบทางห้องปฏิบัติการ เเละผลการทดสอบของผู้ป่วย&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.7" href="hc_interpret.htm" target="hmcontent"><span class="heading3" id="s1.2.7">แปลผลการทดสอบ</span></a>
+</li>
+<li class="heading3" id="i1.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.8" href="hc_finalize.htm" target="hmcontent"><span class="heading3" id="s1.2.8">สรุป</span></a>
+</li>
+<li class="heading3" id="i1.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.9" href="hc_paper_forms.htm" target="hmcontent"><span class="heading3" id="s1.2.9">พิมพ์แบบฟอร์มหน้ากระดาษ สำหรับผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.10" href="hc_edit.htm" target="hmcontent"><span class="heading3" id="s1.2.10">แก้ไขผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.11" href="hc_delete.htm" target="hmcontent"><span class="heading3" id="s1.2.11">ลบผู้ป่วย</span></a>
+</li>
+<li class="heading3" id="i1.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.12" href="hc_search.htm" target="hmcontent"><span class="heading3" id="s1.2.12">ค้นหาผู้ป่วย</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="hc_forms.htm" target="hmcontent"><span class="heading2" id="s1.3" ondblclick="return dblclicked(this)">ผู้ป่วย</span></a>
+<ul id="ul1.3" style="list-style-type:none">
+<li class="heading3" id="i1.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.1" href="hc_h01.htm" target="hmcontent"><span class="heading3" id="s1.3.1">รายการผู้ป่วย H01</span></a>
+</li>
+<li class="heading3" id="i1.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.2" href="hc_h02.htm" target="hmcontent"><span class="heading3" id="s1.3.2">แบบฟอร์มรายงานผู้ป่วย H02</span></a>
+</li>
+<li class="heading3" id="i1.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.3" href="hc_h03.htm" target="hmcontent"><span class="heading3" id="s1.3.3">รายชื่อบุคคล H03</span></a>
+</li>
+<li class="heading3" id="i1.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.4" href="hc_h04.htm" target="hmcontent"><span class="heading3" id="s1.3.4">รายละเอียดบุคคล H04</span></a>
+</li>
+<li class="heading3" id="i1.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.5" href="hc_h12.htm" target="hmcontent"><span class="heading3" id="s1.3.5">การเปลี่ยนการวินิจฉัย H12</span></a>
+</li>
+<li class="heading3" id="i1.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.6" href="hc_h14.htm" target="hmcontent"><span class="heading3" id="s1.3.6">ประวัติการวินิจฉัย H14</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

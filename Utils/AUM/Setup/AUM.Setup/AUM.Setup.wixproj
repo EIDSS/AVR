@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.9</ProductVersion>
+    <ProjectGuid>9861c157-e6d7-4d11-9ce1-9b54c888c4b0</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>AUM.Setup</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <RunWixToolsOutOfProc>true</RunWixToolsOutOfProc>
+  </PropertyGroup>
+  <PropertyGroup>
+    <CustomAfterWixTargets>$(SolutionDir)Setup\Common.AfterWix.targets</CustomAfterWixTargets>
+    <EnableProjectHarvesting>True</EnableProjectHarvesting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug</DefineConstants>
+    <SuppressPdbOutput>False</SuppressPdbOutput>
+    <SuppressAllWarnings>False</SuppressAllWarnings>
+    <Pedantic>True</Pedantic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <SuppressPdbOutput>False</SuppressPdbOutput>
+    <SuppressAllWarnings>False</SuppressAllWarnings>
+    <Pedantic>True</Pedantic>
+    <SuppressIces>ICE61</SuppressIces>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="Resources" />
+    <EmbeddedResource Include="Resources\en-US.wxl" />
+    <Folder Include="UI\ConfigurationDlg" />
+    <Folder Include="UI\OnExitCustomDialogs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\OnExitCustomDialogs\ExitDialog.wxs">
+      <Link>UI\OnExitCustomDialogs\ExitDialog.wxs</Link>
+    </Compile>
+    <Compile Include="..\OnExitCustomDialogs\FatalError.wxs">
+      <Link>UI\OnExitCustomDialogs\FatalError.wxs</Link>
+    </Compile>
+    <Compile Include="..\OnExitCustomDialogs\ShowLog.wxs">
+      <Link>UI\OnExitCustomDialogs\ShowLog.wxs</Link>
+    </Compile>
+    <Compile Include="..\OnExitCustomDialogs\UserExit.wxs">
+      <Link>UI\OnExitCustomDialogs\UserExit.wxs</Link>
+    </Compile>
+    <Compile Include="AUM Administrator.wxs" />
+    <Compile Include="AUM Core.wxs" />
+    <Compile Include="AUM Dependencies.wxs" />
+    <Compile Include="AUM Service.wxs" />
+    <Compile Include="AvrServiceSettings.wxs" />
+    <Compile Include="Binaries.wxs" />
+    <Compile Include="AUM Components.wxs" />
+    <Compile Include="Configuration\Configuration.wxs" />
+    <Compile Include="DbSettings.wxs" />
+    <Compile Include="DirectoryTree.wxs" />
+    <Compile Include="Product.wxs" />
+    <Compile Include="UI\AvrSvcSettingsDlg.wxs" />
+    <Compile Include="UI\ConfigurationDlg\AumConfigurationDlg.wxs" />
+    <Compile Include="UI\ConfigurationDlg\Configuration.BackupsDrive.wxs" />
+    <Compile Include="UI\ConfigurationDlg\Configuration.UpgradeUrlsDlg.wxs" />
+    <Compile Include="UI\ConfigurationDlg\Configuration.MachineLevelDlg.wxs" />
+    <Compile Include="UI\ConfigurationDlg\Configuration.MiscDlg.wxs" />
+    <Compile Include="UI\ConfigurationDlg\ErrorConfigurationDlg.wxs" />
+    <Compile Include="UI\DbSettingsDlg\ErrorConnectionDlg.wxs" />
+    <Compile Include="UI\DbSettingsDlg\DbSettingsDlg.wxs" />
+    <Compile Include="UI\DbSettingsDlg\DbSettingsDlg2.wxs" />
+    <Compile Include="UI\UI.wxs" />
+    <Compile Include="UI\UIBinaries.wxs" />
+    <Compile Include="UrlUpgradeMode.wxs" />
+    <Compile Include="XPatchLauncher.wxs" />
+  </ItemGroup>
+  <ItemGroup Label="UI">
+    <Folder Include="Resources\Bitmaps" />
+    <Folder Include="UI\" />
+    <Folder Include="UI\DbSettingsDlg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(SolutionDir)Setup\Common.AfterWix.targets">
+      <Link>Common.AfterWix.targets</Link>
+    </Content>
+    <Content Include="$(SolutionDir)Setup\Common.Setup.targets">
+      <Link>Common.Setup.targets</Link>
+    </Content>
+    <Content Include="..\..\source files\bvupdater.config">
+      <Link>Configuration\bvupdater.config</Link>
+    </Content>
+    <Content Include="Configuration\bvupdater.config.xslt" />
+    <Content Include="Directories.harvest" />
+    <Content Include="Resources\Bitmaps\failure.ico" />
+    <Content Include="Resources\Bitmaps\success.ico" />
+    <Content Include="Resources\Bitmaps\unknown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\GlobalProductInfo.wxi">
+      <Link>GlobalProductInfo.wxi</Link>
+    </Content>
+    <Content Include="AddResource.wxi" />
+    <Content Include="ProductInfo.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AUM.Administrator\AUM.Administrator.csproj">
+      <Name>AUM.Administrator</Name>
+      <Project>{cd68dce5-653d-4e23-89e5-914cb13fac4a}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>true</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>ApplicationFolder</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AUM.Service\AUM.Service.csproj">
+      <Name>AUM.Service</Name>
+      <Project>{24c509fb-5477-4cb4-8671-39f92fa9867a}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>true</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>ApplicationFolder</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AUM\AUM.csproj">
+      <Name>AUM</Name>
+      <Project>{4b40818b-77e1-4e20-9e1e-16615230c204}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>true</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>ApplicationFolder</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AUM.Core\AUM.Core.csproj">
+      <Name>AUM.Core</Name>
+      <Project>{16d56608-8345-4806-b6cc-a3750f2bd90f}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>true</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>ApplicationFolder</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Patch\xPatchProjects\XPatchesLauncher\XPatchesLauncher.csproj">
+      <Name>XPatchesLauncher</Name>
+      <Project>{a18c4fdb-692a-4abb-ba52-e72fd97d1f46}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Patch\xPatchProjects\XPatchInterfaces\XPatchInterfaces.csproj">
+      <Name>XPatchInterfaces</Name>
+      <Project>{6df41216-9b5c-4634-9ee1-3476e452600e}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomActions\CustomActions.csproj">
+      <Name>CustomActions</Name>
+      <Project>{0feaad8c-01c6-426d-91d8-ab2b6089437b}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixNetFxExtension">
+      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+      <Name>WixNetFxExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <!--
+  To modify your build process, add your task inside one of the targets below and uncomment it.
+  Other similar extension points exist, see Wix.targets.-->
+  <PropertyGroup>
+    <BeforeBuildDependsOn>
+      PrepareServiceConfig
+    </BeforeBuildDependsOn>
+  </PropertyGroup>
+  <Target Name="BeforeBuild" DependsOnTargets="$(BeforeBuildDependsOn)" />
+  <Target Name="PrepareServiceConfig">
+    <PropertyGroup>
+      <bvupdater_config>bvupdater.config</bvupdater_config>
+      <_xslt>$(ProjectDir)Configuration\$(bvupdater_config).xslt</_xslt>
+      <_config>$(SolutionDir)source files\$(bvupdater_config)</_config>
+      <_cleanConfig>$(IntermediateOutputPath)$(bvupdater_config)</_cleanConfig>
+    </PropertyGroup>
+    <XslTransformation XmlInputPaths="$(_config)" XslInputPath="$(_xslt)" OutputPaths="$(_cleanConfig)" />
+    <PropertyGroup>
+      <DefineConstants>$(bvupdater_config)=$(_cleanConfig);$(DefineConstants)</DefineConstants>
+    </PropertyGroup>
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Target Name="ConvertReferences" Condition=" $(EnableProjectHarvesting) and ('$(OutputType)' == 'Package' or '$(OutputType)' == 'PatchCreation' or '$(OutputType)' == 'Module') ">
+    <ItemGroup>
+      <HeatProject Include="@(_MSBuildProjectReferenceExistent)" Condition=" 'true' != '%(DoNotHarvest)' ">
+        <DirectoryIds>%(_MSBuildProjectReferenceExistent.RefTargetDir)</DirectoryIds>
+        <ProjectOutputGroups>%(RefProjectOutputGroups)</ProjectOutputGroups>
+        <ProjectName>%(_MSBuildProjectReferenceExistent.Name)</ProjectName>
+        <HeatOutput>$(IntermediateOutputPath)_%(_MSBuildProjectReferenceExistent.Filename).wxs</HeatOutput>
+      </HeatProject>
+      <_HeatProjectReference Include="@(HeatProject)" />
+    </ItemGroup>
+    <Error Text="The following files are deprecated and should be removed from your project(s): @(Compile->'%(Identity)', ', ')" Condition=" '%(Compile.GenerateComponentGroups)' != '' " />
+    <ItemGroup>
+      <Compile Include="$(HarvestProjectsGeneratedFile)" />
+      <_GeneratedFiles Include="$(HarvestProjectsGeneratedFile)" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <GetProjectOutputsDependsOn>
+      GetTargetPath
+    </GetProjectOutputsDependsOn>
+  </PropertyGroup>
+  <Target Name="GetProjectOutputs" Outputs="@(ProjectOutputs)" DependsOnTargets="$(GetProjectOutputsDependsOn)">
+    <ItemGroup>
+      <ProjectOutputs Include="$(TargetPath)" />
+    </ItemGroup>
+  </Target>
+</Project>

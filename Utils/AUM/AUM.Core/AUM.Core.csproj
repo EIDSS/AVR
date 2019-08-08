@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16D56608-8345-4806-B6CC-A3750F2BD90F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AUM.Core</RootNamespace>
+    <AssemblyName>AUM.Core60</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\zip\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.50.2500.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\SqlServer\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.50.2500.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\SqlServer\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.50.2500.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\SqlServer\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.50.2500.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\SqlServer\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=0.64.3890.29348, Culture=neutral, PublicKeyToken=20de82c62b055c88, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)source files\zip\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\bvupdaterAssemblyInfo.cs">
+      <Link>Properties\bvupdaterAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\bvupdaterAssemblyVersionInfo.cs">
+      <Link>Properties\bvupdaterAssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Helper\MutexHelper.cs" />
+    <Compile Include="Helper\SiteInfo.cs" />
+    <Compile Include="UpdateDownloader.cs" />
+    <Compile Include="AUMLog.cs" />
+    <Compile Include="Helper\CreateProcessAsUserWrapper.cs" />
+    <Compile Include="Helper\VersionFactory.cs" />
+    <Compile Include="Synchronizer.cs" />
+    <Compile Include="Updater.ClientWks.cs" />
+    <Compile Include="Configuration\BaseSettings.cs" />
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="Configuration\ConfigWriter.cs" />
+    <Compile Include="Core\ErrorMessage.cs" />
+    <Compile Include="Core\Utils.cs" />
+    <Compile Include="db\ConnectionManager.cs" />
+    <Compile Include="db\EventLogMessageHelper.cs" />
+    <Compile Include="db\StoredProcParamsCache.cs" />
+    <Compile Include="Diagnostics\ConsoleOutput.cs" />
+    <Compile Include="Diagnostics\DataDiag.cs" />
+    <Compile Include="Diagnostics\Dbg.cs" />
+    <Compile Include="Diagnostics\DebugDetalizationLevel.cs" />
+    <Compile Include="Diagnostics\DebugFileOutput.cs" />
+    <Compile Include="Diagnostics\IDebugOutput.cs" />
+    <Compile Include="Diagnostics\InternalErrorException.cs" />
+    <Compile Include="Diagnostics\StandardOutput.cs" />
+    <Compile Include="Downloader.cs" />
+    <Compile Include="Enums\EIDSSComponents.cs" />
+    <Compile Include="Helper\BackupHelper.cs" />
+    <Compile Include="Helper\ConfigHelper.cs" />
+    <Compile Include="ConfigSettings.cs" />
+    <Compile Include="Helper\AdminHelper.cs" />
+    <Compile Include="Enums\RunResults.cs" />
+    <Compile Include="Helper\DatabaseHelper.cs" />
+    <Compile Include="Core\DbHelper.cs" />
+    <Compile Include="Helper\EnvironmentHelper.cs" />
+    <Compile Include="Helper\MachineLevel.cs" />
+    <Compile Include="Helper\RunHelper.cs" />
+    <Compile Include="Helper\TerminateDbHelper.cs" />
+    <Compile Include="Helper\TerminateEIDSSHelper.cs" />
+    <Compile Include="Enums\UpdateDatabases.cs" />
+    <Compile Include="UpdateVersion.cs" />
+    <Compile Include="UpdateInfo.cs" />
+    <Compile Include="ITerminateForm.cs" />
+    <Compile Include="Helper\ProductHelper.cs" />
+    <Compile Include="Helper\ServiceHelper.cs" />
+    <Compile Include="Transactions\AppendAllTextOperation.cs" />
+    <Compile Include="Transactions\CopyOperation.cs" />
+    <Compile Include="Transactions\CreateDirectoryOperation.cs" />
+    <Compile Include="Transactions\DeleteDirectoryOperation.cs" />
+    <Compile Include="Transactions\DeleteFileOperation.cs" />
+    <Compile Include="Transactions\FileEventHandler.cs" />
+    <Compile Include="Transactions\FileUtils.cs" />
+    <Compile Include="Transactions\IFileManager.cs" />
+    <Compile Include="Transactions\IFileOperations.cs" />
+    <Compile Include="Transactions\IRollbackableOperation.cs" />
+    <Compile Include="Transactions\MoveOperation.cs" />
+    <Compile Include="Transactions\SingleFileOperation.cs" />
+    <Compile Include="Transactions\SnapshotOperation.cs" />
+    <Compile Include="Transactions\TxEnlistment.cs" />
+    <Compile Include="Transactions\TxFileManager.cs" />
+    <Compile Include="Transactions\WriteAllBytesOperation.cs" />
+    <Compile Include="Transactions\WriteAllTextOperation.cs" />
+    <Compile Include="Updater.cs" />
+    <Compile Include="Helper\XmlHelper.cs" />
+    <Compile Include="UpdateInfoEx.cs" />
+    <Compile Include="TotalUpdateInfo.cs" />
+    <Compile Include="Enums\UpdateStatus.cs" />
+    <Compile Include="Helper\RegistryHelper.cs" />
+    <Compile Include="Cryptor.cs" />
+    <Compile Include="db\UpdateMessenger.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\FormsHelper.cs" />
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WaitingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WaitingForm.Designer.cs">
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceHelper.cs" />
+    <Compile Include="SecurityLog.cs" />
+    <Compile Include="Structs.cs" />
+    <Compile Include="UpdateSettings.cs" />
+    <Compile Include="Helper\UpdHelper.cs" />
+    <Compile Include="Helper\Win32Helper.cs" />
+    <Compile Include="Updater.WebWks.cs" />
+    <Compile Include="Helper\UrlWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.az-Latn-AZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.ka-GE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.kk-KZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.ru-RU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitingForm.uk-UA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.az-Latn-AZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.ka-GE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.kk-KZ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.resx">
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceHelper.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.ru-RU.resx">
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceHelper.uk-UA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceHelper.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InputScript_1.sql" />
+    <Content Include="InputScript_2.sql" />
+    <Content Include="InputScript_3.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

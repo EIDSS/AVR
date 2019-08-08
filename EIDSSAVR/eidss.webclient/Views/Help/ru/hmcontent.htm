@@ -1,0 +1,1016 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Electronic Integrated Disease Surveillance System</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="system_requirements_and_set-up.htm" target="hmcontent"><span class="heading1" id="s1">Обзор</span></a>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="getting_started.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Начало работы</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="logging_on.htm" target="hmcontent"><span class="heading2" id="s2.1">Вход в систему / выход из системы</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="system_automatical_upgrade.htm" target="hmcontent"><span class="heading2" id="s2.2">Автоматическое обновление системы</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="changing_password.htm" target="hmcontent"><span class="heading2" id="s2.3">Смена пароля</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="switching_user.htm" target="hmcontent"><span class="heading2" id="s2.4">Смена пользователя</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="main_menu_and_toolbar.htm" target="hmcontent"><span class="heading2" id="s2.5">Главное меню и панель инструментов</span></a>
+</li>
+<li class="heading2" id="i2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="multiligual_support.htm" target="hmcontent"><span class="heading2" id="s2.6">Многоязычная поддержка</span></a>
+</li>
+<li class="heading2" id="i2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="system_preferences.htm" target="hmcontent"><span class="heading2" id="s2.7">Системные настройки</span></a>
+</li>
+<li class="heading2" id="i2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="replication_setup.htm" target="hmcontent"><span class="heading2" id="s2.8">Подписка на оповещение от сайтов</span></a>
+</li>
+<li class="heading2" id="i2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="closing_windows.htm" target="hmcontent"><span class="heading2" id="s2.9">Сохранение данных и/или закрытие окна</span></a>
+</li>
+<li class="heading2" id="i2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="item_lists.htm" target="hmcontent"><span class="heading2" id="s2.10">Список элементов</span></a>
+</li>
+<li class="heading2" id="i2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="searches.htm" target="hmcontent"><span class="heading2" id="s2.11">Списки поиска</span></a>
+</li>
+<li class="heading2" id="i2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="forms_custom.htm" target="hmcontent"><span class="heading2" id="s2.12">Настройка списочных и поисковых форм</span></a>
+</li>
+<li class="heading2" id="i2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="detail_forms.htm" target="hmcontent"><span class="heading2" id="s2.13">Подробные формы</span></a>
+</li>
+<li class="heading2" id="i2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="maps.htm" target="hmcontent"><span class="heading2" id="s2.14">Географические расположения</span></a>
+</li>
+<li class="heading2" id="i2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="keyboard_navigation.htm" target="hmcontent"><span class="heading2" id="s2.15">Навигация</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="data_replication.htm" target="hmcontent"><span class="heading2" id="s2.16">Репликация данных</span></a>
+</li>
+<li class="heading2" id="i2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.17" href="replication_alerts.htm" target="hmcontent"><span class="heading2" id="s2.17">Всплывающие уведомления</span></a>
+</li>
+<li class="heading2" id="i2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.18" href="access_rights.htm" target="hmcontent"><span class="heading2" id="s2.18">Права доступа</span></a>
+</li>
+<li class="heading2" id="i2.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.19" href="printing_standard_reports.htm" target="hmcontent"><span class="heading2" id="s2.19">Отчёты</span></a>
+</li>
+<li class="heading2" id="i2.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.20" href="printing_paper_forms.htm" target="hmcontent"><span class="heading2" id="s2.20">Бумажные формы</span></a>
+</li>
+<li class="heading2" id="i2.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.21" href="data_glossary.htm" target="hmcontent"><span class="heading2" id="s2.21">Глоссарий данных</span></a>
+</li>
+<li class="heading2" id="i2.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.22" href="help.htm" target="hmcontent"><span class="heading2" id="s2.22">Справка</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="eidss_configuration.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Настройка ЭИСНЗ</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="repository_schema.htm" target="hmcontent"><span class="heading2" id="s3.1">Схема хранилища</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="basic_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.2">Редактор базовых справочников</span></a>
+</li>
+<li class="heading2" id="i3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="clinical_diagnosis_editor.htm" target="hmcontent"><span class="heading2" id="s3.3">Редактор клинических диагнозов</span></a>
+</li>
+<li class="heading2" id="i3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="measure_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.4">Редактор мероприятий</span></a>
+</li>
+<li class="heading2" id="i3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="sample_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.5">Редактор типов проб</span></a>
+</li>
+<li class="heading2" id="i3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.6" href="vector_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.6">Редактор типов переносчиков заболеваний</span></a>
+</li>
+<li class="heading2" id="i3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.7" href="vector_species_types.htm" target="hmcontent"><span class="heading2" id="s3.7">Редактор типов биологических видов, являющихся переносчиками заболеваний</span></a>
+</li>
+<li class="heading2" id="i3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.8" href="species_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.8">Редактор типов биологических видов</span></a>
+</li>
+<li class="heading2" id="i3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.9" href="statistic_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.9">Редактор типов общей статистики</span></a>
+</li>
+<li class="heading2" id="i3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.10" href="case_classification_editor.htm" target="hmcontent"><span class="heading2" id="s3.10">Редактор классификации случаев заболеваний</span></a>
+</li>
+<li class="heading2" id="i3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.11" href="report_diagnoses_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.11">Редактор отчётов групп диагнозов</span></a>
+</li>
+<li class="heading2" id="i3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.12" href="age_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.12">Редактор возрастных групп</span></a>
+</li>
+<li class="heading2" id="i3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.13" href="human_aggregate_case_matrix_ed.htm" target="hmcontent"><span class="heading2" id="s3.13">Матрица «Агрегированные данные о случаях заболеваний людей»</span></a>
+</li>
+<li class="heading2" id="i3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.14" href="vet_aggregate_case_matrix_edit.htm" target="hmcontent"><span class="heading2" id="s3.14">Матрица «Агрегированные данные о случаях заболеваний животных»</span></a>
+</li>
+<li class="heading2" id="i3.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.15" href="vet_diag_invest_matrix_editor.htm" target="hmcontent"><span class="heading2" id="s3.15">Матрица «Ветеринарно-диагностические исследования»</span></a>
+</li>
+<li class="heading2" id="i3.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.16" href="vet_prophylactic_measure_matri.htm" target="hmcontent"><span class="heading2" id="s3.16">Матрица «Ветеринарно-профилактические меры»</span></a>
+</li>
+<li class="heading2" id="i3.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.17" href="vet_sanitary_action_matrix_edi.htm" target="hmcontent"><span class="heading2" id="s3.17">Матрица «Ветеринарно-санитарные мероприятия»</span></a>
+</li>
+<li class="heading2" id="i3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.18" href="species-animal_age_matrix.htm" target="hmcontent"><span class="heading2" id="s3.18">Матрица «Биологический вид - возраст животных»</span></a>
+</li>
+<li class="heading2" id="i3.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.19" href="sample_type-derivative_type_ma.htm" target="hmcontent"><span class="heading2" id="s3.19">Матрица «Тип пробы - тип деривата»</span></a>
+</li>
+<li class="heading2" id="i3.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.20" href="diagnosis-sample_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.20">Матрица «Диагноз - тип проб»</span></a>
+</li>
+<li class="heading2" id="i3.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.21" href="diagnosis-lab_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.21">Матрица «Диагноз - лабораторные тесты»</span></a>
+</li>
+<li class="heading2" id="i3.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.22" href="diagnosis-penside_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.22">Матрица «Диагноз - полевые тесты»</span></a>
+</li>
+<li class="heading2" id="i3.23" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.23" href="test_results_matrix.htm" target="hmcontent"><span class="heading2" id="s3.23">Матрица «Тест - результат теста»</span></a>
+</li>
+<li class="heading2" id="i3.24" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.24" href="vector_type-collection_method_matrix.htm" target="hmcontent"><span class="heading2" id="s3.24">Матрица «Тип переносчика заболевания - метод отлова»</span></a>
+</li>
+<li class="heading2" id="i3.25" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.25" href="vector_type-sample_type_matrix.htm" target="hmcontent"><span class="heading2" id="s3.25">Матрица «Тип переносчика заболевания - тип пробы»</span></a>
+</li>
+<li class="heading2" id="i3.26" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.26" href="vector_type-field_test_matrix.htm" target="hmcontent"><span class="heading2" id="s3.26">Матрица «Тип переносчика заболевания - полевой тест»</span></a>
+</li>
+<li class="heading2" id="i3.27" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.27" href="diagnoses-age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.27">Матрица «Диагноз - возрастные группы»</span></a>
+</li>
+<li class="heading2" id="i3.28" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.28" href="report_diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.28">Матрица «Группы диагнозов для отчётов - диагноз»</span></a>
+</li>
+<li class="heading2" id="i3.29" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.29" href="custom_report_rows.htm" target="hmcontent"><span class="heading2" id="s3.29">Селектор строк пользовательского отчёта</span></a>
+</li>
+<li class="heading2" id="i3.30" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.30" href="diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.30">Матрица «Группа диагнозов - диагноз»</span></a>
+</li>
+<li class="heading2" id="i3.31" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.31" href="age_groups-statistical_age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.31">Матрица «Возрастные группы - статистические возрастные группы»</span></a>
+</li>
+<li class="heading2" id="i3.32" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.32" href="unique_numbering_schema.htm" target="hmcontent"><span class="heading2" id="s3.32">Схема уникальной нумерации</span></a>
+</li>
+<li class="heading2" id="i3.33" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.33" href="aggregatesettings.htm" target="hmcontent"><span class="heading2" id="s3.33">Настройки агрегирования</span></a>
+</li>
+<li class="heading2" id="i3.34" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.34" href="maps_configuration.htm" target="hmcontent"><span class="heading2" id="s3.34">Настройка географических карт</span></a>
+</li>
+<li class="heading2" id="i3.35" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.35" href="parameter_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.35">Редактор типов параметров</span></a>
+</li>
+<li class="heading2" id="i3.36" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.36" href="data_archiving_settings.htm" target="hmcontent"><span class="heading2" id="s3.36">Настройки архивирования данных</span></a>
+</li>
+<li class="heading2" id="i3.37" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.37" href="form_design.htm" target="hmcontent"><span class="heading2" id="s3.37" ondblclick="return dblclicked(this)">Конфигурация настраиваемых форм</span></a>
+<ul id="ul3.37" style="list-style-type:none">
+<li class="heading3" id="i3.37.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.1" href="ffd_to_edit_template.htm" target="hmcontent"><span class="heading3" id="s3.37.1">Конструктор настраиваемых форм - редактирование шаблона</span></a>
+</li>
+<li class="heading3" id="i3.37.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.2" href="ffd_to_add_template.htm" target="hmcontent"><span class="heading3" id="s3.37.2">Конструктор настраиваемых форм - добавление нового шаблона</span></a>
+</li>
+<li class="heading3" id="i3.37.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.3" href="ffd_-_to_delete_a_template.htm" target="hmcontent"><span class="heading3" id="s3.37.3">Конструктор настраиваемых форм - удаление шаблона</span></a>
+</li>
+<li class="heading3" id="i3.37.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.4" href="ffd_fields_and_sections.htm" target="hmcontent"><span class="heading3" id="s3.37.4">Конструктор настраиваемых форм - разделы и поля шаблона</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.38" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.38" href=javascript:void(0);><span class="heading2" id="s3.38" ondblclick="return dblclicked(this)">Настройка администрирования</span></a>
+<ul id="ul3.38" style="list-style-type:none">
+<li class="heading3" id="i3.38.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.1" href="farms.htm" target="hmcontent"><span class="heading3" id="s3.38.1">Фермы</span></a>
+</li>
+<li class="heading3" id="i3.38.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.2" href="employees_users.htm" target="hmcontent"><span class="heading3" id="s3.38.2">Работники / пользователи</span></a>
+</li>
+<li class="heading3" id="i3.38.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.3" href="persons_list.htm" target="hmcontent"><span class="heading3" id="s3.38.3">Список лиц</span></a>
+</li>
+<li class="heading3" id="i3.38.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.4" href="organisations.htm" target="hmcontent"><span class="heading3" id="s3.38.4">Организации</span></a>
+</li>
+<li class="heading3" id="i3.38.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.5" href="settlements.htm" target="hmcontent"><span class="heading3" id="s3.38.5">Населённые пункты</span></a>
+</li>
+<li class="heading3" id="i3.38.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.6" href="statistics.htm" target="hmcontent"><span class="heading3" id="s3.38.6">Статистика</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.39" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.39" href=javascript:void(0);><span class="heading2" id="s3.39" ondblclick="return dblclicked(this)">Настройка безопасности</span></a>
+<ul id="ul3.39" style="list-style-type:none">
+<li class="heading3" id="i3.39.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.1" href="security_policy.htm" target="hmcontent"><span class="heading3" id="s3.39.1">Политика безопасности</span></a>
+</li>
+<li class="heading3" id="i3.39.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.2" href="user_groups.htm" target="hmcontent"><span class="heading3" id="s3.39.2">Группы пользователей</span></a>
+</li>
+<li class="heading3" id="i3.39.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.3" href="security.htm" target="hmcontent"><span class="heading3" id="s3.39.3">Системные функции</span></a>
+</li>
+<li class="heading3" id="i3.39.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.4" href="system_functions_list.htm" target="hmcontent"><span class="heading3" id="s3.39.4">Список системных функций</span></a>
+</li>
+<li class="heading3" id="i3.39.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.5" href="access_rights_management.htm" target="hmcontent"><span class="heading3" id="s3.39.5">Полномочия классов объектов</span></a>
+</li>
+<li class="heading3" id="i3.39.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.6" href="eidss_sites.htm" target="hmcontent"><span class="heading3" id="s3.39.6">Сайты ЭИСНЗ</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.40" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.40" href="administrative_support.htm" target="hmcontent"><span class="heading2" id="s3.40" ondblclick="return dblclicked(this)">Административные инструменты</span></a>
+<ul id="ul3.40" style="list-style-type:none">
+<li class="heading3" id="i3.40.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.1" href="system_event_log.htm" target="hmcontent"><span class="heading3" id="s3.40.1">Журнал системных событий</span></a>
+</li>
+<li class="heading3" id="i3.40.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.2" href="security_log.htm" target="hmcontent"><span class="heading3" id="s3.40.2">Журнал событий безопасности</span></a>
+</li>
+<li class="heading3" id="i3.40.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.3" href="data_audit_management.htm" target="hmcontent"><span class="heading3" id="s3.40.3">Журнал транзакций проверки данных</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="human_surveillance.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Надзор за заболеваниями людей</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="hc_intro.htm" target="hmcontent"><span class="heading2" id="s4.1">Введение</span></a>
+</li>
+<li class="heading2" id="i4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="hc_operations.htm" target="hmcontent"><span class="heading2" id="s4.2" ondblclick="return dblclicked(this)">Операции с записями случаев заболеваний людей</span></a>
+<ul id="ul4.2" style="list-style-type:none">
+<li class="heading3" id="i4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.1" href="hc_urgent_notification.htm" target="hmcontent"><span class="heading3" id="s4.2.1">Создание экстренного извещения</span></a>
+</li>
+<li class="heading3" id="i4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.2" href="hc_detailed.htm" target="hmcontent"><span class="heading3" id="s4.2.2">Регистрация подробной информации о расследовании</span></a>
+</li>
+<li class="heading3" id="i4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.3" href="hc_register_samples.htm" target="hmcontent"><span class="heading3" id="s4.2.3">Регистрация проб, взятых в связи со случаем заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.4" href="hc_register_samples_2.htm" target="hmcontent"><span class="heading3" id="s4.2.4">Добавление связанного со случаем заболевания лица</span></a>
+</li>
+<li class="heading3" id="i4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.5" href="hc_register_tests.htm" target="hmcontent"><span class="heading3" id="s4.2.5">Регистрация результатов тестов в отношении случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.6" href="hc_review_tests.htm" target="hmcontent"><span class="heading3" id="s4.2.6">Изучение лабораторных тестов и результатов тестов в отношении случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.7" href="hc_interpret.htm" target="hmcontent"><span class="heading3" id="s4.2.7">Интерпретация результатов тестов</span></a>
+</li>
+<li class="heading3" id="i4.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.8" href="hc_finalize.htm" target="hmcontent"><span class="heading3" id="s4.2.8">Закрытие случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.9" href="hc_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.2.9">Печать бумажных форм в отношении случая заболевания человека</span></a>
+</li>
+<li class="heading3" id="i4.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.10" href="hc_edit.htm" target="hmcontent"><span class="heading3" id="s4.2.10">Редактирование записи случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.11" href="hc_delete.htm" target="hmcontent"><span class="heading3" id="s4.2.11">Удаление записи случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.12" href="hc_search.htm" target="hmcontent"><span class="heading3" id="s4.2.12">Поиск записи случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.13" href="hc_search_browse.htm" target="hmcontent"><span class="heading3" id="s4.2.13">Поиск в режиме просмотра</span></a>
+</li>
+<li class="heading3" id="i4.2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.14" href="hc_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.2.14">Дедупликация случаев заболеваний людей</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="hac_operations.htm" target="hmcontent"><span class="heading2" id="s4.3" ondblclick="return dblclicked(this)">Операции с агрегированными случаями заболеваний людей&nbsp;</span></a>
+<ul id="ul4.3" style="list-style-type:none">
+<li class="heading3" id="i4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.1" href="hac_create.htm" target="hmcontent"><span class="heading3" id="s4.3.1">Создание агрегированного случая заболевания человека</span></a>
+</li>
+<li class="heading3" id="i4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.2" href="hac_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.3.2">Печать бумажных форм в отношении агрегированного случая заболевания</span></a>
+</li>
+<li class="heading3" id="i4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.3" href="hac_edit.htm" target="hmcontent"><span class="heading3" id="s4.3.3">Редактирование агрегированного случая заболевания человека</span></a>
+</li>
+<li class="heading3" id="i4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.4" href="hac_delete.htm" target="hmcontent"><span class="heading3" id="s4.3.4">Удаление агрегированного случая заболевания человека</span></a>
+</li>
+<li class="heading3" id="i4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.5" href="hac_search.htm" target="hmcontent"><span class="heading3" id="s4.3.5">Поиск агрегированного случая заболевания человека</span></a>
+</li>
+<li class="heading3" id="i4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.6" href="hac_summary.htm" target="hmcontent"><span class="heading3" id="s4.3.6">Создание сводного отчёта</span></a>
+</li>
+<li class="heading3" id="i4.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.7" href="hac_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.3.7">Дедупликация агрегированного случая заболевания человека</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="hc_forms.htm" target="hmcontent"><span class="heading2" id="s4.4" ondblclick="return dblclicked(this)">Описание экранных форм</span></a>
+<ul id="ul4.4" style="list-style-type:none">
+<li class="heading3" id="i4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.1" href="hc_h02.htm" target="hmcontent"><span class="heading3" id="s4.4.1">Форма Н02 «Сообщение о случае заболевания человека»</span></a>
+</li>
+<li class="heading3" id="i4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.2" href="hc_h01.htm" target="hmcontent"><span class="heading3" id="s4.4.2">Форма Н01 «Список случаев заболеваний людей»</span></a>
+</li>
+<li class="heading3" id="i4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.3" href="hc_h09.htm" target="hmcontent"><span class="heading3" id="s4.4.3">Форма Н09 «Поиск случая заболевания человека»</span></a>
+</li>
+<li class="heading3" id="i4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.4" href="hc_h10.htm" target="hmcontent"><span class="heading3" id="s4.4.4">Форма Н10 «Список дедупликации случаев заболеваний людей»</span></a>
+</li>
+<li class="heading3" id="i4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.5" href="hc_h11.htm" target="hmcontent"><span class="heading3" id="s4.4.5">Форма Н11 « Сведения о дедупликации случаев заболеваний людей»</span></a>
+</li>
+<li class="heading3" id="i4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.6" href="hc_h12.htm" target="hmcontent"><span class="heading3" id="s4.4.6">Форма Н12 «Изменение диагноза»</span></a>
+</li>
+<li class="heading3" id="i4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.7" href="hc_h14.htm" target="hmcontent"><span class="heading3" id="s4.4.7">Форма Н14 «История изменений диагноза»</span></a>
+</li>
+<li class="heading3" id="i4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.8" href="hc_h06.htm" target="hmcontent"><span class="heading3" id="s4.4.8">Форма Н06 «Сведения об агрегированном случае заболевания человека»</span></a>
+</li>
+<li class="heading3" id="i4.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.9" href="hc_h08.htm" target="hmcontent"><span class="heading3" id="s4.4.9">Форма Н08 «Краткая информация об агрегированном случае заболевания человека»</span></a>
+</li>
+<li class="heading3" id="i4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.10" href="hc_h15.htm" target="hmcontent"><span class="heading3" id="s4.4.10">Форма Н15 «Список агрегированных случаев заболеваний людей»</span></a>
+</li>
+<li class="heading3" id="i4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.11" href="hc_h16.htm" target="hmcontent"><span class="heading3" id="s4.4.11">Форма Н16 «Дедупликация агрегированных случаев заболеваний людей»</span></a>
+</li>
+<li class="heading3" id="i4.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.12" href="hc_h03.htm" target="hmcontent"><span class="heading3" id="s4.4.12">Форма Н03 «Список лиц»</span></a>
+</li>
+<li class="heading3" id="i4.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.13" href="hc_h04.htm" target="hmcontent"><span class="heading3" id="s4.4.13">Форма Н04 «Сведения о лице»</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="outbreaks_surveillance.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Надзор за вспышками заболеваний</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="ob_operations.htm" target="hmcontent"><span class="heading2" id="s5.1" ondblclick="return dblclicked(this)">Операции в модуле надзора за вспышками заболеваний</span></a>
+<ul id="ul5.1" style="list-style-type:none">
+<li class="heading3" id="i5.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.1" href="ob_create.htm" target="hmcontent"><span class="heading3" id="s5.1.1">Создание записи о вспышке заболевания</span></a>
+</li>
+<li class="heading3" id="i5.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.2" href="ob_case.htm" target="hmcontent"><span class="heading3" id="s5.1.2">Связывание вспышки заболевания со случаем/сессией заболевания</span></a>
+</li>
+<li class="heading3" id="i5.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.3" href="ob_prime.htm" target="hmcontent"><span class="heading3" id="s5.1.3">Указание основного случая / сессии заболевания во вспышке</span></a>
+</li>
+<li class="heading3" id="i5.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.4" href="ob_edit.htm" target="hmcontent"><span class="heading3" id="s5.1.4">Редактирование информации о вспышке заболевания</span></a>
+</li>
+<li class="heading3" id="i5.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.5" href="ob_delete.htm" target="hmcontent"><span class="heading3" id="s5.1.5">Удаление записи о вспышке заболевания</span></a>
+</li>
+<li class="heading3" id="i5.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.1.6" href="ob_search.htm" target="hmcontent"><span class="heading3" id="s5.1.6">Поиск вспышки заболевания</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="ob_forms.htm" target="hmcontent"><span class="heading2" id="s5.2" ondblclick="return dblclicked(this)">Описание экранных форм</span></a>
+<ul id="ul5.2" style="list-style-type:none">
+<li class="heading3" id="i5.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.1" href="ob_c10.htm" target="hmcontent"><span class="heading3" id="s5.2.1">Форма С10 «Список вспышек заболеваний»</span></a>
+</li>
+<li class="heading3" id="i5.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.2" href="ob_c11.htm" target="hmcontent"><span class="heading3" id="s5.2.2">Форма С11 «Сведения о вспышке заболевания»</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="vector_surveillance.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Надзор за переносчиками заболеваний</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="starting_vector_surveillance_m.htm" target="hmcontent"><span class="heading2" id="s6.1">Запуск модуля надзора за переносчиками заболеваний</span></a>
+</li>
+<li class="heading2" id="i6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="vs_search.htm" target="hmcontent"><span class="heading2" id="s6.2">Поиск сессии НЗПЗ</span></a>
+</li>
+<li class="heading2" id="i6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="vs_operations.htm" target="hmcontent"><span class="heading2" id="s6.3" ondblclick="return dblclicked(this)">Операции в модуле надзора за переносчиками заболеваний</span></a>
+<ul id="ul6.3" style="list-style-type:none">
+<li class="heading3" id="i6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.1" href="vs_create.htm" target="hmcontent"><span class="heading3" id="s6.3.1">Создание сессии надзора за переносчиками заболевания (НЗПЗ)</span></a>
+</li>
+<li class="heading3" id="i6.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.2" href="vs_edit.htm" target="hmcontent"><span class="heading3" id="s6.3.2">Просмотр и редактирование сессии НЗПЗ</span></a>
+</li>
+<li class="heading3" id="i6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.3" href="enter_general_information_of__.htm" target="hmcontent"><span class="heading3" id="s6.3.3">Ввод общей информации НЗПЗ</span></a>
+</li>
+<li class="heading3" id="i6.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.4" href="enter_detailed_information.htm" target="hmcontent"><span class="heading3" id="s6.3.4" ondblclick="return dblclicked(this)">Ввод подробной информации НЗПЗ</span></a>
+<ul id="ul6.3.4" style="list-style-type:none">
+<li class="heading4" id="i6.3.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.3.4.1" href="register_vector_pool_.htm" target="hmcontent"><span class="heading4" id="s6.3.4.1" ondblclick="return dblclicked(this)">Регистрация отдельного переносчика / группы переносчиков заболевания</span></a>
+<ul id="ul6.3.4.1" style="list-style-type:none">
+<li class="heading5" id="i6.3.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.1" href="register_summary_info_vector_pool.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.1">Регистрация краткой основной информации об отдельном переносчике / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading5" id="i6.3.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.2" href="register_gen_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.2">Регистрация общей информации об отдельном переносчике / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading5" id="i6.3.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.3" href="register_spec_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.3">Регистрация специальной информации по отдельному переносчику / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading5" id="i6.3.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.4" href="register_samples_for_vp.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.4">Регистрация проб по отдельному переносчику / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading5" id="i6.3.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.5" href="register_field_test_results.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.5">Регистрация результатов полевых тестов по отдельному переносчику / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading5" id="i6.3.4.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.1.6" href="review_laboratory_tests_vp.htm" target="hmcontent"><span class="heading5" id="s6.3.4.1.6">Просмотр лабораторных тестов и результатов тестов в отношении отдельного переносчика / группы переносчиков заболевания</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i6.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.3.4.2" href="copy_vector_pool.htm" target="hmcontent"><span class="heading4" id="s6.3.4.2">Копирование записи об отдельном переносчике / группе переносчиков заболевания</span></a>
+</li>
+<li class="heading4" id="i6.3.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.3.4.3" href="review_aggregated_data_for_vp.htm" target="hmcontent"><span class="heading4" id="s6.3.4.3" ondblclick="return dblclicked(this)">Просмотр агрегированных данных сессии НЗПЗ</span></a>
+<ul id="ul6.3.4.3" style="list-style-type:none">
+<li class="heading5" id="i6.3.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.3.1" href="review_samples.htm" target="hmcontent"><span class="heading5" id="s6.3.4.3.1">Просмотр проб сессии</span></a>
+</li>
+<li class="heading5" id="i6.3.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.3.2" href="review_field_rests_and_test_re.htm" target="hmcontent"><span class="heading5" id="s6.3.4.3.2">Просмотр полевых тестов сессии и их результатов</span></a>
+</li>
+<li class="heading5" id="i6.3.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.3.4.3.3" href="review_laboratory_tests_vs.htm" target="hmcontent"><span class="heading5" id="s6.3.4.3.3">Просмотр лабораторных тестов сессии и их результатов</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i6.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.5" href="enter_summary_information.htm" target="hmcontent"><span class="heading3" id="s6.3.5">Ввод краткой информации о сессии НЗПЗ</span></a>
+</li>
+<li class="heading3" id="i6.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.6" href="link_a_vs_session_to_outbreak.htm" target="hmcontent"><span class="heading3" id="s6.3.6">Связывание сессии НЗПЗ со вспышкой заболевания</span></a>
+</li>
+<li class="heading3" id="i6.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.7" href="vs_final.htm" target="hmcontent"><span class="heading3" id="s6.3.7">Закрытие (завершение) сессии надзора за переносчиками заболевания</span></a>
+</li>
+<li class="heading3" id="i6.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.8" href="save_vs_session.htm" target="hmcontent"><span class="heading3" id="s6.3.8">Сохранение сессии НЗПЗ</span></a>
+</li>
+<li class="heading3" id="i6.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.9" href="close_vs_session.htm" target="hmcontent"><span class="heading3" id="s6.3.9">Закрытие окна сессии НЗПЗ</span></a>
+</li>
+<li class="heading3" id="i6.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.10" href="vs_delete.htm" target="hmcontent"><span class="heading3" id="s6.3.10">Удаление сессии НЗПЗ</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.4" href="vs_forms.htm" target="hmcontent"><span class="heading2" id="s6.4" ondblclick="return dblclicked(this)">Описание экранных форм</span></a>
+<ul id="ul6.4" style="list-style-type:none">
+<li class="heading3" id="i6.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.4.1" href="vs_w01.htm" target="hmcontent"><span class="heading3" id="s6.4.1">Форма W01 «Список сессий надзора за переносчиками заболеваний»</span></a>
+</li>
+<li class="heading3" id="i6.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.4.2" href="vs_w02.htm" target="hmcontent"><span class="heading3" id="s6.4.2" ondblclick="return dblclicked(this)">Форма W02 «Сессия надзора за переносчиками заболевания»</span></a>
+<ul id="ul6.4.2" style="list-style-type:none">
+<li class="heading4" id="i6.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.2.1" href="general_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s6.4.2.1">Вкладка «Общая информация» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.2.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.2.2" href="detailed_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s6.4.2.2" ondblclick="return dblclicked(this)">Вкладка «Подробная информация» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+<ul id="ul6.4.2.2" style="list-style-type:none">
+<li class="heading5" id="i6.4.2.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.4.2.2.1" href="pools_individual_vectors_of_w02.htm" target="hmcontent"><span class="heading5" id="s6.4.2.2.1">Вложенная вкладка «Группы переносчиков / отдельные переносчики заболеваний» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+<li class="heading5" id="i6.4.2.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.4.2.2.2" href="samples_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s6.4.2.2.2">Вложенная вкладка «Пробы» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+<li class="heading5" id="i6.4.2.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.4.2.2.3" href="field_tests_subtab_of_vector_s.htm" target="hmcontent"><span class="heading5" id="s6.4.2.2.3">Вложенная вкладка «Полевые тесты» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+<li class="heading5" id="i6.4.2.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a6.4.2.2.4" href="lab_tests_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s6.4.2.2.4">Вложенная вкладка «Лабораторные тесты» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i6.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.2.3" href="summary_info_tab_of_w02.htm" target="hmcontent"><span class="heading4" id="s6.4.2.3">Вкладка «Краткая информация» формы W02 «Сессия надзора за переносчиками заболевания»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i6.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.4.3" href="vs_w03.htm" target="hmcontent"><span class="heading3" id="s6.4.3" ondblclick="return dblclicked(this)">Форма W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+<ul id="ul6.4.3" style="list-style-type:none">
+<li class="heading4" id="i6.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.1" href="summary_section_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.1">Раздел «Краткая информация» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.2" href="general_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.2">Вкладка «Общая информация» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.3" href="vector_specific_data_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.3">Вкладка «Специфические данные о переносчике заболевания» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.4" href="samples_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.4">Вкладка «Пробы» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.5" href="field_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.5">Вкладка «Полевые тесты» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+<li class="heading4" id="i6.4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a6.4.3.6" href="lab_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s6.4.3.6">Вкладка «Лабораторные тесты» формы W03 «Сведения о группе переносчиков / отдельном переносчике заболевания»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i6.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.4.4" href="vs_w05.htm" target="hmcontent"><span class="heading3" id="s6.4.4">Форма W05 «Копирование группы переносчиков / отдельного переносчика заболевания»</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href=javascript:void(0);><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Основной синдромный надзор</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="ss_operations.htm" target="hmcontent"><span class="heading2" id="s7.1" ondblclick="return dblclicked(this)">Операции с отчётами «Основного синдромного надзора»;</span></a>
+<ul id="ul7.1" style="list-style-type:none">
+<li class="heading3" id="i7.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.1" href="ss_create.htm" target="hmcontent"><span class="heading3" id="s7.1.1">Создание отчёта «Основной синдромный надзор»;</span></a>
+</li>
+<li class="heading3" id="i7.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.2" href="ss_search.htm" target="hmcontent"><span class="heading3" id="s7.1.2">Поиск отчёта «Основной синдромный надзор»;</span></a>
+</li>
+<li class="heading3" id="i7.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.3" href="ss_edit.htm" target="hmcontent"><span class="heading3" id="s7.1.3">Редактирование отчёта «Основной синдромный надзор»;</span></a>
+</li>
+<li class="heading3" id="i7.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.1.4" href="ss_delete.htm" target="hmcontent"><span class="heading3" id="s7.1.4">Удаление отчёта «Основной синдромный надзор»;</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="ss_operations_2.htm" target="hmcontent"><span class="heading2" id="s7.2" ondblclick="return dblclicked(this)">Операции с отчётами «Агрегированные данные ГПЗ»;</span></a>
+<ul id="ul7.2" style="list-style-type:none">
+<li class="heading3" id="i7.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.1" href="ss_aggr_create.htm" target="hmcontent"><span class="heading3" id="s7.2.1">Создание отчёта «Агрегированные данные ГПЗ»;</span></a>
+</li>
+<li class="heading3" id="i7.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.2" href="ss_aggr_search.htm" target="hmcontent"><span class="heading3" id="s7.2.2">Поиск отчёта «Агрегированные данные ГПЗ»;</span></a>
+</li>
+<li class="heading3" id="i7.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.3" href="ss_aggr_edit.htm" target="hmcontent"><span class="heading3" id="s7.2.3">Редактирование отчёта «Агрегированные данные ГПЗ»;</span></a>
+</li>
+<li class="heading3" id="i7.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.4" href="ss_aggr_delete.htm" target="hmcontent"><span class="heading3" id="s7.2.4">Удаление отчёта «Агрегированные данные ГПЗ»;</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="ss_forms.htm" target="hmcontent"><span class="heading2" id="s7.3" ondblclick="return dblclicked(this)">Описание экранных форм</span></a>
+<ul id="ul7.3" style="list-style-type:none">
+<li class="heading3" id="i7.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.1" href="ss_form.htm" target="hmcontent"><span class="heading3" id="s7.3.1">Форма «Основной синдромный надзор»;</span></a>
+</li>
+<li class="heading3" id="i7.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.2" href="ss_list.htm" target="hmcontent"><span class="heading3" id="s7.3.2">Список форм «Основной синдромный надзор»;</span></a>
+</li>
+<li class="heading3" id="i7.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.3" href="ss_aggr_form.htm" target="hmcontent"><span class="heading3" id="s7.3.3">Форма «Агрегированные данные ГПЗ»;</span></a>
+</li>
+<li class="heading3" id="i7.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.4" href="ss_aggr_list.htm" target="hmcontent"><span class="heading3" id="s7.3.4">Список форм «Агрегированные данные ГПЗ».</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="laboratory_management.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Лабораторный модуль</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="laboratory_management_overview.htm" target="hmcontent"><span class="heading2" id="s8.1">Обзор лабораторного модуля</span></a>
+</li>
+<li class="heading2" id="i8.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href=javascript:void(0);><span class="heading2" id="s8.2" ondblclick="return dblclicked(this)">Запуск «Лабораторного модуля»</span></a>
+<ul id="ul8.2" style="list-style-type:none">
+<li class="heading3" id="i8.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.1" href="sample_statuses.htm" target="hmcontent"><span class="heading3" id="s8.2.1">Статусы пробы</span></a>
+</li>
+<li class="heading3" id="i8.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.2" href="test_statuses.htm" target="hmcontent"><span class="heading3" id="s8.2.2">Статусы теста</span></a>
+</li>
+<li class="heading3" id="i8.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.3" href="simple_search_in_laboratory_se.htm" target="hmcontent"><span class="heading3" id="s8.2.3">Опция простого поиска в лабораторном разделе</span></a>
+</li>
+<li class="heading3" id="i8.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.4" href="extended_search_in_lm.htm" target="hmcontent"><span class="heading3" id="s8.2.4">Опция расширенного поиска в лабораторном модуле</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="lab_operations.htm" target="hmcontent"><span class="heading2" id="s8.3" ondblclick="return dblclicked(this)">Операции в лабораторном модуле</span></a>
+<ul id="ul8.3" style="list-style-type:none">
+<li class="heading3" id="i8.3.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.1" href="accession_in_a_sample__linked_.htm" target="hmcontent"><span class="heading3" id="s8.3.1" ondblclick="return dblclicked(this)">Приём в систему / получение передававшихся(-ейся) проб(-ы)</span></a>
+<ul id="ul8.3.1" style="list-style-type:none">
+<li class="heading4" id="i8.3.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.1" href="lab_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s8.3.1.1">Приём в систему пробы, связанной или нет со случаем заболевания/сессией (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.2" href="enter_and_accession_in_sample_.htm" target="hmcontent"><span class="heading4" id="s8.3.1.2">Регистрация и приём в систему пробы, не связанной со случаем заболевания/сессией (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.3" href="labs_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s8.3.1.3">Приём в систему / получение передававшихся(-ейся) существующих(-ей) проб(-ы), связанных(-ой) со случаем заболевания / сессией (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.4" href="lab_access_group.htm" target="hmcontent"><span class="heading4" id="s8.3.1.4">Приём в систему группы проб (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.5" href="labs_access_group.htm" target="hmcontent"><span class="heading4" id="s8.3.1.5">Приём в систему группы проб (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.1.6" href="lab_sample_in.htm" target="hmcontent"><span class="heading4" id="s8.3.1.6">Обратное получение пробы (ОФ)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.2" href="create_aliquot.htm" target="hmcontent"><span class="heading3" id="s8.3.2" ondblclick="return dblclicked(this)">Создание аликвоты</span></a>
+<ul id="ul8.3.2" style="list-style-type:none">
+<li class="heading4" id="i8.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.1" href="lab_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s8.3.2.1">Создание аликвоты (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.2.2" href="labs_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s8.3.2.2">Создание аликвоты (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.3" href="create_derivative.htm" target="hmcontent"><span class="heading3" id="s8.3.3" ondblclick="return dblclicked(this)">Создание деривата</span></a>
+<ul id="ul8.3.3" style="list-style-type:none">
+<li class="heading4" id="i8.3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.3.1" href="lab_derivative_create.htm" target="hmcontent"><span class="heading4" id="s8.3.3.1">Создание деривата (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.3.2" href="labs_deriv_create.htm" target="hmcontent"><span class="heading4" id="s8.3.3.2">Создание деривата (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.4" href="assign_test.htm" target="hmcontent"><span class="heading3" id="s8.3.4" ondblclick="return dblclicked(this)">Назначение теста</span></a>
+<ul id="ul8.3.4" style="list-style-type:none">
+<li class="heading4" id="i8.3.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.4.1" href="assign_tests_during_sample_acc.htm" target="hmcontent"><span class="heading4" id="s8.3.4.1">Назначение тестов во время приёма пробы в систему (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.4.2" href="assign_tests_from_samples_list.htm" target="hmcontent"><span class="heading4" id="s8.3.4.2">Назначение тестов в форме «Список проб» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.4.3" href="assign_tests_from_the_sample_d.htm" target="hmcontent"><span class="heading4" id="s8.3.4.3">Назначение тестов из формы «Проба» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.4.4" href="labs_test_assign.htm" target="hmcontent"><span class="heading4" id="s8.3.4.4">Назначение теста из раскрывающегося меню (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.4.5" href="assign_test_in_laboratory_sect.htm" target="hmcontent"><span class="heading4" id="s8.3.4.5">Назначение теста в таблице лабораторного раздела (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.5" href="start_test.htm" target="hmcontent"><span class="heading3" id="s8.3.5" ondblclick="return dblclicked(this)">Начало теста</span></a>
+<ul id="ul8.3.5" style="list-style-type:none">
+<li class="heading4" id="i8.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.5.1" href="lab_test_start.htm" target="hmcontent"><span class="heading4" id="s8.3.5.1">Начало теста в форме «Сведения о лабораторном тесте (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.5.2" href="start_test_in_sample_form.htm" target="hmcontent"><span class="heading4" id="s8.3.5.2">Начало теста в форме «Проба» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.5.3" href="start_tests_ls.htm" target="hmcontent"><span class="heading4" id="s8.3.5.3">Раскрывающееся меню «Начало тестов» (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.5.4" href="start_test_in_laboratory_secti.htm" target="hmcontent"><span class="heading4" id="s8.3.5.4">Начало теста в таблице лабораторного раздела (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.6" href="enter_test_result.htm" target="hmcontent"><span class="heading3" id="s8.3.6" ondblclick="return dblclicked(this)">Ввод результата теста</span></a>
+<ul id="ul8.3.6" style="list-style-type:none">
+<li class="heading4" id="i8.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.1" href="lab_test_result_set.htm" target="hmcontent"><span class="heading4" id="s8.3.6.1">Ввод результата теста (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.2" href="labs_test_result_set.htm" target="hmcontent"><span class="heading4" id="s8.3.6.2">Ввод результата теста (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.3" href="lab_test_result_external.htm" target="hmcontent"><span class="heading4" id="s8.3.6.3">Указание результата теста, проводившегося во внешней лаборатории (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.4" href="labs_test_result_external.htm" target="hmcontent"><span class="heading4" id="s8.3.6.4">Указание результата теста, проводившегося во внешней лаборатории (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.7" href="labs_test_val.htm" target="hmcontent"><span class="heading3" id="s8.3.7">Утверждение результата теста (ЛР)</span></a>
+</li>
+<li class="heading3" id="i8.3.8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.8" href="amend_test_result.htm" target="hmcontent"><span class="heading3" id="s8.3.8" ondblclick="return dblclicked(this)">Исправление результата теста</span></a>
+<ul id="ul8.3.8" style="list-style-type:none">
+<li class="heading4" id="i8.3.8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.8.1" href="lab_test_amend.htm" target="hmcontent"><span class="heading4" id="s8.3.8.1">Изменение результата теста (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.8.2" href="labs_test_amend.htm" target="hmcontent"><span class="heading4" id="s8.3.8.2">Изменение результата теста (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.9" href="mark_for_destruction.htm" target="hmcontent"><span class="heading3" id="s8.3.9" ondblclick="return dblclicked(this)">Отметка для уничтожения</span></a>
+<ul id="ul8.3.9" style="list-style-type:none">
+<li class="heading4" id="i8.3.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.9.1" href="lab_sample_delete.htm" target="hmcontent"><span class="heading4" id="s8.3.9.1">Отметка пробы для уничтожения (ликвидации) (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.9.2" href="labs_sample_mark.htm" target="hmcontent"><span class="heading4" id="s8.3.9.2">Отметка пробы для стандартного уничтожения (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.10" href="destroy_sample.htm" target="hmcontent"><span class="heading3" id="s8.3.10" ondblclick="return dblclicked(this)">Принятие уничтожения пробы</span></a>
+<ul id="ul8.3.10" style="list-style-type:none">
+<li class="heading4" id="i8.3.10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.10.1" href="lab_destroy_sample.htm" target="hmcontent"><span class="heading4" id="s8.3.10.1">Принятие уничтожения пробы (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.10.2" href="labs_sample_destruction.htm" target="hmcontent"><span class="heading4" id="s8.3.10.2">Принятие уничтожения пробы (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.11" href="reject_destruction.htm" target="hmcontent"><span class="heading3" id="s8.3.11" ondblclick="return dblclicked(this)">Отклонить уничтожение</span></a>
+<ul id="ul8.3.11" style="list-style-type:none">
+<li class="heading4" id="i8.3.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.11.1" href="lab_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s8.3.11.1">Отклонение уничтожения (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.11.2" href="labs_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s8.3.11.2">Отклонение уничтожения (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.12" href="transfer_out_sample.htm" target="hmcontent"><span class="heading3" id="s8.3.12" ondblclick="return dblclicked(this)">Передача пробы</span></a>
+<ul id="ul8.3.12" style="list-style-type:none">
+<li class="heading4" id="i8.3.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.12.1" href="lab_sample_out.htm" target="hmcontent"><span class="heading4" id="s8.3.12.1">Передача пробы во внешнюю организацию (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.12.2" href="labs_sample_out.htm" target="hmcontent"><span class="heading4" id="s8.3.12.2">Передача пробы во внешнюю организацию, выбранную в раскрывающемся меню (ЛР)</span></a>
+</li>
+<li class="heading4" id="i8.3.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.12.3" href="transfer_out_sample_in_laborat.htm" target="hmcontent"><span class="heading4" id="s8.3.12.3">Передача пробы во внешнюю организацию в таблице лабораторного раздела (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.13" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.13" href="work_with_batches.htm" target="hmcontent"><span class="heading3" id="s8.3.13" ondblclick="return dblclicked(this)">Работа с группами</span></a>
+<ul id="ul8.3.13" style="list-style-type:none">
+<li class="heading4" id="i8.3.13.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.13.1" href="lab_batch_create.htm" target="hmcontent"><span class="heading4" id="s8.3.13.1" ondblclick="return dblclicked(this)">Создание группы (ОФ)</span></a>
+<ul id="ul8.3.13.1" style="list-style-type:none">
+<li class="heading5" id="i8.3.13.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.3.13.1.1" href="create_batch_in_samples_list.htm" target="hmcontent"><span class="heading5" id="s8.3.13.1.1">Создание группы в форме «Список тестов»</span></a>
+</li>
+<li class="heading5" id="i8.3.13.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.3.13.1.2" href="create_batch_in_batches_list_f.htm" target="hmcontent"><span class="heading5" id="s8.3.13.1.2">Создание группы в форме «Список групп»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i8.3.13.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.13.2" href="lab_batch_final.htm" target="hmcontent"><span class="heading4" id="s8.3.13.2">Закрытие группы (ОФ)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.14" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.14" href="edit_sample_information.htm" target="hmcontent"><span class="heading3" id="s8.3.14" ondblclick="return dblclicked(this)">Просмотр и редактирование сведений о пробе</span></a>
+<ul id="ul8.3.14" style="list-style-type:none">
+<li class="heading4" id="i8.3.14.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.14.1" href="lab_sample_edit.htm" target="hmcontent"><span class="heading4" id="s8.3.14.1">Просмотр и редактирование сведений о пробе (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.14.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.14.2" href="labs_sample_edit.htm" target="hmcontent"><span class="heading4" id="s8.3.14.2">Просмотр и редактирование сведений о пробе (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.15" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.15" href="edit_test_details.htm" target="hmcontent"><span class="heading3" id="s8.3.15" ondblclick="return dblclicked(this)">Просмотр и редактирование сведений о тесте</span></a>
+<ul id="ul8.3.15" style="list-style-type:none">
+<li class="heading4" id="i8.3.15.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.15.1" href="edit_test_details_in_laborator.htm" target="hmcontent"><span class="heading4" id="s8.3.15.1">Просмотр и редактирование сведений о тесте в форме «Сведения о лабораторном тесте (ОФ)»</span></a>
+</li>
+<li class="heading4" id="i8.3.15.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.15.2" href="edit_test_details_in_samle_det.htm" target="hmcontent"><span class="heading4" id="s8.3.15.2">Просмотр и редактирование сведений о тесте в форме «Проба» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.15.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.15.3" href="labs_test_edit.htm" target="hmcontent"><span class="heading4" id="s8.3.15.3">Просмотр и редактирование сведений о тесте (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.16" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.16" href="delete_sample_record.htm" target="hmcontent"><span class="heading3" id="s8.3.16" ondblclick="return dblclicked(this)">Удаление пробы или записи по тесту</span></a>
+<ul id="ul8.3.16" style="list-style-type:none">
+<li class="heading4" id="i8.3.16.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.16.1" href="lab_sample_dispose_2.htm" target="hmcontent"><span class="heading4" id="s8.3.16.1">Удаление пробы (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.16.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.16.2" href="labs_sample_dispose.htm" target="hmcontent"><span class="heading4" id="s8.3.16.2">Удаление пробы (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.17" href="delete_test_record.htm" target="hmcontent"><span class="heading3" id="s8.3.17" ondblclick="return dblclicked(this)">Удаление записи по тесту</span></a>
+<ul id="ul8.3.17" style="list-style-type:none">
+<li class="heading4" id="i8.3.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.17.1" href="delete_test_in_laboratory_test.htm" target="hmcontent"><span class="heading4" id="s8.3.17.1">Удаление теста в форме «Список лабораторных тестов» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.17.2" href="delete_test_inin_sample_detail.htm" target="hmcontent"><span class="heading4" id="s8.3.17.2">Удаление теста в форме «Сведения о пробе» (ОФ)</span></a>
+</li>
+<li class="heading4" id="i8.3.17.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.17.3" href="labs_test_delete.htm" target="hmcontent"><span class="heading4" id="s8.3.17.3">Удаление теста (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.18" href="lab_add_to_preferences.htm" target="hmcontent"><span class="heading3" id="s8.3.18">Добавление записи в личные настройки / удаление записи из списка личных настроек (ЛР)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.4" href="lab_forms.htm" target="hmcontent"><span class="heading2" id="s8.4" ondblclick="return dblclicked(this)">Описание экранных форм</span></a>
+<ul id="ul8.4" style="list-style-type:none">
+<li class="heading3" id="i8.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.1" href="lab_l01.htm" target="hmcontent"><span class="heading3" id="s8.4.1">Форма L01 «Список проб»</span></a>
+</li>
+<li class="heading3" id="i8.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.2" href="lab_l02.htm" target="hmcontent"><span class="heading3" id="s8.4.2" ondblclick="return dblclicked(this)">Форма L02 «Проба»</span></a>
+<ul id="ul8.4.2" style="list-style-type:none">
+<li class="heading4" id="i8.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.2.1" href="general_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s8.4.2.1">Вкладка «Общая информация» формы L02 «Пробы»</span></a>
+</li>
+<li class="heading4" id="i8.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.2.2" href="test_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s8.4.2.2">Вкладка «Тесты» формы L02 «Проба»</span></a>
+</li>
+<li class="heading4" id="i8.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.2.3" href="sample_transfer_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s8.4.2.3">Вкладка «Передача пробы» формы L02 «Проба»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.3" href="lab_l03.htm" target="hmcontent"><span class="heading3" id="s8.4.3">Форма L03 «Список лабораторных тестов»</span></a>
+</li>
+<li class="heading3" id="i8.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.4" href="lab_l04.htm" target="hmcontent"><span class="heading3" id="s8.4.4" ondblclick="return dblclicked(this)">Форма L04 «Сведения о лабораторном тесте»</span></a>
+<ul id="ul8.4.4" style="list-style-type:none">
+<li class="heading4" id="i8.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.1" href="general_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s8.4.4.1">Вкладка «Общая информация» формы L04 «Сведения о лабораторном тесте»</span></a>
+</li>
+<li class="heading4" id="i8.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.2" href="tests_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s8.4.4.2">Вкладка «Тест» формы L04 «Сведения о лабораторном тесте»</span></a>
+</li>
+<li class="heading4" id="i8.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.3" href="sample_details_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s8.4.4.3">Вкладка «Сведения о пробе» формы L04 «Сведения о лабораторном тесте»</span></a>
+</li>
+<li class="heading4" id="i8.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.4" href="amendment_history_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s8.4.4.4">Вкладка «История изменений» формы L04 «Сведения о лабораторном тесте»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.5" href="lab_l05.htm" target="hmcontent"><span class="heading3" id="s8.4.5" ondblclick="return dblclicked(this)">Форма L05 «Приём в систему»</span></a>
+<ul id="ul8.4.5" style="list-style-type:none">
+<li class="heading4" id="i8.4.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.5.1" href="accession_in_for_human_case.htm" target="hmcontent"><span class="heading4" id="s8.4.5.1">Форма L05 «Приём в систему &nbsp;случая заболевания человека»</span></a>
+</li>
+<li class="heading4" id="i8.4.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.5.2" href="accession_in_for_vet_case.htm" target="hmcontent"><span class="heading4" id="s8.4.5.2">Форма L05 «Приём в систему случая заболевания животного»</span></a>
+</li>
+<li class="heading4" id="i8.4.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.5.3" href="accession_in_for_as_session.htm" target="hmcontent"><span class="heading4" id="s8.4.5.3">Форма L05 «Приём в систему в рамках сессии АН»</span></a>
+</li>
+<li class="heading4" id="i8.4.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.5.4" href="accession_in_for_vs_session.htm" target="hmcontent"><span class="heading4" id="s8.4.5.4">Форма L05 «Приём в систему в рамках сессии НЗПЗ»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.6" href="lab_l06.htm" target="hmcontent"><span class="heading3" id="s8.4.6">Форма L06 «Аликвоты/дериваты»</span></a>
+</li>
+<li class="heading3" id="i8.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.7" href="lab_l07.htm" target="hmcontent"><span class="heading3" id="s8.4.7">Форма L07 «Отмеченные на уничтожение пробы»</span></a>
+</li>
+<li class="heading3" id="i8.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.8" href="lab_l08.htm" target="hmcontent"><span class="heading3" id="s8.4.8">Форма L08 «Уничтожение пробы»</span></a>
+</li>
+<li class="heading3" id="i8.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.9" href="lab_l09.htm" target="hmcontent"><span class="heading3" id="s8.4.9">Форма L09 «Список передач»</span></a>
+</li>
+<li class="heading3" id="i8.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.10" href="lab_l10.htm" target="hmcontent"><span class="heading3" id="s8.4.10">Форма L10 «Передача пробы»</span></a>
+</li>
+<li class="heading3" id="i8.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.11" href="lab_l11.htm" target="hmcontent"><span class="heading3" id="s8.4.11">Форма L11 «Список холодильников»</span></a>
+</li>
+<li class="heading3" id="i8.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.12" href="lab_l12.htm" target="hmcontent"><span class="heading3" id="s8.4.12">Форма L12 «Схема хранения»</span></a>
+</li>
+<li class="heading3" id="i8.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.13" href="lab_l13.htm" target="hmcontent"><span class="heading3" id="s8.4.13">Форма L13 «Приём в систему группы»</span></a>
+</li>
+<li class="heading3" id="i8.4.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.14" href="lab_l20.htm" target="hmcontent"><span class="heading3" id="s8.4.14">Форма L20 «Выбор тестов»</span></a>
+</li>
+<li class="heading3" id="i8.4.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.15" href="lab_l21.htm" target="hmcontent"><span class="heading3" id="s8.4.15">Форма L21 «Список групп»</span></a>
+</li>
+<li class="heading3" id="i8.4.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.16" href="lab_l22.htm" target="hmcontent"><span class="heading3" id="s8.4.16">Форма L22 «Сведения о тесте группы»</span></a>
+</li>
+<li class="heading3" id="i8.4.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.17" href="lab_l25.htm" target="hmcontent"><span class="heading3" id="s8.4.17" ondblclick="return dblclicked(this)">Форма L25 «Лабораторный раздел»</span></a>
+<ul id="ul8.4.17" style="list-style-type:none">
+<li class="heading4" id="i8.4.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.17.1" href="search_panel_of_laboratory_sec.htm" target="hmcontent"><span class="heading4" id="s8.4.17.1">Панель поиска лабораторного раздела</span></a>
+</li>
+<li class="heading4" id="i8.4.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.17.2" href="laboratory_records_list.htm" target="hmcontent"><span class="heading4" id="s8.4.17.2">Вкладки Лабораторный раздел и Мои личные настройки</span></a>
+</li>
+<li class="heading4" id="i8.4.17.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.17.3" href="lab_record_detailed_form.htm" target="hmcontent"><span class="heading4" id="s8.4.17.3" ondblclick="return dblclicked(this)">Форма «Сведения о лабораторной записи»</span></a>
+<ul id="ul8.4.17.3" style="list-style-type:none">
+<li class="heading5" id="i8.4.17.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.17.3.1" href="sample_details_tab_of_labrecdet.htm" target="hmcontent"><span class="heading5" id="s8.4.17.3.1">Вкладка «Сведения о пробе» формы «Сведения о лабораторной записи»;</span></a>
+</li>
+<li class="heading5" id="i8.4.17.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.17.3.2" href="test_details_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s8.4.17.3.2">Вкладка «Сведения о тесте» формы «Сведения о лабораторной записи»</span></a>
+</li>
+<li class="heading5" id="i8.4.17.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.17.3.3" href="amendment_history_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s8.4.17.3.3">Вкладка «История изменений» формы «Сведения о лабораторной записи»</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.18" href="labs_l32.htm" target="hmcontent"><span class="heading3" id="s8.4.18">Форма L32 «Назначение теста»</span></a>
+</li>
+<li class="heading3" id="i8.4.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.19" href="lab_l35.htm" target="hmcontent"><span class="heading3" id="s8.4.19">Форма L35 «Регистрация новой пробы»&nbsp;</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href=javascript:void(0);><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Анализ, визуализация и отчётность</span></a>
+<ul id="ul9" style="list-style-type:none">
+<li class="heading2" id="i9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="avr_introduction.htm" target="hmcontent"><span class="heading2" id="s9.1">Введение в модуль АВО</span></a>
+</li>
+<li class="heading2" id="i9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href="avr_getting_started.htm" target="hmcontent"><span class="heading2" id="s9.2">Запуск модуля АВО</span></a>
+</li>
+<li class="heading2" id="i9.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.3" href="queries.htm" target="hmcontent"><span class="heading2" id="s9.3" ondblclick="return dblclicked(this)">Запросы</span></a>
+<ul id="ul9.3" style="list-style-type:none">
+<li class="heading3" id="i9.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.1" href="create_query.htm" target="hmcontent"><span class="heading3" id="s9.3.1">Создание запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.2" href="edit_query.htm" target="hmcontent"><span class="heading3" id="s9.3.2">Редактирование запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.3" href="edit_query_name_and_descrption.htm" target="hmcontent"><span class="heading3" id="s9.3.3">Редактирование названия и описания запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.4" href="edit_query_objects_list.htm" target="hmcontent"><span class="heading3" id="s9.3.4">Редактирование списка объектов запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.5" href="edit_query_fields_list.htm" target="hmcontent"><span class="heading3" id="s9.3.5">Редактирование списка полей запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.6" href="edit_query_filters.htm" target="hmcontent"><span class="heading3" id="s9.3.6" ondblclick="return dblclicked(this)">Редактирование фильтров запроса</span></a>
+<ul id="ul9.3.6" style="list-style-type:none">
+<li class="heading4" id="i9.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading4" id="s9.3.6.1">Добавление/удаление кнопок</span></a>
+</li>
+<li class="heading4" id="i9.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.2" href="combining_operators.htm" target="hmcontent"><span class="heading4" id="s9.3.6.2">Объединяющие операторы</span></a>
+</li>
+<li class="heading4" id="i9.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.3" href="comparison_operators.htm" target="hmcontent"><span class="heading4" id="s9.3.6.3">Операторы сравнения</span></a>
+</li>
+<li class="heading4" id="i9.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.4" href="criteria_value.htm" target="hmcontent"><span class="heading4" id="s9.3.6.4">Значение критерия</span></a>
+</li>
+<li class="heading4" id="i9.3.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.5" href="field_name.htm" target="hmcontent"><span class="heading4" id="s9.3.6.5">Название поля</span></a>
+</li>
+<li class="heading4" id="i9.3.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.6" href="report_type_filter.htm" target="hmcontent"><span class="heading4" id="s9.3.6.6">Фильтр «Тип отчёта»</span></a>
+</li>
+<li class="heading4" id="i9.3.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.7" href="exists_filter.htm" target="hmcontent"><span class="heading4" id="s9.3.6.7">Фильтр «Существует»</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.7" href="add_key_values.htm" target="hmcontent"><span class="heading3" id="s9.3.7">Добавление ключевых значений</span></a>
+</li>
+<li class="heading3" id="i9.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.8" href="cancel_changes.htm" target="hmcontent"><span class="heading3" id="s9.3.8">Отмена изменений</span></a>
+</li>
+<li class="heading3" id="i9.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.9" href="save_query.htm" target="hmcontent"><span class="heading3" id="s9.3.9">Сохранение запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.10" href="close_query.htm" target="hmcontent"><span class="heading3" id="s9.3.10">Закрытие запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.11" href="delete_query.htm" target="hmcontent"><span class="heading3" id="s9.3.11">Удаление запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.12" href="copy_query.htm" target="hmcontent"><span class="heading3" id="s9.3.12">Копирование запроса</span></a>
+</li>
+<li class="heading3" id="i9.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.13" href="export_query.htm" target="hmcontent"><span class="heading3" id="s9.3.13">Экспорт запроса</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.4" href="layouts.htm" target="hmcontent"><span class="heading2" id="s9.4" ondblclick="return dblclicked(this)">Макеты</span></a>
+<ul id="ul9.4" style="list-style-type:none">
+<li class="heading3" id="i9.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.1" href="create_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.1">Создание макета</span></a>
+</li>
+<li class="heading3" id="i9.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.2" href="edit_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.2">Редактирование макета</span></a>
+</li>
+<li class="heading3" id="i9.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.3" href="edit_layout_name_and_descripti.htm" target="hmcontent"><span class="heading3" id="s9.4.3">Редактирование названия и описания макета</span></a>
+</li>
+<li class="heading3" id="i9.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.4" href="constructworking_with_pivot_grid.htm" target="hmcontent"><span class="heading3" id="s9.4.4" ondblclick="return dblclicked(this)">Сводная таблица</span></a>
+<ul id="ul9.4.4" style="list-style-type:none">
+<li class="heading4" id="i9.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.1" href="construct_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s9.4.4.1">Построение сводной таблицы</span></a>
+</li>
+<li class="heading4" id="i9.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.2" href="rename_fields.htm" target="hmcontent"><span class="heading4" id="s9.4.4.2">Переименование полей</span></a>
+</li>
+<li class="heading4" id="i9.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.3" href="apply_aggregate_functions.htm" target="hmcontent"><span class="heading4" id="s9.4.4.3">Применение функций агрегирования</span></a>
+</li>
+<li class="heading4" id="i9.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.4" href="group_date_function.htm" target="hmcontent"><span class="heading4" id="s9.4.4.4">Функция группировки по дате</span></a>
+</li>
+<li class="heading4" id="i9.4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.5" href="show_missed_values.htm" target="hmcontent"><span class="heading4" id="s9.4.4.5">Показ недостающих значений</span></a>
+</li>
+<li class="heading4" id="i9.4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.6" href="show_totals.htm" target="hmcontent"><span class="heading4" id="s9.4.4.6">Показ итоговых значений</span></a>
+</li>
+<li class="heading4" id="i9.4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.7" href="copy_fields.htm" target="hmcontent"><span class="heading4" id="s9.4.4.7">Копирование полей</span></a>
+</li>
+<li class="heading4" id="i9.4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.8" href="freeze_row_headers_in_pivot_gr.htm" target="hmcontent"><span class="heading4" id="s9.4.4.8">Закрепление заголовков строк в сводной таблице</span></a>
+</li>
+<li class="heading4" id="i9.4.4.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.9" href="apply_filters.htm" target="hmcontent"><span class="heading4" id="s9.4.4.9" ondblclick="return dblclicked(this)">Применение фильтров</span></a>
+<ul id="ul9.4.4.9" style="list-style-type:none">
+<li class="heading5" id="i9.4.4.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.4.9.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading5" id="s9.4.4.9.1">Добавление/удаление кнопок</span></a>
+</li>
+<li class="heading5" id="i9.4.4.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.4.9.2" href="combining_operators.htm" target="hmcontent"><span class="heading5" id="s9.4.4.9.2">Объединяющие операторы</span></a>
+</li>
+<li class="heading5" id="i9.4.4.9.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.4.9.3" href="field_name.htm" target="hmcontent"><span class="heading5" id="s9.4.4.9.3">Название поля</span></a>
+</li>
+<li class="heading5" id="i9.4.4.9.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.4.9.4" href="comparison_operators.htm" target="hmcontent"><span class="heading5" id="s9.4.4.9.4">Операторы сравнения</span></a>
+</li>
+<li class="heading5" id="i9.4.4.9.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.4.9.5" href="criteria_value.htm" target="hmcontent"><span class="heading5" id="s9.4.4.9.5">Значение критерия</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i9.4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.10" href="compact_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s9.4.4.10">Компактный вид сводной таблицы</span></a>
+</li>
+<li class="heading4" id="i9.4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.11" href="show_data_in_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s9.4.4.11">Отображение данных в сводной таблице</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.5" href="refresh_data.htm" target="hmcontent"><span class="heading3" id="s9.4.5">Обновление данных</span></a>
+</li>
+<li class="heading3" id="i9.4.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.6" href="working_with_view.htm" target="hmcontent"><span class="heading3" id="s9.4.6" ondblclick="return dblclicked(this)">Виды представления данных</span></a>
+<ul id="ul9.4.6" style="list-style-type:none">
+<li class="heading4" id="i9.4.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.1" href="open_view.htm" target="hmcontent"><span class="heading4" id="s9.4.6.1">Открыть вид представления данных</span></a>
+</li>
+<li class="heading4" id="i9.4.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.2" href="add_aggregate_column.htm" target="hmcontent"><span class="heading4" id="s9.4.6.2">Добавление столбца агрегированных данных</span></a>
+</li>
+<li class="heading4" id="i9.4.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.3" href="filter__data_in_columns.htm" target="hmcontent"><span class="heading4" id="s9.4.6.3">Фильтрация данных в столбце</span></a>
+</li>
+<li class="heading4" id="i9.4.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.4" href="sort_data_in_columns.htm" target="hmcontent"><span class="heading4" id="s9.4.6.4">Сортировка данных в столбце</span></a>
+</li>
+<li class="heading4" id="i9.4.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.5" href="hide_show_columns.htm" target="hmcontent"><span class="heading4" id="s9.4.6.5">Скрытие / отображение столбца / группы столбцов</span></a>
+</li>
+<li class="heading4" id="i9.4.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.6" href="rename_column_band.htm" target="hmcontent"><span class="heading4" id="s9.4.6.6">Переименование столбца / группы столбцов</span></a>
+</li>
+<li class="heading4" id="i9.4.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.7" href="reorder_columns_bands.htm" target="hmcontent"><span class="heading4" id="s9.4.6.7">Изменение порядка расположения столбцов / группы столбцов</span></a>
+</li>
+<li class="heading4" id="i9.4.6.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.8" href="reset_view.htm" target="hmcontent"><span class="heading4" id="s9.4.6.8">Сброс вида представления данных</span></a>
+</li>
+<li class="heading4" id="i9.4.6.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.9" href="print_view_report.htm" target="hmcontent"><span class="heading4" id="s9.4.6.9">Печать вида представления данных (отчёта)</span></a>
+</li>
+<li class="heading4" id="i9.4.6.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.10" href="export_layout.htm" target="hmcontent"><span class="heading4" id="s9.4.6.10">Экспорт вида представления данных</span></a>
+</li>
+<li class="heading4" id="i9.4.6.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.11" href="avr_in_maps.htm" target="hmcontent"><span class="heading4" id="s9.4.6.11" ondblclick="return dblclicked(this)">Географические карты в модуле АВО</span></a>
+<ul id="ul9.4.6.11" style="list-style-type:none">
+<li class="heading5" id="i9.4.6.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.11.1" href="show_map.htm" target="hmcontent"><span class="heading5" id="s9.4.6.11.1">Показ географической карты</span></a>
+</li>
+<li class="heading5" id="i9.4.6.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.11.2" href="print_map.htm" target="hmcontent"><span class="heading5" id="s9.4.6.11.2">Печать географической карты</span></a>
+</li>
+<li class="heading5" id="i9.4.6.11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.11.3" href="export_map.htm" target="hmcontent"><span class="heading5" id="s9.4.6.11.3">Экспорт географической карты</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i9.4.6.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.6.12" href="avr_chart_management.htm" target="hmcontent"><span class="heading4" id="s9.4.6.12" ondblclick="return dblclicked(this)">Диаграммы в модуле АВО</span></a>
+<ul id="ul9.4.6.12" style="list-style-type:none">
+<li class="heading5" id="i9.4.6.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.12.1" href="show_chart.htm" target="hmcontent"><span class="heading5" id="s9.4.6.12.1">Отображение диаграммы</span></a>
+</li>
+<li class="heading5" id="i9.4.6.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.12.2" href="chart_type.htm" target="hmcontent"><span class="heading5" id="s9.4.6.12.2">Изменение типа диаграммы</span></a>
+</li>
+<li class="heading5" id="i9.4.6.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.12.3" href="set_up_axes.htm" target="hmcontent"><span class="heading5" id="s9.4.6.12.3">Настройка вида представления данных в диаграмме</span></a>
+</li>
+<li class="heading5" id="i9.4.6.12.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.12.4" href="print_chart.htm" target="hmcontent"><span class="heading5" id="s9.4.6.12.4">Печать диаграммы</span></a>
+</li>
+<li class="heading5" id="i9.4.6.12.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.6.12.5" href="export_chart.htm" target="hmcontent"><span class="heading5" id="s9.4.6.12.5">Экспорт диаграммы</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.7" href="cancel_changes_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.7">Отмена изменений</span></a>
+</li>
+<li class="heading3" id="i9.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.8" href="save_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.8">Сохранение макета;</span></a>
+</li>
+<li class="heading3" id="i9.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.9" href="close_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.9">Закрытие макета</span></a>
+</li>
+<li class="heading3" id="i9.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.10" href="share_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.10">Общий доступ к макету</span></a>
+</li>
+<li class="heading3" id="i9.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.11" href="delete_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.11">Удаление макета</span></a>
+</li>
+<li class="heading3" id="i9.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.12" href="copy_layout.htm" target="hmcontent"><span class="heading3" id="s9.4.12">Копирование макета</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.5" href=javascript:void(0);><span class="heading2" id="s9.5" ondblclick="return dblclicked(this)">Административные функции</span></a>
+<ul id="ul9.5" style="list-style-type:none">
+<li class="heading3" id="i9.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.1" href="publish_a_layout.htm" target="hmcontent"><span class="heading3" id="s9.5.1">Публикация макета / запроса / папки</span></a>
+</li>
+<li class="heading3" id="i9.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.2" href="unpublish_layout.htm" target="hmcontent"><span class="heading3" id="s9.5.2">Отмена публикации запроса / макета / папки</span></a>
+</li>
+<li class="heading3" id="i9.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.3" href="set_functions_default_precisio.htm" target="hmcontent"><span class="heading3" id="s9.5.3">Настройка точности функций по умолчанию</span></a>
+</li>
+<li class="heading3" id="i9.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.4" href="set_search_object_fields_defau.htm" target="hmcontent"><span class="heading3" id="s9.5.4">Настройка функции агрегирования по умолчанию для полей объектов</span></a>
+</li>
+<li class="heading3" id="i9.5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.5" href="printing.htm" target="hmcontent"><span class="heading3" id="s9.5.5">Печать</span></a>
+</li>
+<li class="heading3" id="i9.5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.5.6" href="use_avr_cache_service.htm" target="hmcontent"><span class="heading3" id="s9.5.6">Использование службы кэширования модуля АВО</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.6" href="forms_description.htm" target="hmcontent"><span class="heading2" id="s9.6" ondblclick="return dblclicked(this)">Описание форм</span></a>
+<ul id="ul9.6" style="list-style-type:none">
+<li class="heading3" id="i9.6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.6.1" href="avr_main_window.htm" target="hmcontent"><span class="heading3" id="s9.6.1" ondblclick="return dblclicked(this)">Главное окно модуля АВО</span></a>
+<ul id="ul9.6.1" style="list-style-type:none">
+<li class="heading4" id="i9.6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.1.1" href="query_folder_layout_tree_edito.htm" target="hmcontent"><span class="heading4" id="s9.6.1.1">Редактор дерева запросов / папок / макетов</span></a>
+</li>
+<li class="heading4" id="i9.6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.1.2" href="main_menu.htm" target="hmcontent"><span class="heading4" id="s9.6.1.2">Главное меню</span></a>
+</li>
+<li class="heading4" id="i9.6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.1.3" href="toolbar.htm" target="hmcontent"><span class="heading4" id="s9.6.1.3">Панель инструментов</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.6.2" href="query_builder.htm" target="hmcontent"><span class="heading3" id="s9.6.2" ondblclick="return dblclicked(this)">Форма «Конструктор запросов»</span></a>
+<ul id="ul9.6.2" style="list-style-type:none">
+<li class="heading4" id="i9.6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.2.1" href="general_query_info.htm" target="hmcontent"><span class="heading4" id="s9.6.2.1">Общая информация запроса</span></a>
+</li>
+<li class="heading4" id="i9.6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.2.2" href="query_search_objects_tree.htm" target="hmcontent"><span class="heading4" id="s9.6.2.2">Дерево объектов поиска запросов</span></a>
+</li>
+<li class="heading4" id="i9.6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.2.3" href="fields_list.htm" target="hmcontent"><span class="heading4" id="s9.6.2.3">Список полей</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.6.3" href="layout_designer.htm" target="hmcontent"><span class="heading3" id="s9.6.3" ondblclick="return dblclicked(this)">Форма «Редактор макетов»</span></a>
+<ul id="ul9.6.3" style="list-style-type:none">
+<li class="heading4" id="i9.6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.3.1" href="info_tab.htm" target="hmcontent"><span class="heading4" id="s9.6.3.1">Вкладка «Информация»</span></a>
+</li>
+<li class="heading4" id="i9.6.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.3.2" href="pivot_grid_tab.htm" target="hmcontent"><span class="heading4" id="s9.6.3.2" ondblclick="return dblclicked(this)">Вкладка «Сводная таблица»</span></a>
+<ul id="ul9.6.3.2" style="list-style-type:none">
+<li class="heading5" id="i9.6.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.6.3.2.1" href="pivot_grid_and_fields_list.htm" target="hmcontent"><span class="heading5" id="s9.6.3.2.1">Сводная таблица и список полей</span></a>
+</li>
+<li class="heading5" id="i9.6.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.6.3.2.2" href="fields_right-click_menu.htm" target="hmcontent"><span class="heading5" id="s9.6.3.2.2">Поля меню, выводимого при нажатии правой кнопки мыши</span></a>
+</li>
+<li class="heading5" id="i9.6.3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.6.3.2.3" href="pivot_grid_settings.htm" target="hmcontent"><span class="heading5" id="s9.6.3.2.3">Настройки сводной таблицы</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i9.6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.3.3" href="view_tab.htm" target="hmcontent"><span class="heading4" id="s9.6.3.3">Вкладка «Вид представления данных»</span></a>
+</li>
+<li class="heading4" id="i9.6.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.3.4" href="chart_editor.htm" target="hmcontent"><span class="heading4" id="s9.6.3.4">Форма «Редактор диаграмм»</span></a>
+</li>
+<li class="heading4" id="i9.6.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.6.3.5" href="map_editor.htm" target="hmcontent"><span class="heading4" id="s9.6.3.5" ondblclick="return dblclicked(this)">Форма «Редактор карт»</span></a>
+<ul id="ul9.6.3.5" style="list-style-type:none">
+<li class="heading5" id="i9.6.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.6.3.5.1" href="layer_control_panel.htm" target="hmcontent"><span class="heading5" id="s9.6.3.5.1">Панель управления слоями</span></a>
+</li>
+<li class="heading5" id="i9.6.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.6.3.5.2" href="map_toolbar_buttons.htm" target="hmcontent"><span class="heading5" id="s9.6.3.5.2">Кнопки панели инструментов карты</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.6.4" href="functional_buttons.htm" target="hmcontent"><span class="heading3" id="s9.6.4">Функциональные кнопки</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.7" href="list_of_avr_search_objects_actual.htm" target="hmcontent"><span class="heading2" id="s9.7">Список объектов поиска АВО и их полей</span></a>
+</li>
+<li class="heading2" id="i9.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.8" href="permissions_and_access_to_avr_.htm" target="hmcontent"><span class="heading2" id="s9.8">Права доступа и доступ к данным модуля АВО</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.png','cicon2.png','cicon1.png');</script>
+</body>
+</html>

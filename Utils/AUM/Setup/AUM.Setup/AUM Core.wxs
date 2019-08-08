@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="AUM Core">
+    <ComponentGroup Id="AUM.Core">
+      <Component Id="$(var.AUM.Core.TargetFileName)" Directory="ApplicationFolder">
+        <File Source="$(var.AUM.Core.TargetPath)" KeyPath="yes" Checksum="yes" />
+      </Component>
+      
+      <?define resource=$(var.AUM.Core.TargetName).resources.dll?>
+
+      <?define source=$(var.AUM.Core.TargetDir)az-Latn-AZ\?>
+      <?define subdir=AZ_LATN_AZ?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.Core.TargetDir)ka-GE\?>
+      <?define subdir=KA_GE?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.Core.TargetDir)kk-KZ\?>
+      <?define subdir=KK_KZ?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.Core.TargetDir)ru-RU\?>
+      <?define subdir=RU_RU?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.Core.TargetDir)uk-UA\?>
+      <?define subdir=UK_UA?>
+      <?include AddResource.wxi?>
+
+      <?undef resource?>
+
+      <ComponentGroupRef Id="InputScripts" />
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment Id="InputScripts">
+    <ComponentGroup Id="InputScripts" Directory="ApplicationFolder">
+      <Component Id="InputScript_1.sql">
+        <File Source="$(var.AUM.Core.ProjectDir)InputScript_1.sql" KeyPath="yes" />
+      </Component>
+      <Component Id="InputScript_2.sql">
+        <File Source="$(var.AUM.Core.ProjectDir)InputScript_2.sql" KeyPath="yes" />
+      </Component>
+      <Component Id="InputScript_3.sql">
+        <File Source="$(var.AUM.Core.ProjectDir)InputScript_3.sql" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

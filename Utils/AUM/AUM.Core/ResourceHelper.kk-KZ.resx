@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="AnotherUpdateProcessIsNowRunning" xml:space="preserve">
+    <value>Қазіргі сәтте басқа жаңарту жүріп жатыр. Кейінірек әрекеттеніп көріңіз.</value>
+  </data>
+	<data name="BackupConfigFilesSuccessfullyComplete" xml:space="preserve">
+    <value>Конфигурациялық файлдарды мұрағаттау ойдағыдай аяқталды.</value>
+  </data>
+	<data name="BackupDB" xml:space="preserve">
+    <value>Деректер базасын мұрағаттау. Бұл бірнеше минутты алуы мүмкін...</value>
+  </data>
+	<data name="BackupDBComplete" xml:space="preserve">
+    <value>Деректер базасын мұрағаттау ойдағыдай аяқталды.</value>
+  </data>
+	<data name="BackupProgramDirectories" xml:space="preserve">
+    <value>Бағдарламалық файлдарды мұрағаттау. Бұл бірнеше минутты алуы мүмкін...</value>
+  </data>
+	<data name="BackupProgramDirectoriesSuccessfullyComplete" xml:space="preserve">
+    <value>Бағдарламалық файлдарды мұрағаттау ойдағыдай аяқталды.</value>
+  </data>
+	<data name="Cannotupdatenow" xml:space="preserve">
+    <value>Қазіргі сәтте жаңарту жүргізу мүмкін емес.</value>
+  </data>
+	<data name="CantConnectToUpdateServer" xml:space="preserve">
+    <value>Жаңарту серверіне қосылу мүмкін емес. Сұраным={0}; Қате={1}</value>
+  </data>
+	<data name="CantFindServerOrDatabaseSettings" xml:space="preserve">
+    <value>Сервердің немесе деректер базасының теңшелімдері табылмады.</value>
+  </data>
+	<data name="ChangingConfigFile" xml:space="preserve">
+    <value>Конфигурациялық файлдардың өзгеруі...</value>
+  </data>
+	<data name="CloseCaption" xml:space="preserve">
+    <value>Жабу</value>
+  </data>
+	<data name="ConfigFilesSuccessfullyChanged" xml:space="preserve">
+    <value>Конфигурациялық файлдар ойдағыдай өзгертілді.</value>
+  </data>
+	<data name="CopyFiles" xml:space="preserve">
+    <value>{0} в {1} файлдарын көшіру</value>
+  </data>
+	<data name="CopyFiles2" xml:space="preserve">
+    <value>Файлдарды көшіру...</value>
+  </data>
+	<data name="CopyFilesSuccessfullyComplete" xml:space="preserve">
+    <value>Файлдарды көшіру ойдағыдай аяқталды</value>
+  </data>
+	<data name="CRCIsInvalidError" xml:space="preserve">
+    <value>Жаңартудың бақылау сомасы дұрыс емес!</value>
+  </data>
+	<data name="DeleteFile" xml:space="preserve">
+    <value>{0} файлын жою...</value>
+  </data>
+	<data name="DeleteGarbageBackups" xml:space="preserve">
+    <value>Қажетсіз мұрағаттық көшірмелерді жою...</value>
+  </data>
+	<data name="ErrorCaption" xml:space="preserve">
+    <value>Қате</value>
+  </data>
+	<data name="ExtractingFiles" xml:space="preserve">
+    <value>Файлдарды алып шығу...</value>
+  </data>
+	<data name="FilesSuccessfullyExtracted" xml:space="preserve">
+    <value>Файлдар ойдағыдай шығарылды.</value>
+  </data>
+	<data name="FullBackup" xml:space="preserve">
+    <value>Жаңартылатын файлдардың толық мұрағаттық көшірмесін құру. Бұл бірнеше минутты алуы мүмкін...</value>
+  </data>
+	<data name="GarbageBackupsFailedDeleted" xml:space="preserve">
+    <value>Қажетсіз мұрағаттық көшірмелерді жою сәтсіз аяқталды. Қате: {0}</value>
+  </data>
+	<data name="GarbageBackupsSuccessfullyDeleted" xml:space="preserve">
+    <value>Қажетсіз мұрағаттық көшірмелер ойдағыдай жойылды</value>
+  </data>
+	<data name="initialization" xml:space="preserve">
+    <value>іске қосу</value>
+  </data>
+	<data name="NowConnected" xml:space="preserve">
+    <value>Қосылды: {0}</value>
+  </data>
+	<data name="RunningScripts" xml:space="preserve">
+    <value>Скрипттерді қосу...</value>
+  </data>
+	<data name="RunScriptMessage" xml:space="preserve">
+    <value>Іске қосу {0}...</value>
+  </data>
+	<data name="ScriptsSuccessfullyExecuted" xml:space="preserve">
+    <value>Скриттер ойдағыдай орындалды</value>
+  </data>
+	<data name="synchronization" xml:space="preserve">
+    <value>синхрондау</value>
+  </data>
+	<data name="TaskCaption" xml:space="preserve">
+    <value>Тапсырма: {0}</value>
+  </data>
+	<data name="ThereAreNoClientsMore" xml:space="preserve">
+    <value>Барлық клиенттік қосымша бағдарламалар деректер базасынан ажыратылды.</value>
+  </data>
+	<data name="ThisUpdateNotCritical" xml:space="preserve">
+    <value>Бұл жаңарту маңызды емес. Сіздің оны іске қосқыңыз келе ме?</value>
+  </data>
+	<data name="TryCopyLogs" xml:space="preserve">
+    <value>Хаттамаларды көшіру...</value>
+  </data>
+	<data name="Unknown" xml:space="preserve">
+    <value>белгісіз</value>
+  </data>
+	<data name="UnknownError" xml:space="preserve">
+    <value>белгісіз қате</value>
+  </data>
+	<data name="UpdateExecuteWithError" xml:space="preserve">
+    <value>Жаңарту {0} қатеге әкеп соқты</value>
+  </data>
+	<data name="UpdateFailed" xml:space="preserve">
+    <value>Жаңарту процесінде {0}-де қате болды</value>
+  </data>
+	<data name="UpdateInterruptedByUser" xml:space="preserve">
+    <value>Жаңартуды пайдаланушы тоқтатты.</value>
+  </data>
+	<data name="UpdateProcessStarted" xml:space="preserve">
+    <value>Жаңарту {0}-де басталды</value>
+  </data>
+	<data name="UpdateRemotePathOrLogRemotePathnotset" xml:space="preserve">
+    <value>Жаңартулары бар папкаға немесе жаңартулар журналы бар папкаға желілік жол берілген жоқ.</value>
+  </data>
+	<data name="UpdateSuccessfullyComplete" xml:space="preserve">
+    <value>Жаңарту {0}-де ойдағыдай аяқталды</value>
+  </data>
+	<data name="updatingAum" xml:space="preserve">
+    <value>AUM-ді жаңарту</value>
+  </data>
+	<data name="updatingDatabase" xml:space="preserve">
+    <value>деректер базасын жаңарту</value>
+  </data>
+	<data name="updatingEIDSS" xml:space="preserve">
+    <value>EIDSS-ті жаңарту</value>
+  </data>
+	<data name="updatingNotificationService" xml:space="preserve">
+    <value>Notification Service жаңарту</value>
+  </data>
+	<data name="WaitingForAnotherClientsExit" xml:space="preserve">
+    <value>Клиенттік қосымша бағдарлама жұмысын аяқтағанша күту (10 минут немесе одан аз)</value>
+  </data>
+	<data name="WorkComplete" xml:space="preserve">
+    <value>Жаңарту ойдағыдай аяқталды. Енді бағдарламаны қайта іске қосуға болады.</value>
+  </data>
+	<data name="ExecuteFilesStarted" xml:space="preserve">
+    <value>Файлдарды іске қосу басталды...</value>
+  </data>
+	<data name="ExecuteFilesFinished" xml:space="preserve">
+    <value>Файлдарды іске қосу ойдағыдай аяқталды</value>
+  </data>
+	<data name="ExecuteFile" xml:space="preserve">
+    <value>{0} файлы іске қосылды...</value>
+  </data>
+	<data name="executingfiles" xml:space="preserve">
+    <value>файлдарды іске қосу</value>
+  </data>
+	<data name="BVUpdateLauncherStarted" xml:space="preserve">
+    <value>BV Updater Launcher is started at {0}</value>
+  </data>
+</root>

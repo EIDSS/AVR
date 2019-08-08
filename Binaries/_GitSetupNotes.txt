@@ -1,0 +1,11 @@
+
+6/11/2019 - First try do not upload any files to Git.  Developer should populate from his/her own huild.    
+6/12/2019 - This folder should only contain this file coming out of Git.  Developer should populate from his/her own huild.
+
+Files should copied here from --  
+
+
+eidss.maih / bih / release   
+eidss.avr.export 
+eidss.avr.export.x86   
+

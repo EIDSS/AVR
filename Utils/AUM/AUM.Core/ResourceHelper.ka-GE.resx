@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="AnotherUpdateProcessIsNowRunning" xml:space="preserve">
+    <value>ამჟამად გაშვებულია განახლების სხვა პროცესი. გთხოვთ სცადოთ მოგვიანებით.</value>
+  </data>
+	<data name="BackupConfigFilesSuccessfullyComplete" xml:space="preserve">
+    <value>კონფიგურაციის ფაილების სარეზერვო არქივაცია წარმატებით დასრულდა.</value>
+  </data>
+	<data name="BackupDB" xml:space="preserve">
+    <value>მიმდონარეობს მონაცემთა ბაზის სარეზერვო არქივაცია. ეს შეიძლება გაგრძელდეს რამოდენიმე წუთი...</value>
+  </data>
+	<data name="BackupDBComplete" xml:space="preserve">
+    <value>მონაცემთა ბაზის სარეზერვო არქივაცია წარმატებით დასრულდა.</value>
+  </data>
+	<data name="BackupProgramDirectories" xml:space="preserve">
+    <value>მიმდინარეობს პროგრამული ფაილების სარეზერვო არქივაცია. ეს შეიძლება გაგრძელდეს რამოდენიმე წუთი...</value>
+  </data>
+	<data name="BackupProgramDirectoriesSuccessfullyComplete" xml:space="preserve">
+    <value>პროგრამული ფაილების სარეზერვო არქივაცია წარმატებით დასრულდა.</value>
+  </data>
+	<data name="Cannotupdatenow" xml:space="preserve">
+    <value>ამჟამად განახლების განხორციელება შეუძლებელია.</value>
+  </data>
+	<data name="CantConnectToUpdateServer" xml:space="preserve">
+    <value>შეუძლებელია განახლების სერვერთან დაკავშირება. მოთხოვნა={0}; შეცდომა={1}</value>
+  </data>
+	<data name="CantFindServerOrDatabaseSettings" xml:space="preserve">
+    <value>სერვერის ან მონაცემთა ბაზის დაყენების პარამეტრები არ მოიძებნა.</value>
+  </data>
+	<data name="ChangingConfigFile" xml:space="preserve">
+    <value>მიმდინარეობს კონფიგურაციის ფაილების შეცვლა...</value>
+  </data>
+	<data name="CloseCaption" xml:space="preserve">
+    <value>დახურვა</value>
+  </data>
+	<data name="ConfigFilesSuccessfullyChanged" xml:space="preserve">
+    <value>კონფიგურაციის ფაილების შეცვლა წარმატებით დასრულდა.</value>
+  </data>
+	<data name="CopyFiles" xml:space="preserve">
+    <value>{0} ფაილის კოპირება {1} –ში.</value>
+  </data>
+	<data name="CopyFiles2" xml:space="preserve">
+    <value>მიმდინარეობს ფაილების კოპირება...</value>
+  </data>
+	<data name="CopyFilesSuccessfullyComplete" xml:space="preserve">
+    <value>ფაილების კოპირება წარმატებით დასრულდა.</value>
+  </data>
+	<data name="DeleteFile" xml:space="preserve">
+    <value>{0} ფაილის წაშლა...</value>
+  </data>
+	<data name="CRCIsInvalidError" xml:space="preserve">
+    <value>განახლების პაკეტის საკონტროლო მაჩვენებელი არასწორია. განახლების პაკეტი არავალიდურია.</value>
+  </data>
+	<data name="DeleteGarbageBackups" xml:space="preserve">
+    <value>მიმდინარეობს უსარგებლო სარეზერვო ასლების წაშლა...</value>
+  </data>
+	<data name="ErrorCaption" xml:space="preserve">
+    <value>შეცდომა</value>
+  </data>
+	<data name="ExtractingFiles" xml:space="preserve">
+    <value>მიმდინარეობს ფაილების არქივიდან ამოღება...</value>
+  </data>
+	<data name="FilesSuccessfullyExtracted" xml:space="preserve">
+    <value>ფაილების არქივიდან ამოღება წარმატებით დასრულდა.</value>
+  </data>
+	<data name="FullBackup" xml:space="preserve">
+    <value>მიმდონარეობს განახლებული ფაილების სრული სარეზერვო არქივაციის პროცესი. ეს შეიძლება გაგრძელდეს რამოდენიმე წუთი. გთხოვთ მოითმონოთ...</value>
+  </data>
+	<data name="GarbageBackupsFailedDeleted" xml:space="preserve">
+    <value>უსარგებლო სარეზერვო ასლების წაშლა ვერ მოხერხდა. შეცდომა: {0}</value>
+  </data>
+	<data name="GarbageBackupsSuccessfullyDeleted" xml:space="preserve">
+    <value>უსარგებლო სარეზერვო ასლების წაშლა წარმატებით დასრულდა.</value>
+  </data>
+	<data name="initialization" xml:space="preserve">
+    <value>ინიციალიზაცია</value>
+  </data>
+	<data name="NowConnected" xml:space="preserve">
+    <value>კავშირი: {0}</value>
+  </data>
+	<data name="RunningScripts" xml:space="preserve">
+    <value>მიმდინარეობს სკრიპტების შესრულება...</value>
+  </data>
+	<data name="RunScriptMessage" xml:space="preserve">
+    <value>{0} –ს გაშვება...</value>
+  </data>
+	<data name="ScriptsSuccessfullyExecuted" xml:space="preserve">
+    <value>სკრიპტების შესრულება წარმატებით შესრულდა.</value>
+  </data>
+	<data name="synchronization" xml:space="preserve">
+    <value>სინქრონიზაცია</value>
+  </data>
+	<data name="TaskCaption" xml:space="preserve">
+    <value>დავალება: {0}</value>
+  </data>
+	<data name="ThereAreNoClientsMore" xml:space="preserve">
+    <value>ყველა კლიენტი პროგრამის კავშირი მონაცემთა ბაზასთან გამორთულია.</value>
+  </data>
+	<data name="ThisUpdateNotCritical" xml:space="preserve">
+    <value>ეს განახლება არ არის კრიტიკული. გსურთ მისი გაშვება?</value>
+  </data>
+	<data name="TryCopyLogs" xml:space="preserve">
+    <value>მიმდინარეობს პროტოკოლების კოპირება...</value>
+  </data>
+	<data name="Unknown" xml:space="preserve">
+    <value>უცნობი</value>
+  </data>
+	<data name="UnknownError" xml:space="preserve">
+    <value>უცნობი შეცდომა</value>
+  </data>
+	<data name="UpdateExecuteWithError" xml:space="preserve">
+    <value>განახლებამ გამოსცა შეცდომა: {0}</value>
+  </data>
+	<data name="UpdateFailed" xml:space="preserve">
+    <value>განახლების წარუმატებლად დასრულების დრო: {0}</value>
+  </data>
+	<data name="UpdateInterruptedByUser" xml:space="preserve">
+    <value>განახლება შეწყვეტილია მომხმარებლის მიერ.</value>
+  </data>
+	<data name="UpdateProcessStarted" xml:space="preserve">
+    <value>განახლების დაწყების დრო: {0}</value>
+  </data>
+	<data name="UpdateRemotePathOrLogRemotePathnotset" xml:space="preserve">
+    <value>ქსელური გზა განახლების საქაღალდემდე ან განახლების პროტოკოლების საქაღალდემდე არ არის განსაზღვრული.</value>
+  </data>
+	<data name="UpdateSuccessfullyComplete" xml:space="preserve">
+    <value>განახლების წარმატებით დასრულების დრო: {0}</value>
+  </data>
+	<data name="updatingAum" xml:space="preserve">
+    <value>ავტომატური განახლების მექანიზმის განახლება.</value>
+  </data>
+	<data name="updatingDatabase" xml:space="preserve">
+    <value>მონაცემთა ბაზის განახლება.</value>
+  </data>
+	<data name="updatingEIDSS" xml:space="preserve">
+    <value>დზეის პროგრამის განახლება.</value>
+  </data>
+	<data name="updatingNotificationService" xml:space="preserve">
+    <value>შეტყობინებების სამსახურის განახლება.</value>
+  </data>
+	<data name="WaitingForAnotherClientsExit" xml:space="preserve">
+    <value>სხვა კლიენტი პროგრამების მუშაობის დასრულება მოლოდინშია (10 წუთი ან ნაკლები)...</value>
+  </data>
+	<data name="WorkComplete" xml:space="preserve">
+    <value>განახლება წარმატებით დასრულდა. თქვენ შეგიძლიათ გადატვირთოთ პროგრამა.</value>
+  </data>
+	<data name="ExecuteFilesStarted" xml:space="preserve">
+    <value>ფაილების გაშვება დაწყებულია...</value>
+  </data>
+	<data name="ExecuteFilesFinished" xml:space="preserve">
+    <value>ფაილების გაშვება წარმატებით დასრულდა.</value>
+  </data>
+	<data name="ExecuteFile" xml:space="preserve">
+    <value>მიმდინარეობს {0} ფაილის გაშვება...</value>
+  </data>
+	<data name="executingfiles" xml:space="preserve">
+    <value>ფაილების გაშვება</value>
+  </data>
+	<data name="BVUpdateLauncherStarted" xml:space="preserve">
+    <value>BV Updater Launcher is started at {0}</value>
+  </data>
+</root>

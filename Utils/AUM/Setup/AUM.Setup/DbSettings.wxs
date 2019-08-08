@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?include "ProductInfo.wxi" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Fragment Id="DB Settings">
+    <Property Id="DBSERVER" Secure="yes">
+      <RegistrySearch Id="DBSERVER.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="SQLServer" Type="raw" />
+    </Property>
+    <Property Id="DBSERVER_FOUND" Secure="yes">
+      <RegistrySearchRef Id="DBSERVER.Rs" />
+    </Property>
+    <Property Id="SQLDATABASE" Secure="yes">
+      <RegistrySearch Id="SQLDATABASE.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="SQLDatabase" Type="raw" />
+    </Property>
+    <Property Id="SQLDATABASE_FOUND" Secure="yes">
+      <RegistrySearchRef Id="SQLDATABASE.Rs" />
+    </Property>
+
+    <Property Id="ARCHDBSERVER" Secure="yes">
+      <RegistrySearch Id="ARCHDBSERVER.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="ArchiveServer" Type="raw" />
+    </Property>
+    <Property Id="ARCHDBSERVER_FOUND" Secure="yes">
+      <RegistrySearchRef Id="ARCHDBSERVER.Rs" />
+    </Property>
+    <Property Id="ARCHDATABASE" Secure="yes">
+      <RegistrySearch Id="ARCHDATABASE.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="ArchiveDatabase" Type="raw" />
+    </Property>
+    <Property Id="ARCHDATABASE_FOUND" Secure="yes">
+      <RegistrySearchRef Id="ARCHDATABASE.Rs" />
+    </Property>
+
+    <Property Id="MAINT_SQL_LOGIN" Secure="yes" Hidden="yes" Value="EIDSSMaintanceEngineer" />
+    <Property Id="MAINT_SQL_PASSWORD" Secure="yes" Hidden="yes" Value="acAsha195MhdysBv" />
+    <Property Id="ENCRYPTED_MAINT_SQL_LOGIN" Secure="yes" Hidden="yes">
+      <RegistrySearch Id="ENCRYPTED_MAINT_SQL_LOGIN.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="MaintSqlLogin" Type="raw" />
+    </Property>
+    <Property Id="ENCRYPTED_MAINT_SQL_PASSWORD" Secure="yes" Hidden="yes">
+      <RegistrySearch Id="ENCRYPTED_MAINT_SQL_PASSWORD.Rs" Root="HKLM" Key="$(var.FamilyRegistryKey)" Name="MaintSqlPassword" Type="raw" />
+    </Property>
+
+    <CustomAction Id="EncryptAccountDetails" DllEntry="EncryptAccountDetails" BinaryKey="CustomActions" />
+    <CustomAction Id="DecryptAccountDetails" DllEntry="DecryptAccountDetails" BinaryKey="CustomActions" Execute="firstSequence" />
+    <InstallExecuteSequence>
+      <Custom Action="DecryptAccountDetails" After="AppSearch">
+        <![CDATA[MACHINE_LEVEL <> 6 And Not REMOVE~="ALL" And ENCRYPTED_MAINT_SQL_LOGIN And ENCRYPTED_MAINT_SQL_PASSWORD]]>
+      </Custom>
+      <Custom Action="EncryptAccountDetails" After="AppSearch">
+        <![CDATA[MACHINE_LEVEL <> 6 And Not Installed And MAINT_SQL_LOGIN <> "" And MAINT_SQL_PASSWORD <> ""]]>
+      </Custom>
+    </InstallExecuteSequence>
+    <UI>
+      <InstallUISequence>
+        <Custom Action="DecryptAccountDetails" After="AppSearch">
+          <![CDATA[MACHINE_LEVEL <> 6 And Not REMOVE~="ALL" And ENCRYPTED_MAINT_SQL_LOGIN And ENCRYPTED_MAINT_SQL_PASSWORD]]>
+        </Custom>
+      </InstallUISequence>
+
+      <ProgressText Action="EncryptAccountDetails">!(loc.EncryptAccountDetails)</ProgressText>
+      <ProgressText Action="DecryptAccountDetails">!(loc.DecryptAccountDetails)</ProgressText>
+    </UI>
+
+    <ComponentGroup Id="DbSettings" Directory="ApplicationFolder">
+      <Component Id="SQLDbSettings" Permanent="yes">
+        <Condition><![CDATA[MACHINE_LEVEL <> 6 And SQLDATABASE And "" <> SQLDATABASE And DBSERVER And "" <> DBSERVER]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="SQLDatabase" Value="[SQLDATABASE]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="SQLServer" Value="[DBSERVER]" Type="string" />
+        </RegistryKey>
+      </Component>
+
+      <Component Id="ArchiveDbSettings" Permanent="yes">
+        <Condition><![CDATA[MACHINE_LEVEL <> 6 And ARCHDATABASE And "" <> ARCHDATABASE And ARCHDBSERVER And "" <> ARCHDBSERVER]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="ArchiveDatabase" Value="[ARCHDATABASE]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="ArchiveServer" Value="[ARCHDBSERVER]" Type="string" />
+        </RegistryKey>
+      </Component>
+
+      <Component Id="DbAccount">
+        <Condition><![CDATA[MACHINE_LEVEL <> 6]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="MaintSqlLogin" Value="[ENCRYPTED_MAINT_SQL_LOGIN]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="MaintSqlPassword" Value="[ENCRYPTED_MAINT_SQL_PASSWORD]" Type="string" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

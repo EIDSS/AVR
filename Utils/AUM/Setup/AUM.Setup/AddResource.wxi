@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <Component Id="$(var.resource)_$(var.subdir)" Directory="$(var.subdir)">
+    <File Id="$(var.resource)_$(var.subdir)" Source="$(var.source)$(var.resource)" KeyPath="yes" Checksum="yes" />
+  </Component>
+
+  <?undef source?>
+  <?undef subdir?>
+</Include>

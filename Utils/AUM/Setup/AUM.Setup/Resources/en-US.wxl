@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WixLocalization Culture="en-US" Codepage="1252" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="ProductLanguage" Localizable="no">1033</String>
+  <String Id="SummaryCodepage" Localizable="no">1252</String>
+
+  <String Id="ProductName" Overridable="yes" Localizable="yes">Automatic Update Module</String>
+  <String Id="ProductNameAbbreviation" Overridable="yes" Localizable="yes">AUM</String>
+  <String Id="ProductDescription" Overridable="yes" Localizable="yes">Automatic update module</String>
+
+  <String Id="DowngradeErrorMessage" Overridable="yes" Localizable="yes">A later version of [ProductName] is already installed. Setup will now exit.</String>
+
+  <String Id="ConditionElevationPrivileges" Overridable="yes" Localizable="yes">Installation of [ProductName] requires administrative privileges.</String>
+  <String Id="ConditionOperatingSystem" Overridable="yes" Localizable="yes">Setup cannot proceed because this computer is running an unsupported operating system. Please refer to the [ProductName] Release Notes for a list of supported operating systems.</String>
+  <String Id="ConditionNetFramework4" Overridable="yes" Localizable="yes">Microsoft .NET Framework 4 required.</String>
+
+  <String Id="LogFileText" Overridable="yes" Localizable="yes">Show log file</String>
+  <String Id="ExitDialogOptionalCheckBoxText" Overridable="yes" Localizable="yes"></String>
+
+  <String Id="AumServiceName" Overridable="no" Localizable="no">AUM.Service[MajorVersion][FuzzyMinorVersion]</String>
+  <String Id="AumServiceDisplayName" Overridable="yes" Localizable="yes">AUM[MajorVersion][FuzzyMinorVersion] service</String>
+  <String Id="AumServiceDescription" Overridable="yes" Localizable="yes">AUM service v.[MajorVersion]</String>
+
+  <String Id="AumAdministratorShortcutName" Overridable="yes" Localizable="yes">[ProductFamilyAbbreviation] Update Administrator</String>
+  <String Id="AumAdministratorShortcutDescription" Overridable="yes" Localizable="yes">[ProductFamilyAbbreviation] Update Administrator v[MajorVersion].[MinorVersion]</String>
+
+  <String Id="DbSettingsDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="DbSettingsDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}Database Connection Settings</String>
+  <String Id="DbSettingsDlgDescription" Overridable="yes" Localizable="yes">Specify Database Connection Settings</String>
+  <String Id="DbSettingsDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="DbSettingsDlgAdminUser" Overridable="yes" Localizable="yes">Admin User:</String>
+  <String Id="DbSettingsDlgAdminPassword" Overridable="yes" Localizable="yes">Admin Password:</String>
+  <String Id="DbSettingsDlgServer" Overridable="yes" Localizable="yes">EIDSS Actual SQL Server:</String>
+  <String Id="DbSettingsDlgDatabase" Overridable="yes" Localizable="yes">EIDSS Actual Database:</String>
+  <String Id="DbSettingsDlgCheckConnectionButton" Overridable="yes" Localizable="yes">&amp;Test Connection</String>
+  <String Id="DbSettingsDlgArchiveServer" Overridable="yes" Localizable="yes">EIDSS Archive SQL Server:</String>
+  <String Id="DbSettingsDlgArchiveDatabase" Overridable="yes" Localizable="yes">EIDSS Archive Database:</String>
+
+  <String Id="AvrSvcSettingsDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="AvrSvcSettingsDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AVR Service Selection</String>
+  <String Id="AvrSvcSettingsDlgDescription" Overridable="yes" Localizable="yes">Specify Primary AVR Service System Name</String>
+  <String Id="AvrSvcSettingsDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="AvrSvcSettingsServiceSelectorTitle" Overridable="yes" Localizable="yes">AVR Service:</String>
+  <String Id="AvrSvcSettingsDlgNotPresentText" Overridable="yes" Localizable="yes">No primary service</String>
+  <String Id="AvrSvcSettingsDlgNotPresentValue" Overridable="no" Localizable="no">__dummy__</String>
+
+  <String Id="Configuration.WindowsAdminDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="Configuration.WindowsAdminDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AUM Configuration</String>
+  <String Id="Configuration.WindowsAdminDlgDescription" Overridable="yes" Localizable="yes">Specify windows administrator account</String>
+  <String Id="Configuration.WindowsAdminDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="Configuration.WindowsAdminDlgLocalAdminNote" Overridable="yes" Localizable="yes">Specify local Administrator account!</String>
+  <String Id="Configuration.WindowsAdminDlgAdminLoginTitle" Overridable="yes" Localizable="yes">Login:</String>
+  <String Id="Configuration.WindowsAdminDlgAdminPasswordTitle" Overridable="yes" Localizable="yes">Password:</String>
+  
+  <String Id="Configuration.MachineLevelDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="Configuration.MachineLevelDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AUM Configuration</String>
+  <String Id="Configuration.MachineLevelDlgDescription" Overridable="yes" Localizable="yes">Choose machine level</String>
+  <String Id="Configuration.MachineLevelDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="Configuration.MachineLevelDlgMachineLevelTitle" Overridable="yes" Localizable="yes">Choose machine level:</String>
+  <String Id="Configuration.MachineLevelDlgCDR" Overridable="yes" Localizable="yes">CDR</String>
+  <String Id="Configuration.MachineLevelDlgSLVL.NSSLVL" Overridable="yes" Localizable="yes">SLVL\NSSLVL</String>
+  <String Id="Configuration.MachineLevelDlgWKS" Overridable="yes" Localizable="yes">Client (WKS)</String>
+  <String Id="Configuration.MachineLevelDlgWEB" Overridable="yes" Localizable="yes">Web</String>
+  <String Id="Configuration.MachineLevelDlgWEBWKS" Overridable="yes" Localizable="yes">WebWKS</String>
+
+  <String Id="Configuration.BackupsDriveDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="Configuration.BackupsDriveDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AUM Configuration</String>
+  <String Id="Configuration.BackupsDriveDlgDescription" Overridable="yes" Localizable="yes">Choose backups folder drive</String>
+  <String Id="Configuration.BackupsDriveDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="Configuration.BackupsDriveDlgVolumeSelectorLabel" Overridable="yes" Localizable="yes">Backups folder drive:</String>
+  <String Id="Configuration.BackupsDriveDlgBackupsPathSuffix" Overridable="yes" Localizable="yes"></String>
+  <String Id="Configuration.BackupsDriveDlgDestinationDescription" Overridable="yes" Localizable="yes">The backups will be placed to subfolder:</String>
+  <String Id="Configuration.BackupsDriveDlgDestinationSubfolder" Overridable="yes" Localizable="yes">{\WixUI_Font_Emphasized}\!(loc.ProductNameAbbreviation)[MajorVersion][FuzzyMinorVersion]\backups\</String>
+          
+  <String Id="Configuration.MiscDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="Configuration.MiscDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AUM Configuration</String>
+  <String Id="Configuration.MiscDlgDescription" Overridable="yes" Localizable="yes">Specify different AUM configuration settings</String>
+  <String Id="Configuration.MiscDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="Configuration.MiscDlgServiceMode" Overridable="yes" Localizable="yes">Run AUM as service</String>
+  <String Id="Configuration.MiscDlgGroupBox" Overridable="yes" Localizable="yes">Time Interval Settings (mask HH:MM 24 hours)</String>
+  <String Id="Configuration.MiscDlgSyncIntervalTitle" Overridable="yes" Localizable="yes">Sync. interval:</String>
+  <String Id="Configuration.MiscDlgUpdateIntervalTitle" Overridable="yes" Localizable="yes">Update interval:</String>
+  
+  <String Id="AumConfigurationDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="AumConfigurationDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}AUM Configuration</String>
+  <String Id="AumConfigurationDlgDescription" Overridable="yes" Localizable="yes">Launch AUM in intialization mode to configure system</String>
+  <String Id="AumConfigurationDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="AumConfigurationDlgLaunchConfigurator" Overridable="yes" Localizable="yes">Launch &amp;Configurator</String>
+
+  <String Id="Configuration.UpgradeUrlsDlg_Title" Overridable="yes" Localizable="yes">[ProductName] Setup</String>
+  <String Id="Configuration.UpgradeUrlsDlgTitle" Overridable="yes" Localizable="yes">{\WixUI_Font_Title}Upgrade URL</String>
+  <String Id="Configuration.UpgradeUrlsDlgDescription" Overridable="yes" Localizable="yes">Specify upgrade URL settings</String>
+  <String Id="Configuration.UpgradeUrlsDlgBannerBitmap" Overridable="yes" Localizable="yes">WixUI_Bmp_Banner</String>
+  <String Id="Configuration.UpgradeUrlsDlgMainUrl" Overridable="yes" Localizable="yes">Main Upgrade URL (https):</String>
+  <String Id="Configuration.UpgradeUrlsDlgMainUrl2" Overridable="yes" Localizable="yes">Main Upgrade URL:</String>
+  <String Id="Configuration.UpgradeUrlsDlgSecondaryUrl" Overridable="yes" Localizable="yes">Secondary Upgrade URL (http):</String>
+  <String Id="Configuration.UpgradeUrlsDlgSecureUrl" Overridable="yes" Localizable="yes">Use 2 URLs</String>
+  <String Id="Configuration.UpgradeUrlsDlgSecureUrlHelper" Overridable="yes" Localizable="yes">In case of 2 URLs main must use HTTPS protocol and secondary URL must use HTTP protocol.</String>
+
+  <String Id="ErrorConnectionText_ConnectionTestSucceded" Overridable="yes" Localizable="yes">Connection test succeeded!</String>
+  <String Id="ErrorConnectionText_ConnectionTestFailed" Overridable="yes" Localizable="yes">Connection test failed! Specify proper connection settings.</String>
+
+  <String Id="ErrorConfigurationText_EmptyMandatoryFileds" Overridable="yes" Localizable="yes">Some mandatory fields are empty.</String>
+  <String Id="ErrorConfigurationText_BadAdminPassword" Overridable="yes" Localizable="yes">Invalid windows admin account credentials.</String>
+  <String Id="ErrorConfigurationText_BadTimeInterval" Overridable="yes" Localizable="yes">Time interval is invalid.</String>
+  <String Id="ErrorConfigurationText_WrongProtocol" Overridable="yes" Localizable="yes">Main URL must use HTTPS protocol and secondary URL must use HTTP protocol.</String>
+
+  <String Id="ErrorConfigurationText_BadUrlFormat" Overridable="yes" Localizable="yes">Invalid URI.</String>
+  <String Id="ErrorConfigurationText_WebRequestError" Overridable="yes" Localizable="yes">Something went wrong.</String>
+  
+  <String Id="AutoStartService" Overridable="yes" Localizable="yes">Changing AUM.Service start type</String>
+  <String Id="ReadConfig" Overridable="yes" Localizable="yes">Reading AUM config</String>
+  <String Id="SetMachineLevel" Overridable="yes" Localizable="yes">Determining machine level</String>
+  <String Id="SetSyncInterval" Overridable="yes" Localizable="yes">Determining sync interval</String>
+  <String Id="SetUpdateInterval" Overridable="yes" Localizable="yes">Determining update interval</String>
+  <String Id="SetMainUrl" Overridable="yes" Localizable="yes">Determining upgrade URL</String>
+  <String Id="SetSecondaryUrl" Overridable="yes" Localizable="yes">Determining secondary upgrade URL</String>
+  
+  <String Id="EncryptAccountDetails" Overridable="yes" Localizable="yes">Encrypting sql account</String>
+  <String Id="DecryptAccountDetails" Overridable="yes" Localizable="yes">Decrypting sql account</String>
+  <String Id="EncryptAdminAccountDetails" Overridable="yes" Localizable="yes">Encrypting admin account</String>
+  <String Id="DecryptAdminAccountDetails" Overridable="yes" Localizable="yes">Decrypting admin account</String>
+</WixLocalization>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object name="Upload506Item"
+        connection="EidssConnectionString"
+        generator="ObjectGenerator.xslt"
+        xmlns="urn:schemas-bv:objectmodel">
+
+  <storage>
+    <!--фейковая хранимка-->
+    <get name="spUpload506Item_SelectDetail" type="detaillist" />
+  </storage>
+
+  <tables>
+    <table name="Upload506Item">
+      <grid>
+        <item name="idfCase" visible="false" key="true"/>
+        <item name="HN" required="true" />
+        <item name="strCaseID" action="ActionEditHumanCase" required="true" />
+        <item name="strDiagnosis" type="string" />
+        <item name="datDiagnosisDate" type="DateTimeWrap" />
+        <item name="NAME" />
+        <item name="strHospital" type="string" />
+        <item name="strStatus" type="string" />
+      </grid>
+      <labels>
+        <item name="HN" labelId="str506HN"/>                               
+        <item name="strCaseID" labelId="str506EIDSSCaseID"/>
+        <item name="NAME" labelId="PatientName"/>
+        <item name="strDiagnosis" labelId="DiagnosisName"/>
+        <item name="strHospital" labelId="strHospital506Item"/>
+        <item name="strStatus" labelId="strStatus506Item"/>
+      </labels>
+      <fields>
+        <storage name="validationErrors" type="List&lt;Tuple&lt;string,string&gt;&gt;"/>
+        <calculated name="master" depends="Parent" type="Upload506Master" lambda="c => c.Parent as Upload506Master"/>
+        <calculated name="isValid" depends="validationErrors" type="bool" lambda="c => c.validationErrors == null || c.validationErrors.Count == 0"/>
+
+        <calculated name="iDISEASE" type="int" depends="DISEASE" lambda='c => Int32.Parse(c.DISEASE)' />
+        <calculated name="iCOMPLICA" type="int?" depends="COMPLICA" lambda='c => String.IsNullOrEmpty(c.COMPLICA) ? new Int32?() : Int32.Parse(c.COMPLICA)' />
+        <calculated name="idfsDiagnosis" type="long?" depends="DISEASE" lambda='c => c.master == null ? new long?() : c.master.DiagnosisRefs.FirstOrDefault(i => i.DISEASE == c.iDISEASE, i => i.idfsTentativeDiagnosis)' setter='idfsDiagnosis = value' />
+        <calculated name="strDiagnosis" type="string" depends="idfsDiagnosis" lambda='c => c.master == null ? "" : c.master.DiagnosisLookup.FirstOrDefault(i => i.idfsDiagnosis == c.idfsDiagnosis, i => i.name)' />
+        <calculated name="datDiagnosisDate" type="DateTime?" depends="DATEDEFINE" lambda='c => c.DATEDEFINE' />
+        <calculated name="strHospital" type="string" depends="PROVINCE,HSERV" lambda='c => c.PROVINCE + c.HSERV' />
+        <calculated name="strStatus" type="string" depends="Resolution" lambda='c => eidss.model.Resources.EidssMessages.Get(c.Resolution.HasValue ? (c.Resolution.Value == (int)Upload506Resolution.Updated ? "rsUpdated" : (c.Resolution.Value == (int)Upload506Resolution.Created ? "rsCreated" : "rsDismissed")) : "rsUnspecified")' />
+        <calculated name="strStatusPresent" type="string" depends="Resolution" lambda='c => eidss.model.Resources.EidssMessages.Get(c.Resolution.HasValue ? (c.Resolution.Value == (int)Upload506Resolution.Updated ? "rsUpdate" : (c.Resolution.Value == (int)Upload506Resolution.Created ? "rsCreate" : "rsDismiss")) : "rsUnspecified")' />
+      </fields>
+      <readonly>
+        <fields name="strStatus" predicate="c => true" />
+      </readonly>
+      <storage>
+        <post name="spUpload506Item_Post" predicate="c => c.isValid"/>
+      </storage>
+      <extenders>
+        <creating>
+          <value_extender target="validationErrors" value="new List&lt;Tuple&lt;string,string&gt;&gt;()"/>
+          <lambda_extender target="idfsUpload506" type="long" lambda="c => c.master == null ? 0 : c.master.idfsUpload506"/>
+          <scalar_extender target="idfsUpload506Item" class="PositiveAutoIncrementExtender" />
+        </creating>
+        <created>
+          <custom_extender>
+            <text>
+              if (EidssUserContext.Instance != null)
+                if (EidssUserContext.User != null)
+                {                             
+                  if (EidssUserContext.User.EmployeeID != null)
+                  {
+                    long em;
+                    if (long.TryParse(EidssUserContext.User.EmployeeID.ToString(), out em))
+                      obj.idfPersonEnteredBy = em;
+                  }
+                  if (EidssUserContext.User.ID != null)
+                  {
+                    long em;
+                    if (long.TryParse(EidssUserContext.User.ID.ToString(), out em))
+                      obj.idfUserID = em;
+                  }
+                }                        
+            </text>
+          </custom_extender>
+        </created>
+        <posting>
+          <db_lambda_extender target="strCaseID" type="string" lambda='(c,m) => 
+                      c.Resolution.HasValue &amp;&amp; c.Resolution.Value == (int)Upload506Resolution.Created &amp;&amp; c.PostWithoutMaster == 1
+                      ? m.SetSpCommand("dbo.spGetNextNumber", (long)NumberingObjectEnum.HumanCase, DBNull.Value, DBNull.Value)
+                        .ExecuteScalar&lt;string&gt;(ScalarSourceType.OutputParameter, "NextNumberValue")
+                      : c.strCaseID 
+                      ' />
+        </posting>
+      </extenders>
+      <actions>
+        <standard>
+          <remove type="Create"/>
+          <remove type="Delete"/>
+          <remove type="SelectAll"/>
+          <remove type="Ok"/>
+          <remove type="Cancel"/>
+          <remove type="Save"/>
+        </standard>
+        <action name="ActionEditHumanCase" type="Action">
+          <run>
+            <preUI webType="JScript"/>
+          </run>
+        </action>
+      </actions>
+    </table>
+  </tables>
+</object>

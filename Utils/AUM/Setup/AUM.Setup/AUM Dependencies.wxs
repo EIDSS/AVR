@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="Dependencies">
+    <ComponentGroup Id="AVR.Dependencies">
+      <ComponentGroupRef Id="Zip" />
+      <ComponentGroupRef Id="SqlServer.Harvested" />
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment Id="Zip">
+    <ComponentGroup Id="Zip" Directory="ApplicationFolder" Source="$(var.SolutionDir)source files\Zip">
+      <Component Id="ICSharpCode.SharpZipLib.dll">
+        <File Name="ICSharpCode.SharpZipLib.dll" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component Id="SevenZipSharp.dll">
+        <File Name="SevenZipSharp.dll" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component Id="_7_zip.dll">
+        <File Name="7-zip.dll" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component Id="_7z.dll">
+        <File Name="7z.dll" KeyPath="yes" Checksum="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

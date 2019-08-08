@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="AUM Administrator">
+    <ComponentGroup Id="AUM.Administrator" Directory="ApplicationFolder">
+      <Component Id="$(var.AUM.Administrator.TargetFileName)">
+        <File Source="$(var.AUM.Administrator.TargetPath)" KeyPath="yes" Checksum="yes">
+          <Shortcut
+            Id="StartMenuShortcut"
+            Name="!(loc.AumAdministratorShortcutName)"
+            Description="!(loc.AumAdministratorShortcutDescription)"
+            Directory="EIDSSShortcutFolder"
+            Icon="AumAdminIcon.exe"
+            WorkingDirectory="ApplicationFolder"
+            Advertise="yes">
+
+            <Icon Id="AumAdminIcon.exe" SourceFile="$(var.AUM.Administrator.TargetPath)" />
+          </Shortcut>
+        </File>
+
+        <RemoveFolder Id="EIDSSShortcutFolder" Directory="EIDSSShortcutFolder" On="uninstall" />
+        <RemoveFolder Id="BVShortcutFolder" Directory="BVShortcutFolder" On="uninstall" />
+      </Component>
+    </ComponentGroup>
+
+    <CustomAction Id="FixShortcuts" BinaryKey="CustomActions" DllEntry="FixShortcuts" />
+    <InstallExecuteSequence>
+      <Custom Action="FixShortcuts" Before="RemoveShortcuts">1</Custom>
+    </InstallExecuteSequence>
+  </Fragment>
+</Wix>

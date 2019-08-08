@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="XPatchLauncher">
+    <ComponentGroup Id="XPatchLauncher" Directory="ApplicationFolder">
+      <Component Id="$(var.XPatchInterfaces.TargetFileName)">
+        <File Source="$(var.XPatchInterfaces.TargetPath)" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component Id="$(var.XPatchesLauncher.TargetFileName)">
+        <File Source="$(var.XPatchesLauncher.TargetPath)" KeyPath="yes" Checksum="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="AUM Service">
+    <ComponentGroup Id="AUM.Service" Directory="ApplicationFolder">
+      <Component Id="$(var.AUM.Service.TargetFileName)">
+        <File Source="$(var.AUM.Service.TargetPath)" KeyPath="yes" Checksum="no" />
+
+        <ServiceInstall
+          Id="AUMService"
+          Name="!(loc.AumServiceName)"
+          DisplayName="!(loc.AumServiceDisplayName)"
+          Description="!(loc.AumServiceDescription)"
+          Type="ownProcess"
+          Start="auto"
+          ErrorControl="ignore">
+
+          <ServiceConfig DelayedAutoStart="yes" OnInstall="yes" OnReinstall="yes" />
+        </ServiceInstall>
+        <ServiceControl
+          Id="AUMService"
+          Name="!(loc.AumServiceName)"
+          Start="install"
+          Stop="uninstall"
+          Remove="uninstall"
+          Wait="no" />
+      </Component>
+
+      <Component Id="$(var.AUM.Service.TargetFileName).config">
+        <File Source="$(var.AUM.Service.TargetPath).config" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <PropertyRef Id="SYNC_INTERVAL" />
+    <PropertyRef Id="UPDATE_INTERVAL" />
+
+    <UI>
+      <Dialog Id="Configuration.MiscDlg" Width="370" Height="270" Title="!(loc.Configuration.MiscDlg_Title)">
+        <Control Id="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Default="yes" Text="!(loc.WixUINext)">
+          <Publish Event="DoAction" Value="ValidateMisc" Order="1">1</Publish>
+          <Publish Event="SpawnDialog" Value="ErrorConfigurationDlg" Order="2"><![CDATA[MiscConfigurationValid <> 1]]></Publish>
+          <Publish Property="SYNC_INTERVAL" Value="[SyncIntervalHours]:[SyncIntervalMinutes]" Order="3"><![CDATA[MiscConfigurationValid = 1]]></Publish>
+          <Publish Property="UPDATE_INTERVAL" Value="[UpdateIntervalHours]:[UpdateIntervalMinutes]" Order="4"><![CDATA[MiscConfigurationValid = 1]]></Publish>
+        </Control>
+        <Control Id="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Text="!(loc.WixUIBack)" />
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Cancel="yes" Text="!(loc.WixUICancel)">
+          <Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+        </Control>
+        <Control Id="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Transparent="yes" NoPrefix="yes" Text="!(loc.Configuration.MiscDlgDescription)" />
+        <Control Id="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Transparent="yes" NoPrefix="yes" Text="!(loc.Configuration.MiscDlgTitle)" />
+        <Control Id="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" TabSkip="no" Text="!(loc.Configuration.MiscDlgBannerBitmap)" />
+        <Control Id="BannerLine" Type="Line" X="0" Y="44" Width="370" Height="0" />
+        <Control Id="BottomLine" Type="Line" X="0" Y="234" Width="370" Height="0" />
+       
+        <Control Type="GroupBox" Id="TimeIntervals" Width="310" Height="105" X="30" Y="100" Text="!(loc.Configuration.MiscDlgGroupBox)" />
+        
+        <Control Id="SyncIntervalTitle" Type="Text" Width="80" Height="17" X="50" Y="130" Text="!(loc.Configuration.MiscDlgSyncIntervalTitle)" />
+        <Control Id="SyncIntervalHours" Type="Edit" Width="20" Height="17" X="140" Y="130" RightAligned="yes" Property="SyncIntervalHours" />
+        <Control Id="SyncIntervalSeparator" Type="Text" Width="6" Height="17" X="160" Y="132" Text=":" />
+        <Control Id="SyncIntervalMinutes" Type="Edit" Width="20" Height="17" X="166" Y="130" Property="SyncIntervalMinutes" />
+        <Control Id="SyncIntervalValid" Type="Icon" IconSize="32" X="200" Y="120" Width="34" Height="34" Text="SuccessImg" FixedSize="yes" Hidden="yes">
+          <Condition Action="hide"><![CDATA[SyncInterval_Valid <> "1"]]></Condition>
+          <Condition Action="show"><![CDATA[SyncInterval_Valid = "1"]]></Condition>
+        </Control>
+        <Control Id="SyncIntervalInvalid" Type="Icon" IconSize="32" X="200" Y="120" Width="34" Height="34" Text="FailureImg" FixedSize="yes" Hidden="yes">
+          <Condition Action="hide"><![CDATA[SyncInterval_Valid = "1"]]></Condition>
+          <Condition Action="show"><![CDATA[SyncInterval_Valid And SyncInterval_Valid <> "1"]]></Condition>
+        </Control>
+
+        <Control Id="UpdateIntervalTitle" Type="Text" Width="80" Height="17" X="50" Y="170" Text="!(loc.Configuration.MiscDlgUpdateIntervalTitle)" />
+        <Control Id="UpdateIntervalHours" Type="Edit" Width="20" Height="17" X="140" Y="170" RightAligned="yes" Property="UpdateIntervalHours" />
+        <Control Id="UpdateIntervalSeparator" Type="Text" Width="6" Height="17" X="160" Y="172" Text=":" />
+        <Control Id="UpdateIntervalMinutes" Type="Edit" Width="20" Height="17" X="166" Y="170" Property="UpdateIntervalMinutes" />
+        <Control Id="UpdateIntervalValid" Type="Icon" IconSize="32" X="200" Y="160" Width="34" Height="34" Text="SuccessImg" FixedSize="yes" Hidden="yes">
+          <Condition Action="hide"><![CDATA[UpdateInterval_Valid <> "1"]]></Condition>
+          <Condition Action="show"><![CDATA[UpdateInterval_Valid = "1"]]></Condition>
+        </Control>
+        <Control Id="UpdateIntervalInvalid" Type="Icon" IconSize="32" X="200" Y="160" Width="34" Height="34" Text="FailureImg" FixedSize="yes" Hidden="yes">
+          <Condition Action="hide"><![CDATA[UpdateInterval_Valid = "1"]]></Condition>
+          <Condition Action="show"><![CDATA[UpdateInterval_Valid And UpdateInterval_Valid <> "1"]]></Condition>
+        </Control>
+      </Dialog>
+    </UI>
+  </Fragment>
+</Wix>

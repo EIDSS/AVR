@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="xrTableCell3.Weight" type="System.Double, mscorlib">
+    <value>1.5465013088738595</value>
+  </data>
+  <data name="topMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>50</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrLabel1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>173.916626, 144.097244</value>
+  </data>
+  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="xrRichText2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>0, 498.958344</value>
+  </data>
+  <data name="xrRichText1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt</value>
+  </data>
+  <data name="xrLabel3.Text" xml:space="preserve">
+    <value>Form is designed to collect administrative data</value>
+  </data>
+  <data name="xrLabel6.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>512.875, 79</value>
+  </data>
+  <data name="xrLabel2.Text" xml:space="preserve">
+    <value>Format A4</value>
+  </data>
+  <data name="DetailReportPage1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>TopRight</value>
+  </data>
+  <data name="xrTable1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>767, 432.291748</value>
+  </data>
+  <data name="xrLabelYear.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>464.583344, 79</value>
+  </data>
+  <data name="$this.PageHeight" type="System.Int32, mscorlib">
+    <value>1169</value>
+  </data>
+  <data name="xrLabel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>22.5000057, 10.0000067</value>
+  </data>
+  <data name="xrLabel4.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>767, 23</value>
+  </data>
+  <data name="xrLabelPeriod.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>140.791626, 23</value>
+  </data>
+  <data name="xrLabel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="xrLabel4.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>0, 56</value>
+  </data>
+  <data name="DetailPage1.HeightF" type="System.Single, mscorlib">
+    <value>1049.20837</value>
+  </data>
+  <data name="xrLabelPeriod.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>315.333374, 79</value>
+  </data>
+  <data name="xrLabel7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABkAGUAZgBmADAAewBcAGYAbwBuAHQAdABiAGwAewBcAGYAMAAgAEMAYQBsAGkAYgByAGkAOwB9AHsAXABmADEAXABmAGMAaABhAHIAcwBlAHQAMgAwADQAIABUAGkAbQBlAHMAIABOAGUAdwAgAFIAbwBtAGEAbgA7AH0AfQB7AFwAYwBvAGwAbwByAHQAYgBsACAAOwBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAAgADsAXAByAGUAZAAwAFwAZwByAGUAZQBuADAAXABiAGwAdQBlADIANQA1ACAAOwB9AHsAXAAqAFwAZABlAGYAYwBoAHAAIABcAGYAMQB9AHsAXABzAHQAeQBsAGUAcwBoAGUAZQB0ACAAewBcAHEAbABcAGYAMQAgAE4AbwByAG0AYQBsADsAfQB7AFwAKgBcAGMAcwAxAFwAZgAxAFwAYwBmADEAIABEAGUAZgBhAHUAbAB0ACAAUABhAHIAYQBnAHIAYQBwAGgAIABGAG8AbgB0ADsAfQB7AFwAKgBcAGMAcwAyAFwAcwBiAGEAcwBlAGQAbwBuADEAXABmADEAXABjAGYAMQAgAEwAaQBuAGUAIABOAHUAbQBiAGUAcgA7AH0AewBcACoAXABjAHMAMwBcAHUAbABcAGYAMQBcAGMAZgAyACAASAB5AHAAZQByAGwAaQBuAGsAOwB9AHsAXAAqAFwAdABzADQAXAB0AHMAcgBvAHcAZABcAGYAMQBcAHEAbABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgBsADMAXAB0AHMAYwBlAGwAbABwAGEAZABkAGwAMQAwADgAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAYgAzAFwAdABzAGMAZQBsAGwAcABhAGQAZABmAHIAMwBcAHQAcwBjAGUAbABsAHAAYQBkAGQAcgAxADAAOABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgB0ADMAXAB0AHMAdgBlAHIAdABhAGwAdABcAGMAbAB0AHgAbAByAHQAYgAgAE4AbwByAG0AYQBsACAAVABhAGIAbABlADsAfQB7AFwAKgBcAHQAcwA1AFwAdABzAHIAbwB3AGQAXABzAGIAYQBzAGUAZABvAG4ANABcAGYAMQBcAHEAbABcAHQAcgBiAHIAZAByAHQAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAbABcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHIAYgByAGQAcgBiAFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcgBiAHIAZAByAHIAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAaABcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHIAYgByAGQAcgB2AFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgBsADMAXAB0AHMAYwBlAGwAbABwAGEAZABkAGwAMQAwADgAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAcgAzAFwAdABzAGMAZQBsAGwAcABhAGQAZAByADEAMAA4AFwAdABzAHYAZQByAHQAYQBsAHQAXABjAGwAdAB4AGwAcgB0AGIAIABUAGEAYgBsAGUAIABTAGkAbQBwAGwAZQAgADEAOwB9AH0AewBcACoAXABsAGkAcwB0AG8AdgBlAHIAcgBpAGQAZQB0AGEAYgBsAGUAfQBcAG4AbwB1AGkAYwBvAG0AcABhAHQAXABzAHAAbAB5AHQAdwBuAGkAbgBlAFwAaAB0AG0AYQB1AHQAcwBwAFwAcwBlAGMAdABkAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAYwB7AFwAYgBcAGYAMQBcAGMAZgAxACAARgBvAHIAbQAgACMAWwBGAG8AcgBtAFQAeQBwAGUAXQAgAGkAcwAgAGQAZQBzAGkAZwBuAGUAZAAgAHQAbwAgAGMAbwBsAGwAZQBjAHQAIABhAGQAbQBpAG4AaQBzAHQAcgBhAHQAaQB2AGUAIABkAGEAdABhAH0AXABiAFwAZgAxAFwAYwBmADEAXABwAGEAcgB9AA==</value>
+  </data>
+  <data name="xrRichText2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>413.541656, 498.166748</value>
+  </data>
+  <data name="xrLabel5.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="xrLabelYear.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>41.6666565, 23</value>
+  </data>
+  <data name="xrLabel1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>3.05175781E-05, 0</value>
+  </data>
+  <data name="xrTableCell1.Weight" type="System.Double, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>xrTableCell4</value>
+  </data>
+  <data name="$this.PageWidth" type="System.Int32, mscorlib">
+    <value>827</value>
+  </data>
+  <data name="xrLabel6.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrLabel3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>766.9999, 23</value>
+  </data>
+  <data name="xrLabel3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>0, 33</value>
+  </data>
+  <data name="xrRichText1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>747, 33.4166641</value>
+  </data>
+  <data name="detailBand1.HeightF" type="System.Single, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.PaperKind" type="System.Drawing.Printing.PaperKind, System.Drawing">
+    <value>A4</value>
+  </data>
+  <data name="xrLabelFor.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>279.166656, 101.999969</value>
+  </data>
+  <data name="xrRichText1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>9.999974, 93.70833</value>
+  </data>
+  <data name="xrRichText2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt</value>
+  </data>
+  <data name="xrLabel5.Text" xml:space="preserve">
+    <value>Report period:</value>
+  </data>
+  <data name="xrLabel7.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>225, 101.999916</value>
+  </data>
+  <data name="xrTableCell2.Weight" type="System.Double, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="xrLabelFor.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableRow1.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrLabel7.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>42.708313, 23</value>
+  </data>
+  <data name="xrRichText2.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABkAGUAZgBmADAAewBcAGYAbwBuAHQAdABiAGwAewBcAGYAMAAgAEMAYQBsAGkAYgByAGkAOwB9AHsAXABmADEAXABmAGMAaABhAHIAcwBlAHQAMgAwADQAIABUAGkAbQBlAHMAIABOAGUAdwAgAFIAbwBtAGEAbgA7AH0AfQB7AFwAYwBvAGwAbwByAHQAYgBsACAAOwBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAAgADsAXAByAGUAZAAwAFwAZwByAGUAZQBuADAAXABiAGwAdQBlADIANQA1ACAAOwB9AHsAXAAqAFwAZABlAGYAYwBoAHAAIABcAGYAMQB9AHsAXABzAHQAeQBsAGUAcwBoAGUAZQB0ACAAewBcAHEAbABcAGYAMQAgAE4AbwByAG0AYQBsADsAfQB7AFwAKgBcAGMAcwAxAFwAZgAxAFwAYwBmADEAIABEAGUAZgBhAHUAbAB0ACAAUABhAHIAYQBnAHIAYQBwAGgAIABGAG8AbgB0ADsAfQB7AFwAKgBcAGMAcwAyAFwAcwBiAGEAcwBlAGQAbwBuADEAXABmADEAXABjAGYAMQAgAEwAaQBuAGUAIABOAHUAbQBiAGUAcgA7AH0AewBcACoAXABjAHMAMwBcAHUAbABcAGYAMQBcAGMAZgAyACAASAB5AHAAZQByAGwAaQBuAGsAOwB9AHsAXAAqAFwAdABzADQAXAB0AHMAcgBvAHcAZABcAGYAMQBcAHEAbABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgBsADMAXAB0AHMAYwBlAGwAbABwAGEAZABkAGwAMQAwADgAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAYgAzAFwAdABzAGMAZQBsAGwAcABhAGQAZABmAHIAMwBcAHQAcwBjAGUAbABsAHAAYQBkAGQAcgAxADAAOABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgB0ADMAXAB0AHMAdgBlAHIAdABhAGwAdABcAGMAbAB0AHgAbAByAHQAYgAgAE4AbwByAG0AYQBsACAAVABhAGIAbABlADsAfQB7AFwAKgBcAHQAcwA1AFwAdABzAHIAbwB3AGQAXABzAGIAYQBzAGUAZABvAG4ANABcAGYAMQBcAHEAbABcAHQAcgBiAHIAZAByAHQAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAbABcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHIAYgByAGQAcgBiAFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcgBiAHIAZAByAHIAXABiAHIAZAByAHMAXABiAHIAZAByAHcAMQAwAFwAdAByAGIAcgBkAHIAaABcAGIAcgBkAHIAcwBcAGIAcgBkAHIAdwAxADAAXAB0AHIAYgByAGQAcgB2AFwAYgByAGQAcgBzAFwAYgByAGQAcgB3ADEAMABcAHQAcwBjAGUAbABsAHAAYQBkAGQAZgBsADMAXAB0AHMAYwBlAGwAbABwAGEAZABkAGwAMQAwADgAXAB0AHMAYwBlAGwAbABwAGEAZABkAGYAcgAzAFwAdABzAGMAZQBsAGwAcABhAGQAZAByADEAMAA4AFwAdABzAHYAZQByAHQAYQBsAHQAXABjAGwAdAB4AGwAcgB0AGIAIABUAGEAYgBsAGUAIABTAGkAbQBwAGwAZQAgADEAOwB9AH0AewBcACoAXABsAGkAcwB0AG8AdgBlAHIAcgBpAGQAZQB0AGEAYgBsAGUAfQBcAG4AbwB1AGkAYwBvAG0AcABhAHQAXABzAHAAbAB5AHQAdwBuAGkAbgBlAFwAaAB0AG0AYQB1AHQAcwBwAFwAcwBlAGMAdABkAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAYgBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQAgAEkAbgBkAGUAeAA6AH0AewBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQAgACAARgBvAHIAbQB9AHsAXABsAGEAbgBnADEAMAAzADMAXABsAGEAbgBnAGYAZQAxADAAMwAzAFwAZgAxAFwAZgBzADEAOABcAGMAZgAxACAAIAB9AHsAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIAAjAFsARgBvAHIAbQBUAHkAcABlAF0AfQBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAYgBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQAgAFAAZQByAGkAbwBkAGkAYwBpAHQAeQA6AH0AewBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQAgACAAWwBQAGUAcgBpAG8AZABpAGMAaQB0AHkAVAB5AHAAZQBdAH0AXABmADEAXABmAHMAMQA4AFwAYwBmADEAXABwAGEAcgBcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGIAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIABUAGgAZQAgAHAAZQByAHMAbwBuAHMAIAByAGUAcAByAGUAcwBlAG4AdABpAG4AZwA6AH0AewBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQAgACAATABvAGMAYQBsACAAYQB1AHQAaABvAHIAaQB0AGkAZQBzACAAYQBuAGQAIABvAHIAZwBhAG4AaQB6AGEAdABpAG8AbgBzACAAbwBmACAAdABoAGUAIABDAG8AbQBtAGkAdAB0AGUAZQAgAG8AbgAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AIABvAGYAIAB0AGgAZQAgAE0AaQBuAGkAcwB0AHIAeQAgAG8AZgAgAG4AYQB0AGkAbwBuAGEAbAAgAGUAYwBvAG4AbwBtAHkAIABvAGYAIABSAGUAcABiAGwAaQBjACAAbwBmACAASwBhAHoAYQBrAGgAcwB0AGEAbgB9AFwAZgAxAFwAZgBzADEAOABcAGMAZgAxAFwAcABhAHIAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQBsAHsAXABiAFwAZgAxAFwAZgBzADEAOABcAGMAZgAxACAAVwBoAGUAcgBlACAAcwB1AGIAbQBpAHQAdABlAGQAOgB9AHsAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIAAgAEMAbwBtAG0AaQB0AHQAZQBlACAAbwBuACAAQwBvAG4AcwB1AG0AZQByAHMAJwAgAFIAaQBnAGgAdABzACAAUAByAG8AdABlAGMAdABpAG8AbgAgAG8AZgAgAHQAaABlACAATQBpAG4AaQBzAHQAcgB5ACAAbwBmACAAbgBhAHQAaQBvAG4AYQBsACAAZQBjAG8AbgBvAG0AeQAgAG8AZgAgAFIAZQBwAGIAbABpAGMAIABvAGYAIABLAGEAegBhAGsAaABzAHQAYQBuAH0AXABmADEAXABmAHMAMQA4AFwAYwBmADEAXABwAGEAcgBcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGIAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIABEAGUAYQBkAGwAaQBuAGUAIABmAG8AcgAgAHMAdQBiAG0AaQBzAHMAaQBvAG4AOgB9AHsAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIAAgAFIAYQB5AG8AbgAgAG8AZgBmAGkAYwBlAHMAIABvAGYAIAAgAEMAbwBtAG0AaQB0AHQAZQBlACAAbwBuACAAQwBvAG4AcwB1AG0AZQByAHMAJwAgAFIAaQBnAGgAdABzACAAUAByAG8AdABlAGMAdABpAG8AbgAgAG8AZgAgACgAaQBuAGMAbAB1AGQAaQBuAGcAIAB0AGgAZQAgAG8AZgBmAGkAYwBlAHMAIABvAG4AIAB0AGgAZQAgAFIAaQBnAGgAdABzACAAUAByAG8AdABlAGMAdABpAG8AbgAgAG8AZgAgAGMAaQB0AGkAZQBzACAAbwBmACAAaQBuAHQAcgBhAGMAaQB0AHkAIAByAGEAeQBvAG4AcwApACwAIABjAGkAdAB5ACAAbwBmAGYAaQBjAGUAcwAgAG8AbgAgAHQAaABlACAAQwBvAG4AcwB1AG0AZQByAHMAJwAgAFIAaQBnAGgAdABzACAAUAByAG8AdABlAGMAdABpAG8AbgAgAGkAbgAgAHQAaABlACAAYwBpAHQAaQBlAHMALAAgAHcAaABpAGMAaAAgAGEAcgBlACAAbgBvAHQAIABoAGEAdgBpAG4AZwAgAHQAaABlACAAcgBhAHkAbwBuACAAbwBmAGYAaQBjAGUAcwAgAHQAbwAgAHQAaABlACAAYwBpAHQAeQAgACgAcgBlAGcAaQBvAG4AYQBsACkAIABkAGUAcABhAHIAdABtAGUAbgB0ACAAbwBuACAAdABoAGUAIABDAG8AbgBzAHUAbQBlAHIAcwAnACAAUgBpAGcAaAB0AHMAIABQAHIAbwB0AGUAYwB0AGkAbwBuACAAIAAtACAAMwByAGQAIABkAGEAeQAgAGYAbwBsAGwAbwB3AGkAbgBnACAAdABoAGUAIAByAGUAcABvAHIAdABpAG4AZwAgAHAAZQByAGkAbwBkADsAfQBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAZgBzADEAOABcAGMAZgAxACAAQwBpAHQAeQAgAG8AZgBmAGkAYwBlAHMAIABvAG4AIAB0AGgAZQAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4ALAAgAHcAaABpAGMAaAAgAGEAcgBlACAAaABhAHYAaQBuAGcAIAB0AGgAZQAgAHIAYQB5AG8AbgAgAG8AZgBmAGkAYwBlAHMAIABvAG4AIAB0AGgAZQAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AIAAoAGUAeABjAGUAcAB0ACAAbwBmACAAQQBzAHQAYQBuAGEALAAgAEEAbABtAGEAdABhACkAIAAtACAAdABvACAAdABoAGUAIAAgAGMAaQB0AHkAIABkAGUAcABhAHIAdABtAGUAbgB0ACAAbwBuACAAdABoAGUAIABDAG8AbgBzAHUAbQBlAHIAcwAnACAAUgBpAGcAaAB0AHMAIABQAHIAbwB0AGUAYwB0AGkAbwBuACAAIAAtACAANAB0AGgAIABkAGEAeQAgAGYAbwBsAGwAbwB3AGkAbgBnACAAdABoAGUAIAByAGUAcABvAHIAdABpAG4AZwAgAHAAZQByAGkAbwBkADsAfQBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAZgBzADEAOABcAGMAZgAxACAAUwBhAG4AaQB0AGEAcgB5ACAAYQBuAGQAIABFAHAAaQBkAGUAbQBpAG8AbABvAGcAaQBjAGEAbAAgAG8AcgBnAGEAbgBpAHoAYQB0AGkAbwBuACAAbwBmACAAbwB0AGgAZQByACAAbQBpAG4AaQBzAHQAcgBpAGUAcwAgAC0AIAB0AG8AIAB0AGgAZQAgACAAYwBpAHQAeQAgAGQAZQBwAGEAcgB0AG0AZQBuAHQAIABvAG4AIAB0AGgAZQAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AIAAgAC0AIAAzAHIAZAAgAGQAYQB5ACAAZgBvAGwAbABvAHcAaQBuAGcAIAB0AGgAZQAgAHIAZQBwAG8AcgB0AGkAbgBnACAAcABlAHIAaQBvAGQAOwB9AFwAZgAxAFwAZgBzADEAOABcAGMAZgAxAFwAcABhAHIAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQBsAHsAXABmADEAXABmAHMAMQA4AFwAYwBmADEAIABDAGkAdAB5ACAAYQBuAGQAIAByAGUAZwBpAG8AbgBhAGwAIABkAGUAcABhAHIAdABtAGUAbgB0AHMAIABvAG4AIAB0AGgAZQAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AIAAgAC0AIABSAFMAQwBFACAAIgBTAGMAaQBlAG4AdABpAGYAaQBjACAAYQBuAGQAIABQAHIAYQBjAHQAaQBjAGEAbAAgAEMAZQBuAHQAZQByACAAbwBmACAAcwBhAG4AaQB0AGEAcgB5AC0AZQBwAGkAZABlAG0AaQBvAGwAbwBnAGkAYwBhAGwAIABlAHgAcABlAHIAdABpAHMAZQAgAGEAbgBkACAAbQBvAG4AaQB0AG8AcgBpAG4AZwAiACwAIAB0AG8AIAB0AGgAZQAgAGMAaQB0AHkALAAgAHIAZQBnAGkAbwBsAGEAbgAgAGgAZQBhAGwAdABoACAAbwBmAGYAaQBjAGUAIAAtACAANQB0AGgAIABkAGEAeQAgAGYAbwBsAGwAbwB3AGkAbgBnACAAdABoAGUAIAByAGUAcABvAHIAdABpAG4AZwAgAHAAZQByAGkAbwBkADsAfQBcAGYAMQBcAGYAcwAxADgAXABjAGYAMQBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAZgBzADEAOABcAGMAZgAxACAAUgBTAEMARQAgACIAUwBjAGkAZQBuAHQAaQBmAGkAYwAtAFAAcgBhAGMAdABpAGMAYQBsACAAQwBlAG4AdABlAHIAIABvAGYAIABTAGEAbgBpAHQAYQByAHkAIABhAG4AZAAgAEUAcABpAGQAZQBtAGkAbwBsAG8AZwBpAGMAYQBsACAAZQB4AHAAZQByAHQAaQBzAGUAIABhAG4AZAAgAG0AbwBuAGkAdABvAHIAaQBuAGcAIgAsACAAdABvACAAdABoAGUAIABDAG8AbQBtAGkAdAB0AGUAZQAgAG8AbgAgAEMAbwBuAHMAdQBtAGUAcgBzACcAIABSAGkAZwBoAHQAcwAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AIABvAGYAIAB0AGgAZQAgAE0AaQBuAGkAcwB0AHIAeQAgAG8AZgAgAG4AYQB0AGkAbwBuAGEAbAAgAGUAYwBvAG4AbwBtAHkAIABvAGYAIABSAGUAcABiAGwAaQBjACAAbwBmACAASwBhAHoAYQBrAGgAcwB0AGEAbgAgACAALQAgADgAdABoACAAZABhAHkAIABmAG8AbABsAG8AdwBpAG4AZwAgAHQAaABlACAAcgBlAHAAbwByAHQAaQBuAGcAIABwAGUAcgBpAG8AZAA7AH0AXABmADEAXABjAGYAMQBcAHAAYQByAH0A</value>
+  </data>
+  <data name="xrLabel6.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>37.49994, 23</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>30, 30, 50, 50</value>
+  </data>
+  <data name="xrLabel5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrLabel5.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>208.333328, 78.99996</value>
+  </data>
+  <data name="xrLabelFor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableRow2.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrLabel7.Text" xml:space="preserve">
+    <value>For</value>
+  </data>
+  <data name="xrLabel4.Text" xml:space="preserve">
+    <value>Report on individual infectious and parasitic diseases</value>
+  </data>
+  <data name="xrTable1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>0, 0</value>
+  </data>
+  <data name="xrLabel6.Text" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="xrLabel2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableRow3.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="xrLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt</value>
+  </data>
+  <data name="xrTableCell4.Weight" type="System.Double, mscorlib">
+    <value>0.45349869112614088</value>
+  </data>
+  <data name="bottomMarginBand1.HeightF" type="System.Single, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="xrLabelFor.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>248.958344, 23</value>
+  </data>
+  <metadata name="spRepHumForm1KZHeaderTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="form1KZHeaderDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+</root>

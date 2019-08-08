@@ -1,0 +1,1799 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Xpf.PdfViewer.v15.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfCommandProvider">
+
+            <summary>
+                <para>Provides commands that correspond to end-user actions in a PDF Viewer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfCommandProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfCommandProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.CopyCommand">
+            <summary>
+                <para>Copies the selected part of the document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.ExportFormDataCommand">
+            <summary>
+                <para>Returns a command that exports interactive form data to either FDF or XML format. 
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.HandToolCommand">
+            <summary>
+                <para>Sets the cursor mode to hand tool. 
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.ImportFormDataCommand">
+            <summary>
+                <para>Returns a command that imports interactive form data either from FDF or XML format to a PDF form.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.MarqueeZoomCommand">
+            <summary>
+                <para>Sets the cursor mode to marquee zoom tool. 
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.OpenDocumentFromWebCommand">
+            <summary>
+                <para>Loads a document from a URL.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.OpenDocumentSplitCommand">
+            <summary>
+                <para>Returns a command that opens a split document from a specified file in the viewer. 
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.PageLayoutCommand">
+            <summary>
+                <para>Returns a command that specifies the page layout of an opened document. 
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.PrintDocumentCommand">
+            <summary>
+                <para>Prints the document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.SaveAsCommand">
+            <summary>
+                <para>Invokes the <b>Save As</b> dialog box.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.SelectAllCommand">
+            <summary>
+                <para>Selects all the text in a document for copying.
+
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.SelectionCommand">
+            <summary>
+                <para>Selects the document content within the specified area.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.SelectToolCommand">
+            <summary>
+                <para>Sets the cursor mode to select tool. 
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.ShowPropertiesCommand">
+            <summary>
+                <para>Invokes the document properties dialog box.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfCommandProvider.UnselectAllCommand">
+            <summary>
+                <para>Unselects the selected text in a document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfViewerControl">
+
+            <summary>
+                <para>A control to display PDF files in a WPF application without the need to install any third-party software on end user machines.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfViewerControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ActualInteractionProvider">
+            <summary>
+                <para>Gets the actual interaction provider.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpf.PdfViewer.InteractionProvider"/> object that is the interaction provider containing the interactivity features of a PDF Viewer. 
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.ActualInteractionProviderProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.AllowCachePages">
+            <summary>
+                <para>Gets or sets whether to enable page caching. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to enable page caching; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.AllowCachePagesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.AllowCurrentPageHighlighting">
+            <summary>
+                <para>Gets or sets whether to highlight the current document page. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to highlight the current page; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.AllowCurrentPageHighlightingProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.AsyncDocumentLoad">
+            <summary>
+                <para>Gets or sets whether to enable asynchronous document loading. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to enable asynchronous document loading; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.AsyncDocumentLoadProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CacheSize">
+            <summary>
+                <para>Gets or sets the number of pages that can be cached for the frame. This is a dependency property.
+</para>
+            </summary>
+            <value>The number of pages that can be cached for the frame.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.CacheSizeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CaretColor">
+            <summary>
+                <para>Gets or sets the caret color. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Media.Color"/> structure that describes the caret color.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.CaretColorProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.ConvertDocumentPositionToPixel(DevExpress.Pdf.PdfDocumentPosition)">
+            <summary>
+                <para>Gets the coordinates of the point corresponding to a document position.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Point"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.ConvertPixelToDocumentPosition(System.Windows.Point)">
+            <summary>
+                <para>Gets the document position corresponding to a point.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:System.Drawing.Point"/> object.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CopyCommand">
+            <summary>
+                <para>Copies the selected part of the document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateBitmap(System.Int32)">
+            <summary>
+                <para>Exports a PDF page to an image.
+</para>
+            </summary>
+            <param name="index">
+		An integer value, specifying the page number. 
+
+            </param>
+            <returns>A System.Windows.Media.Imaging.BitmapSource object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateBitmap(System.Int32,System.Int32)">
+            <summary>
+                <para>Exports a PDF page to an image.
+</para>
+            </summary>
+            <param name="index">
+		An integer value, specifying the page number. 
+
+            </param>
+            <param name="largestEdgeLength">
+		An integer value, specifying the length of the image's largest dimension.
+
+            </param>
+            <returns>A System.Windows.Media.Imaging.BitmapSource object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CursorMode">
+            <summary>
+                <para>Gets or sets the cursor type. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Xpf.PdfViewer.CursorModeType"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.CursorModeChanged">
+            <summary>
+                <para>Occurs after the <see cref="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CursorMode"/> property's value has been changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.CursorModeChangedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.CursorModeProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.DetachStreamOnLoadComplete">
+            <summary>
+                <para>Specifies whether the stream should be closed after a document it contains has been loaded. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to close the stream after loading a document; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.DetachStreamOnLoadCompleteProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.Document">
+            <summary>
+                <para>Returns the current PDF document.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Xpf.PdfViewer.IPdfDocument"/> object that is the current PDF document.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentClosing">
+            <summary>
+                <para>Occurs when a document is about to be closed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentClosingEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentCreator">
+            <summary>
+                <para>Gets or sets the name of the conforming product that created the original document from which the current PDF document was converted. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentCreatorProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentLoaded">
+            <summary>
+                <para>Occurs when a PdfViewerControl control loads a PDF document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentLoadedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentProducer">
+            <summary>
+                <para>Gets or sets the name of the conforming product that converted the document to PDF. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.DocumentProducerProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.ExportFormData">
+            <summary>
+                <para>Exports interactive form data either to XML or FDF form data format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ExportFormDataCommand">
+            <summary>
+                <para>Returns a command that exports interactive form data to either FDF or XML format. 
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetDocumentPassword">
+            <summary>
+                <para>Returns the security password settings of a protected document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetDocumentPasswordEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetText(DevExpress.Pdf.PdfDocumentPosition,DevExpress.Pdf.PdfDocumentPosition)">
+            <summary>
+                <para>Gets the text contained in the specified document area.
+</para>
+            </summary>
+            <param name="start">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object that is the top left point of a document area.
+
+            </param>
+            <param name="end">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object that is the bottom right point of a document area.
+
+            </param>
+            <returns>The text contained in the specified document area.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetText(DevExpress.Pdf.PdfDocumentArea)">
+            <summary>
+                <para>Gets the text contained in the specified document area.
+</para>
+            </summary>
+            <param name="area">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentArea"/> value.
+
+            </param>
+            <returns>The text contained in the specified document area.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.HasOutlines">
+            <summary>
+                <para>Gets a value that defines whether a document has outlines. 
+</para>
+            </summary>
+            <value><b>true</b> if a document contains outlines; otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.HasOutlinesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.HasSelection">
+            <summary>
+                <para>Gets whether there is any selected content in the current document. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, if there is any selected content in the current document; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.HasSelectionProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.HighlightSelectionColor">
+            <summary>
+                <para>Gets or sets the background color of the selected text. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.HighlightSelectionColorProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.HitTest(System.Windows.Point)">
+            <summary>
+                <para>Gets the visual element located under the point.
+</para>
+            </summary>
+            <param name="point">
+		A <see cref="T:System.Drawing.Point"/> structure specifying the test point coordinates relative to the top-left corner of the range control client.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Xpf.PdfViewer.PdfHitTestResult"/> enumeration value that identifies the visual element located under the test object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.ImportFormData">
+            <summary>
+                <para>Imports interactive data either from XML or FDF data format into a PDF form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ImportFormDataCommand">
+            <summary>
+                <para>Returns a command that imports interactive form data either from FDF or XML format to a PDF form.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.InteractionProvider">
+            <summary>
+                <para>Specifies the interaction provider to be used to get access to the interactivity features of a PDF Viewer.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Xpf.PdfViewer.InteractionProvider"/> object that is the interaction provider.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.InteractionProviderProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.IsReadOnly">
+            <summary>
+                <para>Gets or sets whether the document contents can be edited. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to allow editing the document contents; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.IsReadOnlyProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.MaxPrintingDpi">
+            <summary>
+                <para>Specifies the maximum DPI (dots per inch) value allowed for document printing.
+</para>
+            </summary>
+            <value>An integer value. A zero value indicates that the printing DPI is unlimited. 
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.MaxPrintingDpiProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Navigate(DevExpress.Pdf.Native.PdfTarget)">
+            <summary>
+                <para>Navigates to a specified document position.
+</para>
+            </summary>
+            <param name="target">
+		A DevExpress.Pdf.Native.PdfTarget object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Navigate(DevExpress.Pdf.Drawing.PdfOutlineViewerNode)">
+            <summary>
+                <para>Navigates to a specified outline viewer node in the outlines tree. 
+
+</para>
+            </summary>
+            <param name="node">
+		A  DevExpress.Pdf.Drawing.PdfOutlineViewerNode object that is outline viewer node.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.NumberOfRecentFiles">
+            <summary>
+                <para>Gets or sets the number of recently opened files. This is a dependency property.
+
+</para>
+            </summary>
+            <value>A number of recently opened files. The default value is <b>5</b>.
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.NumberOfRecentFilesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.OpenDocumentFromWebCommand">
+            <summary>
+                <para>Loads a document from a URL.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.OpenRecentDocumentCommand">
+            <summary>
+                <para>Opens a recently opened document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.OutlinesViewerSettings">
+            <summary>
+                <para>Gets or sets the settings of the PDF outlines viewer. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings"/> object which contains the settings to customize the PDF outlines viewer.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.OutlinesViewerSettingsProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.PageLayout">
+            <summary>
+                <para>Gets or sets a value that defines the manner in which PDF pages are positioned within the PDF viewer.
+ 
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Pdf.PdfPageLayout"/> values. The default value is <see cref="F:DevExpress.Pdf.PdfPageLayout.OneColumn"/>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.PageLayoutChanged">
+            <summary>
+                <para>Occurs after the <see cref="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.PageLayout"/> property has been changed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.PageLayoutChangedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.PageLayoutProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.PagePadding">
+            <summary>
+                <para>Gets or sets a value that specifies the thickness of the padding space between the boundaries of a page and the page's content.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Thickness"/> object that represents the thickness of a frame around the page content.
+
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.PagePaddingProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Print">
+            <summary>
+                <para>Prints the current document using the system default print settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Print(System.Drawing.Printing.PrinterSettings,System.Boolean,System.Int32)">
+            <summary>
+                <para>Prints the document.
+</para>
+            </summary>
+            <param name="printerSettings">
+		 
+            </param>
+            <param name="showPrintStatus">
+		<b>true</b> to show the printing status; otherwise, <b>false</b>.
+
+            </param>
+            <param name="maxPrintingDpi">
+		An integer value that is the maximum printing DPI.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Print(DevExpress.Pdf.PdfPrinterSettings,System.Boolean,System.Int32)">
+            <summary>
+                <para>Prints the document.
+</para>
+            </summary>
+            <param name="printerSettings">
+		A <see cref="T:DevExpress.Pdf.PdfPrinterSettings"/> object.
+
+            </param>
+            <param name="showPrintStatus">
+		<b>true</b> to show the printing status; otherwise, <b>false</b>.
+
+            </param>
+            <param name="maxPrintingDpi">
+		An integer value that is the maximum printing DPI.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.PrintDocumentCommand">
+            <summary>
+                <para>Prints the document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.PrintPreviewDialogTemplate">
+            <summary>
+                <para>Gets or sets the template that defines the visual representation of the print preview dialog. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.DataTemplate"/> template that defines the visual representation of the print preview dialog.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.PrintPreviewDialogTemplateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.RecentFiles">
+            <summary>
+                <para>Gets or sets a collection of objects that represent the files that have been opened recently. This is a dependency property.
+</para>
+            </summary>
+            <value>A collection of DevExpress.Xpf.PdfViewer.RecentFileViewModel objects that represent the recently opened files.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.RecentFilesProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.ReferencedDocumentOpening">
+            <summary>
+                <para>Occurs when opening an embedded or external document by clicking its corresponding link in a PDF document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.ReferencedDocumentOpeningEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SaveAsCommand">
+            <summary>
+                <para>Invokes the <b>Save As</b> dialog box.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.SaveDocument(System.IO.Stream)">
+            <summary>
+                <para>Saves the PDF document to a stream.
+</para>
+            </summary>
+            <param name="stream">
+		The stream to which to output the document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.SaveDocument(System.String)">
+            <summary>
+                <para>Saves the PDF document to a file.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the path to a file into which to save the document.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SaveFileDialogTemplate">
+            <summary>
+                <para>Gets or sets the template that defines the visual representation of the save file dialog. This is a dependency property.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.DataTemplate"/> template that defines the visual representation of the print preview dialog.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.SaveFileDialogTemplateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.Select(DevExpress.Pdf.PdfDocumentArea)">
+            <summary>
+                <para>Selects the contents of the specified document area.
+</para>
+            </summary>
+            <param name="area">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentArea"/> value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectAll">
+            <summary>
+                <para>Selects all the text in a document to copy.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectAllCommand">
+            <summary>
+                <para>Selects all the text in a document for copying.
+
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionCommand">
+            <summary>
+                <para>Selects the document content within the specified area.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionContinued">
+            <summary>
+                <para>Occurs after the selection of the PDF content has been continued.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionContinuedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionEnded">
+            <summary>
+                <para>Occurs after the selection of the PDF content has ended.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionEndedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionStarted">
+            <summary>
+                <para>Occurs after the selection of the PDF content has started.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.SelectionStartedEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SetCursorModeCommand">
+            <summary>
+                <para>Sets the cursor mode.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.SetPageLayoutCommand">
+            <summary>
+                <para>Returns a command that sets the page layout of a PDF document.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowCoverPageCommand">
+            <summary>
+                <para>Returns a command that shows the cover page of a displayed document.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowOpenFileOnStartScreen">
+            <summary>
+                <para>Gets or sets whether to show the <b>Open</b> button on the Start Screen. This is a dependency property.
+
+</para>
+            </summary>
+            <value><b>true</b>, to show the Open button; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowOpenFileOnStartScreenProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowPropertiesCommand">
+            <summary>
+                <para>Invokes the <b>Properties</b> window that shows the document properties.
+
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowStartScreen">
+            <summary>
+                <para>Gets or sets whether to show the Start Screen. This is a dependency property.
+</para>
+            </summary>
+            <value><b>true</b>, to show the start screen; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.ShowStartScreenProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.UnselectAll">
+            <summary>
+                <para>Clears a selection from the document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.UnselectAllCommand">
+            <summary>
+                <para>Unselects the selected text in a document.
+</para>
+            </summary>
+            <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Xpf.PdfViewer.PdfViewerControl.UriOpening">
+            <summary>
+                <para>Occurs after clicking a hyperlink addressing an external URI (universal resource identifier).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerControl.UriOpeningEvent">
+            <summary>
+                <para>Identifies the  routed event.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState">
+
+            <summary>
+                <para>Lists values that specify the outlines viewer state.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState.Collapsed">
+            <summary>
+                <para>The PDF outlines panel is collapsed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState.Expanded">
+            <summary>
+                <para>The PDF outlines panel is expanded.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState.Visible">
+            <summary>
+                <para>The PDF outlines panel is visible.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.CursorModeType">
+
+            <summary>
+                <para>Lists values that specify the cursor mode for the PDF control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.CursorModeType.HandTool">
+            <summary>
+                <para>Sets the cursor mode to hand tool.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.CursorModeType.MarqueeZoom">
+            <summary>
+                <para>Sets the cursor mode to marquee zoom tool.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.CursorModeType.SelectTool">
+            <summary>
+                <para>Sets the cursor mode to select tool.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle">
+
+            <summary>
+                <para>Contains styles of the outlines viewer panel.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle.DockPanel">
+            <summary>
+                <para>The PDF outline viewer panel is shown as a dock panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle.Popup">
+            <summary>
+                <para>The PDF outline viewer panel is shown as a popup panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle.Tab">
+            <summary>
+                <para>The PDF outlines viewer panel is shown as a tab panel.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerControl">
+
+            <summary>
+                <para>Represents the PDF Outlines Viewer control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfOutlinesViewerControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings">
+
+            <summary>
+                <para>Provides access to PDF Outlines Viewer settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfOutlinesViewerSettings class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.ApplyOutlinesForeground">
+            <summary>
+                <para>Gets or sets a value that defines whether to use document foreground colors for the outline node text in the outlines viewer.  
+</para>
+            </summary>
+            <value><b>true</b> to apply document foreground colors to the outline node text; <b>false</b> to apply theme colors to the outline node text. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.ApplyOutlinesForegroundProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.HideOutlinesViewer">
+            <summary>
+                <para>Gets or sets a value which specifies whether the PDF outlines panel is hidden.
+</para>
+            </summary>
+            <value><b>true</b> to hide the outlines pane; <b>false</b> to show the outlines pane. The default value is <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.HideOutlinesViewerProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerInitialState">
+            <summary>
+                <para>Gets or sets the outlines viewer visible state after loading a new PDF document.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState"/> values. The default value is <b>Null</b>. 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerInitialStateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerPanelStyle">
+            <summary>
+                <para>Gets or sets the style that defines the appearance of the outline viewer panel where bookmarks are located.  
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle"/> values. The default is <see cref="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerPanelStyle.Tab"/>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerPanelStyleProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerState">
+            <summary>
+                <para>Specifies the outlines viewer visible state.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerState"/> values. The default value is <b>Collapsed</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerStateProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerStyle">
+            <summary>
+                <para>Gets or sets a style applied to the outlines viewer contents. This is a dependency property.
+
+</para>
+            </summary>
+            <value>A Style object providing corresponding style settings.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.OutlinesViewerStyleProperty">
+            <summary>
+                <para>Identifies the  dependency property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.PrintCommand">
+            <summary>
+                <para>Returns a command that prints pages to which selected bookmarks are linked in the document.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerSettings.PrintSectionCommand">
+            <summary>
+                <para>Returns a command that prints a document section corresponding to selected bookmarks in the outline viewer. 
+
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerCommands">
+
+            <summary>
+                <para>Provides access to PDF outline viewer commands.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerCommands.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfOutlinesViewerCommands class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerCommands.PrintCommand">
+            <summary>
+                <para>Returns a command that prints pages to which selected bookmarks are linked in the document.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfOutlinesViewerCommands.PrintSectionCommand">
+            <summary>
+                <para>Returns a command that prints a document section corresponding to selected bookmarks.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.InteractionProvider">
+
+            <summary>
+                <para>Provides settings that control the interactivity features of a PDF Viewer.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the InteractionProvider class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.ActionController">
+            <summary>
+                <para>Gets action controller of a PDF Viewer.
+</para>
+            </summary>
+            <value>An IPdfViewerActionController interface that represents action controller. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.AllowAccessToPublicHyperlink(System.Uri)">
+            <summary>
+                <para>Indicates whether access to a public hyperlink is allowed.  
+
+</para>
+            </summary>
+            <param name="uri">
+		A <see cref="T:System.Uri"/> value that is the public hyperlink's  URI (Uniform Resource Identifier). 
+
+            </param>
+            <returns><b>true</b>, if access to a public hyperlink is allowed;  otherwise, <b>false</b>.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.AllowOpenNewDocument(System.String,System.Boolean,DevExpress.Pdf.Native.PdfTarget)">
+            <summary>
+                <para>Indicates whether a new document should be opened.  
+
+</para>
+            </summary>
+            <param name="documentPath">
+		A String value that is the full path to the PDF file to be opened.
+
+            </param>
+            <param name="openInNewWindow">
+		A System.Boolean value that specifies whether a document should be opened in a new window.
+
+
+            </param>
+            <param name="target">
+		A DevExpress.Pdf.Native.PdfTarget object.
+
+            </param>
+            <returns><b>true</b>, if a new document should be opened in a PDF Viewer;  otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.NavigationController">
+            <summary>
+                <para>Gets a navigation controller of a PDF Viewer. 
+</para>
+            </summary>
+            <value>An IPdfViewerNavigationController interface that represents the navigation controller.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.OpenNewDocument(System.String,System.Boolean,DevExpress.Pdf.Native.PdfTarget)">
+            <summary>
+                <para>Opens a new document from a specified file path.
+</para>
+            </summary>
+            <param name="documentPath">
+		A String value that is the full path to the PDF file to be opened.
+
+            </param>
+            <param name="openInNewWindow">
+		A System.Boolean value that specifies whether a document should be opened in a new window.
+
+
+            </param>
+            <param name="target">
+		A DevExpress.Pdf.Native.PdfTarget object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.ReadOnly">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.SelectionContinued(DevExpress.Pdf.PdfDocumentPosition)">
+            <summary>
+                <para>Continues the selection of the PDF content.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object that represents the PDF coordinates of a hit point. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.SelectionEnded(DevExpress.Pdf.PdfDocumentPosition)">
+            <summary>
+                <para>Ends the selection of the PDF content.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object that represents the PDF coordinates of a hit point. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.SelectionStarted(DevExpress.Pdf.PdfDocumentPosition)">
+            <summary>
+                <para>Starts the selection of the PDF content.
+</para>
+            </summary>
+            <param name="position">
+		A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object that represents the PDF coordinates of a hit point. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.ShowPrintDialog">
+            <summary>
+                <para>Invokes the <b>Print</b> window, which shows the print preview of a PDF document. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.SynchronizationContext">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.InteractionProvider.UpdateSelection">
+            <summary>
+                <para>Updates the selection of the PDF content.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.ValueEditingController">
+            <summary>
+                <para>Gets a value editing controller.
+</para>
+            </summary>
+            <value>A IPdfViewerValueEditingController interface that represents the value editing controller.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.InteractionProvider.ViewerTool">
+            <summary>
+                <para>Gets a PDF viewer tool.
+</para>
+            </summary>
+            <value>A PdfViewerTool object that is a viewer tool.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer">
+
+            <summary>
+                <para>A base class that provides necessary functionality for custom localizers of the PDF Viewer control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PdfViewerLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.Active">
+            <summary>
+                <para>Specifies a localizer object providing localization of a PDF Viewer at runtime.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> descendant, used to localize the user interface at runtime.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.CreateDefaultLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object representing resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, which provides resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.GetString(DevExpress.Xpf.PdfViewer.PdfViewerStringId)">
+            <summary>
+                <para>Returns a localized string for the given string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.Xpf.PdfViewer.PdfViewerStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerLocalizer.Language">
+            <summary>
+                <para>Returns the name of the language currently used by this localizer object.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that is the language of the user interface localization.
+</value>
+
+
+        </member>
+    </members>
+</doc>

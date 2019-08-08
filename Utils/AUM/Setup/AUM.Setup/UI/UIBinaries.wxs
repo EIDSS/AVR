@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?include "$(var.ProjectDir)ProductInfo.wxi" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="UI bitmaps">
+    <Binary Id="FailureImg" SourceFile="$(var.ProjectDir)Resources\Bitmaps\Failure.ico" />
+    <Binary Id="SuccessImg" SourceFile="$(var.ProjectDir)Resources\Bitmaps\Success.ico" />
+  </Fragment>
+
+  <Fragment Id="Custom Actions">
+    <CustomAction Id="FillAvrServices" DllEntry="FillAvrServices" BinaryKey="CustomActions" />
+    <CustomAction Id="ConfigureAUM" DllEntry="ConfigureAUM" BinaryKey="CustomActions" />
+    <CustomAction Id="TestDbConnection" DllEntry="TestDbConnection" BinaryKey="CustomActions" />
+    <CustomAction Id="TestArchiveDbConnection" DllEntry="TestArchiveDbConnection" BinaryKey="CustomActions" />
+    <CustomAction Id="ValidateMisc" DllEntry="ValidateMisc" BinaryKey="CustomActions" />
+    <CustomAction Id="TestUpgradeUrls" DllEntry="TestUpgradeUrls" BinaryKey="CustomActions" />
+  </Fragment>
+</Wix>

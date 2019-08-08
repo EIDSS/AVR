@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xrLabe48.Text" xml:space="preserve">
+    <value>РІК</value>
+  </data>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xrLabel10.Text" xml:space="preserve">
+    <value>II</value>
+  </data>
+  <data name="xrLabel100.Text" xml:space="preserve">
+    <value>15 - 17 років</value>
+  </data>
+  <data name="xrLabel101.Text" xml:space="preserve">
+    <value>10 - 14 років</value>
+  </data>
+  <data name="xrLabel102.Text" xml:space="preserve">
+    <value>5 – 9  років</value>
+  </data>
+  <data name="xrLabel103.Text" xml:space="preserve">
+    <value>1 - 4 роки</value>
+  </data>
+  <data name="xrLabel104.Text" xml:space="preserve">
+    <value>до
+1-го    року</value>
+  </data>
+  <data name="xrLabel105.Text" xml:space="preserve">
+    <value>у дітей віком  0 - 17 років (з гр.1)</value>
+  </data>
+  <data name="xrLabel106.Text" xml:space="preserve">
+    <value>Зареєст-ровано випадків захворю-вань,
+всього</value>
+  </data>
+  <data name="xrLabel107.Text" xml:space="preserve">
+    <value>Шифр за МКХ -  10</value>
+  </data>
+  <data name="xrLabel108.Text" xml:space="preserve">
+    <value>№ рядка</value>
+  </data>
+  <data name="xrLabel109.Text" xml:space="preserve">
+    <value>Найменування захворювань</value>
+  </data>
+  <data name="xrLabel11.Text" xml:space="preserve">
+    <value>III</value>
+  </data>
+  <data name="xrLabel110.Text" xml:space="preserve">
+    <value>з них у дітей віком, включно (з гр.2):</value>
+  </data>
+  <data name="xrLabel111.Text" xml:space="preserve">
+    <value>У сільських
+ жителів</value>
+  </data>
+  <data name="xrLabel112.Text" xml:space="preserve">
+    <value>У тому числі:</value>
+  </data>
+  <data name="xrLabel113.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xrLabel114.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xrLabel115.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xrLabel116.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xrLabel117.Text" xml:space="preserve">
+    <value>В</value>
+  </data>
+  <data name="xrLabel118.Text" xml:space="preserve">
+    <value>Б</value>
+  </data>
+  <data name="xrLabel119.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="xrLabel12.Text" xml:space="preserve">
+    <value>IV</value>
+  </data>
+  <data name="xrLabel120.Text" xml:space="preserve">
+    <value>від 1 місяця до 1 року</value>
+  </data>
+  <data name="xrLabel121.Text" xml:space="preserve">
+    <value>до 1 місяця</value>
+  </data>
+  <data name="xrLabel122.Text" xml:space="preserve">
+    <value>у дітей 
+0 - 17 років включно</value>
+  </data>
+  <data name="xrLabel123.Text" xml:space="preserve">
+    <value>Зареєст-ровано випадків захворю-вань,
+всього</value>
+  </data>
+  <data name="xrLabel124.Text" xml:space="preserve">
+    <value>Шифр за МКХ -  10</value>
+  </data>
+  <data name="xrLabel125.Text" xml:space="preserve">
+    <value>№ рядка</value>
+  </data>
+  <data name="xrLabel126.Text" xml:space="preserve">
+    <value>Найменування захворювань</value>
+  </data>
+  <data name="xrLabel127.Text" xml:space="preserve">
+    <value>з них у дітей :</value>
+  </data>
+  <data name="xrLabel128.Text" xml:space="preserve">
+    <value>У тому числі (з гр. 1) :</value>
+  </data>
+  <data name="xrLabel13.Text" xml:space="preserve">
+    <value>ЗАТВЕРДЖЕНО
+Наказ МОЗ України
+02.06.2009 № 378</value>
+  </data>
+  <data name="xrLabel14.Text" xml:space="preserve">
+    <value>Звітність</value>
+  </data>
+  <data name="xrLabel15.Text" xml:space="preserve">
+    <value>ЗВІТ ПРО ОКРЕМІ ІНФЕКЦІЇ ТА ПАРАЗИТАРНІ ЗАХВОРЮВАННЯ</value>
+  </data>
+  <data name="xrLabel16.Text" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="xrLabel17.Text" xml:space="preserve">
+    <value>VI</value>
+  </data>
+  <data name="xrLabel18.Text" xml:space="preserve">
+    <value>Форма № 2
+(річна)
+ЗАТВЕРДЖЕНО
+Наказ МОЗ України 
+02.06.2009 № 378</value>
+  </data>
+  <data name="xrLabel19.Text" xml:space="preserve">
+    <value>за погодженням з Держкомстатом України</value>
+  </data>
+  <data name="xrLabel2.Text" xml:space="preserve">
+    <value>Роздруковано з ЕЛІССЗ,</value>
+  </data>
+  <data name="xrLabel20.Text" xml:space="preserve">
+    <value>Респондент:
+
+Найменування:  __________________________________________________________________________
+
+
+Місцезнаходження: _______________________________________________________________________
+
+
+____________________________________________________________________________________________
+(поштовий індекс, область / Автономна Республіка  Крим, район, населений пункт, вулиця /провулок, площа тощо,
+
+____________________________________________________________________________________________
+№ будинку /корпусу, № квартири /офісу)</value>
+  </data>
+  <data name="xrLabel21.Text" xml:space="preserve">
+    <value>VII</value>
+  </data>
+  <data name="xrLabel22.Text" xml:space="preserve">
+    <value>VIII</value>
+  </data>
+  <data name="xrLabel23.Text" xml:space="preserve">
+    <value>IX</value>
+  </data>
+  <data name="xrLabel24.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="xrLabel25.Text" xml:space="preserve">
+    <value>XI</value>
+  </data>
+  <data name="xrLabel26.Text" xml:space="preserve">
+    <value>XII</value>
+  </data>
+  <data name="xrLabel27.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="xrLabel28.Text" xml:space="preserve">
+    <value>Б</value>
+  </data>
+  <data name="xrLabel29.Text" xml:space="preserve">
+    <value>В</value>
+  </data>
+  <data name="xrLabel3.Text" xml:space="preserve">
+    <value>Керівник  _____________________________________  ____________________________________________________________ 
+                                                    (підпис)                                                                 (П.І.Б.)
+Виконавець  ___________________________________     __________________________________________________________ 
+        (підпис)                                                                   (П.І.Б.)
+телефон: _________________  факс: _________________ електронна пошта: __________________________________________</value>
+  </data>
+  <data name="xrLabel30.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xrLabel31.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xrLabel32.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xrLabel33.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xrLabel34.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xrLabel35.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xrLabel36.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="xrLabel37.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xrLabel38.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="xrLabel39.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="xrLabel4.Text" xml:space="preserve">
+    <value>М  І  С  Я  Ц  І</value>
+  </data>
+  <data name="xrLabel40.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="xrLabel41.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="xrLabel42.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xrLabel43.Text" xml:space="preserve">
+    <value>Таблиця 1</value>
+  </data>
+  <data name="xrLabel44.Text" xml:space="preserve">
+    <value>Таблиця 2</value>
+  </data>
+  <data name="xrLabel45.Text" xml:space="preserve">
+    <value>Таблиця 3</value>
+  </data>
+  <data name="xrLabel46.Text" xml:space="preserve">
+    <value>ЗА</value>
+  </data>
+  <data name="xrLabel47.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="xrLabel49.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="xrLabel5.Text" xml:space="preserve">
+    <value>Продовження ф. № 2</value>
+  </data>
+  <data name="xrLabel51.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="xrLabel6.Text" xml:space="preserve">
+    <value>Найменування захворювань</value>
+  </data>
+  <data name="xrLabel7.Text" xml:space="preserve">
+    <value>№ рядка</value>
+  </data>
+  <data name="xrLabel8.Text" xml:space="preserve">
+    <value>Шифр за МКХ -  10</value>
+  </data>
+  <data name="xrLabel9.Text" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="xrLabel91.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="xrLabel92.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="xrLabel93.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xrLabel94.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xrLabel95.Text" xml:space="preserve">
+    <value>В</value>
+  </data>
+  <data name="xrLabel96.Text" xml:space="preserve">
+    <value>Б</value>
+  </data>
+  <data name="xrLabel97.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="xrLabel98.Text" xml:space="preserve">
+    <value>з них у дітей віком  0 - 17 років (з гр.2)</value>
+  </data>
+  <data name="xrLabel99.Text" xml:space="preserve">
+    <value>всього
+(з гр.1)</value>
+  </data>
+  <data name="xrTableCell38.Text" xml:space="preserve">
+    <value>Ідентифікаційний код ЄДРПОУ</value>
+  </data>
+  <data name="xrTableCell45.Text" xml:space="preserve">
+    <value>Подають</value>
+  </data>
+  <data name="xrTableCell46.Text" xml:space="preserve">
+    <value>Терміни подання</value>
+  </data>
+  <data name="xrTableCell47.Text" xml:space="preserve">
+    <value>Санітарно-епідеміологічні станції (СЕС) незалежно від підпорядкування:
+
+- сільських і міських районів, міст без районного поділу – СЕС Автономної Республіки Крим, обласній, міській (міста з районним поділом) СЕС
+
+- міст з районним поділом (крім міст Києва і Севастополя) зведений звіт – СЕС Автономної Республіки Крим, обласній СЕС
+
+СЕС Автономної Республіки Крим, обласні, Київська і Севастопольська міські СЕС зведений звіт – Центральній СЕС МОЗ України та Головним управлінням статистики в Автономній Республіці Крим, областях, місті Києві, Управлінню статистики в місті Севастополі 
+
+Центральна СЕС МОЗ України зведений звіт по Україні та регіонах – Міністерству охорони здоров'я України, Держкомстату України</value>
+  </data>
+  <data name="xrTableCell48.Text" xml:space="preserve">
+    <value>2 числа після звітного періоду
+
+
+
+3 числа після звітного періоду
+
+в строки, установлені наказом МОЗ України
+
+17 березня</value>
+  </data>
+</root>

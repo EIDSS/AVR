@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OutDir Condition=" '' == '$(OutDir)' ">$(OutputPath)</OutDir>
+    <IntermediateDistribDir Condition=" '' == '$(IntermediateDistribDir)' ">$(OutDir)IntermediateDistribDir\</IntermediateDistribDir>
+    <!-- On build machine this folder is initialized to something like that "D:\B\17\30\Sources\" -->
+    <SourceDir Condition=" '' == '$(SourceDir)' ">$([System.IO.Path]::GetFullPath('$(SolutionDir)..\'))</SourceDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ParseVersionFileDependsOn>
+      ReadRawVersionInfo;
+      ExtractVersionInfo
+    </ParseVersionFileDependsOn>
+  </PropertyGroup>
+  <Target
+    Name="ParseVersionFile"
+    DependsOnTargets="$(ParseVersionFileDependsOn)"
+    Condition=" Exists( '$(VersionFile)' ) "
+    Returns="$(MajorVersion);$(MinorVersion);$(Build);$(Revision);$(VersionInfo)" />
+
+  <Target Name="ReadRawVersionInfo" Returns="@(RawVersionInfo)">
+    <ReadLinesFromFile File="$(VersionFile)">
+      <Output TaskParameter="Lines" ItemName="RawVersionInfo" />
+    </ReadLinesFromFile>
+  </Target>
+
+  <Target
+    Name="ExtractVersionInfo"
+    Outputs="%(RawVersionInfo.Identity)"
+    Returns="$(MajorVersion);$(MinorVersion);$(Build);$(Revision);$(VersionInfo)">
+
+    <PropertyGroup>
+      <_possibleVersionLine>%(RawVersionInfo.Identity)</_possibleVersionLine>
+      <_versionLine
+        Condition=" 'True' == '$(_possibleVersionLine.Contains(&quot;[assembly:&quot;))' And
+                    'True' == '$(_possibleVersionLine.Contains(&quot;AssemblyVersion(&quot;))' ">$([System.Text.RegularExpressions.Regex]::Match(`$(_possibleVersionLine)`, `\d+\.\d+\.\d+(\.\d+){0,1}`))</_versionLine>
+
+      <MajorVersion Condition=" '' != '$(_versionLine)' ">$(_versionLine.Split('.')[0])</MajorVersion>
+      <MinorVersion Condition=" '' != '$(_versionLine)' " >$(_versionLine.Split('.')[1])</MinorVersion>
+      <Build Condition=" '' != '$(_versionLine)' ">$(_versionLine.Split('.')[2])</Build>
+      <Revision Condition=" '' != '$(_versionLine)' ">$(_versionLine.Split('.')[3])</Revision>
+      <VersionInfo Condition=" '' != '$(_versionLine)' ">$(MajorVersion).$(MinorVersion).$(Build).$(Revision)</VersionInfo>
+    </PropertyGroup>
+  </Target>
+
+
+  <PropertyGroup>
+    <PopulateDropDirectoryDependsOn>
+      $(PopulateDropDirectoryDependsOn);
+      PrepareDropDirectories;
+      PopulateDropArtefacts
+    </PopulateDropDirectoryDependsOn>
+  </PropertyGroup>
+  <Target
+    Name="PopulateDropDirectory"
+    DependsOnTargets="$(PopulateDropDirectoryDependsOn)"
+    Condition=" 'true' == '$(PopulateDropDirectory)' " />
+
+  <Target Name="PrepareDropDirectories">
+    <Error Text="Property DropFolder is not defined!" Condition=" '' == '$(DropFolder)' " />
+    <MakeDir Directories="$(DropFolder)" Condition=" !Exists( '$(DropFolder)' ) " />
+  </Target>
+
+  <!-- Override this target in your project -->
+  <Target Name="PopulateDropArtefacts">
+    <PropertyGroup>
+      <SetupFile>$(PrivatePrefix)$(OutputName) ($(VersionInfo))$(TargetExt)</SetupFile>
+    </PropertyGroup>
+
+    <Copy
+      SourceFiles="$(TargetPath)"
+      DestinationFiles="$(DropFolder)$(SetupFile)"
+      OverwriteReadOnlyFiles="true"
+      SkipUnchangedFiles="true"
+      UseHardlinksIfPossible="true">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+</Project>
+

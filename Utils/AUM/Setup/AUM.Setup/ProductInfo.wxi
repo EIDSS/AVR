@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Include>
+  <?ifdef GlobalProductInfo.wxi?>
+  <?include $(var.GlobalProductInfo.wxi)?>
+  <?endif?>
+
+  <?if $(var.Platform) = x86?>
+  <?define UpgradeCode = {432B13DE-84A6-4F88-B6B5-AAFFD3C21E17}?>
+  <?define UpgradeCodeV5 = {0C2A5899-FDAB-4E5C-B677-2741497C5F16}?>
+  <?endif?>
+  
+  <?ifdef ProductName?>
+  <?undef ProductName?>
+  <?endif?>
+  <?define ProductName = !(loc.ProductName)?>
+  <?define ProductNameAbbreviation = !(loc.ProductNameAbbreviation)?>
+
+  <?define ProductFullName = $(var.ProductFamilyAbbreviation) $(var.ProductName)?>
+
+  <?define ProductRegistryKey = $(var.ProductFamilyRegistryKey)\[UpgradeCode]?>
+  <?define FamilyRegistryKey = "SOFTWARE\$(var.ProductFamilyAbbreviation) $(var.MajorVersion).$(var.FuzzyMinorVersion)"?>
+
+  
+</Include>

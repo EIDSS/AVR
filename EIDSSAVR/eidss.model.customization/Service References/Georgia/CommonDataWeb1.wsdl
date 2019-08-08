@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://csharp.com/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://csharp.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://csharp.com/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" nillable="true" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="loginToken" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="source" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="text" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSmsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="loginToken" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="moduleID" nillable="true" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="personalID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersonInfoResult" type="tns:PersonContract" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PersonContract">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="PersonalID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PasportID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RejectDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Gender" type="tns:PersonGendersEnum" />
+          <s:element minOccurs="0" maxOccurs="1" name="GenderCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Age" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AppDataID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressSourceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RegionID" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Region" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsAlive" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFound" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CraError" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsError" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Photo" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Condition" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthPlace" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthPlaceCountryID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceRaionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceRaion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DoubleCitizenshipName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DoubleCitizenshipCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HaveActiveCitizenship" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsBeneficiary" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="PersonDataSource" type="tns:PersonDataSourcesEnum" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PersonGendersEnum">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="Unknown" />
+              <s:enumeration value="Male" />
+              <s:enumeration value="Female" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:simpleType name="PersonDataSourcesEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="CRA" />
+          <s:enumeration value="LocalDB" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetPersonInfoEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="loginToken" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="moduleID" nillable="true" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="personalID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="birthYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonInfoExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Person" nillable="true" type="tns:PersonInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PersonInfo">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ResultData">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PrivateNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GenderName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GenderID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PersonStatus" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PersonStatusId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthPlace" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceCountryId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceCountry" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceRaionId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BirthPlaceRaion" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCountry" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCountryID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="MainDataId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AppDataId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Registration" type="tns:Registration" />
+              <s:element minOccurs="0" maxOccurs="1" name="PersonAdditionalStatuses" type="tns:PersonAdditionalStatuses" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ResultData" />
+      <s:complexType name="Registration">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OA_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddrStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddrStatusID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressAddressID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressAddressSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressAddressSourceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressRegion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressRaion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressTownship" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActiveAddressVillage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PersonAdditionalStatuses">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DeActID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeActRegDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeDeathDate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSmsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSms" />
+  </wsdl:message>
+  <wsdl:message name="SendSmsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoExSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoEx" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoExSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoExResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CommonDataWebSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <wsdl:input message="tns:SendSmsSoapIn" />
+      <wsdl:output message="tns:SendSmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <wsdl:input message="tns:GetPersonInfoSoapIn" />
+      <wsdl:output message="tns:GetPersonInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoEx">
+      <wsdl:input message="tns:GetPersonInfoExSoapIn" />
+      <wsdl:output message="tns:GetPersonInfoExSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CommonDataWebSoap" type="tns:CommonDataWebSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://csharp.com/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <soap:operation soapAction="http://csharp.com/SendSms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <soap:operation soapAction="http://csharp.com/GetPersonInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoEx">
+      <soap:operation soapAction="http://csharp.com/GetPersonInfoEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CommonDataWebSoap12" type="tns:CommonDataWebSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://csharp.com/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <soap12:operation soapAction="http://csharp.com/SendSms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfo">
+      <soap12:operation soapAction="http://csharp.com/GetPersonInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoEx">
+      <soap12:operation soapAction="http://csharp.com/GetPersonInfoEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommonDataWeb">
+    <wsdl:port name="CommonDataWebSoap" binding="tns:CommonDataWebSoap">
+      <soap:address location="http://ncdclogin.moh.gov.ge/Hmis/Hmis.CommonData.Web/Services/CommonDataWeb.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CommonDataWebSoap12" binding="tns:CommonDataWebSoap12">
+      <soap12:address location="http://ncdclogin.moh.gov.ge/Hmis/Hmis.CommonData.Web/Services/CommonDataWeb.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

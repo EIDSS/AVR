@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8097/?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/BLToolkit.ComponentModel" />
+  <xs:import schemaLocation="http://localhost:8097/?xsd=xsd16" namespace="http://schemas.datacontract.org/2004/07/BLToolkit.Common" />
+  <xs:complexType name="EditableObjectOfAddressWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Address" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfAddressWVAZKhkS" nillable="true" type="tns:EditableObjectOfAddressWVAZKhkS" />
+  <xs:complexType name="EditableObject">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/BLToolkit.Common" base="q1:EntityBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BLToolkit.ComponentModel" name="ObjectEdit" nillable="true" type="q2:ObjectEditEventHandler" />
+          <xs:element name="_isInMapping" type="xs:boolean" />
+          <xs:element name="_notNotifyChangesCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObject" nillable="true" type="tns:EditableObject" />
+  <xs:complexType name="EditableObjectOfCountryLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CountryLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfCountryLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfCountryLookupWVAZKhkS" />
+  <xs:complexType name="EditableObjectOfPostalCodeLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PostalCodeLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfPostalCodeLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfPostalCodeLookupWVAZKhkS" />
+  <xs:complexType name="EditableObjectOfRayonLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RayonLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfRayonLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfRayonLookupWVAZKhkS" />
+  <xs:complexType name="EditableObjectOfRegionLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RegionLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfRegionLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfRegionLookupWVAZKhkS" />
+  <xs:complexType name="EditableObjectOfSettlementLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SettlementLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfSettlementLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfSettlementLookupWVAZKhkS" />
+  <xs:complexType name="EditableObjectOfStreetLookupWVAZKhkS">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EditableObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="StreetLookup" Namespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EditableObject">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EditableObjectOfStreetLookupWVAZKhkS" nillable="true" type="tns:EditableObjectOfStreetLookupWVAZKhkS" />
+</xs:schema>

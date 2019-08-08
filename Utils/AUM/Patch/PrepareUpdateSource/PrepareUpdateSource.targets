@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <Import Project="$(SolutionDir)Common.targets" />
+  <PropertyGroup>
+    <UpdateSourceConfig Condition="'$(UpdateSourceConfig)' == ''">$(ProjectDir)UpdateSource.config</UpdateSourceConfig>
+    <BuildTools Condition=" '$(BuildTools)' == '' ">$(SolutionDir)BuildTools\</BuildTools>
+    <OutDir Condition="'$(OutDir)' == ''">$(OutputPath)</OutDir>
+    <TargetDir>$(OutDir)\UpdateSource\</TargetDir>
+    <TargetDir
+      Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;$(TargetDir)&quot;))' ">$([System.IO.Path]::GetFullPath( '$(MSBuildProjectDirectory)\$(TargetDir)' ))</TargetDir>
+  </PropertyGroup>
+  
+  <Target Name="Build" DependsOnTargets="$(BuildDependsOn)" Outputs="$(TargetDir)" />
+  <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Outputs="$(TargetDir)" />
+
+  
+  <UsingTask AssemblyFile="$(BuildTools)BV.TeamBuild.Tasks.dll" TaskName="CreateItemFromXml" />
+
+  <ItemGroup>
+    <PatchSubproducts Include="aum" />
+    <PatchSubproducts Include="avrs" />
+    <PatchSubproducts Include="db" />
+    <PatchSubproducts Include="dba" />
+    <PatchSubproducts Include="dbavr" />
+    <PatchSubproducts Include="e" />
+    <PatchSubproducts Include="ns" />
+    <PatchSubproducts Include="x" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <BuildDependsOn>
+      BeforeBuild;
+      PrepareUpdateSourceFolder;
+      FillUpdateSourceFolder;
+      GetTargetDir;
+      AfterBuild
+    </BuildDependsOn>
+
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+
+    <CleanDependsOn>
+    </CleanDependsOn>
+  </PropertyGroup>
+  
+  <Target Name="BeforeBuild" />
+  <Target Name="AfterBuild" />
+
+
+  <Target Name="PrepareUpdateSourceFolder">
+    <MakeDir Directories="$(TargetDir)">
+      <Output TaskParameter="DirectoriesCreated" PropertyName="UpdateSource" />
+    </MakeDir>
+  </Target>
+
+  <PropertyGroup>
+    <FillUpdateSourceFolderDependsOn>
+      FillUpdateSourceFolderWithParsedFiles;
+      FillUpdateSourceFolderWithFolderStructure;
+      FillUpdateSourceFolderWithOneLevelFolders
+    </FillUpdateSourceFolderDependsOn>
+  </PropertyGroup>
+  <Target Name="FillUpdateSourceFolder" DependsOnTargets="$(FillUpdateSourceFolderDependsOn)" />
+
+  <Target Name="FillUpdateSourceFolderWithParsedFiles" Outputs="%(PatchSubproducts.Identity)">
+    <PropertyGroup>
+      <_subProduct>%(PatchSubproducts.Identity)</_subProduct>
+
+      <_subProductSourceXPathQuery>/UpdateSources/$(_subProduct)/@Source</_subProductSourceXPathQuery>
+      <_subProductSourceFilesXPathQuery>/UpdateSources/$(_subProduct)/File</_subProductSourceFilesXPathQuery>
+      <_subProductSourceFolder />
+    </PropertyGroup>
+
+    <XmlPeek XmlInputPath="$(UpdateSourceConfig)" Query="$(_subProductSourceXPathQuery)">
+      <Output TaskParameter="Result" PropertyName="_subProductSourceFolder" />
+    </XmlPeek>
+    <PropertyGroup>
+      <_subProductSourceFolder Condition=" '$(_subProductSourceFolder)' == '' ">$(BinariesRoot)</_subProductSourceFolder>
+      <_subProductSourceFolder
+        Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;$(_subProductSourceFolder)&quot;))' ">$(BinariesRoot)$(_subProductSourceFolder)</_subProductSourceFolder>
+    </PropertyGroup>
+
+    <BV.TeamBuild.Tasks.CreateItemFromXml
+      Files="$(UpdateSourceConfig)"
+      SelectXPath="$(_subProductSourceFilesXPathQuery)"
+      ValueXPath="@Name"
+      AdditionalMetadataXPath="@Source"
+      AdditionalMetadataNames="Source">
+
+      <Output TaskParameter="Items" ItemName="_subPatchFiles" />
+    </BV.TeamBuild.Tasks.CreateItemFromXml>
+
+    <ItemGroup>
+      <_subPatchFiles Condition=" '' == '%(Source)' ">
+        <Source>$(_subProductSourceFolder)%(Identity)</Source>
+      </_subPatchFiles>
+      <_subPatchFiles Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;%(Source)&quot;))' ">
+        <Source>$(_subProductSourceFolder)%(Source)</Source>
+      </_subPatchFiles>
+    </ItemGroup>
+    
+    <Copy
+      SourceFiles="%(_subPatchFiles.Source)"
+      DestinationFiles="$(UpdateSource)$(_subProduct)\%(Identity)">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+
+  <Target Name="FillUpdateSourceFolderWithFolderStructure" Outputs="%(PatchSubproducts.Identity)">
+    <PropertyGroup>
+      <_subProduct>%(PatchSubproducts.Identity)</_subProduct>
+
+      <_subProductSourceXPathQuery>/UpdateSources/$(_subProduct)/@Source</_subProductSourceXPathQuery>
+      <_subProductSourceFoldersWithSubFoldersXPathQuery>/UpdateSources/$(_subProduct)/Folder[not(@Recursive) or @Recursive='true']</_subProductSourceFoldersWithSubFoldersXPathQuery>
+      <_subProductSourceFolder />
+    </PropertyGroup>
+    
+    <XmlPeek XmlInputPath="$(UpdateSourceConfig)" Query="$(_subProductSourceXPathQuery)">
+      <Output TaskParameter="Result" PropertyName="_subProductSourceFolder" />
+    </XmlPeek>
+    <PropertyGroup>
+      <_subProductSourceFolder Condition=" '$(_subProductSourceFolder)' == '' ">$(BinariesRoot)</_subProductSourceFolder>
+      <_subProductSourceFolder
+        Condition="
+          '$(_subProductSourceFolder)' != ''
+          And 'True' != '$([System.IO.Path]::IsPathRooted(&quot;$(_subProductSourceFolder)&quot;))' ">$(BinariesRoot)$(_subProductSourceFolder)</_subProductSourceFolder>
+    </PropertyGroup>
+
+    <BV.TeamBuild.Tasks.CreateItemFromXml
+      Files="$(UpdateSourceConfig)"
+      SelectXPath="$(_subProductSourceFoldersWithSubFoldersXPathQuery)"
+      ValueXPath="@Name"
+      AdditionalMetadataXPath="@Source"
+      AdditionalMetadataNames="Source">
+
+      <Output TaskParameter="Items" ItemName="_subProductFolders" />
+    </BV.TeamBuild.Tasks.CreateItemFromXml>
+
+    <ItemGroup Condition=" '' != '@(_subProductFolders)' ">
+      <_subProductFolders Condition=" '' == '%(Source)' ">
+        <Source>$(_subProductSourceFolder)%(Identity)</Source>
+      </_subProductFolders>
+      <_subProductFolders Condition=" !HasTrailingSlash( '%(Source)' ) ">
+        <Source>%(Source)\</Source>
+      </_subProductFolders>
+      <_subProductFolders Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;%(Source)&quot;))' ">
+        <Source>$(_subProductSourceFolder)%(Source)</Source>
+      </_subProductFolders>
+
+      <_subProductFoldersStructure Include="%(_subProductFolders.Source)**\*">
+        <DestinationSubpath>%(_subProductFolders.Identity)</DestinationSubpath>
+      </_subProductFoldersStructure>
+      <_subProductFoldersStructure Condition=" '' != '@(_subProductFoldersStructure)' And !HasTrailingSlash( '%(DestinationSubpath)' ) ">
+        <DestinationSubpath>%(DestinationSubpath)\</DestinationSubpath>
+      </_subProductFoldersStructure>
+      <_subProductFoldersStructure Condition=" '' != '@(_subProductFoldersStructure)' ">
+        <DestinationSubpath>%(DestinationSubpath)%(RecursiveDir)</DestinationSubpath>
+      </_subProductFoldersStructure>
+    </ItemGroup>
+
+    <Copy
+      SourceFiles="%(_subProductFoldersStructure.Identity)"
+      DestinationFolder="$(UpdateSource)$(_subProduct)\%(DestinationSubpath)">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+  
+  <Target Name="FillUpdateSourceFolderWithOneLevelFolders" Outputs="%(PatchSubproducts.Identity)">
+    <PropertyGroup>
+      <_subProduct>%(PatchSubproducts.Identity)</_subProduct>
+
+      <_subProductSourceXPathQuery>/UpdateSources/$(_subProduct)/@Source</_subProductSourceXPathQuery>
+      <_subProductSourceFoldersWithoutSubFoldersXPathQuery>/UpdateSources/$(_subProduct)/Folder[@Recursive='false']</_subProductSourceFoldersWithoutSubFoldersXPathQuery>
+      <_subProductSourceFolder />
+    </PropertyGroup>
+
+    <XmlPeek XmlInputPath="$(UpdateSourceConfig)" Query="$(_subProductSourceXPathQuery)">
+      <Output TaskParameter="Result" PropertyName="_subProductSourceFolder" />
+    </XmlPeek>
+    <PropertyGroup>
+      <_subProductSourceFolder Condition=" '$(_subProductSourceFolder)' == '' ">$(BinariesRoot)</_subProductSourceFolder>
+      <_subProductSourceFolder
+        Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;$(_subProductSourceFolder)&quot;))' ">$(BinariesRoot)$(_subProductSourceFolder)</_subProductSourceFolder>
+    </PropertyGroup>
+
+    <BV.TeamBuild.Tasks.CreateItemFromXml
+      Files="$(UpdateSourceConfig)"
+      SelectXPath="$(_subProductSourceFoldersWithoutSubFoldersXPathQuery)"
+      ValueXPath="@Name"
+      AdditionalMetadataXPath="@Source"
+      AdditionalMetadataNames="Source">
+
+      <Output TaskParameter="Items" ItemName="_subProductPureFolders" />
+    </BV.TeamBuild.Tasks.CreateItemFromXml>
+
+    <ItemGroup Condition=" '' != '@(_subProductPureFolders)' ">
+      <_subProductPureFolders Condition=" '' == '%(Source)' ">
+        <Source>$(_subProductSourceFolder)%(Identity)</Source>
+      </_subProductPureFolders>
+      <_subProductPureFolders Condition=" !HasTrailingSlash( '%(Source)' ) ">
+        <Source>%(Source)\</Source>
+      </_subProductPureFolders>
+      <_subProductPureFolders Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;%(Source)&quot;))' ">
+        <Source>$(_subProductSourceFolder)%(Source)</Source>
+      </_subProductPureFolders>
+
+      <_subProductPureFolderStructure Include="%(_subProductPureFolders.Source)*.*">
+        <DestinationSubpath>\%(_subProductPureFolders.Identity)</DestinationSubpath>
+      </_subProductPureFolderStructure>
+      <_subProductFoldersStructure Condition=" '' != '@(_subProductPureFolderStructure)' And !HasTrailingSlash( '%(DestinationSubpath)' ) ">
+        <DestinationSubpath>%(DestinationSubpath)\</DestinationSubpath>
+      </_subProductFoldersStructure>
+      <_subProductPureFolderStructure Condition=" '' != '@(_subProductPureFolderStructure)' ">
+        <DestinationSubpath>%(DestinationSubpath)%(RecursiveDir)</DestinationSubpath>
+      </_subProductPureFolderStructure>
+    </ItemGroup>
+
+    <Message Text="_subProductPureFolders.Source - %(_subProductPureFolders.Source)" />
+    <Message Text="_subProductPureFolderStructure:%0d%0a%09@(_subProductPureFolderStructure, '%0d%0a%09')" />
+
+    <Copy
+      SourceFiles="%(_subProductPureFolderStructure.Identity)"
+      DestinationFolder="$(UpdateSource)$(_subProduct)\%(DestinationSubpath)">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+
+
+  <Target Name="GetTargetDir" Outputs="$(TargetDir)" />
+
+
+  <Target Name="PopulateDropArtefacts">
+    <ItemGroup>
+      <_updateSourceFiles Include="$(TargetDir)**\*" />
+    </ItemGroup>
+    
+    <Copy
+      SourceFiles="@(_updateSourceFiles)"
+      DestinationFiles="@(_updateSourceFiles->'$(DropFolder)%(RecursiveDir)%(Filename)%(Extension)')"
+      OverwriteReadOnlyFiles="true"
+      SkipUnchangedFiles="true"
+      UseHardlinksIfPossible="true">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+</Project>

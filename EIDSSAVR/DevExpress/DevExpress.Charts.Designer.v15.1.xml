@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Charts.Designer.v15.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Charts.Designer.ChartDesigner">
+
+            <summary>
+                <para>The Chart Designer used to design a chart at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Charts.Designer.ChartDesigner.#ctor(DevExpress.Xpf.Charts.ChartControl)">
+            <summary>
+                <para>Creates a Chart Designer for the specified chart control.
+
+</para>
+            </summary>
+            <param name="chartControl">
+		A <see cref="T:DevExpress.Xpf.Charts.ChartControl"/> object that is a chart control for which a chart designer is created.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Charts.Designer.ChartDesigner.Close">
+            <summary>
+                <para>Closes the chart designer with the chart currently being edited.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Charts.Designer.ChartDesigner.Show(System.Windows.Window)">
+            <summary>
+                <para>Invokes the designer for the chart control. 
+</para>
+            </summary>
+            <param name="owner">
+		An object that is the parent window of the chart designer. 
+
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

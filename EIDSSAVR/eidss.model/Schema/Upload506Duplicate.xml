@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object name="Upload506Duplicate"
+        connection="EidssConnectionString"
+        generator="ObjectGenerator.xslt"
+        xmlns="urn:schemas-bv:objectmodel">
+
+  <storage>
+    <get name="spUpload506Duplicate_SelectDetail" type="detaillist,detailone" />
+  </storage>
+
+  <tables>
+    <table name="Upload506Duplicate">
+      <labels>
+        <item name="strPatientNameEIDSS"  labelId="PatientName"/>
+        <item name="strTentativeDiagnosisEIDSS"  labelId="idfsTentativeDiagnosis"/>
+        <item name="datDefineEIDSS"  labelId="datDiagnosisDate"/>
+        <item name="strSentByOfficeEIDSS"  labelId="idfSentByOffice2"/>
+        <item name="strLocalIdentifierEIDSS"  labelId="strLocalIdentifier"/>
+        <item name="strHumanGenderEIDSS"  labelId="idfsSex"/>
+        <item name="intPatientAgeEIDSS"  labelId="Age"/>
+        <item name="strHumanAgeTypeEIDSS"  labelId="idfsHumanAgeType"/>
+        <item name="strMarietalEIDSS"  labelId="strMaritalStatus"/>
+        <item name="strNationalityEIDSS"  labelId="idfsNationality"/>
+        <item name="strOccupationTypeEIDSS"  labelId="idfsOccupationType"/>
+        <item name="strRegionEIDSS"  labelId="strProvince"/>
+        <item name="strSettlementEIDSS"  labelId="idfsSettlement"/>
+        <item name="strAddressEIDSS"  labelId="strHouse"/>
+        <item name="strOutcomeEIDSS"  labelId="idfsOutcome"/>
+        <item name="strEmployerNameEIDSS"  labelId="strEmployerName"/>
+        <item name="datSickEIDSS"  labelId="datDateOfSymptomsOnset"/>
+        <item name="datDeathEIDSS"  labelId="datDateOfDeath"/>
+        <item name="datRecordEIDSS"  labelId="datNotificationDate"/>
+        <item name="strAddrCodeEIDSS"  labelId="strAddressCode"/>
+        <item name="datEnteredEIDSS"  labelId="datEnteredDate"/>
+      </labels>
+      <fields>
+        <storage name="Item" type="Upload506Item" />
+        <storage name="Resolved" type="bool"/>
+      </fields>
+      <readonly>
+        <fields name="*" predicate="c => true" />
+      </readonly>
+      <actions>
+        <standard>
+          <remove type="Create"/>
+          <remove type="Delete"/>
+          <remove type="SelectAll"/>
+          <remove type="Ok"/>
+          <remove type="Cancel"/>
+          <remove type="Save"/>
+        </standard>
+      </actions>
+    </table>
+  </tables>
+</object>

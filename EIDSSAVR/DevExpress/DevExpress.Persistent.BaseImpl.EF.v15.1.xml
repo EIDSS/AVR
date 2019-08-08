@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Persistent.BaseImpl.EF.v15.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect">
+
+            <summary>
+                <para>The entity used to store model difference aspects in the database.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ModelDifferenceAspect class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.DisplayName">
+            <summary>
+                <para>Gets the <a href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.85).aspx">language code</a> of the current ModelDifferenceAspect object, or the "(Default language)" text.
+</para>
+            </summary>
+            <value>A string which specifies the name of the current model difference aspect, or "(Default language)" if the aspect name is empty (if the current aspect specifies culture-neutral model differences).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.ID">
+            <summary>
+                <para>Specifies the ModelDifferenceAspect identifier
+</para>
+            </summary>
+            <value>An integer which is the entity identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.Name">
+            <summary>
+                <para>Specifies the <a href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.85).aspx">language code</a> of the current ModelDifferenceAspect object. The empty value means that the current aspect specifies culture-neutral model differences.
+</para>
+            </summary>
+            <value>A string which specifies the name of the current model difference aspect.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.Owner">
+            <summary>
+                <para>Specifies the <see cref="T:DevExpress.Persistent.BaseImpl.EF.ModelDifference"/> object the current ModelDifferenceAspect belongs to.
+</para>
+            </summary>
+            <value>A the <see cref="T:DevExpress.Persistent.BaseImpl.EF.ModelDifference"/> object specifying the model differences object that owns the current aspect.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifferenceAspect.Xml">
+            <summary>
+                <para>Specifies the XML code of the current ModelDifferenceAspect object.
+</para>
+            </summary>
+            <value>A string which is the XML code of the current model difference aspect.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Persistent.BaseImpl.EF.ModelDifference">
+
+            <summary>
+                <para>The entity used to store model differences in the database.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Persistent.BaseImpl.EF.ModelDifference.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ModelDifference class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.Aspects">
+            <summary>
+                <para>Gets a list of model difference aspects associated with the ModelDifference object.
+</para>
+            </summary>
+            <value>An <b>IList&lt;</b><see cref="T:DevExpress.ExpressApp.IModelDifferenceAspect"/><b>&gt;</b> list of model difference aspects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.ContextId">
+            <summary>
+                <para>Specifies the context identifier of the current ModelDifference object that allows distinguishing model differences designed for different applications using the same database.
+
+</para>
+            </summary>
+            <value>A string which is the context identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.ID">
+            <summary>
+                <para>Specifies the ModelDifference identifier.
+</para>
+            </summary>
+            <value>An integer which is the entity identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.UserId">
+            <summary>
+                <para>Specifies the identifier of a user who owns the current ModelDifference object.
+</para>
+            </summary>
+            <value>A string which is the identifier of a user who owns the current model differences.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.UserName">
+            <summary>
+                <para>Gets the name of a user who owns the current ModelDifference object.
+</para>
+            </summary>
+            <value>A string which is the name of a user who owns the current model differences.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ModelDifference.Version">
+            <summary>
+                <para>Specifies the version of the current ModelDifference object.
+</para>
+            </summary>
+            <value>An integer value which is the version number of the model differences object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Persistent.BaseImpl.EF.ReportDataV2">
+
+            <summary>
+                <para>The entity class used to store reports in the Reports V2 Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportDataV2 class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.#ctor(System.Type)">
+            <summary>
+                <para>Initializes a new instance of the ReportDataV2 class.
+</para>
+            </summary>
+            <param name="dataType">
+		A <see cref="T:System.Type"/> object specifying the data type that the report data source is bound to.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.Content">
+            <summary>
+                <para>Specifies the report content.
+</para>
+            </summary>
+            <value>A byte array that is the report content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.DataTypeCaption">
+            <summary>
+                <para>Gets the type caption of persistent objects that are displayed within the report.
+</para>
+            </summary>
+            <value>A string that specifies the type caption of persistent objects that are displayed within the report.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.DataTypeName">
+            <summary>
+                <para>Gets the name of the report's data type.
+</para>
+            </summary>
+            <value>A string which is the name of the report's data type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.DisplayName">
+            <summary>
+                <para> Specifies the report's display name.
+</para>
+            </summary>
+            <value>A string which is the report's display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.ID">
+            <summary>
+                <para>Specifies the ReportDataV2 identifier.
+</para>
+            </summary>
+            <value>An integer which is the entity identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.IsInplaceReport">
+            <summary>
+                <para>Specifies whether or not the report is inplace.
+</para>
+            </summary>
+            <value><b>true</b>, if the report is inplace; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.IsPredefined">
+            <summary>
+                <para>Gets a boolean value that indicates whether or not the report is predefined.
+</para>
+            </summary>
+            <value><b>true</b>, if a report is predefined in code; <b>false</b>, if a report is created at runtime.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.ParametersObjectType">
+            <summary>
+                <para>Specifies the type of the reports parameter object.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> of an object that specifies report parameters (typically, the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> descendant).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.ParametersObjectTypeName">
+            <summary>
+                <para>Specifies the name of the reports parameter object type.
+</para>
+            </summary>
+            <value>A string which is the name of the reports parameter object type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.PredefinedReportType">
+            <summary>
+                <para>Specifies the type of the predefined report.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object that specifies the type of the predefined report.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Persistent.BaseImpl.EF.ReportDataV2.PredefinedReportTypeName">
+            <summary>
+                <para>Specifies the name of the reports parameter object type.
+</para>
+            </summary>
+            <value>A string which is the name of the reports parameter object type.
+</value>
+
+
+        </member>
+    </members>
+</doc>

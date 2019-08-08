@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?include "ProductInfo.wxi" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="AVR Service Settings">
+    <Property Id="AVR_SERVICE" Secure="yes" Value="!(loc.AvrSvcSettingsDlgNotPresentValue)">
+      <RegistrySearch Id="AVR_SERVICE.rs" Root="HKLM" Key="$(var.ProductRegistryKey)" Name="PrimaryAvrServiceUpgradeCode" Type="raw" />
+    </Property>
+    <Property Id="AVRSPATH" Secure="yes" />
+    <Property Id="AVRSNAME" Secure="yes" />
+    <Property Id="AVR_SERVICE_SERVER" Secure="yes" />
+    <Property Id="AVR_SERVICE_DATABASE" Secure="yes" />
+    <Property Id="AVR_SERVICE_USER" Secure="yes" />
+    <Property Id="AVR_SERVICE_PASSWORD" Secure="yes" />
+
+    <CustomAction Id="ReadAvrSvcConfiguration" DllEntry="ReadAvrSvcConfiguration" BinaryKey="CustomActions" />
+    <InstallExecuteSequence>
+      <Custom Action="ReadAvrSvcConfiguration" Before="ProcessComponents">
+        <![CDATA[AVR_SERVICE <> "!(loc.AvrSvcSettingsDlgNotPresentValue)" And AVR_SERVICE <> ""]]>
+        </Custom>
+    </InstallExecuteSequence>
+
+    <ComponentGroup Id="AVRServiceSettings" Directory="ApplicationFolder">
+      <Component Id="PrimaryAvrServiceUpgradeCode">
+        <Condition><![CDATA[AVR_SERVICE <> "!(loc.AvrSvcSettingsDlgNotPresentValue)" And AVR_SERVICE <> ""]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.ProductRegistryKey)">
+          <RegistryValue Name="PrimaryAvrServiceUpgradeCode" Value="[AVR_SERVICE]" Type="string" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+      <Component Id="AvrServiceLocation">
+        <Condition><![CDATA[AVR_SERVICE <> "!(loc.AvrSvcSettingsDlgNotPresentValue)" And AVR_SERVICE <> ""]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="avrspath" Value="[AVRSPATH]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="avrsname" Value="[AVRSNAME]" Type="string" />
+        </RegistryKey>
+      </Component>
+      <Component Id="AvrServiceDatabase">
+        <Condition><![CDATA[AVR_SERVICE <> "!(loc.AvrSvcSettingsDlgNotPresentValue)" And AVR_SERVICE <> ""]]></Condition>
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="AvrServiceDatabase" Value="[AVR_SERVICE_DATABASE]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="AvrServiceServer" Value="[AVR_SERVICE_SERVER]" Type="string" />
+          <RegistryValue Name="AvrServiceUser" Value="[AVR_SERVICE_USER]" Type="string" />
+          <RegistryValue Name="AvrServicePassword" Value="[AVR_SERVICE_PASSWORD]" Type="string" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

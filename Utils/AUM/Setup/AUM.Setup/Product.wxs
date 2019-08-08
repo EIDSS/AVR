@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?include "ProductInfo.wxi" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product
+    Id="*"
+    Name="$(var.ProductFullName)"
+    Language="!(loc.ProductLanguage)"
+    Version="$(var.ProductVersion)"
+    Manufacturer="$(var.Manufacturer)"
+    UpgradeCode="$(var.UpgradeCode)">
+
+    <Package
+      Manufacturer="$(var.Manufacturer)"
+      Description="!(loc.ProductDescription)"
+      Comments="$(var.ProductName)"
+      SummaryCodepage="!(loc.SummaryCodepage)"
+      InstallerVersion="300"
+      InstallPrivileges="elevated"
+      Compressed="yes"
+      InstallScope="perMachine" />
+
+    <MajorUpgrade
+      AllowSameVersionUpgrades="yes"
+      AllowDowngrades="no"
+      Schedule="afterInstallValidate"
+      DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+
+    <Condition Message="!(loc.ConditionElevationPrivileges)">Installed OR Privileged</Condition>
+    <Condition Message="!(loc.ConditionOperatingSystem)"><![CDATA[(VersionNT = 501 AND ServicePackLevel >= 3) OR VersionNT >= 600]]></Condition>
+
+    <PropertyRef Id="NETFRAMEWORK40FULL" />
+    <Condition Message="!(loc.ConditionNetFramework4)"><![CDATA[Installed OR NETFRAMEWORK40FULL]]></Condition>
+
+    <UIRef Id="WixUI_AUM" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+    <!--<WixVariable Id="WixUILicenseRtf" Value="$(var.SolutionDir)LicenseAgreement.rtf" />-->
+    <!--<WixVariable Id="WixUIBannerBmp" Value="$(var.SetupSources)Banner.png" />-->
+    <Icon Id="Icon.ProductIcon" SourceFile="$(var.AUM.TargetPath)" />
+    <Property Id="ARPPRODUCTICON" Value="Icon.ProductIcon" />
+    <SetProperty Id="ARPINSTALLLOCATION" Value="[ApplicationFolder]" After="InstallValidate" Sequence="execute" />
+    <Property Id="ARPNOREPAIR" Value="1" />
+    <Property Id="ProductFamilyAbbreviation" Value="$(var.ProductFamilyAbbreviation)" />
+    <Property Id="MajorVersion" Value="$(var.MajorVersion)" />
+    <Property Id="MinorVersion" Value="$(var.MinorVersion)" />
+    <Property Id="FuzzyMinorVersion" Value="$(var.FuzzyMinorVersion)" />
+    <Property Id="ProductFamilyRegistryKey" Value="$(var.ProductFamilyRegistryKey)" />
+
+    <Feature Id="ProductRegistration" Absent="disallow" AllowAdvertise="no" Level="1" Display="hidden">
+      <ComponentGroupRef Id="ProductRegistration" />
+    </Feature>
+
+    <Feature Id="AUM" Absent="disallow" AllowAdvertise="no" Level="1">
+      <ComponentGroupRef Id="AUM.Administrator" />
+      <ComponentGroupRef Id="AUM.Core" />
+      <ComponentGroupRef Id="AUM.Service" />
+      <ComponentGroupRef Id="AUM" />
+      <ComponentGroupRef Id="AVR.Dependencies" />
+      <ComponentGroupRef Id="DbSettings" />
+      <ComponentGroupRef Id="AVRServiceSettings" />
+      <ComponentGroupRef Id="Configuration" />
+      <ComponentGroupRef Id="XPatchLauncher" />
+    </Feature>
+  </Product>
+
+  <Fragment Id="ProductRegistryKey">
+    <ComponentGroup Id="ProductRegistration" Directory="ApplicationFolder">
+      <Component Id="ProductRegistryKey">
+        <RegistryKey Root="HKLM" Key="$(var.ProductRegistryKey)">
+          <RegistryValue Name="InstallPath" Value="[ApplicationFolder]" Type="string" KeyPath="yes" />
+          <RegistryValue Name="Version" Value="$(var.ProductVersion)" Type="string" />
+        </RegistryKey>
+      </Component>
+
+      <Component Id="SubRegistration">
+        <RegistryKey Root="HKLM" Key="$(var.FamilyRegistryKey)">
+          <RegistryValue Name="aumpath" Value="[ApplicationFolder]" Type="string" KeyPath="yes" />
+          <RegistryKey Key="XPatch" ForceCreateOnInstall="yes" />
+          <RegistryKey Key="AUM" ForceCreateOnInstall="yes" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

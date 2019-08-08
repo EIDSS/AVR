@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BLToolkit.ComponentModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BLToolkit.ComponentModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8097/?xsd=xsd18" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="ObjectEditEventHandler">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System" base="q1:MulticastDelegate" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObjectEditEventHandler" nillable="true" type="tns:ObjectEditEventHandler" />
+</xs:schema>

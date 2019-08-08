@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <PropertyRef Id="MACHINE_LEVEL" />
+    <Property Id="OnceSet" Value="0" />
+
+    <UI>
+      <Dialog Id="Configuration.MachineLevelDlg" Width="370" Height="270" Title="!(loc.Configuration.MachineLevelDlg_Title)">
+        <Control Id="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Default="yes" Text="!(loc.WixUINext)">
+          <Publish Property="OnceSet" Value="1" Order="3">1</Publish>
+        </Control>
+        <Control Id="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Text="!(loc.WixUIBack)" />
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Cancel="yes" Text="!(loc.WixUICancel)">
+          <Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+        </Control>
+        <Control Id="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Transparent="yes" NoPrefix="yes" Text="!(loc.Configuration.MachineLevelDlgDescription)" />
+        <Control Id="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Transparent="yes" NoPrefix="yes" Text="!(loc.Configuration.MachineLevelDlgTitle)" />
+        <Control Id="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" TabSkip="no" Text="!(loc.Configuration.MachineLevelDlgBannerBitmap)" />
+        <Control Id="BannerLine" Type="Line" X="0" Y="44" Width="370" Height="0" />
+        <Control Id="BottomLine" Type="Line" X="0" Y="234" Width="370" Height="0" />
+
+        <Control Id="MachineLevelTitle" Type="Text" Width="200" Height="17" X="80" Y="110" Text="!(loc.Configuration.MachineLevelDlgMachineLevelTitle)" />
+        <Control Id="MachineLevel" Type="ComboBox" Property="MACHINE_LEVEL" Width="130" Height="16" X="80" Y="130" Sorted="yes" ComboList="yes">
+          <ComboBox Property="MACHINE_LEVEL">
+            <ListItem Text="!(loc.Configuration.MachineLevelDlgCDR)" Value="1" />
+            <ListItem Text="!(loc.Configuration.MachineLevelDlgSLVL.NSSLVL)" Value="2" />
+            <ListItem Text="!(loc.Configuration.MachineLevelDlgWKS)" Value="4" />
+            <ListItem Text="!(loc.Configuration.MachineLevelDlgWEB)" Value="5" />
+            <ListItem Text="!(loc.Configuration.MachineLevelDlgWEBWKS)" Value="6" />
+          </ComboBox>
+        </Control>
+      </Dialog>
+    </UI>
+  </Fragment>
+</Wix>

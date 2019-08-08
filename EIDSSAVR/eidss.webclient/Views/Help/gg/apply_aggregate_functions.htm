@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>ანალიზი, ვიზუალიზაცია და ანგარიშგება &gt; სქემები &gt; გარდაქმნადი/ძირითადი ცხრილი &gt; განზოგადებული ფუნქციების გამოყენება</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="TEXT SCRAMBLING in TRIAL VERSION OUTPUT! In evaluation mode, Help &amp; Manual will scramble individual characters in random words in your published output files. This is a..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #ffffff; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "apply_aggregate_functions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="par5"><span class="fnt6">განზოგადებული ფუნქციების გამოყენება</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?apply_aggregate_functions.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   ანალიზი, ვიზუალიზაცია და ანგარიშგება &gt; <a href="layouts.htm">სქემები</a> &gt; <a href="constructworking_with_pivot_grid.htm">გარდაქმნადი/ძირითადი ცხრილი</a>&nbsp;&gt;</p>
+   <h1 class="par5"><span class="fnt6">განზოგადებული ფუნქციების გამოყენება</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="rename_fields.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="constructworking_with_pivot_grid.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="group_date_function.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="par0">TEXT SCRAMBLING in TRIAL VERSION OUTPUT! In evaluation mode, Help &amp; Manual will scramble individual characters in random words in your published output files. This is a limitation of the free trial version. <a href="http://www.helpandmanual.com" target="_blank" class="weblink"> This help system was created with an evaluation copy of Help &amp; Manual.</a></p>
+<hr style="height:2px; color:#ff0000; border-width:0px; background-color:#ff0000;" /><p class="par0">&nbsp;</p>
+<p class="par0">გარდაქმნად ბადეში შესაძლებელია იმის შერჩევა, თუ როგორ იქნას მიღებული მონაცემები, როგორც რიგი ერთეულები, მაქსიმალური ერთეული და ა.შ. ფუნქციას, რომელიც ახორციელებს გამოთვლებს, სიდიდეების სიმრავლეზე და არა ერთ სიდიდეზე, ეწოდება გაერთიანებული ფინქცია. მაგალითად, რიცხვების სიის საშუალო ან შუა სიდიდის პოვნა წარმოადგენს გაერთიანებულ ფუნქციას.</p>
+<p class="par0">წინასწარშეთანხმებით, თითოეულ <span class="fnt11">დზეის-ის</span> ველს გააჩნია გაერთიანებული ფუნქცია, რომელიც გამოიყენება მის მიმართ. თუ წინასწარშეთანხმებული გაერთიანებული ფუნქცია არ აკმაყოფილებს მოთხოვნებს, ან <a href="set_search_object_fields_defau.htm" class="topiclink">შეიცვალეთ წინასწარშეთანხმებული გაერთიანებული ფუნქცია</a> (ეს უნდა გაკეთდეს, თუ ახალი გაერთიანებული ფუნქციის გამოყენება გათვალისწინებულია უმეტეს შემთხვევებში), ან შეცვალეთ გაერთიანებული ფუნქცია, რომელიც ახლა და აქ უნდა გამოიყენოთ. </p>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">გაერთიანებული ფუნქციის შცვლა</span></p>
+<p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="fnt11">შეარჩიეთ მონაცემები მონაცემთა ზონაში, რომლებისთვისაც უნდა შეიცვალოს გარეთიანებული ფუნქცია.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="fnt11">დაადასტურეთ, რომ სასურველი ველი ჩანს მხოლოდ წაკითხვისთვის განკუთვნილ ველში </span><span class="fnt11" style="font-weight: bold;">მონაცემთა ველისთვის</span><span class="fnt11"> გარდაქმნადი ბადის </span><span class="fnt11" style="font-weight: bold;">პარამეტრების</span><span class="fnt11"> ფანჯარაში.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">3.</span><span class="fnt11">გაერთიანებული ფუნქციის </span><span class="fnt11" style="font-weight: bold;">ველში</span><span class="fnt11"> შეარჩიეთ გაეთიანებული ფუნქცია&lt; რომელიც უნდა გამოიყენოთ სანაცვლოდ.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">4.</span><span class="fnt11">მიუთითეთ </span><span class="fnt11" style="font-weight: bold;">სიზუსტე</span><span class="fnt11"> მიღებული სიდიდისთვის.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">5.</span><span class="fnt11">თუ გამოიყენება რეიტინგის ფუნქცია,</span><span class="fnt11" style="font-weight: bold;"> პარამეტრებში&quot; ადმინისტრაციული ერთეულის ველის </span><span class="fnt11">ველში შეარჩიეთ ადმინისტრაციული ერთეული, გამოთვლებში გამოყენებული სტატისტიკისთვის.</span></p><p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">განზოგადებული ფუნქციები</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<thead>
+<tr style="text-align:left;vertical-align:top;">
+<th style="vertical-align:top; width:149px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">ფუნქცია</span></p>
+</th>
+<th style="vertical-align:top; width:665px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">აღწერა</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">საშუალო</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">არა–ჯამურ უჯრედებში </span><span class="fnt19" style="font-style: italic;">თვლის</span><span class="fnt19"> ფუნქცია გამოიყენება, ჯამურ უჯრედებში გამოიყენება საშუალო სიდიდეები. </span></p>
+<p class="par18"><span class="fnt19">თუ მოცემულია n რიცხვები, თითოეული რიცხვი, რომელიც აღნიშნულია ai–ით, სადაც i =1, ..., n, საშუალო არითმეტიკულის სიდიდე არის ai–ები [ჯამი] გაყოფილი n–ზე ან</span></p>
+<p class="par18"><img width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="average_formula.png"/></p>
+<p class="par18"><span class="fnt19">სადაც</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> არის იმ უჯრედების რიცხვი, რომლებიც შედის ჯამში;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">a</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> არის რიცხვი </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19"> –ურ უჯრედში.</span></p>
+<p class="par18"><span class="fnt19">საშუალო არითმეტიკულის სიდიდე, რომელსაც ხშირად მარტივად უწოდებენ ორი რიცხვის საშუალოს, როგორებიცაა 2 და 8, მიიღება ისეთი A სიდიდის პოვნით, რომლისთვისაც 2 + 8 = A + A. შეიძლება განისაზღვროს, რომ A = (2 + 8)/2 = 5. </span></p>
+<p class="par18"><span class="fnt19">თუ გავზრდით იმ სიის წევრების რიცხვს, რომლისთვისაც გვსურს საშუალოს გამოთვლა, ჩვენ მივიღებთ, მაგალითად, რომ 2, 8 და 11 საშუალო არითმეტიკულის გამოთვლა შეიძლება, თუ A სიდიდისთვის ამოვხსნით განტოლებას 2 + 8 + 11 = A + A + A. ჩვენ დავადგენთ, რომ A = (2 + 8 + 11)/3 = 7.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">თვლა</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">სიდიდეების აბსოლუტური რიცხვი</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">გარკვეული თვლა</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">უნიკალური სიდიდეების რიცხვი. როგორც წესი, გამოიყენება საწყისი ობიექტების ერთეულთა რიცხვის გამოთვლისთვის, თუ მონაცემები, როგორც საწყისი, ასევე ბავშვი/შვილობილი ობიექტების ძიების მონაცემები გამოიყენება ერთსა და იმავე ბადეში.</span></p>
+<p class="par18"><span class="fnt19">მაგალითად, განლაგებაში წარმოდგენილია 12 შემთხვევა.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:157px"><img alt="ნახ. 349 შემთხვევების სია" title="ნახ. 349 შემთხვევების სია" width="157" height="211" style="width:157px;height:211px;border:none" src="case_sample_1_zoom70.png"/><p style="text-align:center"><span class="fnt14">ნახ. 349 შემთხვევების სია</span></p></div></div>
+<p class="par18"><span class="fnt19">თუ ერთსა და იმავე გარდაქმნად ბადეში გამოიყენება როგორც ადამიანის შემთხვევის საიდენტიფიკაციო კოდი (საწყისი ობიექტი), ასევე ნიმუშის საიდენტიფიკაციო კოდიც (ბავშვი ობიექტი), მაშინ </span><span class="fnt19" style="font-style: italic;">თვლის</span><span class="fnt19"> გაერთიანებული ფუნქცია გამოთვლის ადამიანის შემთხვევების არასწორ რიცხვს.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:227px"><img alt="ნახ. 350 თვლა ფუნქციის შედეგი" title="ნახ. 350 თვლა ფუნქციის შედეგი" width="227" height="64" style="width:227px;height:64px;border:none" src="case_sample_3_zoom70.png"/><p style="text-align:center"><span class="fnt14">ნახ. 350 თვლა ფუნქციის შედეგი</span></p></div></div>
+<p class="par18"><span class="fnt19">ის დაითვლის ნიმუშების შემცველ შემთხვევებს ორჯერ. მაშინ, როცა</span><span class="fnt19" style="font-style: italic;"> გარკვეული თვლის </span><span class="fnt19">ფუნქცია სწორად გამოითვლის შემთხვევების რიცხვს.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:227px"><img alt="ნახ. 351 თვლა ფუნქციის შედეგი" title="ნახ. 351 თვლა ფუნქციის შედეგი" width="227" height="64" style="width:227px;height:64px;border:none" src="case_sample_2_zoom70.png"/><p style="text-align:center"><span class="fnt14">ნახ. 351 თვლა ფუნქციის შედეგი</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 10000–ზე</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">შემთხვევების მაჩვენებელი 10000 ერთეულზე პოპულაციაში. პოპულაციის სტატისტიკური მონაცემები ქვეყნისთვის, მისი რეგიონებისა და რაიონებისთვის ინახება თითოეული ქვეყნის მონაცემთა ბაზაში. სტატისტიკური მონაცემების განახლებისთვის ინფორმაციის მისაღებად წაიკითხეთ სტატისტიკის სექცია.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი 10,000= _</span><span class="fnt19" style="text-decoration: underline;">რიცხვი*10000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;მთლიანი პოპულაცია</span></p>
+<p class="par18">ამ ფუნქციისთვის დაამატეთ ადმინისტრაციული ერთეულის (<span style="font-weight: bold;">რაიონის</span> ან <span style="font-weight: bold;">რეგიონის</span>) ველი სტრიქონებში. რეგიონის ან რაიონისთვის მაჩვენებლების გამოსათვლელად შეარჩიეთ შესაბამისი ადმინისტრაციული ერთეული. რაიონის ან რეგიონისთვის მაჩვენებლების გამოთვლისას შეცვალეთ <span style="font-style: italic; font-weight: bold;">ადმინისტრაციული ერთეულის</span> <span style="font-style: italic; font-weight: bold;">ველი </span>(რაიონის<span style="font-weight: bold;"> ან </span>რეგიონის<span style="font-weight: bold;">) შესაბამისად, მაჩვენებლების გამოსათვლელად, რეგიონის ან რაიონის მთელი მოსახლეობისთვის.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 10000–ზე</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">შემთხვევების მაჩვენებელი 100000 ერთეულზე პოპულაციაში. პოპულაციის სტატისტიკური მონაცემები ქვეყნისთვის, მისი რეგიონებისა და რაიონებისთვის ინახება თითოეული ქვეყნის მონაცემთა ბაზაში. სტატისტიკური მონაცემების განახლებისთვის ინფორმაციის მისაღებად წაიკითხეთ სტატისტიკის სექცია.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი 100,000= _</span><span class="fnt19" style="text-decoration: underline;">რიცხვი*100000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;მთლიანი პოპულაცია</span></p>
+<p class="par18">ამ ფუნქციისთვის დაამატეთ ადმინისტრაციული ერთეულის (<span style="font-weight: bold;">რაიონის</span> ან <span style="font-weight: bold;">რეგიონის</span>) ველი სტრიქონებში. რეგიონის ან რაიონისთვის მაჩვენებლების გამოსათვლელად შეარჩიეთ შესაბამისი ადმინისტრაციული ერთეული. რაიონის ან რეგიონისთვის მაჩვენებლების გამოთვლისას შეცვალეთ <span style="font-style: italic; font-weight: bold;">ადმინისტრაციული ერთეულის</span> <span style="font-style: italic; font-weight: bold;">ველი </span>(რაიონის<span style="font-weight: bold;"> ან </span>რეგიონის<span style="font-weight: bold;">) შესაბამისად, მაჩვენებლების გამოსათვლელად, რეგიონის ან რაიონის მთელი მოსახლეობისთვის.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 10000–ზე, გენდერის მიხედვით</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">შემთხვევების მაჩვენებელი 10000 ერთეულზე პოპულაციაში, სქესის მიხედვით. პოპულაციის სტატისტიკური მონაცემები ქვეყნისთვის, მისი რეგიონებისა და რაიონებისთვის ინახება თითოეული ქვეყნის მონაცემთა ბაზაში. სტატისტიკური მონაცემების განახლებისთვის ინფორმაციის მისაღებად წაიკითხეთ სტატისტიკის სექცია.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი, 100,000–ზე, </span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">სქესის მიხედვით (ქალებისთვის) = </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; რიცხვი*100000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ჯამური მაჩვენებელი ქალებისთვის მითითებული წლისთვის</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი, 100,000–ზე,</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> სქესის მიხედვით (კაცებისთვის) = </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; რიცხვი*100000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ჯამური მაჩვენებელი კაცებისთვის მითითებული წლისთვის</span></p>
+<p class="par18">ამ ფუნქციისთვის დაამატეთ ადმინისტრაციული ერთეულის (<span style="font-weight: bold;">რაიონის</span> ან <span style="font-weight: bold;">რეგიონის</span>) ველი სტრიქონებში და <span style="font-weight: bold;">გენდერი</span> სვეტებში. <span style="font-weight: bold;">რაიონის ან რეგიონისთვის მაჩვენებლების გამოთვლისას შეცვალეთ </span><span style="font-style: italic; font-weight: bold;">ადმინისტრაციული ერთეულის</span> <span style="font-style: italic; font-weight: bold;">ველი </span> (რაიონის<span style="font-weight: bold;"> ან </span>რეგიონის) შესაბამისად, მაჩვენებლების გამოსათვლელად, რეგიონის ან რაიონის მთელი მოსახლეობისთვის.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 10000–ზე, ასკობრივი ჯგუფის და გენდერის მიხედვით</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">შემთხვევების მაჩვენებელი 10000 ერთეულზე პოპულაციაში, სქესის მიხედვით. პოპულაციის სტატისტიკური მონაცემები ქვეყნისთვის, მისი რეგიონებისა და რაიონებისთვის ინახება თითოეული ქვეყნის მონაცემთა ბაზაში. სტატისტიკური მონაცემების განახლებისთვის ინფორმაციის მისაღებად წაიკითხეთ სტატისტიკის სექცია.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი, 100,000–ზე, სქესის მიხედვით (ქალები, ასაკობრივი ჯგუფი) = </span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; რიცხვი*10,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> ჯამური მაჩვენებელი ქალებისთვის, მითითებული ასაკობრივი ჯგუფისთვის, მითითებული წლისთვის</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი, 10,000–ზე, სქესის მიხედვით (კაცები, ასაკობრივი ჯგუფი) = </span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;რიცხვი*10,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19">ჯამური მაჩვენებელი კაცებისთვის, მითითებული ასაკობრივი ჯგუფისთვის, მითითებული წლისთვის</span></p>
+<p class="par18">ამ ფუნქციისთვის დაამატეთ ადმინისტრაციული ერთეულის (<span style="font-weight: bold;">რაიონის</span> ან <span style="font-weight: bold;">რეგიონის</span>) ველი სტრიქონებში და <span style="font-weight: bold;">სქესი</span> სვეტებში. <span style="font-weight: bold;">რაიონის ან რეგიონისთვის მაჩვენებლების გამოთვლისას შეცვალეთ </span><span style="font-style: italic; font-weight: bold;">ადმინისტრაციული ერთეულის</span> <span style="font-style: italic; font-weight: bold;">ველი </span> (რაიონის<span style="font-weight: bold;"> ან </span>რეგიონის) შესაბამისად, მაჩვენებლების გამოსათვლელად, რეგიონის ან რაიონის მთელი მოსახლეობისთვის.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 10000–ზე, ასკობრივი ჯგუფის და გენდერის მიხედვით</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"> მაჩვენებელი 10000–ზე, პოპულაციაში, ასაკობრივი ჯგუფის და სქესის მიხედვით პოპულაციის სტატისტიკური მონაცემები ქვეყნისთვის, მისი რეგიონებისა და რაიონებისთვის ინახება თითოეული ქვეყნის მონაცემთა ბაზაში. სტატისტიკური მონაცემების განახლებისთვის ინფორმაციის მისაღებად წაიკითხეთ სტატისტიკის სექცია.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">მაჩვენებელი, 100,000–ზე, სქესის მიხედვით (ქალები, ასაკობრივი ჯგუფი)=</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;რიცხვი*10,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19">ჯამური მაჩვენებელი ქალებისთვის, მითითებული ასაკობრივი ჯგუფისთვის, მითითებული წლისთვის</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> მაჩვენებელი 100,000–ზე, ასკობრივი ჯგუფის და სქესის მიხედვით (კაცები) =</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;რიცხვი*100,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19">ჯამური მაჩვენებელი კაცებისთვის, მითითებული ასაკობრივი ჯგუფისთვის, მითითებული წლისთვის</span></p>
+<p class="par18">ამ ფუნქციისთვის დაამატეთ ადმინისტრაციული ერთეულის (<span style="font-weight: bold;">რაიონის</span> ან <span style="font-weight: bold;">რეგიონის</span>) ველის სტრიქონებში და <span style="font-weight: bold;">სქესის</span> სვეტებში. <span style="font-weight: bold;">რაიონის ან რეგიონისთვის მაჩვენებლების გამოთვლისას შეცვალეთ </span><span style="font-style: italic; font-weight: bold;">ადმინისტრაციული ერთეულის</span> <span style="font-style: italic; font-weight: bold;">ველი </span> (რაიონის<span style="font-weight: bold;"> ან </span>რეგიონის) შესაბამისად, მაჩვენებლების გამოსათვლელად, რეგიონის ან რაიონის მთელი მოსახლეობისთვის.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">მაქსიმუმი</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">უდიდესი სიდიდე</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">მინიმუმი</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">უმცირესი სიდიდე</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">სტანდარტული გადახრა</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">არა–ჯამურ უჯრედებში გამოიყენება ფუნქცია </span><span class="fnt19" style="font-style: italic;">თვლა</span><span class="fnt19"> ჯამურ უჯრედებში გამოიყენება პოპულაციის სტანდარტული გადახრა, როდესაც პოპულაცია წარმოადგენს ყველა შესაჯამებელ მონაცემს.</span></p>
+<p class="par18"><img width="193" height="85" style="margin:0;width:193px;height:85px;border:none" src="standard_deviation.png"/></p>
+<p class="par18"><span class="fnt19">სადაც</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> არის იმ უჯრედების რიცხვი, რომლებიც შედის ჯამში;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">არის ჯამში შემავალი უჯრედების საშუალო</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> არის რიცხვი </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19"> –ურ უჯრედში.</span></p>
+<p class="par18"><span class="fnt19">ის უჩვენებს რამდენია გადახრა &quot;საშუალოდან&quot; (ან მოსალოდნელი/ბიუჯეტით გათვალისწინებული სიდიდიდან). მცირე სტანდარტული გადახრა ნიშნავს, რომ მონაცემები ძალზე ახლოსაა საშუალოსთან, ხოლო დიდი სტანდარტული გადახრა უჩვენებს, რომ მონაცემები გაფანტულია სიდიდეთა დიდ დიაპაზონში.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">ჯამი</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">რიცხვითი მონაცემების უჯრედებისთვის ჯამის სიდიდე არის ყველა იმ სიდიდეების ჯამი, რომლებიც ემთხვევა ცხრილის სტრიქონებში და სვეტებში მითითებულ შეზღუდვებს.</span></p>
+<p class="par18"><span class="fnt19">არა–რიცხვითი მონაცემების უჯრედებისთვის, </span><span class="fnt19" style="font-style: italic;">თვლის</span><span class="fnt19"> ფუნქცია გამოიყენება </span><span class="fnt19" style="font-style: italic;">ჯამის</span><span class="fnt19"> ფუნქციის ნაცვლად.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">დისპერსია</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">არა–ჯამურ უჯრედებში </span><span class="fnt19" style="font-style: italic;">თვლის</span><span class="fnt19"> ფუნქცია გამოიყენება, ჯამურ უჯრედებში გამოიყენება შემდეგი ფუნქცია </span></p>
+<p class="par18"><img width="183" height="59" style="margin:0;width:183px;height:59px;border:none" src="variation.png"/></p>
+<p class="par18"><span class="fnt19">სადაც</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> არის იმ უჯრედების რიცხვი, რომლებიც შედის ჯამში;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">არის ჯამში შემავალი უჯრედების საშუალო</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> არის რიცხვი </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19"> –ურ უჯრედში.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">სიზუსტე</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">-1</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">შედეგი არაა დამრგვალებული.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">შედეგი დამრგვალებულია მთელ რიცხვამდე.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">&gt;0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">1,2,3, და ა.შ. შედეგი დამრგვალებულია მითთებულ თანრიგამდე.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

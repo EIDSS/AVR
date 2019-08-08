@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object name="Upload506Master"
+        connection="EidssConnectionString"
+        generator="ObjectGenerator.xslt"
+        xmlns="urn:schemas-bv:objectmodel">
+
+  <storage>
+    <!--фейковая хранимка-->
+    <get name="spUpload506Master_SelectDetail" type="detailone" />
+  </storage>
+
+  <tables>
+    <table name="Upload506Master">
+      <fields>
+        <storage name="FileName" type="string"/>
+        <storage name="FileContent" type="byte[]"/>
+        <calculated name="idfsDiagnosis" type="long?" depends="" lambda='c => 0' setter='' />
+        <storage name="intDummy" type="int"/>
+      </fields>
+      <relations>
+        <relation name="Items" table="Upload506Item" internal="false" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="Duplicates" table="Upload506Duplicate" internal="false" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+
+        <relation name="HumanGenderRefs" table="cc_506_HumanGender" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="NationalityRefs" table="cc_506_Nationality" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="OccupationTypeRefs" table="cc_506_OccupationType" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="OutcomeRefs" table="cc_506_Outcome" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="DiagnosisRefs" table="cc_506_Diagnosis" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="MaritalStatusRefs" table="cc_506_MaritalStatus" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="ForeignerTypeRefs" table="cc_506_ForeignerType" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="MunicipalityRefs" table="cc_506_Municipality" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="HospitalizationRefs" table="cc_506_Hospitalization" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="PatientTypeRefs" table="cc_506_PatientType" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+        <relation name="ComplicationRefs" table="cc_506_Complication" internal="true" type="child" lazy="false" source="idfsUpload506" target="idfsUpload506" />
+      </relations>
+      <lookups>
+        <lookup name="Diagnosis" table="DiagnosisLookup" source="idfsDiagnosis" target="idfsDiagnosis" >
+          <filters>
+            <filter predicate="c => (c.intHACode &amp; (int)HACode.Human) != 0" />
+            <filter predicate="c => c.idfsUsingType == (long)DiagnosisUsingTypeEnum.StandardCase" />
+          </filters>
+        </lookup>
+      </lookups>
+      <storage>
+        <post name="spUpload506Master_Post"/>
+      </storage>
+      <postorder>
+        <item name="Items"/>
+        <item name="this"/>
+      </postorder>
+      <extenders>
+        <creating>
+          <custom_extender>
+            <text>
+              obj = SelectByKey(manager, GetNewIDExtender&lt;Upload506Master&gt;.getNewId(manager));
+              obj.Items.Clear();
+            </text>
+          </custom_extender>
+        </creating>
+        <created>
+          <custom_extender>
+            <text>
+              if (EidssUserContext.Instance != null)
+                if (EidssUserContext.User != null)
+                {                             
+                  if (EidssUserContext.User.EmployeeID != null)
+                  {
+                    long em;
+                    if (long.TryParse(EidssUserContext.User.EmployeeID.ToString(), out em))
+                      obj.idfPersonEnteredBy = em;
+                  }
+                  if (EidssUserContext.User.ID != null)
+                  {
+                    long em;
+                    if (long.TryParse(EidssUserContext.User.ID.ToString(), out em))
+                      obj.idfUserID = em;
+                  }
+                }                        
+            </text>
+          </custom_extender>
+        </created>
+        <posting>
+          <db_lambda_extender target="intDummy" type="int" 
+                              lambda='(c,m) => m.SetCommand(@"
+DECLARE @drop_cmd NVARCHAR(4000)
+IF OBJECT_ID(&apos;tempdb..#R506&apos;) is not null
+BEGIN
+	SET @drop_cmd = N&apos;drop table #R506&apos;
+	EXECUTE sp_executesql @drop_cmd
+END
+CREATE TABLE #R506(
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[E0] [int] NULL,
+	[E1] [int] NULL,
+	[PE0] [int] NULL,
+	[PE1] [int] NULL,
+	[DISEASE] [nvarchar](255) NULL,
+	[iDISEASE] [bigint] NULL,
+	[HN] [nvarchar](255) NULL,
+	[NAME] [nvarchar](255) NULL,
+	[SEX] [int] NULL,
+	[YEAR] [int] NULL,
+	[MONTH] [int] NULL,
+	[DAY] [int] NULL,
+	[RACE] [int] NULL,
+	[OCCUPAT] [int] NULL,
+	[ADDRESS] [nvarchar](255) NULL,
+	[ADDRCODE] [nvarchar](255) COLLATE Cyrillic_General_CI_AS NULL,
+	[PROVINCE] [nvarchar](255) COLLATE Cyrillic_General_CI_AS NULL,
+	[TYPE] [int] NULL,
+	[RESULT] [int] NULL,
+	[HSERV] [nvarchar](255) COLLATE Cyrillic_General_CI_AS NULL,
+	[SCHOOL] [nvarchar](255) NULL,
+	[DATESICK] [datetime] NULL,
+	[DATEDEFINE] [datetime] NULL,
+	[DATEDEATH] [datetime] NULL,
+	[DATERECORD] [datetime] NULL,
+	--[DATEREACH] [datetime] NULL,
+	--[ORGANISM] [nvarchar](255) NULL,
+	[COMPLICA] [nvarchar](255) NULL,
+	[iCOMPLICA] [bigint] NULL,
+	[MARIETAL] [int] NULL,
+	[RACE1] [int] NULL,
+	[METROPOL] [int] NULL,
+	[HOSPITAL] [int] NULL,
+	idfsUpload506Item BIGINT NULL,
+	idfHumanCase BIGINT NULL,
+	strCaseID NVARCHAR(255) NULL,
+	Resolution int
+) 
+").ExecuteNonQuery()' />
+        </posting>
+        <posted>
+          <custom_extender>
+            <text>
+              var items = new Dictionary&lt;long, Upload506Item&gt;();
+              obj.Items.ForEach(c => items.Add(c.idfsUpload506Item, c));
+              var result = manager.SetCommand("select idfHumanCase, idfsUpload506Item, strCaseID from #R506").ExecuteList&lt;Upload506AfterPostItem&gt;();
+              result.ForEach(c => { var i = items[c.idfsUpload506Item]; i.idfCase = c.idfHumanCase; i.strCaseID = c.strCaseID; } );
+              
+              obj.SetState(Upload506MasterState.Saved);
+              
+              obj.m_resultFile = new MemoryStream();
+			        obj.WriteResultToStream(obj.m_resultFile);
+            </text>
+          </custom_extender>
+        </posted>
+      </extenders>
+      <actions>
+        <standard>
+          <remove type="Create"/>
+          <remove type="Delete"/>
+          <remove type="SelectAll"/>
+          <remove type="Ok"/>
+          <remove type="Cancel"/>
+          <remove type="Save"/>
+        </standard>
+      </actions>
+    </table>
+    <table name="cc_506_HumanGender" />
+    <table name="cc_506_Nationality" />
+    <table name="cc_506_OccupationType" />
+    <table name="cc_506_Outcome" />
+    <table name="cc_506_Diagnosis" />
+    <table name="cc_506_MaritalStatus" />
+    <table name="cc_506_ForeignerType" />
+    <table name="cc_506_Municipality" />
+    <table name="cc_506_Hospitalization" />
+    <table name="cc_506_PatientType" />
+    <table name="cc_506_Complication" />
+  </tables>
+</object>

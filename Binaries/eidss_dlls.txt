@@ -1,0 +1,32 @@
+ Volume in drive C is OS
+ Volume Serial Number is 0AA9-8467
+
+ Directory of C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug
+
+07/23/2019  08:39 PM         1,364,992 eidss.avr.dll
+07/23/2019  01:50 PM           671,232 eidss.avr_db.dll
+07/23/2019  01:48 PM           450,560 eidss.core.dll
+07/23/2019  01:49 PM         1,163,264 EIDSS.FlexibleForms.dll
+07/23/2019  01:37 PM            29,696 eidss.gis.common.dll
+07/23/2019  01:49 PM           412,160 eidss.gis.dll
+06/12/2019  12:50 PM            56,320 eidss.model.customization.dll
+07/23/2019  01:50 PM        13,846,528 eidss.model.dll
+07/23/2019  01:49 PM             7,168 eidss.remoting.dll
+07/23/2019  01:56 PM        11,596,288 EIDSS.Reports.dll
+06/12/2019  12:51 PM           736,768 eidss.skin.dll
+07/23/2019  01:50 PM         1,515,008 eidss.winclient.dll
+07/23/2019  01:50 PM           847,360 eidss_admin.dll
+07/23/2019  01:49 PM            46,592 eidss_admin_db.dll
+07/23/2019  01:49 PM            49,664 eidss_common.dll
+07/23/2019  01:49 PM            67,584 eidss_db.dll
+07/23/2019  01:50 PM           836,096 eidss_forms.dll
+07/23/2019  01:50 PM         1,777,664 eidss_human.dll
+07/23/2019  01:50 PM            41,472 eidss_human_db.dll
+07/23/2019  01:50 PM           904,704 eidss_lims.dll
+07/23/2019  01:49 PM            52,224 eidss_lims_db.dll
+07/23/2019  01:50 PM           106,496 EIDSS_ObjectAccess.dll
+07/23/2019  01:50 PM         1,357,312 eidss_vet.dll
+07/23/2019  01:49 PM            72,192 eidss_vet_db.dll
+07/23/2019  01:50 PM            77,824 EIDSS_WebServiceExport.dll
+              25 File(s)     38,087,168 bytes
+               0 Dir(s)  33,762,471,936 bytes free

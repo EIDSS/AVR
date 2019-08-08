@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <UI>
+      <Dialog Id="ErrorConfigurationDlg" Width="300" Height="100" Title="!(loc.ErrorDlg_Title)">
+        <Control Id="TestResult_Failure" Type="Icon" IconSize="48" X="5" Y="5" Width="50" Height="50" Text="FailureImg" FixedSize="yes" />
+        <Control Id="ErrorText" Type="Text" X="60" Y="15" Width="220" Height="50" TabSkip="no" Text="[ErrorConfigurationText]" />
+        <Control Id="O" Type="PushButton" X="122" Y="75" Width="56" Height="17" TabSkip="yes" Text="!(loc.WixUIOK)">
+          <Publish Event="EndDialog" Value="Return">1</Publish>
+        </Control>
+      </Dialog>
+    </UI>
+
+    <Property Id="ErrorConfigurationText_EmptyMandatoryFileds" Value="!(loc.ErrorConfigurationText_EmptyMandatoryFileds)" />
+    <Property Id="ErrorConfigurationText_BadAdminPassword" Value="!(loc.ErrorConfigurationText_BadAdminPassword)" />
+    <Property Id="ErrorConfigurationText_BadTimeInterval" Value="!(loc.ErrorConfigurationText_BadTimeInterval)" />
+    <Property Id="ErrorConfigurationText_WrongProtocol" Value="!(loc.ErrorConfigurationText_WrongProtocol)" />
+    <Property Id="ErrorConfigurationText_BadUrlFormat" Value="!(loc.ErrorConfigurationText_BadUrlFormat)" />
+    <Property Id="ErrorConfigurationText_WebRequestError" Value="!(loc.ErrorConfigurationText_WebRequestError)" />
+  </Fragment>
+</Wix>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/eidss.model.Schema" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/eidss.model.Schema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8097/?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" />
+  <xs:complexType name="Address">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q1:EditableObjectOfAddressWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="tns:CountryLookup" />
+          <xs:element minOccurs="0" name="CountryLookup" nillable="true" type="tns:ArrayOfCountryLookup" />
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="PostCode" nillable="true" type="tns:PostalCodeLookup" />
+          <xs:element minOccurs="0" name="PostCodeLookup" nillable="true" type="tns:ArrayOfPostalCodeLookup" />
+          <xs:element minOccurs="0" name="Rayon" nillable="true" type="tns:RayonLookup" />
+          <xs:element minOccurs="0" name="RayonLookup" nillable="true" type="tns:ArrayOfRayonLookup" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Region" nillable="true" type="tns:RegionLookup" />
+          <xs:element minOccurs="0" name="RegionLookup" nillable="true" type="tns:ArrayOfRegionLookup" />
+          <xs:element minOccurs="0" name="Settlement" nillable="true" type="tns:SettlementLookup" />
+          <xs:element minOccurs="0" name="SettlementLookup" nillable="true" type="tns:ArrayOfSettlementLookup" />
+          <xs:element minOccurs="0" name="Street" nillable="true" type="tns:StreetLookup" />
+          <xs:element minOccurs="0" name="StreetLookup" nillable="true" type="tns:ArrayOfStreetLookup" />
+          <xs:element minOccurs="0" name="bCancelCoordinationValidation" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blnForceReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blnForeignAddress" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blnGeoLocationShared" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blnNeedForeignAddressStr" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blnReadOnlyRegion" type="xs:boolean" />
+          <xs:element minOccurs="0" name="dblLatitude" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="dblLongitude" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="idfGeoLocation" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsCountry" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRayon" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRegion" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsSettlement" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="strAddressDefaultString" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strAddressStringTranslate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strApartment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strBuilding" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strForeignAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strHouse" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strPostCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strStreetName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="CountryLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q2:EditableObjectOfCountryLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfsCountry" type="xs:long" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strCountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strCountryExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strCountryName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CountryLookup" nillable="true" type="tns:CountryLookup" />
+  <xs:complexType name="ArrayOfCountryLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CountryLookup" nillable="true" type="tns:CountryLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountryLookup" nillable="true" type="tns:ArrayOfCountryLookup" />
+  <xs:complexType name="PostalCodeLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q3:EditableObjectOfPostalCodeLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfPostalCode" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsSettlement" type="xs:long" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strPostCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PostalCodeLookup" nillable="true" type="tns:PostalCodeLookup" />
+  <xs:complexType name="ArrayOfPostalCodeLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PostalCodeLookup" nillable="true" type="tns:PostalCodeLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPostalCodeLookup" nillable="true" type="tns:ArrayOfPostalCodeLookup" />
+  <xs:complexType name="RayonLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q4:EditableObjectOfRayonLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfsCountry" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsParent" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRayon" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRegion" type="xs:long" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strCountryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRayonExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRayonName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRegionExtendedName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RayonLookup" nillable="true" type="tns:RayonLookup" />
+  <xs:complexType name="ArrayOfRayonLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RayonLookup" nillable="true" type="tns:RayonLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRayonLookup" nillable="true" type="tns:ArrayOfRayonLookup" />
+  <xs:complexType name="RegionLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q5:EditableObjectOfRegionLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfsCountry" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRegion" type="xs:long" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strCountryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRegionCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRegionExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRegionName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RegionLookup" nillable="true" type="tns:RegionLookup" />
+  <xs:complexType name="ArrayOfRegionLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegionLookup" nillable="true" type="tns:RegionLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegionLookup" nillable="true" type="tns:ArrayOfRegionLookup" />
+  <xs:complexType name="SettlementLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q6:EditableObjectOfSettlementLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfsCountry" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRayon" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsRegion" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsSettlement" type="xs:long" />
+          <xs:element minOccurs="0" name="intElevation" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strCountryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRayonExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strRegionExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strSettlementExtendedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strSettlementName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="strSettlementType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SettlementLookup" nillable="true" type="tns:SettlementLookup" />
+  <xs:complexType name="ArrayOfSettlementLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SettlementLookup" nillable="true" type="tns:SettlementLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSettlementLookup" nillable="true" type="tns:ArrayOfSettlementLookup" />
+  <xs:complexType name="StreetLookup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/BLToolkit.EditableObjects" base="q7:EditableObjectOfStreetLookupWVAZKhkS">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Environment" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ReadOnly" type="xs:boolean" />
+          <xs:element minOccurs="0" name="idfStreet" type="xs:long" />
+          <xs:element minOccurs="0" name="idfsSettlement" type="xs:long" />
+          <xs:element minOccurs="0" name="intRowStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="strStreetName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StreetLookup" nillable="true" type="tns:StreetLookup" />
+  <xs:complexType name="ArrayOfStreetLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StreetLookup" nillable="true" type="tns:StreetLookup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStreetLookup" nillable="true" type="tns:ArrayOfStreetLookup" />
+</xs:schema>

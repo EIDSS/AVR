@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Анализ, визуализация и отчётность &gt; Макеты &gt; Сводная таблица &gt; Применение функций агрегирования</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="TEXT SCRAMBLING in TRIAL VERSION OUTPUT! In evaluation mode, Help &amp; Manual will scramble individual characters in random words in your published output files. This is a..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #ffffff; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "apply_aggregate_functions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="par5"><span class="fnt6">Применение функций агрегирования</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?apply_aggregate_functions.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   Анализ, визуализация и отчётность &gt; <a href="layouts.htm">Макеты</a> &gt; <a href="constructworking_with_pivot_grid.htm">Сводная таблица</a>&nbsp;&gt;</p>
+   <h1 class="par5"><span class="fnt6">Применение функций агрегирования</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="rename_fields.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="constructworking_with_pivot_grid.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="group_date_function.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="par0">TEXT SCRAMBLING in TRIAL VERSION OUTPUT! In evaluation mode, Help &amp; Manual will scramble individual characters in random words in your published output files. This is a limitation of the free trial version. <a href="http://www.helpandmanual.com" target="_blank" class="weblink"> This help system was created with an evaluation copy of Help &amp; Manual.</a></p>
+<hr style="height:2px; color:#ff0000; border-width:0px; background-color:#ff0000;" /><p class="par0">&nbsp;</p>
+<p class="par0">В сводной таблице можно выбирать способ отображения данных: в виде количества значений, в виде самого большого значения, и т.д. Функцией агрегирования называется функция, осуществляющая вычисления применительно к набору значений, а не к одному значению. Например, нахождение среднего или наименьшего значения в списке значений представляет собой функцию агрегирования.</p>
+<p class="par0">По умолчанию каждое поле в ЭИСНЗ обладает применённой к нему функцией агрегирования. Если функция агрегирования по умолчанию не соответствуют предъявляемым требованиям, то либо <a href="set_search_object_fields_defau.htm" class="topiclink"> измените функцию агрегирования по умолчанию</a> (это следует сделать, если новая функция агрегирования будет применяться в большинстве случаев), либо измените функцию агрегирования так, чтобы она применялась здесь и сейчас. </p>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Изменение функции агрегирования</span></p>
+<p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="fnt11">Выберите в области данных те данные, для которых требуется поменять функцию агрегирования.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="fnt11">Убедитесь, что необходимое поле отображается в поле только для чтения </span><span class="fnt11" style="font-weight: bold;">Поля данных</span><span class="fnt11"> окна </span><span class="fnt11" style="font-weight: bold;">Настройки сводной таблицы</span><span class="fnt11">.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">3.</span><span class="fnt11">В поле </span><span class="fnt11" style="font-weight: bold;">Функция агрегирования</span><span class="fnt11"> выберите функцию агрегирования, которая будет использоваться вместо старой.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">4.</span><span class="fnt11">В поле </span><span class="fnt11" style="font-weight: bold;">Точность</span><span class="fnt11"> укажите разрядность отображаемого значения.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">5.</span><span class="fnt11">В случае использования функции коэффициентного количества, в поле </span><span class="fnt11" style="font-weight: bold;">Параметры: административная единица</span><span class="fnt11"> выберите административную единицу, которая будет использоваться в расчётах для статистики.©</span></p><p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Функции агрегирования</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<thead>
+<tr style="text-align:left;vertical-align:top;">
+<th style="vertical-align:top; width:149px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Функция</span></p>
+</th>
+<th style="vertical-align:top; width:665px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Описание</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Среднее значение</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Для значений, указанных в неитоговых ячейках, используется функция </span><span class="fnt19" style="font-style: italic;">Подсчёт</span><span class="fnt19">, а настоящая функция используется для вычисления среднего значения из имеющихся в итоговых ячейках чисел. </span></p>
+<p class="par18"><span class="fnt19">Пусть на входе мы имеем n чисел, и каждое число обозначено как ai, где i = 1, ..., n. Значение среднего арифметического будет равно сумме a1+a2+ ... + an, делённой на n или</span></p>
+<p class="par18"><img width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="average_formula.png"/></p>
+<p class="par18"><span class="fnt19"> где </span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> представляет собой количество ячеек, с рассчитанным итоговым значением; </span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">a</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> подсчитывается в ячейке </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">.</span></p>
+<p class="par18"><span class="fnt19">Среднее арифметическое значение, часто просто называемое как «среднее», представляет собой среднюю величину между двумя числами; т.е., например, среднее чисел 2 и 8 рассчитывается путём нахождения значения А, при этом 2 + 8 должны быть равны А + А. Значение А рассчитывается по формуле: А = (2 + 8)/2 = 5. </span></p>
+<p class="par18"><span class="fnt19">Если же увеличивается количество чисел в списке, среднее значение которого необходимо узнать, т.е., например, надо узнать среднее арифметическое чисел 2, 8, и 11, его рассчитывают с помощью уравнения, в котором значение А в уравнении A + A + A должно быть равным 2 + 8 + 11. Соответственно, значение А = (2 + 8)/2 = 7.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Подсчёт</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Вычисляет конкретное количество значений.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Раздельный подсчёт</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Вычисляет количество уникальных значений. Как правило, эта функция используется для подсчёта количества записей корневых объектов в ситуации, когда в одной и той же таблице используются данные из корневых и дочерних объектов поиска.</span></p>
+<p class="par18"><span class="fnt19">Например, в макете отображаются 12 случаев заболеваний.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:22px"><img alt="Рис. 407 Список случаев заболеваний" title="Рис. 407 Список случаев заболеваний" width="22" height="22" style="width:22px;height:22px;border:none" src="case_sample_1_zoom70.png"/><p style="text-align:center"><span class="fnt14">Рис. 407 Список случаев заболеваний</span></p></div></div>
+<p class="par18"><span class="fnt19">Если в одной и той же сводной таблице используются и идентификаторы случаев заболеваний людей (корневые объекты), и идентификаторы проб (дочерние объекты), результаты расчёта функции агрегирования </span><span class="fnt19" style="font-style: italic;">Подсчёт</span><span class="fnt19"> будут содержать неправильное количество случаев заболеваний человека:</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:22px"><img alt="Рис. 408 Результат функции «Подсчёт»" title="Рис. 408 Результат функции «Подсчёт»" width="22" height="22" style="width:22px;height:22px;border:none" src="case_sample_3_zoom70.png"/><p style="text-align:center"><span class="fnt14">Рис. 408 Результат функции «Подсчёт»</span></p></div></div>
+<p class="par18"><span class="fnt19">Она сосчитает их дважды: и как просто случаи, и как случаи заболеваний с пробами. В то время как результаты функции </span><span class="fnt19" style="font-style: italic;">Раздельный подсчёт</span><span class="fnt19"> будут правильными.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:22px"><img alt="Рис. 409 Результат функции «Раздельный подсчёт»" title="Рис. 409 Результат функции «Раздельный подсчёт»" width="22" height="22" style="width:22px;height:22px;border:none" src="case_sample_2_zoom70.png"/><p style="text-align:center"><span class="fnt14">Рис. 409 Результат функции «Раздельный подсчёт»</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Количество на 10.000</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Вычисляет количество заболеваний на 10.000 населения. В базе данных по каждой стране хранится совокупная статистическая информация о населении, структурированная по стране, её областям и районам. Для получения информации об обновлении статистических данных, прочитайте раздел Статистика. </p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 10.000 = _</span><span class="fnt19" style="text-decoration: underline;">Подсчёт х 10.000__ </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Общее количество населения</span></p>
+<p class="par18">Чтобы воспользоваться этой функцией, добавьте поле административной единицы (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>) в область строк.Для расчёта количества по области или по району, выберите соответствующую административную единицу. Проводя расчёт количества заболеваний по району или областям, соответствующим образом поменяйте <span style="font-style: italic; font-weight: bold;">поле </span> <span style="font-style: italic; font-weight: bold;">Административная единица</span> (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>), чтобы подсчитать общий коэффициент заболеваемости населения по области или по району.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Вычисляет количество заболеваний на 100.000 населения. В базе данных по каждой стране хранится совокупная статистическая информация о населении, структурированная по стране, её областям и районам. Для получения информации об обновлении статистических данных, прочитайте раздел Статистика.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 = _</span><span class="fnt19" style="text-decoration: underline;">Подсчёт х 100.000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Общее количество населения</span></p>
+<p class="par18">Чтобы воспользоваться этой функцией, добавьте поле административной единицы (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>) в область строк.Для расчёта количества по области или по району, выберите соответствующую административную единицу. Проводя расчёт количества заболеваний по району или областям, соответствующим образом поменяйте <span style="font-style: italic; font-weight: bold;">поле </span> <span style="font-style: italic; font-weight: bold;">Административная единица</span> (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>), чтобы подсчитать общий коэффициент заболеваемости населения по области или по району.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по половому признаку</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Вычисляет количество заболеваний на 100.000 населения с разбивкой по половому признаку. В базе данных по каждой стране хранится совокупная статистическая информация о населении, структурированная по стране, её областям и районам. Для получения информации об обновлении статистических данных, прочитайте раздел Статистика. </p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по половому признаку (женщины) = </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Подсчёт х 100.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Всего населения женского пола за указанный год</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по половому признаку (мужчины) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Подсчёт х 100.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Всего населения мужского пола за указанный год</span></p>
+<p class="par18">Чтобы воспользоваться этой функцией, добавьте поле административной единицы (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>) в область строк, а поле <span style="font-weight: bold;">Пол</span> - в область столбцов.<span class="fnt19"> </span>Проводя расчёт количества заболеваний по району или областям, соответствующим образом поменяйте <span style="font-style: italic; font-weight: bold;">поле </span> <span style="font-style: italic; font-weight: bold;">Административная единица</span> (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>), чтобы подсчитать общий коэффициент заболеваемости населения по области или по району. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Количество на 10.000 по возрастным группам и половой принадлежности</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Вычисляет количество заболеваний на 10.000 населения с разбивкой по половому признаку. В базе данных по каждой стране хранится совокупная статистическая информация о населении, структурированная по стране, её областям и районам. Для получения информации об обновлении статистических данных, прочитайте раздел Статистика. </p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 10.000 по половому признаку (женщины, возрастная группа) = </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Подсчёт х 10.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Всего населения женского пола по указанной возрастной группе за указанный год</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 10.000 по половому признаку (мужчины, возрастная группа) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Подсчёт х 10.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Всего населения мужского пола по указанной возрастной группе за указанный год</span></p>
+<p class="par18">Чтобы воспользоваться этой функцией, добавьте поле административной единицы (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>) в область строк, а поле <span style="font-weight: bold;">Пол</span> - в область столбцов.<span class="fnt19"> </span>Проводя расчёт количества заболеваний по району или областям, соответствующим образом поменяйте <span style="font-style: italic; font-weight: bold;">поле </span> <span style="font-style: italic; font-weight: bold;">Административная единица</span> (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>), чтобы подсчитать общий коэффициент заболеваемости населения по области или по району. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по возрастным группам и половой принадлежности</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Вычисляет коэффициент заболеваемости населения на 100.000 человек с разбивкой по возрастным группам и половой принадлежности. В базе данных по каждой стране хранится совокупная статистическая информация о населении, структурированная по стране, её областям и районам. Для получения информации об обновлении статистических данных, прочитайте раздел Статистика. </p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по половому признаку (женщины, возрастная группа) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Подсчёт х 100.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Всего населения женского пола по указанной возрастной группе за указанный год</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Количество на 100.000 по возрастным группам и половой принадлежности (мужчины) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Подсчёт х 100.000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Всего населения мужского пола по указанной возрастной группе за указанный год</span></p>
+<p class="par18">Чтобы воспользоваться этой функцией, добавьте поле административной единицы (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>) в область строк, а поле <span style="font-weight: bold;">Пол</span> - в область столбцов.Проводя расчёт количества заболеваний по району или областям, соответствующим образом поменяйте <span style="font-style: italic; font-weight: bold;">поле </span> <span style="font-style: italic; font-weight: bold;">Административная единица</span> (<span style="font-weight: bold;">Район</span> или <span style="font-weight: bold;">Область</span>), чтобы подсчитать общий коэффициент заболеваемости населения по области или по району. </p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Максимум</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Вычисляет наибольшее значение. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Минимум</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Вычисляет наименьшее значение. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Стандартное отклонение</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Для значений, указанных в не итоговых ячейках, используется функция </span><span class="fnt19" style="font-style: italic;">Подсчёт</span><span class="fnt19">, а настоящая функция используется для вычисления стандартного отклонения в отношении населения, когда такое население представляет собой весь объём обобщаемых данных. </span></p>
+<p class="par18"><img width="193" height="85" style="margin:0;width:193px;height:85px;border:none" src="standard_deviation.png"/></p>
+<p class="par18"><span class="fnt19">где</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> представляет собой количество ячеек, с рассчитанным итоговым значением;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">представляет собой среднее значение всего количества, с рассчитанным итоговым значением;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> подсчитывается в ячейке </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">. </span></p>
+<p class="par18"><span class="fnt19">Результат функции показывает величину отклонения от среднего значения (среднего арифметического) (или от ожидаемого / сметного значения). Низкое стандартное отклонение указывает на то, что базовые точки стремятся оказаться слишком близко к среднему значению, в то время как высокое стандартное отклонение указывает на то, что данные распределены в широком диапазоне значений.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Сумма</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Для ячеек с числовыми данными, числовая сумма представляет собой результат суммирования всех значений, совпадающих с ограничениями, указанными в строках и столбцах таблицы.</span></p>
+<p class="par18"><span class="fnt19">Для ячеек с нечисловыми данными, вместо функции </span><span class="fnt19" style="font-style: italic;">Сумма</span><span class="fnt19">, используется функция </span><span class="fnt19" style="font-style: italic;">Подсчёт</span><span class="fnt19">.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Переменное значение </span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Для значений, указанных в не итоговых ячейках, используется функция </span><span class="fnt19" style="font-style: italic;">Подсчёт</span><span class="fnt19">, а в итоговых ячейках используется следующая функция: </span></p>
+<p class="par18"><img width="183" height="59" style="margin:0;width:183px;height:59px;border:none" src="variation.png"/></p>
+<p class="par18"><span class="fnt19">где</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> представляет собой количество ячеек, с рассчитанным итоговым значением; </span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">представляет собой среднее значение всего количества, с рассчитанным итоговым значением; </span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> подсчитывается в ячейке </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Точность</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">-1</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">Результат не округляется в большую сторону.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">Результат округляется в большую сторону до целочисленного значения.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">&gt;0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">1, 2, 3, и т.д. Результат округляется в большую сторону до указанного знака.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

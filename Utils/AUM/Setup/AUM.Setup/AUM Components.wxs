@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment Id="AUM">
+    <ComponentGroup Id="AUM" Directory="ApplicationFolder">
+      <Component Id="$(var.AUM.TargetFileName)">
+        <File Id="$(var.AUM.TargetFileName)" Source="$(var.AUM.TargetPath)" KeyPath="yes" Checksum="yes" />
+      </Component>
+      <Component Id="$(var.AUM.TargetFileName).config">
+        <File Source="$(var.AUM.TargetPath).config" KeyPath="yes" />
+      </Component>
+
+      <ComponentGroupRef Id="AUM.Resources" />
+    </ComponentGroup>
+
+    <ComponentGroup Id="AUM.Resources">
+      <?define resource=$(var.AUM.TargetName).resources.dll?>
+
+      <?define source=$(var.AUM.TargetDir)az-Latn-AZ\?>
+      <?define subdir=AZ_LATN_AZ?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.TargetDir)ka-GE\?>
+      <?define subdir=KA_GE?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.TargetDir)kk-KZ\?>
+      <?define subdir=KK_KZ?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.TargetDir)ru-RU\?>
+      <?define subdir=RU_RU?>
+      <?include AddResource.wxi?>
+
+      <?define source=$(var.AUM.TargetDir)uk-UA\?>
+      <?define subdir=UK_UA?>
+      <?include AddResource.wxi?>
+
+      <?undef resource?>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnotherUpdateProcessIsNowRunning" xml:space="preserve">
+    <value>Another update process is now running. Please try again later.</value>
+  </data>
+  <data name="BackupConfigFilesSuccessfullyComplete" xml:space="preserve">
+    <value>Сonfiguration files backup is completed successfully.</value>
+  </data>
+  <data name="BackupDB" xml:space="preserve">
+    <value>Database backup.  It may take few minutes…</value>
+  </data>
+  <data name="BackupDBComplete" xml:space="preserve">
+    <value>Database backup is completed successfully.</value>
+  </data>
+  <data name="BackupProgramDirectories" xml:space="preserve">
+    <value>Application files backup. It may take few minutes…</value>
+  </data>
+  <data name="BackupProgramDirectoriesSuccessfullyComplete" xml:space="preserve">
+    <value>Application files backup is completed successfully.</value>
+  </data>
+  <data name="Cannotupdatenow" xml:space="preserve">
+    <value>Cannot update now</value>
+  </data>
+  <data name="CantConnectToUpdateServer" xml:space="preserve">
+    <value>Can't connect to update server. Request={0}; Error={1}</value>
+  </data>
+  <data name="CantFindServerOrDatabaseSettings" xml:space="preserve">
+    <value>Can't find server or database settings</value>
+  </data>
+  <data name="ChangingConfigFile" xml:space="preserve">
+    <value>Changing configuration files...</value>
+  </data>
+  <data name="CloseCaption" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ConfigFilesSuccessfullyChanged" xml:space="preserve">
+    <value>Configuration files are changed successfully.</value>
+  </data>
+  <data name="ExecuteFilesStarted" xml:space="preserve">
+    <value>Executing files started...</value>
+  </data>
+  <data name="ExecuteFilesFinished" xml:space="preserve">
+    <value>Executing files finished successfully</value>
+  </data>
+  <data name="ExecuteFile" xml:space="preserve">
+    <value>Execute file {0}...</value>
+  </data>
+  <data name="CopyFiles" xml:space="preserve">
+    <value>Files copying  {0} to {1}</value>
+  </data>
+  <data name="CopyFiles2" xml:space="preserve">
+    <value>Files copying...</value>
+  </data>
+  <data name="CopyFilesSuccessfullyComplete" xml:space="preserve">
+    <value>Files copying is completed  successfully.</value>
+  </data>
+  <data name="CRCIsInvalidError" xml:space="preserve">
+    <value>CRC of update is invalid! File: {0}</value>
+  </data>
+  <data name="DeleteFile" xml:space="preserve">
+    <value>Deleting file {0}...</value>
+  </data>
+  <data name="DeleteGarbageBackups" xml:space="preserve">
+    <value>Deleting garbage backups…</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ExtractingFiles" xml:space="preserve">
+    <value>Extracting files...</value>
+  </data>
+  <data name="FilesSuccessfullyExtracted" xml:space="preserve">
+    <value>Files are extracted successfully.</value>
+  </data>
+  <data name="FullBackup" xml:space="preserve">
+    <value>Creating full backup for updated files. It may take few minutes. Please wait...</value>
+  </data>
+  <data name="GarbageBackupsFailedDeleted" xml:space="preserve">
+    <value>Deleting of garbage backups is failed. Error: {0}</value>
+  </data>
+  <data name="GarbageBackupsSuccessfullyDeleted" xml:space="preserve">
+    <value>Garbage backups are deleted successfully.</value>
+  </data>
+  <data name="initialization" xml:space="preserve">
+    <value>initialization</value>
+  </data>
+  <data name="NowConnected" xml:space="preserve">
+    <value>Now Connected: {0}</value>
+  </data>
+  <data name="RunningScripts" xml:space="preserve">
+    <value>Running scripts...</value>
+  </data>
+  <data name="RunScriptMessage" xml:space="preserve">
+    <value>Run {0}...</value>
+  </data>
+  <data name="ScriptsSuccessfullyExecuted" xml:space="preserve">
+    <value>Scripts are executed successfully.</value>
+  </data>
+  <data name="synchronization" xml:space="preserve">
+    <value>synchronization</value>
+  </data>
+  <data name="TaskCaption" xml:space="preserve">
+    <value>Task: {0}</value>
+  </data>
+  <data name="ThereAreNoClientsMore" xml:space="preserve">
+    <value>All client applications are disconnected from database.</value>
+  </data>
+  <data name="ThisUpdateNotCritical" xml:space="preserve">
+    <value>This update is not critical. Do you want to run it?</value>
+  </data>
+  <data name="TryCopyLogs" xml:space="preserve">
+    <value>Logs copying…</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>unknown error</value>
+  </data>
+  <data name="UpdateExecuteWithError" xml:space="preserve">
+    <value>Update produced the error: {0}</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Update failed at {0}</value>
+  </data>
+  <data name="UpdateInterruptedByUser" xml:space="preserve">
+    <value>Update is interrupted by user.</value>
+  </data>
+  <data name="UpdateProcessStarted" xml:space="preserve">
+    <value>Update is started at {0}</value>
+  </data>
+  <data name="BVUpdateLauncherStarted" xml:space="preserve">
+    <value>AUM.Launcher is started at {0}</value>
+  </data>
+  <data name="UpdateRemotePathOrLogRemotePathnotset" xml:space="preserve">
+    <value>Remote path to update folder or to folder with update logs is not set</value>
+  </data>
+  <data name="UpdateSuccessfullyComplete" xml:space="preserve">
+    <value>Update is completed successfully at {0}</value>
+  </data>
+  <data name="updatingAum" xml:space="preserve">
+    <value>updating aum</value>
+  </data>
+  <data name="updatingDatabase" xml:space="preserve">
+    <value>updating Database</value>
+  </data>
+  <data name="executingfiles" xml:space="preserve">
+    <value>executing files</value>
+  </data>
+  <data name="updatingEIDSS" xml:space="preserve">
+    <value>updating EIDSS</value>
+  </data>
+  <data name="updatingNotificationService" xml:space="preserve">
+    <value>updating Notification Service</value>
+  </data>
+  <data name="updatingDatabaseArchive" xml:space="preserve">
+    <value>updating Database Archive</value>
+  </data>
+  <data name="WaitingForAnotherClientsExit" xml:space="preserve">
+    <value>Waiting for other client applications exit (10 minutes or less)...</value>
+  </data>
+  <data name="WorkComplete" xml:space="preserve">
+    <value>Work complete! You can restart application now.</value>
+  </data>
+  <data name="ReasonConnectionLost" xml:space="preserve">
+    <value>Possible reason: connection lost/VPN disconnected</value>
+  </data>
+  <data name="LowFreeSpace" xml:space="preserve">
+    <value>Warning! Possible low free space on disk '{0}' for backup operation</value>
+  </data>
+  <data name="BackupFailed" xml:space="preserve">
+    <value>Backup failed! Possible reason: low free space on disk for backup operation. Error: {0}</value>
+  </data>
+  <data name="PatchesCorrupted" xml:space="preserve">
+    <value>Some patches is corrupted</value>
+  </data>
+  <data name="AvrServiceDb" xml:space="preserve">
+    <value>AVR Service database</value>
+  </data>
+  <data name="AvrServiceProgram" xml:space="preserve">
+    <value>AVR Service</value>
+  </data>
+  <data name="AUMServiceStarted" xml:space="preserve">
+    <value>AUM Service started</value>
+  </data>
+  <data name="AUMServiceStarted" xml:space="preserve">
+    <value>AUM Service started</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>File not found: {0}</value>
+  </data>
+</root>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40A5F6CC-7132-4329-993D-DB37D7F9BD91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bv.WinTests</RootNamespace>
+    <AssemblyName>bv.WinTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\eidss.main\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\eidss.main\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(VS110COMNTOOLS)\..\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\EIDSSAssemblyInfo.cs">
+      <Link>EIDSSAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="avr\QueryFilter.cs" />
+    <Compile Include="Core\DevxLocalizerTest.cs" />
+    <Compile Include="Core\ErrorFormTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\ResourceTest.cs" />
+    <Compile Include="FF\FFWinTests.cs" />
+    <Compile Include="layout\LayoutTest.cs" />
+    <Compile Include="panels\BaseDetailPanelTest.cs" />
+    <Compile Include="panels\BaseFormManagerTest.cs" />
+    <Compile Include="panels\BaseListPanelTest.cs" />
+    <Compile Include="panels\ListUITests.cs" />
+    <Compile Include="panels\FakeControls\LookupBindingTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\LookupBindingTest.Designer.cs">
+      <DependentUpon>LookupBindingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\HumanCaseUITests.cs" />
+    <Compile Include="panels\FakeControls\HumanCaseWinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\HumanCaseWinForm.Designer.cs">
+      <DependentUpon>HumanCaseWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestListPanelUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestListPanelUI.Designer.cs">
+      <DependentUpon>TestListPanelUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestLookupPanelUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestLookupPanelUI.Designer.cs">
+      <DependentUpon>TestLookupPanelUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestListPanelGeneric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestListPanelGeneric.Designer.cs">
+      <DependentUpon>TestListPanelGeneric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedUI.Designer.cs">
+      <DependentUpon>TestPanelAdvancedUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedWithActionGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedWithActionGroups.Designer.cs">
+      <DependentUpon>TestPanelAdvancedWithActionGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedWithCustomActions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelAdvancedWithCustomActions.Designer.cs">
+      <DependentUpon>TestPanelAdvancedWithCustomActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelEmptyUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelEmptyUI.Designer.cs">
+      <DependentUpon>TestPanelEmptyUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelGeneric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelGeneric.Designer.cs">
+      <DependentUpon>TestPanelGeneric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\FakeControls\TestPanelUI.Designer.cs">
+      <DependentUpon>TestPanelUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\TestGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panels\TestGrid.Designer.cs">
+      <DependentUpon>TestGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panels\VSTests.cs" />
+    <Compile Include="Reports\FakeReportForm.cs" />
+    <Compile Include="Reports\ReportFactoryTests.cs" />
+    <Compile Include="TranslationUI\ControlDesignerTests.cs" />
+    <Compile Include="TranslationUI\ControlDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranslationUI\ControlDesignerForm.Designer.cs">
+      <DependentUpon>ControlDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranslationUI\utils\PathUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="panels\FakeControls\LookupBindingTest.resx">
+      <DependentUpon>LookupBindingTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\HumanCaseWinForm.resx">
+      <DependentUpon>HumanCaseWinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\TestListPanelUI.resx">
+      <DependentUpon>TestListPanelUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\TestLookupPanelUI.resx">
+      <DependentUpon>TestLookupPanelUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\TestPanelAdvancedWithActionGroups.resx">
+      <DependentUpon>TestPanelAdvancedWithActionGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\TestPanelAdvancedWithCustomActions.resx">
+      <DependentUpon>TestPanelAdvancedWithCustomActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\FakeControls\TestPanelUI.resx">
+      <DependentUpon>TestPanelUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panels\TestGrid.resx">
+      <DependentUpon>TestGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="TranslationUI\ControlDesignerForm.resx">
+      <DependentUpon>ControlDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bltoolkit.3.2.dev\BLToolkit.4.csproj">
+      <Project>{0C325F5D-E50E-4340-8724-D29896CCC583}</Project>
+      <Name>BLToolkit.4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bv.common\bv.common.csproj">
+      <Project>{BEE76B17-720D-4B65-996A-5712912B3ACF}</Project>
+      <Name>bv.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bv.model\bv.model.csproj">
+      <Project>{9067327E-1960-4326-ACB9-D982DDBEAA76}</Project>
+      <Name>bv.model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bv.tests\bv.tests.csproj">
+      <Project>{2B47411D-EF70-4AC6-8EED-F43C257CFEAF}</Project>
+      <Name>bv.tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\bv.winclient\bv.winclient.csproj">
+      <Project>{B0163672-F328-4D02-9B71-FB698EDAF815}</Project>
+      <Name>bv.winclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eidss.avr.mweb\eidss.avr.mweb.csproj">
+      <Project>{9D04E4C4-0C89-4935-9AB5-84138F0C9FC2}</Project>
+      <Name>eidss.avr.mweb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eidss.core\eidss.core.csproj">
+      <Project>{BF545ECD-F673-4C71-9362-57C01DF13062}</Project>
+      <Name>eidss.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eidss.model\eidss.model.csproj">
+      <Project>{E4B87B63-D5F2-4F9F-B39C-A7714896D1DE}</Project>
+      <Name>eidss.model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eidss.winclient\eidss.winclient.csproj">
+      <Project>{428C1EFE-F1A1-441A-9C59-50AE279F887F}</Project>
+      <Name>eidss.winclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\EIDSS\EIDSS.FlexibleForms\EIDSS.FlexibleForms.csproj">
+      <Project>{8040D091-58E8-4FBE-8F46-D5200EEDAF69}</Project>
+      <Name>EIDSS.FlexibleForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\EIDSS\EIDSS.RAM\eidss.avr.csproj">
+      <Project>{D068D455-22BB-4C94-AA32-593AE9077304}</Project>
+      <Name>eidss.avr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\EIDSS\EIDSS.RAM_DB\eidss.avr_db.csproj">
+      <Project>{75A1FF29-BB1F-4376-A548-B98258961633}</Project>
+      <Name>eidss.avr_db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\EIDSS\EIDSS.Reports\EIDSS.Reports.csproj">
+      <Project>{7122E0E0-019F-494E-8012-155FB3553E14}</Project>
+      <Name>EIDSS.Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\EIDSS\EIDSS_Common\EIDSS_Common.vbproj">
+      <Project>{119CC05A-2F6C-4FC8-AC74-79BB76E3C1C0}</Project>
+      <Name>EIDSS_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\Shared\bvwin_common\bvwin_common.vbproj">
+      <Project>{B3E5BA6B-FAA3-4A7D-8236-3F8842D61CD4}</Project>
+      <Name>bvwin_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vb\Shared\bv_dbcommon\bvdb_common.vbproj">
+      <Project>{6C48BB93-277D-4804-B280-F6130E29EB81}</Project>
+      <Name>bvdb_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MenuAction\" />
+    <Folder Include="Test References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\eidss.model.Schema.DiagnosisLookup.datasource" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

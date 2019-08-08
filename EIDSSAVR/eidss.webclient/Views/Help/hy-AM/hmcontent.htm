@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Electronic Integrated Disease Surveillance System</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="eidss_configuration.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">ՀՀԷՀՀ կարգավորումներ</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="repository_schema.htm" target="hmcontent"><span class="heading2" id="s1.1">Պահեստի սխեմա</span></a>
+</li>
+<li class="heading2" id="i1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="basic_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.2">Տեղեկատուների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="clinical_diagnosis_editor.htm" target="hmcontent"><span class="heading2" id="s1.3">Կլինիկական ախտորոշումների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.4" href="measure_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.4">Միջոցառումների տեղեկատուի խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.5" href="sample_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.5">Նմուշների տեսակի խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.6" href="vector_types_editor.htm" target="hmcontent"><span class="heading2" id="s1.6">Պահոցների/փոխանցողների տեսակի խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.7" href="vector_species_types.htm" target="hmcontent"><span class="heading2" id="s1.7">Պահոցների/փոխանցողների կենդանատեսակների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.8" href="species_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.8">Կենդանատեսակների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.9" href="statistic_types_editor.htm" target="hmcontent"><span class="heading2" id="s1.9">Վիճակագրական հաշվետվությունների տեսակների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.10" href="case_classification_editor.htm" target="hmcontent"><span class="heading2" id="s1.10">Դեպքի դասակարգման խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.11" href="report_diagnoses_groups_editor.htm" target="hmcontent"><span class="heading2" id="s1.11">Հաշվետվությունների ախտորոշումների խմբերի &nbsp;խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.12" href="age_groups_editor.htm" target="hmcontent"><span class="heading2" id="s1.12">Տարիքային խմբերի խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.13" href="human_aggregate_case_matrix_ed.htm" target="hmcontent"><span class="heading2" id="s1.13">Մարդու ցուցակային դեպքի մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.14" href="vet_aggregate_case_matrix_edit.htm" target="hmcontent"><span class="heading2" id="s1.14">Կենդանու/թռչնի ծանուցման ենթակա հիվանդությունների հաշվետվության մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.15" href="vet_diag_invest_matrix_editor.htm" target="hmcontent"><span class="heading2" id="s1.15">Անասնաբուժական ախտորոշիչ հետազոտությունների մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.16" href="vet_prophylactic_measure_matri.htm" target="hmcontent"><span class="heading2" id="s1.16">Անասնաբուժական կանխարգելման միջոցառումների մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.17" href="vet_sanitary_action_matrix_edi.htm" target="hmcontent"><span class="heading2" id="s1.17">Անասնաբուժասանիտարական միջոցառումների մատրիցայի խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.18" href="species-animal_age_matrix.htm" target="hmcontent"><span class="heading2" id="s1.18">Կենդանատեսակներ-կենդանու տարիք մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.19" href="sample_type-derivative_type_ma.htm" target="hmcontent"><span class="heading2" id="s1.19">Նմուշի տեսակ-նմուշի ածանցյալի մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.20" href="diagnosis-sample_types_matrix.htm" target="hmcontent"><span class="heading2" id="s1.20">Ախտորոշում-նմուշի տեսակներ մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.21" href="diagnosis-lab_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s1.21">Ախտորոշում-լաբորատոր հետազոտություն մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.22" href="diagnosis-penside_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s1.22">Ախտորոշում-էքսպրես հետազոտություններ մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.23" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.23" href="test_results_matrix.htm" target="hmcontent"><span class="heading2" id="s1.23">Հետազոտություն-հետազոտության արդյունք մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.24" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.24" href="vector_type-collection_method_matrix.htm" target="hmcontent"><span class="heading2" id="s1.24">Պահոցների/փոխանցողների տեսակ-հավաքագրման մեթոդների մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.25" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.25" href="vector_type-sample_type_matrix.htm" target="hmcontent"><span class="heading2" id="s1.25">Պահոցների/փոխանցողների տեսակ-&gt;նմուշի տեսակ մատրիցա&nbsp;</span></a>
+</li>
+<li class="heading2" id="i1.26" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.26" href="vector_type-field_test_matrix.htm" target="hmcontent"><span class="heading2" id="s1.26">Պահոցների/փոխանցողների տեսակ-Դաշտային հետազոտությունների մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.27" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.27" href="diagnoses-age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s1.27">Ախտորոշում - տարիքային խմբեր մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.28" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.28" href="report_diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s1.28">Հաշվետվությունների ախտորոշումների խումբ-ախտորոշում մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.29" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.29" href="custom_report_rows.htm" target="hmcontent"><span class="heading2" id="s1.29">Օգտվողի հաշվետվության տողեր</span></a>
+</li>
+<li class="heading2" id="i1.30" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.30" href="age_groups-statistical_age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s1.30">Տարիքային խմբեր - Վիճակագրական տարիքային խմբեր մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.31" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.31" href="unique_numbering_schema.htm" target="hmcontent"><span class="heading2" id="s1.31">Առանձնահատուկ համարակալման սխեմայի ցանկ</span></a>
+</li>
+<li class="heading2" id="i1.32" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.32" href="diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s1.32">Ախտորոշումների խումբ -Ախտորոշումներ մատրիցա</span></a>
+</li>
+<li class="heading2" id="i1.33" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.33" href="aggregatesettings.htm" target="hmcontent"><span class="heading2" id="s1.33">Ցուցակային հաշվետվությունների կարգավորումներ</span></a>
+</li>
+<li class="heading2" id="i1.34" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.34" href="maps_configuration.htm" target="hmcontent"><span class="heading2" id="s1.34">Քարտեզի կարգավորումներ</span></a>
+</li>
+<li class="heading2" id="i1.35" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.35" href="parameter_types_matrix.htm" target="hmcontent"><span class="heading2" id="s1.35">Պարամետրերի տեսակների խմբագրիչ</span></a>
+</li>
+<li class="heading2" id="i1.36" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.36" href="data_archiving_settings.htm" target="hmcontent"><span class="heading2" id="s1.36">Տվյալների արխիվացման կարգավորումեր</span></a>
+</li>
+<li class="heading2" id="i1.37" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.37" href="form_design.htm" target="hmcontent"><span class="heading2" id="s1.37" ondblclick="return dblclicked(this)">Ճկուն ձևերի խմբագրիչ</span></a>
+<ul id="ul1.37" style="list-style-type:none">
+<li class="heading3" id="i1.37.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.1" href="ffd_to_edit_template.htm" target="hmcontent"><span class="heading3" id="s1.37.1">ՃՁՁ - Խմբագրել ձևանմուշը</span></a>
+</li>
+<li class="heading3" id="i1.37.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.2" href="ffd_to_add_template.htm" target="hmcontent"><span class="heading3" id="s1.37.2">ՃՁՁ - Ավելացնել նոր ձևանմուշ</span></a>
+</li>
+<li class="heading3" id="i1.37.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.3" href="ffd_-_to_delete_a_template.htm" target="hmcontent"><span class="heading3" id="s1.37.3">ՃՁՁ - Ջնջել ձևանմուշը</span></a>
+</li>
+<li class="heading3" id="i1.37.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.4" href="ffd_fields_and_sections.htm" target="hmcontent"><span class="heading3" id="s1.37.4">ՃՁՁ - Ձևանմուշի բաժիններ և դաշտեր</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.38" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.38" href=javascript:void(0);><span class="heading2" id="s1.38" ondblclick="return dblclicked(this)">Ադմինիստրացիայի կարգավորումներ</span></a>
+<ul id="ul1.38" style="list-style-type:none">
+<li class="heading3" id="i1.38.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.1" href="farms.htm" target="hmcontent"><span class="heading3" id="s1.38.1">Տնտեսություններ</span></a>
+</li>
+<li class="heading3" id="i1.38.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.2" href="employees_users.htm" target="hmcontent"><span class="heading3" id="s1.38.2">Աշխատակիցներ/ Օգտագործողներ</span></a>
+</li>
+<li class="heading3" id="i1.38.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.3" href="persons_list.htm" target="hmcontent"><span class="heading3" id="s1.38.3">Համակարգում գրանցված մարդկանց ցանկ</span></a>
+</li>
+<li class="heading3" id="i1.38.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.4" href="organisations.htm" target="hmcontent"><span class="heading3" id="s1.38.4">Կազմակերպություններ</span></a>
+</li>
+<li class="heading3" id="i1.38.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.5" href="settlements.htm" target="hmcontent"><span class="heading3" id="s1.38.5">Բնակավայրեր</span></a>
+</li>
+<li class="heading3" id="i1.38.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.6" href="statistics.htm" target="hmcontent"><span class="heading3" id="s1.38.6">Վիճակագրություն</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.39" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.39" href=javascript:void(0);><span class="heading2" id="s1.39" ondblclick="return dblclicked(this)">Անվտանգության կոնֆիգուրացիաներ</span></a>
+<ul id="ul1.39" style="list-style-type:none">
+<li class="heading3" id="i1.39.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.1" href="security_policy.htm" target="hmcontent"><span class="heading3" id="s1.39.1">Անվտանգության քաղաքականություն</span></a>
+</li>
+<li class="heading3" id="i1.39.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.2" href="user_groups.htm" target="hmcontent"><span class="heading3" id="s1.39.2">&nbsp;Օգտագործողների խմբեր</span></a>
+</li>
+<li class="heading3" id="i1.39.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.3" href="security.htm" target="hmcontent"><span class="heading3" id="s1.39.3">Մուտքի իրավունքի կառավարում</span></a>
+</li>
+<li class="heading3" id="i1.39.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.4" href="system_functions_list.htm" target="hmcontent"><span class="heading3" id="s1.39.4">Մուտքի իրավունքի կառավարումի ցանկ</span></a>
+</li>
+<li class="heading3" id="i1.39.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.5" href="eidss_sites.htm" target="hmcontent"><span class="heading3" id="s1.39.5">ՀՀԷՀՀ կայքեր</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.40" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.40" href="administrative_support.htm" target="hmcontent"><span class="heading2" id="s1.40" ondblclick="return dblclicked(this)">Ադմինիստրատիվ գործիքներ</span></a>
+<ul id="ul1.40" style="list-style-type:none">
+<li class="heading3" id="i1.40.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.1" href="system_event_log.htm" target="hmcontent"><span class="heading3" id="s1.40.1">Իրադարձություններ մատյան</span></a>
+</li>
+<li class="heading3" id="i1.40.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.2" href="security_log.htm" target="hmcontent"><span class="heading3" id="s1.40.2">Անվտանգության իրադարձությունների գրանցամատյան</span></a>
+</li>
+<li class="heading3" id="i1.40.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.3" href="data_audit_management.htm" target="hmcontent"><span class="heading3" id="s1.40.3">Տվյալների աուդիտի գործարքներ</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(SolutionDir)Common.targets" />
+  <PropertyGroup>
+    <PreviousUpdateConfig Condition="'$(PreviousUpdateConfig)' == ''">$(ProjectDir)Updates.xml</PreviousUpdateConfig>
+    <VersionFile Condition=" '' == '$(VersionFile)' ">$(SourceDir)EIDSS\EIDSSAssemblyInfo.cs</VersionFile>
+    <AUMVersionFile Condition=" '' == '$(AUMVersionFile)' ">$(SolutionDir)\bvupdaterAssemblyVersionInfo.cs</AUMVersionFile>
+
+    <OutDir Condition=" '' == '$(OutDir)' " >$(OutputPath)</OutDir>
+    <TargetDir>$(OutDir)\Patch\</TargetDir>
+    <TargetDir Condition=" 'True' != '$([System.IO.Path]::IsPathRooted(&quot;$(TargetDir)&quot;))' ">$([System.IO.Path]::GetFullPath( '$(MSBuildProjectDirectory)\$(TargetDir)' ))</TargetDir>
+    <UpdateConfig>$(TargetDir)updates.xml</UpdateConfig>
+    <PatchVersionSuffix Condition=" '' == '$(PatchVersionSuffix)' ">00</PatchVersionSuffix>
+  </PropertyGroup>
+
+
+  <Target Name="Build" DependsOnTargets="$(BuildDependsOn)" Outputs="$(TargetPath);$(UpdateConfig)" />
+  <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
+  <Target Name="Rebuild" DependsOnTargets="$(RebuildDependsOn)" Outputs="$(TargetPath);$(UpdateConfig)" />
+
+
+  <PropertyGroup>
+    <BuildDependsOn>
+      BeforeBuild;
+      GetPatchCompilationTool;
+      GetUpdateSources;
+      ParseVersionFile;
+      ParseAUMVersionFile;
+      PrepareUpdatesXml;
+      Compile;
+      GetTargetPath;
+      AfterBuild
+    </BuildDependsOn>
+
+    <RebuildDependsOn>
+      Clean;
+      Build;
+    </RebuildDependsOn>
+
+    <CleanDependsOn>
+    </CleanDependsOn>
+  </PropertyGroup>
+
+  <Target Name="BeforeBuild" />
+  <Target Name="AfterBuild" />
+
+
+  <Target Name="GetPatchCompilationTool" Outputs="$(PatchCreator)">
+    <MSBuild
+      Projects="$(SolutionDir)AUM.UpdateCreator\AUM.UpdateCreator.csproj"
+      Targets="GetTargetPath"
+      Properties="Configuration=$(Configuration);Platform=AnyCPU">
+
+      <Output TaskParameter="TargetOutputs" PropertyName="PatchCreator" />
+    </MSBuild>
+
+    <Message Text="PatchCreator = $(PatchCreator)" />
+  </Target>
+
+  <Target Name="GetUpdateSources" Outputs="$(UpdateSource)">
+    <MSBuild Projects="$(SolutionDir)Patch\PrepareUpdateSource\PrepareUpdateSource.csproj" Targets="GetTargetDir">
+      <Output TaskParameter="TargetOutputs" PropertyName="UpdateSource" />
+    </MSBuild>
+
+    <Message Text="UpdateSource = $(UpdateSource)" />
+  </Target>
+
+  <PropertyGroup>
+    <ParseAUMVersionFileDependsOn>
+      AskForVersionInfo;
+      ExtractAUMVersionInfo;
+    </ParseAUMVersionFileDependsOn>
+  </PropertyGroup>
+  <Target Name="ParseAUMVersionFile" DependsOnTargets="$(ParseAUMVersionFileDependsOn)" Returns="$(AUMVersionInfo)" />
+
+  <Target Name="AskForVersionInfo">
+    <MSBuild
+      Projects="$(SolutionDir)Common.targets"
+      Targets="ParseVersionFile"
+      Properties="VersionFile=$(AUMVersionFile)">
+
+      <Output TaskParameter="TargetOutputs" ItemName="AUMVersionInfo" />
+    </MSBuild>
+  </Target>
+
+  <Target Name="ExtractAUMVersionInfo" Returns="$(AUMVersionInfo)" Outputs="%(AUMVersionInfo.Identity)">
+    <PropertyGroup>
+      <_versionInfoCandidate>%(AUMVersionInfo.Identity)</_versionInfoCandidate>
+      <AUMVersionInfo Condition=" 'True' == '$(_versionInfoCandidate.Contains(&quot;.&quot;))' ">$(_versionInfoCandidate)</AUMVersionInfo>
+    </PropertyGroup>
+    <Message Text="Parsed AUM Version = $(AUMVersionInfo)" />
+  </Target>
+
+  <Target Name="PrepareUpdatesXml" Condition=" Exists('$(PreviousUpdateConfig)') ">
+    <Copy SourceFiles="$(PreviousUpdateConfig)" DestinationFiles="$(UpdateConfig)" />
+  </Target>
+
+
+  <Target Name="GetTargetPath" DependsOnTargets="GetUpdateSources" Outputs="$(TargetPath);$(UpdateConfig)">
+    <PropertyGroup>
+      <TargetPath>$(TargetDir)update_total_$(VersionInfo)$(PatchVersionSuffix).zip</TargetPath>
+    </PropertyGroup>
+  </Target>
+
+  <Target Name="Compile">
+    <PropertyGroup>
+      <_updateSourceArgument Condition=" HasTrailingSlash( '$(UpdateSource)' ) ">-u "$(UpdateSource) "</_updateSourceArgument>
+      <_updateSourceArgument Condition=" !HasTrailingSlash( '$(UpdateSource)' ) ">-u "$(UpdateSource)"</_updateSourceArgument>
+      <_versionArgument>-v $(VersionInfo)$(PatchVersionSuffix)</_versionArgument>
+      <_output Condition=" HasTrailingSlash( '$(TargetDir)' ) ">-o "$(TargetDir) "</_output>
+      <_output Condition=" !HasTrailingSlash( '$(TargetDir)' ) ">-o "$(TargetDir)"</_output>
+      <_aumArgument Condition=" Exists( '$(UpdateSource)aum\' ) ">--aum $(AUMVersionInfo)</_aumArgument>
+      <_avrsArgument Condition=" Exists( '$(UpdateSource)avrs\' ) ">--avrs $(VersionInfo)</_avrsArgument>
+      <_dbArgument Condition=" Exists( '$(UpdateSource)db\' ) ">--db $(VersionInfo)</_dbArgument>
+      <_dbaArgument Condition=" Exists( '$(UpdateSource)dba\' ) ">--dba $(VersionInfo)</_dbaArgument>
+      <_dbavrArgument Condition=" Exists( '$(UpdateSource)dbavr\' ) ">--dbavr $(VersionInfo)</_dbavrArgument>
+      <_eArgument Condition=" Exists( '$(UpdateSource)e\' ) ">--e $(VersionInfo)</_eArgument>
+      <_nsArgument Condition=" Exists( '$(UpdateSource)ns\' ) ">--ns $(VersionInfo)</_nsArgument>
+      <_xArgument Condition=" Exists( '$(UpdateSource)x\' ) ">--x</_xArgument>
+    </PropertyGroup>
+
+    <Exec
+      Command='"$(PatchCreator)" -q $(_updateSourceArgument) $(_output) $(_versionArgument) $(_aumArgument) $(_avrsArgument) $(_dbArgument) $(_dbaArgument) $(_dbavrArgument) $(_eArgument) $(_nsArgument) $(_xArgument)'
+      WorkingDirectory=""
+      LogStandardErrorAsError="true" />
+  </Target>
+
+  <Target Name="PopulateDropArtefacts">
+    <ItemGroup>
+      <PatchFile Include="$(TargetPath)" />
+      <PatchFile Include="$(UpdateConfig)" />
+    </ItemGroup>
+
+    <Copy
+      SourceFiles="@(PatchFile)"
+      DestinationFolder="$(DropFolder)"
+      OverwriteReadOnlyFiles="true"
+      SkipUnchangedFiles="true"
+      UseHardlinksIfPossible="true">
+
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+</Project>

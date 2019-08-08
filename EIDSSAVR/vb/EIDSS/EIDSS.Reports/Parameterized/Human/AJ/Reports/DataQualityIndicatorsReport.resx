@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="m_DQIChartDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="m_DQIDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="m_DQIAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="xrTableCell4.Weight" type="System.Double, mscorlib">
+    <value>0.041194314645059071</value>
+  </data>
+  <data name="xrTableCell3.Weight" type="System.Double, mscorlib">
+    <value>0.041194315532926191</value>
+  </data>
+  <data name="xrTableCell36.Weight" type="System.Double, mscorlib">
+    <value>0.04119431625747827</value>
+  </data>
+  <data name="xrTableCell41.Weight" type="System.Double, mscorlib">
+    <value>0.041194315600120227</value>
+  </data>
+  <data name="xrTableCell42.Weight" type="System.Double, mscorlib">
+    <value>0.0411943154431567</value>
+  </data>
+  <data name="xrTableCell39.Weight" type="System.Double, mscorlib">
+    <value>0.04119431523784417</value>
+  </data>
+  <data name="xrTableCell43.Weight" type="System.Double, mscorlib">
+    <value>0.041194316351812525</value>
+  </data>
+  <data name="xrTableCell44.Weight" type="System.Double, mscorlib">
+    <value>0.041194316146499987</value>
+  </data>
+  <data name="xrTableCell38.Weight" type="System.Double, mscorlib">
+    <value>0.041194315237844184</value>
+  </data>
+  <data name="xrTableCell48.Weight" type="System.Double, mscorlib">
+    <value>0.041194317202357673</value>
+  </data>
+  <data name="xrTableCell47.Weight" type="System.Double, mscorlib">
+    <value>0.041194316146499987</value>
+  </data>
+  <data name="xrTableCell49.Weight" type="System.Double, mscorlib">
+    <value>0.041194315747322068</value>
+  </data>
+  <data name="xrTableCell46.Weight" type="System.Double, mscorlib">
+    <value>0.041194315747322068</value>
+  </data>
+  <data name="xrTableCell37.Weight" type="System.Double, mscorlib">
+    <value>0.04119431651321466</value>
+  </data>
+  <data name="xrTableCell53.Weight" type="System.Double, mscorlib">
+    <value>0.041194315567576939</value>
+  </data>
+  <data name="xrTableCell52.Weight" type="System.Double, mscorlib">
+    <value>0.04882289303141301</value>
+  </data>
+  <data name="xrTableCell51.Weight" type="System.Double, mscorlib">
+    <value>0.041194314650339778</value>
+  </data>
+  <data name="xrTableCell55.Weight" type="System.Double, mscorlib">
+    <value>0.041194315567576925</value>
+  </data>
+  <data name="xrTableCell54.Weight" type="System.Double, mscorlib">
+    <value>0.04119431556757696</value>
+  </data>
+  <data name="xrTableCell56.Weight" type="System.Double, mscorlib">
+    <value>0.041194315567576925</value>
+  </data>
+  <data name="xrTableCell58.Weight" type="System.Double, mscorlib">
+    <value>0.041194317276572572</value>
+  </data>
+  <data name="xrTableCell60.Weight" type="System.Double, mscorlib">
+    <value>0.041194315966754824</value>
+  </data>
+  <data name="xrTableCell57.Weight" type="System.Double, mscorlib">
+    <value>0.041194315567576946</value>
+  </data>
+  <data name="xrTableCell61.Weight" type="System.Double, mscorlib">
+    <value>0.04119431465033975</value>
+  </data>
+  <data name="xrTableCell63.Weight" type="System.Double, mscorlib">
+    <value>0.048823078550541785</value>
+  </data>
+  <data name="xrTableCell62.Weight" type="System.Double, mscorlib">
+    <value>0.041194035923306477</value>
+  </data>
+  <data name="xrTableCell64.Weight" type="System.Double, mscorlib">
+    <value>0.041194431692988087</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTableCell2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>LightGray</value>
+  </data>
+  <data name="xrTableCell2.Weight" type="System.Double, mscorlib">
+    <value>0.041194259452408205</value>
+  </data>
+  <data name="NumberOfCasesDetailCell.Weight" type="System.Double, mscorlib">
+    <value>0.041194314797843017</value>
+  </data>
+  <data name="DiagnosisDetailCell.Weight" type="System.Double, mscorlib">
+    <value>0.22428023179258688</value>
+  </data>
+  <data name="RayonDetailCell.Weight" type="System.Double, mscorlib">
+    <value>0.11442863725620811</value>
+  </data>
+  <data name="RegionDetailCell.Weight" type="System.Double, mscorlib">
+    <value>0.08238862129905769</value>
+  </data>
+  <data name="xrSummary1.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_1_NotificationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663577876348</value>
+  </data>
+  <data name="xrSummary2.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CaseStatusMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171711610645506</value>
+  </data>
+  <data name="xrSummary3.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DateOfCompletionOfPaperFormMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171616977243218</value>
+  </data>
+  <data name="xrSummary4.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NameOfEmployerMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664284053645</value>
+  </data>
+  <data name="xrSummary5.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CurrentLocationOfPatientMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171617045174358</value>
+  </data>
+  <data name="xrSummary6.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationDateTimeMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171757355125654</value>
+  </data>
+  <data name="xrSummary7.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationSentByNameMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117152397410237</value>
+  </data>
+  <data name="xrSummary8.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationReceivedByFacilityMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171756421666914</value>
+  </data>
+  <data name="xrSummary9.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationReceivedByNameMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.0411716637632769</value>
+  </data>
+  <data name="xrSummary10.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TimelinessofDataEntryMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171662780425389</value>
+  </data>
+  <data name="xrSummary11.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_2_CaseInvestigationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171569758746154</value>
+  </data>
+  <data name="xrSummary12.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DemographicInformationStartingDateTimeOfInvestigationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171850376804861</value>
+  </data>
+  <data name="xrSummary13.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DemographicInformationOccupationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171571163588869</value>
+  </data>
+  <data name="xrSummary14.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationInitialCaseClassificationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171758071625472</value>
+  </data>
+  <data name="xrSummary15.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationLocationOfExposureMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171570983843747</value>
+  </data>
+  <data name="xrSummary16.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationAntibioticAntiviralTherapyMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.048796046018391104</value>
+  </data>
+  <data name="xrSummary17.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="SamplesCollectionSamplesCollectedMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663139278759</value>
+  </data>
+  <data name="xrSummary18.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ContactListAddContactMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171758167541248</value>
+  </data>
+  <data name="xrSummary19.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CaseClassificationClinicalSignsMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171569942290216</value>
+  </data>
+  <data name="xrSummary20.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="EpidemiologicalLinksAndRiskFactorsMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171570983843754</value>
+  </data>
+  <data name="xrSummary21.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationBasisOfDiagnosisMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663184583158</value>
+  </data>
+  <data name="xrSummary22.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationOutcomeMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171850659134479</value>
+  </data>
+  <data name="xrSummary23.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationIsThisCaseOutbreakMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171570983843768</value>
+  </data>
+  <data name="xrSummary24.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationEpidemiologistNameMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663139278739</value>
+  </data>
+  <data name="xrSummary25.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.048795952924381956</value>
+  </data>
+  <data name="xrSummary26.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsTestsConductedMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171756848551344</value>
+  </data>
+  <data name="xrSummary27.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsResultObservationMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171570922596892</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsMaxCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>LightGray</value>
+  </data>
+  <data name="xrSummary28.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171734471244448</value>
+  </data>
+  <data name="NumberOfCasesMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663865302396</value>
+  </data>
+  <data name="DiagnosisMaxCell.Weight" type="System.Double, mscorlib">
+    <value>0.22415683418411378</value>
+  </data>
+  <data name="xrTableCell66.Weight" type="System.Double, mscorlib">
+    <value>0.19670909062439104</value>
+  </data>
+  <data name="_1_NotificationAVGCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171665044734317</value>
+  </data>
+  <data name="xrSummary29.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CaseStatusCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663481498574</value>
+  </data>
+  <data name="xrSummary30.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DateOfCompletionOfPaperFormCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171662419049071</value>
+  </data>
+  <data name="NameOfEmployerCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664231876105</value>
+  </data>
+  <data name="xrSummary31.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CurrentLocationOfPatientCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="CurrentLocationOfPatientCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663007756348</value>
+  </data>
+  <data name="xrSummary32.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationDateTimeCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="NotificationDateTimeCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663298417066</value>
+  </data>
+  <data name="xrSummary33.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationSentByNameCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="NotificationSentByNameCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663528532826</value>
+  </data>
+  <data name="xrSummary34.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationReceivedByFacilityCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="NotificationReceivedByFacilityCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664231876112</value>
+  </data>
+  <data name="xrSummary35.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="NotificationReceivedByNameCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="NotificationReceivedByNameCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117166329841708</value>
+  </data>
+  <data name="xrSummary36.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TimelinessofDataEntryCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TimelinessofDataEntryCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664270993592</value>
+  </data>
+  <data name="xrSummary37.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_2_CaseInvestigationCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="_2_CaseInvestigationCell.Weight" type="System.Double, mscorlib">
+    <value>0.0411716627776406</value>
+  </data>
+  <data name="xrSummary38.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DemographicInformationStartingDateTimeOfInvestigationCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="DemographicInformationStartingDateTimeOfInvestigationCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664270993585</value>
+  </data>
+  <data name="xrSummary39.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="DemographicInformationOccupationCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="DemographicInformationOccupationCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664270993578</value>
+  </data>
+  <data name="xrSummary40.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationInitialCaseClassificationCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ClinicalInformationInitialCaseClassificationCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171665036886178</value>
+  </data>
+  <data name="xrSummary41.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationLocationOfExposureCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ClinicalInformationLocationOfExposureCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664091248443</value>
+  </data>
+  <data name="xrSummary42.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ClinicalInformationAntibioticAntiviralTherapyCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ClinicalInformationAntibioticAntiviralTherapyCell.Weight" type="System.Double, mscorlib">
+    <value>0.0487960461131742</value>
+  </data>
+  <data name="xrSummary43.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="SamplesCollectionSamplesCollectedCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="SamplesCollectionSamplesCollectedCell.Weight" type="System.Double, mscorlib">
+    <value>0.0411716631756115</value>
+  </data>
+  <data name="xrSummary44.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="ContactListAddContactCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="ContactListAddContactCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117166409124845</value>
+  </data>
+  <data name="xrSummary45.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="CaseClassificationClinicalSignsCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="CaseClassificationClinicalSignsCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117166409124845</value>
+  </data>
+  <data name="xrSummary46.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="EpidemiologicalLinksAndRiskFactorsCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="EpidemiologicalLinksAndRiskFactorsCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117166409124845</value>
+  </data>
+  <data name="xrSummary47.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationBasisOfDiagnosisCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FinalCaseClassificationBasisOfDiagnosisCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171663019734614</value>
+  </data>
+  <data name="xrSummary48.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationOutcomeCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FinalCaseClassificationOutcomeCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171662581621193</value>
+  </data>
+  <data name="xrSummary49.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationIsThisCaseOutbreakCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FinalCaseClassificationIsThisCaseOutbreakCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664074974176</value>
+  </data>
+  <data name="xrSummary50.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="FinalCaseClassificationEpidemiologistNameCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="FinalCaseClassificationEpidemiologistNameCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171662637012961</value>
+  </data>
+  <data name="xrSummary51.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsCell.Weight" type="System.Double, mscorlib">
+    <value>0.04879623148599993</value>
+  </data>
+  <data name="xrSummary52.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsTestsConductedCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsTestsConductedCell.Weight" type="System.Double, mscorlib">
+    <value>0.04117157071019218</value>
+  </data>
+  <data name="xrSummary53.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsResultObservationCell.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsResultObservationCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171569582215857</value>
+  </data>
+  <data name="SummaryScoreByIndicators.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>LightGray</value>
+  </data>
+  <data name="xrSummary54.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="SummaryScoreByIndicators.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="SummaryScoreByIndicators.Weight" type="System.Double, mscorlib">
+    <value>0.041171613914126</value>
+  </data>
+  <data name="NumberOfCasesTotalCell.Weight" type="System.Double, mscorlib">
+    <value>0.041171664717598172</value>
+  </data>
+  <data name="DiagnosisTotalCell.Weight" type="System.Double, mscorlib">
+    <value>0.22415692493722561</value>
+  </data>
+  <data name="RegionTotalCell.Weight" type="System.Double, mscorlib">
+    <value>0.19670902108678642</value>
+  </data>
+  <data name="_1_NotificationHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6pt, style=Bold</value>
+  </data>
+  <data name="_1_NotificationHeaderCell.Text" xml:space="preserve">
+    <value>1. Notification</value>
+  </data>
+  <data name="_1_NotificationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.0412217337235594</value>
+  </data>
+  <data name="CaseStatusHeaderCell.Text" xml:space="preserve">
+    <value>1.1. Case Status</value>
+  </data>
+  <data name="CaseStatusHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733723559417</value>
+  </data>
+  <data name="DateOfCompletionOfPaperFormHeaderCell.Text" xml:space="preserve">
+    <value>1.2. Date of Completion of Paper form</value>
+  </data>
+  <data name="DateOfCompletionOfPaperFormHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.0412217337235594</value>
+  </data>
+  <data name="NameOfEmployerHeaderCell.Text" xml:space="preserve">
+    <value>1.3. Name of Employer </value>
+  </data>
+  <data name="NameOfEmployerHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.0412217337235595</value>
+  </data>
+  <data name="CurrentLocationOfPatientHeaderCell.Text" xml:space="preserve">
+    <value>1.4. Current location of patient</value>
+  </data>
+  <data name="CurrentLocationOfPatientHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734370677367</value>
+  </data>
+  <data name="NotificationDateTimeHeaderCell.Text" xml:space="preserve">
+    <value>1.5. Notification date </value>
+  </data>
+  <data name="NotificationDateTimeHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733731526093</value>
+  </data>
+  <data name="NotificationSentByNameHeaderCell.Text" xml:space="preserve">
+    <value>1.6. Notification sent by: Name </value>
+  </data>
+  <data name="NotificationSentByNameHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734370677408</value>
+  </data>
+  <data name="NotificationReceivedByFacilityHeaderCell.Text" xml:space="preserve">
+    <value>1.7. Notification received by: Facility </value>
+  </data>
+  <data name="NotificationReceivedByFacilityHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733731526086</value>
+  </data>
+  <data name="NotificationReceivedByNameHeaderCell.Text" xml:space="preserve">
+    <value>1.8. Notification received by: Name </value>
+  </data>
+  <data name="NotificationReceivedByNameHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.0412217337315261</value>
+  </data>
+  <data name="TimelinessofDataEntryHeaderCell.Text" xml:space="preserve">
+    <value>1.9. Date and time of the Emergency Notification </value>
+  </data>
+  <data name="TimelinessofDataEntryHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458723</value>
+  </data>
+  <data name="_2_CaseInvestigationHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6pt, style=Bold</value>
+  </data>
+  <data name="_2_CaseInvestigationHeaderCell.Text" xml:space="preserve">
+    <value>2. Case Investigation</value>
+  </data>
+  <data name="_2_CaseInvestigationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733530058348</value>
+  </data>
+  <data name="DemographicInformationStartingDateTimeOfInvestigationHeaderCell.Text" xml:space="preserve">
+    <value>2.1.1. Starting date of investigation </value>
+  </data>
+  <data name="DemographicInformationStartingDateTimeOfInvestigationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458647</value>
+  </data>
+  <data name="DemographicInformationOccupationHeaderCell.Text" xml:space="preserve">
+    <value>2.1.2. Occupation </value>
+  </data>
+  <data name="DemographicInformationOccupationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458682</value>
+  </data>
+  <data name="ClinicalInformationInitialCaseClassificationHeaderCell.Text" xml:space="preserve">
+    <value>2.2.1. Initial Case Classification </value>
+  </data>
+  <data name="ClinicalInformationInitialCaseClassificationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.04122173451845873</value>
+  </data>
+  <data name="ClinicalInformationLocationOfExposureHeaderCell.Text" xml:space="preserve">
+    <value>2.2.2. Location of Exposure if it known </value>
+  </data>
+  <data name="ClinicalInformationLocationOfExposureHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458675</value>
+  </data>
+  <data name="ClinicalInformationAntibioticAntiviralTherapyHeaderCell.Text" xml:space="preserve">
+    <value>2.2.3. Antibiotic/Antiviral therapy administrated before samples collection </value>
+  </data>
+  <assembly alias="DevExpress.Data.v15.1" name="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="ClinicalInformationAntibioticAntiviralTherapyHeaderCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>BottomJustify</value>
+  </data>
+  <data name="ClinicalInformationAntibioticAntiviralTherapyHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.048855387932062767</value>
+  </data>
+  <data name="SamplesCollectionSamplesCollectedHeaderCell.Text" xml:space="preserve">
+    <value>2.3. Samples collected </value>
+  </data>
+  <data name="SamplesCollectionSamplesCollectedHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733263922443</value>
+  </data>
+  <data name="ContactListAddContactHeaderCell.Text" xml:space="preserve">
+    <value>2.4. Contacts </value>
+  </data>
+  <data name="ContactListAddContactHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221733062454642</value>
+  </data>
+  <data name="CaseClassificationClinicalSignsHeaderCell.Text" xml:space="preserve">
+    <value>2.5. Clinical signs </value>
+  </data>
+  <data name="CaseClassificationClinicalSignsHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458696</value>
+  </data>
+  <data name="EpidemiologicalLinksAndRiskFactorsHeaderCell.Text" xml:space="preserve">
+    <value>2.6. Epidemiological Links </value>
+  </data>
+  <data name="EpidemiologicalLinksAndRiskFactorsHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458661</value>
+  </data>
+  <data name="FinalCaseClassificationBasisOfDiagnosisHeaderCell.Text" xml:space="preserve">
+    <value>2.7.1. Basis of Diagnosis </value>
+  </data>
+  <data name="FinalCaseClassificationBasisOfDiagnosisHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.04122173413931865</value>
+  </data>
+  <data name="FinalCaseClassificationOutcomeHeaderCell.Text" xml:space="preserve">
+    <value>2.7.2. Outcome</value>
+  </data>
+  <data name="FinalCaseClassificationOutcomeHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734953491136</value>
+  </data>
+  <data name="FinalCaseClassificationIsThisCaseOutbreakHeaderCell.Text" xml:space="preserve">
+    <value>2.7.3. Is this case related to an outbreak </value>
+  </data>
+  <data name="FinalCaseClassificationIsThisCaseOutbreakHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458675</value>
+  </data>
+  <data name="FinalCaseClassificationEpidemiologistNameHeaderCell.Text" xml:space="preserve">
+    <value>2.7.4. Epidemiologist name </value>
+  </data>
+  <data name="FinalCaseClassificationEpidemiologistNameHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734518458883</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6pt, style=Bold</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsHeaderCell.Text" xml:space="preserve">
+    <value>3. The results of Laboratory Tests and Interpretation</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsHeaderCell.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>BottomJustify</value>
+  </data>
+  <data name="_3_TheResultsOfLaboratoryTestsHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.048855385979329945</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsTestsConductedHeaderCell.Text" xml:space="preserve">
+    <value>3.1 Tests Conducted </value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsTestsConductedHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.04122173446924958</value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsResultObservationHeaderCell.Text" xml:space="preserve">
+    <value>3.2. Test Result/Observation </value>
+  </data>
+  <data name="TheResultsOfLaboratoryTestsResultObservationHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.0412217344858873</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsHeaderCell.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>LightGray</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6pt, style=Bold</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsHeaderCell.Text" xml:space="preserve">
+    <value>Summary Score</value>
+  </data>
+  <data name="SummaryScoreByIndicatorsHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221720192457206</value>
+  </data>
+  <data name="DynamicTopTableRow.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v15.1">
+    <value>BottomCenter</value>
+  </data>
+  <data name="NumberOfCasesHeaderCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6pt, style=Bold</value>
+  </data>
+  <data name="NumberOfCasesHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.041221734253831015</value>
+  </data>
+  <data name="DiagnosisHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.22442944524226705</value>
+  </data>
+  <data name="RayonHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.11450482162029199</value>
+  </data>
+  <data name="RegionHeaderCell.Weight" type="System.Double, mscorlib">
+    <value>0.082443466821617614</value>
+  </data>
+  <data name="series1.Name" xml:space="preserve">
+    <value>LocalIndicators</value>
+  </data>
+  <data name="series2.Name" xml:space="preserve">
+    <value>AverageIndicators</value>
+  </data>
+  <data name="series3.Name" xml:space="preserve">
+    <value>LocalIndicators</value>
+  </data>
+  <data name="FirstOrganizationNameCell.Weight" type="System.Double, mscorlib">
+    <value>2.0065479844963781</value>
+  </data>
+  <data name="FirstPrintedFromEidssCell.Weight" type="System.Double, mscorlib">
+    <value>0.42095449092823334</value>
+  </data>
+  <data name="FirstDateTimeCell.Weight" type="System.Double, mscorlib">
+    <value>0.57249752457538827</value>
+  </data>
+  <data name="SecondOrganizationNameCell.Weight" type="System.Double, mscorlib">
+    <value>2.0065481557830656</value>
+  </data>
+  <data name="SecondPrintedFromEidssCell.Weight" type="System.Double, mscorlib">
+    <value>0.42095414835485845</value>
+  </data>
+  <data name="SecondDateTimeCell.Weight" type="System.Double, mscorlib">
+    <value>0.57249769586207566</value>
+  </data>
+  <data name="xrSummary55.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="_1_NotificationSubCell.Weight" type="System.Double, mscorlib">
+    <value>0.020693565688861444</value>
+  </data>
+  <data name="xrSummary56.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell12.Weight" type="System.Double, mscorlib">
+    <value>0.020693588892436519</value>
+  </data>
+  <data name="xrSummary57.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell6.Weight" type="System.Double, mscorlib">
+    <value>0.020693588892436526</value>
+  </data>
+  <data name="xrSummary58.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell21.Weight" type="System.Double, mscorlib">
+    <value>0.02069361246798624</value>
+  </data>
+  <data name="xrSummary59.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell5.Weight" type="System.Double, mscorlib">
+    <value>0.020693565688861451</value>
+  </data>
+  <data name="xrSummary60.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell20.Weight" type="System.Double, mscorlib">
+    <value>0.020693565688861437</value>
+  </data>
+  <data name="xrSummary61.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell7.Weight" type="System.Double, mscorlib">
+    <value>0.020693542299299039</value>
+  </data>
+  <data name="xrSummary62.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell19.Weight" type="System.Double, mscorlib">
+    <value>0.020693588605983582</value>
+  </data>
+  <data name="xrSummary63.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell9.Weight" type="System.Double, mscorlib">
+    <value>0.020693588605983568</value>
+  </data>
+  <data name="xrSummary64.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell18.Weight" type="System.Double, mscorlib">
+    <value>0.020693587439803027</value>
+  </data>
+  <data name="xrSummary65.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell8.Weight" type="System.Double, mscorlib">
+    <value>0.020693593270705676</value>
+  </data>
+  <data name="xrSummary66.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell17.Weight" type="System.Double, mscorlib">
+    <value>0.020693682164233174</value>
+  </data>
+  <data name="xrSummary67.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell10.Weight" type="System.Double, mscorlib">
+    <value>0.020693471658171564</value>
+  </data>
+  <data name="xrSummary68.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell13.Weight" type="System.Double, mscorlib">
+    <value>0.02069372894335797</value>
+  </data>
+  <data name="xrSummary69.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell26.Weight" type="System.Double, mscorlib">
+    <value>0.020693471755497655</value>
+  </data>
+  <data name="xrSummary70.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell24.Weight" type="System.Double, mscorlib">
+    <value>0.024525688048667574</value>
+  </data>
+  <data name="xrSummary71.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell25.Weight" type="System.Double, mscorlib">
+    <value>0.020693729040684034</value>
+  </data>
+  <data name="xrSummary72.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell22.Weight" type="System.Double, mscorlib">
+    <value>0.020693518534622452</value>
+  </data>
+  <data name="xrSummary73.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell27.Weight" type="System.Double, mscorlib">
+    <value>0.020693565313747234</value>
+  </data>
+  <data name="xrSummary74.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell23.Weight" type="System.Double, mscorlib">
+    <value>0.020693471755497655</value>
+  </data>
+  <data name="xrSummary75.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell28.Weight" type="System.Double, mscorlib">
+    <value>0.020693588703309618</value>
+  </data>
+  <data name="xrSummary76.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell16.Weight" type="System.Double, mscorlib">
+    <value>0.020693635482434442</value>
+  </data>
+  <data name="xrSummary77.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell29.Weight" type="System.Double, mscorlib">
+    <value>0.020693541914766217</value>
+  </data>
+  <data name="xrSummary78.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell14.Weight" type="System.Double, mscorlib">
+    <value>0.020693588693891013</value>
+  </data>
+  <data name="xrSummary79.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell30.Weight" type="System.Double, mscorlib">
+    <value>0.024525631798776037</value>
+  </data>
+  <data name="xrSummary80.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell15.Weight" type="System.Double, mscorlib">
+    <value>0.020693685013189383</value>
+  </data>
+  <data name="xrSummary81.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell31.Weight" type="System.Double, mscorlib">
+    <value>0.020693555842980521</value>
+  </data>
+  <data name="xrTableCell1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>LightGray</value>
+  </data>
+  <data name="xrSummary82.FormatString" xml:space="preserve">
+    <value>{0:0.00}</value>
+  </data>
+  <data name="xrTableCell1.Weight" type="System.Double, mscorlib">
+    <value>0.020693771023433311</value>
+  </data>
+  <data name="NumberOfCasesSubTotalCell.Weight" type="System.Double, mscorlib">
+    <value>0.020693635525180977</value>
+  </data>
+  <data name="RayonSubTotalCell.Weight" type="System.Double, mscorlib">
+    <value>0.2115344454380361</value>
+  </data>
+  <data name="PageFooter.HeightF" type="System.Single, mscorlib">
+    <value>13</value>
+  </data>
+  <metadata name="m_BaseAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <data name="xrPageInfo1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v15.1">
+    <value>1005.99988, 0</value>
+  </data>
+  <data name="xrPageInfo1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>63.0002441, 12</value>
+  </data>
+  <metadata name="m_BaseDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 173</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
