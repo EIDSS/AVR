@@ -1,0 +1,1178 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Electronic Integrated Disease Surveillance System</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="system_requirements_and_set-up.htm" target="hmcontent"><span class="heading1" id="s1">Overview</span></a>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="getting_started.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Getting Started</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="logging_on.htm" target="hmcontent"><span class="heading2" id="s2.1">Log In\Out</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="system_automatical_upgrade.htm" target="hmcontent"><span class="heading2" id="s2.2">System Automatic Upgrade</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="changing_password.htm" target="hmcontent"><span class="heading2" id="s2.3">Password Change</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="switching_user.htm" target="hmcontent"><span class="heading2" id="s2.4">Switching User</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="main_menu_and_toolbar.htm" target="hmcontent"><span class="heading2" id="s2.5">Main Menu and Toolbar</span></a>
+</li>
+<li class="heading2" id="i2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="multiligual_support.htm" target="hmcontent"><span class="heading2" id="s2.6">Multi-lingual Support</span></a>
+</li>
+<li class="heading2" id="i2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="system_preferences.htm" target="hmcontent"><span class="heading2" id="s2.7">System Preferences</span></a>
+</li>
+<li class="heading2" id="i2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="replication_setup.htm" target="hmcontent"><span class="heading2" id="s2.8">Site Alerts Subscription</span></a>
+</li>
+<li class="heading2" id="i2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="closing_windows.htm" target="hmcontent"><span class="heading2" id="s2.9">Saving Data and/or Closing Window</span></a>
+</li>
+<li class="heading2" id="i2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="item_lists.htm" target="hmcontent"><span class="heading2" id="s2.10">Item Lists</span></a>
+</li>
+<li class="heading2" id="i2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="searches.htm" target="hmcontent"><span class="heading2" id="s2.11">Search Lists</span></a>
+</li>
+<li class="heading2" id="i2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="forms_custom.htm" target="hmcontent"><span class="heading2" id="s2.12">List and Search Forms Customization</span></a>
+</li>
+<li class="heading2" id="i2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="detail_forms.htm" target="hmcontent"><span class="heading2" id="s2.13">Detailed Forms</span></a>
+</li>
+<li class="heading2" id="i2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="maps.htm" target="hmcontent"><span class="heading2" id="s2.14">GEO Locations</span></a>
+</li>
+<li class="heading2" id="i2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="keyboard_navigation.htm" target="hmcontent"><span class="heading2" id="s2.15">Navigation</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="data_replication.htm" target="hmcontent"><span class="heading2" id="s2.16">Data Replication</span></a>
+</li>
+<li class="heading2" id="i2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.17" href="replication_alerts.htm" target="hmcontent"><span class="heading2" id="s2.17">Pop-up Notifications</span></a>
+</li>
+<li class="heading2" id="i2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.18" href="access_rights.htm" target="hmcontent"><span class="heading2" id="s2.18">Access Rights</span></a>
+</li>
+<li class="heading2" id="i2.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.19" href="printing_standard_reports.htm" target="hmcontent"><span class="heading2" id="s2.19">Reports</span></a>
+</li>
+<li class="heading2" id="i2.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.20" href="printing_paper_forms.htm" target="hmcontent"><span class="heading2" id="s2.20">Paper Forms</span></a>
+</li>
+<li class="heading2" id="i2.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.21" href="help.htm" target="hmcontent"><span class="heading2" id="s2.21">Help</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="eidss_configuration.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">EIDSS Configuration</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="repository_schema.htm" target="hmcontent"><span class="heading2" id="s3.1">Repository Schema</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="basic_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.2">Base Reference Editor</span></a>
+</li>
+<li class="heading2" id="i3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="clinical_diagnosis_editor.htm" target="hmcontent"><span class="heading2" id="s3.3">Clinical Diagnosis Editor</span></a>
+</li>
+<li class="heading2" id="i3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="measure_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.4">Measures Editor</span></a>
+</li>
+<li class="heading2" id="i3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="sample_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.5">Sample Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.6" href="vector_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.6">Vector Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.7" href="vector_species_types.htm" target="hmcontent"><span class="heading2" id="s3.7">Vector Species Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.8" href="species_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.8">Species Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.9" href="statistic_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.9">Generic Statistical Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.10" href="case_classification_editor.htm" target="hmcontent"><span class="heading2" id="s3.10">Case Classification Editor</span></a>
+</li>
+<li class="heading2" id="i3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.11" href="report_diagnoses_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.11">Report Diagnoses Groups Editor</span></a>
+</li>
+<li class="heading2" id="i3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.12" href="age_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.12">Age Groups Editor</span></a>
+</li>
+<li class="heading2" id="i3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.13" href="human_aggregate_case_matrix_ed.htm" target="hmcontent"><span class="heading2" id="s3.13">Human Aggregate Case Matrix</span></a>
+</li>
+<li class="heading2" id="i3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.14" href="vet_aggregate_case_matrix_edit.htm" target="hmcontent"><span class="heading2" id="s3.14">Veterinary Aggregate Case Matrix</span></a>
+</li>
+<li class="heading2" id="i3.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.15" href="vet_diag_invest_matrix_editor.htm" target="hmcontent"><span class="heading2" id="s3.15">Veterinary Diagnostic Investigation Matrix</span></a>
+</li>
+<li class="heading2" id="i3.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.16" href="vet_prophylactic_measure_matri.htm" target="hmcontent"><span class="heading2" id="s3.16">Veterinary Prophylactic Measure Matrix</span></a>
+</li>
+<li class="heading2" id="i3.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.17" href="vet_sanitary_action_matrix_edi.htm" target="hmcontent"><span class="heading2" id="s3.17">Veterinary Sanitary Actions Matrix</span></a>
+</li>
+<li class="heading2" id="i3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.18" href="species-animal_age_matrix.htm" target="hmcontent"><span class="heading2" id="s3.18">Species-Animal Age Matrix</span></a>
+</li>
+<li class="heading2" id="i3.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.19" href="sample_type-derivative_type_ma.htm" target="hmcontent"><span class="heading2" id="s3.19">Sample Type-Derivative Type Matrix</span></a>
+</li>
+<li class="heading2" id="i3.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.20" href="diagnosis-sample_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.20">Diagnosis-Sample Type Matrix</span></a>
+</li>
+<li class="heading2" id="i3.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.21" href="diagnosis-lab_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.21">Diagnosis-Lab Test Matrix</span></a>
+</li>
+<li class="heading2" id="i3.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.22" href="diagnosis-penside_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.22">Diagnosis-Penside Test Matrix</span></a>
+</li>
+<li class="heading2" id="i3.23" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.23" href="test_results_matrix.htm" target="hmcontent"><span class="heading2" id="s3.23">Test-Test Result Matrix</span></a>
+</li>
+<li class="heading2" id="i3.24" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.24" href="vector_type-collection_method_matrix.htm" target="hmcontent"><span class="heading2" id="s3.24">Vector Type-Collection Method Matrix</span></a>
+</li>
+<li class="heading2" id="i3.25" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.25" href="vector_type-sample_type_matrix.htm" target="hmcontent"><span class="heading2" id="s3.25">Vector Type-Sample Type Matrix</span></a>
+</li>
+<li class="heading2" id="i3.26" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.26" href="vector_type-field_test_matrix.htm" target="hmcontent"><span class="heading2" id="s3.26">Vector Type-Field Test Matrix</span></a>
+</li>
+<li class="heading2" id="i3.27" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.27" href="diagnoses-age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.27">Diagnosis-Age Group Matrix</span></a>
+</li>
+<li class="heading2" id="i3.28" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.28" href="report_diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.28">Report Diagnoses Group-Diagnosis Matrix</span></a>
+</li>
+<li class="heading2" id="i3.29" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.29" href="custom_report_rows.htm" target="hmcontent"><span class="heading2" id="s3.29">Custom Report Rows</span></a>
+</li>
+<li class="heading2" id="i3.30" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.30" href="diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.30">Diagnoses Group-Diagnosis Matrix</span></a>
+</li>
+<li class="heading2" id="i3.31" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.31" href="age_groups-statistical_age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.31">Age Group-Statistical Age Group Matrix</span></a>
+</li>
+<li class="heading2" id="i3.32" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.32" href="unique_numbering_schema.htm" target="hmcontent"><span class="heading2" id="s3.32">Unique Numbering Schema</span></a>
+</li>
+<li class="heading2" id="i3.33" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.33" href="aggregatesettings.htm" target="hmcontent"><span class="heading2" id="s3.33">Aggregate Settings</span></a>
+</li>
+<li class="heading2" id="i3.34" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.34" href="maps_configuration.htm" target="hmcontent"><span class="heading2" id="s3.34">Maps Configuration</span></a>
+</li>
+<li class="heading2" id="i3.35" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.35" href="parameter_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.35">Parameter Types Editor</span></a>
+</li>
+<li class="heading2" id="i3.36" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.36" href="data_archiving_settings.htm" target="hmcontent"><span class="heading2" id="s3.36">Data Archiving Settings</span></a>
+</li>
+<li class="heading2" id="i3.37" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.37" href="form_design.htm" target="hmcontent"><span class="heading2" id="s3.37" ondblclick="return dblclicked(this)">Flexible Forms Setup</span></a>
+<ul id="ul3.37" style="list-style-type:none">
+<li class="heading3" id="i3.37.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.1" href="ffd_to_edit_template.htm" target="hmcontent"><span class="heading3" id="s3.37.1">FFD - Edit a Template</span></a>
+</li>
+<li class="heading3" id="i3.37.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.2" href="ffd_to_add_template.htm" target="hmcontent"><span class="heading3" id="s3.37.2">FFD - Add a New Template</span></a>
+</li>
+<li class="heading3" id="i3.37.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.3" href="ffd_-_to_delete_a_template.htm" target="hmcontent"><span class="heading3" id="s3.37.3">FFD - Delete a Template</span></a>
+</li>
+<li class="heading3" id="i3.37.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.4" href="ffd_fields_and_sections.htm" target="hmcontent"><span class="heading3" id="s3.37.4">FFD - Sections and Fields for a Template</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.38" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.38" href=javascript:void(0);><span class="heading2" id="s3.38" ondblclick="return dblclicked(this)">Administration Configuration</span></a>
+<ul id="ul3.38" style="list-style-type:none">
+<li class="heading3" id="i3.38.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.1" href="farms.htm" target="hmcontent"><span class="heading3" id="s3.38.1">Farms</span></a>
+</li>
+<li class="heading3" id="i3.38.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.2" href="employees_users.htm" target="hmcontent"><span class="heading3" id="s3.38.2">Employees/Users</span></a>
+</li>
+<li class="heading3" id="i3.38.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.3" href="persons_list.htm" target="hmcontent"><span class="heading3" id="s3.38.3">Persons List</span></a>
+</li>
+<li class="heading3" id="i3.38.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.4" href="organisations.htm" target="hmcontent"><span class="heading3" id="s3.38.4">Organizations</span></a>
+</li>
+<li class="heading3" id="i3.38.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.5" href="settlements.htm" target="hmcontent"><span class="heading3" id="s3.38.5">Settlements</span></a>
+</li>
+<li class="heading3" id="i3.38.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.6" href="statistics.htm" target="hmcontent"><span class="heading3" id="s3.38.6">Statistics</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.39" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.39" href=javascript:void(0);><span class="heading2" id="s3.39" ondblclick="return dblclicked(this)">Security Configuration</span></a>
+<ul id="ul3.39" style="list-style-type:none">
+<li class="heading3" id="i3.39.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.1" href="security_policy.htm" target="hmcontent"><span class="heading3" id="s3.39.1">Security Policy</span></a>
+</li>
+<li class="heading3" id="i3.39.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.2" href="user_groups.htm" target="hmcontent"><span class="heading3" id="s3.39.2">User Groups</span></a>
+</li>
+<li class="heading3" id="i3.39.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.3" href="security.htm" target="hmcontent"><span class="heading3" id="s3.39.3">System Functions</span></a>
+</li>
+<li class="heading3" id="i3.39.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.4" href="system_functions_list.htm" target="hmcontent"><span class="heading3" id="s3.39.4">System Functions List</span></a>
+</li>
+<li class="heading3" id="i3.39.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.5" href="access_rights_management.htm" target="hmcontent"><span class="heading3" id="s3.39.5">Object Classes Permissions</span></a>
+</li>
+<li class="heading3" id="i3.39.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.6" href="eidss_sites.htm" target="hmcontent"><span class="heading3" id="s3.39.6">EIDSS sites</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.40" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.40" href="administrative_support.htm" target="hmcontent"><span class="heading2" id="s3.40" ondblclick="return dblclicked(this)">Administrative Tools</span></a>
+<ul id="ul3.40" style="list-style-type:none">
+<li class="heading3" id="i3.40.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.1" href="system_event_log.htm" target="hmcontent"><span class="heading3" id="s3.40.1">System Events Log</span></a>
+</li>
+<li class="heading3" id="i3.40.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.2" href="security_log.htm" target="hmcontent"><span class="heading3" id="s3.40.2">Security Events Log</span></a>
+</li>
+<li class="heading3" id="i3.40.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.3" href="data_audit_management.htm" target="hmcontent"><span class="heading3" id="s3.40.3">Data Audit Transactions Log</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="human_surveillance.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Human Surveillance</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="hc_intro.htm" target="hmcontent"><span class="heading2" id="s4.1">Introduction</span></a>
+</li>
+<li class="heading2" id="i4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="hc_operations.htm" target="hmcontent"><span class="heading2" id="s4.2" ondblclick="return dblclicked(this)">Operations with Human Cases</span></a>
+<ul id="ul4.2" style="list-style-type:none">
+<li class="heading3" id="i4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.1" href="hc_urgent_notification.htm" target="hmcontent"><span class="heading3" id="s4.2.1">Create an Urgent Notification</span></a>
+</li>
+<li class="heading3" id="i4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.2" href="hc_detailed.htm" target="hmcontent"><span class="heading3" id="s4.2.2">Register Detailed Investigation Information</span></a>
+</li>
+<li class="heading3" id="i4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.3" href="hc_register_samples.htm" target="hmcontent"><span class="heading3" id="s4.2.3">Register Samples for a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.4" href="hc_register_samples_2.htm" target="hmcontent"><span class="heading3" id="s4.2.4">Add New Contact</span></a>
+</li>
+<li class="heading3" id="i4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.5" href="hc_register_tests.htm" target="hmcontent"><span class="heading3" id="s4.2.5">Register Test Results in a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.6" href="hc_review_tests.htm" target="hmcontent"><span class="heading3" id="s4.2.6">Review Laboratory Tests and Test Results in a case</span></a>
+</li>
+<li class="heading3" id="i4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.7" href="hc_interpret.htm" target="hmcontent"><span class="heading3" id="s4.2.7">Interpret Test Results</span></a>
+</li>
+<li class="heading3" id="i4.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.8" href="hc_finalize.htm" target="hmcontent"><span class="heading3" id="s4.2.8">Finalize a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.9" href="hc_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.2.9">Print Paper Forms for a Human Case</span></a>
+</li>
+<li class="heading3" id="i4.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.10" href="hc_edit.htm" target="hmcontent"><span class="heading3" id="s4.2.10">Edit a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.11" href="hc_delete.htm" target="hmcontent"><span class="heading3" id="s4.2.11">Delete a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.12" href="hc_search.htm" target="hmcontent"><span class="heading3" id="s4.2.12">Search for a Case</span></a>
+</li>
+<li class="heading3" id="i4.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.13" href="hc_search_browse.htm" target="hmcontent"><span class="heading3" id="s4.2.13">Search in Browse Mode</span></a>
+</li>
+<li class="heading3" id="i4.2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.14" href="hc_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.2.14">Human Case De-duplication</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="hac_operations.htm" target="hmcontent"><span class="heading2" id="s4.3" ondblclick="return dblclicked(this)">Operations with Human Aggregate Cases</span></a>
+<ul id="ul4.3" style="list-style-type:none">
+<li class="heading3" id="i4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.1" href="hac_create.htm" target="hmcontent"><span class="heading3" id="s4.3.1">Create a human aggregate case</span></a>
+</li>
+<li class="heading3" id="i4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.2" href="hac_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.3.2">Print paper forms for an aggregate case</span></a>
+</li>
+<li class="heading3" id="i4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.3" href="hac_edit.htm" target="hmcontent"><span class="heading3" id="s4.3.3">Edit a human aggregate case</span></a>
+</li>
+<li class="heading3" id="i4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.4" href="hac_delete.htm" target="hmcontent"><span class="heading3" id="s4.3.4">Delete a human aggregate case</span></a>
+</li>
+<li class="heading3" id="i4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.5" href="hac_search.htm" target="hmcontent"><span class="heading3" id="s4.3.5">Search for human aggregate case</span></a>
+</li>
+<li class="heading3" id="i4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.6" href="hac_summary.htm" target="hmcontent"><span class="heading3" id="s4.3.6">Create a summary report</span></a>
+</li>
+<li class="heading3" id="i4.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.7" href="hac_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.3.7">Human Aggregate Case De-duplication</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="hc_forms.htm" target="hmcontent"><span class="heading2" id="s4.4" ondblclick="return dblclicked(this)">Screenforms description</span></a>
+<ul id="ul4.4" style="list-style-type:none">
+<li class="heading3" id="i4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.1" href="hc_h02.htm" target="hmcontent"><span class="heading3" id="s4.4.1">Human Case Report Form H02</span></a>
+</li>
+<li class="heading3" id="i4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.2" href="hc_h01.htm" target="hmcontent"><span class="heading3" id="s4.4.2">Human Case List H01</span></a>
+</li>
+<li class="heading3" id="i4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.3" href="hc_h09.htm" target="hmcontent"><span class="heading3" id="s4.4.3">Human Case Search Form H09</span></a>
+</li>
+<li class="heading3" id="i4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.4" href="hc_h10.htm" target="hmcontent"><span class="heading3" id="s4.4.4">Human Case De-duplication List H10</span></a>
+</li>
+<li class="heading3" id="i4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.5" href="hc_h11.htm" target="hmcontent"><span class="heading3" id="s4.4.5">Human Case De-duplication Details H11</span></a>
+</li>
+<li class="heading3" id="i4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.6" href="hc_h12.htm" target="hmcontent"><span class="heading3" id="s4.4.6">Diagnosis Change H12</span></a>
+</li>
+<li class="heading3" id="i4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.7" href="hc_h14.htm" target="hmcontent"><span class="heading3" id="s4.4.7">Diagnosis History H14</span></a>
+</li>
+<li class="heading3" id="i4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.8" href="hc_h06.htm" target="hmcontent"><span class="heading3" id="s4.4.8">Human Aggregate Case Details H06</span></a>
+</li>
+<li class="heading3" id="i4.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.9" href="hc_h08.htm" target="hmcontent"><span class="heading3" id="s4.4.9">Human Aggregate Case Summary H08</span></a>
+</li>
+<li class="heading3" id="i4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.10" href="hc_h15.htm" target="hmcontent"><span class="heading3" id="s4.4.10">Human Aggregate Cases List H15</span></a>
+</li>
+<li class="heading3" id="i4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.11" href="hc_h16.htm" target="hmcontent"><span class="heading3" id="s4.4.11">Human Aggregate Case De-duplication Form H16</span></a>
+</li>
+<li class="heading3" id="i4.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.12" href="hc_h03.htm" target="hmcontent"><span class="heading3" id="s4.4.12">Persons List H03</span></a>
+</li>
+<li class="heading3" id="i4.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.13" href="hc_h04.htm" target="hmcontent"><span class="heading3" id="s4.4.13">Person Details H04</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="veterinary_surveillance.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Veterinary Surveillance</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="vc_intro.htm" target="hmcontent"><span class="heading2" id="s5.1">Introduction</span></a>
+</li>
+<li class="heading2" id="i5.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="vc_operations.htm" target="hmcontent"><span class="heading2" id="s5.2" ondblclick="return dblclicked(this)">Operations with Veterinary Cases</span></a>
+<ul id="ul5.2" style="list-style-type:none">
+<li class="heading3" id="i5.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.1" href="lc_create.htm" target="hmcontent"><span class="heading3" id="s5.2.1">Create a Livestock case</span></a>
+</li>
+<li class="heading3" id="i5.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.2" href="lc_herd.htm" target="hmcontent"><span class="heading3" id="s5.2.2">Register information about herds/species/animals in a Livestock case</span></a>
+</li>
+<li class="heading3" id="i5.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.3" href="ac_create.htm" target="hmcontent"><span class="heading3" id="s5.2.3">Create an Avian Case</span></a>
+</li>
+<li class="heading3" id="i5.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.4" href="ac_flocks.htm" target="hmcontent"><span class="heading3" id="s5.2.4">Register information about flocks/species in an Avian case</span></a>
+</li>
+<li class="heading3" id="i5.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.5" href="vc_samples.htm" target="hmcontent"><span class="heading3" id="s5.2.5">Register samples for a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.6" href="vc_ftests.htm" target="hmcontent"><span class="heading3" id="s5.2.6">Register field test results in a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.7" href="vc_ltests.htm" target="hmcontent"><span class="heading3" id="s5.2.7">Register lab test results in a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.8" href="vc_ltests_review.htm" target="hmcontent"><span class="heading3" id="s5.2.8">Review laboratory tests and test results in a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.9" href="vc_test_res.htm" target="hmcontent"><span class="heading3" id="s5.2.9">Interpret test results in a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.10" href="vc_final.htm" target="hmcontent"><span class="heading3" id="s5.2.10">Finalize a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.11" href="vc_paper.htm" target="hmcontent"><span class="heading3" id="s5.2.11">Print paper forms for a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.12" href="vc_edit.htm" target="hmcontent"><span class="heading3" id="s5.2.12">Edit a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.13" href="vc_delete.htm" target="hmcontent"><span class="heading3" id="s5.2.13">Delete a veterinary case</span></a>
+</li>
+<li class="heading3" id="i5.2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.14" href="vc_search.htm" target="hmcontent"><span class="heading3" id="s5.2.14">Search for a veterinary case</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="as_opps.htm" target="hmcontent"><span class="heading2" id="s5.3" ondblclick="return dblclicked(this)">Operations with Active Surveillance module</span></a>
+<ul id="ul5.3" style="list-style-type:none">
+<li class="heading3" id="i5.3.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.1" href="asc_opps.htm" target="hmcontent"><span class="heading3" id="s5.3.1" ondblclick="return dblclicked(this)">Operations with Active Surveillance Campaign</span></a>
+<ul id="ul5.3.1" style="list-style-type:none">
+<li class="heading4" id="i5.3.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.1.1" href="asc_create.htm" target="hmcontent"><span class="heading4" id="s5.3.1.1">Create an Active Surveillance Campaign</span></a>
+</li>
+<li class="heading4" id="i5.3.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.1.2" href="asc_link.htm" target="hmcontent"><span class="heading4" id="s5.3.1.2">Link Active Surveillance Sessions to campaign</span></a>
+</li>
+<li class="heading4" id="i5.3.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.1.3" href="asc_edit.htm" target="hmcontent"><span class="heading4" id="s5.3.1.3">Edit an Active Surveillance Campaign</span></a>
+</li>
+<li class="heading4" id="i5.3.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.1.4" href="asc_delete.htm" target="hmcontent"><span class="heading4" id="s5.3.1.4">Delete an Active Surveillance Campaign</span></a>
+</li>
+<li class="heading4" id="i5.3.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.1.5" href="asc_search.htm" target="hmcontent"><span class="heading4" id="s5.3.1.5">Search for an Active Surveillance Campaign</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.2" href="ass_opps.htm" target="hmcontent"><span class="heading3" id="s5.3.2" ondblclick="return dblclicked(this)">Operations with Active Surveillance Sessions</span></a>
+<ul id="ul5.3.2" style="list-style-type:none">
+<li class="heading4" id="i5.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.1" href="ass_create.htm" target="hmcontent"><span class="heading4" id="s5.3.2.1">Create an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.2" href="ass_link.htm" target="hmcontent"><span class="heading4" id="s5.3.2.2">Link an Active Surveillance Session to an existing campaign</span></a>
+</li>
+<li class="heading4" id="i5.3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.3" href="ass_details.htm" target="hmcontent"><span class="heading4" id="s5.3.2.3">Register detailed information for an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.4" href="ass_testr.htm" target="hmcontent"><span class="heading4" id="s5.3.2.4">Register test results for an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.5" href="ass_testl.htm" target="hmcontent"><span class="heading4" id="s5.3.2.5">Review laboratory tests and test results in a veterinary case</span></a>
+</li>
+<li class="heading4" id="i5.3.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.6" href="ass_testr_int.htm" target="hmcontent"><span class="heading4" id="s5.3.2.6">Interpret test results in a veterinary case</span></a>
+</li>
+<li class="heading4" id="i5.3.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.7" href="ass_sum.htm" target="hmcontent"><span class="heading4" id="s5.3.2.7">Register summary information for an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.8" href="ass_case.htm" target="hmcontent"><span class="heading4" id="s5.3.2.8">Create a veterinary case based on Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.9" href="ass_final.htm" target="hmcontent"><span class="heading4" id="s5.3.2.9">Finalize an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.10" href="ass_edit.htm" target="hmcontent"><span class="heading4" id="s5.3.2.10">Edit an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.11" href="ass_delete.htm" target="hmcontent"><span class="heading4" id="s5.3.2.11">Delete an Active Surveillance Session</span></a>
+</li>
+<li class="heading4" id="i5.3.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.2.12" href="ass_search.htm" target="hmcontent"><span class="heading4" id="s5.3.2.12">Search for an Active Surveillance Session</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="vac_opps.htm" target="hmcontent"><span class="heading2" id="s5.4" ondblclick="return dblclicked(this)">Operations with Veterinary Aggregate Cases</span></a>
+<ul id="ul5.4" style="list-style-type:none">
+<li class="heading3" id="i5.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.1" href="ac_opps.htm" target="hmcontent"><span class="heading3" id="s5.4.1" ondblclick="return dblclicked(this)">Operations with aggregate cases</span></a>
+<ul id="ul5.4.1" style="list-style-type:none">
+<li class="heading4" id="i5.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.1" href="vac_create.htm" target="hmcontent"><span class="heading4" id="s5.4.1.1">Create a veterinary aggregate case</span></a>
+</li>
+<li class="heading4" id="i5.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.2" href="vac_paper.htm" target="hmcontent"><span class="heading4" id="s5.4.1.2">Print paper forms for an aggregate case</span></a>
+</li>
+<li class="heading4" id="i5.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.3" href="vac_edit.htm" target="hmcontent"><span class="heading4" id="s5.4.1.3">Edit a veterinary aggregate case</span></a>
+</li>
+<li class="heading4" id="i5.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.4" href="vac_delete.htm" target="hmcontent"><span class="heading4" id="s5.4.1.4">Delete a veterinary aggregate case</span></a>
+</li>
+<li class="heading4" id="i5.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.5" href="vac_search.htm" target="hmcontent"><span class="heading4" id="s5.4.1.5">Search for a veterinary aggregate case</span></a>
+</li>
+<li class="heading4" id="i5.4.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.6" href="vac_sum.htm" target="hmcontent"><span class="heading4" id="s5.4.1.6">Create a summary report</span></a>
+</li>
+<li class="heading4" id="i5.4.1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.7" href="vac_deduplication.htm" target="hmcontent"><span class="heading4" id="s5.4.1.7">Veterinary Aggregate Case De-duplication</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.2" href="vaa_opps.htm" target="hmcontent"><span class="heading3" id="s5.4.2" ondblclick="return dblclicked(this)">Operations with aggregate actions</span></a>
+<ul id="ul5.4.2" style="list-style-type:none">
+<li class="heading4" id="i5.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.1" href="vaa_create.htm" target="hmcontent"><span class="heading4" id="s5.4.2.1">Create a veterinary aggregate action</span></a>
+</li>
+<li class="heading4" id="i5.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.2" href="vaa_paper.htm" target="hmcontent"><span class="heading4" id="s5.4.2.2">Print paper forms for an aggregate action</span></a>
+</li>
+<li class="heading4" id="i5.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.3" href="vaa_edit.htm" target="hmcontent"><span class="heading4" id="s5.4.2.3">Edit a veterinary aggregate action</span></a>
+</li>
+<li class="heading4" id="i5.4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.4" href="vaa_delete.htm" target="hmcontent"><span class="heading4" id="s5.4.2.4">Delete a veterinary aggregate action</span></a>
+</li>
+<li class="heading4" id="i5.4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.5" href="vaa_search.htm" target="hmcontent"><span class="heading4" id="s5.4.2.5">Search for a veterinary aggregate action</span></a>
+</li>
+<li class="heading4" id="i5.4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.6" href="vaa_sum.htm" target="hmcontent"><span class="heading4" id="s5.4.2.6">Create a summary report</span></a>
+</li>
+<li class="heading4" id="i5.4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.7" href="vaa_deduplication.htm" target="hmcontent"><span class="heading4" id="s5.4.2.7">Veterinary Aggregate Action De-duplication</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="vc_forms.htm" target="hmcontent"><span class="heading2" id="s5.5" ondblclick="return dblclicked(this)">Screenforms Description</span></a>
+<ul id="ul5.5" style="list-style-type:none">
+<li class="heading3" id="i5.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.1" href="vc_v02.htm" target="hmcontent"><span class="heading3" id="s5.5.1">Livestock Disease Investigation Form V02</span></a>
+</li>
+<li class="heading3" id="i5.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.2" href="vc_v03.htm" target="hmcontent"><span class="heading3" id="s5.5.2">Avian Disease Investigation Form V03</span></a>
+</li>
+<li class="heading3" id="i5.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.3" href="vc_v01.htm" target="hmcontent"><span class="heading3" id="s5.5.3">Veterinary Cases List V01</span></a>
+</li>
+<li class="heading3" id="i5.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.4" href="vc_v15.htm" target="hmcontent"><span class="heading3" id="s5.5.4">Active Surveillance Campaigns List V15</span></a>
+</li>
+<li class="heading3" id="i5.5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.5" href="vc_v16.htm" target="hmcontent"><span class="heading3" id="s5.5.5">Active Surveillance Campaign V16</span></a>
+</li>
+<li class="heading3" id="i5.5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.6" href="vc_v17.htm" target="hmcontent"><span class="heading3" id="s5.5.6">Active Surveillance Sessions List V17</span></a>
+</li>
+<li class="heading3" id="i5.5.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.7" href="vc_v18.htm" target="hmcontent"><span class="heading3" id="s5.5.7">Active Surveillance Session V18</span></a>
+</li>
+<li class="heading3" id="i5.5.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.8" href="vc_v10.htm" target="hmcontent"><span class="heading3" id="s5.5.8">Vet Aggregate Case Details V10</span></a>
+</li>
+<li class="heading3" id="i5.5.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.9" href="vc_v09.htm" target="hmcontent"><span class="heading3" id="s5.5.9">Veterinary Aggregate Cases List V09</span></a>
+</li>
+<li class="heading3" id="i5.5.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.10" href="vc_v11.htm" target="hmcontent"><span class="heading3" id="s5.5.10">Vet Aggregate Case Summary Form V11</span></a>
+</li>
+<li class="heading3" id="i5.5.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.11" href="vc_v19.htm" target="hmcontent"><span class="heading3" id="s5.5.11">Vet Aggregate Cases De-duplication Form V19</span></a>
+</li>
+<li class="heading3" id="i5.5.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.12" href="vc_v12.htm" target="hmcontent"><span class="heading3" id="s5.5.12">Vet Aggregate Action Details V12</span></a>
+</li>
+<li class="heading3" id="i5.5.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.13" href="vc_v13.htm" target="hmcontent"><span class="heading3" id="s5.5.13">Veterinary Aggregate Actions List V13</span></a>
+</li>
+<li class="heading3" id="i5.5.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.14" href="vc_v14.htm" target="hmcontent"><span class="heading3" id="s5.5.14">Vet Aggregate Action Summary Form V14</span></a>
+</li>
+<li class="heading3" id="i5.5.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.15" href="vc_v20.htm" target="hmcontent"><span class="heading3" id="s5.5.15">Vet Aggregate Actions De-duplication Form V20</span></a>
+</li>
+<li class="heading3" id="i5.5.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.16" href="vc_v04.htm" target="hmcontent"><span class="heading3" id="s5.5.16">Farms V04</span></a>
+</li>
+<li class="heading3" id="i5.5.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.17" href="vc_v05.htm" target="hmcontent"><span class="heading3" id="s5.5.17">Farm Info V05</span></a>
+</li>
+<li class="heading3" id="i5.5.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.18" href="vc_v06.htm" target="hmcontent"><span class="heading3" id="s5.5.18">Farm Info Details V06</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="outbreaks_surveillance.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Outbreaks surveillance</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="ob_operations.htm" target="hmcontent"><span class="heading2" id="s6.1" ondblclick="return dblclicked(this)">Operations with Outbreaks</span></a>
+<ul id="ul6.1" style="list-style-type:none">
+<li class="heading3" id="i6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.1" href="ob_create.htm" target="hmcontent"><span class="heading3" id="s6.1.1">Create an outbreak</span></a>
+</li>
+<li class="heading3" id="i6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.2" href="ob_case.htm" target="hmcontent"><span class="heading3" id="s6.1.2">Associate an outbreak with a case/session</span></a>
+</li>
+<li class="heading3" id="i6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.3" href="ob_prime.htm" target="hmcontent"><span class="heading3" id="s6.1.3">Mark a primary case/session in an outbreak</span></a>
+</li>
+<li class="heading3" id="i6.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.4" href="ob_edit.htm" target="hmcontent"><span class="heading3" id="s6.1.4">Edit an outbreak</span></a>
+</li>
+<li class="heading3" id="i6.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.5" href="ob_delete.htm" target="hmcontent"><span class="heading3" id="s6.1.5">Delete an outbreak</span></a>
+</li>
+<li class="heading3" id="i6.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.6" href="ob_search.htm" target="hmcontent"><span class="heading3" id="s6.1.6">Search for an outbreak</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="ob_forms.htm" target="hmcontent"><span class="heading2" id="s6.2" ondblclick="return dblclicked(this)">Screenforms description</span></a>
+<ul id="ul6.2" style="list-style-type:none">
+<li class="heading3" id="i6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.1" href="ob_c10.htm" target="hmcontent"><span class="heading3" id="s6.2.1">Outbreaks List C10</span></a>
+</li>
+<li class="heading3" id="i6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.2" href="ob_c11.htm" target="hmcontent"><span class="heading3" id="s6.2.2">Outbreak Details C11</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="vector_surveillance.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Vector Surveillance</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="starting_vector_surveillance_m.htm" target="hmcontent"><span class="heading2" id="s7.1">Starting Vector Surveillance Module</span></a>
+</li>
+<li class="heading2" id="i7.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="vs_search.htm" target="hmcontent"><span class="heading2" id="s7.2">Search for a VS Session</span></a>
+</li>
+<li class="heading2" id="i7.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="vs_operations.htm" target="hmcontent"><span class="heading2" id="s7.3" ondblclick="return dblclicked(this)">Operations in Vector Surveillance Module</span></a>
+<ul id="ul7.3" style="list-style-type:none">
+<li class="heading3" id="i7.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.1" href="vs_create.htm" target="hmcontent"><span class="heading3" id="s7.3.1">Create vector surveillance (VS) session</span></a>
+</li>
+<li class="heading3" id="i7.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.2" href="vs_edit.htm" target="hmcontent"><span class="heading3" id="s7.3.2">View or edit VS session</span></a>
+</li>
+<li class="heading3" id="i7.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.3" href="enter_general_information_of__.htm" target="hmcontent"><span class="heading3" id="s7.3.3">Enter general information of VS</span></a>
+</li>
+<li class="heading3" id="i7.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.4" href="enter_detailed_information.htm" target="hmcontent"><span class="heading3" id="s7.3.4" ondblclick="return dblclicked(this)">Enter detailed information of VS</span></a>
+<ul id="ul7.3.4" style="list-style-type:none">
+<li class="heading4" id="i7.3.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.1" href="register_vector_pool_.htm" target="hmcontent"><span class="heading4" id="s7.3.4.1" ondblclick="return dblclicked(this)">Register vector/pool</span></a>
+<ul id="ul7.3.4.1" style="list-style-type:none">
+<li class="heading5" id="i7.3.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.1" href="register_summary_info_vector_pool.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.1">Register summary basic information for vector/pool</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.2" href="register_gen_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.2">Register general information for vector/pool</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.3" href="register_spec_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.3">Register specific information for vector/pool</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.4" href="register_samples_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.4">Register samples for vector/pool</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.5" href="register_field_test_results.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.5">Register field test results for vector/pool</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.6" href="review_laboratory_tests_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.6">Review laboratory tests and test results for vector/pool</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i7.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.2" href="copy_vector_pool.htm" target="hmcontent"><span class="heading4" id="s7.3.4.2">Copy vector/pool</span></a>
+</li>
+<li class="heading4" id="i7.3.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.3" href="review_aggregated_data_for_vp.htm" target="hmcontent"><span class="heading4" id="s7.3.4.3" ondblclick="return dblclicked(this)">Review aggregated data for VS session</span></a>
+<ul id="ul7.3.4.3" style="list-style-type:none">
+<li class="heading5" id="i7.3.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.1" href="review_samples.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.1">Review session samples</span></a>
+</li>
+<li class="heading5" id="i7.3.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.2" href="review_field_rests_and_test_re.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.2">Review session field tests and test results</span></a>
+</li>
+<li class="heading5" id="i7.3.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.3" href="review_laboratory_tests_vs.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.3">Review session laboratory tests and test results</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.5" href="enter_summary_information.htm" target="hmcontent"><span class="heading3" id="s7.3.5">Enter summary information of VS</span></a>
+</li>
+<li class="heading3" id="i7.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.6" href="link_a_vs_session_to_outbreak.htm" target="hmcontent"><span class="heading3" id="s7.3.6">Link VS session to outbreak</span></a>
+</li>
+<li class="heading3" id="i7.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.7" href="vs_final.htm" target="hmcontent"><span class="heading3" id="s7.3.7">Finalize (close) Vector Surveillance Session</span></a>
+</li>
+<li class="heading3" id="i7.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.8" href="save_vs_session.htm" target="hmcontent"><span class="heading3" id="s7.3.8">Save VS session</span></a>
+</li>
+<li class="heading3" id="i7.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.9" href="close_vs_session.htm" target="hmcontent"><span class="heading3" id="s7.3.9">Close VS session window</span></a>
+</li>
+<li class="heading3" id="i7.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.10" href="vs_delete.htm" target="hmcontent"><span class="heading3" id="s7.3.10">Delete VS Session</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="vs_forms.htm" target="hmcontent"><span class="heading2" id="s7.4" ondblclick="return dblclicked(this)">Screenforms description</span></a>
+<ul id="ul7.4" style="list-style-type:none">
+<li class="heading3" id="i7.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.1" href="vs_w01.htm" target="hmcontent"><span class="heading3" id="s7.4.1">Vector Surveillance Sessions List W01</span></a>
+</li>
+<li class="heading3" id="i7.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.2" href="vs_w02.htm" target="hmcontent"><span class="heading3" id="s7.4.2" ondblclick="return dblclicked(this)">Vector Surveillance Session W02</span></a>
+<ul id="ul7.4.2" style="list-style-type:none">
+<li class="heading4" id="i7.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.1" href="general_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.1">General Information of Vector Surveillance Session W02 form</span></a>
+</li>
+<li class="heading4" id="i7.4.2.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.2" href="detailed_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.2" ondblclick="return dblclicked(this)">Detailed Information of Vector Surveillance Session W02 form</span></a>
+<ul id="ul7.4.2.2" style="list-style-type:none">
+<li class="heading5" id="i7.4.2.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.1" href="pools_individual_vectors_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.1">Pools/Individual Vectors subtab of Vector Surveillance Session W02 form</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.2" href="samples_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.2">Samples subtab of Vector Surveillance Session W02 form</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.3" href="field_tests_subtab_of_vector_s.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.3">Field Tests subtab of Vector Surveillance Session W02 form</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.4" href="lab_tests_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.4">Lab Tests subtab of Vector Surveillance Session W02 form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i7.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.3" href="summary_info_tab_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.3">Summary Info tab of Vector Surveillance Session W02 form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.3" href="vs_w03.htm" target="hmcontent"><span class="heading3" id="s7.4.3" ondblclick="return dblclicked(this)">Pool/Individual Vector Details W03</span></a>
+<ul id="ul7.4.3" style="list-style-type:none">
+<li class="heading4" id="i7.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.1" href="summary_section_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.1">Summary section of Pool/Individual Vector Details W03 form</span></a>
+</li>
+<li class="heading4" id="i7.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.2" href="general_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.2">General tab of Pool/Individual Vector Details W03 form</span></a>
+</li>
+<li class="heading4" id="i7.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.3" href="vector_specific_data_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.3">Vector Specific Data tab of Pool/Individual Vector Details W03 form</span></a>
+</li>
+<li class="heading4" id="i7.4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.4" href="samples_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.4">Samples tab of Pool/Individual Vector Details W03 form</span></a>
+</li>
+<li class="heading4" id="i7.4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.5" href="field_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.5">Field Tests tab of Pool/Individual Vector Details W03 form</span></a>
+</li>
+<li class="heading4" id="i7.4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.6" href="lab_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.6">Lab Tests tab of Pool/Individual Vector Details W03 form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.4" href="vs_w05.htm" target="hmcontent"><span class="heading3" id="s7.4.4">Copy Pool/Individual Vector W05 form</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href=javascript:void(0);><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Basic Syndromic Surveillance</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="ss_operations.htm" target="hmcontent"><span class="heading2" id="s8.1" ondblclick="return dblclicked(this)">Operations with Basic Syndromic Surveillance reports</span></a>
+<ul id="ul8.1" style="list-style-type:none">
+<li class="heading3" id="i8.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.1" href="ss_create.htm" target="hmcontent"><span class="heading3" id="s8.1.1">Create a Basic Syndromic Surveillance report</span></a>
+</li>
+<li class="heading3" id="i8.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.2" href="ss_search.htm" target="hmcontent"><span class="heading3" id="s8.1.2">Search for a Basic Syndromic Surveillance report</span></a>
+</li>
+<li class="heading3" id="i8.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.3" href="ss_edit.htm" target="hmcontent"><span class="heading3" id="s8.1.3">Edit a Basic Syndromic Surveillance report</span></a>
+</li>
+<li class="heading3" id="i8.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.4" href="ss_delete.htm" target="hmcontent"><span class="heading3" id="s8.1.4">Delete a Basic Syndromic Surveillance report</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="ss_operations_2.htm" target="hmcontent"><span class="heading2" id="s8.2" ondblclick="return dblclicked(this)">Operations with ILI Aggregate reports</span></a>
+<ul id="ul8.2" style="list-style-type:none">
+<li class="heading3" id="i8.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.1" href="ss_aggr_create.htm" target="hmcontent"><span class="heading3" id="s8.2.1">Create an ILI Aggregate report</span></a>
+</li>
+<li class="heading3" id="i8.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.2" href="ss_aggr_search.htm" target="hmcontent"><span class="heading3" id="s8.2.2">Search for an ILI Aggregate report</span></a>
+</li>
+<li class="heading3" id="i8.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.3" href="ss_aggr_edit.htm" target="hmcontent"><span class="heading3" id="s8.2.3">Edit an ILI Aggregate report</span></a>
+</li>
+<li class="heading3" id="i8.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.4" href="ss_aggr_delete.htm" target="hmcontent"><span class="heading3" id="s8.2.4">Delete an ILI Aggregate report</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="ss_forms.htm" target="hmcontent"><span class="heading2" id="s8.3" ondblclick="return dblclicked(this)">Screenforms description</span></a>
+<ul id="ul8.3" style="list-style-type:none">
+<li class="heading3" id="i8.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.1" href="ss_form.htm" target="hmcontent"><span class="heading3" id="s8.3.1">Basic Syndromic Surveillance Form</span></a>
+</li>
+<li class="heading3" id="i8.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.2" href="ss_list.htm" target="hmcontent"><span class="heading3" id="s8.3.2">Basic Syndromic Surveillance Forms List</span></a>
+</li>
+<li class="heading3" id="i8.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.3" href="ss_aggr_form.htm" target="hmcontent"><span class="heading3" id="s8.3.3">ILI Aggregate Form</span></a>
+</li>
+<li class="heading3" id="i8.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.4" href="ss_aggr_list.htm" target="hmcontent"><span class="heading3" id="s8.3.4">ILI Aggregate Forms List</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="laboratory_management.htm" target="hmcontent"><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Laboratory Module</span></a>
+<ul id="ul9" style="list-style-type:none">
+<li class="heading2" id="i9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="laboratory_management_overview.htm" target="hmcontent"><span class="heading2" id="s9.1">Laboratory Management Overview</span></a>
+</li>
+<li class="heading2" id="i9.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href=javascript:void(0);><span class="heading2" id="s9.2" ondblclick="return dblclicked(this)">Starting Laboratory Module</span></a>
+<ul id="ul9.2" style="list-style-type:none">
+<li class="heading3" id="i9.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.1" href="sample_statuses.htm" target="hmcontent"><span class="heading3" id="s9.2.1">Sample Statuses</span></a>
+</li>
+<li class="heading3" id="i9.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.2" href="test_statuses.htm" target="hmcontent"><span class="heading3" id="s9.2.2">Test Statuses</span></a>
+</li>
+<li class="heading3" id="i9.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.3" href="simple_search_in_laboratory_se.htm" target="hmcontent"><span class="heading3" id="s9.2.3">Simple Search in Laboratory Section</span></a>
+</li>
+<li class="heading3" id="i9.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.4" href="extended_search_in_lm.htm" target="hmcontent"><span class="heading3" id="s9.2.4">Extended Search in Laboratory Module</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.3" href="lab_operations.htm" target="hmcontent"><span class="heading2" id="s9.3" ondblclick="return dblclicked(this)">Operations in Laboratory Module</span></a>
+<ul id="ul9.3" style="list-style-type:none">
+<li class="heading3" id="i9.3.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.1" href="accession_in_a_sample__linked_.htm" target="hmcontent"><span class="heading3" id="s9.3.1" ondblclick="return dblclicked(this)">Accession in/ transfer in sample(s)</span></a>
+<ul id="ul9.3.1" style="list-style-type:none">
+<li class="heading4" id="i9.3.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.1" href="lab_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s9.3.1.1">Accession in sample, linked or not linked to case/session (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.2" href="enter_and_accession_in_sample_.htm" target="hmcontent"><span class="heading4" id="s9.3.1.2">Register and accession in sample, not linked to case/session (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.3" href="labs_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s9.3.1.3">Accession in/ transfer in existing sample(s), linked to case/session (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.4" href="lab_access_group.htm" target="hmcontent"><span class="heading4" id="s9.3.1.4">Accession in group of samples (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.5" href="labs_access_group.htm" target="hmcontent"><span class="heading4" id="s9.3.1.5">Accession in group of samples (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.6" href="lab_sample_in.htm" target="hmcontent"><span class="heading4" id="s9.3.1.6">Transfer in a sample (IF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.2" href="create_aliquot.htm" target="hmcontent"><span class="heading3" id="s9.3.2" ondblclick="return dblclicked(this)">Create aliquot</span></a>
+<ul id="ul9.3.2" style="list-style-type:none">
+<li class="heading4" id="i9.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.2.1" href="lab_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s9.3.2.1">Create aliquot (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.2.2" href="labs_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s9.3.2.2">Create aliquot (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.3" href="create_derivative.htm" target="hmcontent"><span class="heading3" id="s9.3.3" ondblclick="return dblclicked(this)">Create derivative</span></a>
+<ul id="ul9.3.3" style="list-style-type:none">
+<li class="heading4" id="i9.3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.3.1" href="lab_derivative_create.htm" target="hmcontent"><span class="heading4" id="s9.3.3.1">Create derivative (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.3.2" href="labs_deriv_create.htm" target="hmcontent"><span class="heading4" id="s9.3.3.2">Create derivative (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.4" href="assign_test.htm" target="hmcontent"><span class="heading3" id="s9.3.4" ondblclick="return dblclicked(this)">Assign test</span></a>
+<ul id="ul9.3.4" style="list-style-type:none">
+<li class="heading4" id="i9.3.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.1" href="assign_tests_during_sample_acc.htm" target="hmcontent"><span class="heading4" id="s9.3.4.1">Assign tests during sample accession in (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.2" href="assign_tests_from_samples_list.htm" target="hmcontent"><span class="heading4" id="s9.3.4.2">Assign tests in Samples List form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.3" href="assign_tests_from_the_sample_d.htm" target="hmcontent"><span class="heading4" id="s9.3.4.3">Assign tests from Sample form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.4" href="labs_test_assign.htm" target="hmcontent"><span class="heading4" id="s9.3.4.4">Assign test from drop-down menu (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.5" href="assign_test_in_laboratory_sect.htm" target="hmcontent"><span class="heading4" id="s9.3.4.5">Assign test in Laboratory Section grid (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.5" href="start_test.htm" target="hmcontent"><span class="heading3" id="s9.3.5" ondblclick="return dblclicked(this)">Start test</span></a>
+<ul id="ul9.3.5" style="list-style-type:none">
+<li class="heading4" id="i9.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.1" href="lab_test_start.htm" target="hmcontent"><span class="heading4" id="s9.3.5.1">Start test in Laboratory Test Details form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.2" href="start_test_in_sample_form.htm" target="hmcontent"><span class="heading4" id="s9.3.5.2">Start test in Sample form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.3" href="start_tests_ls.htm" target="hmcontent"><span class="heading4" id="s9.3.5.3">Start tests drop-down menu (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.4" href="start_test_in_laboratory_secti.htm" target="hmcontent"><span class="heading4" id="s9.3.5.4">Start test in Laboratory Section grid (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.6" href="enter_test_result.htm" target="hmcontent"><span class="heading3" id="s9.3.6" ondblclick="return dblclicked(this)">Enter test result</span></a>
+<ul id="ul9.3.6" style="list-style-type:none">
+<li class="heading4" id="i9.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.1" href="lab_test_result_set.htm" target="hmcontent"><span class="heading4" id="s9.3.6.1">Enter test result (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.2" href="labs_test_result_set.htm" target="hmcontent"><span class="heading4" id="s9.3.6.2">Enter test result (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.3" href="lab_test_result_external.htm" target="hmcontent"><span class="heading4" id="s9.3.6.3">Set result for test, performed in external laboratory (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.4" href="labs_test_result_external.htm" target="hmcontent"><span class="heading4" id="s9.3.6.4">Set result for test, performed in external laboratory (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.7" href="labs_test_val.htm" target="hmcontent"><span class="heading3" id="s9.3.7">Validate test result (LS)</span></a>
+</li>
+<li class="heading3" id="i9.3.8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.8" href="amend_test_result.htm" target="hmcontent"><span class="heading3" id="s9.3.8" ondblclick="return dblclicked(this)">Amend test result</span></a>
+<ul id="ul9.3.8" style="list-style-type:none">
+<li class="heading4" id="i9.3.8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.8.1" href="lab_test_amend.htm" target="hmcontent"><span class="heading4" id="s9.3.8.1">Amend test result (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.8.2" href="labs_test_amend.htm" target="hmcontent"><span class="heading4" id="s9.3.8.2">Amend test result (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.9" href="mark_for_destruction.htm" target="hmcontent"><span class="heading3" id="s9.3.9" ondblclick="return dblclicked(this)">Mark for destruction</span></a>
+<ul id="ul9.3.9" style="list-style-type:none">
+<li class="heading4" id="i9.3.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.9.1" href="lab_sample_delete.htm" target="hmcontent"><span class="heading4" id="s9.3.9.1">Mark sample for disposition (destruction) (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.9.2" href="labs_sample_mark.htm" target="hmcontent"><span class="heading4" id="s9.3.9.2">Mark sample for routine destruction (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.10" href="destroy_sample.htm" target="hmcontent"><span class="heading3" id="s9.3.10" ondblclick="return dblclicked(this)">Accept sample destruction</span></a>
+<ul id="ul9.3.10" style="list-style-type:none">
+<li class="heading4" id="i9.3.10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.10.1" href="lab_destroy_sample.htm" target="hmcontent"><span class="heading4" id="s9.3.10.1">Accept sample destruction (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.10.2" href="labs_sample_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.10.2">Accept sample destruction (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.11" href="reject_destruction.htm" target="hmcontent"><span class="heading3" id="s9.3.11" ondblclick="return dblclicked(this)">Reject destruction</span></a>
+<ul id="ul9.3.11" style="list-style-type:none">
+<li class="heading4" id="i9.3.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.11.1" href="lab_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.11.1">Reject destruction (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.11.2" href="labs_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.11.2">Reject destruction (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.12" href="transfer_out_sample.htm" target="hmcontent"><span class="heading3" id="s9.3.12" ondblclick="return dblclicked(this)">Transfer out sample</span></a>
+<ul id="ul9.3.12" style="list-style-type:none">
+<li class="heading4" id="i9.3.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.1" href="lab_sample_out.htm" target="hmcontent"><span class="heading4" id="s9.3.12.1">Transfer out a sample (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.2" href="labs_sample_out.htm" target="hmcontent"><span class="heading4" id="s9.3.12.2">Transfer out sample from drop-down menu (LS)</span></a>
+</li>
+<li class="heading4" id="i9.3.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.3" href="transfer_out_sample_in_laborat.htm" target="hmcontent"><span class="heading4" id="s9.3.12.3">Transfer out sample in Laboratory Section grid (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.13" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.13" href="work_with_batches.htm" target="hmcontent"><span class="heading3" id="s9.3.13" ondblclick="return dblclicked(this)">Work with batches</span></a>
+<ul id="ul9.3.13" style="list-style-type:none">
+<li class="heading4" id="i9.3.13.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.13.1" href="lab_batch_create.htm" target="hmcontent"><span class="heading4" id="s9.3.13.1" ondblclick="return dblclicked(this)">Create a batch (IF)</span></a>
+<ul id="ul9.3.13.1" style="list-style-type:none">
+<li class="heading5" id="i9.3.13.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.3.13.1.1" href="create_batch_in_samples_list.htm" target="hmcontent"><span class="heading5" id="s9.3.13.1.1">Create batch in Tests List form</span></a>
+</li>
+<li class="heading5" id="i9.3.13.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.3.13.1.2" href="create_batch_in_batches_list_f.htm" target="hmcontent"><span class="heading5" id="s9.3.13.1.2">Create batch in Batches List form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i9.3.13.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.13.2" href="lab_batch_final.htm" target="hmcontent"><span class="heading4" id="s9.3.13.2">Finalize a batch (IF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.14" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.14" href="edit_sample_information.htm" target="hmcontent"><span class="heading3" id="s9.3.14" ondblclick="return dblclicked(this)">View or edit sample details</span></a>
+<ul id="ul9.3.14" style="list-style-type:none">
+<li class="heading4" id="i9.3.14.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.14.1" href="lab_sample_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.14.1">View or edit sample details (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.14.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.14.2" href="labs_sample_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.14.2">View or edit sample details (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.15" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.15" href="edit_test_details.htm" target="hmcontent"><span class="heading3" id="s9.3.15" ondblclick="return dblclicked(this)">View or edit test details</span></a>
+<ul id="ul9.3.15" style="list-style-type:none">
+<li class="heading4" id="i9.3.15.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.1" href="edit_test_details_in_laborator.htm" target="hmcontent"><span class="heading4" id="s9.3.15.1">View or edit test details in Laboratory Test Details form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.15.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.2" href="edit_test_details_in_samle_det.htm" target="hmcontent"><span class="heading4" id="s9.3.15.2">View or edit test details in Sample form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.15.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.3" href="labs_test_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.15.3">View or edit test details (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.16" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.16" href="delete_sample_record.htm" target="hmcontent"><span class="heading3" id="s9.3.16" ondblclick="return dblclicked(this)">Delete sample or test record</span></a>
+<ul id="ul9.3.16" style="list-style-type:none">
+<li class="heading4" id="i9.3.16.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.16.1" href="lab_sample_dispose_2.htm" target="hmcontent"><span class="heading4" id="s9.3.16.1">Delete sample (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.16.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.16.2" href="labs_sample_dispose.htm" target="hmcontent"><span class="heading4" id="s9.3.16.2">Delete sample (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.17" href="delete_test_record.htm" target="hmcontent"><span class="heading3" id="s9.3.17" ondblclick="return dblclicked(this)">Delete test record</span></a>
+<ul id="ul9.3.17" style="list-style-type:none">
+<li class="heading4" id="i9.3.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.1" href="delete_test_in_laboratory_test.htm" target="hmcontent"><span class="heading4" id="s9.3.17.1">Delete test in Laboratory Tests List form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.2" href="delete_test_inin_sample_detail.htm" target="hmcontent"><span class="heading4" id="s9.3.17.2">Delete test in Sample Details form (IF)</span></a>
+</li>
+<li class="heading4" id="i9.3.17.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.3" href="labs_test_delete.htm" target="hmcontent"><span class="heading4" id="s9.3.17.3">Delete test (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.18" href="lab_add_to_preferences.htm" target="hmcontent"><span class="heading3" id="s9.3.18">Add a record to preferences/ Remove a record from preferences list (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.4" href="lab_forms.htm" target="hmcontent"><span class="heading2" id="s9.4" ondblclick="return dblclicked(this)">Screenforms Description</span></a>
+<ul id="ul9.4" style="list-style-type:none">
+<li class="heading3" id="i9.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.1" href="lab_l01.htm" target="hmcontent"><span class="heading3" id="s9.4.1">Samples List L01</span></a>
+</li>
+<li class="heading3" id="i9.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.2" href="lab_l02.htm" target="hmcontent"><span class="heading3" id="s9.4.2" ondblclick="return dblclicked(this)">Sample L02</span></a>
+<ul id="ul9.4.2" style="list-style-type:none">
+<li class="heading4" id="i9.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.1" href="general_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.1">General tab of Sample L02 form</span></a>
+</li>
+<li class="heading4" id="i9.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.2" href="test_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.2">Tests tab of Sample L02 form</span></a>
+</li>
+<li class="heading4" id="i9.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.3" href="sample_transfer_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.3">Sample Transfer tab of Sample L02 form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.3" href="lab_l03.htm" target="hmcontent"><span class="heading3" id="s9.4.3">Laboratory Tests List L03</span></a>
+</li>
+<li class="heading3" id="i9.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.4" href="lab_l04.htm" target="hmcontent"><span class="heading3" id="s9.4.4" ondblclick="return dblclicked(this)">Laboratory Test Details L04</span></a>
+<ul id="ul9.4.4" style="list-style-type:none">
+<li class="heading4" id="i9.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.1" href="general_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.1">General tab of Laboratory Test Details L04 form</span></a>
+</li>
+<li class="heading4" id="i9.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.2" href="tests_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.2">Test tab of Laboratory Test Details L04 form</span></a>
+</li>
+<li class="heading4" id="i9.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.3" href="sample_details_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.3">Sample Details tab of Laboratory Test Details L04 form</span></a>
+</li>
+<li class="heading4" id="i9.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.4" href="amendment_history_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.4">Amendment History tab of Laboratory Test Details L04 form</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.5" href="lab_l05.htm" target="hmcontent"><span class="heading3" id="s9.4.5" ondblclick="return dblclicked(this)">Accession In L05</span></a>
+<ul id="ul9.4.5" style="list-style-type:none">
+<li class="heading4" id="i9.4.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.1" href="accession_in_for_human_case.htm" target="hmcontent"><span class="heading4" id="s9.4.5.1">Accession In L05 form for Human Case</span></a>
+</li>
+<li class="heading4" id="i9.4.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.2" href="accession_in_for_vet_case.htm" target="hmcontent"><span class="heading4" id="s9.4.5.2">Accession In L05 form for Veterinary Case</span></a>
+</li>
+<li class="heading4" id="i9.4.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.3" href="accession_in_for_as_session.htm" target="hmcontent"><span class="heading4" id="s9.4.5.3">Accession In L05 form for AS Session</span></a>
+</li>
+<li class="heading4" id="i9.4.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.4" href="accession_in_for_vs_session.htm" target="hmcontent"><span class="heading4" id="s9.4.5.4">Accession In L05 form for VS Session</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.6" href="lab_l06.htm" target="hmcontent"><span class="heading3" id="s9.4.6">Aliquots/Derivatives L06</span></a>
+</li>
+<li class="heading3" id="i9.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.7" href="lab_l07.htm" target="hmcontent"><span class="heading3" id="s9.4.7">Samples marked for disposition L07</span></a>
+</li>
+<li class="heading3" id="i9.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.8" href="lab_l08.htm" target="hmcontent"><span class="heading3" id="s9.4.8">Sample disposition L08</span></a>
+</li>
+<li class="heading3" id="i9.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.9" href="lab_l09.htm" target="hmcontent"><span class="heading3" id="s9.4.9">Transfers List L09</span></a>
+</li>
+<li class="heading3" id="i9.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.10" href="lab_l10.htm" target="hmcontent"><span class="heading3" id="s9.4.10">Sample Transfer L10</span></a>
+</li>
+<li class="heading3" id="i9.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.11" href="lab_l11.htm" target="hmcontent"><span class="heading3" id="s9.4.11">Freezers List L11</span></a>
+</li>
+<li class="heading3" id="i9.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.12" href="lab_l12.htm" target="hmcontent"><span class="heading3" id="s9.4.12">Storage Schema L12</span></a>
+</li>
+<li class="heading3" id="i9.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.13" href="lab_l13.htm" target="hmcontent"><span class="heading3" id="s9.4.13">Group Accession In L13</span></a>
+</li>
+<li class="heading3" id="i9.4.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.14" href="lab_l20.htm" target="hmcontent"><span class="heading3" id="s9.4.14">Select Tests L20</span></a>
+</li>
+<li class="heading3" id="i9.4.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.15" href="lab_l21.htm" target="hmcontent"><span class="heading3" id="s9.4.15">Batches List L21</span></a>
+</li>
+<li class="heading3" id="i9.4.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.16" href="lab_l22.htm" target="hmcontent"><span class="heading3" id="s9.4.16">Batch Test Details L22</span></a>
+</li>
+<li class="heading3" id="i9.4.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.17" href="lab_l25.htm" target="hmcontent"><span class="heading3" id="s9.4.17" ondblclick="return dblclicked(this)">Laboratory Section L25</span></a>
+<ul id="ul9.4.17" style="list-style-type:none">
+<li class="heading4" id="i9.4.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.1" href="search_panel_of_laboratory_sec.htm" target="hmcontent"><span class="heading4" id="s9.4.17.1">Search Panel of Laboratory Section</span></a>
+</li>
+<li class="heading4" id="i9.4.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.2" href="laboratory_records_list.htm" target="hmcontent"><span class="heading4" id="s9.4.17.2">Laboratory Section and My Preferences tabs</span></a>
+</li>
+<li class="heading4" id="i9.4.17.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.3" href="lab_record_detailed_form.htm" target="hmcontent"><span class="heading4" id="s9.4.17.3" ondblclick="return dblclicked(this)">Laboratory Record Detailed form</span></a>
+<ul id="ul9.4.17.3" style="list-style-type:none">
+<li class="heading5" id="i9.4.17.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.1" href="sample_details_tab_of_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.1">Sample Details tab of Laboratory Record Detailed form</span></a>
+</li>
+<li class="heading5" id="i9.4.17.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.2" href="test_details_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.2">Test Details tab of Laboratory Record Detailed form</span></a>
+</li>
+<li class="heading5" id="i9.4.17.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.3" href="amendment_history_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.3">Amendment History tab of Laboratory Record Detailed form</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.18" href="labs_l32.htm" target="hmcontent"><span class="heading3" id="s9.4.18">Assign Test L32</span></a>
+</li>
+<li class="heading3" id="i9.4.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.19" href="lab_l35.htm" target="hmcontent"><span class="heading3" id="s9.4.19">Register a new sample L35</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href=javascript:void(0);><span class="heading1" id="s10" ondblclick="return dblclicked(this)">Analysis, Visualization and Reporting</span></a>
+<ul id="ul10" style="list-style-type:none">
+<li class="heading2" id="i10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.1" href="avr_introduction.htm" target="hmcontent"><span class="heading2" id="s10.1">Introduction to AVR</span></a>
+</li>
+<li class="heading2" id="i10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.2" href="avr_getting_started.htm" target="hmcontent"><span class="heading2" id="s10.2">Starting AVR</span></a>
+</li>
+<li class="heading2" id="i10.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.3" href="queries.htm" target="hmcontent"><span class="heading2" id="s10.3" ondblclick="return dblclicked(this)">Queries</span></a>
+<ul id="ul10.3" style="list-style-type:none">
+<li class="heading3" id="i10.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.1" href="create_query.htm" target="hmcontent"><span class="heading3" id="s10.3.1">Create query</span></a>
+</li>
+<li class="heading3" id="i10.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.2" href="edit_query.htm" target="hmcontent"><span class="heading3" id="s10.3.2">Edit query</span></a>
+</li>
+<li class="heading3" id="i10.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.3" href="edit_query_name_and_descrption.htm" target="hmcontent"><span class="heading3" id="s10.3.3">Edit query name and description</span></a>
+</li>
+<li class="heading3" id="i10.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.4" href="edit_query_objects_list.htm" target="hmcontent"><span class="heading3" id="s10.3.4">Edit query objects list</span></a>
+</li>
+<li class="heading3" id="i10.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.5" href="edit_query_fields_list.htm" target="hmcontent"><span class="heading3" id="s10.3.5">Edit query fields list</span></a>
+</li>
+<li class="heading3" id="i10.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.6" href="edit_query_filters.htm" target="hmcontent"><span class="heading3" id="s10.3.6" ondblclick="return dblclicked(this)">Edit query filters</span></a>
+<ul id="ul10.3.6" style="list-style-type:none">
+<li class="heading4" id="i10.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading4" id="s10.3.6.1">Add/remove buttons</span></a>
+</li>
+<li class="heading4" id="i10.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.2" href="combining_operators.htm" target="hmcontent"><span class="heading4" id="s10.3.6.2">Combining operators</span></a>
+</li>
+<li class="heading4" id="i10.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.3" href="comparison_operators.htm" target="hmcontent"><span class="heading4" id="s10.3.6.3">Comparison operators</span></a>
+</li>
+<li class="heading4" id="i10.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.4" href="criteria_value.htm" target="hmcontent"><span class="heading4" id="s10.3.6.4">Criteria value</span></a>
+</li>
+<li class="heading4" id="i10.3.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.5" href="field_name.htm" target="hmcontent"><span class="heading4" id="s10.3.6.5">Field name</span></a>
+</li>
+<li class="heading4" id="i10.3.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.6" href="report_type_filter.htm" target="hmcontent"><span class="heading4" id="s10.3.6.6">'Report Type' Filter</span></a>
+</li>
+<li class="heading4" id="i10.3.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.7" href="exists_filter.htm" target="hmcontent"><span class="heading4" id="s10.3.6.7">'Exists' Filter</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.7" href="add_key_values.htm" target="hmcontent"><span class="heading3" id="s10.3.7">Add key values</span></a>
+</li>
+<li class="heading3" id="i10.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.8" href="cancel_changes.htm" target="hmcontent"><span class="heading3" id="s10.3.8">Cancel changes</span></a>
+</li>
+<li class="heading3" id="i10.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.9" href="save_query.htm" target="hmcontent"><span class="heading3" id="s10.3.9">Save query</span></a>
+</li>
+<li class="heading3" id="i10.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.10" href="close_query.htm" target="hmcontent"><span class="heading3" id="s10.3.10">Close query</span></a>
+</li>
+<li class="heading3" id="i10.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.11" href="delete_query.htm" target="hmcontent"><span class="heading3" id="s10.3.11">Delete query</span></a>
+</li>
+<li class="heading3" id="i10.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.12" href="copy_query.htm" target="hmcontent"><span class="heading3" id="s10.3.12">Copy query</span></a>
+</li>
+<li class="heading3" id="i10.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.13" href="export_query.htm" target="hmcontent"><span class="heading3" id="s10.3.13">Export query</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.4" href="layouts.htm" target="hmcontent"><span class="heading2" id="s10.4" ondblclick="return dblclicked(this)">Layouts</span></a>
+<ul id="ul10.4" style="list-style-type:none">
+<li class="heading3" id="i10.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.1" href="create_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.1">Create layout</span></a>
+</li>
+<li class="heading3" id="i10.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.2" href="edit_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.2">Edit layout</span></a>
+</li>
+<li class="heading3" id="i10.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.3" href="edit_layout_name_and_descripti.htm" target="hmcontent"><span class="heading3" id="s10.4.3">Edit layout name and description</span></a>
+</li>
+<li class="heading3" id="i10.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.4" href="constructworking_with_pivot_grid.htm" target="hmcontent"><span class="heading3" id="s10.4.4" ondblclick="return dblclicked(this)">Pivot grid</span></a>
+<ul id="ul10.4.4" style="list-style-type:none">
+<li class="heading4" id="i10.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.1" href="construct_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.1">Construct pivot grid</span></a>
+</li>
+<li class="heading4" id="i10.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.2" href="rename_fields.htm" target="hmcontent"><span class="heading4" id="s10.4.4.2">Rename Fields</span></a>
+</li>
+<li class="heading4" id="i10.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.3" href="apply_aggregate_functions.htm" target="hmcontent"><span class="heading4" id="s10.4.4.3">Apply aggregate functions</span></a>
+</li>
+<li class="heading4" id="i10.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.4" href="group_date_function.htm" target="hmcontent"><span class="heading4" id="s10.4.4.4">Group date function</span></a>
+</li>
+<li class="heading4" id="i10.4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.5" href="show_missed_values.htm" target="hmcontent"><span class="heading4" id="s10.4.4.5">Show missed values</span></a>
+</li>
+<li class="heading4" id="i10.4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.6" href="show_totals.htm" target="hmcontent"><span class="heading4" id="s10.4.4.6">Show totals</span></a>
+</li>
+<li class="heading4" id="i10.4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.7" href="copy_fields.htm" target="hmcontent"><span class="heading4" id="s10.4.4.7">Copy fields</span></a>
+</li>
+<li class="heading4" id="i10.4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.8" href="freeze_row_headers_in_pivot_gr.htm" target="hmcontent"><span class="heading4" id="s10.4.4.8">Freeze row headers in pivot grid</span></a>
+</li>
+<li class="heading4" id="i10.4.4.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.9" href="apply_filters.htm" target="hmcontent"><span class="heading4" id="s10.4.4.9" ondblclick="return dblclicked(this)">Apply filters</span></a>
+<ul id="ul10.4.4.9" style="list-style-type:none">
+<li class="heading5" id="i10.4.4.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.1">Add/remove buttons</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.2" href="combining_operators.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.2">Combining operators</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.3" href="field_name.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.3">Field name</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.4" href="comparison_operators.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.4">Comparison operators</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.5" href="criteria_value.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.5">Criteria value</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.10" href="compact_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.10">Compact pivot grid</span></a>
+</li>
+<li class="heading4" id="i10.4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.11" href="show_data_in_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.11">Show data in pivot grid</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.5" href="refresh_data.htm" target="hmcontent"><span class="heading3" id="s10.4.5">Refresh data</span></a>
+</li>
+<li class="heading3" id="i10.4.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.6" href="working_with_view.htm" target="hmcontent"><span class="heading3" id="s10.4.6" ondblclick="return dblclicked(this)">Views</span></a>
+<ul id="ul10.4.6" style="list-style-type:none">
+<li class="heading4" id="i10.4.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.1" href="open_view.htm" target="hmcontent"><span class="heading4" id="s10.4.6.1">Open view</span></a>
+</li>
+<li class="heading4" id="i10.4.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.2" href="add_aggregate_column.htm" target="hmcontent"><span class="heading4" id="s10.4.6.2">Add aggregate column</span></a>
+</li>
+<li class="heading4" id="i10.4.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.3" href="filter__data_in_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.3">Filter data in column</span></a>
+</li>
+<li class="heading4" id="i10.4.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.4" href="sort_data_in_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.4">Sort data in column</span></a>
+</li>
+<li class="heading4" id="i10.4.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.5" href="hide_show_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.5">Hide/show column/band</span></a>
+</li>
+<li class="heading4" id="i10.4.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.6" href="rename_column_band.htm" target="hmcontent"><span class="heading4" id="s10.4.6.6">Rename column/band</span></a>
+</li>
+<li class="heading4" id="i10.4.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.7" href="reorder_columns_bands.htm" target="hmcontent"><span class="heading4" id="s10.4.6.7">Reorder columns/bands</span></a>
+</li>
+<li class="heading4" id="i10.4.6.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.8" href="reset_view.htm" target="hmcontent"><span class="heading4" id="s10.4.6.8">Reset view</span></a>
+</li>
+<li class="heading4" id="i10.4.6.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.9" href="print_view_report.htm" target="hmcontent"><span class="heading4" id="s10.4.6.9">Print view (report)</span></a>
+</li>
+<li class="heading4" id="i10.4.6.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.10" href="export_layout.htm" target="hmcontent"><span class="heading4" id="s10.4.6.10">Export view</span></a>
+</li>
+<li class="heading4" id="i10.4.6.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.11" href="avr_in_maps.htm" target="hmcontent"><span class="heading4" id="s10.4.6.11" ondblclick="return dblclicked(this)">Maps in AVR</span></a>
+<ul id="ul10.4.6.11" style="list-style-type:none">
+<li class="heading5" id="i10.4.6.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.1" href="show_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.1">Show map</span></a>
+</li>
+<li class="heading5" id="i10.4.6.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.2" href="print_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.2">Print map</span></a>
+</li>
+<li class="heading5" id="i10.4.6.11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.3" href="export_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.3">Export map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.4.6.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.12" href="avr_chart_management.htm" target="hmcontent"><span class="heading4" id="s10.4.6.12" ondblclick="return dblclicked(this)">Charts in AVR</span></a>
+<ul id="ul10.4.6.12" style="list-style-type:none">
+<li class="heading5" id="i10.4.6.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.1" href="show_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.1">Show chart</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.2" href="chart_type.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.2">Change chart type</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.3" href="set_up_axes.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.3">Customize chart view</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.4" href="print_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.4">Print chart</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.5" href="export_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.5">Export chart</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.7" href="cancel_changes_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.7">Cancel changes</span></a>
+</li>
+<li class="heading3" id="i10.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.8" href="save_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.8">Save layout</span></a>
+</li>
+<li class="heading3" id="i10.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.9" href="close_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.9">Close layout</span></a>
+</li>
+<li class="heading3" id="i10.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.10" href="share_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.10">Share layout</span></a>
+</li>
+<li class="heading3" id="i10.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.11" href="delete_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.11">Delete layout</span></a>
+</li>
+<li class="heading3" id="i10.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.12" href="copy_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.12">Copy layout</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.5" href=javascript:void(0);><span class="heading2" id="s10.5" ondblclick="return dblclicked(this)">Administrative Functions</span></a>
+<ul id="ul10.5" style="list-style-type:none">
+<li class="heading3" id="i10.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.1" href="publish_a_layout.htm" target="hmcontent"><span class="heading3" id="s10.5.1">Publish layout/query/folder</span></a>
+</li>
+<li class="heading3" id="i10.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.2" href="unpublish_layout.htm" target="hmcontent"><span class="heading3" id="s10.5.2">Unpublish layout/folder/query</span></a>
+</li>
+<li class="heading3" id="i10.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.3" href="set_functions_default_precisio.htm" target="hmcontent"><span class="heading3" id="s10.5.3">Set functions default precision</span></a>
+</li>
+<li class="heading3" id="i10.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.4" href="set_search_object_fields_defau.htm" target="hmcontent"><span class="heading3" id="s10.5.4">Set search object fields default aggregate function</span></a>
+</li>
+<li class="heading3" id="i10.5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.5" href="printing.htm" target="hmcontent"><span class="heading3" id="s10.5.5">Printing</span></a>
+</li>
+<li class="heading3" id="i10.5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.6" href="use_avr_cache_service.htm" target="hmcontent"><span class="heading3" id="s10.5.6">Use AVR cache service</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.6" href="forms_description.htm" target="hmcontent"><span class="heading2" id="s10.6" ondblclick="return dblclicked(this)">Forms Description</span></a>
+<ul id="ul10.6" style="list-style-type:none">
+<li class="heading3" id="i10.6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.1" href="avr_main_window.htm" target="hmcontent"><span class="heading3" id="s10.6.1" ondblclick="return dblclicked(this)">AVR Main Window</span></a>
+<ul id="ul10.6.1" style="list-style-type:none">
+<li class="heading4" id="i10.6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.1" href="query_folder_layout_tree_edito.htm" target="hmcontent"><span class="heading4" id="s10.6.1.1">Query/Folder/Layout Tree Editor</span></a>
+</li>
+<li class="heading4" id="i10.6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.2" href="main_menu.htm" target="hmcontent"><span class="heading4" id="s10.6.1.2">Main Menu</span></a>
+</li>
+<li class="heading4" id="i10.6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.3" href="toolbar.htm" target="hmcontent"><span class="heading4" id="s10.6.1.3">Toolbar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.2" href="query_builder.htm" target="hmcontent"><span class="heading3" id="s10.6.2" ondblclick="return dblclicked(this)">Query Builder Form</span></a>
+<ul id="ul10.6.2" style="list-style-type:none">
+<li class="heading4" id="i10.6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.1" href="general_query_info.htm" target="hmcontent"><span class="heading4" id="s10.6.2.1">General Query Info</span></a>
+</li>
+<li class="heading4" id="i10.6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.2" href="query_search_objects_tree.htm" target="hmcontent"><span class="heading4" id="s10.6.2.2">Query Search Objects Tree</span></a>
+</li>
+<li class="heading4" id="i10.6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.3" href="fields_list.htm" target="hmcontent"><span class="heading4" id="s10.6.2.3">Fields List</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.3" href="layout_designer.htm" target="hmcontent"><span class="heading3" id="s10.6.3" ondblclick="return dblclicked(this)">Layout Designer Form</span></a>
+<ul id="ul10.6.3" style="list-style-type:none">
+<li class="heading4" id="i10.6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.1" href="info_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.1">Info Tab</span></a>
+</li>
+<li class="heading4" id="i10.6.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.2" href="pivot_grid_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.2" ondblclick="return dblclicked(this)">Pivot Grid Tab</span></a>
+<ul id="ul10.6.3.2" style="list-style-type:none">
+<li class="heading5" id="i10.6.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.1" href="pivot_grid_and_fields_list.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.1">Pivot Grid and Fields List</span></a>
+</li>
+<li class="heading5" id="i10.6.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.2" href="fields_right-click_menu.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.2">Fields Right-Click Menu</span></a>
+</li>
+<li class="heading5" id="i10.6.3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.3" href="pivot_grid_settings.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.3">Pivot Grid Settings</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.3" href="view_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.3">View Tab</span></a>
+</li>
+<li class="heading4" id="i10.6.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.4" href="chart_editor.htm" target="hmcontent"><span class="heading4" id="s10.6.3.4">Chart Editor Form</span></a>
+</li>
+<li class="heading4" id="i10.6.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.5" href="map_editor.htm" target="hmcontent"><span class="heading4" id="s10.6.3.5" ondblclick="return dblclicked(this)">Map Editor Form</span></a>
+<ul id="ul10.6.3.5" style="list-style-type:none">
+<li class="heading5" id="i10.6.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.5.1" href="layer_control_panel.htm" target="hmcontent"><span class="heading5" id="s10.6.3.5.1">Layer Control Panel</span></a>
+</li>
+<li class="heading5" id="i10.6.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.5.2" href="map_toolbar_buttons.htm" target="hmcontent"><span class="heading5" id="s10.6.3.5.2">Map Toolbar Buttons</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.4" href="functional_buttons.htm" target="hmcontent"><span class="heading3" id="s10.6.4">Functional Buttons</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.7" href="list_of_avr_search_objects_actual.htm" target="hmcontent"><span class="heading2" id="s10.7">List of AVR Search Objects and their Fields</span></a>
+</li>
+<li class="heading2" id="i10.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.8" href="permissions_and_access_to_avr_.htm" target="hmcontent"><span class="heading2" id="s10.8">Permissions and Access to AVR Data</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon9.png','cicon2.png','cicon1.png');</script>
+</body>
+</html>

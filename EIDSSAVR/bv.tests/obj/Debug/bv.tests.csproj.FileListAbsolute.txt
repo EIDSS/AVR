@@ -1,0 +1,11 @@
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.csprojResolveAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.WinClient.TestMainForm.resources
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.csproj.GenerateResource.Cache
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.dll.licenses
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.csprojAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.tests\obj\Debug\bv.tests.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.WinClient.TestMainForm.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.GenerateResource.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.dll.licenses
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.CoreCompileInputs.cache

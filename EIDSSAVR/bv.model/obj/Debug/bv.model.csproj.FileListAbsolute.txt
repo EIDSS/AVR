@@ -1,0 +1,12 @@
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\bv.model.dll
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\bv.model.pdb
+C:\NGDev\EIDSS61\bv.model\obj\Debug\bv.model.csprojAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.model\obj\Debug\bv.model.csproj.CoreCompileInputs.cache
+C:\NGDev\EIDSS61\bv.model\obj\Debug\bv.model.dll
+C:\NGDev\EIDSS61\bv.model\obj\Debug\bv.model.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\bv.model.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\bv.model.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.model\obj\Debug\bv.model.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.model\obj\Debug\bv.model.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.model\obj\Debug\bv.model.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.model\obj\Debug\bv.model.pdb

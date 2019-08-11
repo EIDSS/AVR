@@ -1,0 +1,21 @@
+﻿@model eidss.model.Schema.GeoLocation
+@using eidss.webclient.Utils
+
+<script language="javascript" type="text/javascript">
+    $(function () {
+        geoLocation.initInlinePicker('@(ViewBag.IsReadOnlyForEdit)');
+    });
+</script>
+
+@*@Html.BvEditbox(Model, m => m.strReadOnlyAdaptiveFullName)*@  
+<span class="picker">
+    <span class="pickerWrap">
+        @Html.BvEditbox(Model, m => m.strReadOnlyAdaptiveFullName)
+        <span class="pickerSelect" onclick="geoLocation.OnBtnGeoClearClicked('@Model.ObjectIdent', '@Model.idfGeoLocation');" id='btnGeoClear'>
+            <span class="k-icon k-i-close"></span>
+        </span>
+    </span>
+</span>
+<button id='buttonGeoLocationPicker' class="button smallImageButton" onclick="geoLocation.showPicker('@Model.idfGeoLocation');" type="button" alt="Select">
+    <img src="@Url.Content(VirtualPathUtility.ToAbsolute("~/Content/Images/flag_black.png"))" alt="Select" draggable='false' />
+</button>

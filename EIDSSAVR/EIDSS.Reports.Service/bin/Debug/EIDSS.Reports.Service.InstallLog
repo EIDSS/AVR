@@ -1,0 +1,224 @@
+﻿Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Attempt to stop service EIDSSReportsService_v6.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Rolling back assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Restoring event log to previous state for source EIDSSReportsService_v6.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Removing EventLog source EIDSSReportsService_v6.
+Service EIDSSReportsService_v6 is being removed from the system...
+Service EIDSSReportsService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe
+Installing service EIDSSReportsService_v6...
+Service EIDSSReportsService_v6 has been successfully installed.
+Creating EventLog source EIDSSReportsService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.Reports.Service\bin\Debug\EIDSS.Reports.Service.exe

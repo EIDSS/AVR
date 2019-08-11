@@ -1,0 +1,105 @@
+﻿@using Kendo.Mvc.UI
+@using bv.common.Configuration
+@using eidss.web.common.Utils
+@using eidss.webclient.Utils
+@model eidss.webclient.Models.Reports.Form1KZModel
+
+@{
+    Layout = "~/Views/Shared/_ReportLayout.cshtml";
+}
+@if (BaseSettings.TranslationMode)
+{
+    <input type='hidden' id='aspclassname' value='@GetType().FullName' />
+}
+<script language="javascript">
+    window.onload = function (e) {
+        paperForm.OnFormTypeChangedKZ(e);
+    }
+</script>
+@using (Html.BeginForm())
+{
+    @Html.Partial("Common/ExportButtons", Model)
+
+    <div class="bluelayout">
+        <div class="tabPanelContent">
+
+            @Html.Partial("Common/BaseFilter", Model)
+
+            <table id="Form1KZFilterTable" class="level1">
+                <tr>
+                    <td class="mediumreport">
+                        @Html.LabelFor(m => m.FormType)
+                    </td>
+                    <td class="largereport">
+
+                        @{
+                            @(Html.Kendo().ComboBox()
+                                  .BindTo(Model.KZFormTypeList.ConvertToSelectListItem())
+                                  .Name("FormType")
+                                  .HtmlAttributes(new { @class = "requiredField" })
+                                  .Events(c => c.Change("paperForm.OnFormTypeChangedKZ"))
+                            )
+                        }
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr id="yearRow">
+                    <td class="mediumreport">
+                        @Html.LabelFor(m => m.Year)
+                    </td>
+                    <td class="largereport">
+                       
+                            @{
+                                @(
+                                    Html.Kendo().NumericTextBox()
+                                        .Name("Year")
+                                        .Value(Model.Year)
+                                        .Min(2001)
+                                        .Max(DateTime.Today.Year)
+                                        .Decimals(0)
+                                        .HtmlAttributes(new { @class = "requiredField" })
+                                        .Placeholder("")
+                                        .Format("g")
+                                )
+                            }
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr id="monthRow">
+                    <td class="mediumreport">
+                        <label id="StartMonthLabel">@Translator.GetString("Form1KZFromMonth")</label>
+                    </td>
+                    <td class="largereport">
+
+                        @{
+                            @(Html.Kendo().ComboBox()
+                                  .BindTo(Model.SelectedJanuaryMonthList.ConvertToSelectListItem())
+                                  .Name("StartMonth")
+                                  .Events(c => c.Change("paperForm.OnMonthChangedAZ"))
+                            )
+                        }
+
+                    </td>
+                    <td id="EndMonthLabel" class="mediumreport">
+                        @Html.LabelFor(m => m.EndMonth)
+                    </td>
+                    <td id="EndMonthCell" class="largereport">
+
+                        @{
+                            @(Html.Kendo().ComboBox()
+                                  .BindTo(Model.SelectedJanuaryMonthList.ConvertToSelectListItem())
+                                  .Name("EndMonth")
+                                  .Events(c => c.Change("paperForm.OnMonthChangedAZ"))
+                            )
+                        }
+                    </td>
+                    <td></td>
+
+                </tr>
+            </table>
+
+            @Html.Partial("Common/AddressFilter", Model.Address)
+
+        </div>
+    </div>
+}

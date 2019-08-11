@@ -1,0 +1,61 @@
+﻿@using bv.common.Configuration
+@using bv.model.Model.Core
+@using eidss.web.common.Utils
+@using eidss.webclient.Utils
+@using Kendo.Mvc.UI
+@model eidss.model.Reports.TH.OnePageSituationTHModel
+
+@{
+    Layout = "~/Views/Shared/_ReportLayout.cshtml";
+}
+@if (BaseSettings.TranslationMode)
+{
+    <input type='hidden' id='aspclassname' value='@GetType().FullName'/>
+}
+@using (Html.BeginForm())
+{
+    @Html.Partial("Common/ExportButtons", Model)
+    <div class="bluelayout">
+        <div class="tabPanelContent">
+
+            @Html.Partial("Common/BaseFilter", Model)
+
+ 
+            <table id="OnePageSituationTable">
+               <tr>
+                    <td class="mediumreport">
+                        @Html.LabelFor(m=>m.idfsDiagnosis)
+                    </td>
+                    <td class="largereport">
+                        @{
+                            @(Html.Kendo().ComboBox()
+                                    .Events(e => e.Open("function(e) { bvComboBox.onOpen(e, " + (int) EditorControlWidth.Large + "); }"))
+                                    .BindTo(Model.DiagnosisList.ConvertToSelectListItem())
+                                    .HtmlAttributes(new {@class = "requiredField"})
+                                    .Name("idfsDiagnosis")
+                                    )
+                        }
+                        
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                 <tr>
+                    <td class="mediumreport">
+                        @Translator.GetString("ThaiZone")
+                    </td>
+                    <td class="largereport">
+
+                        @{
+                            @(Html.Kendo().ComboBox()
+                                  .BindTo(Model.ZoneList.ConvertToSelectListItem())
+                                  .Name("idfsZone")
+                                  )
+                        }
+
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+}

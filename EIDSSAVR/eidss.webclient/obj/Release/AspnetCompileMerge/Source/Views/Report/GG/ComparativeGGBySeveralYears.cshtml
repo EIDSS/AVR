@@ -1,0 +1,45 @@
+﻿@using bv.common.Configuration
+@using bv.model.Model.Core
+@using eidss.webclient.Utils
+@model eidss.webclient.Models.Reports.ComparativeGGSeveralYearsModel
+
+@{
+    Layout = "~/Views/Shared/_ReportLayout.cshtml";
+}
+@if (BaseSettings.TranslationMode){
+    <input type='hidden' id='aspclassname' value='@GetType().FullName' />
+}
+@using (Html.BeginForm())
+{
+    @Html.Partial("Common/ExportButtons", Model)
+    <div class="bluelayout">
+        <div class="tabPanelContent">
+
+            @Html.Partial("Common/BaseFilter", Model)
+
+            @Html.Partial("Common/FromYearToYearFilter", Model.YearModel)
+
+            @Html.Partial("Common/AddressFilter", Model.Address)
+
+            <table id="DiagnosisGroupFilterTable" class="level1">
+                <tr>
+                    <td class="mediumreport">
+                        @Html.LabelFor(m => m.SelectedDiagnoses)
+                    </td>
+                    <td class="largereport">
+                        @Html.ComboboxWithCheckboxes("SelectedDiagnoses", Model.Key, "idfsDiagnosisOrDiagnosisGroup", "name", null,
+                            "",
+                            controller: "Report", action: "ComparativeGGSeveralYears_SelectDiagOrGroup", width: EditorControlWidth.Large
+                            )
+                    </td>
+                    <td class="mediumreport">
+                        @Html.LabelFor(m => m.Counter)
+                    </td>
+                    <td class="largereport">
+                        @Html.Partial("GG/MultipleCounterFilter", Model.Counter, new ViewDataDictionary {{"FilterName", "MultipleCounterFilter.CheckedItems"}})
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+}

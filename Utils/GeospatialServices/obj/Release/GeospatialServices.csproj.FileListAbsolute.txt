@@ -1,0 +1,14 @@
+C:\NGDev\EIDSS\eidss.main\bin\Release\GeospatialServices.dll
+C:\NGDev\EIDSS\eidss.main\bin\Release\GeospatialServices.pdb
+C:\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.dll
+C:\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.pdb
+C:\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csprojAssemblyReference.cache
+C:\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csproj.CoreCompileInputs.cache
+C:\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSS\eidss.main\bin\Release\GeospatialServices.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSS\eidss.main\bin\Release\GeospatialServices.pdb
+C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.csproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.dll
+C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Release\GeospatialServices.pdb

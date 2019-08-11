@@ -1,0 +1,2513 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eidss.openapi.web</name>
+    </assembly>
+    <members>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.ApiDescriptionExtensions.GetFriendlyId(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
+            </summary>
+            <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The ID as a string.</returns>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.HelpPageConfig">
+            <summary>
+            Use this class to customize the Help Page.
+            For example you can set a custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> to supply the documentation
+            or you can provide the samples for the requests/responses.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.Controllers.HelpController">
+            <summary>
+            The controller that will handle requests for the help page.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
+            <summary>
+            Sets the documentation provider for help page.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="documentationProvider">The documentation provider.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration,System.Collections.Generic.IDictionary{System.Type,System.Object})">
+            <summary>
+            Sets the objects that will be used by the formatters to produce sample requests/responses.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleObjects">The sample objects.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type and action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample request directly for the specified media type and action with parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample request.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String)">
+            <summary>
+            Sets the sample request directly for the specified media type of the action.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleResponse(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.String,System.String,System.String[])">
+            <summary>
+            Sets the sample response directly for the specified media type of the action with specific parameters.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample response.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration,System.Object,System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Sets the sample directly for all actions with the specified type and media type.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sample">The sample.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The parameter type or return type of an action.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> passed to the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate request samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String)">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualResponseType(System.Web.Http.HttpConfiguration,System.Type,System.String,System.String,System.String[])">
+            <summary>
+            Specifies the actual type of <see cref="T:System.Net.Http.ObjectContent`1"/> returned as part of the <see cref="T:System.Net.Http.HttpRequestMessage"/> in an action. 
+            The help page will use this information to produce more accurate response samples.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="type">The type.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Gets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <returns>The help page sample generator.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator)">
+            <summary>
+            Sets the help page sample generator.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="sampleGenerator">The help page sample generator.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
+            <summary>
+            Gets the model that represents an API displayed on the help page. The model is initialized on the first call and cached for subsequent calls.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
+            <param name="apiDescriptionId">The <see cref="T:System.Web.Http.Description.ApiDescription"/> ID.</param>
+            <returns>
+            An <see cref="T:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel"/>
+            </returns>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel">
+            <summary>
+            The model that represents an API displayed on the help page.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel"/> class.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription">
+            <summary>
+            Gets or sets the <see cref="P:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription"/> that describes the API.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests">
+            <summary>
+            Gets the sample requests associated with the API.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses">
+            <summary>
+            Gets the sample responses associated with the API.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages">
+            <summary>
+            Gets the error messages associated with this model.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator">
+            <summary>
+            This class will generate the samples for the help page.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator"/> class.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes">
+            <summary>
+            Gets CLR types that are used as the content of <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/>.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples">
+            <summary>
+            Gets the objects that are used directly as samples for certain actions.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects">
+            <summary>
+            Gets the objects that are serialized as samples by the supported formatters.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the request body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the response body samples for a given <see cref="T:System.Web.Http.Description.ApiDescription"/>.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription,eidss.openapi.web.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Gets the request or response body samples.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The samples keyed by media type.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Type,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,eidss.openapi.web.Areas.HelpPage.SampleDirection)">
+            <summary>
+            Search for samples that are provided directly through <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples"/>.
+            </summary>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="type">The CLR type.</param>
+            <param name="formatter">The formatter.</param>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or for a response.</param>
+            <returns>The sample that matches the parameters.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)">
+            <summary>
+            Gets the sample object that will be serialized by the formatters. 
+            First, it will look at the <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects"/>. If no sample object is found, it will try to create one using <see cref="T:eidss.openapi.web.Areas.HelpPage.ObjectGenerator"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The sample object.</returns>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},eidss.openapi.web.Areas.HelpPage.SampleDirection,System.Collections.ObjectModel.Collection{System.Net.Http.Formatting.MediaTypeFormatter}@)">
+            <summary>
+            Resolves the type of the action parameter or return value when <see cref="T:System.Net.Http.HttpRequestMessage"/> or <see cref="T:System.Net.Http.HttpResponseMessage"/> is used.
+            </summary>
+            <param name="api">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+            <param name="sampleDirection">The value indicating whether the sample is for a request or a response.</param>
+            <param name="formatters">The formatters.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter,System.Object,System.Type,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>
+            Writes the sample object using formatter.
+            </summary>
+            <param name="formatter">The formatter.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+            <param name="mediaType">Type of the media.</param>
+            <returns></returns>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey">
+            <summary>
+            This is used to identify the place where the sample should be applied.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
+            <summary>
+            Creates a new <see cref="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey"/> based on media type and CLR type.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="type">The CLR type.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.#ctor(eidss.openapi.web.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey"/> based on <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="sampleDirection">The <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,eidss.openapi.web.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creates a new <see cref="T:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey"/> based on media type, <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>, controller name, action name and parameter names.
+            </summary>
+            <param name="mediaType">The media type.</param>
+            <param name="sampleDirection">The <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.</param>
+            <param name="controllerName">Name of the controller.</param>
+            <param name="actionName">Name of the action.</param>
+            <param name="parameterNames">The parameter names.</param>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.ControllerName">
+            <summary>
+            Gets the name of the controller.
+            </summary>
+            <value>
+            The name of the controller.
+            </value>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.ActionName">
+            <summary>
+            Gets the name of the action.
+            </summary>
+            <value>
+            The name of the action.
+            </value>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+            <value>
+            The media type.
+            </value>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.ParameterNames">
+            <summary>
+            Gets the parameter names.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection">
+            <summary>
+            Gets the <see cref="P:eidss.openapi.web.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.ImageSample">
+            <summary>
+            This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.ImageSample.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:eidss.openapi.web.Areas.HelpPage.ImageSample"/> class.
+            </summary>
+            <param name="src">The URL of an image.</param>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.InvalidSample">
+            <summary>
+            This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.ObjectGenerator">
+            <summary>
+            This class will create an object of a given type and populate it with sample data.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)">
+            <summary>
+            Generates an object for a given type. The type needs to be public, have a public default constructor and settable public properties/fields. Currently it supports the following types:
+            Simple types: <see cref="T:System.Int32"/>, <see cref="T:System.String"/>, <see cref="T:System.Enum"/>, <see cref="T:System.DateTime"/>, <see cref="T:System.Uri"/>, etc.
+            Complex types: POCO types.
+            Nullables: <see cref="T:System.Nullable`1"/>.
+            Arrays: arrays of simple types or complex types.
+            Key value pairs: <see cref="T:System.Collections.Generic.KeyValuePair`2"/>
+            Tuples: <see cref="T:System.Tuple`1"/>, <see cref="T:System.Tuple`2"/>, etc
+            Dictionaries: <see cref="T:System.Collections.Generic.IDictionary`2"/> or anything deriving from <see cref="T:System.Collections.Generic.IDictionary`2"/>.
+            Collections: <see cref="T:System.Collections.Generic.IList`1"/>, <see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.ICollection`1"/>, <see cref="T:System.Collections.IList"/>, <see cref="T:System.Collections.IEnumerable"/>, <see cref="T:System.Collections.ICollection"/> or anything deriving from <see cref="T:System.Collections.Generic.ICollection`1"/> or <see cref="T:System.Collections.IList"/>.
+            Queryables: <see cref="T:System.Linq.IQueryable"/>, <see cref="T:System.Linq.IQueryable`1"/>.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>An object of the given type.</returns>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.SampleDirection">
+            <summary>
+            Indicates whether the sample is used for request or response
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.TextSample">
+            <summary>
+            This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.web.Areas.HelpPage.XmlDocumentationProvider">
+            <summary>
+            A custom <see cref="T:System.Web.Http.Description.IDocumentationProvider"/> that reads the API documentation from an XML documentation file.
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.Areas.HelpPage.XmlDocumentationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:eidss.openapi.web.Areas.HelpPage.XmlDocumentationProvider"/> class.
+            </summary>
+            <param name="documentPath">The physical path to XML document.</param>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.FarmController">
+            <summary>Human Case REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.FarmController.Get(System.Int64)">
+            <summary>Get Farm by it's identifier</summary>
+            <remarks>HTTP GET verb<br/>
+            http://hostname/api/Farm/{id} <br/>
+            http://hostname/api/json/Farm/{id} <br/>
+            http://hostname/api/xml/Farm/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Human Case</param>
+            <returns>Human Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Farm/123457890 
+            (GET) http://eidss.hostname.org/api/json/Farm/123457890 
+            (GET) http://eidss.hostname.org/api/xml/Farm/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Farm/12687690000000").Result;
+            if (response.IsSuccessStatusCode) {
+                var hc = response.Content.ReadAsAsync&lt;Farm&gt;().Result;
+                Console.WriteLine("{0}", hc.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.FarmController.List(eidss.openapi.contract.FarmListFilter)">
+            <summary>Get list of brief information of Farms</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Farm/list?filter={...} <br/>
+            http://hostname/api/json/Farm/list?filter={...} <br/>
+            http://hostname/api/xml/Farm/list?filter={...} <br/>
+            </remarks>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Farms</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Farm/list?filter={...}
+            (GET) http://eidss.hostname.org/api/json/Farm/list?filter={...}
+            (GET) http://eidss.hostname.org/api/xml/Farm/list?filter={...}
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var filter = new FarmListFilter() { RecordID = 12345678 };
+            var serializer = new JavaScriptSerializer();
+            var filterJson = string.Format("?filter={0}", serializer.Serialize(filter));
+            
+            HttpResponseMessage response = client.GetAsync("api/Farm/list" + filterJson).Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;FarmListItem&gt;&gt;().Result;
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.VetCasePensideTestController">
+            <summary>Vet Case PensideTest REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCasePensideTestController.Post(System.Int64,eidss.openapi.contract.PensideTest)">
+            <summary>Create new Vet Case PensideTest</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/VetCase/{idCase}/PensideTest [value in the body] <br/>
+            http://hostname/api/json/VetCase/{idCase}/PensideTest [value in the body] <br/>
+            http://hostname/api/xml/VetCase/{idCase}/PensideTest [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Vet Case identifier</param>
+            <param name="value">Vet Case PensideTest for create</param>
+            <returns>Created Vet Case PensideTest</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/VetCase/123457890/PensideTest [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/VetCase/123457890/PensideTest [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/VetCase/123457890/PensideTest [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCasePensideTestController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Vet Case PensideTest by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/VetCase/{idCase}/PensideTest/{id} <br/>
+            http://hostname/api/json/VetCase/{idCase}/PensideTest/{id} <br/>
+            http://hostname/api/xml/VetCase/{idCase}/PensideTest/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Vet Case</param>
+            <param name="id">Identifier of Vet Case PensideTest</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/VetCase/123457890/PensideTest/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/VetCase/123457890/PensideTest/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/VetCase/123457890/PensideTest/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case PensideTest with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.VetCaseTestInterpretationController">
+            <summary>Vet Case TestInterpretation REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseTestInterpretationController.Post(System.Int64,eidss.openapi.contract.TestInterpretation)">
+            <summary>Create new Vet Case TestInterpretation</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/VetCase/{idCase}/TestInterpretation [value in the body] <br/>
+            http://hostname/api/json/VetCase/{idCase}/TestInterpretation [value in the body] <br/>
+            http://hostname/api/xml/VetCase/{idCase}/TestInterpretation [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Vet Case identifier</param>
+            <param name="value">Vet Case TestInterpretation for create</param>
+            <returns>Created Vet Case TestInterpretation</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/VetCase/123457890/TestInterpretation [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/VetCase/123457890/TestInterpretation [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/VetCase/123457890/TestInterpretation [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseTestInterpretationController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Vet Case TestInterpretation by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/VetCase/{idCase}/TestInterpretation/{id} <br/>
+            http://hostname/api/json/VetCase/{idCase}/TestInterpretation/{id} <br/>
+            http://hostname/api/xml/VetCase/{idCase}/TestInterpretation/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Vet Case</param>
+            <param name="id">Identifier of Vet Case TestInterpretation</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/VetCase/123457890/TestInterpretation/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/VetCase/123457890/TestInterpretation/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/VetCase/123457890/TestInterpretation/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case TestInterpretation with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.HumanCaseTestInterpretationController">
+            <summary>Human Case TestInterpretation REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseTestInterpretationController.Post(System.Int64,eidss.openapi.contract.TestInterpretation)">
+            <summary>Create new Human Case TestInterpretation</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/HumanCase/{idCase}/TestInterpretation [value in the body] <br/>
+            http://hostname/api/json/HumanCase/{idCase}/TestInterpretation [value in the body] <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/TestInterpretation [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Human Case identifier</param>
+            <param name="value">Human Case TestInterpretation for create</param>
+            <returns>Created Human Case TestInterpretation</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/HumanCase/123457890/TestInterpretation [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/HumanCase/123457890/TestInterpretation [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/HumanCase/123457890/TestInterpretation [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseTestInterpretationController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Human Case TestInterpretation by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/HumanCase/{idCase}/TestInterpretation/{id} <br/>
+            http://hostname/api/json/HumanCase/{idCase}/TestInterpretation/{id} <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/TestInterpretation/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Human Case</param>
+            <param name="id">Identifier of Human Case TestInterpretation</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/HumanCase/123457890/TestInterpretation/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/HumanCase/123457890/TestInterpretation/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/HumanCase/123457890/TestInterpretation/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case TestInterpretation with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.OrganizationPersonController">
+            <summary>Organization Person REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationPersonController.Post(System.Int64,eidss.openapi.contract.Person)">
+            <summary>Create new Organization Person</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/Organization/{idCase}/Person [value in the body] <br/>
+            http://hostname/api/json/Organization/{idCase}/Person [value in the body] <br/>
+            http://hostname/api/xml/Organization/{idCase}/Person [value in the body] <br/>
+            </remarks>
+            <param name="idOrg">Organization identifier</param>
+            <param name="value">Organization Person for create</param>
+            <returns>Created Organization Person</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/Organization/123457890/Person [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/Organization/123457890/Person [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/Organization/123457890/Person [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationPersonController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Organization Person by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/Organization/{idCase}/Person/{id} <br/>
+            http://hostname/api/json/Organization/{idCase}/Person/{id} <br/>
+            http://hostname/api/xml/Organization/{idCase}/Person/{id} <br/>
+            </remarks>
+            <param name="idOrg">Identifier of Organization</param>
+            <param name="id">Identifier of Organization Person</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/Organization/123457890/Person/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/Organization/123457890/Person/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/Organization/123457890/Person/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization Person with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.OrganizationController">
+            <summary>Organization REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationController.Post(eidss.openapi.contract.Organization)">
+            <summary>Create new Organization</summary>
+            <remarks>HTTP POST verb<br/>
+            http://hostname/api/Organization [value in the body] <br/>
+            http://hostname/api/json/Organization [value in the body] <br/>
+            http://hostname/api/xml/Organization [value in the body] <br/>
+            </remarks>
+            <param name="value">Organization for create</param>
+            <returns>Created Organization</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/Organization [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/Organization [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/Organization [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationController.Put(System.Int64,eidss.openapi.contract.Organization)">
+            <summary>Update existing Organization</summary>
+            <remarks>HTTP PUT verb<br/>
+            http://hostname/api/Organization/{id} [value in the body] <br/>
+            http://hostname/api/json/Organization/{id} [value in the body] <br/>
+            http://hostname/api/xml/Organization/{id} [value in the body] <br/>
+            </remarks>
+            <param name="id">Identifier of Organization</param>
+            <param name="value">Updating Organization</param>
+            <returns>Updated Organization</returns>
+            <example><code>
+            (PUT) http://eidss.hostname.org/api/Organization/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/json/Organization/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/xml/Organization/123457890 [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationController.Delete(System.Int64)">
+            <summary>Delete Organization by it's identifier</summary>
+            <remarks>HTTP DELETE verb<br/>
+            http://hostname/api/Organization/{id} <br/>
+            http://hostname/api/json/Organization/{id} <br/>
+            http://hostname/api/xml/Organization/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Organization</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/Organization/123457890 
+            (DELETE) http://eidss.hostname.org/api/json/Organization/123457890 
+            (DELETE) http://eidss.hostname.org/api/xml/Organization/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.DeleteAsync("api/Organization/12687690000000").Result;
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Deleted");
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationController.Get(System.Int64)">
+            <summary>Get Organization by it's identifier</summary>
+            <remarks>HTTP GET verb<br/>
+            http://hostname/api/Organization/{id} <br/>
+            http://hostname/api/json/Organization/{id} <br/>
+            http://hostname/api/xml/Organization/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Organization</param>
+            <returns>Organization</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Organization/123457890 
+            (GET) http://eidss.hostname.org/api/json/Organization/123457890 
+            (GET) http://eidss.hostname.org/api/xml/Organization/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Organization/12687690000000").Result;
+            if (response.IsSuccessStatusCode) {
+                var hc = response.Content.ReadAsAsync&lt;Organization&gt;().Result;
+                Console.WriteLine("{0}", hc.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.OrganizationController.List(eidss.openapi.contract.OrganizationListFilter)">
+            <summary>Get list of brief information of Organization</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Organization/list?filter={...} <br/>
+            http://hostname/api/json/Organization/list?filter={...} <br/>
+            http://hostname/api/xml/Organization/list?filter={...} <br/>
+            </remarks>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Organization</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Organization/list?filter={...}
+            (GET) http://eidss.hostname.org/api/json/Organization/list?filter={...}
+            (GET) http://eidss.hostname.org/api/xml/Organization/list?filter={...}
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var filter = new OrganizationListFilter() { };
+            var serializer = new JavaScriptSerializer();
+            var filterJson = string.Format("?filter={0}", serializer.Serialize(filter));
+            
+            HttpResponseMessage response = client.GetAsync("api/Organization/list" + filterJson).Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;OrganizationListItem&gt;&gt;().Result;
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.PatientController">
+            <summary>Human Case REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.PatientController.Get(System.Int64)">
+            <summary>Get Patient by it's identifier</summary>
+            <remarks>HTTP GET verb<br/>
+            http://hostname/api/Patient/{id} <br/>
+            http://hostname/api/json/Patient/{id} <br/>
+            http://hostname/api/xml/Patient/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Human Case</param>
+            <returns>Human Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Patient/123457890 
+            (GET) http://eidss.hostname.org/api/json/Patient/123457890 
+            (GET) http://eidss.hostname.org/api/xml/Patient/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Patient/12687690000000").Result;
+            if (response.IsSuccessStatusCode) {
+                var hc = response.Content.ReadAsAsync&lt;Patient&gt;().Result;
+                Console.WriteLine("{0}", hc.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.PatientController.List(eidss.openapi.contract.PatientListFilter)">
+            <summary>Get list of brief information of Patients</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Patient/list?filter={...} <br/>
+            http://hostname/api/json/Patient/list?filter={...} <br/>
+            http://hostname/api/xml/Patient/list?filter={...} <br/>
+            </remarks>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Patients</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/Patient/list?filter={...}
+            (GET) http://eidss.hostname.org/api/json/Patient/list?filter={...}
+            (GET) http://eidss.hostname.org/api/xml/Patient/list?filter={...}
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var filter = new PatientListFilter() { RecordID = 12345678 };
+            var serializer = new JavaScriptSerializer();
+            var filterJson = string.Format("?filter={0}", serializer.Serialize(filter));
+            
+            HttpResponseMessage response = client.GetAsync("api/Patient/list" + filterJson).Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;PatientListItem&gt;&gt;().Result;
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.VetCaseSampleController">
+            <summary>Vet Case Sample REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseSampleController.Post(System.Int64,eidss.openapi.contract.Sample)">
+            <summary>Create new Vet Case Sample</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/VetCase/{idCase}/Sample [value in the body] <br/>
+            http://hostname/api/json/VetCase/{idCase}/Sample [value in the body] <br/>
+            http://hostname/api/xml/VetCase/{idCase}/Sample [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Vet Case identifier</param>
+            <param name="value">Vet Case Sample for create</param>
+            <returns>Created Vet Case Sample</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/VetCase/123457890/Sample [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/VetCase/123457890/Sample [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/VetCase/123457890/Sample [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseSampleController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Vet Case Sample by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/VetCase/{idCase}/Sample/{id} <br/>
+            http://hostname/api/json/VetCase/{idCase}/Sample/{id} <br/>
+            http://hostname/api/xml/VetCase/{idCase}/Sample/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Vet Case</param>
+            <param name="id">Identifier of Vet Case Sample</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/VetCase/123457890/Sample/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/VetCase/123457890/Sample/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/VetCase/123457890/Sample/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case Sample with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.VetCaseTestController">
+            <summary>Vet Case Test REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseTestController.Post(System.Int64,eidss.openapi.contract.Test)">
+            <summary>Create new Vet Case Test</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/VetCase/{idCase}/Test [value in the body] <br/>
+            http://hostname/api/json/VetCase/{idCase}/Test [value in the body] <br/>
+            http://hostname/api/xml/VetCase/{idCase}/Test [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Vet Case identifier</param>
+            <param name="value">Vet Case Test for create</param>
+            <returns>Created Vet Case Test</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/VetCase/123457890/Test [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/VetCase/123457890/Test [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/VetCase/123457890/Test [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseTestController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Vet Case Test by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/VetCase/{idCase}/Test/{id} <br/>
+            http://hostname/api/json/VetCase/{idCase}/Test/{id} <br/>
+            http://hostname/api/xml/VetCase/{idCase}/Test/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Vet Case</param>
+            <param name="id">Identifier of Vet Case Test</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/VetCase/123457890/Test/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/VetCase/123457890/Test/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/VetCase/123457890/Test/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case Test with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.VetCaseController">
+            <summary>Vet Case REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseController.Post(eidss.openapi.contract.VetCase)">
+            <summary>Create new Vet Case</summary>
+            <remarks>HTTP POST verb<br/>
+            http://hostname/api/VetCase [value in the body] <br/>
+            http://hostname/api/json/VetCase [value in the body] <br/>
+            http://hostname/api/xml/VetCase [value in the body] <br/>
+            </remarks>
+            <param name="value">Vet Case for create</param>
+            <returns>Created Vet Case</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/VetCase [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/VetCase [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/VetCase [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseController.Put(System.Int64,eidss.openapi.contract.VetCase)">
+            <summary>Update existing Vet Case</summary>
+            <remarks>HTTP PUT verb<br/>
+            http://hostname/api/VetCase/{id} [value in the body] <br/>
+            http://hostname/api/json/VetCase/{id} [value in the body] <br/>
+            http://hostname/api/xml/VetCase/{id} [value in the body] <br/>
+            </remarks>
+            <param name="id">Identifier of Vet Case</param>
+            <param name="value">Updating Vet Case</param>
+            <returns>Updated Vet Case</returns>
+            <example><code>
+            (PUT) http://eidss.hostname.org/api/VetCase/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/json/VetCase/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/xml/VetCase/123457890 [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseController.Delete(System.Int64)">
+            <summary>Delete Vet Case by it's identifier</summary>
+            <remarks>HTTP DELETE verb<br/>
+            http://hostname/api/VetCase/{id} <br/>
+            http://hostname/api/json/VetCase/{id} <br/>
+            http://hostname/api/xml/VetCase/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Vet Case</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/VetCase/123457890 
+            (DELETE) http://eidss.hostname.org/api/json/VetCase/123457890 
+            (DELETE) http://eidss.hostname.org/api/xml/VetCase/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.DeleteAsync("api/VetCase/12687690000000").Result;
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Deleted");
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseController.Get(System.Int64)">
+            <summary>Get Vet Case by it's identifier</summary>
+            <remarks>HTTP GET verb<br/>
+            http://hostname/api/VetCase/{id} <br/>
+            http://hostname/api/json/VetCase/{id} <br/>
+            http://hostname/api/xml/VetCase/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Vet Case</param>
+            <returns>Vet Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/VetCase/123457890 
+            (GET) http://eidss.hostname.org/api/json/VetCase/123457890 
+            (GET) http://eidss.hostname.org/api/xml/VetCase/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/VetCase/12687690000000").Result;
+            if (response.IsSuccessStatusCode) {
+                var hc = response.Content.ReadAsAsync&lt;VetCase&gt;().Result;
+                Console.WriteLine("{0}", hc.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.VetCaseController.List(eidss.openapi.contract.VetCaseListFilter)">
+            <summary>Get list of brief information of Vet Case</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/VetCase/list?filter={...} <br/>
+            http://hostname/api/json/VetCase/list?filter={...} <br/>
+            http://hostname/api/xml/VetCase/list?filter={...} <br/>
+            </remarks>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Vet Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/VetCase/list?filter={...}
+            (GET) http://eidss.hostname.org/api/json/VetCase/list?filter={...}
+            (GET) http://eidss.hostname.org/api/xml/VetCase/list?filter={...}
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var filter = new VetCaseListFilter() { CaseID = "HGETBTB0130005" };
+            var serializer = new JavaScriptSerializer();
+            var filterJson = string.Format("?filter={0}", serializer.Serialize(filter));
+            
+            HttpResponseMessage response = client.GetAsync("api/VetCase/list" + filterJson).Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;VetCaseListItem&gt;&gt;().Result;
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.HumanCaseTestController">
+            <summary>Human Case Test REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseTestController.Post(System.Int64,eidss.openapi.contract.Test)">
+            <summary>Create new Human Case Test</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/HumanCase/{idCase}/Test [value in the body] <br/>
+            http://hostname/api/json/HumanCase/{idCase}/Test [value in the body] <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/Test [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Human Case identifier</param>
+            <param name="value">Human Case Test for create</param>
+            <returns>Created Human Case Test</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/HumanCase/123457890/Test [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/HumanCase/123457890/Test [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/HumanCase/123457890/Test [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseTestController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Human Case Test by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/HumanCase/{idCase}/Test/{id} <br/>
+            http://hostname/api/json/HumanCase/{idCase}/Test/{id} <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/Test/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Human Case</param>
+            <param name="id">Identifier of Human Case Test</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/HumanCase/123457890/Test/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/HumanCase/123457890/Test/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/HumanCase/123457890/Test/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case Test with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.GisController">
+            <summary>Geographical REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.GisController.Get">
+            <summary>Get country list</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Gis/ <br/>
+            http://hostname/api/json/Gis/ <br/>
+            http://hostname/api/xml/Gis/ <br/>
+            </remarks>
+            <returns>Country list</returns>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Gis/ 
+            (GET) http://eidss.hostname.org/api/json/Gis/ 
+            (GET) http://eidss.hostname.org/api/xml/Gis/ 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Gis/").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                // get country list
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                foreach (var p in list) {
+                    Console.WriteLine("{0}", p.name);
+                }
+            }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.GisController.Get(System.Int64)">
+            <summary>Get region list for country</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Gis/{country} <br/>
+            http://hostname/api/json/Gis/{country} <br/>
+            http://hostname/api/xml/Gis/{country} <br/>
+            </remarks>
+            <param name="country">Identifier of country</param>
+            <returns>Region list</returns>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Gis/780000000 
+            (GET) http://eidss.hostname.org/api/json/Gis/780000000 
+            (GET) http://eidss.hostname.org/api/xml/Gis/780000000 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Gis").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                // get country list
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                foreach (var p in list) {
+                    Console.WriteLine("{0}", p.name);
+                }
+                var countryGeorgia = list.Single(c => c.name == "Georgia").id;
+                // get region list for Georgia
+                response = client.GetAsync(string.Format("api/Gis/{0}", countryGeorgia)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                    foreach (var p in list) {
+                        Console.WriteLine("{0}", p.name);
+                    }
+                }
+                else
+                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Country with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.GisController.Get(System.Int64,System.Int64)">
+            <summary>Get rayon list for country and region</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Gis/{country}/{region} <br/>
+            http://hostname/api/json/Gis/{country}/{region} <br/>
+            http://hostname/api/xml/Gis/{country}/{region} <br/>
+            </remarks>
+            <param name="country">Identifier of country</param>
+            <param name="region">Identifier of region</param>
+            <returns>Rayon list</returns>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Gis/780000000/37030000000 
+            (GET) http://eidss.hostname.org/api/json/Gis/780000000/37030000000 
+            (GET) http://eidss.hostname.org/api/xml/Gis/780000000/37030000000 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Gis").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                // get country list
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                foreach (var p in list) {
+                    Console.WriteLine("{0}", p.name);
+                }
+                var countryGeorgia = list.Single(c => c.name == "Georgia").id;
+                // get region list for Georgia
+                response = client.GetAsync(string.Format("api/Gis/{0}", countryGeorgia)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                    foreach (var p in list) {
+                        Console.WriteLine("{0}", p.name);
+                    }
+                    var regionAdjara = list.Single(c => c.name == "Adjara").id;
+                    // get rayon list for Georgia and Adjara
+                    response = client.GetAsync(string.Format("api/Gis/{0}/{1}", countryGeorgia, regionAdjara)).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                        foreach (var p in list) {
+                            Console.WriteLine("{0}", p.name);
+                        }
+                    }
+                    else
+                        Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                }
+                else
+                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Country with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Region with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.GisController.Get(System.Int64,System.Int64,System.Int64)">
+            <summary>Get settlement list for country, region and rayon</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Gis/{country}/{region}/{rayon} <br/>
+            http://hostname/api/json/Gis/{country}/{region}/{rayon} <br/>
+            http://hostname/api/xml/Gis/{country}/{region}/{rayon} <br/>
+            </remarks>
+            <param name="country">Identifier of country</param>
+            <param name="region">Identifier of region</param>
+            <param name="rayon">Identifier of rayon</param>
+            <returns>Settlement list</returns>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Gis/780000000/37030000000/1343010000000 
+            (GET) http://eidss.hostname.org/api/json/Gis/780000000/37030000000/1343010000000 
+            (GET) http://eidss.hostname.org/api/xml/Gis/780000000/37030000000/1343010000000 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Gis").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                // get country list
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                foreach (var p in list) {
+                    Console.WriteLine("{0}", p.name);
+                }
+                var countryGeorgia = list.Single(c => c.name == "Georgia").id;
+                // get region list for Georgia
+                response = client.GetAsync(string.Format("api/Gis/{0}", countryGeorgia)).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                    foreach (var p in list) {
+                        Console.WriteLine("{0}", p.name);
+                    }
+                    var regionAdjara = list.Single(c => c.name == "Adjara").id;
+                    // get rayon list for Georgia and Adjara
+                    response = client.GetAsync(string.Format("api/Gis/{0}/{1}", countryGeorgia, regionAdjara)).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                        foreach (var p in list) {
+                            Console.WriteLine("{0}", p.name);
+                        }
+                        var rayonBatumi = list.Single(c => c.name == "Batumi").id;
+                        // get settlement list for Georgia, Adjara and Batumi
+                        response = client.GetAsync(string.Format("api/Gis/{0}/{1}/{2}", countryGeorgia, regionAdjara, rayonBatumi)).Result;
+                        if (response.IsSuccessStatusCode)
+                        {
+                            list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Reference&gt;&gt;().Result;
+                            foreach (var p in list) {
+                                Console.WriteLine("{0}", p.name);
+                            }
+                        }
+                        else
+                            Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                    }
+                    else
+                        Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                }
+                else
+                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Country with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Region with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Rayon with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.DiagnosisController">
+            <summary>Diagnosis REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.DiagnosisController.Get">
+            <summary>Get list of diagnosis with specified type</summary>
+            <returns>List of diagnosis</returns>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Diagnosis <br/>
+            http://hostname/api/json/Diagnosis <br/>
+            http://hostname/api/xml/Diagnosis <br/>
+            </remarks>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Diagnosis
+            (GET) http://eidss.hostname.org/api/json/Diagnosis
+            (GET) http://eidss.hostname.org/api/xml/Diagnosis
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/Diagnosis").Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;Diagnosis&gt;&gt;().Result
+                    .Where(c => !c.isAggregate &amp;&amp; (c.HACode &amp; 2) != 0);
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.name);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.HumanCaseController">
+            <summary>Human Case REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseController.Post(eidss.openapi.contract.HumanCase)">
+            <summary>Create new Human Case</summary>
+            <remarks>HTTP POST verb<br/>
+            http://hostname/api/HumanCase [value in the body] <br/>
+            http://hostname/api/json/HumanCase [value in the body] <br/>
+            http://hostname/api/xml/HumanCase [value in the body] <br/>
+            </remarks>
+            <param name="value">Human Case for create</param>
+            <returns>Created Human Case</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/HumanCase [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/HumanCase [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/HumanCase [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseController.Put(System.Int64,eidss.openapi.contract.HumanCase)">
+            <summary>Update existing Human Case</summary>
+            <remarks>HTTP PUT verb<br/>
+            http://hostname/api/HumanCase/{id} [value in the body] <br/>
+            http://hostname/api/json/HumanCase/{id} [value in the body] <br/>
+            http://hostname/api/xml/HumanCase/{id} [value in the body] <br/>
+            </remarks>
+            <param name="id">Identifier of Human Case</param>
+            <param name="value">Updating Human Case</param>
+            <returns>Updated Human Case</returns>
+            <example><code>
+            (PUT) http://eidss.hostname.org/api/HumanCase/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/json/HumanCase/123457890 [data in the body] 
+            (PUT) http://eidss.hostname.org/api/xml/HumanCase/123457890 [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseController.Delete(System.Int64)">
+            <summary>Delete Human Case by it's identifier</summary>
+            <remarks>HTTP DELETE verb<br/>
+            http://hostname/api/HumanCase/{id} <br/>
+            http://hostname/api/json/HumanCase/{id} <br/>
+            http://hostname/api/xml/HumanCase/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Human Case</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/HumanCase/123457890 
+            (DELETE) http://eidss.hostname.org/api/json/HumanCase/123457890 
+            (DELETE) http://eidss.hostname.org/api/xml/HumanCase/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.DeleteAsync("api/HumanCase/12687690000000").Result;
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Deleted");
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseController.Get(System.Int64)">
+            <summary>Get Human Case by it's identifier</summary>
+            <remarks>HTTP GET verb<br/>
+            http://hostname/api/HumanCase/{id} <br/>
+            http://hostname/api/json/HumanCase/{id} <br/>
+            http://hostname/api/xml/HumanCase/{id} <br/>
+            </remarks>
+            <param name="id">Identifier of Human Case</param>
+            <returns>Human Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/HumanCase/123457890 
+            (GET) http://eidss.hostname.org/api/json/HumanCase/123457890 
+            (GET) http://eidss.hostname.org/api/xml/HumanCase/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var response = client.GetAsync("api/HumanCase/12687690000000").Result;
+            if (response.IsSuccessStatusCode) {
+                var hc = response.Content.ReadAsAsync&lt;HumanCase&gt;().Result;
+                Console.WriteLine("{0}", hc.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseController.List(eidss.openapi.contract.HumanCaseListFilter)">
+            <summary>Get list of brief information of Human Case</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/HumanCase/list?filter={...} <br/>
+            http://hostname/api/json/HumanCase/list?filter={...} <br/>
+            http://hostname/api/xml/HumanCase/list?filter={...} <br/>
+            </remarks>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Human Case</returns>
+            <example><code>
+            (GET) http://eidss.hostname.org/api/HumanCase/list?filter={...}
+            (GET) http://eidss.hostname.org/api/json/HumanCase/list?filter={...}
+            (GET) http://eidss.hostname.org/api/xml/HumanCase/list?filter={...}
+            </code></example>
+            <example><code>
+            // C#
+            var organization = "organization";
+            var username = "username";
+            var language = "en";
+            var externalSystem = ""; // optional
+            var password = "password";
+            var authInfo = string.Format("{0}@{1}@{2}@{3}:{4}", organization, username, language, externalSystem, password);
+            var client = new HttpClient() { BaseAddress = new Uri("http://eidss.hostname.org/") };
+            var basic = string.Format("Basic {0}", Convert.ToBase64String(Encoding.Default.GetBytes(authInfo)));
+            client.DefaultRequestHeaders.Add("Authorization", basic);
+            
+            var filter = new HumanCaseListFilter() { CaseID = "HGETBTB0130005" };
+            var serializer = new JavaScriptSerializer();
+            var filterJson = string.Format("?filter={0}", serializer.Serialize(filter));
+            
+            HttpResponseMessage response = client.GetAsync("api/HumanCase/list" + filterJson).Result;
+            if (response.IsSuccessStatusCode) {
+                var list = response.Content.ReadAsAsync&lt;IEnumerable&lt;HumanCaseListItem&gt;&gt;().Result;
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+                }
+            else
+                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.HumanCaseSampleController">
+            <summary>Human Case Sample REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseSampleController.Post(System.Int64,eidss.openapi.contract.Sample)">
+            <summary>Create new Human Case Sample</summary>
+            <remarks>HTTP POST verb <br/>
+            http://hostname/api/HumanCase/{idCase}/Sample [value in the body] <br/>
+            http://hostname/api/json/HumanCase/{idCase}/Sample [value in the body] <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/Sample [value in the body] <br/>
+            </remarks>
+            <param name="idCase">Human Case identifier</param>
+            <param name="value">Human Case Sample for create</param>
+            <returns>Created Human Case Sample</returns>
+            <example><code>
+            (POST) http://eidss.hostname.org/api/HumanCase/123457890/Sample [data in the body] 
+            (POST) http://eidss.hostname.org/api/json/HumanCase/123457890/Sample [data in the body] 
+            (POST) http://eidss.hostname.org/api/xml/HumanCase/123457890/Sample [data in the body] 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.HumanCaseSampleController.Delete(System.Int64,System.Int64)">
+            <summary>Delete Human Case Sample by it's identifier</summary>
+            <remarks>HTTP DELETE verb <br/>
+            http://hostname/api/HumanCase/{idCase}/Sample/{id} <br/>
+            http://hostname/api/json/HumanCase/{idCase}/Sample/{id} <br/>
+            http://hostname/api/xml/HumanCase/{idCase}/Sample/{id} <br/>
+            </remarks>
+            <param name="idCase">Identifier of Human Case</param>
+            <param name="id">Identifier of Human Case Sample</param>
+            <example><code>
+            (DELETE) http://eidss.hostname.org/api/HumanCase/123457890/Sample/1122334455 
+            (DELETE) http://eidss.hostname.org/api/json/HumanCase/123457890/Sample/1122334455
+            (DELETE) http://eidss.hostname.org/api/xml/HumanCase/123457890/Sample/1122334455
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case Sample with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.ReferenceController">
+            <summary>Reference REST service for EIDSS Open API</summary>
+        </member>
+        <member name="M:eidss.openapi.web.Controllers.ReferenceController.Get(System.Int64)">
+            <summary>Get list of reference with specified type</summary>
+            <remarks>HTTP GET verb <br/>
+            http://hostname/api/Reference/{id} <br/>
+            http://hostname/json/api/Reference/{id} <br/>
+            http://hostname/xml/api/Reference/{id} <br/>
+            </remarks>
+            <param name="id">Type of reference</param>
+            <returns>List of reference</returns>
+            <example><code>
+            URL:
+            (GET) http://eidss.hostname.org/api/Reference/123457890 
+            (GET) http://eidss.hostname.org/json/api/Reference/123457890 
+            (GET) http://eidss.hostname.org/xml/api/Reference/123457890 
+            </code></example>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Reference with specified id is not found</exception>
+        </member>
+        <member name="T:eidss.openapi.web.Controllers.NamespaceDoc">
+            <summary>
+            REST service
+            </summary>
+            <remarks>
+            A RESTful application is an application that exposes its state and functionality as a set of resources that the clients can manipulate and conforms to a certain set of principles:<br/>
+            • All resources are uniquely addressable, usually through URIs; other addressing can also be used, though.<br/>
+            • All resources can be manipulated through a constrained set of well-known actions, usually CRUD (create, read, update, delete), represented most often through the HTTP's POST, GET, PUT and DELETE; it can be a different set or a subset though - for example, some implementations limit that set to read and modify only (GET and PUT) for example<br/>
+            • The data for all resources is transferred through any of a constrained number of well-known representations, usually HTML, XML or JSON;<br/>
+            • The communication between the client and the application is performed over a stateless protocol that allows for multiple layered intermediaries that can reroute and cache the requests and response packets transparently for the client and the application.<br/><br/>
+            <a href="http://en.wikipedia.org/wiki/Representational_state_transfer" target="">REST in wikipedia</a><br/>
+            </remarks>
+        </member>
+        <member name="T:eidss.openapi.web.NamespaceDoc">
+            <summary>
+            SOAP service
+            </summary>
+            <remarks>
+            SOAP, originally defined as Simple Object Access Protocol, is a protocol specification for exchanging structured information in the implementation of Web Services in computer networks. It relies on XML Information Set for its message format, and usually relies on other Application Layer protocols, most notably Hypertext Transfer Protocol (HTTP), for message negotiation and transmission.<br/>
+            <a href="http://en.wikipedia.org/wiki/SOAP" target="">SOAP in wikipedia</a><br/>
+            </remarks>
+        </member>
+        <member name="T:eidss.openapi.web.SoapService">
+            <summary>
+            Soap service for EIDSS Open API
+            </summary>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.Login(eidss.openapi.contract.Login)">
+            <summary>Login to the EIDSS</summary>
+            <param name="value">Login parameters</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">User login can't be empty</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">User with such login/password is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">The database version is absent or in incorrect format</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">Login is locked</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">Password is expired</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">Language is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">External system is not supported</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">Login is failed (general login error)</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <example><code>
+            // C#
+            try {
+                var client = new SoapServiceClient();
+                client.Login(new Login() { organization = "organization", user = "username", password = "password", language = "en" });
+            }
+            catch(FaultException e) {
+                Console.WriteLine("{0} - {1}", e.Code.Name, e.Reason.ToString());
+            }
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseCreate(eidss.openapi.contract.HumanCase)">
+            <summary>Create new Human Case</summary>
+            <param name="value">Human Case for create</param>
+            <returns>Created Human Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseUpdate(System.Int64,eidss.openapi.contract.HumanCase)">
+            <summary>Update existing Human Case</summary>
+            <param name="id">Identifier of Human Case</param>
+            <param name="value">Updating Human Case</param>
+            <returns>Updated Human Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseGet(System.Int64)">
+            <summary>Get Human Case by it's identifier</summary>
+            <param name="id">Identifier of Human Case</param>
+            <returns>Human Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseDelete(System.Int64)">
+            <summary>Delete Human Case by it's identifier</summary>
+            <param name="id">Identifier of Human Case</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseList(eidss.openapi.contract.HumanCaseListFilter)">
+            <summary>Get list of brief information of Human Case</summary>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Human Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <example><code>
+            // C#
+            try {
+                var client = new SoapServiceClient();
+                client.Login(new Login() { organization = "organization", user = "username", password = "password", language = "en" });
+            
+                var filter = new HumanCaseListFilter() { CaseID = "HGETBTB0130005" };
+                var list = client.HumanCaseList(filter);
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+            }
+            catch(FaultException e) {
+                Console.WriteLine("{0} - {1}", e.Code.Name, e.Reason.ToString());
+            }
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseSampleCreate(System.Int64,eidss.openapi.contract.Sample)">
+            <summary>Create new Human Case Sample</summary>
+            <param name="idHumanCase">Identifier of Human Case</param>
+            <param name="value">Human Case Sample for create</param>
+            <returns>Created Human Case Sample</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.HumanCaseSampleDelete(System.Int64,System.Int64)">
+            <summary>Delete Human Case Sample by it's identifier</summary>
+            <param name="idHumanCase">Identifier of Human Case</param>
+            <param name="id">Identifier of Human Case Sample</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Human Case Sample with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseCreate(eidss.openapi.contract.VetCase)">
+            <summary>Create new Vet Case</summary>
+            <param name="value">Vet Case for create</param>
+            <returns>Created Vet Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseUpdate(System.Int64,eidss.openapi.contract.VetCase)">
+            <summary>Update existing Vet Case</summary>
+            <param name="id">Identifier of Vet Case</param>
+            <param name="value">Updating Vet Case</param>
+            <returns>Updated Vet Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseGet(System.Int64)">
+            <summary>Get Vet Case by it's identifier</summary>
+            <param name="id">Identifier of Vet Case</param>
+            <returns>Vet Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseDelete(System.Int64)">
+            <summary>Delete Vet Case by it's identifier</summary>
+            <param name="id">Identifier of Vet Case</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseList(eidss.openapi.contract.VetCaseListFilter)">
+            <summary>Get list of brief information of Vet Case</summary>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Vet Case</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <example><code>
+            // C#
+            try {
+                var client = new SoapServiceClient();
+                client.Login(new Login() { organization = "organization", user = "username", password = "password", language = "en" });
+            
+                var filter = new VetCaseListFilter() { CaseID = "VGETBTB0130005" };
+                var list = client.VetCaseList(filter);
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p.CaseID);
+            }
+            catch(FaultException e) {
+                Console.WriteLine("{0} - {1}", e.Code.Name, e.Reason.ToString());
+            }
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseSampleCreate(System.Int64,eidss.openapi.contract.Sample)">
+            <summary>Create new Vet Case Sample</summary>
+            <param name="idVetCase">Identifier of Vet Case</param>
+            <param name="value">Vet Case Sample for create</param>
+            <returns>Created Vet Case Sample</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.VetCaseSampleDelete(System.Int64,System.Int64)">
+            <summary>Delete Vet Case Sample by it's identifier</summary>
+            <param name="idVetCase">Identifier of Vet Case</param>
+            <param name="id">Identifier of Vet Case Sample</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Vet Case Sample with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationCreate(eidss.openapi.contract.Organization)">
+            <summary>Create new Organization</summary>
+            <param name="value">Organization for create</param>
+            <returns>Created Organization</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationUpdate(System.Int64,eidss.openapi.contract.Organization)">
+            <summary>Update existing Organization</summary>
+            <param name="id">Identifier of Organization</param>
+            <param name="value">Updating Organization</param>
+            <returns>Updated Organization</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationGet(System.Int64)">
+            <summary>Get Organization by it's identifier</summary>
+            <param name="id">Identifier of Organization</param>
+            <returns>Organization</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationDelete(System.Int64)">
+            <summary>Delete Organization by it's identifier</summary>
+            <param name="id">Identifier of Organization</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationList(eidss.openapi.contract.OrganizationListFilter)">
+            <summary>Get list of brief information of Organization</summary>
+            <param name="filter">Filter</param>
+            <returns>List of brief information of Organization</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <example><code>
+            // C#
+            try {
+                var client = new SoapServiceClient();
+                client.Login(new Login() { organization = "organization", user = "username", password = "password", language = "en" });
+            
+                var filter = new OrganizationListFilter() { CaseID = "" };
+                var list = client.OrganizationList(filter);
+                foreach (var p in list)
+                    Console.WriteLine("{0}", p);
+            }
+            catch(FaultException e) {
+                Console.WriteLine("{0} - {1}", e.Code.Name, e.Reason.ToString());
+            }
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationPersonCreate(System.Int64,eidss.openapi.contract.Person)">
+            <summary>Create new Person</summary>
+            <param name="idOrganization">Identifier of Organization</param>
+            <param name="value">Person for create</param>
+            <returns>Created Person</returns>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">Reference is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">An attempt to set a readonly field was occured</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+        <member name="M:eidss.openapi.web.SoapService.OrganizationPersonDelete(System.Int64,System.Int64)">
+            <summary>Delete Person by it's identifier</summary>
+            <param name="idOrganization">Identifier of Organization</param>
+            <param name="id">Identifier of Person</param>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">Login is required</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">Access is denied</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">Validation object is failed</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Organization with specified id is not found</exception>
+            <exception cref="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">Person with specified id is not found</exception>
+            <example><code>
+            // C#
+            // TODO
+            </code></example>
+        </member>
+    </members>
+</doc>

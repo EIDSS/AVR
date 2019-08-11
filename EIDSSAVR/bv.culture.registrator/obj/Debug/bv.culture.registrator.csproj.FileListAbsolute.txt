@@ -1,0 +1,13 @@
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Debug\bv.culture.registrator.exe.config
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Debug\bv.culture.registrator.exe
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Debug\bv.culture.registrator.pdb
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Debug\bv.culture.registrator.exe
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Debug\bv.culture.registrator.pdb
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Debug\bv.culture.registrator.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\bin\Debug\bv.culture.registrator.exe.config
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\bin\Debug\bv.culture.registrator.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\bin\Debug\bv.culture.registrator.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\obj\Debug\bv.culture.registrator.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\obj\Debug\bv.culture.registrator.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\obj\Debug\bv.culture.registrator.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.culture.registrator\obj\Debug\bv.culture.registrator.pdb

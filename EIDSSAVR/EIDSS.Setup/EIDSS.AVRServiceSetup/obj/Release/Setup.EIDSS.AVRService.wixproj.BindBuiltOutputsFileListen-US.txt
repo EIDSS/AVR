@@ -1,0 +1,1 @@
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\bin\Release\en-US\EIDSS.AVRService.msi

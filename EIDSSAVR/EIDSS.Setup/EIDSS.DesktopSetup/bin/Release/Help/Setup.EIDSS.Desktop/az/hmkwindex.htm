@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Yoluxucu Xəstəliklərin Elektron Müşahidə Sistemi</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <script type="text/javascript">isIE=false</script>
+   <!--[if IE]>
+   <script type="text/javascript">isIE=true</script>
+   <![endif]-->
+
+   <!--HM_KEYWORD_INDEX_AS_LIST-->
+   <style type="text/css">
+       body { 
+        margin: 0; 
+        padding: 0; 
+        }
+       #keyword_entry_div {
+       	position: absolute;
+       	left: 5px;
+       	top: 5px;
+       	right: 5px;
+       	} 
+       #keyword_entry_div p {
+       	font-weight: bold;
+       }
+       #keyword_list_div {
+       	position: absolute;
+       	left: 5px;
+       	top: 45px;
+       	right: 5px;
+       	bottom: 5px;
+       	padding:0;
+       	} 
+       #keyword_entry {
+       	border: 1px solid silver;
+       	width: 100px;
+       	}
+       #keyword_list {
+       	border: 1px solid silver;
+       	width: 100%;
+      	height: 100%; 
+       	}
+       #keyword_menu {
+        display: none;
+	background: #fff;
+       	border: 1px solid silver;
+	padding: 10px;
+	box-shadow: 4px 4px 8px #888;
+	border-radius: 6px 6px;
+       	}
+       #keyword_menu a {
+       	display: block;
+        text-decoration: none;
+	color: #000;
+	padding: 2px 2px 2px 18px;
+	background: url(hm-keyword-page-icon.gif) top left no-repeat;
+       	}
+       #keyword_menu a:hover {
+       	background: #225687 url(hm-keyword-page-icon.gif) top left no-repeat;
+        text-decoration: none;
+	color: #fff;
+       	}               
+       #keyword_menu_no_entry {
+        display: none;
+	    background: #fff;
+       	border: 1px solid silver;
+	    padding: 5px;
+	    box-shadow: 4px 4px 8px #888;
+	    border-radius: 6px 6px;
+	    width: 50%;
+	    font-size:80%;
+       	}
+   </style>       
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="hmcontextids.js"></script>
+</head>
+<body>
+<div id="keyword_menu"></div>
+<div id="keyword_menu_no_entry">To locate information about this keyword, please select one of the subentries in the list.</div>
+<div id="keyword_entry_div"><p>Enter keyword:</p><input type="text" id="keyword_entry" onkeyup="keywordEntryKey()" /></div>
+<div id="keyword_list_div">
+  <select id="keyword_list" size="2">
+  <option value="basic_reference_editor.htm">abse istinad redaktoru</option>
+  <option value="avr_getting_started.htm">analizlər modulu</option>
+  <option value="aggregatesettings.htm">aqreqat ayarları</option>
+  <option value="">aqreqat insan xəstəlik hadisəsi</option>
+  <option value="hac_search.htm">&nbsp;&nbsp;&nbsp;axtar</option>
+  <option value="'Aqreqat İnsan Xəstəlik Hadisələrini yarat','hac_create.htm','Aqreqat İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et','hac_paper_forms.htm'">&nbsp;&nbsp;&nbsp;əlavə et</option>
+  <option value="'Aqreqat İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et','hac_paper_forms.htm','Xülasə hesabatını yarat','hac_summary.htm'">&nbsp;&nbsp;&nbsp;görüntü</option>
+  <option value="'Aqreqat İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et','hac_paper_forms.htm','Aqreqat İnsan Xəstəlik Hadisələrini redaktə et','hac_edit.htm'">&nbsp;&nbsp;&nbsp;redaktə et</option>
+  <option value="hac_delete.htm">&nbsp;&nbsp;&nbsp;sil</option>
+  <option value="avr_getting_started.htm">AVH</option>
+  <option value="avr_chart_management.htm">AVH diaqramının idarə olunması</option>
+  <option value="avr_in_maps.htm">AVH-də olan xəritələr</option>
+  <option value="lab_l01.htm">Baytarlıq nümunələri üçün ferma sahibinin soyadı, adı və atasının adı göstərilir.</option>
+  <option value="lab_l01.htm">Bu düymə yalnız Daxil olunub statusu olan nümunələr üçün mümkündür.</option>
+  <option value="">çap etmə</option>
+  <option value="printing_paper_forms.htm">&nbsp;&nbsp;&nbsp;kağız forması</option>
+  <option value="printing_standard_reports.htm">&nbsp;&nbsp;&nbsp;standart hesabat</option>
+  <option value="'Giriş\Çıxış','logging_on.htm','İstifadəçinin Dəyişdirilməsi','switching_user.htm'">çıxış</option>
+  <option value="lab_l01.htm">Diagnoz</option>
+  <option value="clinical_diagnosis_editor.htm">diaqnozlar</option>
+  <option value="avr_chart_management.htm">diaqramının idarə olunması (AVH)</option>
+  <option value="lab_l01.htm">Düymələr</option>
+  <option value="unique_numbering_schema.htm">fərdi nömrələmə sxemi</option>
+  <option value="farms.htm">ferma təsərrüfatı</option>
+  <option value="detail_forms.htm">forma</option>
+  <option value="lab_l01.htm">Funksional Sahə</option>
+  <option value="lab_l01.htm">Funksional Sahə bu sütunda göstərilir.</option>
+  <option value="'Giriş\Çıxış','logging_on.htm','İstifadəçinin Dəyişdirilməsi','switching_user.htm'">giriş</option>
+  <option value="">giriş hüquqları</option>
+  <option value="security.htm">&nbsp;&nbsp;&nbsp;bir funksiyaya</option>
+  <option value="access_rights.htm">&nbsp;&nbsp;&nbsp;bir kulturaya (mikroorqanizm)</option>
+  <option value="">hadisə qeydiyyatı</option>
+  <option value="system_event_log.htm">&nbsp;&nbsp;&nbsp;görüntü</option>
+  <option value="lab_l01.htm">Hazırkı diqanoz göstərilir. Bu xana sesiyalar zamanı boş olur.</option>
+  <option value="">hesabat</option>
+  <option value="printing_standard_reports.htm">&nbsp;&nbsp;&nbsp;çap etmə</option>
+  <option value="lab_l01.htm">Heyvanın nömrəsi/növün nömrəsi</option>
+  <option value="lab_l01.htm">İnsan nümunələri üçün xəstənin soyadı, adı və atasının adı göstərilir.</option>
+  <option value="lab_l01.htm">İnsan xəstəlik hadisələri üçün boş xana.</option>
+  <option value="">insan xəstəlik hadisəsi</option>
+  <option value="'Xəstəlik Hadisəsini axtar','hc_search.htm','Brauz rejimində axtar','hc_search_browse.htm'">&nbsp;&nbsp;&nbsp;axtar</option>
+  <option value="'İnsan Xəstəlik Hadisələrinin de-duplikasiyası-2','hc_deduplication.htm','Aqreqat İnsan Xəstəlik Hadisələrinin duplikasiyası','hac_deduplication.htm','Aqreqat heyvan xəstəlik hadisələrinin de-duplikasiyası','vac_deduplication.htm','Aqreqat baytarlıq tədbirinin de-duplikasiyası','vaa_deduplication.htm'">&nbsp;&nbsp;&nbsp;duplikasiya</option>
+  <option value="'Təcili bildirişi yarat','hc_urgent_notification.htm','Təfərrüatlı Araşdırma Məlumatlarınının qeydiyyatını apar','hc_detailed.htm'">&nbsp;&nbsp;&nbsp;əlavə et</option>
+  <option value="hc_edit.htm">&nbsp;&nbsp;&nbsp;redaktə et</option>
+  <option value="'Xəstəlik Hadisəsini axtar','hc_search.htm','Brauz rejimində axtar','hc_search_browse.htm'">insan xəstəlik hadisəsini axtar</option>
+  <option value="lab_l01.htm">İribuynuzlu baytarlıq nümunələri üçün heyvanın nömrəsi göstərilir.</option>
+  <option value="employees_users.htm">işçilər</option>
+  <option value="">istifadəçi</option>
+  <option value="access_rights.htm">&nbsp;&nbsp;&nbsp;giriş hüquqları</option>
+  <option value="user_groups.htm">istifadəçi qrupları</option>
+  <option value="employees_users.htm">istifadəçilər</option>
+  <option value="switching_user.htm">istifadəçini_dəyişmək</option>
+  <option value="basic_reference_editor.htm">istinad redaktoru</option>
+  <option value="">kağız forması</option>
+  <option value="printing_paper_forms.htm">&nbsp;&nbsp;&nbsp;çap etmə</option>
+  <option value="clinical_diagnosis_editor.htm">klinik diaqnoz redaktoru</option>
+  <option value="clinical_diagnosis_editor.htm">klinik diaqnozlar</option>
+  <option value="">kultura</option>
+  <option value="access_rights.htm">&nbsp;&nbsp;&nbsp;giriş hüquqları</option>
+  <option value="replication_alerts.htm">məntəqə xəbərdarlığı</option>
+  <option value="eidss_sites.htm">məntəqələr</option>
+  <option value="repository_schema.htm">Muzey Sxemi</option>
+  <option value="unique_numbering_schema.htm">nömrələmə sxemi</option>
+  <option value="lab_l01.htm">Nümunələrə testləri seçmək üçün istifadəçi cədvəldə lazımı nümunələri seçməlidir, və sonra Testi Seç düyməsini basmalıdır. Testi Seç L20 forması açılacaq, və seçilmiş nümunələr burada əks olunacaq.</option>
+  <option value="lab_l01.htm">Nümunəyə təyin olunan testlərin ümumi sayı göstərilir.</option>
+  <option value="measure_reference_editor.htm">ölçü istinad redaktoru</option>
+  <option value="">parol</option>
+  <option value="'Giriş\Çıxış','logging_on.htm','Parolun Dəyişdirilməsi','changing_password.htm','İstifadəçinin Dəyişdirilməsi','switching_user.htm'">&nbsp;&nbsp;&nbsp;dəyişdirmək</option>
+  <option value="lab_l01.htm">Pasiyent/Ferma sahibi</option>
+  <option value="user_groups.htm">qruplar</option>
+  <option value="lab_l01.htm">Quş baytarlıq nümunələri üçün növlərin nömrəsi göstərilir.</option>
+  <option value="replication_setup.htm">replikasiya</option>
+  <option value="replication_setup.htm">replikasiyanın quraşdırılması</option>
+  <option value="system_preferences.htm">seçimlər</option>
+  <option value="persons_list.htm">şəxslər</option>
+  <option value="system_functions_list.htm">sistem funksiyaları</option>
+  <option value="security.htm">&nbsp;&nbsp;&nbsp;redaktə et</option>
+  <option value="system_functions_list.htm">sistem funksiyaları siyahısı</option>
+  <option value="system_preferences.htm">sistem seçimləri</option>
+  <option value="">sorğu</option>
+  <option value="create_query.htm">&nbsp;&nbsp;&nbsp;əlavə et</option>
+  <option value="copy_query.htm">&nbsp;&nbsp;&nbsp;köçürt</option>
+  <option value="edit_query.htm">&nbsp;&nbsp;&nbsp;redaktə et</option>
+  <option value="delete_query.htm">&nbsp;&nbsp;&nbsp;sil</option>
+  <option value="">sxem</option>
+  <option value="create_layout.htm">&nbsp;&nbsp;&nbsp;əlavə et</option>
+  <option value="copy_layout.htm">&nbsp;&nbsp;&nbsp;köçürt</option>
+  <option value="edit_layout.htm">&nbsp;&nbsp;&nbsp;redaktə et</option>
+  <option value="delete_layout.htm">&nbsp;&nbsp;&nbsp;sil</option>
+  <option value="unique_numbering_schema.htm">sxemi</option>
+  <option value="security.htm">təhlükəsizlik</option>
+  <option value="system_automatical_upgrade.htm">təkmiləşdirmə</option>
+  <option value="organisations.htm">təşkilatlar</option>
+  <option value="lab_l01.htm">Testi Seç</option>
+  <option value="lab_l01.htm">Testlərin Sayı</option>
+  <option value="replication_alerts.htm">xəbərdarlıq</option>
+  <option value="replication_alerts.htm">xəbərdarlıqlar</option>
+  <option value="lab_l01.htm">Xəstəlik hadisəsinin nömrəsi və ya sesiyanın nömrəsi bu sütunda göstərilir.</option>
+  <option value="lab_l01.htm">Xəstəlik hadisəsinin nömrəsi/Sesiyanın nömrəsi</option>
+  <option value="system_automatical_upgrade.htm">Yeniləmə</option>
+  <option value="eidss_sites.htm">YXEMS məntəqələri</option>
+  <option value="what_is_eidss.htm">YXEMS_nədir</option>
+</select>
+
+  <select id="keyword_list_dummy" size="5" style="display:none"></select>
+</div>
+
+   <script type="text/javascript">
+     /* Script for keyword listbox */
+     var idxMenu = null;
+     var idxEntries = new Array(); 
+     var idxEntryHeight = 0;
+
+     function keywordHideMenu() {	
+        if (idxMenu!=null) {
+          idxMenu.stop();
+          idxMenu.hide();
+          idxMenu = null;
+        }
+     }     	
+
+     function keywordEntryKey(value) {
+    	var aKeyword = $('#keyword_entry').attr('value').toLowerCase();
+     	var list = document.getElementById('keyword_list');
+    	var idx1 = 0;
+    	var idx2 = idxEntries.length-1;
+    	while (idx2>idx1+1) {
+    	  var delta = parseInt((idx2-idx1)/2) + idx1;
+    	  if (aKeyword > idxEntries[delta]) idx1 = delta;
+    	  else idx2 = delta;  
+        }
+    	$('#keyword_entry').unbind('onkeyup');
+    	if (aKeyword < idxEntries[idx1]) idx2 = idx1;
+        list.selectedIndex = idx2;
+        if ((idxEntryHeight>0) && (idx2<idxEntries.length-1)) {
+          $(list).stop();	
+          idx1 = idx2 * idxEntryHeight;
+          if (idx1 > ((idxEntryHeight*idxEntries.length)-$(list).innerHeight())) idx1 = (idxEntryHeight*idxEntries.length)-$(list).innerHeight(); 
+          $(list).scrollTop(idx1);
+        } 
+    	$('#keyword_entry').bind('keywordEntryKey');
+        keywordHideMenu();
+     }
+    
+     function keywordListClick(event) {
+     	var list = document.getElementById('keyword_list');
+        var aKeyword = list.options[list.selectedIndex].text;
+        var aTarget = list.options[list.selectedIndex].value; 
+
+        if (aKeyword.substr(0,1)==String.fromCharCode(160)) {
+          var i = list.selectedIndex-1;
+          var aKw = '';
+          while (i>0) {
+          	aKw = list.options[i].text;
+          	if (aKw.substr(0,1)!=String.fromCharCode(160)) { 
+          	  aKeyword = aKw + ', ' + $.trim(aKeyword);
+          	  break;
+          	}
+          	i--;
+          }
+        }
+
+        $('#keyword_entry').attr('value', aKeyword);        
+        keywordHideMenu();
+
+        //if option.value starts with an "'", it's a list of entries => display menu 
+     	if (aTarget.substring(0,1)==String.fromCharCode(39)) {
+     	  var links = aTarget.substring(1,aTarget.length-1).split("','");
+          var i = 0;
+          var aCode = '';
+          while (i<links.length-1) {
+          	aCode = aCode + '<p><a href="javascript:keywordListJump(' + "'" + links[i+1] + "'" + ')">' + links[i] + '</a></p>';
+          	i = i+2;
+          }
+          
+          idxMenu = $('#keyword_menu');
+          idxMenu.html(aCode);
+          idxMenu.css({'z-index':99, 'position':'absolute', 'right':'4px'});
+          var ypos = event.clientY;
+          if ((ypos + idxMenu.outerHeight()) > $(window).height()) ypos = event.clientY - idxMenu.outerHeight();
+          idxMenu.css('top', ypos + 'px');
+          if (hmAnimate) idxMenu.show('fast');
+          else idxMenu.show();
+     	}
+     	else if ((aTarget=='undefined')||(aTarget=='')) {
+          idxMenu = $('#keyword_menu_no_entry');
+          idxMenu.css({'z-index':99, 'position':'absolute', 'right':'4px', 'opacity':1});
+          var ypos = event.clientY;
+          if ((ypos + idxMenu.outerHeight()) > $(window).height()) ypos = event.clientY - idxMenu.outerHeight();
+          idxMenu.css('top', ypos + 'px');
+          if (hmAnimate) idxMenu.show('fast');
+          else idxMenu.show();
+          idxMenu.fadeOut(5000);
+     	}
+     	else {
+     	  keywordListJump(aTarget);
+     	}	
+     }
+     
+     function keywordListJump(aTarget) {
+        parent.document.getElementById("hmcontent").src = aTarget;
+
+        //Google adwords tracking, if enabled:
+        if (parent.frames.length>0) {
+          if (parent.gaaccount) { 
+            var list = document.getElementById('keyword_list');
+            parent.track("index", idxEntries[list.selectedIndex]); 
+          }
+        }          
+     }
+     
+     $(document).ready( function() {
+       idxEntryHeight = parseInt(($('#keyword_list_dummy').innerHeight()/5)+0.5);
+       if (isIE) idxEntryHeight = 0; //autoscrolling in keyword list works well in IE
+       var kwmain = '';
+       var kw = '';
+       var list = document.getElementById('keyword_list');
+       $(list).click(function(event) { keywordListClick(event) });
+       	
+       for (var i=0; i < list.options.length; i++) {
+         kw = list.options[i].text;
+         
+         if ( (kw.substring(0,3)==String.fromCharCode(160,160,160)) || (kw.substring(0,3)==String.fromCharCode(32,32,32)) ) {
+           kw = kw.substr(3);	
+           idxEntries.push( kwmain+', '+kw.toLowerCase() );
+         }            
+         else {  
+           kwmain = kw.toLowerCase();
+           idxEntries.push(kwmain); 
+         }            
+       }
+
+       $(list).scroll(keywordHideMenu);
+       	
+       $(window).resize(function() { 
+         $('#keyword_entry').css('width', $('#keyword_list').width()+'px');
+	     $('#keyword_list_div').css('top', $('#keyword_entry_div').offset().top + $('#keyword_entry_div').outerHeight() + 5 + 'px');
+       });
+	 
+	   $(window).resize();
+	   
+     });
+   </script>
+ 
+</body>
+</html>

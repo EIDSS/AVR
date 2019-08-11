@@ -1,0 +1,303 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman',Times,Georgia,serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.fnt1 /* BarCode */
+{
+ font-size: 18pt;
+ font-family: AdvC39d;
+}
+span.fnt2 /* Barcode ID */
+{
+}
+span.fnt3 /* Bullet */
+{
+}
+span.fnt4 /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.fnt5 /* Comment */
+{
+}
+span.fnt6 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.fnt7 /* Heading2 */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.fnt8 /* Image Caption */
+{
+ font-size: 8pt;
+}
+span.fnt9 /* Important */
+{
+ color: #ff0000;
+}
+span.fnt10 /* Keyboard */
+{
+ font-family: 'Courier Bold';
+ font-weight: bold;
+}
+span.fnt11 /* List */
+{
+}
+span.fnt12 /* List2 */
+{
+}
+span.fnt13 /* Notes */
+{
+ font-size: 10pt;
+ font-family: Arial,Helvetica,sans-serif;
+ font-style: italic;
+}
+span.fnt14 /* Picture */
+{
+ font-size: 10pt;
+ font-weight: bold;
+}
+span.fnt15 /* Procedure */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.fnt16 /* See_also */
+{
+ font-size: 12pt;
+ font-style: italic;
+ font-weight: bold;
+}
+span.fnt17 /* Table */
+{
+}
+span.fnt18 /* Table 2 */
+{
+ font-size: 8pt;
+}
+span.fnt19 /* table_body */
+{
+}
+span.fnt20 /* Table_Header */
+{
+ font-weight: bold;
+ color: #ffffff;
+}
+span.fnt21 /* Table_Name */
+{
+ font-weight: bold;
+ color: #ffffff;
+}
+span.fnt22 /* Value */
+{
+ font-size: 10pt;
+ font-family: Century;
+ font-weight: bold;
+ color: #808080;
+}
+span.fnt23 /* Warning */
+{
+ font-size: 12pt;
+ font-weight: bold;
+ color: #ff0000;
+}
+/* Paragraph styles */
+p, p.par0, div.par0 /* Normal */
+{
+ text-align: justify;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 3px 0px;
+}
+.par1 /* Barcode ID */
+{
+ font-size: 11pt;
+ text-align: center;
+}
+.par2 /* Bullet */
+{
+ font-size: 11pt;
+ text-align: left;
+ margin: 0px 0px 0px 19px;
+}
+.par3 /* Code Example */
+{
+ font-size: 8pt;
+ text-align: left;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+ margin: 0px 0px 0px 0px;
+}
+.par4 /* Comment */
+{
+ font-size: 11pt;
+}
+.par5 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: justify;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 3px 0px 3px 0px;
+}
+.par6 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 13px 9px 4px 0px;
+}
+.par7 /* Image Caption */
+{
+ font-size: 8pt;
+}
+.par8 /* Important */
+{
+ font-size: 11pt;
+ border-color: #000000;
+ border-style: solid;
+ border-width: thin;
+ padding: 2px 2px 2px 2px;
+ margin: 0px 142px 0px 142px;
+}
+.par9 /* Keyboard */
+{
+ font-size: 11pt;
+ margin: 0px 0px 0px 14px;
+}
+.par10 /* List */
+{
+ font-size: 11pt;
+ margin: 0px 0px 0px 14px;
+}
+.par11 /* List2 */
+{
+ font-size: 11pt;
+ margin: 0px 0px 0px 50px;
+}
+.par12 /* Notes */
+{
+ font-size: 10pt;
+ text-align: left;
+ margin: 5px 0px 5px 31px;
+}
+.par13 /* Picture */
+{
+ font-size: 10pt;
+ text-align: center;
+ margin: 0px 0px 6px 14px;
+}
+.par14 /* Procedure */
+{
+ font-size: 11pt;
+ text-align: left;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ margin: 13px 0px 4px 9px;
+}
+.par15 /* See_also */
+{
+ font-size: 12pt;
+ text-align: left;
+ margin: 8px 0px 5px 0px;
+}
+.par16 /* Table */
+{
+ font-size: 11pt;
+ margin: 8px 0px 8px 0px;
+}
+.par17 /* Table 2 */
+{
+ font-size: 8pt;
+ margin: 8px 0px 8px 0px;
+}
+.par18 /* table_body */
+{
+ font-size: 11pt;
+ margin: 0px 10px 0px 14px;
+}
+.par19 /* Table_Name */
+{
+ font-size: 11pt;
+ text-align: left;
+ margin: 9px 0px 4px 0px;
+}
+.par20 /* Value */
+{
+ font-size: 10pt;
+ text-align: left;
+ margin: 3px 0px 3px 15px;
+}
+.par21 /* Warning */
+{
+ font-size: 12pt;
+ border-color: #000000;
+ border-style: solid;
+ border-width: thin;
+ padding: 2px 2px 2px 2px;
+ margin: 6px 142px 6px 142px;
+}
+div.hmrotate90  { display:inline-block; transform: -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; transform: -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }

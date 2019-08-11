@@ -1,0 +1,17 @@
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\InstanceManager.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\InstanceManager.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\InstanceManager.exe.CodeAnalysisLog.xml
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\InstanceManager.exe.lastcodeanalysissucceeded
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\Microsoft.Deployment.Compression.Cab.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\Microsoft.Deployment.Compression.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Debug\Microsoft.Deployment.WindowsInstaller.Package.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.UI.CommanderForm.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.UI.InstanceManagerForm.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.Properties.Resources.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.csproj.GenerateResource.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.csproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Debug\InstanceManager.pdb

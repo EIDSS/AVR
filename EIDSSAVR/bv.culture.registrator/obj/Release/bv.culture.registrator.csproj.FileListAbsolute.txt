@@ -1,0 +1,14 @@
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Release\bv.culture.registrator.exe.config
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Release\bv.culture.registrator.exe
+C:\NGDev\EIDSS61\bv.culture.registrator\bin\Release\bv.culture.registrator.pdb
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Release\bv.culture.registrator.exe
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Release\bv.culture.registrator.pdb
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Release\bv.culture.registrator.csprojAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.culture.registrator\obj\Release\bv.culture.registrator.csproj.CoreCompileInputs.cache
+C:\NGDev\EIDSSAVR\bv.culture.registrator\bin\Release\bv.culture.registrator.exe.config
+C:\NGDev\EIDSSAVR\bv.culture.registrator\bin\Release\bv.culture.registrator.exe
+C:\NGDev\EIDSSAVR\bv.culture.registrator\bin\Release\bv.culture.registrator.pdb
+C:\NGDev\EIDSSAVR\bv.culture.registrator\obj\Release\bv.culture.registrator.csprojAssemblyReference.cache
+C:\NGDev\EIDSSAVR\bv.culture.registrator\obj\Release\bv.culture.registrator.csproj.CoreCompileInputs.cache
+C:\NGDev\EIDSSAVR\bv.culture.registrator\obj\Release\bv.culture.registrator.exe
+C:\NGDev\EIDSSAVR\bv.culture.registrator\obj\Release\bv.culture.registrator.pdb

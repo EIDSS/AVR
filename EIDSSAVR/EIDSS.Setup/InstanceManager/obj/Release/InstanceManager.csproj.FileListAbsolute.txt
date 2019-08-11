@@ -1,0 +1,15 @@
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\InstanceManager.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\InstanceManager.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\Microsoft.Deployment.Compression.Cab.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\Microsoft.Deployment.Compression.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\bin\Release\Microsoft.Deployment.WindowsInstaller.Package.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.UI.CommanderForm.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.UI.InstanceManagerForm.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.Properties.Resources.resources
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.csproj.GenerateResource.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.csproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.exe
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\InstanceManager\obj\Release\InstanceManager.pdb

@@ -1,0 +1,968 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Electronic Integrated Disease Surveillance System</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="system_requirements_and_set-up.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">დათვალიერება</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="what_is_eidss.htm" target="hmcontent"><span class="heading2" id="s1.1">რა არის დზეის-ი?</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="getting_started.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">დაწყება</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="logging_on.htm" target="hmcontent"><span class="heading2" id="s2.1">Log In\Out</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="system_automatical_upgrade.htm" target="hmcontent"><span class="heading2" id="s2.2">სისტემის ავტომატური მოდერნიზება</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="changing_password.htm" target="hmcontent"><span class="heading2" id="s2.3">პაროლის შეცვლა</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="switching_user.htm" target="hmcontent"><span class="heading2" id="s2.4">მომხმარების გადართვა</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="main_menu_and_toolbar.htm" target="hmcontent"><span class="heading2" id="s2.5">მთავარი მენიუ და პანელი</span></a>
+</li>
+<li class="heading2" id="i2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="multiligual_support.htm" target="hmcontent"><span class="heading2" id="s2.6">მრავალენოვანი მხარდაჭერა</span></a>
+</li>
+<li class="heading2" id="i2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="system_preferences.htm" target="hmcontent"><span class="heading2" id="s2.7">სისტემის პრეფერენციები</span></a>
+</li>
+<li class="heading2" id="i2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="replication_setup.htm" target="hmcontent"><span class="heading2" id="s2.8">საიტის გაფრთხილებების გამოწერა</span></a>
+</li>
+<li class="heading2" id="i2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="closing_windows.htm" target="hmcontent"><span class="heading2" id="s2.9">მონაცემების შენახვის და/ან დახურვის ფანჯარა</span></a>
+</li>
+<li class="heading2" id="i2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="item_lists.htm" target="hmcontent"><span class="heading2" id="s2.10">საგანთა ჩამონათვალი</span></a>
+</li>
+<li class="heading2" id="i2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="searches.htm" target="hmcontent"><span class="heading2" id="s2.11">ძებნის სიები</span></a>
+</li>
+<li class="heading2" id="i2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="forms_custom.htm" target="hmcontent"><span class="heading2" id="s2.12">სიის და ძიების ფორმების რეგულირება</span></a>
+</li>
+<li class="heading2" id="i2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="detail_forms.htm" target="hmcontent"><span class="heading2" id="s2.13">დეტალური ფორმები</span></a>
+</li>
+<li class="heading2" id="i2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="maps.htm" target="hmcontent"><span class="heading2" id="s2.14">გეოგრაფიული ადგილმდებარეობები</span></a>
+</li>
+<li class="heading2" id="i2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="keyboard_navigation.htm" target="hmcontent"><span class="heading2" id="s2.15">ნავიგაცია</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="data_replication.htm" target="hmcontent"><span class="heading2" id="s2.16">მონაცემთა დუბლირება</span></a>
+</li>
+<li class="heading2" id="i2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.17" href="replication_alerts.htm" target="hmcontent"><span class="heading2" id="s2.17">მოციმციმე შეტყობინებები</span></a>
+</li>
+<li class="heading2" id="i2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.18" href="access_rights.htm" target="hmcontent"><span class="heading2" id="s2.18">წვდომის უფლებები</span></a>
+</li>
+<li class="heading2" id="i2.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.19" href="printing_standard_reports.htm" target="hmcontent"><span class="heading2" id="s2.19">მოხსენებები</span></a>
+</li>
+<li class="heading2" id="i2.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.20" href="printing_paper_forms.htm" target="hmcontent"><span class="heading2" id="s2.20">ფორმები</span></a>
+</li>
+<li class="heading2" id="i2.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.21" href="data_glossary.htm" target="hmcontent"><span class="heading2" id="s2.21">მონაცემთა ლექსიკონი</span></a>
+</li>
+<li class="heading2" id="i2.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.22" href="help.htm" target="hmcontent"><span class="heading2" id="s2.22">დახმარება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="veterinary_surveillance.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">ვეტერინარული ზედამხედველობა</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="vc_intro.htm" target="hmcontent"><span class="heading2" id="s3.1">შესავალი</span></a>
+</li>
+<li class="heading2" id="i3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="vc_forms.htm" target="hmcontent"><span class="heading2" id="s3.2" ondblclick="return dblclicked(this)">ეკრანის ფორმების აღწერა</span></a>
+<ul id="ul3.2" style="list-style-type:none">
+<li class="heading3" id="i3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.1" href="vc_v02.htm" target="hmcontent"><span class="heading3" id="s3.2.1">შინაურ ცხოველთა დაავადებების კვლევის ფორმა V02</span></a>
+</li>
+<li class="heading3" id="i3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.2" href="vc_v03.htm" target="hmcontent"><span class="heading3" id="s3.2.2">ფრინველთა დაავადებების კვლევის ფორმა V03</span></a>
+</li>
+<li class="heading3" id="i3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.3" href="vc_v01.htm" target="hmcontent"><span class="heading3" id="s3.2.3">ვეტერინარული შემთხვევების ჩამონათვალი V01</span></a>
+</li>
+<li class="heading3" id="i3.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.4" href="vc_v15.htm" target="hmcontent"><span class="heading3" id="s3.2.4">აქტიური ზედამხედველობის კამპანიის ჩამონათვალი V15</span></a>
+</li>
+<li class="heading3" id="i3.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.5" href="vc_v16.htm" target="hmcontent"><span class="heading3" id="s3.2.5">აქტიური ზედამხედველობის კამპანია V16</span></a>
+</li>
+<li class="heading3" id="i3.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.6" href="vc_v17.htm" target="hmcontent"><span class="heading3" id="s3.2.6">აქტიური ზედამხედველობის სესიების ჩამონათვალი V17</span></a>
+</li>
+<li class="heading3" id="i3.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.7" href="vc_v18.htm" target="hmcontent"><span class="heading3" id="s3.2.7">აქტიური ზედამხედველობის სესია V18</span></a>
+</li>
+<li class="heading3" id="i3.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.8" href="vc_v10.htm" target="hmcontent"><span class="heading3" id="s3.2.8">ვეტ აგრეგირებული შემთხვევის დეტალები V10</span></a>
+</li>
+<li class="heading3" id="i3.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.9" href="vc_v09.htm" target="hmcontent"><span class="heading3" id="s3.2.9">ვეტერინარული აგრეგირებული შემთხვევების ჩამონათვალი V09</span></a>
+</li>
+<li class="heading3" id="i3.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.10" href="vc_v11.htm" target="hmcontent"><span class="heading3" id="s3.2.10">ვეტ აგრეგირებული შემთხვევის შემაჯამებელი ფორმა V11</span></a>
+</li>
+<li class="heading3" id="i3.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.11" href="vc_v19.htm" target="hmcontent"><span class="heading3" id="s3.2.11">ვეტ აგრეგირებული შემთხვევის დუბლირების მოხსნის/დედუბლიკაციის ფორმა V19</span></a>
+</li>
+<li class="heading3" id="i3.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.12" href="vc_v12.htm" target="hmcontent"><span class="heading3" id="s3.2.12">ვეტერინარული აგრეგირებული მოქმედების დეტალები V12</span></a>
+</li>
+<li class="heading3" id="i3.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.13" href="vc_v13.htm" target="hmcontent"><span class="heading3" id="s3.2.13">ვეტერინარული აგრეგირებული მოქმედების ჩამონათვალი V13</span></a>
+</li>
+<li class="heading3" id="i3.2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.14" href="vc_v14.htm" target="hmcontent"><span class="heading3" id="s3.2.14">ვეტ აგრეგირებული მოქმედების შემაჯამებელი ფორმა V14.</span></a>
+</li>
+<li class="heading3" id="i3.2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.15" href="vc_v20.htm" target="hmcontent"><span class="heading3" id="s3.2.15">ვეტ აგრეგირებული მოქმედების დუბლირების მოხსნის ფორმა V20</span></a>
+</li>
+<li class="heading3" id="i3.2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.16" href="vc_v04.htm" target="hmcontent"><span class="heading3" id="s3.2.16">ფერმები V04</span></a>
+</li>
+<li class="heading3" id="i3.2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.17" href="vc_v05.htm" target="hmcontent"><span class="heading3" id="s3.2.17">ფერმის ინფორმაცია V05</span></a>
+</li>
+<li class="heading3" id="i3.2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.2.18" href="vc_v06.htm" target="hmcontent"><span class="heading3" id="s3.2.18">ფერმის ინფორმაციის დეტალები V06</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="vc_operations.htm" target="hmcontent"><span class="heading2" id="s3.3" ondblclick="return dblclicked(this)">ოპერაციები ვეტერინარული შემთხვევებით</span></a>
+<ul id="ul3.3" style="list-style-type:none">
+<li class="heading3" id="i3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.1" href="lc_create.htm" target="hmcontent"><span class="heading3" id="s3.3.1">შექმენით შინაური ცხოველის შემთხვევა</span></a>
+</li>
+<li class="heading3" id="i3.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.2" href="lc_herd.htm" target="hmcontent"><span class="heading3" id="s3.3.2">დაარეგისტრირეთ ინფორმაცია ნახირის/სახეობების/ცხოველების შესახებ შინაური ცხოველების შემთხვევაში</span></a>
+</li>
+<li class="heading3" id="i3.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.3" href="ac_create.htm" target="hmcontent"><span class="heading3" id="s3.3.3">შექმენით ფრინველის შემთხვევა</span></a>
+</li>
+<li class="heading3" id="i3.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.4" href="ac_flocks.htm" target="hmcontent"><span class="heading3" id="s3.3.4">ფრინველის შემთხვევაში დაარეგისტრირეთ ინფორმაცია ფრინველთა გუნდის/სახეობათა შესახებ</span></a>
+</li>
+<li class="heading3" id="i3.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.5" href="vc_samples.htm" target="hmcontent"><span class="heading3" id="s3.3.5">დაარეგისტრირეთ ნიმუშები ვეტერინარული საქმისთვის</span></a>
+</li>
+<li class="heading3" id="i3.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.6" href="vc_ftests.htm" target="hmcontent"><span class="heading3" id="s3.3.6">შეიყვანეთ საველე ტესტის შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading3" id="i3.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.7" href="vc_ltests.htm" target="hmcontent"><span class="heading3" id="s3.3.7">დაარეგისტრირეთ ლაბორატორიული ტესტების შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading3" id="i3.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.8" href="vc_ltests_review.htm" target="hmcontent"><span class="heading3" id="s3.3.8">გადასინჯეთ ლაბორატორიული ტესტები და ტესტის შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading3" id="i3.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.9" href="vc_test_res.htm" target="hmcontent"><span class="heading3" id="s3.3.9">განმარტეთ ტესტების შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading3" id="i3.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.10" href="vc_final.htm" target="hmcontent"><span class="heading3" id="s3.3.10">დაასრულეთ ვეტერინარული შემთხვევა</span></a>
+</li>
+<li class="heading3" id="i3.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.11" href="vc_paper.htm" target="hmcontent"><span class="heading3" id="s3.3.11">ამობეჭდეთ ვეტერინარული შემთხვევის ფორმები</span></a>
+</li>
+<li class="heading3" id="i3.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.12" href="vc_edit.htm" target="hmcontent"><span class="heading3" id="s3.3.12">ვეტერინარული შემთხვევის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i3.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.13" href="vc_delete.htm" target="hmcontent"><span class="heading3" id="s3.3.13">ვეტერინარული შემთხვევების წაშლა</span></a>
+</li>
+<li class="heading3" id="i3.3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.14" href="vc_search.htm" target="hmcontent"><span class="heading3" id="s3.3.14">მოძებნე ვეტერინარული შემთხვევა</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="as_opps.htm" target="hmcontent"><span class="heading2" id="s3.4" ondblclick="return dblclicked(this)">აქტიური ზედამხედველობის მოდულის ოპერაციები</span></a>
+<ul id="ul3.4" style="list-style-type:none">
+<li class="heading3" id="i3.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.4.1" href="asc_opps.htm" target="hmcontent"><span class="heading3" id="s3.4.1" ondblclick="return dblclicked(this)">აქტიური ზედამხედველობის კამპანიის ოპერაციები</span></a>
+<ul id="ul3.4.1" style="list-style-type:none">
+<li class="heading4" id="i3.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.1.1" href="asc_create.htm" target="hmcontent"><span class="heading4" id="s3.4.1.1">აქტიური ზედამხედველობის კამპანიის შექმნა</span></a>
+</li>
+<li class="heading4" id="i3.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.1.2" href="asc_link.htm" target="hmcontent"><span class="heading4" id="s3.4.1.2">მიაბით აქტიური ზედამხედველობის სესიები კამპანიას</span></a>
+</li>
+<li class="heading4" id="i3.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.1.3" href="asc_edit.htm" target="hmcontent"><span class="heading4" id="s3.4.1.3">აქტიური ზედამხედველობის კამპანიის რედაქტირება</span></a>
+</li>
+<li class="heading4" id="i3.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.1.4" href="asc_delete.htm" target="hmcontent"><span class="heading4" id="s3.4.1.4">აქტიური ზედამხედველობის კამპანიის წაშლა</span></a>
+</li>
+<li class="heading4" id="i3.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.1.5" href="asc_search.htm" target="hmcontent"><span class="heading4" id="s3.4.1.5">აქტიური ზედამხედველობის კამპანიის ძებნა</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i3.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.4.2" href="ass_opps.htm" target="hmcontent"><span class="heading3" id="s3.4.2" ondblclick="return dblclicked(this)">აქტიური ზედამხედველობის სესიების ოპერაციები</span></a>
+<ul id="ul3.4.2" style="list-style-type:none">
+<li class="heading4" id="i3.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.1" href="ass_create.htm" target="hmcontent"><span class="heading4" id="s3.4.2.1">შექმენით აქტიური ზედამხედველობის სესია</span></a>
+</li>
+<li class="heading4" id="i3.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.2" href="ass_link.htm" target="hmcontent"><span class="heading4" id="s3.4.2.2">მიაბით აქტიური ზედამხედველობის სესია არსებულ კამპანიას</span></a>
+</li>
+<li class="heading4" id="i3.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.3" href="ass_details.htm" target="hmcontent"><span class="heading4" id="s3.4.2.3">შეიყვანეთ დეტალური ინფორმაცია აქტიური ზედამხედველობის სესიისთვის</span></a>
+</li>
+<li class="heading4" id="i3.4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.4" href="ass_testr.htm" target="hmcontent"><span class="heading4" id="s3.4.2.4">დაარეგისტრირეთ ტესტის შედეგები აქტიური ზედამხედველობის სესიისთვის</span></a>
+</li>
+<li class="heading4" id="i3.4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.5" href="ass_testl.htm" target="hmcontent"><span class="heading4" id="s3.4.2.5">გადასინჯეთ ლაბორატორიული ტესტები და ტესტის შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading4" id="i3.4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.6" href="ass_testr_int.htm" target="hmcontent"><span class="heading4" id="s3.4.2.6">განმარტეთ ტესტების შედეგები ვეტერინარულ შემთხვევაში</span></a>
+</li>
+<li class="heading4" id="i3.4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.7" href="ass_sum.htm" target="hmcontent"><span class="heading4" id="s3.4.2.7">შეიყვანეთ შემაჯამებელი ინფორმაცია აქტიური ზედამხედველობის სესიისთვის</span></a>
+</li>
+<li class="heading4" id="i3.4.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.8" href="ass_case.htm" target="hmcontent"><span class="heading4" id="s3.4.2.8">შექმენით ვეტერინარული შემთხვევა რომელიც დაფუძნებული იქნება აქტიური ზედამხედველობის სესიაზე</span></a>
+</li>
+<li class="heading4" id="i3.4.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.9" href="ass_final.htm" target="hmcontent"><span class="heading4" id="s3.4.2.9">შეაჯამეთ აქტიური ზედამხედველობის სესია</span></a>
+</li>
+<li class="heading4" id="i3.4.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.10" href="ass_edit.htm" target="hmcontent"><span class="heading4" id="s3.4.2.10">რედაქტიურება აქტიური ზედამხედველობის სესიის</span></a>
+</li>
+<li class="heading4" id="i3.4.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.11" href="ass_delete.htm" target="hmcontent"><span class="heading4" id="s3.4.2.11">წაშალეთ აქტიური ზედამხედველობის სესია</span></a>
+</li>
+<li class="heading4" id="i3.4.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.4.2.12" href="ass_search.htm" target="hmcontent"><span class="heading4" id="s3.4.2.12">აქტიური ზედამხედველობის სესიის ძებნა</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="vac_opps.htm" target="hmcontent"><span class="heading2" id="s3.5" ondblclick="return dblclicked(this)">ოპერირება ვეტერინარულ აგრეგირებულ საქმეებთან</span></a>
+<ul id="ul3.5" style="list-style-type:none">
+<li class="heading3" id="i3.5.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.5.1" href="ac_opps.htm" target="hmcontent"><span class="heading3" id="s3.5.1" ondblclick="return dblclicked(this)">ოპერირება აგრეგირებულ საქმეეთან</span></a>
+<ul id="ul3.5.1" style="list-style-type:none">
+<li class="heading4" id="i3.5.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.1" href="vac_create.htm" target="hmcontent"><span class="heading4" id="s3.5.1.1">აგრეგირებული ვეტერინარული შემთხვევის შექმნა</span></a>
+</li>
+<li class="heading4" id="i3.5.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.2" href="vac_paper.htm" target="hmcontent"><span class="heading4" id="s3.5.1.2">გაერთიანებული შემთხვევის ფორმების ქაღალდზე ამობეჭდვა</span></a>
+</li>
+<li class="heading4" id="i3.5.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.3" href="vac_edit.htm" target="hmcontent"><span class="heading4" id="s3.5.1.3">ვეტერინარული აგრეგირებული შემთხვევის რედაქტირება</span></a>
+</li>
+<li class="heading4" id="i3.5.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.4" href="vac_delete.htm" target="hmcontent"><span class="heading4" id="s3.5.1.4">ვეტერინარული აგრეგირებული შემთხვევის წაშლა</span></a>
+</li>
+<li class="heading4" id="i3.5.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.5" href="vac_search.htm" target="hmcontent"><span class="heading4" id="s3.5.1.5">ვეტერინარული აგრეგირებული შემთხვევის ძებნა</span></a>
+</li>
+<li class="heading4" id="i3.5.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.6" href="vac_sum.htm" target="hmcontent"><span class="heading4" id="s3.5.1.6">შემაჯამებელი ანგარიშის შექმნა</span></a>
+</li>
+<li class="heading4" id="i3.5.1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.1.7" href="vac_deduplication.htm" target="hmcontent"><span class="heading4" id="s3.5.1.7">აგრეგირებული ვეტერინარული შემთხვევის დუბლირების მოხსნა</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i3.5.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.5.2" href="vaa_opps.htm" target="hmcontent"><span class="heading3" id="s3.5.2" ondblclick="return dblclicked(this)">ოპერირება აგრეგირებულ მოქმედებებთან</span></a>
+<ul id="ul3.5.2" style="list-style-type:none">
+<li class="heading4" id="i3.5.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.1" href="vaa_create.htm" target="hmcontent"><span class="heading4" id="s3.5.2.1">აგრეგირებული ვეტერინარული მოქმედების შექმნა</span></a>
+</li>
+<li class="heading4" id="i3.5.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.2" href="vaa_paper.htm" target="hmcontent"><span class="heading4" id="s3.5.2.2">ამობეჭდეთ აგრეგირებული მოქმედების ფორმები</span></a>
+</li>
+<li class="heading4" id="i3.5.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.3" href="vaa_edit.htm" target="hmcontent"><span class="heading4" id="s3.5.2.3">მოახდინეთ ვეტერინარული აგრეგირებული მოქმედების რედაქტირება</span></a>
+</li>
+<li class="heading4" id="i3.5.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.4" href="vaa_delete.htm" target="hmcontent"><span class="heading4" id="s3.5.2.4">წაშალეთ ვეტერინარული აგრეგირებული მოქმედება</span></a>
+</li>
+<li class="heading4" id="i3.5.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.5" href="vaa_search.htm" target="hmcontent"><span class="heading4" id="s3.5.2.5">ვეტერინარული აგრეგირებული მოქმედების ძებნა</span></a>
+</li>
+<li class="heading4" id="i3.5.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.6" href="vaa_sum.htm" target="hmcontent"><span class="heading4" id="s3.5.2.6">შემაჯამებელი ანგარიშის შექმნა</span></a>
+</li>
+<li class="heading4" id="i3.5.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a3.5.2.7" href="vaa_deduplication.htm" target="hmcontent"><span class="heading4" id="s3.5.2.7">ვეტერინარული აგრეგირებული მოქმედების დუბლირების მოხსნა</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="outbreaks_surveillance.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">ეპიდაფეთქებების ზედამხედველობა</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="ob_forms.htm" target="hmcontent"><span class="heading2" id="s4.1" ondblclick="return dblclicked(this)">ეკრანული ფორმის აღწერა</span></a>
+<ul id="ul4.1" style="list-style-type:none">
+<li class="heading3" id="i4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.1" href="ob_c10.htm" target="hmcontent"><span class="heading3" id="s4.1.1">&quot;ეპიდაფეთქებების ჩამონათვალი&quot; C10</span></a>
+</li>
+<li class="heading3" id="i4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.2" href="ob_c11.htm" target="hmcontent"><span class="heading3" id="s4.1.2">&quot;ეპიდაფეთქებების დეტალური მონაცემები&quot; C11</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="ob_operations.htm" target="hmcontent"><span class="heading2" id="s4.2" ondblclick="return dblclicked(this)">&quot;ეპიდაფეთქებებთან&quot; დაკავშირებული ოპერაციები</span></a>
+<ul id="ul4.2" style="list-style-type:none">
+<li class="heading3" id="i4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.1" href="ob_create.htm" target="hmcontent"><span class="heading3" id="s4.2.1">ეპიდაფეთქების შექმნა</span></a>
+</li>
+<li class="heading3" id="i4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.2" href="ob_case.htm" target="hmcontent"><span class="heading3" id="s4.2.2">ეპიდაფეთქების შემთხვევასთან/სესიასთან დაკავშირება</span></a>
+</li>
+<li class="heading3" id="i4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.3" href="ob_prime.htm" target="hmcontent"><span class="heading3" id="s4.2.3">ეპიდაფეთქებაში მონიშნეთ, როგორც ძირითადი შემთხვევა/სესია</span></a>
+</li>
+<li class="heading3" id="i4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.4" href="ob_edit.htm" target="hmcontent"><span class="heading3" id="s4.2.4">ეპიდაფეთქების რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.5" href="ob_delete.htm" target="hmcontent"><span class="heading3" id="s4.2.5">ეპიდაფეთქების წაშლა</span></a>
+</li>
+<li class="heading3" id="i4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.6" href="ob_search.htm" target="hmcontent"><span class="heading3" id="s4.2.6">ეპიდაფეთქების ძებნა</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="vector_surveillance.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">ვექტორული ზედამხედველობა</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="starting_vector_surveillance_m.htm" target="hmcontent"><span class="heading2" id="s5.1">ვექტორის ზედამხედველობის მოდულის დაწყება</span></a>
+</li>
+<li class="heading2" id="i5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="vs_search.htm" target="hmcontent"><span class="heading2" id="s5.2">ვექტორული ზედამხედველობის სესიის ძებნა</span></a>
+</li>
+<li class="heading2" id="i5.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="vs_operations.htm" target="hmcontent"><span class="heading2" id="s5.3" ondblclick="return dblclicked(this)">ოპერაციები &quot;ვექტორული ზედამხედველობის მოდულში&quot;</span></a>
+<ul id="ul5.3" style="list-style-type:none">
+<li class="heading3" id="i5.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.1" href="vs_create.htm" target="hmcontent"><span class="heading3" id="s5.3.1">ვექტორული ზედამხედველობის სესიის (VS) შექმნა</span></a>
+</li>
+<li class="heading3" id="i5.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.2" href="vs_edit.htm" target="hmcontent"><span class="heading3" id="s5.3.2">VS სესიის ნახვა ან რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i5.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.3" href="enter_general_information_of__.htm" target="hmcontent"><span class="heading3" id="s5.3.3">შეიყვანეთ &quot;ვექტორული ზედამხედველობის&quot; ზოგადი ინფორმაცია</span></a>
+</li>
+<li class="heading3" id="i5.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.4" href="enter_detailed_information.htm" target="hmcontent"><span class="heading3" id="s5.3.4" ondblclick="return dblclicked(this)">შეიყვანეთ &quot;ვექტორული ზედამხედველობის&quot; დეტალური ინფორმაცია</span></a>
+<ul id="ul5.3.4" style="list-style-type:none">
+<li class="heading4" id="i5.3.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.4.1" href="register_vector_pool_.htm" target="hmcontent"><span class="heading4" id="s5.3.4.1" ondblclick="return dblclicked(this)">მოახდინეთ ვექტორის/პულის რეგისტრაცია</span></a>
+<ul id="ul5.3.4.1" style="list-style-type:none">
+<li class="heading5" id="i5.3.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.1" href="register_summary_info_vector_pool.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.1">დაარეგისტრირეთ ვექტორის/პულის საბაზისო ინფორმაციის რეზიუმე</span></a>
+</li>
+<li class="heading5" id="i5.3.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.2" href="register_gen_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.2">მოახდინეთ ვექტორის/პულის ზოგადი ინფორმაცისი რეგისტრირება</span></a>
+</li>
+<li class="heading5" id="i5.3.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.3" href="register_spec_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.3">მოახდინეთ ვექტორი/ერთობლიობის სპეციფიკური ინფორმაციის რეგისტრირება</span></a>
+</li>
+<li class="heading5" id="i5.3.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.4" href="register_samples_for_vp.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.4">დაარეგისტრირეთ ვექტორის/პულის ნიმუშები</span></a>
+</li>
+<li class="heading5" id="i5.3.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.5" href="register_field_test_results.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.5">ვექტორისთვის/ პულისთვის საველე ტესტის შედეგების რეგისტრაციის</span></a>
+</li>
+<li class="heading5" id="i5.3.4.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.1.6" href="review_laboratory_tests_vp.htm" target="hmcontent"><span class="heading5" id="s5.3.4.1.6">გადასინჯეთ ვექტორის/პულის ლაბორატორიული ტესტები და ტესტის შედეგები</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.4.2" href="copy_vector_pool.htm" target="hmcontent"><span class="heading4" id="s5.3.4.2">ვექტორი/პულის კოპირება</span></a>
+</li>
+<li class="heading4" id="i5.3.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.3.4.3" href="review_aggregated_data_for_vp.htm" target="hmcontent"><span class="heading4" id="s5.3.4.3" ondblclick="return dblclicked(this)">გადასინჯეთ VS-ის აგრეგირებული მონაცემები</span></a>
+<ul id="ul5.3.4.3" style="list-style-type:none">
+<li class="heading5" id="i5.3.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.3.1" href="review_samples.htm" target="hmcontent"><span class="heading5" id="s5.3.4.3.1">განიხილეთ სესიის ნიმუშები</span></a>
+</li>
+<li class="heading5" id="i5.3.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.3.2" href="review_field_rests_and_test_re.htm" target="hmcontent"><span class="heading5" id="s5.3.4.3.2">განიხილეთ სესიის საველე ტესტები და ტესტის შედეგები</span></a>
+</li>
+<li class="heading5" id="i5.3.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.3.4.3.3" href="review_laboratory_tests_vs.htm" target="hmcontent"><span class="heading5" id="s5.3.4.3.3">გადასინჯეთ სესიის ლაბორატორიული ტესტები და ტესტის შედეგები</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.5" href="enter_summary_information.htm" target="hmcontent"><span class="heading3" id="s5.3.5">შეიტანეთ VS-ის ჯამური ინფორმაცია</span></a>
+</li>
+<li class="heading3" id="i5.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.6" href="link_a_vs_session_to_outbreak.htm" target="hmcontent"><span class="heading3" id="s5.3.6">&quot;ვექტორული ზედამხედველობის სესია&quot; მიაბით ეპიდაფეთქებას</span></a>
+</li>
+<li class="heading3" id="i5.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.7" href="vs_final.htm" target="hmcontent"><span class="heading3" id="s5.3.7">შეაჯამეთ (დახურეთ) ვექტორის ზედამხედველობის სესია</span></a>
+</li>
+<li class="heading3" id="i5.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.8" href="save_vs_session.htm" target="hmcontent"><span class="heading3" id="s5.3.8">შეინახეთ VS სესია</span></a>
+</li>
+<li class="heading3" id="i5.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.9" href="close_vs_session.htm" target="hmcontent"><span class="heading3" id="s5.3.9">დახურეთ VS სესიის ფანჯარა</span></a>
+</li>
+<li class="heading3" id="i5.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.10" href="vs_delete.htm" target="hmcontent"><span class="heading3" id="s5.3.10">წაშალეთ VS სესია</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="vs_forms.htm" target="hmcontent"><span class="heading2" id="s5.4" ondblclick="return dblclicked(this)">ეკრანული ფორმის აღწერა</span></a>
+<ul id="ul5.4" style="list-style-type:none">
+<li class="heading3" id="i5.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.1" href="vs_w01.htm" target="hmcontent"><span class="heading3" id="s5.4.1">ვექტორის ზედამხედველობის სესიების ჩამონათვალი W01</span></a>
+</li>
+<li class="heading3" id="i5.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.2" href="vs_w02.htm" target="hmcontent"><span class="heading3" id="s5.4.2" ondblclick="return dblclicked(this)">ვექტორის ზედამხედველობის სესია W02</span></a>
+<ul id="ul5.4.2" style="list-style-type:none">
+<li class="heading4" id="i5.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.1" href="general_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s5.4.2.1">&quot;ვექტორული ზედამხედველობის სესიის&quot; W02 ფორმის &quot;ზოგადი ინფორმაცია&quot;</span></a>
+</li>
+<li class="heading4" id="i5.4.2.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.2" href="detailed_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s5.4.2.2" ondblclick="return dblclicked(this)">ვექტორის ზედამხედველობის W02 ფორმის დეტალური ინფორმაცია</span></a>
+<ul id="ul5.4.2.2" style="list-style-type:none">
+<li class="heading5" id="i5.4.2.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.4.2.2.1" href="pools_individual_vectors_of_w02.htm" target="hmcontent"><span class="heading5" id="s5.4.2.2.1">ვექტორის ზედამხედველობის W02 ფორმის პულების /ინდივიდუალურ ვექტორთა ქვეჩანართი</span></a>
+</li>
+<li class="heading5" id="i5.4.2.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.4.2.2.2" href="samples_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s5.4.2.2.2">ვექტორის ზედამხედველობის W02 ფორმის ნიმუშთა ქვეჩანართი</span></a>
+</li>
+<li class="heading5" id="i5.4.2.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.4.2.2.3" href="field_tests_subtab_of_vector_s.htm" target="hmcontent"><span class="heading5" id="s5.4.2.2.3">ვექტორის ზედამხედველობის W02 ფორმის საველე ტესტების ქვეჩანართი</span></a>
+</li>
+<li class="heading5" id="i5.4.2.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a5.4.2.2.4" href="lab_tests_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s5.4.2.2.4">&quot;ვექტორული ზედამხედველობის სესიის&quot; (W02) ფორმის &quot;ლაბორატორიული ტესტების&quot; ქვეჩანართი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i5.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.3" href="summary_info_tab_of_w02.htm" target="hmcontent"><span class="heading4" id="s5.4.2.3">ვექტორის ზედამხედველობის W02 ფორმის ჯამური ინფორმაციის ჩანართი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.3" href="vs_w03.htm" target="hmcontent"><span class="heading3" id="s5.4.3" ondblclick="return dblclicked(this)">პულის/ინდივიდუალური ვექტორის დეტალები W03</span></a>
+<ul id="ul5.4.3" style="list-style-type:none">
+<li class="heading4" id="i5.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.1" href="summary_section_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.1">&quot;პულის/ცალკეული ვექტორის დეტალების&quot; W03 ფორმის &quot;ჯამური ინფორმაციის&quot; სექცია</span></a>
+</li>
+<li class="heading4" id="i5.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.2" href="general_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.2">პულის/ ინდივიდუალური ვექტორის დეტალების W03 ფორმის ზოგადი ჩანართი</span></a>
+</li>
+<li class="heading4" id="i5.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.3" href="vector_specific_data_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.3">&quot;პულის/ცალკეული ვექტორის დეტალების&quot; W03 ფორმის &quot;ვექტორ-სპეციფიკური მონაცემების&quot; ჩანართი</span></a>
+</li>
+<li class="heading4" id="i5.4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.4" href="samples_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.4">ერთობლიობის/ინდივიდუალური ვექტორის დეტალების W03 ფორმის ნიმუშთა ჩანართი</span></a>
+</li>
+<li class="heading4" id="i5.4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.5" href="field_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.5">პულის/ ინდივიდუალური ვექტორის დეტალების W03 ფორმის საველე ტესტების ჩანართი</span></a>
+</li>
+<li class="heading4" id="i5.4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.3.6" href="lab_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s5.4.3.6">პულის/ ინდივიდუალური ვექტორის დეტალების W03 ფორმის ლაბორატორიული ტესტების ჩანართი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.4" href="vs_w05.htm" target="hmcontent"><span class="heading3" id="s5.4.4">პულის/ინდივიდუალური ვექტორის W05 ფორმის კოპირება</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="basic_syndromic_surveillance.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">&quot;ძირითადი სინდრომული ზედამხედველობა&quot;</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="ss_forms.htm" target="hmcontent"><span class="heading2" id="s6.1" ondblclick="return dblclicked(this)">ეკრანული ფორმის აღწერა</span></a>
+<ul id="ul6.1" style="list-style-type:none">
+<li class="heading3" id="i6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.1" href="ss_form.htm" target="hmcontent"><span class="heading3" id="s6.1.1">ძირითადი სინდრომული ზედამხედველობის ფორმა</span></a>
+</li>
+<li class="heading3" id="i6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.2" href="ss_list.htm" target="hmcontent"><span class="heading3" id="s6.1.2">&quot;ძირითადი სინდრომული ზედამხედველობის ფორმების ჩამონათვალი&quot;</span></a>
+</li>
+<li class="heading3" id="i6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.3" href="ss_aggr_form.htm" target="hmcontent"><span class="heading3" id="s6.1.3">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ფორმა&quot;</span></a>
+</li>
+<li class="heading3" id="i6.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.4" href="ss_aggr_list.htm" target="hmcontent"><span class="heading3" id="s6.1.4">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ფორმების ჩამონათვალი&quot;</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="ss_operations.htm" target="hmcontent"><span class="heading2" id="s6.2" ondblclick="return dblclicked(this)">&quot;ძირითადი სინდრომული ზედამხედველობის&quot; ანგარიშებთან დაკავშირებული ოპერაციები</span></a>
+<ul id="ul6.2" style="list-style-type:none">
+<li class="heading3" id="i6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.1" href="ss_create.htm" target="hmcontent"><span class="heading3" id="s6.2.1">&quot;ძირითადი სინდრომული ზედამხედველობის&quot; ანგარიშის შექმნა</span></a>
+</li>
+<li class="heading3" id="i6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.2" href="ss_search.htm" target="hmcontent"><span class="heading3" id="s6.2.2">&quot;ძირითადი სინდრომული ზედამხედველობის&quot; ანგარიშის ძებნა</span></a>
+</li>
+<li class="heading3" id="i6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.3" href="ss_edit.htm" target="hmcontent"><span class="heading3" id="s6.2.3">&quot;ძირითადი სინდრომული ზედამხედველობის&quot; ანგარიშის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i6.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.4" href="ss_delete.htm" target="hmcontent"><span class="heading3" id="s6.2.4">&quot;ძირითადი სინდრომული ზედამხედველობის&quot; ანგარიშის წაშლა</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="ss_operations_2.htm" target="hmcontent"><span class="heading2" id="s6.3" ondblclick="return dblclicked(this)">&quot;გრიპის მსგავსი დაავადების აგრეგირებულ ანგარიშებთან&quot; დაკავშირებული ოპერაციები</span></a>
+<ul id="ul6.3" style="list-style-type:none">
+<li class="heading3" id="i6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.1" href="ss_aggr_create.htm" target="hmcontent"><span class="heading3" id="s6.3.1">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ანგარიშის&quot; შექმნა</span></a>
+</li>
+<li class="heading3" id="i6.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.2" href="ss_aggr_search.htm" target="hmcontent"><span class="heading3" id="s6.3.2">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ანგარიშის&quot; ძებნა</span></a>
+</li>
+<li class="heading3" id="i6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.3" href="ss_aggr_edit.htm" target="hmcontent"><span class="heading3" id="s6.3.3">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ანგარიშის&quot; რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i6.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.3.4" href="ss_aggr_delete.htm" target="hmcontent"><span class="heading3" id="s6.3.4">&quot;გრიპის მსგავსი დაავადების აგრეგირებული ანგარიშის&quot; (ILI) წაშლა</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="laboratory_management.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">ლაბორატორიის მართვა</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="laboratory_management_overview.htm" target="hmcontent"><span class="heading2" id="s7.1">ლაბორატორიის მართვის დათვალიერება</span></a>
+</li>
+<li class="heading2" id="i7.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href=javascript:void(0);><span class="heading2" id="s7.2" ondblclick="return dblclicked(this)">ლაბორატორიული მოდულის დაწყება</span></a>
+<ul id="ul7.2" style="list-style-type:none">
+<li class="heading3" id="i7.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.1" href="sample_statuses.htm" target="hmcontent"><span class="heading3" id="s7.2.1">ნიმუშის სტატუსები</span></a>
+</li>
+<li class="heading3" id="i7.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.2" href="test_statuses.htm" target="hmcontent"><span class="heading3" id="s7.2.2">ტესტის სტატუსები</span></a>
+</li>
+<li class="heading3" id="i7.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.3" href="simple_search_in_laboratory_se.htm" target="hmcontent"><span class="heading3" id="s7.2.3">ნიმუშის ძებნა ლაბორატორიის სექციაში</span></a>
+</li>
+<li class="heading3" id="i7.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.2.4" href="extended_search_in_lm.htm" target="hmcontent"><span class="heading3" id="s7.2.4">გაფართოებული ძებნა ლაბორატორიის მოდულში</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="lab_operations.htm" target="hmcontent"><span class="heading2" id="s7.3" ondblclick="return dblclicked(this)">ოპერაციები ლაბორატორიის მოდულში</span></a>
+<ul id="ul7.3" style="list-style-type:none">
+<li class="heading3" id="i7.3.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.1" href="accession_in_a_sample__linked_.htm" target="hmcontent"><span class="heading3" id="s7.3.1" ondblclick="return dblclicked(this)">წვდომის მინიჭება /გადაგზავნა ნიმუშ(ებ)ში</span></a>
+<ul id="ul7.3.1" style="list-style-type:none">
+<li class="heading4" id="i7.3.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.1" href="lab_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s7.3.1.1">მიღება ნიმუშში, დაკავშირებული ან არდაკავშირებული შემთხვევასთან/სესიასთან (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.2" href="enter_and_accession_in_sample_.htm" target="hmcontent"><span class="heading4" id="s7.3.1.2">რეგისტრაცია და მიღება, დაკავშირებული ან არდაკავშირებული შემთხვევასთან/სესიასთან (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.3" href="labs_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s7.3.1.3">მიღება/გადაგზავნა არსებულ ნიმუშ(ებ)ში, დაკავშირებული შემთხვევასთან/სესიასთან (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.4" href="lab_access_group.htm" target="hmcontent"><span class="heading4" id="s7.3.1.4">მიღება ნიმუშების ჯგუფში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.5" href="labs_access_group.htm" target="hmcontent"><span class="heading4" id="s7.3.1.5">მოღება ნიმუშების ჯგუფში (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.1.6" href="lab_sample_in.htm" target="hmcontent"><span class="heading4" id="s7.3.1.6">გადაგზავნა ნიმუშში (IF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.2" href="create_aliquot.htm" target="hmcontent"><span class="heading3" id="s7.3.2" ondblclick="return dblclicked(this)">ალიკვოტის შექმნა</span></a>
+<ul id="ul7.3.2" style="list-style-type:none">
+<li class="heading4" id="i7.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.2.1" href="lab_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s7.3.2.1">ალიკვოტის შექმნა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.2.2" href="labs_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s7.3.2.2">ალიკვოტის შექმნა (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.3" href="create_derivative.htm" target="hmcontent"><span class="heading3" id="s7.3.3" ondblclick="return dblclicked(this)">დერივატივის შექმნა</span></a>
+<ul id="ul7.3.3" style="list-style-type:none">
+<li class="heading4" id="i7.3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.3.1" href="lab_derivative_create.htm" target="hmcontent"><span class="heading4" id="s7.3.3.1">დერივატივის შექმნა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.3.2" href="labs_deriv_create.htm" target="hmcontent"><span class="heading4" id="s7.3.3.2">დერივატივის შექმნა (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.4" href="assign_test.htm" target="hmcontent"><span class="heading3" id="s7.3.4" ondblclick="return dblclicked(this)">ტესტების დანიშვნა</span></a>
+<ul id="ul7.3.4" style="list-style-type:none">
+<li class="heading4" id="i7.3.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.1" href="assign_tests_during_sample_acc.htm" target="hmcontent"><span class="heading4" id="s7.3.4.1">ტესტების დანიშვნა ნიმუშის სესიის დროს (IF)-ში</span></a>
+</li>
+<li class="heading4" id="i7.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.2" href="assign_tests_from_samples_list.htm" target="hmcontent"><span class="heading4" id="s7.3.4.2">ტესტების დანიშვნა &quot;ნიმუშის&quot; ფორმიდან (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.3" href="assign_tests_from_the_sample_d.htm" target="hmcontent"><span class="heading4" id="s7.3.4.3">ტესტების დანიშვნა ნიმუშების ფორმიდან (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.4" href="labs_test_assign.htm" target="hmcontent"><span class="heading4" id="s7.3.4.4">ტესტების დანიშვნის ჩამოსაშლელი მენიუ (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.5" href="assign_test_in_laboratory_sect.htm" target="hmcontent"><span class="heading4" id="s7.3.4.5">ტესტის დანიშვნა ლაბორატორიის სექციის ბადეში (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.5" href="start_test.htm" target="hmcontent"><span class="heading3" id="s7.3.5" ondblclick="return dblclicked(this)">ტესტის დაწყება</span></a>
+<ul id="ul7.3.5" style="list-style-type:none">
+<li class="heading4" id="i7.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.5.1" href="lab_test_start.htm" target="hmcontent"><span class="heading4" id="s7.3.5.1">ტესტის დაწყება ლაბორატორიული ტესტის დეტალების ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.5.2" href="start_test_in_sample_form.htm" target="hmcontent"><span class="heading4" id="s7.3.5.2">ტესტის დაწყება ნიმუშის ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.5.3" href="start_tests_ls.htm" target="hmcontent"><span class="heading4" id="s7.3.5.3">ტესტების დაწყების ჩამოსაშლელი მენიუ (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.5.4" href="start_test_in_laboratory_secti.htm" target="hmcontent"><span class="heading4" id="s7.3.5.4">ტესტის დაწყება ლაბორატორიის სექციის ბადეში (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.6" href="enter_test_result.htm" target="hmcontent"><span class="heading3" id="s7.3.6" ondblclick="return dblclicked(this)">ტესტის შედეგის შეტანა</span></a>
+<ul id="ul7.3.6" style="list-style-type:none">
+<li class="heading4" id="i7.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.6.1" href="lab_test_result_set.htm" target="hmcontent"><span class="heading4" id="s7.3.6.1">ტესტის შედეგის შეტანა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.6.2" href="labs_test_result_set.htm" target="hmcontent"><span class="heading4" id="s7.3.6.2">ტესტის შედეგის შეტანა (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.6.3" href="lab_test_result_external.htm" target="hmcontent"><span class="heading4" id="s7.3.6.3">გარეშე ლაბორატორიაში (IF) ჩატარებული ტესტის შედეგის დაფიქსირება</span></a>
+</li>
+<li class="heading4" id="i7.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.6.4" href="labs_test_result_external.htm" target="hmcontent"><span class="heading4" id="s7.3.6.4">გარეშე ლაბორატორიაში (LS) ჩატარებული ტესტის შედეგის დაფიქსირება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.7" href="labs_test_val.htm" target="hmcontent"><span class="heading3" id="s7.3.7">ტესტის შედეგის ვალიდაცია (LS)</span></a>
+</li>
+<li class="heading3" id="i7.3.8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.8" href="amend_test_result.htm" target="hmcontent"><span class="heading3" id="s7.3.8" ondblclick="return dblclicked(this)">ტესტის შედეგის შესწორება</span></a>
+<ul id="ul7.3.8" style="list-style-type:none">
+<li class="heading4" id="i7.3.8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.8.1" href="lab_test_amend.htm" target="hmcontent"><span class="heading4" id="s7.3.8.1">ტესტის შედეგის შესწორება (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.8.2" href="labs_test_amend.htm" target="hmcontent"><span class="heading4" id="s7.3.8.2">ტესტის შედეგის შესწორება (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.9" href="mark_for_destruction.htm" target="hmcontent"><span class="heading3" id="s7.3.9" ondblclick="return dblclicked(this)">მონიშვნა განადგურებისთვის</span></a>
+<ul id="ul7.3.9" style="list-style-type:none">
+<li class="heading4" id="i7.3.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.9.1" href="lab_sample_delete.htm" target="hmcontent"><span class="heading4" id="s7.3.9.1">ნიმუშის მონიშვნა შენახვისთვის (განადგურებისთვის) (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.9.2" href="labs_sample_mark.htm" target="hmcontent"><span class="heading4" id="s7.3.9.2">ნიმუშის მონიშვნა რუტინული განადგურებისთვის (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.10" href="destroy_sample.htm" target="hmcontent"><span class="heading3" id="s7.3.10" ondblclick="return dblclicked(this)">ნიმუშის განადგურების მიღება</span></a>
+<ul id="ul7.3.10" style="list-style-type:none">
+<li class="heading4" id="i7.3.10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.10.1" href="lab_destroy_sample.htm" target="hmcontent"><span class="heading4" id="s7.3.10.1">ნიმუშის განადგურების მიღება (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.10.2" href="labs_sample_destruction.htm" target="hmcontent"><span class="heading4" id="s7.3.10.2">ნიმუშის განადგურების მიღება (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.11" href="reject_destruction.htm" target="hmcontent"><span class="heading3" id="s7.3.11" ondblclick="return dblclicked(this)">განადგურების უარყოფა</span></a>
+<ul id="ul7.3.11" style="list-style-type:none">
+<li class="heading4" id="i7.3.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.11.1" href="lab_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s7.3.11.1">განადგურების უარყოფა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.11.2" href="labs_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s7.3.11.2">განადგურების უარყოფა (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.12" href="transfer_out_sample.htm" target="hmcontent"><span class="heading3" id="s7.3.12" ondblclick="return dblclicked(this)">ნიმუშის სხვაგან გადაგზავნა</span></a>
+<ul id="ul7.3.12" style="list-style-type:none">
+<li class="heading4" id="i7.3.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.12.1" href="lab_sample_out.htm" target="hmcontent"><span class="heading4" id="s7.3.12.1">ნიმუშის სხვაგან გადაგზავნა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.12.2" href="labs_sample_out.htm" target="hmcontent"><span class="heading4" id="s7.3.12.2">ნიმუშის სხვაგან გადაგზავნა ჩამოსაშლელი მენიუდან (LS)</span></a>
+</li>
+<li class="heading4" id="i7.3.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.12.3" href="transfer_out_sample_in_laborat.htm" target="hmcontent"><span class="heading4" id="s7.3.12.3">ნიმუშის გადაგზავნა ლაბორატორიის სექციის ბადეში (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.13" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.13" href="work_with_batches.htm" target="hmcontent"><span class="heading3" id="s7.3.13" ondblclick="return dblclicked(this)">მუშაობა პარტიებთან</span></a>
+<ul id="ul7.3.13" style="list-style-type:none">
+<li class="heading4" id="i7.3.13.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.13.1" href="lab_batch_create.htm" target="hmcontent"><span class="heading4" id="s7.3.13.1" ondblclick="return dblclicked(this)">პარტიის შექმნა (IF)</span></a>
+<ul id="ul7.3.13.1" style="list-style-type:none">
+<li class="heading5" id="i7.3.13.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.13.1.1" href="create_batch_in_samples_list.htm" target="hmcontent"><span class="heading5" id="s7.3.13.1.1">პარტიის შექმნა ტესტების სიის ფორმაში</span></a>
+</li>
+<li class="heading5" id="i7.3.13.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.13.1.2" href="create_batch_in_batches_list_f.htm" target="hmcontent"><span class="heading5" id="s7.3.13.1.2">პარტიის შექმნა პარტიების სიის ფორმაში</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i7.3.13.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.13.2" href="lab_batch_final.htm" target="hmcontent"><span class="heading4" id="s7.3.13.2">პარტიის დასრულება (IF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.14" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.14" href="edit_sample_information.htm" target="hmcontent"><span class="heading3" id="s7.3.14" ondblclick="return dblclicked(this)">ნიმუშის დეტალების დათვალიერება ან რედაქტირება</span></a>
+<ul id="ul7.3.14" style="list-style-type:none">
+<li class="heading4" id="i7.3.14.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.14.1" href="lab_sample_edit.htm" target="hmcontent"><span class="heading4" id="s7.3.14.1">ნიმუშის დეტალების დათვალიერება ან რედაქტირება (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.14.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.14.2" href="labs_sample_edit.htm" target="hmcontent"><span class="heading4" id="s7.3.14.2">ნიმუშის დეტალების დათვალიერება ან რედაქტირება (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.15" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.15" href="edit_test_details.htm" target="hmcontent"><span class="heading3" id="s7.3.15" ondblclick="return dblclicked(this)">ტესტის დეტალების დათვალიერება ან რედაქტირება</span></a>
+<ul id="ul7.3.15" style="list-style-type:none">
+<li class="heading4" id="i7.3.15.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.15.1" href="edit_test_details_in_laborator.htm" target="hmcontent"><span class="heading4" id="s7.3.15.1">ტესტის დეტალების დათვალიერება ან რედაქტირება ლაბორატორიული ტესტის დეტალების ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.15.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.15.2" href="edit_test_details_in_samle_det.htm" target="hmcontent"><span class="heading4" id="s7.3.15.2">ტესტის დეტალების დათვალიერება ან რედაქტირება ნიმუშების ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.15.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.15.3" href="labs_test_edit.htm" target="hmcontent"><span class="heading4" id="s7.3.15.3">ტესტის დეტალების დათვალიერება ან რედაქტირება ()</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.16" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.16" href="delete_sample_record.htm" target="hmcontent"><span class="heading3" id="s7.3.16" ondblclick="return dblclicked(this)">ნიმუშის ან ტესტის ჩანაწერის წაშლა</span></a>
+<ul id="ul7.3.16" style="list-style-type:none">
+<li class="heading4" id="i7.3.16.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.16.1" href="lab_sample_dispose_2.htm" target="hmcontent"><span class="heading4" id="s7.3.16.1">ნიმუშისწაშლა (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.16.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.16.2" href="labs_sample_dispose.htm" target="hmcontent"><span class="heading4" id="s7.3.16.2">ნიმუშისწაშლა (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.17" href="delete_test_record.htm" target="hmcontent"><span class="heading3" id="s7.3.17" ondblclick="return dblclicked(this)">ტესტის ჩანაწერის წაშლა</span></a>
+<ul id="ul7.3.17" style="list-style-type:none">
+<li class="heading4" id="i7.3.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.17.1" href="delete_test_in_laboratory_test.htm" target="hmcontent"><span class="heading4" id="s7.3.17.1">ტესტის წაშლა ლაბორატორიული ტესტების სიის ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.17.2" href="delete_test_inin_sample_detail.htm" target="hmcontent"><span class="heading4" id="s7.3.17.2">ტესტის წაშლა ნიმუშის დეტალების ფორმაში (IF)</span></a>
+</li>
+<li class="heading4" id="i7.3.17.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.17.3" href="labs_test_delete.htm" target="hmcontent"><span class="heading4" id="s7.3.17.3">ტესტის წაშლა (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.18" href="lab_add_to_preferences.htm" target="hmcontent"><span class="heading3" id="s7.3.18">ჩანაწერის დამატება პრეფერენციებში/ ჩანაწერის წაშლა პრეფერენციების სიიდან (LS)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="lab_forms.htm" target="hmcontent"><span class="heading2" id="s7.4" ondblclick="return dblclicked(this)">ეკრანის ფორმების აღწერა</span></a>
+<ul id="ul7.4" style="list-style-type:none">
+<li class="heading3" id="i7.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.1" href="lab_l01.htm" target="hmcontent"><span class="heading3" id="s7.4.1">ნიმუშების სია L01</span></a>
+</li>
+<li class="heading3" id="i7.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.2" href="lab_l02.htm" target="hmcontent"><span class="heading3" id="s7.4.2" ondblclick="return dblclicked(this)">ნიმუში L02</span></a>
+<ul id="ul7.4.2" style="list-style-type:none">
+<li class="heading4" id="i7.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.1" href="general_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s7.4.2.1">ნიმუშების L02 ფორმის ზოგადი ჩანართი</span></a>
+</li>
+<li class="heading4" id="i7.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.2" href="test_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s7.4.2.2">ნიმუშების L02 ფორმის ტესტების ჩანართი</span></a>
+</li>
+<li class="heading4" id="i7.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.3" href="sample_transfer_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s7.4.2.3">ნიმუშების L02 ფორმის ტესტების გადაგზავნის ჩანართი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.3" href="lab_l03.htm" target="hmcontent"><span class="heading3" id="s7.4.3">ლაბორატორიული ტესტების სია L03</span></a>
+</li>
+<li class="heading3" id="i7.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.4" href="lab_l04.htm" target="hmcontent"><span class="heading3" id="s7.4.4" ondblclick="return dblclicked(this)">ლაბორატორიული ტესტის დეტალები L04</span></a>
+<ul id="ul7.4.4" style="list-style-type:none">
+<li class="heading4" id="i7.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.4.1" href="general_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s7.4.4.1">ლაბორატორიული ტესტის დეტალების L04 ფორმის ზოგადი ჩანართი</span></a>
+</li>
+<li class="heading4" id="i7.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.4.2" href="tests_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s7.4.4.2">&quot;ლაბორატორიული ტესტის დეტალების&quot; L04 ფორმის &quot;ტესტის&quot; ჩანართი</span></a>
+</li>
+<li class="heading4" id="i7.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.4.3" href="sample_details_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s7.4.4.3">&quot;ლაბორატორიული ტესტის დეტალების&quot; L04 ფორმის &quot;ნიმუშის დეტალების&quot; ჩანართი</span></a>
+</li>
+<li class="heading4" id="i7.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.4.4" href="amendment_history_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s7.4.4.4">ლაბორატორიული ტესტის დეტალების L04 ფორმის შესწორებების ისტორიის ჩანართი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.5" href="lab_l05.htm" target="hmcontent"><span class="heading3" id="s7.4.5" ondblclick="return dblclicked(this)">მიღება L05–ში</span></a>
+<ul id="ul7.4.5" style="list-style-type:none">
+<li class="heading4" id="i7.4.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.5.1" href="accession_in_for_human_case.htm" target="hmcontent"><span class="heading4" id="s7.4.5.1">მიღება L05 ფორმაში ადამიანის შემთხვევებისთვის</span></a>
+</li>
+<li class="heading4" id="i7.4.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.5.2" href="accession_in_for_vet_case.htm" target="hmcontent"><span class="heading4" id="s7.4.5.2">მიღება L05 ფორმაში ვეტერინარული შემთხვევებისთვის</span></a>
+</li>
+<li class="heading4" id="i7.4.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.5.3" href="accession_in_for_as_session.htm" target="hmcontent"><span class="heading4" id="s7.4.5.3">მიღება L05 ფორმაში AS სესიისთვის</span></a>
+</li>
+<li class="heading4" id="i7.4.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.5.4" href="accession_in_for_vs_session.htm" target="hmcontent"><span class="heading4" id="s7.4.5.4">მიღება L05 ფორმაში VS სესიისთვის</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.6" href="lab_l06.htm" target="hmcontent"><span class="heading3" id="s7.4.6">ალიკოტები / დერივატივები L06</span></a>
+</li>
+<li class="heading3" id="i7.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.7" href="lab_l07.htm" target="hmcontent"><span class="heading3" id="s7.4.7">შენახვისთვის მონიშნული ნიმუშები L07</span></a>
+</li>
+<li class="heading3" id="i7.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.8" href="lab_l08.htm" target="hmcontent"><span class="heading3" id="s7.4.8">ნიმუშების შენახვა L08</span></a>
+</li>
+<li class="heading3" id="i7.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.9" href="lab_l09.htm" target="hmcontent"><span class="heading3" id="s7.4.9">გადაგზავნების სია L09</span></a>
+</li>
+<li class="heading3" id="i7.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.10" href="lab_l10.htm" target="hmcontent"><span class="heading3" id="s7.4.10">ნიმუშის გადაგზავნა L10</span></a>
+</li>
+<li class="heading3" id="i7.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.11" href="lab_l11.htm" target="hmcontent"><span class="heading3" id="s7.4.11">საყინულეების სია L11</span></a>
+</li>
+<li class="heading3" id="i7.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.12" href="lab_l12.htm" target="hmcontent"><span class="heading3" id="s7.4.12">შენახვის სქემა L12</span></a>
+</li>
+<li class="heading3" id="i7.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.13" href="lab_l13.htm" target="hmcontent"><span class="heading3" id="s7.4.13">ჯგუფის მიღება L13–ში</span></a>
+</li>
+<li class="heading3" id="i7.4.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.14" href="lab_l20.htm" target="hmcontent"><span class="heading3" id="s7.4.14">აირჩიეთ ტესტები L20</span></a>
+</li>
+<li class="heading3" id="i7.4.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.15" href="lab_l21.htm" target="hmcontent"><span class="heading3" id="s7.4.15">პარტიების სია L21</span></a>
+</li>
+<li class="heading3" id="i7.4.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.16" href="lab_l22.htm" target="hmcontent"><span class="heading3" id="s7.4.16">პარტიის ტესტის დეტალები L22</span></a>
+</li>
+<li class="heading3" id="i7.4.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.17" href="lab_l25.htm" target="hmcontent"><span class="heading3" id="s7.4.17" ondblclick="return dblclicked(this)">ლაბორატორიის სექცია (L25)</span></a>
+<ul id="ul7.4.17" style="list-style-type:none">
+<li class="heading4" id="i7.4.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.17.1" href="search_panel_of_laboratory_sec.htm" target="hmcontent"><span class="heading4" id="s7.4.17.1">ლაბორატორიის სექციის ძებნის პანელი</span></a>
+</li>
+<li class="heading4" id="i7.4.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.17.2" href="laboratory_records_list.htm" target="hmcontent"><span class="heading4" id="s7.4.17.2">ლაბორატორიის სექცია და ჩემი პრეფერენციების ჩანართები</span></a>
+</li>
+<li class="heading4" id="i7.4.17.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.17.3" href="lab_record_detailed_form.htm" target="hmcontent"><span class="heading4" id="s7.4.17.3" ondblclick="return dblclicked(this)">ლაბორატორიული ჩანაწერების დეტალური ფორმა</span></a>
+<ul id="ul7.4.17.3" style="list-style-type:none">
+<li class="heading5" id="i7.4.17.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.17.3.1" href="sample_details_tab_of_labrecdet.htm" target="hmcontent"><span class="heading5" id="s7.4.17.3.1">ლაბორატორიული ჩანაწერების დეტალური ფორმის ნიმუშების დეტალების ჩანართი</span></a>
+</li>
+<li class="heading5" id="i7.4.17.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.17.3.2" href="test_details_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s7.4.17.3.2">ლაბორატორიული ჩანაწერების დეტალური ფორმის ტესტების დეტალების ჩანართი</span></a>
+</li>
+<li class="heading5" id="i7.4.17.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.17.3.3" href="amendment_history_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s7.4.17.3.3">ლაბორატორიული ჩანაწერების დეტალური ფორმის შესწორებების ისტორიის ჩანართი</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.18" href="labs_l32.htm" target="hmcontent"><span class="heading3" id="s7.4.18">ტესტების დანიშვნა L32</span></a>
+</li>
+<li class="heading3" id="i7.4.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.19" href="lab_l35.htm" target="hmcontent"><span class="heading3" id="s7.4.19">ახალი ნიმუშის რეგისტრირება L35</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href=javascript:void(0);><span class="heading1" id="s8" ondblclick="return dblclicked(this)">ანალიზი, ვიზუალიზაცია და ანგარიშგება</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="avr_introduction.htm" target="hmcontent"><span class="heading2" id="s8.1">AVR-ის შესავალი</span></a>
+</li>
+<li class="heading2" id="i8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="avr_getting_started.htm" target="hmcontent"><span class="heading2" id="s8.2">AVR–ის დაწყება</span></a>
+</li>
+<li class="heading2" id="i8.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="queries.htm" target="hmcontent"><span class="heading2" id="s8.3" ondblclick="return dblclicked(this)">შეკითხები</span></a>
+<ul id="ul8.3" style="list-style-type:none">
+<li class="heading3" id="i8.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.1" href="create_query.htm" target="hmcontent"><span class="heading3" id="s8.3.1">მოთხოვნის შექმნა</span></a>
+</li>
+<li class="heading3" id="i8.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.2" href="edit_query.htm" target="hmcontent"><span class="heading3" id="s8.3.2">მოთხოვნის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.3" href="edit_query_name_and_descrption.htm" target="hmcontent"><span class="heading3" id="s8.3.3">მოთხოვნის დასახელების და აღწერის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.4" href="edit_query_objects_list.htm" target="hmcontent"><span class="heading3" id="s8.3.4">მოთხოვნის ობიექტების სიის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.5" href="edit_query_fields_list.htm" target="hmcontent"><span class="heading3" id="s8.3.5">მოთხოვნის ველების სიის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.6" href="edit_query_filters.htm" target="hmcontent"><span class="heading3" id="s8.3.6" ondblclick="return dblclicked(this)">მოთხოვნის ველების სიის რედაქტირება</span></a>
+<ul id="ul8.3.6" style="list-style-type:none">
+<li class="heading4" id="i8.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading4" id="s8.3.6.1">ღილაკების დამატება/მოცილება</span></a>
+</li>
+<li class="heading4" id="i8.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.2" href="combining_operators.htm" target="hmcontent"><span class="heading4" id="s8.3.6.2">კომბინირების ოპერატირები</span></a>
+</li>
+<li class="heading4" id="i8.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.3" href="comparison_operators.htm" target="hmcontent"><span class="heading4" id="s8.3.6.3">შედარების ოპერატორები</span></a>
+</li>
+<li class="heading4" id="i8.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.4" href="criteria_value.htm" target="hmcontent"><span class="heading4" id="s8.3.6.4">კრიტერიუმების სიდიდე</span></a>
+</li>
+<li class="heading4" id="i8.3.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.5" href="field_name.htm" target="hmcontent"><span class="heading4" id="s8.3.6.5">ველის სახელი</span></a>
+</li>
+<li class="heading4" id="i8.3.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.6" href="report_type_filter.htm" target="hmcontent"><span class="heading4" id="s8.3.6.6">'ანგარიშის ტიპის' ფილტრი</span></a>
+</li>
+<li class="heading4" id="i8.3.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.3.6.7" href="exists_filter.htm" target="hmcontent"><span class="heading4" id="s8.3.6.7">'არსებობს' ფილტრი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.7" href="add_key_values.htm" target="hmcontent"><span class="heading3" id="s8.3.7">ძირითადი სიდიდეების დამატება</span></a>
+</li>
+<li class="heading3" id="i8.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.8" href="cancel_changes.htm" target="hmcontent"><span class="heading3" id="s8.3.8">ცვლილებების გაუქმება</span></a>
+</li>
+<li class="heading3" id="i8.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.9" href="save_query.htm" target="hmcontent"><span class="heading3" id="s8.3.9">მოთხოვნის დამახსოვრება</span></a>
+</li>
+<li class="heading3" id="i8.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.10" href="close_query.htm" target="hmcontent"><span class="heading3" id="s8.3.10">მოთხოვნის დახურვა</span></a>
+</li>
+<li class="heading3" id="i8.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.11" href="delete_query.htm" target="hmcontent"><span class="heading3" id="s8.3.11">მოთხოვნის წაშლა</span></a>
+</li>
+<li class="heading3" id="i8.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.12" href="copy_query.htm" target="hmcontent"><span class="heading3" id="s8.3.12">მოთხოვნის კოპირება</span></a>
+</li>
+<li class="heading3" id="i8.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.13" href="export_query.htm" target="hmcontent"><span class="heading3" id="s8.3.13">მოთხოვნის ექსპორტირება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.4" href="layouts.htm" target="hmcontent"><span class="heading2" id="s8.4" ondblclick="return dblclicked(this)">სქემები</span></a>
+<ul id="ul8.4" style="list-style-type:none">
+<li class="heading3" id="i8.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.1" href="create_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.1">სქემის შექმნა</span></a>
+</li>
+<li class="heading3" id="i8.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.2" href="edit_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.2">სქემის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.3" href="edit_layout_name_and_descripti.htm" target="hmcontent"><span class="heading3" id="s8.4.3">მოთხოვნის დასახელების და აღწერის რედაქტირება</span></a>
+</li>
+<li class="heading3" id="i8.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.4" href="constructworking_with_pivot_grid.htm" target="hmcontent"><span class="heading3" id="s8.4.4" ondblclick="return dblclicked(this)">გარდაქმნადი/ძირითადი ცხრილი</span></a>
+<ul id="ul8.4.4" style="list-style-type:none">
+<li class="heading4" id="i8.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.1" href="construct_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s8.4.4.1">გარდაქმნადი ცხრილის აგება</span></a>
+</li>
+<li class="heading4" id="i8.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.2" href="rename_fields.htm" target="hmcontent"><span class="heading4" id="s8.4.4.2">ველების სახელების გადარქმევა</span></a>
+</li>
+<li class="heading4" id="i8.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.3" href="apply_aggregate_functions.htm" target="hmcontent"><span class="heading4" id="s8.4.4.3">განზოგადებული ფუნქციების გამოყენება</span></a>
+</li>
+<li class="heading4" id="i8.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.4" href="group_date_function.htm" target="hmcontent"><span class="heading4" id="s8.4.4.4">ჯგუფის თარიღის ფუნქცია</span></a>
+</li>
+<li class="heading4" id="i8.4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.5" href="show_missed_values.htm" target="hmcontent"><span class="heading4" id="s8.4.4.5">გამოტოვებული სიდიდეების ჩვენება</span></a>
+</li>
+<li class="heading4" id="i8.4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.6" href="show_totals.htm" target="hmcontent"><span class="heading4" id="s8.4.4.6">ჯამების ჩვენება</span></a>
+</li>
+<li class="heading4" id="i8.4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.7" href="copy_fields.htm" target="hmcontent"><span class="heading4" id="s8.4.4.7">ველების კოპირება</span></a>
+</li>
+<li class="heading4" id="i8.4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.8" href="freeze_row_headers_in_pivot_gr.htm" target="hmcontent"><span class="heading4" id="s8.4.4.8">სტრიქონის ჰედერების გაყინვა გარდაქმნად ცხრილში</span></a>
+</li>
+<li class="heading4" id="i8.4.4.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.9" href="apply_filters.htm" target="hmcontent"><span class="heading4" id="s8.4.4.9" ondblclick="return dblclicked(this)">ფილტრების გამოყენება</span></a>
+<ul id="ul8.4.4.9" style="list-style-type:none">
+<li class="heading5" id="i8.4.4.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.4.9.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading5" id="s8.4.4.9.1">ღილაკების დამატება/მოცილება</span></a>
+</li>
+<li class="heading5" id="i8.4.4.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.4.9.2" href="combining_operators.htm" target="hmcontent"><span class="heading5" id="s8.4.4.9.2">კომბინირების ოპერატირები</span></a>
+</li>
+<li class="heading5" id="i8.4.4.9.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.4.9.3" href="field_name.htm" target="hmcontent"><span class="heading5" id="s8.4.4.9.3">ველის სახელი</span></a>
+</li>
+<li class="heading5" id="i8.4.4.9.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.4.9.4" href="comparison_operators.htm" target="hmcontent"><span class="heading5" id="s8.4.4.9.4">შედარების ოპერატორები</span></a>
+</li>
+<li class="heading5" id="i8.4.4.9.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.4.9.5" href="criteria_value.htm" target="hmcontent"><span class="heading5" id="s8.4.4.9.5">კრიტერიუმების სიდიდე</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i8.4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.10" href="compact_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s8.4.4.10">კომპაქტური გარდაქმნადი ცხრილი</span></a>
+</li>
+<li class="heading4" id="i8.4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.4.11" href="show_data_in_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s8.4.4.11">გარდაქმნად ცხრილში მონაცემების ჩენება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.5" href="refresh_data.htm" target="hmcontent"><span class="heading3" id="s8.4.5">მონაცემების განახლება</span></a>
+</li>
+<li class="heading3" id="i8.4.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.6" href="working_with_view.htm" target="hmcontent"><span class="heading3" id="s8.4.6" ondblclick="return dblclicked(this)">ხედები</span></a>
+<ul id="ul8.4.6" style="list-style-type:none">
+<li class="heading4" id="i8.4.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.1" href="open_view.htm" target="hmcontent"><span class="heading4" id="s8.4.6.1">დათვალიერების გახსნა</span></a>
+</li>
+<li class="heading4" id="i8.4.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.2" href="add_aggregate_column.htm" target="hmcontent"><span class="heading4" id="s8.4.6.2">აგრეგატული სვეტის დამატება</span></a>
+</li>
+<li class="heading4" id="i8.4.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.3" href="filter__data_in_columns.htm" target="hmcontent"><span class="heading4" id="s8.4.6.3">მონაცემების ფილტრაცია სვეტში</span></a>
+</li>
+<li class="heading4" id="i8.4.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.4" href="sort_data_in_columns.htm" target="hmcontent"><span class="heading4" id="s8.4.6.4">სვეტში მონაცემთა დახარისხება</span></a>
+</li>
+<li class="heading4" id="i8.4.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.5" href="hide_show_columns.htm" target="hmcontent"><span class="heading4" id="s8.4.6.5">სვეტის/ზოლის დამალვა/ჩვენება</span></a>
+</li>
+<li class="heading4" id="i8.4.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.6" href="rename_column_band.htm" target="hmcontent"><span class="heading4" id="s8.4.6.6">სვეტის/ზოლის სახელის შეცვლა</span></a>
+</li>
+<li class="heading4" id="i8.4.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.7" href="reorder_columns_bands.htm" target="hmcontent"><span class="heading4" id="s8.4.6.7">სვეტის/ზოლის თანმიმდევრობის შეცვლა</span></a>
+</li>
+<li class="heading4" id="i8.4.6.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.8" href="reset_view.htm" target="hmcontent"><span class="heading4" id="s8.4.6.8">ხედის გადატვირთვა</span></a>
+</li>
+<li class="heading4" id="i8.4.6.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.9" href="print_view_report.htm" target="hmcontent"><span class="heading4" id="s8.4.6.9">ხედის (ანგარიშის) დაბეჭდვა</span></a>
+</li>
+<li class="heading4" id="i8.4.6.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.10" href="export_layout.htm" target="hmcontent"><span class="heading4" id="s8.4.6.10">ექსპორტის ხედი</span></a>
+</li>
+<li class="heading4" id="i8.4.6.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.11" href="avr_in_maps.htm" target="hmcontent"><span class="heading4" id="s8.4.6.11" ondblclick="return dblclicked(this)">რუქები AVR–ში</span></a>
+<ul id="ul8.4.6.11" style="list-style-type:none">
+<li class="heading5" id="i8.4.6.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.11.1" href="show_map.htm" target="hmcontent"><span class="heading5" id="s8.4.6.11.1">რუქის ჩვენება</span></a>
+</li>
+<li class="heading5" id="i8.4.6.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.11.2" href="print_map.htm" target="hmcontent"><span class="heading5" id="s8.4.6.11.2">რუქის ამობეჭდვა</span></a>
+</li>
+<li class="heading5" id="i8.4.6.11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.11.3" href="export_map.htm" target="hmcontent"><span class="heading5" id="s8.4.6.11.3">რუქის ექსპორტირება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i8.4.6.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.4.6.12" href="avr_chart_management.htm" target="hmcontent"><span class="heading4" id="s8.4.6.12" ondblclick="return dblclicked(this)">დიაგრამები AVR–ში</span></a>
+<ul id="ul8.4.6.12" style="list-style-type:none">
+<li class="heading5" id="i8.4.6.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.12.1" href="show_chart.htm" target="hmcontent"><span class="heading5" id="s8.4.6.12.1">დიაგრამის ჩვენება</span></a>
+</li>
+<li class="heading5" id="i8.4.6.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.12.2" href="chart_type.htm" target="hmcontent"><span class="heading5" id="s8.4.6.12.2">დიაგრამის ტიპის შეცვლა</span></a>
+</li>
+<li class="heading5" id="i8.4.6.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.12.3" href="set_up_axes.htm" target="hmcontent"><span class="heading5" id="s8.4.6.12.3">დიაგრამის ხედის დარეგულირება</span></a>
+</li>
+<li class="heading5" id="i8.4.6.12.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.12.4" href="print_chart.htm" target="hmcontent"><span class="heading5" id="s8.4.6.12.4">დიაგრამის ამობეჭდვა</span></a>
+</li>
+<li class="heading5" id="i8.4.6.12.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.4.6.12.5" href="export_chart.htm" target="hmcontent"><span class="heading5" id="s8.4.6.12.5">დიაგრამის ექსპორტირება</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.7" href="cancel_changes_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.7">ცვლილებების გაუქმება</span></a>
+</li>
+<li class="heading3" id="i8.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.8" href="save_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.8">სქემის დამახსოვრება</span></a>
+</li>
+<li class="heading3" id="i8.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.9" href="close_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.9">სქემის დახურვა</span></a>
+</li>
+<li class="heading3" id="i8.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.10" href="share_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.10">სქემის გაზიარება</span></a>
+</li>
+<li class="heading3" id="i8.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.11" href="delete_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.11">სქემის წაშლა</span></a>
+</li>
+<li class="heading3" id="i8.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.4.12" href="copy_layout.htm" target="hmcontent"><span class="heading3" id="s8.4.12">სქემის კოპირება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.5" href=javascript:void(0);><span class="heading2" id="s8.5" ondblclick="return dblclicked(this)">ადმინისტრაციული ფუნქციები</span></a>
+<ul id="ul8.5" style="list-style-type:none">
+<li class="heading3" id="i8.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.1" href="publish_a_layout.htm" target="hmcontent"><span class="heading3" id="s8.5.1">სქემის/შეკითხვის/კატალოგის გამოქვეყნება</span></a>
+</li>
+<li class="heading3" id="i8.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.2" href="unpublish_layout.htm" target="hmcontent"><span class="heading3" id="s8.5.2">სქემის/კატალოგის/შეკითხვის გამოქვეყნებიდან ამოღება</span></a>
+</li>
+<li class="heading3" id="i8.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.3" href="set_functions_default_precisio.htm" target="hmcontent"><span class="heading3" id="s8.5.3">ფუნქციებისნაგულისხმევი/დეფოლტით დაზუსტების დაყენება</span></a>
+</li>
+<li class="heading3" id="i8.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.4" href="set_search_object_fields_defau.htm" target="hmcontent"><span class="heading3" id="s8.5.4">ძიების ობიექტის ველებისნაგულისხმევი/დეფოლტით აგრეგატული ფუნქციის დაყენება</span></a>
+</li>
+<li class="heading3" id="i8.5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.5" href="printing.htm" target="hmcontent"><span class="heading3" id="s8.5.5">ბეჭდვა</span></a>
+</li>
+<li class="heading3" id="i8.5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.5.6" href="use_avr_cache_service.htm" target="hmcontent"><span class="heading3" id="s8.5.6">AVR-ის კეშ-სერვისის გამოყენება</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.6" href="forms_description.htm" target="hmcontent"><span class="heading2" id="s8.6" ondblclick="return dblclicked(this)">ფორმების აღწერა</span></a>
+<ul id="ul8.6" style="list-style-type:none">
+<li class="heading3" id="i8.6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.6.1" href="avr_main_window.htm" target="hmcontent"><span class="heading3" id="s8.6.1" ondblclick="return dblclicked(this)">AVR–ის მთავარი ფანჯარა</span></a>
+<ul id="ul8.6.1" style="list-style-type:none">
+<li class="heading4" id="i8.6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.1.1" href="query_folder_layout_tree_edito.htm" target="hmcontent"><span class="heading4" id="s8.6.1.1">შეკითხვა/კატალოგი/სქემის განტოტების რედაქტორი</span></a>
+</li>
+<li class="heading4" id="i8.6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.1.2" href="main_menu.htm" target="hmcontent"><span class="heading4" id="s8.6.1.2">მთავარი მენიუ</span></a>
+</li>
+<li class="heading4" id="i8.6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.1.3" href="toolbar.htm" target="hmcontent"><span class="heading4" id="s8.6.1.3">ინსტრუმენტების პანელი</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.6.2" href="query_builder.htm" target="hmcontent"><span class="heading3" id="s8.6.2" ondblclick="return dblclicked(this)">მოთხოვნის აგების ფორმა</span></a>
+<ul id="ul8.6.2" style="list-style-type:none">
+<li class="heading4" id="i8.6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.2.1" href="general_query_info.htm" target="hmcontent"><span class="heading4" id="s8.6.2.1">საერთო მოთხოვნის ინფრომაცია</span></a>
+</li>
+<li class="heading4" id="i8.6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.2.2" href="query_search_objects_tree.htm" target="hmcontent"><span class="heading4" id="s8.6.2.2">მოთხოვნის ძიების ობიექტის ხე</span></a>
+</li>
+<li class="heading4" id="i8.6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.2.3" href="fields_list.htm" target="hmcontent"><span class="heading4" id="s8.6.2.3">ველების სია</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.6.3" href="layout_designer.htm" target="hmcontent"><span class="heading3" id="s8.6.3" ondblclick="return dblclicked(this)">სქემის დიზაინერის ფორმა</span></a>
+<ul id="ul8.6.3" style="list-style-type:none">
+<li class="heading4" id="i8.6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.3.1" href="info_tab.htm" target="hmcontent"><span class="heading4" id="s8.6.3.1">ინფორმაციის ჩანართი</span></a>
+</li>
+<li class="heading4" id="i8.6.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.3.2" href="pivot_grid_tab.htm" target="hmcontent"><span class="heading4" id="s8.6.3.2" ondblclick="return dblclicked(this)">გარდაქმნადი/ძირითადი ბადის ჩანართი</span></a>
+<ul id="ul8.6.3.2" style="list-style-type:none">
+<li class="heading5" id="i8.6.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.6.3.2.1" href="pivot_grid_and_fields_list.htm" target="hmcontent"><span class="heading5" id="s8.6.3.2.1">გარდაქმნადი/ძირითადი ბადის და ველების სია</span></a>
+</li>
+<li class="heading5" id="i8.6.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.6.3.2.2" href="fields_right-click_menu.htm" target="hmcontent"><span class="heading5" id="s8.6.3.2.2">ველის კონტექსტური მენიუ</span></a>
+</li>
+<li class="heading5" id="i8.6.3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.6.3.2.3" href="pivot_grid_settings.htm" target="hmcontent"><span class="heading5" id="s8.6.3.2.3">გარდაქმნადი/ძირითადი ბადის პარამეტრები</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i8.6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.3.3" href="view_tab.htm" target="hmcontent"><span class="heading4" id="s8.6.3.3">ხედის ჩანართი</span></a>
+</li>
+<li class="heading4" id="i8.6.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.3.4" href="chart_editor.htm" target="hmcontent"><span class="heading4" id="s8.6.3.4">დიაგრამის რედაქტორის ფორმა</span></a>
+</li>
+<li class="heading4" id="i8.6.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a8.6.3.5" href="map_editor.htm" target="hmcontent"><span class="heading4" id="s8.6.3.5" ondblclick="return dblclicked(this)">რუქის რედაქტორის ფორმა</span></a>
+<ul id="ul8.6.3.5" style="list-style-type:none">
+<li class="heading5" id="i8.6.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.6.3.5.1" href="layer_control_panel.htm" target="hmcontent"><span class="heading5" id="s8.6.3.5.1">ფენის მართვის პანელი</span></a>
+</li>
+<li class="heading5" id="i8.6.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a8.6.3.5.2" href="map_toolbar_buttons.htm" target="hmcontent"><span class="heading5" id="s8.6.3.5.2">რუქის ინსტრუმენტთა პანელის ღილაკები</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i8.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.6.4" href="functional_buttons.htm" target="hmcontent"><span class="heading3" id="s8.6.4">ფუნქციონალური ღილაკები</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.7" href="list_of_avr_search_objects_actual.htm" target="hmcontent"><span class="heading2" id="s8.7">AVR–ის ძიების ობიექტების სიის და მათი ველების სია</span></a>
+</li>
+<li class="heading2" id="i8.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.8" href="permissions_and_access_to_avr_.htm" target="hmcontent"><span class="heading2" id="s8.8">ნებართვები და დაშვება AVR მონაცემებზე</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

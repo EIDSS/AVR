@@ -1,0 +1,25 @@
+﻿@using Kendo.Mvc.UI
+@using bv.model.Model.Core
+@model eidss.model.Reports.GG.MultipleGGCounterModel
+
+@{
+    var originalName = ViewData["FilterName"].ToString();
+    var kendoName = originalName.Replace(".", "_");
+    var maxCheckedCount = ViewData["maxCheckedCount"] ?? 0;
+}
+            <span class="picker">
+                <span class="pickerWrap">
+                    @(
+ @Html.Kendo().DropDownList()
+         .Name(kendoName)
+         .DataTextField("Text")
+         .DataValueField("Value")
+         .HtmlAttributes(new { @class = Model.IsRequired ? "requiredField" : "", @maxcheckedcount = maxCheckedCount.ToString() })
+         .Template("<input type=\"checkbox\"checkedname=\"${ data.Text }\" value=\"${ data.Value }\" class=\"check-item\" id=\"chb${ data.Value }\"/><span>${ data.Text }</span>")
+         .Events(e => e.Select("bvCheckedComboBox.onCheckedComboBoxChanged")
+                        .DataBound("function(e) { paperForm.bindCounterCheckedComboBoxClickEvent('" + kendoName + "', '1');}")
+                        .Open("function(e) { bvCheckedComboBox.onComboBoxOpen(e, " + (int)EditorControlWidth.Large + ", true); }"))
+         .BindTo(new SelectList(Model.ItemsList, "Value", "Text", null))
+                          )
+                </span>
+            </span>

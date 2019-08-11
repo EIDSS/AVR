@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="Paper_Forms">
+            <Directory Id="dirFBCDE7225B5BCFB5BAD7E5D181132070" Name="ar">
+                <Component Id="cmpF586EB29CFB6E9EA4486291F6664731F" Guid="*">
+                    <File Id="filED81C54666053297128F21DA374A6535" KeyPath="yes" Source="$(var.PaperForms)\ar\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmp6CA425B433BDEF62BAC4A4AA0F1B999D" Guid="*">
+                    <File Id="fil900C624FEA061CC4D8C36A5E311A8086" KeyPath="yes" Source="$(var.PaperForms)\ar\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp3EB8D660DA013146537936AB45100168" Guid="*">
+                    <File Id="fil2EB5A3C8E10B7867F035162FC631733E" KeyPath="yes" Source="$(var.PaperForms)\ar\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dir41A2F16C08A7E3D8E8B06ACEC35A0EC5" Name="az-L">
+                <Component Id="cmp854CD879B369E9004208394343F696CA" Guid="*">
+                    <File Id="filF3217A068B685EAA90DD1DA3349139CB" KeyPath="yes" Source="$(var.PaperForms)\az-L\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmp7F6E3675CFC4B6DE11B9F481FADB510A" Guid="*">
+                    <File Id="filF98FF969E6A414E97757AD247C5A2FD4" KeyPath="yes" Source="$(var.PaperForms)\az-L\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmpCE108A99DEA1DFC842D23A4E10AAF2DE" Guid="*">
+                    <File Id="filD97D3EACE6D0A8F4CB5D3E88D5FF9C88" KeyPath="yes" Source="$(var.PaperForms)\az-L\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dir53272EF014DD2872DDD022D0FF968AE2" Name="En">
+                <Component Id="cmp8D54CF3CEFCB28A45DC5D4D17D884ED6" Guid="*">
+                    <File Id="fil056B7F675FEE93997467F40CE7B0C6C9" KeyPath="yes" Source="$(var.PaperForms)\En\General Case Investigation Form IQ.pdf" />
+                </Component>
+                <Component Id="cmp2A1A9316D1D593B782E86BE4CC026216" Guid="*">
+                    <File Id="fil02E559F2F1F96749D7DF9B15A20784C8" KeyPath="yes" Source="$(var.PaperForms)\En\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmp9A2652A4F16E65B54698CCEF084E3BCB" Guid="*">
+                    <File Id="filF09B51DD8A54E89434CC4079D9479860" KeyPath="yes" Source="$(var.PaperForms)\En\Investigation Form For Avian Disease Outbreaks GG.pdf" />
+                </Component>
+                <Component Id="cmp79DCDCCAD24BBFD66E11809B16AAF50D" Guid="*">
+                    <File Id="filA649E087337691A1F58548DBD2D8E336" KeyPath="yes" Source="$(var.PaperForms)\En\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmpE9971DCADCA7026F8DBF3E6966B18E3B" Guid="*">
+                    <File Id="filCFD832F3767F60BF71F85C8E8E463893" KeyPath="yes" Source="$(var.PaperForms)\En\Investigation Form For Livestock Disease Outbreaks GG.pdf" />
+                </Component>
+                <Component Id="cmpB69D7C733E330B4C16F24C36CDC0CBFC" Guid="*">
+                    <File Id="fil06008A0A3A59436E6A5B78409A523F1A" KeyPath="yes" Source="$(var.PaperForms)\En\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmpA65F95B69E568297C0962D88E26CCDE6" Guid="*">
+                    <File Id="fil3CDF33020294F9C5F19A5B4868609A2B" KeyPath="yes" Source="$(var.PaperForms)\En\Urgent Notification Ukraine.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dirA3626FEAB3D21D73C2DD9D2F72DDC507" Name="hy">
+                <Component Id="cmpD783D802E6A6A0B751198F79E0658AB7" Guid="*">
+                    <File Id="fil5E6EE9EFEC5F1CA7AC5524CC1B772076" KeyPath="yes" Source="$(var.PaperForms)\hy\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmpAFCF8BDA4015925973BC778F9AFFDE55" Guid="*">
+                    <File Id="filB763AFC7F54BA59847428C7E095D68BD" KeyPath="yes" Source="$(var.PaperForms)\hy\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp5B660EA4253359FBB92464262FBFF107" Guid="*">
+                    <File Id="filB31071A36985118469200A295E425D6D" KeyPath="yes" Source="$(var.PaperForms)\hy\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dir7B6DFBFE52634950DA28DF1E8C52A326" Name="ka">
+                <Component Id="cmpBD3D025481D0BCB5E561040EFFD162AE" Guid="*">
+                    <File Id="fil4EC73E42941E34F0B535B92FFAA58C32" KeyPath="yes" Source="$(var.PaperForms)\ka\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmp895BC0A4268A1FC99A451852AD1C38FB" Guid="*">
+                    <File Id="fil4F5F14E36B61B77CF822B049BFD89B2C" KeyPath="yes" Source="$(var.PaperForms)\ka\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp6B9A0BF99AAD10D212F12CF55EF80A1A" Guid="*">
+                    <File Id="fil2DD21B4BD1C03572A98F455B6F1F1730" KeyPath="yes" Source="$(var.PaperForms)\ka\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+                <Directory Id="dir57D117313047CD542E47E7E706084EA3" Name="Old Form">
+                    <Component Id="cmp47E34B09C9D4A0CC0A47F645759E6052" Guid="*">
+                        <File Id="fil1C22DA8110DA2C21953F1F7A46CB504F" KeyPath="yes" Source="$(var.PaperForms)\ka\Old Form\Investigation Form For Avian Disease Outbreaks Old.pdf" />
+                    </Component>
+                </Directory>
+            </Directory>
+            <Directory Id="dir02EE5E4EC88B62002FA8A2C42C64ACE0" Name="kk">
+                <Component Id="cmp36E5A517B91640A687BDDE004C97A779" Guid="*">
+                    <File Id="filECEF28F6F38C5238E805BCA4D1EF8502" KeyPath="yes" Source="$(var.PaperForms)\kk\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmpD147EE808B6950F4F2BCDF7C66504A1B" Guid="*">
+                    <File Id="filB56FE8546411D93E3C49DF593EDDE44C" KeyPath="yes" Source="$(var.PaperForms)\kk\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp67F2621FEC69A0B0F13E3B5BAEEA002F" Guid="*">
+                    <File Id="fil9641F45C170EF813C0C5486D7677C430" KeyPath="yes" Source="$(var.PaperForms)\kk\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dir88C0C41704BEE2075BBB72A3885EA3A4" Name="RU">
+                <Component Id="cmpB4DF1C671BFB7801CC1C77A6E36B2BDB" Guid="*">
+                    <File Id="fil1DDEBD3759972BDFF3061E04CB2A65DB" KeyPath="yes" Source="$(var.PaperForms)\RU\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmpF75F2399C997321B65AC6DF0292E9534" Guid="*">
+                    <File Id="filBB00FE276C1B2D64A40A638DDB985B03" KeyPath="yes" Source="$(var.PaperForms)\RU\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp6829CE7598C3F50133B57F499E742380" Guid="*">
+                    <File Id="filF209FC2DB9DDCF434FEF7A1C81D3C5DF" KeyPath="yes" Source="$(var.PaperForms)\RU\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dirD965CD2FBB18841DAD3FB2FC778FD87B" Name="th">
+                <Component Id="cmp77B2499B1F4962117E81C5713A38DACD" Guid="*">
+                    <File Id="filB5522E0F37132940AEDD98DF9844DF4E" KeyPath="yes" Source="$(var.PaperForms)\th\General Case Investigation Form.pdf" />
+                </Component>
+                <Component Id="cmp0C6183AF45507938CA5E986EEDBB482C" Guid="*">
+                    <File Id="fil67EDAB6145B3CDE1F5B526FCBA0D6FD0" KeyPath="yes" Source="$(var.PaperForms)\th\Investigation Form For Avian Disease Outbreaks.pdf" />
+                </Component>
+                <Component Id="cmp8F933141E6AD32128BE9B5BD752936F8" Guid="*">
+                    <File Id="fil039FE44B8B06CB4D079C112EA81139F2" KeyPath="yes" Source="$(var.PaperForms)\th\Investigation Form For Livestock Disease Outbreaks.pdf" />
+                </Component>
+            </Directory>
+            <Directory Id="dir2EE4A15A8238747C0B56313155EA6083" Name="uk">
+                <Component Id="cmpFCC84FD4B7720004EE48B60A401CAB2E" Guid="*">
+                    <File Id="fil6B2E016B112D682F3334990A599AC1CA" KeyPath="yes" Source="$(var.PaperForms)\uk\Urgent Notification Ukraine.pdf" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="PaperForms.Harvested">
+            <ComponentRef Id="cmpF586EB29CFB6E9EA4486291F6664731F" />
+            <ComponentRef Id="cmp6CA425B433BDEF62BAC4A4AA0F1B999D" />
+            <ComponentRef Id="cmp3EB8D660DA013146537936AB45100168" />
+            <ComponentRef Id="cmp854CD879B369E9004208394343F696CA" />
+            <ComponentRef Id="cmp7F6E3675CFC4B6DE11B9F481FADB510A" />
+            <ComponentRef Id="cmpCE108A99DEA1DFC842D23A4E10AAF2DE" />
+            <ComponentRef Id="cmp8D54CF3CEFCB28A45DC5D4D17D884ED6" />
+            <ComponentRef Id="cmp2A1A9316D1D593B782E86BE4CC026216" />
+            <ComponentRef Id="cmp9A2652A4F16E65B54698CCEF084E3BCB" />
+            <ComponentRef Id="cmp79DCDCCAD24BBFD66E11809B16AAF50D" />
+            <ComponentRef Id="cmpE9971DCADCA7026F8DBF3E6966B18E3B" />
+            <ComponentRef Id="cmpB69D7C733E330B4C16F24C36CDC0CBFC" />
+            <ComponentRef Id="cmpA65F95B69E568297C0962D88E26CCDE6" />
+            <ComponentRef Id="cmpD783D802E6A6A0B751198F79E0658AB7" />
+            <ComponentRef Id="cmpAFCF8BDA4015925973BC778F9AFFDE55" />
+            <ComponentRef Id="cmp5B660EA4253359FBB92464262FBFF107" />
+            <ComponentRef Id="cmpBD3D025481D0BCB5E561040EFFD162AE" />
+            <ComponentRef Id="cmp895BC0A4268A1FC99A451852AD1C38FB" />
+            <ComponentRef Id="cmp6B9A0BF99AAD10D212F12CF55EF80A1A" />
+            <ComponentRef Id="cmp47E34B09C9D4A0CC0A47F645759E6052" />
+            <ComponentRef Id="cmp36E5A517B91640A687BDDE004C97A779" />
+            <ComponentRef Id="cmpD147EE808B6950F4F2BCDF7C66504A1B" />
+            <ComponentRef Id="cmp67F2621FEC69A0B0F13E3B5BAEEA002F" />
+            <ComponentRef Id="cmpB4DF1C671BFB7801CC1C77A6E36B2BDB" />
+            <ComponentRef Id="cmpF75F2399C997321B65AC6DF0292E9534" />
+            <ComponentRef Id="cmp6829CE7598C3F50133B57F499E742380" />
+            <ComponentRef Id="cmp77B2499B1F4962117E81C5713A38DACD" />
+            <ComponentRef Id="cmp0C6183AF45507938CA5E986EEDBB482C" />
+            <ComponentRef Id="cmp8F933141E6AD32128BE9B5BD752936F8" />
+            <ComponentRef Id="cmpFCC84FD4B7720004EE48B60A401CAB2E" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

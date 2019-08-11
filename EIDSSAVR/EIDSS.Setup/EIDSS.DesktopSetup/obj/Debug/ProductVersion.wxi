@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- IMPORTANT! Quotes are mandatory! -->
+
+
+<?define MajorVersion = "6"?>
+<?define MinorVersion = "1"?>
+<?define Build = "0"?>
+<?define Revision = "43"?>
+
+
+<Include />

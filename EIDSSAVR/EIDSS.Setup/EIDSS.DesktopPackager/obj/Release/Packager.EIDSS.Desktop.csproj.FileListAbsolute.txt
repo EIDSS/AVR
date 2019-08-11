@@ -1,0 +1,1 @@
+C:\NGDev\EIDSS61\EIDSS.Setup\EIDSS.DesktopPackager\obj\Release\Packager.EIDSS.Desktop.csprojAssemblyReference.cache

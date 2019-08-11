@@ -1,0 +1,262 @@
+﻿Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Rolling back assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Restoring event log to previous state for source EIDSSAVRService_v6.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Warning: The source EIDSSAVRService_v6 is not registered on the local machine.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+An exception occurred in the OnCommitted event handler of EIDSS.AVR.Service.WindowsService.AVRServiceInstaller.
+System.InvalidOperationException: Cannot start service EIDSSAVRService_v6 on computer '.'.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: The service did not respond to the start or control request in a timely fashion.
+An exception occurred during the Commit phase of the installation. This exception will be ignored and installation will continue. However, the application might not function correctly after installation is complete.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+An exception occurred in the OnCommitted event handler of EIDSS.AVR.Service.WindowsService.AVRServiceInstaller.
+System.InvalidOperationException: Cannot start service EIDSSAVRService_v6 on computer '.'.
+The inner exception System.ComponentModel.Win32Exception was thrown with the following error message: The service did not respond to the start or control request in a timely fashion.
+An exception occurred during the Commit phase of the installation. This exception will be ignored and installation will continue. However, the application might not function correctly after installation is complete.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Rolling back assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Restoring event log to previous state for source EIDSSAVRService_v6.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Warning: The source EIDSSAVRService_v6 is not registered on the local machine.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Warning: The source EIDSSAVRService_v6 is not registered on the local machine.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Installing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Installing service EIDSSAVRService_v6...
+Service EIDSSAVRService_v6 has been successfully installed.
+Creating EventLog source EIDSSAVRService_v6 in log Application...
+Committing assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Service EIDSSAVRService_v6 is being removed from the system...
+Service EIDSSAVRService_v6 was successfully removed from the system.
+Attempt to stop service EIDSSAVRService_v6.
+Uninstalling assembly 'C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.InstallLog
+   assemblypath = C:\NGDev\EIDSS61\EIDSS.AVR.Service\bin\Debug\eidss.avr.service.exe
+Removing EventLog source EIDSSAVRService_v6.
+Warning: The source EIDSSAVRService_v6 is not registered on the local machine.
+Service EIDSSAVRService_v6 is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.

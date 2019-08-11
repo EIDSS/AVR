@@ -1,0 +1,406 @@
+﻿@model eidss.model.Schema.Upload506Duplicate
+@{
+    Layout = "~/Views/Shared/_DetailsWindowLayout.cshtml";
+}
+@using bv.common.Configuration
+@using bv.model.Model.Core
+@using eidss.model.Schema
+@using eidss.web.common.Utils
+@using eidss.webclient.Utils;
+
+@Html.IncludeVersionedCss("~/Content/Styles/Details.css")
+
+@functions
+{
+    string GetErrorClassName(string eidssValue, string foreignValue)
+    {
+        if (eidssValue != foreignValue)
+            return "errorMessage";
+
+        return String.Empty;
+    }
+}
+
+<style type="text/css" scoped>
+    .td-leftpadding10 {
+        padding-left: 10px;
+    }
+
+    .td-rightpadding10 {
+        padding-right: 10px;
+    }
+</style>
+
+@if (BaseSettings.TranslationMode)
+{
+    <input type='hidden' id='aspclassnamePopup' value='@GetType().FullName' />
+}
+
+<div class="popupContent">
+    @using (Html.BeginForm())
+    {
+        <div class="windowButtonsPn">
+            <input id="idButtonDismissAll" type="button" class="button" onclick="upload506.dismissAllDuplicates(@Model.idfsUpload506);" value="@Translator.GetMessageString("btDismissAll")" />
+            <input id="idButtonFinalize" type="button" class="button" onclick="upload506.finalizeResolveDuplicates(@Model.idfsUpload506);" value="@Translator.GetMessageString("btFinalize")" />
+        </div>
+        <div class="windowSeparator"></div>
+
+        <div class="windowButtonsPn">
+            <div class="centered">
+                <input id="idButtonBack" type="button" onclick="upload506.getPreviousDuplicate(@Model.idfsUpload506, @Model.idfCase);" value="<" />
+                @if (ViewBag.UpdateItemsCount != null && ViewBag.CurrentUpdateItemIndex != null)
+                {
+                    <text>&nbsp;&nbsp;@ViewBag.CurrentUpdateItemIndex/@ViewBag.UpdateItemsCount&nbsp;&nbsp;</text>
+                }
+                else
+                {
+                    <text>@Translator.GetMessageString("strReportNA")</text>
+                }
+                <input id="idButtonForward" type="button" onclick="upload506.getNextDuplicate(@Model.idfsUpload506, @Model.idfCase);" value=">" />
+            </div>
+        </div>
+
+        <div class="windowButtonsPn">
+            <input id="idButtonCreateNew" type="button" class="button" onclick="upload506.setCreateAsNewGetNextDuplicate(@Model.idfsUpload506, @Model.idfCase);" value="@Translator.GetMessageString("btCreateNew")" />
+            <input id="idButtonDismiss" type="button" class="button" onclick="upload506.setDismissedGetNextDuplicate(@Model.idfsUpload506, @Model.idfCase);" value="@Translator.GetMessageString("btDismiss")" />
+            <input id="idButtonUpdate" type="button" class="button" onclick="upload506.setUpdatedGetNextDuplicate(@Model.idfsUpload506, @Model.idfCase);" value="@Translator.GetMessageString("btUpdate")" />
+        </div>
+
+        @Html.Hidden("Root", Model.idfsUpload506)
+        @Html.Hidden("idfCase", Model.idfCase)
+        <table class="level1 fourColumns">
+            <tr>
+                <td class=" medium label">
+                    @Html.BvLabel(Model, m => m.strCaseID)
+                </td>
+                <td class="medium">
+                    @Html.BvEditbox(Model, m => m.strCaseID)
+                </td>
+                <td class="medium label">
+                    @Html.BvLabel(Model.Item, m => m.Resolution)
+                </td>
+                <td class="medium">
+                    @Html.BvEditbox(Model.Item, m => m.strStatusPresent)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    @Html.BvLabel(Model, m => m.strPatientNameEIDSS)
+                </td>
+                <td>
+                    @Html.BvEditbox(Model, m => m.strPatientNameEIDSS)
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    @Html.BvLabel(Model, m => m.strTentativeDiagnosisEIDSS)
+                </td>
+                <td>
+                    @Html.BvEditbox(Model, m => m.strTentativeDiagnosisEIDSS)
+                </td>
+            </tr>
+            <tr>
+                <td><br /></td>
+            </tr>
+        </table>
+        <div>
+            <table class="level1 threeColumns" style="border-collapse: collapse;" width="100%">
+                <thead>
+                    <tr style="border-bottom: 1pt solid;">
+                        <th colspan="2" class="rightBorder td-rightpadding10">
+                            <label>@Translator.GetMessageString("rsEIDSSAttributes") </label>
+                        </th>
+                        <th width="100%">
+                            <label>@Translator.GetMessageString("rs506Attributes") </label>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="large label">
+                            @Html.BvLabel(Model, m => m.datDefineEIDSS)
+                        </td>
+                        <td class="medium rightBorder td-rightpadding10" style="padding-top: 5px;">
+                            @Html.BvDatebox(Model, m => m.datDefineEIDSS)
+                        </td>
+                        <td class="medium td-leftpadding10" width="100%">
+                            @Html.BvDatebox(Model, m => m.datDefine506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strSentByOfficeEIDSS)
+                        </td>
+                        <td class="rightBorder">
+                            @Html.BvEditbox(Model, m => m.strSentByOfficeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strSentByOffice506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strLocalIdentifierEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strLocalIdentifierEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strLocalIdentifier506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strHumanGenderEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strHumanGenderEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strHumanGender506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.intPatientAgeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.intPatientAgeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.intPatientAge506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strHumanAgeTypeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strHumanAgeTypeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strHumanAgeType506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strMarietalEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strMarietalEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strMarietal506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strNationalityEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strNationalityEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strNationality506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strForeignEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strForeignEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strForeign506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strOccupationTypeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strOccupationTypeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strOccupationType506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strAddrCodeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strAddrCodeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strAddrCode506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strRegionEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strRegionEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strRegion506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strRayonEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strRayonEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strRayon506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strSettlementEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strSettlementEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strSettlement506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strAddressEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strAddressEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strAddress506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strMunicipalityEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strMunicipalityEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strMunicipality506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strHospitalizationEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strHospitalizationEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strHospitalization506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strTypeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strTypeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strType506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strOutcomeEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strOutcomeEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strOutcome506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strEmployerNameEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strEmployerNameEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strEmployerName506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.datSickEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvDatebox(Model, m => m.datSickEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvDatebox(Model, m => m.datSick506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.datDeathEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvDatebox(Model, m => m.datDeathEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvDatebox(Model, m => m.datDeath506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.datRecordEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvDatebox(Model, m => m.datRecordEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvDatebox(Model, m => m.datRecord506)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.datEnteredEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvDatebox(Model, m => m.datEnteredEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            @Html.BvLabel(Model, m => m.strComplicaEIDSS)
+                        </td>
+                        <td class="rightBorder td-rightpadding10">
+                            @Html.BvEditbox(Model, m => m.strComplicaEIDSS)
+                        </td>
+                        <td class="td-leftpadding10">
+                            @Html.BvEditbox(Model, m => m.strComplica506)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@* Do not move this sript to the header of the page. There are problem with datepicker in Google Chrome. *@
+<script language="javascript" type="text/javascript">
+    $(".popupContent").ready(function () {
+        ChangeMessageWindowHeigth();
+
+        upload506.markErrorDuplicates();
+    });
+</script>

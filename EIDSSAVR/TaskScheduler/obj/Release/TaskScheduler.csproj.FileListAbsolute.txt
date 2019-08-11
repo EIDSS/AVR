@@ -1,0 +1,8 @@
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\bin\Release\TaskScheduler.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\bin\Release\TaskScheduler.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\bin\Release\Microsoft.Win32.TaskScheduler.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\obj\Release\TaskScheduler.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\obj\Release\TaskScheduler.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\obj\Release\TaskScheduler.csproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\obj\Release\TaskScheduler.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\TaskScheduler\obj\Release\TaskScheduler.pdb

@@ -1,0 +1,1 @@
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Setup\EIDSS.DesktopSetup\bin\Release\en-US\AVR.msi

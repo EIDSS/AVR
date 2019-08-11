@@ -1,0 +1,12 @@
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\eidss.remoting.dll
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\eidss.remoting.pdb
+C:\NGDev\EIDSS61\eidss.remoting\obj\Debug\eidss.remoting.dll
+C:\NGDev\EIDSS61\eidss.remoting\obj\Debug\eidss.remoting.pdb
+C:\NGDev\EIDSS61\eidss.remoting\obj\Debug\eidss.remoting.csprojAssemblyReference.cache
+C:\NGDev\EIDSS61\eidss.remoting\obj\Debug\eidss.remoting.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.pdb

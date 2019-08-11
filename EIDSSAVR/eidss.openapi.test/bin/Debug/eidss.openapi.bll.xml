@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eidss.openapi.bll</name>
+    </assembly>
+    <members>
+        <member name="T:eidss.openapi.bll.Bll.ReferenceBll">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.bll.Exceptions.OpenApiErrorCode">
+            <summary>Error codes</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.G0001">
+            <summary>General error</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0001">
+            <summary>User login can't be empty</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0002">
+            <summary>User with such login/password is not found</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0003">
+            <summary>The database version is absent or in incorrect format</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0004">
+            <summary>Login is locked</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0005">
+            <summary>Password is expired</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0006">
+            <summary>Language is not supported</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0007">
+            <summary>External system is not supported</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0008">
+            <summary>Login is failed (general login error)</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0009">
+            <summary>Login is required</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.A0010">
+            <summary>Access is denied</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0001">
+            <summary>Validation</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0002">
+            <summary>Reference is not found</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0003">
+            <summary>Object is not found</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.M0004">
+            <summary>An attempt to set a readonly field was occured</summary>
+        </member>
+        <member name="F:eidss.openapi.bll.Exceptions.OpenApiErrorCode.D0001">
+            <summary>Wrong format</summary>
+        </member>
+        <member name="T:eidss.openapi.bll.Exceptions.NamespaceDoc">
+            <summary>
+            Error codes
+            </summary>
+        </member>
+    </members>
+</doc>

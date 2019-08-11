@@ -1,0 +1,150 @@
+﻿@model eidss.model.Schema.Upload506Master
+@{
+    ViewBag.Title = @Translator.GetMessageString("tabUpload506File");
+    ViewBag.Number = "U01";
+    Layout = "~/Views/Shared/_DetailsLayout.cshtml";
+}
+@using Kendo.Mvc.UI
+@using bv.common.Configuration
+@using bv.common.Enums
+@using bv.model.Model.Core
+@using eidss.model.Resources
+@using eidss.model.Schema
+@using eidss.web.common.Utils
+@using eidss.webclient.Configurations
+@using eidss.webclient.Controllers
+@using eidss.webclient.Utils;
+
+
+@Html.IncludeVersionedCss("~/Content/Styles/ListFormDetails.css")
+@Html.IncludeVersionedCss("~/Content/Styles/SearchPanel.css")
+
+
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        $.ajaxSetup({
+            cache: false
+        });
+        listForm.pageOnLoad(@TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now).Hours);
+        
+        $("#btnUpload").click(function () {
+            $.ajax({
+                url: '@Url.Action("IsUploadFileEnabled")' + '/' + '@Model.idfsUpload506',
+                type: "GET",
+                success: function (result) {
+                    //alert(result.Enabled);
+                    $("#mesagePlaceHolder").html(""); // clear before appending new list
+
+                    if (result.Enabled === true) {
+                        showLoading();
+                        $("#upload506File").submit();
+                    } else {
+                        $("#mesagePlaceHolder").append(
+                            $('<div class="errorMessage"></div>').text(result.Message));
+                    }
+                },
+                error: function () {
+                    $("#mesagePlaceHolder").append(
+                        $('<div class="errorMessage"></div>').text("Error"));
+                }
+            });
+        });
+
+         @if (Model.GetState() == Upload506MasterState.HasDuplicates)
+         {
+             <text>upload506.showEditWindow(@Model.idfsUpload506, @Upload506Controller.GetDuplicatesForMaster(Model).First().idfCase);</text>
+         }
+         else if (Model.GetState() == Upload506MasterState.HasDuplicatesResolutionErrors)
+         {
+             <text>
+             bvDialog.showYesNo(msgConfimation,
+             '@Translator.GetMessageString("msgUploadFileDismissUnspecifiedDuplicates")',
+             function() {
+                 upload506.dismissWhenFinalize(@Model.idfsUpload506);
+             },
+                     function() {
+                         upload506.showEditWindow(@Model.idfsUpload506, @Upload506Controller.GetDuplicatesForMaster(Model).First().idfCase);
+                     });
+             </text>
+         }
+
+        @if (Model.GetState() == Upload506MasterState.ReadyForSave)
+        {
+            <text>upload506.showSaveFileDialog(@Model.idfsUpload506, '@(Model.Duplicates.Count == 0 ? Translator.GetMessageString("msgUploadFileConfirmSaveData") : Translator.GetMessageString("msgUploadFileConfirmSaveDataWithDublicates"))');</text>
+        }
+
+        @if (Model.HasFileWithErrors())
+         {
+            <text>upload506.downloadFile("@Url.Action("GetErrorsFile", new { id = Model.idfsUpload506 })");</text>
+         }
+
+        @if (Model.GetState() == Upload506MasterState.Saved)
+        {
+            <text>upload506.downloadFile("@Url.Action("GetResultFile", new { id = Model.idfsUpload506 })");</text>
+        }
+
+    });
+</script>
+
+@if (BaseSettings.TranslationMode)
+{
+    <input type='hidden' id='aspclassname' value='@GetType().FullName' />
+}
+
+<form method="post" action='@Url.Action("PostFile")' id="upload506File" enctype="multipart/form-data">
+
+    @Html.IdentificationAndHeartbeat("idfsUpload506", Model.idfsUpload506)
+    @Html.Hidden("ID", Model.idfsUpload506)
+
+    <table class="level1" style="width: 100%; table-layout: auto;">
+        <tr>
+            <td colspan="3" id="mesagePlaceHolder" class="label">
+                @if (Model.GetState() == Upload506MasterState.HasErrors)
+                {
+                    foreach (var err in Model.GetLastError())
+                    {
+                    <div class="errorMessage">
+                        @err
+                    </div>
+  
+                    }
+                }
+                else if (Model.GetState() == Upload506MasterState.Saved)
+                {
+                    <div class="successMessage">
+                        @string.Format(Translator.GetMessageString("msgUploadFileSuccess"), Model.GetResultFileName())
+                    </div>
+                }
+            </td>
+        </tr>
+        <tr>
+            <td class="label" style="white-space: nowrap;">@Translator.GetMessageString("chooseFileUpload")</td>
+            <td>
+                <span class="psevdoFile" style="width: 400px">
+                    <input id="psevdoFileValue" class="inputFileText" style="width: 360px" type="text" disabled />
+                    <input class="fileInput" type="file" size="1" name="fileUpload" accept=".xls,.xlsx,.dbf" onchange="document.getElementById('psevdoFileValue').value = this.value.replace(/.+[\\\/]/, ''); if(document.getElementById('psevdoFileValue').value.length > 0){ $('#btnUpload').removeAttr('disabled');} else { $('#btnUpload').attr('disabled', 'disabled');}" />
+                </span>
+            </td>
+            <td style="width: 100%">
+                <input type="button" value="@Translator.GetMessageString("upload")" class="button" id="btnUpload" disabled />
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+<div class="content">
+
+    @if (Model.GetState() == Upload506MasterState.Saved && Model.Items.Count > 0)
+    {
+        @Html.Action("Upload506ItemGrid", "Upload506",
+            new
+            {
+                root = Model.idfsUpload506,
+                name = Model.ObjectIdent + "Upload506Item",
+                items = Model.Items
+            })
+    }
+
+</div>
+

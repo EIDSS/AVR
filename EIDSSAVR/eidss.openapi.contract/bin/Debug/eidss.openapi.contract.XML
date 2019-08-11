@@ -1,0 +1,2213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eidss.openapi.contract</name>
+    </assembly>
+    <members>
+        <member name="T:eidss.openapi.contract.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Country">
+            <summary>
+            Country<br/>
+            Reference type: Country<br/>
+            Reference number: 19000001
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Region">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Rayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Settlement">
+            <summary>
+            Settlement<br/>
+            Reference type: Settlement<br/>
+            Reference number: 19000004
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.PostalCode">
+            <summary>
+            Postal code
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.StreetName">
+            <summary>
+            Street Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Apartment">
+            <summary>
+            Apartment
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Building">
+            <summary>
+            Building
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.House">
+            <summary>
+            House
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.ForeignAddress">
+            <summary>
+            Foreign address
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Latitude">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Address.Longitude">
+            <summary>
+            Longitude
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Animal">
+            <summary>
+            Herd
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Animal.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Animal.SpeciesRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Animal.Age">
+            <summary>
+            Species-defined age groups appear from drop-down menu in the form.  User selects appropriate range to capture animal's age.<br/>
+            Reference type: Animal Age<br/>
+            Reference number: 19000005
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Animal.Sex">
+            <summary>
+            Gender of the sick animal.  User selects from Female, Male, Neutered/Castrate or Unknown.<br/>
+            Reference type: Animal Sex<br/>
+            Reference number: 19000007
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Animal.Status">
+            <summary>
+            The animal's condition at the time of examination.  The user selects from At Risk, Dead, Destroyed, Examined, Sick, or Slaughtered.<br/>
+            Reference type: Animal/Bird Status<br/>
+            Reference number: 19000006
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Species">
+            <summary>
+            Herd
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.HerdRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.NumberOfDeadAnimals">
+            <summary>
+            Total  number of animals belonging to a single species within a single herd that were dead at the time of the report.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.NumberOfSickAnimals">
+            <summary>
+            Number of animals of the same species in the herd that are ill at the time of the report.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.TotalNumberOfAnimals">
+            <summary>
+            Total number of animals that are in the herd of the same species either living or dead at the time of the report.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.AnimalSpecies">
+            <summary>
+            The name of the group with which the animal is associated (e.g. cattle, pig, goat).<br/>
+            Reference type: Species List<br/>
+            Reference number: 19000086
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.StartOfSigns">
+            <summary>
+            The actual or best estimated calendar date when disease was evident in the group of animals.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.Note">
+            <summary>
+            Text value entered by user to capture additional information about a group of animals of the same species (e.g. breed).
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Species.AvgAge">
+            <summary>
+            Age of the specified specie in weeks
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Herd">
+            <summary>
+            Herd
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Herd.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Herd.FarmRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Herd.NumberOfDeadAnimals">
+            <summary>
+            Total  number of animals belonging to a single species within a single herd that were dead at the time of the report.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Herd.NumberOfSickAnimals">
+            <summary>
+            Total number of sick animals at the time of report, regardless of species that are in the herd.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Herd.TotalNumberOfAnimals">
+            <summary>
+            Total number of animals, regardless of species, assigned to the herd.  This number includes all animals living and dead so it should not exceed the number sick and dead in the herd.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.FarmListFilter">
+            <summary>
+            Farm
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.FarmID">
+            <summary>
+            A number that is assigned to the individual farm and automatically generated by EIDSS. The number appears when the farm information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.OwnerFirstName">
+            <summary>
+            Owner First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.OwnerMiddleName">
+            <summary>
+            Owner Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.OwnerLastName">
+            <summary>
+            Owner Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.Name">
+            <summary>
+            Name of the farm, if one is known
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.Type">
+            <summary>
+            Denotes the size of the farming operation.  User selects from Backyard or village household (&lt;50), Commercial small scale (50-500), Commercial medium scale (500-5000), Commercial large scale (>5000)<br/>
+            Reference type: Farm Ownership Type<br/>
+            Reference number: 19000065
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.Region">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.Rayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListFilter.Settlement">
+            <summary>
+            Settlement<br/>
+            Reference type: Settlement<br/>
+            Reference number: 19000004
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.FarmListItem">
+            <summary>
+            Farm
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.FarmID">
+            <summary>
+            A number that is assigned to the individual farm and automatically generated by EIDSS. The number appears when the farm information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.OwnerFirstName">
+            <summary>
+            Owner First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.OwnerMiddleName">
+            <summary>
+            Owner Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.OwnerLastName">
+            <summary>
+            Owner Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.Name">
+            <summary>
+            Name of the farm, if one is known
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.Type">
+            <summary>
+            Denotes the size of the farming operation.  User selects from Backyard or village household (&lt;50), Commercial small scale (50-500), Commercial medium scale (500-5000), Commercial large scale (>5000)<br/>
+            Reference type: Farm Ownership Type<br/>
+            Reference number: 19000065
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.Region">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.Rayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.FarmListItem.Settlement">
+            <summary>
+            Settlement<br/>
+            Reference type: Settlement<br/>
+            Reference number: 19000004
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.PensideTest">
+            <summary>
+            Laboratory test
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.SampleRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.AnimalRecordID">
+            <summary>
+            A locally assigned number used to uniquely identify the animal that sample/s were collected from for pen-side testing.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.PensideTestName">
+            <summary>
+            The name of the pen-side test used for diagnosis.<br/>
+            Reference number: 19000104<br/>
+            Reference type: Penside Test Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.PensideTestResult">
+            <summary>
+            Results of the pen-side test that was used.<br/>
+            Reference number: 19000105<br/>
+            Reference type: Penside Test Result
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PensideTest.FieldSampleID">
+            <summary>
+            A locally assigned number to identify the sample collected for pen-side testing.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.TestInterpretation">
+            <summary>
+            Laboratory test interpretation
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.TestRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.RuleInRuleOut">
+            <summary>
+            This fields indicates if the selected test rule in or rule out a diagnosis.<br/>
+            Reference number: 19000106<br/>
+            Reference type: Rule In Value for Test Validation
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.InterpretedBy">
+            <summary>
+            Interpreted By<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.ValidateBy">
+            <summary>
+            This field indicates who validates a test.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.RuleInRuleOutComments">
+            <summary>
+            Comments related to rule in or rule out attribute
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.ValidationComments">
+            <summary>
+            Comments related to validation indicator
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.InterpretationDate">
+            <summary>
+            Interpretation Date
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.ValidationDate">
+            <summary>
+            Date when test result has been validated
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.TestInterpretation.Validated">
+            <summary>
+            This field indicates whether a test has been validated
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Person">
+            <summary>
+            Person
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Person.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Person.PersonFirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Person.PersonMiddleName">
+            <summary>
+            Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Person.PersonLastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.OrganizationListFilter">
+            <summary>
+            Organization
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListFilter.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListFilter.AccessoryCode">
+            <summary>
+            Identification of the record's accessory to human, veterinary or vector modules
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListFilter.Abbreviation">
+            <summary>
+            Abbreviation
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListFilter.OrganizationName">
+            <summary>
+            Organization Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListFilter.UniqueOrganizationID">
+            <summary>
+            Unique Organization ID
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.OrganizationListItem">
+            <summary>
+            Organization
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.AccessoryCode">
+            <summary>
+            Identification of the record's accessory to human, veterinary or vector modules
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.Abbreviation">
+            <summary>
+            Abbreviation
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.OrganizationName">
+            <summary>
+            Organization Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.UniqueOrganizationID">
+            <summary>
+            Unique Organization ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationListItem.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Organization">
+            <summary>
+            Organization
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.AccessoryCode">
+            <summary>
+            Identification of the record's accessory to human, veterinary or vector modules
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.Abbreviation">
+            <summary>
+            Abbreviation
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.OrganizationName">
+            <summary>
+            Organization Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.LocalAbbreviation">
+            <summary>
+            Abbreviation on Local Language
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.LocalOrganizationName">
+            <summary>
+            Local Organization Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.Phone">
+            <summary>
+            Phone
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.UniqueOrganizationID">
+            <summary>
+            Unique Organization ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Organization.Persons">
+            <summary>
+            List of Persons
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.PatientListFilter">
+            <summary>
+            Filter for retrieving a list of Patient
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.PatientFirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.PatientMiddleName">
+            <summary>
+            Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.PatientLastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.PatientPersonalIDType">
+            <summary>
+            Patient Personal ID Type<br/>
+            Reference type: Person ID Type<br/>
+            Reference number: 19000148
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.PersonalID">
+            <summary>
+            Personal ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.DateOfBirthFrom">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.DateOfBirthTo">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.CurrentResidenceCountry">
+            <summary>
+            Country<br/>
+            Reference type: Country<br/>
+            Reference number: 19000001
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.CurrentResidenceRegion">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListFilter.CurrentResidenceRayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.PatientListItem">
+            <summary>
+            Short description of Patient
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.PatientFirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.PatientMiddleName">
+            <summary>
+            Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.PatientLastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.PatientPersonalIDType">
+            <summary>
+            Patient Personal ID Type<br/>
+            Reference type: Person ID Type<br/>
+            Reference number: 19000148
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.PersonalID">
+            <summary>
+            Personal ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.DateOfBirth">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.CurrentResidenceCountry">
+            <summary>
+            Country<br/>
+            Reference type: Country<br/>
+            Reference number: 19000001
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.CurrentResidenceRegion">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PatientListItem.CurrentResidenceRayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.PersonReference">
+            <summary>PersonReference class</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PersonReference.RecordID">
+            <summary>A unique number of the record</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PersonReference.Name">
+            <summary>Name of the reference value (in the language, specified in login)</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.PersonReference.OrganizationRecordID">
+            <summary>A unique number of the parent record</summary>
+        </member>
+        <member name="T:eidss.openapi.contract.OrganizationReference">
+            <summary>OrganizationReference class</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationReference.RecordID">
+            <summary>A unique number of the record</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.OrganizationReference.Name">
+            <summary>Name of the reference value (in the language, specified in login)</summary>
+        </member>
+        <member name="T:eidss.openapi.contract.GisReference">
+            <summary>GisReference class</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.GisReference.RecordID">
+            <summary>A unique number of the record</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.GisReference.Name">
+            <summary>Name of the reference value (in the language, specified in login)</summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Farm">
+            <summary>
+            Farm
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.RootRecordID">
+            <summary>
+            A unique number of the root record. Root record contains information about the particular object. When there is a need to link a case to the same root object (e.g. same patient) information is copied from the root object to the new object created for this case.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.FarmID">
+            <summary>
+            A number that is assigned to the individual farm and automatically generated by EIDSS. The number appears when the farm information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.OwnerFirstName">
+            <summary>
+            Owner First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.OwnerMiddleName">
+            <summary>
+            Owner Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.OwnerLastName">
+            <summary>
+            Owner Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Email">
+            <summary>
+            The e-mail address that is used for business correspondence by the owner or farm manager.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Fax">
+            <summary>
+            The number for the fax that is used for business by the owner or farm manager.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Name">
+            <summary>
+            Name of the farm, if one is known
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Phone">
+            <summary>
+            Phone number of the farm owner.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Type">
+            <summary>
+            Denotes the size of the farming operation.  User selects from Backyard or village household (&lt;50), Commercial small scale (50-500), Commercial medium scale (500-5000), Commercial large scale (>5000)<br/>
+            Reference type: Farm Ownership Type<br/>
+            Reference number: 19000065
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Farm.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.VetCaseListFilter">
+            <summary>Filter for retrieving a list of Vet Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.OwnerFirstName">
+            <summary>
+            Farm Owner First Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.OwnerLastName">
+            <summary>
+            Farm Owner Last Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.Diagnosis">
+            <summary>
+            Diagnosis<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.CaseClassification">
+            <summary>
+            User assigns classification based on case definition for disease. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.CaseStatus">
+            <summary>
+            In process and Closed are the user options to indicate that the investigation is continuing (In process) or has concluded (closed).  Once closed, other fields in the record become read only.<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.CaseType">
+            <summary>
+            System assigns report as either Livestock or Avian based on form used for data entry.<br/>
+            Reference number: 19000012<br/>
+            Reference type: Case Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.ReportType">
+            <summary>
+            Identifies the method by which the report became known.  Cases identified through a surveillance program will be labled as "Active" in AVR while regular case entries will be labled "Passive."<br/>
+            Reference number: 19000144<br/>
+            Reference type: Case Report Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.Region">
+            <summary>
+            Farm Region
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.Rayon">
+            <summary>
+            Farm Rayon
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.Settlement">
+            <summary>
+            Farm Settlement
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.EnteredDateFrom">
+            <summary>
+            This value is auto populated to reflect the date when the record was first created.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.EnteredDateTo">
+            <summary>
+            This value is auto populated to reflect the date when the record was first created.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.InvestigationDateFrom">
+            <summary>
+            Date that a case investigation began. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListFilter.InvestigationDateTo">
+            <summary>
+            Date that a case investigation began. 
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.VetCaseListItem">
+            <summary>Short description of Vet Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.FarmName">
+            <summary>
+            Farm Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.AssignedDate">
+            <summary>
+            Date that the case was assigned to the investigator.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.EnteredDate">
+            <summary>
+            This value is auto populated to reflect the date when the record was first created.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.InitialReportDate">
+            <summary>
+            Date the case was first reported by the Officer identified in the Reported By field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.InvestigationDate">
+            <summary>
+            Date that a case investigation began. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.Diagnosis">
+            <summary>
+            Diagnosis<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.FinalDiagnosis">
+            <summary>
+            Final Diagnosis<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.TentativeDiagnosis1">
+            <summary>
+            Tentative Diagnosis 1<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.TentativeDiagnosis2">
+            <summary>
+            Tentative Diagnosis 2<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.TentativeDiagnosis3">
+            <summary>
+            Tentative Diagnosis 3<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.CaseClassification">
+            <summary>
+            User assigns classification based on case definition for disease. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.CaseStatus">
+            <summary>
+            In process and Closed are the user options to indicate that the investigation is continuing (In process) or has concluded (closed).  Once closed, other fields in the record become read only.<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.CaseType">
+            <summary>
+            System assigns report as either Livestock or Avian based on form used for data entry.<br/>
+            Reference number: 19000012<br/>
+            Reference type: Case Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.ReportType">
+            <summary>
+            Identifies the method by which the report became known.  Cases identified through a surveillance program will be labled as "Active" in AVR while regular case entries will be labled "Passive."<br/>
+            Reference number: 19000144<br/>
+            Reference type: Case Report Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.Country">
+            <summary>
+            Farm Country
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.Region">
+            <summary>
+            Farm Region
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.Rayon">
+            <summary>
+            Farm Rayon
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCaseListItem.Settlement">
+            <summary>
+            Farm Settlement
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.VetCase">
+            <summary>Full description of Vet Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Diagnosis">
+            <summary>
+            Diagnosis<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.FinalDiagnosis">
+            <summary>
+            Final Diagnosis<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis1">
+            <summary>
+            Tentative Diagnosis 1<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis2">
+            <summary>
+            Tentative Diagnosis 2<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis3">
+            <summary>
+            Tentative Diagnosis 3<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.CaseClassification">
+            <summary>
+            User assigns classification based on case definition for disease. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.CaseStatus">
+            <summary>
+            In process and Closed are the user options to indicate that the investigation is continuing (In process) or has concluded (closed).  Once closed, other fields in the record become read only.<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.CaseType">
+            <summary>
+            System assigns report as either Livestock or Avian based on form used for data entry.<br/>
+            Reference number: 19000012<br/>
+            Reference type: Case Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.ReportType">
+            <summary>
+            Identifies the method by which the report became known.  Cases identified through a surveillance program will be labled as "Active" in AVR while regular case entries will be labled "Passive."<br/>
+            Reference number: 19000144<br/>
+            Reference type: Case Report Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.EnteredByOfficer">
+            <summary>
+            Identifies the person performing the data entry based on application log in entries.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.InvestigatorName">
+            <summary>
+            The name of the person who investigated the reported case of disease.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.ReportedByOfficer">
+            <summary>
+            Officer reporting the information.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.InvestigationDate">
+            <summary>
+            Date that a case investigation began. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.AssignedDate">
+            <summary>
+            Date that the case was assigned to the investigator.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.EnteredDate">
+            <summary>
+            This value is auto populated to reflect the date when the record was first created.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.FinalDiagnosisDate">
+            <summary>
+            The application auto populates this field with the system date.  
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.InitialReportDate">
+            <summary>
+            Date the case was first reported by the Officer identified in the Reported By field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis1Date">
+            <summary>
+            Tentative Diagnosis 1 Date
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis2Date">
+            <summary>
+            Tentative Diagnosis 2 Date
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TentativeDiagnosis3Date">
+            <summary>
+            Tentative Diagnosis 3 Date
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.FieldAccessionID">
+            <summary>
+            User may enter a local reference number to identify the record.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.OutbreakID">
+            <summary>
+            A number that uniquely identifies an outbreak incidence. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Farm">
+            <summary>
+            Farm
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Samples">
+            <summary>
+            List of Samples
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Tests">
+            <summary>
+            List of Tests
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.TestInterpretations">
+            <summary>
+            List of TestInterpretations
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.PensideTests">
+            <summary>
+            List of Penside Tests
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Herds">
+            <summary>
+            List of Herds
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Species">
+            <summary>
+            List of Species
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.VetCase.Animals">
+            <summary>
+            List of Animals
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Test">
+            <summary>
+            Laboratory test
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.SampleRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.TestName">
+            <summary>
+            The name of the diagnostic test performed on the sample. Plus function allows to add names of the test to the drop down list.<br/>
+            Reference number: 19000097<br/>
+            Reference type: Test Name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.TestStatus">
+            <summary>
+            Allows to track the status of laboratory testing results in real-time.  Auto populated when the batch is closed.<br/>
+            Reference number: 19000001<br/>
+            Reference type: Test Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.TestResult">
+            <summary>
+            The result of the test performed on the sample.<br/>
+            Reference number: 19000096<br/>
+            Reference type: Test Result
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.TestCategory">
+            <summary>
+            Category of the test.<br/>
+            Reference number: 19000095<br/>
+            Reference type: Test Category
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.Diagnosis">
+            <summary>
+            Current diagnosis at the time of sample receipt by the laboratory auto populated from initial diagnosis or changed diagnosis if apply.<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.TestRunID">
+            <summary>
+            ID number to track "batch workload" in a laboratory. Use to track easily work and pending results. Auto populated when a new batch is created. The same as Batch ID.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Test.ResultDate">
+            <summary>
+            Result Date
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Diagnosis">
+            <summary>
+            Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Diagnosis.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Diagnosis.DiagnosisName">
+            <summary>
+            Name of the reference value (in the language, specified in login)
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Diagnosis.IDC10Code">
+            <summary>
+            ICD-10 Code
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Diagnosis.AccessoryCode">
+            <summary>
+            Identification of the record's accessory to human, veterinary or vector modules, bit mask of:<br/>
+            • 2 (Human)<br/>
+            • 32 (Livestock)<br/>
+            • 64 (Avian)<br/>
+            • 128 (Vector)<br/>
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Diagnosis.Aggregate">
+            <summary>
+            Identification of the case-based or aggregate diagnosis
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.HumanCase">
+            <summary>Full description of Human Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.LocalID">
+            <summary>
+            An unique identification number, determined by each country, used to identify the patient.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.OtherLocationAtTimeOfNotification">
+            <summary>
+            Other location (besides hospital or home) that the patient is at the time of notification.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.HospitalAtTimeOfNotification">
+            <summary>
+            Hospital name where patient was at time of the notification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.PlaceOfHospitalization">
+            <summary>
+            Name of the facility where patient was hospitalized for notified condition.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.FacilityWherePatientFirstSoughtCare">
+            <summary>
+            The name of the facility where patient first sought care for the symptoms of his/her illness. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.AdditionalInformationComments">
+            <summary>
+            Additinoal information and comments to the case
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.BasisOfDiagnosisClinical">
+            <summary>
+            The type of information (clinical) based on which the final diagnosis was made 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.BasisOfDiagnosisLaboratoryTest">
+            <summary>
+            The type of information (laboratory) based on which the final diagnosis was made 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.BasisOfDiagnosisEpidemiologicalLinks">
+            <summary>
+            The type of information (epidemiological links) based on which the final diagnosis was made 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.ChangedDiagnosis">
+            <summary>
+            An updated condition or disease assigned to the patient that replaces the initial diagnosis. <br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Diagnosis">
+            <summary>
+            The initial condition or disease assigned to the case; initial diagnosis that was given when case was notified to the public health agency.<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.CaseStatus">
+            <summary>
+            Status of case information entry into the system. There are two options for this field: In process and Closed. "In process" is the default option. Status should be changed to "Closed", after laboratory and epidemiological investigation is completed and final diagnosis made, thus making all the data fields "read-only".<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.InitialCaseClassification">
+            <summary>
+            Classification of the case according to surveillance case definitions based on the initial diagnosis. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.FinalCaseClassification">
+            <summary>
+            Classification of the case according to surveillance case definitions developed based on the final diagnosis, laboratory tests results and epidemiological information. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.PatientStatusAtNotificationTime">
+            <summary>
+            A physical status of the patient at the time of notification. <br/>
+            Reference number: 19000035<br/>
+            Reference type: Patient State
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.AntibioticsAdministrated">
+            <summary>
+            Antibiotic or antiviral therapy administered prior to specimen collection The antibiotic/antiviral could be self administered by the patient, or prescribed by a physician.<br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Hospitalization">
+            <summary>
+            Hospitalization of the patient for notified condition <br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.SamplesCollected">
+            <summary>
+            User enters if a sample was or was not collected from the patient. <br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.RelationToOutbreak">
+            <summary>
+            Checked when particular case is related to the particular outbreak<br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.TestsConducted">
+            <summary>
+            This fields indicates where tests have been conducted<br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Outcome">
+            <summary>
+            The outcome of the patients at the time of the discharge from the hospital or final diagnosis made.<br/>
+            Reference number: 19000064<br/>
+            Reference type: Case Outcome List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NonNotifiableDiagnosis">
+            <summary>
+            Any non-notifiable diagnosis that was given to the patient when he/she first sought care after symptom onset.<br/>
+            Reference number: 19000149<br/>
+            Reference type: Non-Notifiable Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Occupation">
+            <summary>
+            Occupation of the patient at the time of notification. <br/>
+            Reference number: 19000061<br/>
+            Reference type: Occupation Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.ReasonForNotCollectingSamples">
+            <summary>
+            The reason why the sample was not collected from the patient should be entered.<br/>
+            Reference number: 19000150<br/>
+            Reference type: Not Collected Reason
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.LocationAtTimeOfNotification">
+            <summary>
+            Location of the patient at the time of notification.<br/>
+            Reference number: 19000041<br/>
+            Reference type: Patient Location Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NotificationReceivedByFacility">
+            <summary>
+            The name of facility that received the notification.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NotificationSentByFacility">
+            <summary>
+            The name of facility that submitted notification to the public health agency.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.OrganizationConductingInvestigation">
+            <summary>
+            The name of Organization that conducting the case investigation.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NotificationSentByOfficer">
+            <summary>
+            The First, Last and Patronymic name of the person that sent the notification of the occurrence of a disease.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NotificationReceivedByOfficer">
+            <summary>
+            The First , Patronymic and Last name of the person that received the notification of the occurrence of a disease.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.EpidemiologistName">
+            <summary>
+            The name of the epidemiologist that investigated the case.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DiagnosisDate">
+            <summary>
+            The date when an initial diagnosis was made.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfChangedDiagnosis">
+            <summary>
+            The date on which a diagnosis of a disease or condition was changed.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.NotificationDate">
+            <summary>
+            Date on which a clinic, hospital, office, etc. notifies public health agency about the occurrence of a disease in a subject.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfCompletionOfPaperForm">
+            <summary>
+            The date the paper case investigation form was completed
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DatePatientFirstSoughtCare">
+            <summary>
+            Date when patient first sought care after onset of symptoms of his/her illness.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfHospitalization">
+            <summary>
+            Date when patient was hospitalized for current diagnosis or condition.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfLastPatientPresenceAtWork">
+            <summary>
+            Date when patient was last present at work or school if patient is a student.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfExposure">
+            <summary>
+            Date of the fist exposure of the patient to the risk factor(s).
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfDischarge">
+            <summary>
+            Date that patient was discharged from the hospital if patient did not die.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateOfSymptomOnset">
+            <summary>
+            The date of first clinical symptom(s) manifestation in patient,  as recalled by the patient.  
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.StartingDateOfInvestigation">
+            <summary>
+            Date when the case investigation started.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateEntered">
+            <summary>
+            The date the case information was first entered into EIDSS. The date is auto populated prior to case information being saved. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.DateLastSaved">
+            <summary>
+            The date the case information was last saved in EIDSS. This date updates each time the case information is saved.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.OutbreakID">
+            <summary>
+            A number that uniquely identifies an outbreak incidence. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.LocationOfExposure">
+            <summary>
+            Location of Exposure
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Patient">
+            <summary>
+            Patient
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Samples">
+            <summary>
+            List of Samples
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.Tests">
+            <summary>
+            List of Tests
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCase.TestInterpretations">
+            <summary>
+            List of TestInterpretations
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.HumanCaseListFilter">
+            <summary>Filter for retrieving a list of Human Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.LocalID">
+            <summary>
+            An unique identification number, determined by each country, used to identify the patient.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.PatientLastName">
+            <summary>
+            Patient's Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.PatientFirstName">
+            <summary>
+            Patient's First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.PatientMiddleName">
+            <summary>
+            Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.PatientPhoneNumber">
+            <summary>
+            Phone number of the patient’s residence.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.EmployerName">
+            <summary>
+            Name of the facility for patient’s current employer, children’s facility and school if patient is a student.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.FinalDiagnosis">
+            <summary>
+            An updated condition or disease assigned to the patient that replaces the initial diagnosis. <br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.Diagnosis">
+            <summary>
+            The initial condition or disease assigned to the case; initial diagnosis that was given when case was notified to the public health agency.<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.FinalCaseClassification">
+            <summary>
+            Classification of the case according to surveillance case definitions developed based on the final diagnosis, laboratory tests results and epidemiological information. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CaseStatus">
+            <summary>
+            Status of case information entry into the system. There are two options for this field: In process and Closed. "In process" is the default option. Status should be changed to "Closed", after laboratory and epidemiological investigation is completed and final diagnosis made, thus making all the data fields "read-only".<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationReceivedByFacility">
+            <summary>
+            The name of facility that received the notification.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationSentByFacility">
+            <summary>
+            The name of facility that submitted notification to the public health agency.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationSentByOfficer">
+            <summary>
+            The First, Last and Patronymic name of the person that sent the notification of the occurrence of a disease.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationReceivedByOfficer">
+            <summary>
+            The First , Patronymic and Last name of the person that received the notification of the occurrence of a disease.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.AgeType">
+            <summary>
+            Patient’s age type (days, months, years), populated automatically when DOB is entered.<br/>
+            Reference type: Human Age Type<br/>
+            Reference number: 19000042
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.Sex">
+            <summary>
+            Male or Female gender of the patient.<br/>
+            Reference type: Human Gender<br/>
+            Reference number: 19000043
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NationalityCitizenship">
+            <summary>
+            Nationality or citizenship of the patient that is notified as a case of disease.<br/>
+            Reference number: 19000054<br/>
+            Reference type: Nationality List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.Outcome">
+            <summary>
+            The outcome of the patients at the time of the discharge from the hospital or final diagnosis made.<br/>
+            Reference number: 19000064<br/>
+            Reference type: Case Outcome List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.Hospitalization">
+            <summary>
+            Hospitalization of the patient for notified condition <br/>
+            Reference number: 19000100<br/>
+            Reference type: Yes/No Value List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CurrentResidenceCountry">
+            <summary>
+            Country<br/>
+            Reference type: Country<br/>
+            Reference number: 19000001
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CurrentResidenceRegion">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CurrentResidenceRayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.CurrentResidenceSettlement">
+            <summary>
+            Settlement<br/>
+            Reference type: Settlement<br/>
+            Reference number: 19000004
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.AdditionalInformationComments">
+            <summary>
+            Additinoal information and comments to the case
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.PlaceOfHospitalization">
+            <summary>
+            Name of the facility where patient was hospitalized for notified condition.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.AgeFrom">
+            <summary>
+            Patient’s current age, calculated automatically upon entry of DOB (calculated from Date of Symptom Onset, if it is blank, than - Notification Date, if it is blank, than – Date Entered). If DOB is unknown, user can enter the age of the patient manually to the field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.AgeTo">
+            <summary>
+            Patient’s current age, calculated automatically upon entry of DOB (calculated from Date of Symptom Onset, if it is blank, than - Notification Date, if it is blank, than – Date Entered). If DOB is unknown, user can enter the age of the patient manually to the field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateEnteredFrom">
+            <summary>
+            The date the case information was first entered into EIDSS. The date is auto populated prior to case information being saved. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateEnteredTo">
+            <summary>
+            The date the case information was first entered into EIDSS. The date is auto populated prior to case information being saved. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfBirthFrom">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfBirthTo">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfCompletionOfPaperFormFrom">
+            <summary>
+            The date the paper case investigation form was completed
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfCompletionOfPaperFormTo">
+            <summary>
+            The date the paper case investigation form was completed
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DiagnosisDateFrom">
+            <summary>
+            The date when an initial diagnosis was made.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DiagnosisDateTo">
+            <summary>
+            The date when an initial diagnosis was made.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfFinalDiagnosisFrom">
+            <summary>
+            Date when ultimate diagnosis was made. This is a read-only field, populated by the "Date of Diagnosis" or the "Date of Changed Diagnosis"  in the Notification tab after final update.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfFinalDiagnosisTo">
+            <summary>
+            Date when ultimate diagnosis was made. This is a read-only field, populated by the "Date of Diagnosis" or the "Date of Changed Diagnosis"  in the Notification tab after final update.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfSymptomOnsetForm">
+            <summary>
+            The date of first clinical symptom(s) manifestation in patient,  as recalled by the patient.  
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.DateOfSymptomOnsetTo">
+            <summary>
+            The date of first clinical symptom(s) manifestation in patient,  as recalled by the patient.  
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationDateForm">
+            <summary>
+            Date on which a clinic, hospital, office, etc. notifies public health agency about the occurrence of a disease in a subject.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListFilter.NotificationDateTo">
+            <summary>
+            Date on which a clinic, hospital, office, etc. notifies public health agency about the occurrence of a disease in a subject.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.HumanCaseListItem">
+            <summary>Short description of Human Case</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CaseID">
+            <summary>
+            A number that is assigned to the individual case and automatically generated by EIDSS. The number appears when the case information is saved first time. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.LocalID">
+            <summary>
+            An unique identification number, determined by each country, used to identify the patient.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.PatientLastName">
+            <summary>
+            Patient's Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.PatientFirstName">
+            <summary>
+            Patient's First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.DateEntered">
+            <summary>
+            The date the case information was first entered into EIDSS. The date is auto populated prior to case information being saved. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.DateOfBirth">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.DateOfCompletionOfPaperForm">
+            <summary>
+            The date the paper case investigation form was completed
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.FinalDiagnosis">
+            <summary>
+            The ultimate diagnosis of a disease or condition confirmed clinically, epidemiologically or via laboratory testing. This is a read-only field, populated by the initial diagnosis or ultimate diagnosis entered in "Changed Diagnosis" field on the Notification tab.<br/>
+            Reference number: 19000019<br/>
+            Reference type: Diagnosis
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.InitialCaseClassification">
+            <summary>
+            Classification of the case according to surveillance case definitions based on the initial diagnosis. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.FinalCaseClassification">
+            <summary>
+            Classification of the case according to surveillance case definitions developed based on the final diagnosis, laboratory tests results and epidemiological information. <br/>
+            Reference number: 19000011<br/>
+            Reference type: Case Classification
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CaseStatus">
+            <summary>
+            Status of case information entry into the system. There are two options for this field: In process and Closed. "In process" is the default option. Status should be changed to "Closed", after laboratory and epidemiological investigation is completed and final diagnosis made, thus making all the data fields "read-only".<br/>
+            Reference number: 19000111<br/>
+            Reference type: Case Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.Age">
+            <summary>
+            Patient’s current age, calculated automatically upon entry of DOB (calculated from Date of Symptom Onset, if it is blank, than - Notification Date, if it is blank, than – Date Entered). If DOB is unknown, user can enter the age of the patient manually to the field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.AgeType">
+            <summary>
+            Patient’s age type (days, months, years), populated automatically when DOB is entered.<br/>
+            Reference type: Human Age Type<br/>
+            Reference number: 19000042
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CurrentResidenceCountry">
+            <summary>
+            Country<br/>
+            Reference type: Country<br/>
+            Reference number: 19000001
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CurrentResidenceRegion">
+            <summary>
+            Region<br/>
+            Reference type: Region<br/>
+            Reference number: 19000002
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CurrentResidenceRayon">
+            <summary>
+            Rayon<br/>
+            Reference type: Rayon<br/>
+            Reference number: 19000003
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.HumanCaseListItem.CurrentResidenceSettlement">
+            <summary>
+            Settlement<br/>
+            Reference type: Settlement<br/>
+            Reference number: 19000004
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Login.organization">
+            <summary>
+            User organization name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Login.user">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Login.password">
+            <summary>
+            User password
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Login.language">
+            <summary>
+            Language:<br/>
+            • "en"<br/>
+            • "ru"<br/>
+            • "ka"<br/>
+            • "kk"<br/>
+            • "uz-C"<br/>
+            • "uz-L"<br/>
+            • "az-L"<br/>
+            • "hy"<br/>
+            • "uk"<br/>
+            • "ar"<br/>
+            • "vi"<br/>
+            • "lo"<br/>
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Login.externalSystem">
+            <summary>
+            External system name (optional):<br/>
+            • "HMIS"<br/>
+            • "e-TB"<br/>
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Patient">
+            <summary>
+            Patient
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.RootRecordID">
+            <summary>
+            A unique number of the root record. Root record contains information about the particular object. When there is a need to link a case to the same root object (e.g. same patient) information is copied from the root object to the new object created for this case.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientFirstName">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientMiddleName">
+            <summary>
+            Second name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientLastName">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientCurrentResidence">
+            <summary>
+            Number of building or house where the patient resides.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientEmployer">
+            <summary>
+            Address of the patient's current employer or school if patient is a student.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PermanentResidence">
+            <summary>
+            Permanent Residence
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientPhoneNumber">
+            <summary>
+            Phone number of the patient’s residence.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PermanentResidencePhoneNumber">
+            <summary>
+            Phone number of patient's registered or permanent residence if applicable 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.Sex">
+            <summary>
+            Male or Female gender of the patient.<br/>
+            Reference type: Human Gender<br/>
+            Reference number: 19000043
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.NationalityCitizenship">
+            <summary>
+            Nationality or citizenship of the patient that is notified as a case of disease.<br/>
+            Reference number: 19000054<br/>
+            Reference type: Nationality List
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PatientPersonalIDType">
+            <summary>
+            Patient Personal ID Type<br/>
+            Reference type: Person ID Type<br/>
+            Reference number: 19000148
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.PersonalID">
+            <summary>
+            Personal ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.Age">
+            <summary>
+            Patient’s current age, calculated automatically upon entry of DOB (calculated from Date of Symptom Onset, if it is blank, than - Notification Date, if it is blank, than – Date Entered). If DOB is unknown, user can enter the age of the patient manually to the field.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.AgeType">
+            <summary>
+            Patient’s age type (days, months, years), populated automatically when DOB is entered.<br/>
+            Reference type: Human Age Type<br/>
+            Reference number: 19000042
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.DateOfBirth">
+            <summary>
+            Patient’s date of birth
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.DateOfDeath">
+            <summary>
+            Date of patient's death.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.EmployerName">
+            <summary>
+            Name of the facility for patient’s current employer, children’s facility and school if patient is a student.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Patient.EmployerPhoneNumber">
+            <summary>
+            Phone number for patient’s current employer, children’s facility and school.
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.NamespaceDoc">
+            <summary>
+            Contract classes
+            </summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Reference">
+            <summary>Reference class</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Reference.RecordID">
+            <summary>A unique number of the record</summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Reference.Name">
+            <summary>Name of the reference value (in the language, specified in login)</summary>
+        </member>
+        <member name="T:eidss.openapi.contract.Sample">
+            <summary>
+            Laboratory sample
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.RecordID">
+            <summary>
+            A unique number of the record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.HumanCaseRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.SpeciesRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.AnimalRecordID">
+            <summary>
+            A unique number of the parent record
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.ConditionReceived">
+            <summary>
+            The condition of the sample as accepted by the laboratory upon receipt.<br/>
+            Reference number: 19000110<br/>
+            Reference type: Accession Condition
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.SampleType">
+            <summary>
+            Type of the sample that was collected from the patients. A drop down list includes a list of sample types to choose. Sample types for multiple samples  for the same patient can be entered .<br/>
+            Reference number: 19000087<br/>
+            Reference type: Sample Type
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.Status">
+            <summary>
+            Status of the sample.<br/>
+            Reference number: 19000015<br/>
+            Reference type: Sample Status
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.CollectedByInstitution">
+            <summary>
+            Name of the Institution where the sample was collected.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.SentToOrganization">
+            <summary>
+            Organization where the object was sent to.<br/>
+            Reference type: Organization Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.CollectedByOfficer">
+            <summary>
+            Name of the Officer at the Institution that sent the sample to the laboratory.<br/>
+            Reference type: Person Reference
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.AccessionDate">
+            <summary>
+            The date the sample was registered in the Laboratory. Today's Date is auto populated fist time, but gives an opportunity to change manually during first entry. After saving upon initial entry, program does not allow to changed it. 
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.CollectionDate">
+            <summary>
+            Dates the each sample was taken from the patient.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.SentDate">
+            <summary>
+            Dates when patient's each specimen was sent to the laboratory.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.LocalSampleID">
+            <summary>
+            The unique identification number that was given to the sample at the institution where the sample was collected, e.g. hospital or clinic.
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.LabSampleID">
+            <summary>
+            Lab Sample ID
+            </summary>
+        </member>
+        <member name="P:eidss.openapi.contract.Sample.Comment">
+            <summary>
+            Comment
+            </summary>
+        </member>
+    </members>
+</doc>

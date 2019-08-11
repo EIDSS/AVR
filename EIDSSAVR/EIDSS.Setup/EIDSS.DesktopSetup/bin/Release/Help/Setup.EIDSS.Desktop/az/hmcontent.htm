@@ -1,0 +1,1182 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>Yoluxucu Xəstəliklərin Elektron Müşahidə Sistemi</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="system_requirements_and_set-up.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">İcmal</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="what_is_eidss.htm" target="hmcontent"><span class="heading2" id="s1.1">YXEMS nədir?</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="getting_started.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Başlamaq</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="logging_on.htm" target="hmcontent"><span class="heading2" id="s2.1">Giriş\Çıxış</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="system_automatical_upgrade.htm" target="hmcontent"><span class="heading2" id="s2.2">Sistem Avtomatik Təkmiləşdirmə</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="changing_password.htm" target="hmcontent"><span class="heading2" id="s2.3">Parolun Dəyişdirilməsi</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="switching_user.htm" target="hmcontent"><span class="heading2" id="s2.4">İstifadəçinin Dəyişdirilməsi</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="main_menu_and_toolbar.htm" target="hmcontent"><span class="heading2" id="s2.5">Əsas Menyu və alətlər paneli</span></a>
+</li>
+<li class="heading2" id="i2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="multiligual_support.htm" target="hmcontent"><span class="heading2" id="s2.6">Çoxdilli Dəstək</span></a>
+</li>
+<li class="heading2" id="i2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="system_preferences.htm" target="hmcontent"><span class="heading2" id="s2.7">Sistem Seçimləri</span></a>
+</li>
+<li class="heading2" id="i2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="replication_setup.htm" target="hmcontent"><span class="heading2" id="s2.8">Məntəqə Xəbərdarlıqlarına Abunəlik</span></a>
+</li>
+<li class="heading2" id="i2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="closing_windows.htm" target="hmcontent"><span class="heading2" id="s2.9">Məlumatların Yadda Saxlanması və/ya Pəncərənin Bağlanması</span></a>
+</li>
+<li class="heading2" id="i2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="item_lists.htm" target="hmcontent"><span class="heading2" id="s2.10">Bənd Siyahıları</span></a>
+</li>
+<li class="heading2" id="i2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="searches.htm" target="hmcontent"><span class="heading2" id="s2.11">Axtarış Siyahıları</span></a>
+</li>
+<li class="heading2" id="i2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="forms_custom.htm" target="hmcontent"><span class="heading2" id="s2.12">Siyahı və Axtarış Formaların Uyğunlaşdırılması</span></a>
+</li>
+<li class="heading2" id="i2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="detail_forms.htm" target="hmcontent"><span class="heading2" id="s2.13">Təfərrüatlı formalar</span></a>
+</li>
+<li class="heading2" id="i2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="maps.htm" target="hmcontent"><span class="heading2" id="s2.14">GEO yerləşmə</span></a>
+</li>
+<li class="heading2" id="i2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="keyboard_navigation.htm" target="hmcontent"><span class="heading2" id="s2.15">Naviqasiya</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="data_replication.htm" target="hmcontent"><span class="heading2" id="s2.16">Məlumat Replikasiyası</span></a>
+</li>
+<li class="heading2" id="i2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.17" href="replication_alerts.htm" target="hmcontent"><span class="heading2" id="s2.17">Qəfil-Açılan Bildirişlər</span></a>
+</li>
+<li class="heading2" id="i2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.18" href="access_rights.htm" target="hmcontent"><span class="heading2" id="s2.18">Giriş Hüquqları</span></a>
+</li>
+<li class="heading2" id="i2.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.19" href="printing_standard_reports.htm" target="hmcontent"><span class="heading2" id="s2.19">Hesabatlar</span></a>
+</li>
+<li class="heading2" id="i2.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.20" href="printing_paper_forms.htm" target="hmcontent"><span class="heading2" id="s2.20">Kağız Formalar</span></a>
+</li>
+<li class="heading2" id="i2.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.21" href="data_glossary.htm" target="hmcontent"><span class="heading2" id="s2.21">Məlumat Lüğəti</span></a>
+</li>
+<li class="heading2" id="i2.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.22" href="help.htm" target="hmcontent"><span class="heading2" id="s2.22">Kömək</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="eidss_configuration.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">YXEMS-in köklənməsi</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="repository_schema.htm" target="hmcontent"><span class="heading2" id="s3.1">Saxlanılma yerinin Sxemi</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="basic_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.2">Əsas istinadların Redaktəedicisi</span></a>
+</li>
+<li class="heading2" id="i3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="clinical_diagnosis_editor.htm" target="hmcontent"><span class="heading2" id="s3.3">Kliniki Diaqnozlar istinadın Redaktəedicisi</span></a>
+</li>
+<li class="heading2" id="i3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="measure_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.4">Tədbirlər Redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="sample_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.5">Nümunələrin növləri istinadların redaktəedicisi</span></a>
+</li>
+<li class="heading2" id="i3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.6" href="vector_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.6">Keçiricilərin növləri istinadın redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.7" href="vector_species_types.htm" target="hmcontent"><span class="heading2" id="s3.7">Keçiricilərin Heyvan Növlərin Redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.8" href="species_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s3.8">Heyvan növlərinin istinad redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.9" href="statistic_types_editor.htm" target="hmcontent"><span class="heading2" id="s3.9">Ümumi Statistik Növlərinin Redaktəedicisi</span></a>
+</li>
+<li class="heading2" id="i3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.10" href="case_classification_editor.htm" target="hmcontent"><span class="heading2" id="s3.10">Xəstəlik hadisəsinin təsnifatı Redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.11" href="report_diagnoses_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.11">Hesabatın Diaqnozlar Qrupların Redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.12" href="age_groups_editor.htm" target="hmcontent"><span class="heading2" id="s3.12">Yaş Qrupların Redaktoru</span></a>
+</li>
+<li class="heading2" id="i3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.13" href="human_aggregate_case_matrix_ed.htm" target="hmcontent"><span class="heading2" id="s3.13">Cəmləşdirilmiş insan xəstəlik hadisəsi Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.14" href="vet_aggregate_case_matrix_edit.htm" target="hmcontent"><span class="heading2" id="s3.14">Qrupşəkilli baytarlıq xəstəlik hadisəsi Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.15" href="vet_diag_invest_matrix_editor.htm" target="hmcontent"><span class="heading2" id="s3.15">Baytarlıq Diaqnostik Tədqiqatlar Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.16" href="vet_prophylactic_measure_matri.htm" target="hmcontent"><span class="heading2" id="s3.16">Baytarlıq Profilaktik Tədbirləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.17" href="vet_sanitary_action_matrix_edi.htm" target="hmcontent"><span class="heading2" id="s3.17">Baytarlıq Sanitariya Tədbirləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.18" href="species-animal_age_matrix.htm" target="hmcontent"><span class="heading2" id="s3.18">Heyvan Növü - Heyvanın Yaş Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.19" href="sample_type-derivative_type_ma.htm" target="hmcontent"><span class="heading2" id="s3.19">Nümunə növü-Törəmə növləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.20" href="diagnosis-sample_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.20">Diaqnoz-Nümunə Növləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.21" href="diagnosis-lab_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.21">Diaqnoz-Laborator testləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.22" href="diagnosis-penside_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s3.22">Diaqnoz- Təcili testlər Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.23" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.23" href="test_results_matrix.htm" target="hmcontent"><span class="heading2" id="s3.23">Test-Test Nəticələri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.24" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.24" href="vector_type-collection_method_matrix.htm" target="hmcontent"><span class="heading2" id="s3.24">Keçirici növü-Toplama Metodlar Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.25" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.25" href="vector_type-sample_type_matrix.htm" target="hmcontent"><span class="heading2" id="s3.25">Keçirici növü-Nümunə Növü Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.26" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.26" href="vector_type-field_test_matrix.htm" target="hmcontent"><span class="heading2" id="s3.26">Keçirici növü-Təcili testləri Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.27" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.27" href="diagnoses-age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.27">Diaqnoz-Yaş Qrupları Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.28" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.28" href="report_diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.28">Hesabat Diaqnozlar Qrupu-Diaqnozlar Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.29" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.29" href="custom_report_rows.htm" target="hmcontent"><span class="heading2" id="s3.29">Köklənilən Hesabatların Sıraları</span></a>
+</li>
+<li class="heading2" id="i3.30" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.30" href="diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s3.30">Diaqnozlar Qrupu-Diaqnozlar Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.31" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.31" href="age_groups-statistical_age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s3.31">Yaş Qrupu - Statistik Yaş Qrupları Matriksi</span></a>
+</li>
+<li class="heading2" id="i3.32" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.32" href="unique_numbering_schema.htm" target="hmcontent"><span class="heading2" id="s3.32">Unikal Nömrələmə Sxemi</span></a>
+</li>
+<li class="heading2" id="i3.33" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.33" href="aggregatesettings.htm" target="hmcontent"><span class="heading2" id="s3.33">Qrupşəkilli kökləmələr</span></a>
+</li>
+<li class="heading2" id="i3.34" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.34" href="maps_configuration.htm" target="hmcontent"><span class="heading2" id="s3.34">Xəritə Konfiqurasiyası</span></a>
+</li>
+<li class="heading2" id="i3.35" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.35" href="parameter_types_matrix.htm" target="hmcontent"><span class="heading2" id="s3.35">Parametr Növlərinin Redaktəedicisi</span></a>
+</li>
+<li class="heading2" id="i3.36" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.36" href="data_archiving_settings.htm" target="hmcontent"><span class="heading2" id="s3.36">Məlumatların arxivləşdirilməsini köklə</span></a>
+</li>
+<li class="heading2" id="i3.37" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.37" href="form_design.htm" target="hmcontent"><span class="heading2" id="s3.37" ondblclick="return dblclicked(this)">Əlavə edilən Formalar Tərtibatçısı</span></a>
+<ul id="ul3.37" style="list-style-type:none">
+<li class="heading3" id="i3.37.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.1" href="ffd_to_edit_template.htm" target="hmcontent"><span class="heading3" id="s3.37.1">ƏEF - Bir Şablonu Redaktə Etmək</span></a>
+</li>
+<li class="heading3" id="i3.37.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.2" href="ffd_to_add_template.htm" target="hmcontent"><span class="heading3" id="s3.37.2">ƏEF - Yeni bir Şablonu Əlavə Etmək</span></a>
+</li>
+<li class="heading3" id="i3.37.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.3" href="ffd_-_to_delete_a_template.htm" target="hmcontent"><span class="heading3" id="s3.37.3">ƏEF - Şablonu Silmək</span></a>
+</li>
+<li class="heading3" id="i3.37.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.37.4" href="ffd_fields_and_sections.htm" target="hmcontent"><span class="heading3" id="s3.37.4">ƏEF - Şablon üçün Bölmələr və xanalar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.38" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.38" href="administration_configuration.htm" target="hmcontent"><span class="heading2" id="s3.38" ondblclick="return dblclicked(this)">İdaraetmə Konfiqurasiyası</span></a>
+<ul id="ul3.38" style="list-style-type:none">
+<li class="heading3" id="i3.38.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.1" href="farms.htm" target="hmcontent"><span class="heading3" id="s3.38.1">Fermalar</span></a>
+</li>
+<li class="heading3" id="i3.38.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.2" href="employees_users.htm" target="hmcontent"><span class="heading3" id="s3.38.2">İşçilər/İstifadəçilər</span></a>
+</li>
+<li class="heading3" id="i3.38.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.3" href="persons_list.htm" target="hmcontent"><span class="heading3" id="s3.38.3">Şəxslər Siyahısı</span></a>
+</li>
+<li class="heading3" id="i3.38.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.4" href="organisations.htm" target="hmcontent"><span class="heading3" id="s3.38.4">Təşkilatlar</span></a>
+</li>
+<li class="heading3" id="i3.38.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.5" href="settlements.htm" target="hmcontent"><span class="heading3" id="s3.38.5">Yaşayış məntəqələri</span></a>
+</li>
+<li class="heading3" id="i3.38.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.38.6" href="statistics.htm" target="hmcontent"><span class="heading3" id="s3.38.6">Statistik məlumatlar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.39" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.39" href=javascript:void(0);><span class="heading2" id="s3.39" ondblclick="return dblclicked(this)">Təhlükəsizlik qaydaları</span></a>
+<ul id="ul3.39" style="list-style-type:none">
+<li class="heading3" id="i3.39.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.1" href="security_policy.htm" target="hmcontent"><span class="heading3" id="s3.39.1">Təhlükəsizlik siyasəti</span></a>
+</li>
+<li class="heading3" id="i3.39.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.2" href="user_groups.htm" target="hmcontent"><span class="heading3" id="s3.39.2">İstifadəçi Qrupları</span></a>
+</li>
+<li class="heading3" id="i3.39.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.3" href="security.htm" target="hmcontent"><span class="heading3" id="s3.39.3">Sistem Funksiyaları</span></a>
+</li>
+<li class="heading3" id="i3.39.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.4" href="system_functions_list.htm" target="hmcontent"><span class="heading3" id="s3.39.4">Sistem Funksiyaların Siyahısı</span></a>
+</li>
+<li class="heading3" id="i3.39.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.39.5" href="eidss_sites.htm" target="hmcontent"><span class="heading3" id="s3.39.5">YXEMS məntəqələri</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.40" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.40" href="administrative_support.htm" target="hmcontent"><span class="heading2" id="s3.40" ondblclick="return dblclicked(this)">İnzibati Alətlər</span></a>
+<ul id="ul3.40" style="list-style-type:none">
+<li class="heading3" id="i3.40.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.1" href="system_event_log.htm" target="hmcontent"><span class="heading3" id="s3.40.1">Sistem Hadisələri Jurnalı</span></a>
+</li>
+<li class="heading3" id="i3.40.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.2" href="security_log.htm" target="hmcontent"><span class="heading3" id="s3.40.2">Sistem Mühafizəsi Jurnalı</span></a>
+</li>
+<li class="heading3" id="i3.40.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.40.3" href="data_audit_management.htm" target="hmcontent"><span class="heading3" id="s3.40.3">Audit Məlumatlarının fəaliyyəti</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="human_surveillance.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Səhiyyə Müşahidəsi</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="hc_intro.htm" target="hmcontent"><span class="heading2" id="s4.1">Giriş</span></a>
+</li>
+<li class="heading2" id="i4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="hc_forms.htm" target="hmcontent"><span class="heading2" id="s4.2" ondblclick="return dblclicked(this)">Ekran formalarının təsviri</span></a>
+<ul id="ul4.2" style="list-style-type:none">
+<li class="heading3" id="i4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.1" href="hc_h02.htm" target="hmcontent"><span class="heading3" id="s4.2.1">İnsan Xəstəlik Hadisəsinin Hesabat Forması H02</span></a>
+</li>
+<li class="heading3" id="i4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.2" href="hc_h01.htm" target="hmcontent"><span class="heading3" id="s4.2.2">İnsan Xəstəlik Hadisələri Siyahısı H01</span></a>
+</li>
+<li class="heading3" id="i4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.3" href="hc_h09.htm" target="hmcontent"><span class="heading3" id="s4.2.3">İnsan Xəstəlik Hadisəsi Axtarış Forması H09</span></a>
+</li>
+<li class="heading3" id="i4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.4" href="hc_h10.htm" target="hmcontent"><span class="heading3" id="s4.2.4">İnsan Xəstəlik Hadisələri De-duplikasiya Siyahısı H10</span></a>
+</li>
+<li class="heading3" id="i4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.5" href="hc_h11.htm" target="hmcontent"><span class="heading3" id="s4.2.5">İnsan Xəstəlik Hadisələri De-duplikasiya Təfərrüatları H11</span></a>
+</li>
+<li class="heading3" id="i4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.6" href="hc_h12.htm" target="hmcontent"><span class="heading3" id="s4.2.6">Diaqnozun Dəyişdirilməsi H12</span></a>
+</li>
+<li class="heading3" id="i4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.7" href="hc_h14.htm" target="hmcontent"><span class="heading3" id="s4.2.7">Diaqnozun Tarixçəsi H14</span></a>
+</li>
+<li class="heading3" id="i4.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.8" href="hc_h06.htm" target="hmcontent"><span class="heading3" id="s4.2.8">Aqreqat İnsan Xəstəlik Hadisələrinin Təfərrüatları H06</span></a>
+</li>
+<li class="heading3" id="i4.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.9" href="hc_h08.htm" target="hmcontent"><span class="heading3" id="s4.2.9">Aqreqat İnsan Xəstəlik Hadisələrinin Xülasəsi H08</span></a>
+</li>
+<li class="heading3" id="i4.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.10" href="hc_h15.htm" target="hmcontent"><span class="heading3" id="s4.2.10">İnsan Xəstəlik Hadisələri Siyahısı H15</span></a>
+</li>
+<li class="heading3" id="i4.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.11" href="hc_h16.htm" target="hmcontent"><span class="heading3" id="s4.2.11">Aqreqat İnsan Xəstəlik Hadisələrinin De-duplikasiya Forması H16</span></a>
+</li>
+<li class="heading3" id="i4.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.12" href="hc_h03.htm" target="hmcontent"><span class="heading3" id="s4.2.12">Şəxslərin Siyahısı H03</span></a>
+</li>
+<li class="heading3" id="i4.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.2.13" href="hc_h04.htm" target="hmcontent"><span class="heading3" id="s4.2.13">Şəxsin Təfərrüatları H04</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="hc_operations.htm" target="hmcontent"><span class="heading2" id="s4.3" ondblclick="return dblclicked(this)">İnsan xəstəlik hadisələri ilə Əməliyyatlar</span></a>
+<ul id="ul4.3" style="list-style-type:none">
+<li class="heading3" id="i4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.1" href="hc_urgent_notification.htm" target="hmcontent"><span class="heading3" id="s4.3.1">Təcili bildirişi yarat</span></a>
+</li>
+<li class="heading3" id="i4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.2" href="hc_detailed.htm" target="hmcontent"><span class="heading3" id="s4.3.2">Təfərrüatlı Araşdırma Məlumatlarınının qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.3" href="hc_register_samples.htm" target="hmcontent"><span class="heading3" id="s4.3.3">Xəstəlik Hadisəsi üzrə nümunələrin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.4" href="hc_register_samples_2.htm" target="hmcontent"><span class="heading3" id="s4.3.4">Yeni kontakt əlavə et</span></a>
+</li>
+<li class="heading3" id="i4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.5" href="hc_register_tests.htm" target="hmcontent"><span class="heading3" id="s4.3.5">Xəstəlik hadisəsi üzrə test nəticələrinin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.6" href="hc_review_tests.htm" target="hmcontent"><span class="heading3" id="s4.3.6">Xəstəlik hadisəsi üzrə test nəticələrinin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i4.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.7" href="hc_interpret.htm" target="hmcontent"><span class="heading3" id="s4.3.7">Test nəticələrini intepretasiya et</span></a>
+</li>
+<li class="heading3" id="i4.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.8" href="hc_finalize.htm" target="hmcontent"><span class="heading3" id="s4.3.8">Xəstəlik Hadisəsini yekunlaşdır</span></a>
+</li>
+<li class="heading3" id="i4.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.9" href="hc_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.3.9">İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et</span></a>
+</li>
+<li class="heading3" id="i4.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.10" href="hc_edit.htm" target="hmcontent"><span class="heading3" id="s4.3.10">Xəstəlik Hadisəsini redaktə et</span></a>
+</li>
+<li class="heading3" id="i4.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.11" href="hc_delete.htm" target="hmcontent"><span class="heading3" id="s4.3.11">Xəstəlik Hadisəsini sil</span></a>
+</li>
+<li class="heading3" id="i4.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.12" href="hc_search.htm" target="hmcontent"><span class="heading3" id="s4.3.12">Xəstəlik Hadisəsini axtar</span></a>
+</li>
+<li class="heading3" id="i4.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.13" href="hc_search_browse.htm" target="hmcontent"><span class="heading3" id="s4.3.13">Brauz rejimində axtar</span></a>
+</li>
+<li class="heading3" id="i4.3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.3.14" href="hc_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.3.14">İnsan Xəstəlik Hadisələrinin De-duplikasiyası</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="hac_operations.htm" target="hmcontent"><span class="heading2" id="s4.4" ondblclick="return dblclicked(this)">Aqreqat İnsan Xəstəlik Hadisələri ilə bağlı əməliyyatlar</span></a>
+<ul id="ul4.4" style="list-style-type:none">
+<li class="heading3" id="i4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.1" href="hac_create.htm" target="hmcontent"><span class="heading3" id="s4.4.1">Aqreqat İnsan Xəstəlik Hadisələrini yarat</span></a>
+</li>
+<li class="heading3" id="i4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.2" href="hac_paper_forms.htm" target="hmcontent"><span class="heading3" id="s4.4.2">Aqreqat İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et</span></a>
+</li>
+<li class="heading3" id="i4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.3" href="hac_edit.htm" target="hmcontent"><span class="heading3" id="s4.4.3">Aqreqat İnsan Xəstəlik Hadisələrini redaktə et</span></a>
+</li>
+<li class="heading3" id="i4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.4" href="hac_delete.htm" target="hmcontent"><span class="heading3" id="s4.4.4">Aqreqat İnsan Xəstəlik Hadisələrini sil</span></a>
+</li>
+<li class="heading3" id="i4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.5" href="hac_search.htm" target="hmcontent"><span class="heading3" id="s4.4.5">İnsan Aqreqat Xəstəlik Hadisələrini axtar</span></a>
+</li>
+<li class="heading3" id="i4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.6" href="hac_summary.htm" target="hmcontent"><span class="heading3" id="s4.4.6">Xülasə hesabatını yarat</span></a>
+</li>
+<li class="heading3" id="i4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.4.7" href="hac_deduplication.htm" target="hmcontent"><span class="heading3" id="s4.4.7">Aqreqat İnsan Xəstəlik Hadisələrinin De-duplikasiyası</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="veterinary_surveillance.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Baytarlıq Müşahidə</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="vc_intro.htm" target="hmcontent"><span class="heading2" id="s5.1">Giriş</span></a>
+</li>
+<li class="heading2" id="i5.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="vc_forms.htm" target="hmcontent"><span class="heading2" id="s5.2" ondblclick="return dblclicked(this)">Ekran formalarının Təsviri</span></a>
+<ul id="ul5.2" style="list-style-type:none">
+<li class="heading3" id="i5.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.1" href="vc_v02.htm" target="hmcontent"><span class="heading3" id="s5.2.1">Mal-Qarada Xəstəliyin Araşdırılması Forması VO2</span></a>
+</li>
+<li class="heading3" id="i5.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.2" href="vc_v03.htm" target="hmcontent"><span class="heading3" id="s5.2.2">Quşlarda Xəstəliyin Araşdırılması Forması VO3</span></a>
+</li>
+<li class="heading3" id="i5.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.3" href="vc_v01.htm" target="hmcontent"><span class="heading3" id="s5.2.3">Heyvan Xəstəlik Hadisələrinin Siyahısı V01</span></a>
+</li>
+<li class="heading3" id="i5.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.4" href="vc_v15.htm" target="hmcontent"><span class="heading3" id="s5.2.4">Fəal Müşahidə Kampaniyaların Siyahısı V15</span></a>
+</li>
+<li class="heading3" id="i5.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.5" href="vc_v16.htm" target="hmcontent"><span class="heading3" id="s5.2.5">Fəal Müşahidə Kampaniyaların Siyahısı V16</span></a>
+</li>
+<li class="heading3" id="i5.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.6" href="vc_v17.htm" target="hmcontent"><span class="heading3" id="s5.2.6">Fəal Müşahidə Sesiyaların Siyahısı V17</span></a>
+</li>
+<li class="heading3" id="i5.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.7" href="vc_v18.htm" target="hmcontent"><span class="heading3" id="s5.2.7">Fəal Müşahidə Sesiyası V18</span></a>
+</li>
+<li class="heading3" id="i5.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.8" href="vc_v10.htm" target="hmcontent"><span class="heading3" id="s5.2.8">Aqreqat Heyvan Xəstəlik Hadisələrinin Təfərrüatları V10</span></a>
+</li>
+<li class="heading3" id="i5.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.9" href="vc_v09.htm" target="hmcontent"><span class="heading3" id="s5.2.9">Aqreqat Heyvan Xəstəlik Hadisələrinin Siyahısı V09</span></a>
+</li>
+<li class="heading3" id="i5.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.10" href="vc_v11.htm" target="hmcontent"><span class="heading3" id="s5.2.10">Aqreqat Heyvan Xəstəlik Hadisələrinin Xülasəsi Forması V11</span></a>
+</li>
+<li class="heading3" id="i5.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.11" href="vc_v19.htm" target="hmcontent"><span class="heading3" id="s5.2.11">Aqreqat Heyvan Xəstəlik Hadisələrinin De-duplikasiya Forması V19</span></a>
+</li>
+<li class="heading3" id="i5.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.12" href="vc_v12.htm" target="hmcontent"><span class="heading3" id="s5.2.12">Aqreqat Baytarlıq Tədbirlərin Təfərrüatları V12</span></a>
+</li>
+<li class="heading3" id="i5.2.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.13" href="vc_v13.htm" target="hmcontent"><span class="heading3" id="s5.2.13">Aqreqat Baytarlıq Tədbirlərin Siyahısı V13</span></a>
+</li>
+<li class="heading3" id="i5.2.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.14" href="vc_v14.htm" target="hmcontent"><span class="heading3" id="s5.2.14">Aqreqat Baytarlıq Tədbirlərin Xülasəsi Forması V14</span></a>
+</li>
+<li class="heading3" id="i5.2.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.15" href="vc_v20.htm" target="hmcontent"><span class="heading3" id="s5.2.15">Aqreqat Baytarlıq Tədbirlərin De-duplikasiya Forması V20</span></a>
+</li>
+<li class="heading3" id="i5.2.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.16" href="vc_v04.htm" target="hmcontent"><span class="heading3" id="s5.2.16">Fermalar V04</span></a>
+</li>
+<li class="heading3" id="i5.2.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.17" href="vc_v05.htm" target="hmcontent"><span class="heading3" id="s5.2.17">Ferma barədə məlumatlar V05</span></a>
+</li>
+<li class="heading3" id="i5.2.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.2.18" href="vc_v06.htm" target="hmcontent"><span class="heading3" id="s5.2.18">Ferma barədə məlumatların təfərrüatları V06</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="vc_operations.htm" target="hmcontent"><span class="heading2" id="s5.3" ondblclick="return dblclicked(this)">Heyvan xəstəlik hadisələri ilə Əməliyyatlar</span></a>
+<ul id="ul5.3" style="list-style-type:none">
+<li class="heading3" id="i5.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.1" href="lc_create.htm" target="hmcontent"><span class="heading3" id="s5.3.1">Mal-qara xəstəlik hadisəsini yarat</span></a>
+</li>
+<li class="heading3" id="i5.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.2" href="lc_herd.htm" target="hmcontent"><span class="heading3" id="s5.3.2">Mal-qara xəstəlik hadisəsi bölməsində sürü/növ/heyvanlar barədə məlumatların qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i5.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.3" href="ac_create.htm" target="hmcontent"><span class="heading3" id="s5.3.3">Quş xəstəlik hadisəsini yarat</span></a>
+</li>
+<li class="heading3" id="i5.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.4" href="ac_flocks.htm" target="hmcontent"><span class="heading3" id="s5.3.4">Quş qripi xəstəlik hadisəsi bölməsində quş dəstələri və növləri barədə məlumatların qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i5.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.5" href="vc_samples.htm" target="hmcontent"><span class="heading3" id="s5.3.5">Heyvan xəstəlik hadisəsi üzrə nümunələrin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i5.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.6" href="vc_ftests.htm" target="hmcontent"><span class="heading3" id="s5.3.6">Heyvan xəstəlik hadisəsi zamanı sahədə testlərin nəticələrinin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i5.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.7" href="vc_ltests.htm" target="hmcontent"><span class="heading3" id="s5.3.7">Heyvan xəstəlik hadisəsi zamanı laborator testlərin nəticələrinin qeydiyyatını apar</span></a>
+</li>
+<li class="heading3" id="i5.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.8" href="vc_ltests_review.htm" target="hmcontent"><span class="heading3" id="s5.3.8">Heyvan xəstəlik hadisəsi bölməsində laborator testlərin və test nəticələrinin görüntüsü</span></a>
+</li>
+<li class="heading3" id="i5.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.9" href="vc_test_res.htm" target="hmcontent"><span class="heading3" id="s5.3.9">Heyvan xəstəlik hadisəsi bölməsində test nəticələrinin intepretasiya et</span></a>
+</li>
+<li class="heading3" id="i5.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.10" href="vc_final.htm" target="hmcontent"><span class="heading3" id="s5.3.10">Heyvan xəstəlik hadisəsini yekunlaşdır</span></a>
+</li>
+<li class="heading3" id="i5.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.11" href="vc_paper.htm" target="hmcontent"><span class="heading3" id="s5.3.11">Heyvan xəstəlik hadisəsi üzrə kağız formaları çap et</span></a>
+</li>
+<li class="heading3" id="i5.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.12" href="vc_edit.htm" target="hmcontent"><span class="heading3" id="s5.3.12">Heyvan xəstəlik hadisəsini redaktə et</span></a>
+</li>
+<li class="heading3" id="i5.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.13" href="vc_delete.htm" target="hmcontent"><span class="heading3" id="s5.3.13">Heyvan xəstəlik hadisəsini sil</span></a>
+</li>
+<li class="heading3" id="i5.3.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.3.14" href="vc_search.htm" target="hmcontent"><span class="heading3" id="s5.3.14">Heyvan xəstəlik hadisəsini axtar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="as_opps.htm" target="hmcontent"><span class="heading2" id="s5.4" ondblclick="return dblclicked(this)">Fəal Müşahidə Modulu ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.4" style="list-style-type:none">
+<li class="heading3" id="i5.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.1" href="asc_opps.htm" target="hmcontent"><span class="heading3" id="s5.4.1" ondblclick="return dblclicked(this)">Fəal Müşahidə Kampaniyası ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.4.1" style="list-style-type:none">
+<li class="heading4" id="i5.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.1" href="asc_create.htm" target="hmcontent"><span class="heading4" id="s5.4.1.1">Fəal Müşahidə Kampaniyasını yarat</span></a>
+</li>
+<li class="heading4" id="i5.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.2" href="asc_link.htm" target="hmcontent"><span class="heading4" id="s5.4.1.2">Fəal Müşahidə Sesiyasını kampaniya ilə əlaqələndir</span></a>
+</li>
+<li class="heading4" id="i5.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.3" href="asc_edit.htm" target="hmcontent"><span class="heading4" id="s5.4.1.3">Fəal Müşahidə Kampaniyasını redaktə et</span></a>
+</li>
+<li class="heading4" id="i5.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.4" href="asc_delete.htm" target="hmcontent"><span class="heading4" id="s5.4.1.4">Fəal Müşahidə Kampaniyasını sil</span></a>
+</li>
+<li class="heading4" id="i5.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.1.5" href="asc_search.htm" target="hmcontent"><span class="heading4" id="s5.4.1.5">Fəal Müşahidə Kampaniyasını axtar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.4.2" href="ass_opps.htm" target="hmcontent"><span class="heading3" id="s5.4.2" ondblclick="return dblclicked(this)">Fəal Müşahidə Sesiyaları ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.4.2" style="list-style-type:none">
+<li class="heading4" id="i5.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.1" href="ass_create.htm" target="hmcontent"><span class="heading4" id="s5.4.2.1">Fəal Müşahidə Sesiyasını yarat</span></a>
+</li>
+<li class="heading4" id="i5.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.2" href="ass_link.htm" target="hmcontent"><span class="heading4" id="s5.4.2.2">Fəal Müşahidə Sesiyasının mövcud kampaniya ilə əlaqələndirilməsi</span></a>
+</li>
+<li class="heading4" id="i5.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.3" href="ass_details.htm" target="hmcontent"><span class="heading4" id="s5.4.2.3">Fəal Müşahidə Sesiyası üçün təfərrüatlı məlumatların qeydiyyatını apar</span></a>
+</li>
+<li class="heading4" id="i5.4.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.4" href="ass_testr.htm" target="hmcontent"><span class="heading4" id="s5.4.2.4">Fəal Müşahidə Sesiyası üçün test nəticələrinin qeydiyyatını apar</span></a>
+</li>
+<li class="heading4" id="i5.4.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.5" href="ass_testl.htm" target="hmcontent"><span class="heading4" id="s5.4.2.5">Heyvan xəstəlik hadisəsi bölməsində laborator testlərin və test nəticələrinin görüntüsü</span></a>
+</li>
+<li class="heading4" id="i5.4.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.6" href="ass_testr_int.htm" target="hmcontent"><span class="heading4" id="s5.4.2.6">Heyvan xəstəlik hadisəsi bölməsində test nəticələrinin intepretasiya et</span></a>
+</li>
+<li class="heading4" id="i5.4.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.7" href="ass_sum.htm" target="hmcontent"><span class="heading4" id="s5.4.2.7">Fəal Müşahidə Sesiyası üçün xülasə məlumatlarının qeydiyyatını apar</span></a>
+</li>
+<li class="heading4" id="i5.4.2.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.8" href="ass_case.htm" target="hmcontent"><span class="heading4" id="s5.4.2.8">Fəal Müşahidə Sesiyasına əsasən heyvan xəstəlik hadisəsini yarat</span></a>
+</li>
+<li class="heading4" id="i5.4.2.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.9" href="ass_final.htm" target="hmcontent"><span class="heading4" id="s5.4.2.9">Fəal Müşahidə Sesiyasını yekunlaşdır</span></a>
+</li>
+<li class="heading4" id="i5.4.2.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.10" href="ass_edit.htm" target="hmcontent"><span class="heading4" id="s5.4.2.10">Fəal Müşahidə Sesiyasının redaktə et</span></a>
+</li>
+<li class="heading4" id="i5.4.2.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.11" href="ass_delete.htm" target="hmcontent"><span class="heading4" id="s5.4.2.11">Fəal Müşahidə Sesiyasının sil</span></a>
+</li>
+<li class="heading4" id="i5.4.2.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.4.2.12" href="ass_search.htm" target="hmcontent"><span class="heading4" id="s5.4.2.12">Fəal Müşahidə Sesiyasını axtar</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i5.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="vac_opps.htm" target="hmcontent"><span class="heading2" id="s5.5" ondblclick="return dblclicked(this)">Aqreqat heyvan xəstəlik hadisələri ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.5" style="list-style-type:none">
+<li class="heading3" id="i5.5.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.1" href="ac_opps.htm" target="hmcontent"><span class="heading3" id="s5.5.1" ondblclick="return dblclicked(this)">Aqreqat xəstəlik hadisələri ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.5.1" style="list-style-type:none">
+<li class="heading4" id="i5.5.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.1" href="vac_create.htm" target="hmcontent"><span class="heading4" id="s5.5.1.1">Aqreqat heyvan xəstəlik hadisəsini yarat</span></a>
+</li>
+<li class="heading4" id="i5.5.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.2" href="vac_paper.htm" target="hmcontent"><span class="heading4" id="s5.5.1.2">Aqreqat İnsan Xəstəlik Hadisələri üzrə kağız formaları çap et</span></a>
+</li>
+<li class="heading4" id="i5.5.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.3" href="vac_edit.htm" target="hmcontent"><span class="heading4" id="s5.5.1.3">Aqreqat heyvan xəstəlik hadisələrinin redaktə edilməsi</span></a>
+</li>
+<li class="heading4" id="i5.5.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.4" href="vac_delete.htm" target="hmcontent"><span class="heading4" id="s5.5.1.4">Aqreqat heyvan xəstəlik hadisələrini sil</span></a>
+</li>
+<li class="heading4" id="i5.5.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.5" href="vac_search.htm" target="hmcontent"><span class="heading4" id="s5.5.1.5">Aqreqat heyvan xəstəlik hadisəsini axtar</span></a>
+</li>
+<li class="heading4" id="i5.5.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.6" href="vac_sum.htm" target="hmcontent"><span class="heading4" id="s5.5.1.6">Xülasə hesabatını yarat</span></a>
+</li>
+<li class="heading4" id="i5.5.1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.1.7" href="vac_deduplication.htm" target="hmcontent"><span class="heading4" id="s5.5.1.7">Aqreqat heyvan xəstəlik hadisələrinin de-duplikasiyası</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i5.5.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a5.5.2" href="vaa_opps.htm" target="hmcontent"><span class="heading3" id="s5.5.2" ondblclick="return dblclicked(this)">Aqreqat tədbirlər ilə bağlı əməliyyatlar</span></a>
+<ul id="ul5.5.2" style="list-style-type:none">
+<li class="heading4" id="i5.5.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.1" href="vaa_create.htm" target="hmcontent"><span class="heading4" id="s5.5.2.1">Aqreqat baytarlıq tədbirini yarat</span></a>
+</li>
+<li class="heading4" id="i5.5.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.2" href="vaa_paper.htm" target="hmcontent"><span class="heading4" id="s5.5.2.2">Aqreqat tədbiri üçün kağız formaların çap olunması</span></a>
+</li>
+<li class="heading4" id="i5.5.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.3" href="vaa_edit.htm" target="hmcontent"><span class="heading4" id="s5.5.2.3">Aqreqat baytarlıq tədbirini redaktə et</span></a>
+</li>
+<li class="heading4" id="i5.5.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.4" href="vaa_delete.htm" target="hmcontent"><span class="heading4" id="s5.5.2.4">Aqreqat baytarlıq tədbirini sil</span></a>
+</li>
+<li class="heading4" id="i5.5.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.5" href="vaa_search.htm" target="hmcontent"><span class="heading4" id="s5.5.2.5">Aqreqat baytarlıq tədbirini axtar</span></a>
+</li>
+<li class="heading4" id="i5.5.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.6" href="vaa_sum.htm" target="hmcontent"><span class="heading4" id="s5.5.2.6">Xülasə hesabatını yarat</span></a>
+</li>
+<li class="heading4" id="i5.5.2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a5.5.2.7" href="vaa_deduplication.htm" target="hmcontent"><span class="heading4" id="s5.5.2.7">Aqreqat baytarlıq tədbirinin de-duplikasiyası</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="outbreaks_surveillance.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Alovlanmanın müşahidəsi</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="ob_forms.htm" target="hmcontent"><span class="heading2" id="s6.1" ondblclick="return dblclicked(this)">Ekran formalarının təsviri</span></a>
+<ul id="ul6.1" style="list-style-type:none">
+<li class="heading3" id="i6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.1" href="ob_c10.htm" target="hmcontent"><span class="heading3" id="s6.1.1">Alovlanmalar Siyahısı C10</span></a>
+</li>
+<li class="heading3" id="i6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.1.2" href="ob_c11.htm" target="hmcontent"><span class="heading3" id="s6.1.2">Alovlanmanın təfərrüatları C11</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="ob_operations.htm" target="hmcontent"><span class="heading2" id="s6.2" ondblclick="return dblclicked(this)">Alovlanmalar ilə Əməliyyatlar</span></a>
+<ul id="ul6.2" style="list-style-type:none">
+<li class="heading3" id="i6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.1" href="ob_create.htm" target="hmcontent"><span class="heading3" id="s6.2.1">Alovlanma yarat</span></a>
+</li>
+<li class="heading3" id="i6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.2" href="ob_case.htm" target="hmcontent"><span class="heading3" id="s6.2.2">Alovlanmanı xəstəlik hadisəsi/sesiya ilə əlaqələndir</span></a>
+</li>
+<li class="heading3" id="i6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.3" href="ob_prime.htm" target="hmcontent"><span class="heading3" id="s6.2.3">Alovlanmada ilkin xəstəlik hadisəsi/sesiyaı işarələyin</span></a>
+</li>
+<li class="heading3" id="i6.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.4" href="ob_edit.htm" target="hmcontent"><span class="heading3" id="s6.2.4">Alovlanmanı redaktə et</span></a>
+</li>
+<li class="heading3" id="i6.2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.5" href="ob_delete.htm" target="hmcontent"><span class="heading3" id="s6.2.5">Alovlanmanı sil</span></a>
+</li>
+<li class="heading3" id="i6.2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a6.2.6" href="ob_search.htm" target="hmcontent"><span class="heading3" id="s6.2.6">Alovlanmanı axtar</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="vector_surveillance.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Keçiricilərin Müşahidəsi</span></a>
+<ul id="ul7" style="list-style-type:none">
+<li class="heading2" id="i7.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="starting_vector_surveillance_m.htm" target="hmcontent"><span class="heading2" id="s7.1">Keçiricilərin Müşahidəsi Moduluna Başlama</span></a>
+</li>
+<li class="heading2" id="i7.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="vs_search.htm" target="hmcontent"><span class="heading2" id="s7.2">Bir KM Sesiyası Axtarmaq</span></a>
+</li>
+<li class="heading2" id="i7.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="vs_operations.htm" target="hmcontent"><span class="heading2" id="s7.3" ondblclick="return dblclicked(this)">Keçiricilərin Müşahidəsisi Modulunda Əməliyyatlar</span></a>
+<ul id="ul7.3" style="list-style-type:none">
+<li class="heading3" id="i7.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.1" href="vs_create.htm" target="hmcontent"><span class="heading3" id="s7.3.1">Keçirici müşahidəsi (KM) sessiyası yaratmaq</span></a>
+</li>
+<li class="heading3" id="i7.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.2" href="vs_edit.htm" target="hmcontent"><span class="heading3" id="s7.3.2">KM sessiyasını nəzərdən keçirmək yaxud redaktə etmək</span></a>
+</li>
+<li class="heading3" id="i7.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.3" href="enter_general_information_of__.htm" target="hmcontent"><span class="heading3" id="s7.3.3">KM ümumi məlumatlarını daxil etmək</span></a>
+</li>
+<li class="heading3" id="i7.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.4" href="enter_detailed_information.htm" target="hmcontent"><span class="heading3" id="s7.3.4" ondblclick="return dblclicked(this)">KM ətraflı məlumatlarını daxil etmək</span></a>
+<ul id="ul7.3.4" style="list-style-type:none">
+<li class="heading4" id="i7.3.4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.1" href="register_vector_pool_.htm" target="hmcontent"><span class="heading4" id="s7.3.4.1" ondblclick="return dblclicked(this)">Keçirici/qrupu qeydiyyata almaq</span></a>
+<ul id="ul7.3.4.1" style="list-style-type:none">
+<li class="heading5" id="i7.3.4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.1" href="register_summary_info_vector_pool.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.1">Keçirici/qrup üçün yekun əsas məlumatları qeydiyyata almaq</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.2" href="register_gen_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.2">Keçirici/qrup üçün ümumi məlumatları qeydə almaq</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.3" href="register_spec_info_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.3">Keçiricilər/qrup üçün spesifik məlumatları qeydə almaq</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.4" href="register_samples_for_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.4">Keçirici/qrup üçün nümunələri qeydiyyata almaq</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.5" href="register_field_test_results.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.5">Keçirici/qrup üçün sahə testi nəticələrini qeydiyyata almaq</span></a>
+</li>
+<li class="heading5" id="i7.3.4.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.1.6" href="review_laboratory_tests_vp.htm" target="hmcontent"><span class="heading5" id="s7.3.4.1.6">Keçirici/qrup üçün laboratoriya testləri və test nəticələrini nəzərdən keçirmək</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i7.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.2" href="copy_vector_pool.htm" target="hmcontent"><span class="heading4" id="s7.3.4.2">Keçirici/qrupun nüsxəsini köçürtmək</span></a>
+</li>
+<li class="heading4" id="i7.3.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.3.4.3" href="review_aggregated_data_for_vp.htm" target="hmcontent"><span class="heading4" id="s7.3.4.3" ondblclick="return dblclicked(this)">KM sessiyası üçün aqreqat məlumatları nəzərdən keçirmək</span></a>
+<ul id="ul7.3.4.3" style="list-style-type:none">
+<li class="heading5" id="i7.3.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.1" href="review_samples.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.1">Sesiya nümunələrini nəzərdən keçirmək</span></a>
+</li>
+<li class="heading5" id="i7.3.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.2" href="review_field_rests_and_test_re.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.2">Sesiya sahə testləri və test nəticələrini nəzərdən keçirmək</span></a>
+</li>
+<li class="heading5" id="i7.3.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.3.4.3.3" href="review_laboratory_tests_vs.htm" target="hmcontent"><span class="heading5" id="s7.3.4.3.3">Sesiya laboratoriya testləri və test nəticələrini nəzərdən keçirmək</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.5" href="enter_summary_information.htm" target="hmcontent"><span class="heading3" id="s7.3.5">KM yekun məlumatlarını daxil edin</span></a>
+</li>
+<li class="heading3" id="i7.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.6" href="link_a_vs_session_to_outbreak.htm" target="hmcontent"><span class="heading3" id="s7.3.6">KM sessiyasını alovlanma ilə əlaqələndirmək</span></a>
+</li>
+<li class="heading3" id="i7.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.7" href="vs_final.htm" target="hmcontent"><span class="heading3" id="s7.3.7">Keçiricilərin Müşahidəsi Sesiyasını Yekunlaşdırmaq (bağlamaq)</span></a>
+</li>
+<li class="heading3" id="i7.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.8" href="save_vs_session.htm" target="hmcontent"><span class="heading3" id="s7.3.8">KM sessiyasını yadda saxlamaq</span></a>
+</li>
+<li class="heading3" id="i7.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.9" href="close_vs_session.htm" target="hmcontent"><span class="heading3" id="s7.3.9">KM sessiyası pəncərəsini bağlamaq</span></a>
+</li>
+<li class="heading3" id="i7.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.3.10" href="vs_delete.htm" target="hmcontent"><span class="heading3" id="s7.3.10">KM Sesiyasını Silmək</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i7.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="vs_forms.htm" target="hmcontent"><span class="heading2" id="s7.4" ondblclick="return dblclicked(this)">Ekran formalarının təsviri</span></a>
+<ul id="ul7.4" style="list-style-type:none">
+<li class="heading3" id="i7.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.1" href="vs_w01.htm" target="hmcontent"><span class="heading3" id="s7.4.1">Keçiricilərin Müşahidəsi Sesiyaları Siyahısı W01</span></a>
+</li>
+<li class="heading3" id="i7.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.2" href="vs_w02.htm" target="hmcontent"><span class="heading3" id="s7.4.2" ondblclick="return dblclicked(this)">Keçiricilərin Müşahidəsi Sesiyası W02</span></a>
+<ul id="ul7.4.2" style="list-style-type:none">
+<li class="heading4" id="i7.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.1" href="general_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.1">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Ümumi Məlumatları</span></a>
+</li>
+<li class="heading4" id="i7.4.2.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.2" href="detailed_info_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.2" ondblclick="return dblclicked(this)">Keçiricilərin Müşahidəsi Sesiyası W02 formasının təfərrüatlı məlumatları</span></a>
+<ul id="ul7.4.2.2" style="list-style-type:none">
+<li class="heading5" id="i7.4.2.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.1" href="pools_individual_vectors_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.1">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Qrup/fərdi Keçiricilər yarımtabı</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.2" href="samples_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.2">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Nümunələr yarımtabı</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.3" href="field_tests_subtab_of_vector_s.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.3">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Sahə Testləri yarımtabı</span></a>
+</li>
+<li class="heading5" id="i7.4.2.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a7.4.2.2.4" href="lab_tests_subtab_of_w02.htm" target="hmcontent"><span class="heading5" id="s7.4.2.2.4">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Laboratoriya Testləri alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i7.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.2.3" href="summary_info_tab_of_w02.htm" target="hmcontent"><span class="heading4" id="s7.4.2.3">Keçiricilərin Müşahidəsi Sesiyası W02 formasının Yekun Məlumat alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.3" href="vs_w03.htm" target="hmcontent"><span class="heading3" id="s7.4.3" ondblclick="return dblclicked(this)">Qrup/fərdi Keçirici təfərrüatları W03</span></a>
+<ul id="ul7.4.3" style="list-style-type:none">
+<li class="heading4" id="i7.4.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.1" href="summary_section_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.1">Qrup/fərdi Keçirici təfərrüatları W03 formasının yekun bölməsi</span></a>
+</li>
+<li class="heading4" id="i7.4.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.2" href="general_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.2">Qrup/fərdi Keçirici təfərrüatları W03 formasının ümumi alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i7.4.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.3" href="vector_specific_data_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.3">Qrup/fərdi Keçirici təfərrüatları W03 formasının Keçirici barədə Spesifik Məlumatlar alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i7.4.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.4" href="samples_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.4">Qrup/fərdi Keçirici təfərrüatları W03 formasının Nümunələr alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i7.4.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.5" href="field_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.5">Qrup/fərdi Keçirici təfərrüatları W03 formasının Sahə Testləri alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i7.4.3.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a7.4.3.6" href="lab_tests_tab_of_w03.htm" target="hmcontent"><span class="heading4" id="s7.4.3.6">Qrup/fərdi Keçirici təfərrüatları W03 formasının Laboratoriya Testləri alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i7.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a7.4.4" href="vs_w05.htm" target="hmcontent"><span class="heading3" id="s7.4.4">Qrup/fərdi Keçirici təfərrüatları W05 formasının Surəti</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="basic_syndromic_surveillance.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Əsas Sindromların Müşahidəsi</span></a>
+<ul id="ul8" style="list-style-type:none">
+<li class="heading2" id="i8.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="ss_forms.htm" target="hmcontent"><span class="heading2" id="s8.1" ondblclick="return dblclicked(this)">Ekran formalarının təsviri</span></a>
+<ul id="ul8.1" style="list-style-type:none">
+<li class="heading3" id="i8.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.1" href="ss_form.htm" target="hmcontent"><span class="heading3" id="s8.1.1">Əsas Sindromların Müşahidəsi Forması</span></a>
+</li>
+<li class="heading3" id="i8.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.2" href="ss_list.htm" target="hmcontent"><span class="heading3" id="s8.1.2">Əsas Sindromların Müşahidəsi Formalarının siyahısı</span></a>
+</li>
+<li class="heading3" id="i8.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.3" href="ss_aggr_form.htm" target="hmcontent"><span class="heading3" id="s8.1.3">İLİ Aqreqat forması</span></a>
+</li>
+<li class="heading3" id="i8.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.1.4" href="ss_aggr_list.htm" target="hmcontent"><span class="heading3" id="s8.1.4">İLİ Aqreqat formalarının siyahısı</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="ss_operations.htm" target="hmcontent"><span class="heading2" id="s8.2" ondblclick="return dblclicked(this)">Əsas Sindromların Müşahidəsi hesabatları ilə əməliyyatlar</span></a>
+<ul id="ul8.2" style="list-style-type:none">
+<li class="heading3" id="i8.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.1" href="ss_create.htm" target="hmcontent"><span class="heading3" id="s8.2.1">Əsas Sindromların Müşahidəsi hesabatlarını yarat</span></a>
+</li>
+<li class="heading3" id="i8.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.2" href="ss_search.htm" target="hmcontent"><span class="heading3" id="s8.2.2">Əsas Sindromların Müşahidəsi hesabatlarını axtar</span></a>
+</li>
+<li class="heading3" id="i8.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.3" href="ss_edit.htm" target="hmcontent"><span class="heading3" id="s8.2.3">Əsas Sindromların Müşahidəsi hesabatlarını redaktə et</span></a>
+</li>
+<li class="heading3" id="i8.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.2.4" href="ss_delete.htm" target="hmcontent"><span class="heading3" id="s8.2.4">Əsas Sindromların Müşahidəsi hesabatlarını sil</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i8.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="ss_operations_2.htm" target="hmcontent"><span class="heading2" id="s8.3" ondblclick="return dblclicked(this)">İLİ Aqreqat hesabatı ilə əməliyyatlar</span></a>
+<ul id="ul8.3" style="list-style-type:none">
+<li class="heading3" id="i8.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.1" href="ss_aggr_create.htm" target="hmcontent"><span class="heading3" id="s8.3.1">İLİ Aqreqat hesabatını yarat</span></a>
+</li>
+<li class="heading3" id="i8.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.2" href="ss_aggr_search.htm" target="hmcontent"><span class="heading3" id="s8.3.2">İLİ Aqreqat hesabatını axtar</span></a>
+</li>
+<li class="heading3" id="i8.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.3" href="ss_aggr_edit.htm" target="hmcontent"><span class="heading3" id="s8.3.3">İLİ Aqreqat hesabatını redaktə et</span></a>
+</li>
+<li class="heading3" id="i8.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a8.3.4" href="ss_aggr_delete.htm" target="hmcontent"><span class="heading3" id="s8.3.4">İLİ Aqreqat hesabatını sil</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="laboratory_management.htm" target="hmcontent"><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Laboratoriya İdarə olunması</span></a>
+<ul id="ul9" style="list-style-type:none">
+<li class="heading2" id="i9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="laboratory_management_overview.htm" target="hmcontent"><span class="heading2" id="s9.1">Laboratoriya İdarə olunmasının İcmalı</span></a>
+</li>
+<li class="heading2" id="i9.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href=javascript:void(0);><span class="heading2" id="s9.2" ondblclick="return dblclicked(this)">Laboratoriya Moduluna başlama</span></a>
+<ul id="ul9.2" style="list-style-type:none">
+<li class="heading3" id="i9.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.1" href="sample_statuses.htm" target="hmcontent"><span class="heading3" id="s9.2.1">Nümunənin Statusları</span></a>
+</li>
+<li class="heading3" id="i9.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.2" href="test_statuses.htm" target="hmcontent"><span class="heading3" id="s9.2.2">Testin Statusları</span></a>
+</li>
+<li class="heading3" id="i9.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.3" href="simple_search_in_laboratory_se.htm" target="hmcontent"><span class="heading3" id="s9.2.3">Laboratoriya Bölməsində Sadə Axtarış</span></a>
+</li>
+<li class="heading3" id="i9.2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.2.4" href="extended_search_in_lm.htm" target="hmcontent"><span class="heading3" id="s9.2.4">Laboratoriya Modulunda Genişləndirilmiş Axtarış</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.3" href="lab_operations.htm" target="hmcontent"><span class="heading2" id="s9.3" ondblclick="return dblclicked(this)">Laboratoriya Modulunda əməliyyatlar</span></a>
+<ul id="ul9.3" style="list-style-type:none">
+<li class="heading3" id="i9.3.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.1" href="accession_in_a_sample__linked_.htm" target="hmcontent"><span class="heading3" id="s9.3.1" ondblclick="return dblclicked(this)">Nümunə(lər) daxil olunub/daxilə köçürülüb</span></a>
+<ul id="ul9.3.1" style="list-style-type:none">
+<li class="heading4" id="i9.3.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.1" href="lab_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s9.3.1.1">Xəstəlik hadisəsi/sesiya ilə əlaqəsi olan və ya olmayan nümunənin daxil olunması (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.2" href="enter_and_accession_in_sample_.htm" target="hmcontent"><span class="heading4" id="s9.3.1.2">Xəstəlik hadisəsi/sesiya ilə əlaqələndirilməyən nümunənin qeydiyyatı və daxil edilməsi (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.3" href="labs_access_sample_linked.htm" target="hmcontent"><span class="heading4" id="s9.3.1.3">Xəstəlik hadisəsi/sesiyaya aid olan mövcud nümunə(lər) daxil olunub/daxilə köçürülüb (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.4" href="lab_access_group.htm" target="hmcontent"><span class="heading4" id="s9.3.1.4">Nümunələrin qrup şəklində daxil edilməsi (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.5" href="labs_access_group.htm" target="hmcontent"><span class="heading4" id="s9.3.1.5">Nümunələrin qrup şəklində daxil edilməsi (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.1.6" href="lab_sample_in.htm" target="hmcontent"><span class="heading4" id="s9.3.1.6">Nümunələrin ötürülməsi (IF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.2" href="create_aliquot.htm" target="hmcontent"><span class="heading3" id="s9.3.2" ondblclick="return dblclicked(this)">Alikvot yarat</span></a>
+<ul id="ul9.3.2" style="list-style-type:none">
+<li class="heading4" id="i9.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.2.1" href="lab_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s9.3.2.1">Alikvot yarat (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.2.2" href="labs_aliquot_create.htm" target="hmcontent"><span class="heading4" id="s9.3.2.2">Alikvot yarat (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.3" href="create_derivative.htm" target="hmcontent"><span class="heading3" id="s9.3.3" ondblclick="return dblclicked(this)">Törəmə yarat</span></a>
+<ul id="ul9.3.3" style="list-style-type:none">
+<li class="heading4" id="i9.3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.3.1" href="lab_derivative_create.htm" target="hmcontent"><span class="heading4" id="s9.3.3.1">Törəmə yarat (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.3.2" href="labs_deriv_create.htm" target="hmcontent"><span class="heading4" id="s9.3.3.2">Törəmə yarat (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.4" href="assign_test.htm" target="hmcontent"><span class="heading3" id="s9.3.4" ondblclick="return dblclicked(this)">Testi təyin et</span></a>
+<ul id="ul9.3.4" style="list-style-type:none">
+<li class="heading4" id="i9.3.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.1" href="assign_tests_during_sample_acc.htm" target="hmcontent"><span class="heading4" id="s9.3.4.1">Nümunənin daxil olması zamanı testi təyin et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.2" href="assign_tests_from_samples_list.htm" target="hmcontent"><span class="heading4" id="s9.3.4.2">Testləri Nümunələrin Siyahısı formasında təyin et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.3" href="assign_tests_from_the_sample_d.htm" target="hmcontent"><span class="heading4" id="s9.3.4.3">Testləri Nümunə formasında təyin et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.4" href="labs_test_assign.htm" target="hmcontent"><span class="heading4" id="s9.3.4.4">Açılan menyudan testi təyin et (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.4.5" href="assign_test_in_laboratory_sect.htm" target="hmcontent"><span class="heading4" id="s9.3.4.5">Laboratoriya Bölməsi cədvəlində (LB) testin təyin edilməsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.5" href="start_test.htm" target="hmcontent"><span class="heading3" id="s9.3.5" ondblclick="return dblclicked(this)">Testə başla</span></a>
+<ul id="ul9.3.5" style="list-style-type:none">
+<li class="heading4" id="i9.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.1" href="lab_test_start.htm" target="hmcontent"><span class="heading4" id="s9.3.5.1">Laboratoriya Testinin Təfərrüatları formasında testlərə başla (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.2" href="start_test_in_sample_form.htm" target="hmcontent"><span class="heading4" id="s9.3.5.2">Nümunə formasında (İF) testi başla</span></a>
+</li>
+<li class="heading4" id="i9.3.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.3" href="start_tests_ls.htm" target="hmcontent"><span class="heading4" id="s9.3.5.3">ATestlərin açılan menyusundan (LB) başla</span></a>
+</li>
+<li class="heading4" id="i9.3.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.5.4" href="start_test_in_laboratory_secti.htm" target="hmcontent"><span class="heading4" id="s9.3.5.4">Laboratoriya Bölməsi cədvəlsində (LB) testə başla</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.6" href="enter_test_result.htm" target="hmcontent"><span class="heading3" id="s9.3.6" ondblclick="return dblclicked(this)">Test nəticəsini daxil et</span></a>
+<ul id="ul9.3.6" style="list-style-type:none">
+<li class="heading4" id="i9.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.1" href="lab_test_result_set.htm" target="hmcontent"><span class="heading4" id="s9.3.6.1">Test nəticəsini daxil et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.2" href="labs_test_result_set.htm" target="hmcontent"><span class="heading4" id="s9.3.6.2">Test nəticəsini daxil et (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.3" href="lab_test_result_external.htm" target="hmcontent"><span class="heading4" id="s9.3.6.3">Digər laboratoriyada keçirilmiş test üçün nəticəni təyin et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.6.4" href="labs_test_result_external.htm" target="hmcontent"><span class="heading4" id="s9.3.6.4">Digər laboratoriyada keçirilmiş test üçün nəticəni təyin et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.7" href="labs_test_val.htm" target="hmcontent"><span class="heading3" id="s9.3.7">Testin nəticəsini təsdiq et (LB)</span></a>
+</li>
+<li class="heading3" id="i9.3.8" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.8" href="amend_test_result.htm" target="hmcontent"><span class="heading3" id="s9.3.8" ondblclick="return dblclicked(this)">Testin nəticəsinə düzəliş et</span></a>
+<ul id="ul9.3.8" style="list-style-type:none">
+<li class="heading4" id="i9.3.8.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.8.1" href="lab_test_amend.htm" target="hmcontent"><span class="heading4" id="s9.3.8.1">Testin nəticəsinə düzəliş et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.8.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.8.2" href="labs_test_amend.htm" target="hmcontent"><span class="heading4" id="s9.3.8.2">Testin nəticəsinə düzəliş et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.9" href="mark_for_destruction.htm" target="hmcontent"><span class="heading3" id="s9.3.9" ondblclick="return dblclicked(this)">Məhv etmək üçün işarələ</span></a>
+<ul id="ul9.3.9" style="list-style-type:none">
+<li class="heading4" id="i9.3.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.9.1" href="lab_sample_delete.htm" target="hmcontent"><span class="heading4" id="s9.3.9.1">Nümunəni tullamaq (məhv) üçün işarələ (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.9.2" href="labs_sample_mark.htm" target="hmcontent"><span class="heading4" id="s9.3.9.2">Nümunələri adi qaydada məhv üçün işarələ (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.10" href="destroy_sample.htm" target="hmcontent"><span class="heading3" id="s9.3.10" ondblclick="return dblclicked(this)">Nümunənin məhv edilməsini təsdiq et</span></a>
+<ul id="ul9.3.10" style="list-style-type:none">
+<li class="heading4" id="i9.3.10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.10.1" href="lab_destroy_sample.htm" target="hmcontent"><span class="heading4" id="s9.3.10.1">Nümunənin məhvini təsdiq et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.10.2" href="labs_sample_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.10.2">Nümunənin məhvini təsdiq et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.11" href="reject_destruction.htm" target="hmcontent"><span class="heading3" id="s9.3.11" ondblclick="return dblclicked(this)">Məhv etməni ləğv et</span></a>
+<ul id="ul9.3.11" style="list-style-type:none">
+<li class="heading4" id="i9.3.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.11.1" href="lab_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.11.1">Məhv etməni ləğv et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.11.2" href="labs_reject_destruction.htm" target="hmcontent"><span class="heading4" id="s9.3.11.2">Məhv etməni ləğv et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.12" href="transfer_out_sample.htm" target="hmcontent"><span class="heading3" id="s9.3.12" ondblclick="return dblclicked(this)">Nümunəni Göndər</span></a>
+<ul id="ul9.3.12" style="list-style-type:none">
+<li class="heading4" id="i9.3.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.1" href="lab_sample_out.htm" target="hmcontent"><span class="heading4" id="s9.3.12.1">Nümunəni digər laboratoriyaya göndər (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.2" href="labs_sample_out.htm" target="hmcontent"><span class="heading4" id="s9.3.12.2">Nümunəni açılan menyu vasitəsilə digər laboratoriyaya göndər (LB)</span></a>
+</li>
+<li class="heading4" id="i9.3.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.12.3" href="transfer_out_sample_in_laborat.htm" target="hmcontent"><span class="heading4" id="s9.3.12.3">Laboratoriya Bölməsi cədvəlində nümunənin digər laboratoriyaya göndər (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.13" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.13" href="work_with_batches.htm" target="hmcontent"><span class="heading3" id="s9.3.13" ondblclick="return dblclicked(this)">Dəstlər ilə iş</span></a>
+<ul id="ul9.3.13" style="list-style-type:none">
+<li class="heading4" id="i9.3.13.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.13.1" href="lab_batch_create.htm" target="hmcontent"><span class="heading4" id="s9.3.13.1" ondblclick="return dblclicked(this)">Dəst yarat (İF)</span></a>
+<ul id="ul9.3.13.1" style="list-style-type:none">
+<li class="heading5" id="i9.3.13.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.3.13.1.1" href="create_batch_in_samples_list.htm" target="hmcontent"><span class="heading5" id="s9.3.13.1.1">Testlər Siyahısı formasında dəst yarat</span></a>
+</li>
+<li class="heading5" id="i9.3.13.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.3.13.1.2" href="create_batch_in_batches_list_f.htm" target="hmcontent"><span class="heading5" id="s9.3.13.1.2">Dəstlər Siyahısı formasında dəst yarat</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i9.3.13.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.13.2" href="lab_batch_final.htm" target="hmcontent"><span class="heading4" id="s9.3.13.2">Dəsti yekunlaşdır (İF)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.14" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.14" href="edit_sample_information.htm" target="hmcontent"><span class="heading3" id="s9.3.14" ondblclick="return dblclicked(this)">Nümunə təfərrüatlarına bax və ya onları redaktə et</span></a>
+<ul id="ul9.3.14" style="list-style-type:none">
+<li class="heading4" id="i9.3.14.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.14.1" href="lab_sample_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.14.1">Nümunə təfərrüatlarına bax və ya onları redaktə et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.14.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.14.2" href="labs_sample_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.14.2">Nümunə təfərrüatlarına bax və ya onları redaktə et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.15" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.15" href="edit_test_details.htm" target="hmcontent"><span class="heading3" id="s9.3.15" ondblclick="return dblclicked(this)">Nümunə təfərrüatlarına bax və ya onları redaktə et</span></a>
+<ul id="ul9.3.15" style="list-style-type:none">
+<li class="heading4" id="i9.3.15.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.1" href="edit_test_details_in_laborator.htm" target="hmcontent"><span class="heading4" id="s9.3.15.1">Laboratoriya Testinin Təfərrüatları formasında testin təfərrüatlarına bax və ya redaktə et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.15.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.2" href="edit_test_details_in_samle_det.htm" target="hmcontent"><span class="heading4" id="s9.3.15.2">Nümunə formasında testin təfərrüatlarına bax və ya redaktə et (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.15.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.15.3" href="labs_test_edit.htm" target="hmcontent"><span class="heading4" id="s9.3.15.3">Nümunə təfərrüatlarına bax və ya onları redaktə et (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.16" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.16" href="delete_sample_record.htm" target="hmcontent"><span class="heading3" id="s9.3.16" ondblclick="return dblclicked(this)">Nümunə və ya test qeydiyyatını sil</span></a>
+<ul id="ul9.3.16" style="list-style-type:none">
+<li class="heading4" id="i9.3.16.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.16.1" href="lab_sample_dispose_2.htm" target="hmcontent"><span class="heading4" id="s9.3.16.1">Nümunəni sil (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.16.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.16.2" href="labs_sample_dispose.htm" target="hmcontent"><span class="heading4" id="s9.3.16.2">Nümunəni sil (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.17" href="delete_test_record.htm" target="hmcontent"><span class="heading3" id="s9.3.17" ondblclick="return dblclicked(this)">Test qeydiyyatını sil</span></a>
+<ul id="ul9.3.17" style="list-style-type:none">
+<li class="heading4" id="i9.3.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.1" href="delete_test_in_laboratory_test.htm" target="hmcontent"><span class="heading4" id="s9.3.17.1">Laboratoriya Testləri Siyahısı formasında testi sil (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.2" href="delete_test_inin_sample_detail.htm" target="hmcontent"><span class="heading4" id="s9.3.17.2">Nümunənin Təfərrüatları formasında testi sil (İF)</span></a>
+</li>
+<li class="heading4" id="i9.3.17.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.3.17.3" href="labs_test_delete.htm" target="hmcontent"><span class="heading4" id="s9.3.17.3">Testi sil (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.3.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.3.18" href="lab_add_to_preferences.htm" target="hmcontent"><span class="heading3" id="s9.3.18">Seçimlərə qeydiyyat əlavə et/ Seçimlərin siyahısından qeydiyyatı sil (LB)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i9.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.4" href="lab_forms.htm" target="hmcontent"><span class="heading2" id="s9.4" ondblclick="return dblclicked(this)">Ekran formalarının Təsviri</span></a>
+<ul id="ul9.4" style="list-style-type:none">
+<li class="heading3" id="i9.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.1" href="lab_l01.htm" target="hmcontent"><span class="heading3" id="s9.4.1">Nümunələrin Siyahısı L01</span></a>
+</li>
+<li class="heading3" id="i9.4.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.2" href="lab_l02.htm" target="hmcontent"><span class="heading3" id="s9.4.2" ondblclick="return dblclicked(this)">Nümunə L02</span></a>
+<ul id="ul9.4.2" style="list-style-type:none">
+<li class="heading4" id="i9.4.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.1" href="general_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.1">Nümunə L02 formasının ümumi alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.2" href="test_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.2">Nümunə L02 formasının testlər alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.2.3" href="sample_transfer_tab_of_sample.htm" target="hmcontent"><span class="heading4" id="s9.4.2.3">Nümunə L02 formasının nümunənin köçürülməsi alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.3" href="lab_l03.htm" target="hmcontent"><span class="heading3" id="s9.4.3">Laboratoriya Testləri Siyahısı L03</span></a>
+</li>
+<li class="heading3" id="i9.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.4" href="lab_l04.htm" target="hmcontent"><span class="heading3" id="s9.4.4" ondblclick="return dblclicked(this)">Laboratoriya Testinin Təfərrüatları L04</span></a>
+<ul id="ul9.4.4" style="list-style-type:none">
+<li class="heading4" id="i9.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.1" href="general_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.1">Laboratoriya Testinin Təfərrüatları L04 formasının ümumi alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.2" href="tests_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.2">Laboratoriya Testinin Təfərrüatları L04 formasının test alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.3" href="sample_details_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.3">Laboratoriya Testinin Təfərrüatları L04 formasının nümunənin təfərrüatları alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.4.4" href="amendment_history_tab_of_test_details.htm" target="hmcontent"><span class="heading4" id="s9.4.4.4">Laboratoriya Testinin Təfərrüatları L04 formasının Dəyişiklik Tarixçəsi alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.5" href="lab_l05.htm" target="hmcontent"><span class="heading3" id="s9.4.5" ondblclick="return dblclicked(this)">Daxil olma L05</span></a>
+<ul id="ul9.4.5" style="list-style-type:none">
+<li class="heading4" id="i9.4.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.1" href="accession_in_for_human_case.htm" target="hmcontent"><span class="heading4" id="s9.4.5.1">İnsan Xəstəlik Hadisələri üçün Daxil Olma L05 forması</span></a>
+</li>
+<li class="heading4" id="i9.4.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.2" href="accession_in_for_vet_case.htm" target="hmcontent"><span class="heading4" id="s9.4.5.2">Heyvan Xəstəlik Hadisələri üçün Daxil Olma L05 forması</span></a>
+</li>
+<li class="heading4" id="i9.4.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.3" href="accession_in_for_as_session.htm" target="hmcontent"><span class="heading4" id="s9.4.5.3">FM Sesiyası üçün Daxil Olma L05 forması</span></a>
+</li>
+<li class="heading4" id="i9.4.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.5.4" href="accession_in_for_vs_session.htm" target="hmcontent"><span class="heading4" id="s9.4.5.4">GM Sesiyası üçün Daxil Olma L05 forması</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.6" href="lab_l06.htm" target="hmcontent"><span class="heading3" id="s9.4.6">Alikvotlar/Törəmələr L06</span></a>
+</li>
+<li class="heading3" id="i9.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.7" href="lab_l07.htm" target="hmcontent"><span class="heading3" id="s9.4.7">Məhv etmək üçün işarələnən nümunələr L07</span></a>
+</li>
+<li class="heading3" id="i9.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.8" href="lab_l08.htm" target="hmcontent"><span class="heading3" id="s9.4.8">Nümunənin məhv edilməsi L08</span></a>
+</li>
+<li class="heading3" id="i9.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.9" href="lab_l09.htm" target="hmcontent"><span class="heading3" id="s9.4.9">Köçürmələr siyahısı L09</span></a>
+</li>
+<li class="heading3" id="i9.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.10" href="lab_l10.htm" target="hmcontent"><span class="heading3" id="s9.4.10">Nümunə Köçürülməsi L10</span></a>
+</li>
+<li class="heading3" id="i9.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.11" href="lab_l11.htm" target="hmcontent"><span class="heading3" id="s9.4.11">Dondurucular Siyahısı L11</span></a>
+</li>
+<li class="heading3" id="i9.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.12" href="lab_l12.htm" target="hmcontent"><span class="heading3" id="s9.4.12">Saxlama Sxemi L12</span></a>
+</li>
+<li class="heading3" id="i9.4.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.13" href="lab_l13.htm" target="hmcontent"><span class="heading3" id="s9.4.13">Nümunələrin qrup şəklində daxil edilməsi L13</span></a>
+</li>
+<li class="heading3" id="i9.4.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.14" href="lab_l20.htm" target="hmcontent"><span class="heading3" id="s9.4.14">Testləri Seç L20</span></a>
+</li>
+<li class="heading3" id="i9.4.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.15" href="lab_l21.htm" target="hmcontent"><span class="heading3" id="s9.4.15">Dəstlər Siyahısı L21</span></a>
+</li>
+<li class="heading3" id="i9.4.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.16" href="lab_l22.htm" target="hmcontent"><span class="heading3" id="s9.4.16">Dəst Test Təfərrüatları L22</span></a>
+</li>
+<li class="heading3" id="i9.4.17" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.17" href="lab_l25.htm" target="hmcontent"><span class="heading3" id="s9.4.17" ondblclick="return dblclicked(this)">Laboratoriya Bölməsi L25</span></a>
+<ul id="ul9.4.17" style="list-style-type:none">
+<li class="heading4" id="i9.4.17.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.1" href="search_panel_of_laboratory_sec.htm" target="hmcontent"><span class="heading4" id="s9.4.17.1">Laboratoriya Bölməsinin Axtarış Paneli</span></a>
+</li>
+<li class="heading4" id="i9.4.17.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.2" href="laboratory_records_list.htm" target="hmcontent"><span class="heading4" id="s9.4.17.2">Laboratoriya Bölməsi və Mənim Seçimlərim alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i9.4.17.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a9.4.17.3" href="lab_record_detailed_form.htm" target="hmcontent"><span class="heading4" id="s9.4.17.3" ondblclick="return dblclicked(this)">Laboratoriya Qeydiyyatının Təfərrüatları forması</span></a>
+<ul id="ul9.4.17.3" style="list-style-type:none">
+<li class="heading5" id="i9.4.17.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.1" href="sample_details_tab_of_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.1">Laboratoriya Qeydiyyatının Təfərrüatları formasının Nümunənin Təfərrüatları alt-pəncərəsi</span></a>
+</li>
+<li class="heading5" id="i9.4.17.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.2" href="test_details_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.2">Laboratoriya Qeydiyyatının Təfərrüatları formasının Test Təfərrüatları alt-pəncərəsi</span></a>
+</li>
+<li class="heading5" id="i9.4.17.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a9.4.17.3.3" href="amendment_history_tab_labrecdet.htm" target="hmcontent"><span class="heading5" id="s9.4.17.3.3">Laboratoriya Qeydiyyatının Təfərrüatları formasının Düzəliş tarixçəsi alt-pəncərəsi</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i9.4.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.18" href="labs_l32.htm" target="hmcontent"><span class="heading3" id="s9.4.18">Testi təyin et L32</span></a>
+</li>
+<li class="heading3" id="i9.4.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a9.4.19" href="lab_l35.htm" target="hmcontent"><span class="heading3" id="s9.4.19">Yeni nümunəni qeydiyyata al L35</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i10" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href=javascript:void(0);><span class="heading1" id="s10" ondblclick="return dblclicked(this)">Analiz, Vizuallaşdırma və Hesabat</span></a>
+<ul id="ul10" style="list-style-type:none">
+<li class="heading2" id="i10.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.1" href="avr_introduction.htm" target="hmcontent"><span class="heading2" id="s10.1">AVH ilə tanışlıq</span></a>
+</li>
+<li class="heading2" id="i10.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.2" href="avr_getting_started.htm" target="hmcontent"><span class="heading2" id="s10.2">AVH-in işə salınması</span></a>
+</li>
+<li class="heading2" id="i10.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.3" href="queries.htm" target="hmcontent"><span class="heading2" id="s10.3" ondblclick="return dblclicked(this)">Sorğular</span></a>
+<ul id="ul10.3" style="list-style-type:none">
+<li class="heading3" id="i10.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.1" href="create_query.htm" target="hmcontent"><span class="heading3" id="s10.3.1">Yeni sorğunun yaradılması</span></a>
+</li>
+<li class="heading3" id="i10.3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.2" href="edit_query.htm" target="hmcontent"><span class="heading3" id="s10.3.2">Sorğunun redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.3" href="edit_query_name_and_descrption.htm" target="hmcontent"><span class="heading3" id="s10.3.3">Sorğunun adı və təsvirini redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.4" href="edit_query_objects_list.htm" target="hmcontent"><span class="heading3" id="s10.3.4">Sorğunun obyektlərin siyahısını redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.5" href="edit_query_fields_list.htm" target="hmcontent"><span class="heading3" id="s10.3.5">Sorğunun xanaların siyahısını redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.6" href="edit_query_filters.htm" target="hmcontent"><span class="heading3" id="s10.3.6" ondblclick="return dblclicked(this)">Sorğunun filterlərinin redaktə edilməsi</span></a>
+<ul id="ul10.3.6" style="list-style-type:none">
+<li class="heading4" id="i10.3.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading4" id="s10.3.6.1">Əlavə et/sil düymələri.</span></a>
+</li>
+<li class="heading4" id="i10.3.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.2" href="combining_operators.htm" target="hmcontent"><span class="heading4" id="s10.3.6.2">Birləşdirici operatorlar</span></a>
+</li>
+<li class="heading4" id="i10.3.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.3" href="comparison_operators.htm" target="hmcontent"><span class="heading4" id="s10.3.6.3">Müqayisə operatorlar</span></a>
+</li>
+<li class="heading4" id="i10.3.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.4" href="criteria_value.htm" target="hmcontent"><span class="heading4" id="s10.3.6.4">Meyar dəyəri</span></a>
+</li>
+<li class="heading4" id="i10.3.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.5" href="field_name.htm" target="hmcontent"><span class="heading4" id="s10.3.6.5">Xananın adı</span></a>
+</li>
+<li class="heading4" id="i10.3.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.6" href="report_type_filter.htm" target="hmcontent"><span class="heading4" id="s10.3.6.6">'Hesabat növü' filteri</span></a>
+</li>
+<li class="heading4" id="i10.3.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.3.6.7" href="exists_filter.htm" target="hmcontent"><span class="heading4" id="s10.3.6.7">'Mövcuddur' filteri</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.3.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.7" href="add_key_values.htm" target="hmcontent"><span class="heading3" id="s10.3.7">Əsas istinadların bütün dəyərlərin əlavə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.8" href="cancel_changes.htm" target="hmcontent"><span class="heading3" id="s10.3.8">Dəyişikliklərin ləğv edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.9" href="save_query.htm" target="hmcontent"><span class="heading3" id="s10.3.9">Sorğunun yaddaşa salınması.</span></a>
+</li>
+<li class="heading3" id="i10.3.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.10" href="close_query.htm" target="hmcontent"><span class="heading3" id="s10.3.10">Sorğunu bağla</span></a>
+</li>
+<li class="heading3" id="i10.3.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.11" href="delete_query.htm" target="hmcontent"><span class="heading3" id="s10.3.11">Sorğunun silinməsi</span></a>
+</li>
+<li class="heading3" id="i10.3.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.12" href="copy_query.htm" target="hmcontent"><span class="heading3" id="s10.3.12">Sorğunun surəti çıxarılması</span></a>
+</li>
+<li class="heading3" id="i10.3.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.3.13" href="export_query.htm" target="hmcontent"><span class="heading3" id="s10.3.13">Sorğunun ixracı</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.4" href="layouts.htm" target="hmcontent"><span class="heading2" id="s10.4" ondblclick="return dblclicked(this)">Cədvəllər</span></a>
+<ul id="ul10.4" style="list-style-type:none">
+<li class="heading3" id="i10.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.1" href="create_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.1">Cədvəlin yaradılması</span></a>
+</li>
+<li class="heading3" id="i10.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.2" href="edit_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.2">Cədvəlin redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.3" href="edit_layout_name_and_descripti.htm" target="hmcontent"><span class="heading3" id="s10.4.3">Cədvəlin adı və təsvirinin redaktə edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.4.4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.4" href="constructworking_with_pivot_grid.htm" target="hmcontent"><span class="heading3" id="s10.4.4" ondblclick="return dblclicked(this)">Tərtib cədvəli</span></a>
+<ul id="ul10.4.4" style="list-style-type:none">
+<li class="heading4" id="i10.4.4.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.1" href="construct_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.1">Tərtib cədvəlin yaradılması</span></a>
+</li>
+<li class="heading4" id="i10.4.4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.2" href="rename_fields.htm" target="hmcontent"><span class="heading4" id="s10.4.4.2">Xanalar adlarının dəyişdirilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.3" href="apply_aggregate_functions.htm" target="hmcontent"><span class="heading4" id="s10.4.4.3">Qruplaşdırıcı funksiyalarının tətbiq edilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.4" href="group_date_function.htm" target="hmcontent"><span class="heading4" id="s10.4.4.4">Tarixin qruplaşdırılması funksiyası</span></a>
+</li>
+<li class="heading4" id="i10.4.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.5" href="show_missed_values.htm" target="hmcontent"><span class="heading4" id="s10.4.4.5">Sıfır dəyərlərin göstərilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.6" href="show_totals.htm" target="hmcontent"><span class="heading4" id="s10.4.4.6">Yekunun göstərilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.7" href="copy_fields.htm" target="hmcontent"><span class="heading4" id="s10.4.4.7">Xanaların surəti çıxarılması</span></a>
+</li>
+<li class="heading4" id="i10.4.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.8" href="freeze_row_headers_in_pivot_gr.htm" target="hmcontent"><span class="heading4" id="s10.4.4.8">Sıraların başlıqlarının hərəkətsizləşdirilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.9" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.9" href="apply_filters.htm" target="hmcontent"><span class="heading4" id="s10.4.4.9" ondblclick="return dblclicked(this)">Filterlərin tətbiq edilməsi.</span></a>
+<ul id="ul10.4.4.9" style="list-style-type:none">
+<li class="heading5" id="i10.4.4.9.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.1" href="add_remove_buttons.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.1">Əlavə et/sil düymələri.</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.2" href="combining_operators.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.2">Birləşdirici operatorlar</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.3" href="field_name.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.3">Xananın adı</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.4" href="comparison_operators.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.4">Müqayisə operatorlar</span></a>
+</li>
+<li class="heading5" id="i10.4.4.9.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.4.9.5" href="criteria_value.htm" target="hmcontent"><span class="heading5" id="s10.4.4.9.5">Meyar dəyəri</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.4.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.10" href="compact_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.10">Tərtib cədvəlin kompakt rejimində göstərilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.4.11" href="show_data_in_pivot_grid.htm" target="hmcontent"><span class="heading4" id="s10.4.4.11">Tərtib cədvəldə məlumatın göstərilməsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.5" href="refresh_data.htm" target="hmcontent"><span class="heading3" id="s10.4.5">Məlumatların təzələnməsi</span></a>
+</li>
+<li class="heading3" id="i10.4.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.6" href="working_with_view.htm" target="hmcontent"><span class="heading3" id="s10.4.6" ondblclick="return dblclicked(this)">Baxış rejimi</span></a>
+<ul id="ul10.4.6" style="list-style-type:none">
+<li class="heading4" id="i10.4.6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.1" href="open_view.htm" target="hmcontent"><span class="heading4" id="s10.4.6.1">Baxış rejiminin açılması</span></a>
+</li>
+<li class="heading4" id="i10.4.6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.2" href="add_aggregate_column.htm" target="hmcontent"><span class="heading4" id="s10.4.6.2">Qruplaşdırıcı sütununun əlavə edilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.3" href="filter__data_in_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.3">Məlumatların sütunda filter olunması</span></a>
+</li>
+<li class="heading4" id="i10.4.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.4" href="sort_data_in_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.4">Sütundakı məlumatların sıralanması</span></a>
+</li>
+<li class="heading4" id="i10.4.6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.5" href="hide_show_columns.htm" target="hmcontent"><span class="heading4" id="s10.4.6.5">Sütunu/sütunlar qrupu göstər/gizlət</span></a>
+</li>
+<li class="heading4" id="i10.4.6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.6" href="rename_column_band.htm" target="hmcontent"><span class="heading4" id="s10.4.6.6">Sütunu/sütunlar qrupunun adını dəyiş</span></a>
+</li>
+<li class="heading4" id="i10.4.6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.7" href="reorder_columns_bands.htm" target="hmcontent"><span class="heading4" id="s10.4.6.7">Sütunu/sütunlar qrupunun sıralanması</span></a>
+</li>
+<li class="heading4" id="i10.4.6.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.8" href="reset_view.htm" target="hmcontent"><span class="heading4" id="s10.4.6.8">Baxış rejimi ilkin vəziyyətin bərpa edilməsi</span></a>
+</li>
+<li class="heading4" id="i10.4.6.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.9" href="print_view_report.htm" target="hmcontent"><span class="heading4" id="s10.4.6.9">Baxış rejimin alt-səhifəsinin (hesabatın) çapı</span></a>
+</li>
+<li class="heading4" id="i10.4.6.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.10" href="export_layout.htm" target="hmcontent"><span class="heading4" id="s10.4.6.10">Baxış rejimin alt-səhifəsinin (hesabatın) ixracı</span></a>
+</li>
+<li class="heading4" id="i10.4.6.11" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.11" href="avr_in_maps.htm" target="hmcontent"><span class="heading4" id="s10.4.6.11" ondblclick="return dblclicked(this)">AVH-də olan xəritələr</span></a>
+<ul id="ul10.4.6.11" style="list-style-type:none">
+<li class="heading5" id="i10.4.6.11.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.1" href="show_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.1">Xəritəni göstər</span></a>
+</li>
+<li class="heading5" id="i10.4.6.11.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.2" href="print_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.2">Xəritənin çapı</span></a>
+</li>
+<li class="heading5" id="i10.4.6.11.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.11.3" href="export_map.htm" target="hmcontent"><span class="heading5" id="s10.4.6.11.3">Xəritənin ixracı</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.4.6.12" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.4.6.12" href="avr_chart_management.htm" target="hmcontent"><span class="heading4" id="s10.4.6.12" ondblclick="return dblclicked(this)">AVH-də olan diaqramlar</span></a>
+<ul id="ul10.4.6.12" style="list-style-type:none">
+<li class="heading5" id="i10.4.6.12.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.1" href="show_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.1">Diaqramı göstər</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.2" href="chart_type.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.2">Diaqram növünün dəyişdirilməsi</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.3" href="set_up_axes.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.3">Diaqram görünüşün köklənilməsi</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.4" href="print_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.4">Diaqramın çapı</span></a>
+</li>
+<li class="heading5" id="i10.4.6.12.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.4.6.12.5" href="export_chart.htm" target="hmcontent"><span class="heading5" id="s10.4.6.12.5">Diaqramın ixracı</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.7" href="cancel_changes_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.7">Dəyişikliklərin ləğv edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.8" href="save_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.8">Cədvəlin yaddaşa salınması.</span></a>
+</li>
+<li class="heading3" id="i10.4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.9" href="close_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.9">Cədvəli bağla</span></a>
+</li>
+<li class="heading3" id="i10.4.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.10" href="share_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.10">Cədvəli ilə paylaşmaq</span></a>
+</li>
+<li class="heading3" id="i10.4.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.11" href="delete_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.11">Cədvəlin silinməsi</span></a>
+</li>
+<li class="heading3" id="i10.4.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.4.12" href="copy_layout.htm" target="hmcontent"><span class="heading3" id="s10.4.12">Cədvəlin surəti çıxarılması</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.5" href=javascript:void(0);><span class="heading2" id="s10.5" ondblclick="return dblclicked(this)">İnzibati Funksiyalar</span></a>
+<ul id="ul10.5" style="list-style-type:none">
+<li class="heading3" id="i10.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.1" href="publish_a_layout.htm" target="hmcontent"><span class="heading3" id="s10.5.1">Cədvəli/sorğu/qovluğu nəşr edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.2" href="unpublish_layout.htm" target="hmcontent"><span class="heading3" id="s10.5.2">Cədvəli/sorğu/qovluğun nəşrini ləğv edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.3" href="set_functions_default_precisio.htm" target="hmcontent"><span class="heading3" id="s10.5.3">Funksiyaların standart dəqiqliyinin təyin edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.4" href="set_search_object_fields_defau.htm" target="hmcontent"><span class="heading3" id="s10.5.4">Axtarış obyekti xanalarının standart qruplaşdırıcı funksiyasını təyin edilməsi</span></a>
+</li>
+<li class="heading3" id="i10.5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.5" href="printing.htm" target="hmcontent"><span class="heading3" id="s10.5.5">Çap etmə</span></a>
+</li>
+<li class="heading3" id="i10.5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.5.6" href="use_avr_cache_service.htm" target="hmcontent"><span class="heading3" id="s10.5.6">AVH-ın cashe (keş) servisindən istifadə edilməsi</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.6" href="forms_description.htm" target="hmcontent"><span class="heading2" id="s10.6" ondblclick="return dblclicked(this)">Formaların təsviri</span></a>
+<ul id="ul10.6" style="list-style-type:none">
+<li class="heading3" id="i10.6.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.1" href="avr_main_window.htm" target="hmcontent"><span class="heading3" id="s10.6.1" ondblclick="return dblclicked(this)">AVH-in əsas pəncərəsi</span></a>
+<ul id="ul10.6.1" style="list-style-type:none">
+<li class="heading4" id="i10.6.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.1" href="query_folder_layout_tree_edito.htm" target="hmcontent"><span class="heading4" id="s10.6.1.1">Sorğu/Qovluq/Cədvəl Ağacı redaktəedicisi</span></a>
+</li>
+<li class="heading4" id="i10.6.1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.2" href="main_menu.htm" target="hmcontent"><span class="heading4" id="s10.6.1.2">Əsas Menyu</span></a>
+</li>
+<li class="heading4" id="i10.6.1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.1.3" href="toolbar.htm" target="hmcontent"><span class="heading4" id="s10.6.1.3">Alət paneli</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.2" href="query_builder.htm" target="hmcontent"><span class="heading3" id="s10.6.2" ondblclick="return dblclicked(this)">Sorğunun yaradılması</span></a>
+<ul id="ul10.6.2" style="list-style-type:none">
+<li class="heading4" id="i10.6.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.1" href="general_query_info.htm" target="hmcontent"><span class="heading4" id="s10.6.2.1">Sorğuya dair ümumi məlumat</span></a>
+</li>
+<li class="heading4" id="i10.6.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.2" href="query_search_objects_tree.htm" target="hmcontent"><span class="heading4" id="s10.6.2.2">Sorğunun Axtarış Obyektlərin Ağacı</span></a>
+</li>
+<li class="heading4" id="i10.6.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.2.3" href="fields_list.htm" target="hmcontent"><span class="heading4" id="s10.6.2.3">Xanaların siyahısı</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.3" href="layout_designer.htm" target="hmcontent"><span class="heading3" id="s10.6.3" ondblclick="return dblclicked(this)">Cədvəlin tərtibatçısı</span></a>
+<ul id="ul10.6.3" style="list-style-type:none">
+<li class="heading4" id="i10.6.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.1" href="info_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.1">Info alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i10.6.3.2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.2" href="pivot_grid_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.2" ondblclick="return dblclicked(this)">Tərtib cədvəli alt-pəncərəsi</span></a>
+<ul id="ul10.6.3.2" style="list-style-type:none">
+<li class="heading5" id="i10.6.3.2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.1" href="pivot_grid_and_fields_list.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.1">Tərtib cədvəli və xanaların siyahısı</span></a>
+</li>
+<li class="heading5" id="i10.6.3.2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.2" href="fields_right-click_menu.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.2">Xanaların sağ düymə menyusu</span></a>
+</li>
+<li class="heading5" id="i10.6.3.2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.2.3" href="pivot_grid_settings.htm" target="hmcontent"><span class="heading5" id="s10.6.3.2.3">Tərtib cədvəlin kökləmələri</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i10.6.3.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.3" href="view_tab.htm" target="hmcontent"><span class="heading4" id="s10.6.3.3">Baxış rejiminin alt-pəncərəsi</span></a>
+</li>
+<li class="heading4" id="i10.6.3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.4" href="chart_editor.htm" target="hmcontent"><span class="heading4" id="s10.6.3.4">Diaqramın redaktəedicisi</span></a>
+</li>
+<li class="heading4" id="i10.6.3.5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a10.6.3.5" href="map_editor.htm" target="hmcontent"><span class="heading4" id="s10.6.3.5" ondblclick="return dblclicked(this)">Xəritənin redaktəedicisi</span></a>
+<ul id="ul10.6.3.5" style="list-style-type:none">
+<li class="heading5" id="i10.6.3.5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.5.1" href="layer_control_panel.htm" target="hmcontent"><span class="heading5" id="s10.6.3.5.1">Qatın nəzarət paneli</span></a>
+</li>
+<li class="heading5" id="i10.6.3.5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a10.6.3.5.2" href="map_toolbar_buttons.htm" target="hmcontent"><span class="heading5" id="s10.6.3.5.2">Xəritədə alətlər panelinin düymələri</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i10.6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a10.6.4" href="functional_buttons.htm" target="hmcontent"><span class="heading3" id="s10.6.4">Funksional Düymələr</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i10.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.7" href="list_of_avr_search_objects_actual.htm" target="hmcontent"><span class="heading2" id="s10.7">AVH Axtarış Obyektlərinin Siyahısı və onların xanaları</span></a>
+</li>
+<li class="heading2" id="i10.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.8" href="permissions_and_access_to_avr_.htm" target="hmcontent"><span class="heading2" id="s10.8">AVH məlumatlarına giriş icazələri</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

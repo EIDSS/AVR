@@ -1,0 +1,14 @@
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\eidss_db.dll
+C:\NGDev\EIDSS61\eidss.main\bin\Debug\eidss_db.pdb
+C:\NGDev\EIDSS61\vb\EIDSS\EIDSS_Common_Db\obj\Debug\eidss_db.dll
+C:\NGDev\EIDSS61\vb\EIDSS\EIDSS_Common_Db\obj\Debug\eidss_db.pdb
+C:\NGDev\EIDSS61\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbprojAssemblyReference.cache
+C:\NGDev\EIDSS61\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbproj.CoreCompileInputs.cache
+C:\NGDev\EIDSS61\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss_db.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss_db.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common_Db\obj\Debug\EIDSS_Common_Db.vbproj.CopyComplete
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common_Db\obj\Debug\eidss_db.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common_Db\obj\Debug\eidss_db.pdb

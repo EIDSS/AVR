@@ -1,0 +1,17 @@
+C:\NGDev\GetPersonInfo\Hmis.Contracts\bin\Debug\Hmis.Contracts.dll
+C:\NGDev\GetPersonInfo\Hmis.Contracts\bin\Debug\Hmis.Contracts.pdb
+C:\NGDev\GetPersonInfo\Hmis.Contracts\obj\Debug\Hmis.Contracts.csprojResolveAssemblyReference.cache
+C:\NGDev\GetPersonInfo\Hmis.Contracts\obj\Debug\Hmis.Contracts.dll
+C:\NGDev\GetPersonInfo\Hmis.Contracts\obj\Debug\Hmis.Contracts.pdb
+C:\NGDev\EIDSS61\Hmis.Contracts\bin\Debug\Hmis.Contracts.dll
+C:\NGDev\EIDSS61\Hmis.Contracts\bin\Debug\Hmis.Contracts.pdb
+C:\NGDev\EIDSS61\Hmis.Contracts\obj\Debug\Hmis.Contracts.csproj.CoreCompileInputs.cache
+C:\NGDev\EIDSS61\Hmis.Contracts\obj\Debug\Hmis.Contracts.dll
+C:\NGDev\EIDSS61\Hmis.Contracts\obj\Debug\Hmis.Contracts.pdb
+C:\NGDev\EIDSS61\Hmis.Contracts\obj\Debug\Hmis.Contracts.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\bin\Debug\Hmis.Contracts.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\bin\Debug\Hmis.Contracts.pdb
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\obj\Debug\Hmis.Contracts.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\obj\Debug\Hmis.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\obj\Debug\Hmis.Contracts.dll
+C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\Hmis.Contracts\obj\Debug\Hmis.Contracts.pdb

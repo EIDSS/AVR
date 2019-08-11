@@ -1,0 +1,11 @@
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.csprojResolveAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.WinClient.TestMainForm.resources
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.csproj.GenerateResource.Cache
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.dll.licenses
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.csprojAssemblyReference.cache
+C:\NGDev\EIDSS61\bv.tests\obj\Release\bv.tests.csproj.CoreCompileInputs.cache
+C:\NGDev\EIDSSAVR\bv.tests\obj\Release\bv.tests.csprojAssemblyReference.cache
+C:\NGDev\EIDSSAVR\bv.tests\obj\Release\bv.tests.WinClient.TestMainForm.resources
+C:\NGDev\EIDSSAVR\bv.tests\obj\Release\bv.tests.csproj.GenerateResource.cache
+C:\NGDev\EIDSSAVR\bv.tests\obj\Release\bv.tests.dll.licenses
+C:\NGDev\EIDSSAVR\bv.tests\obj\Release\bv.tests.csproj.CoreCompileInputs.cache
