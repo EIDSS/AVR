@@ -1,4 +1,3 @@
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\bin\Debug\EIDSS.AVRService.ProductCodes
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pth51B8DB111CA234177E125B1BD1C29275\ExitDialog.wixobj
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pth51B8DB111CA234177E125B1BD1C29275\FatalError.wixobj
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pth51B8DB111CA234177E125B1BD1C29275\ShowLog.wixobj
@@ -35,3 +34,7 @@ C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSet
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pthF778601C3F0D3CD3B0D48092628E6DBF\ErrorConnectionDlg.wixobj
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pthF778601C3F0D3CD3B0D48092628E6DBF\InnerSettings.wixobj
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\pthE91214D6A01DADC67AECA7F89BFECD87\MultiInstanceEngine.wixobj
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\bin\Debug\en-US\EIDSS.AVRService.msi
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindContentsFileListen-US.txt
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindOutputsFileListen-US.txt
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindBuiltOutputsFileListen-US.txt
