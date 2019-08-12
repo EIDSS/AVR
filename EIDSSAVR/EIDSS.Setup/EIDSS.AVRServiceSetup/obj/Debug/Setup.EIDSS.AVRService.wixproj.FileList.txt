@@ -1,0 +1,1 @@
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\bin\Debug\EIDSS.AVRService.ProductCodes
