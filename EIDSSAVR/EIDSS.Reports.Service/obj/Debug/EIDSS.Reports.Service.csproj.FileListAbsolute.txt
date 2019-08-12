@@ -606,3 +606,6 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Reports.Service\bin\Debug\ru\
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Reports.Service\obj\Debug\EIDSS.Reports.Service.exe

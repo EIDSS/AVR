@@ -497,3 +497,6 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.test\bin\Debug\ru\Dev
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.test\obj\Debug\eidss.openapi.test.exe

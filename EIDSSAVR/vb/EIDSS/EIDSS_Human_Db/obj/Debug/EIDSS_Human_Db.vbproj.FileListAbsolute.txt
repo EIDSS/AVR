@@ -22,3 +22,6 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss_human_db
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\EIDSS_Human_Db.vbproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\eidss_human_db.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\eidss_human_db.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\eidss_human_db.dll.licenses
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\EIDSS_Human_Db.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Human_Db\obj\Debug\EIDSS_Human_Db.vbprojAssemblyReference.cache

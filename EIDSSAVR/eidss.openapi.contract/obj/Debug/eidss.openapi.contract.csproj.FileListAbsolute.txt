@@ -18,3 +18,13 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.contract\obj\Debug\ei
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\bin\Debug\eidss.openapi.contract.XML
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\bin\Debug\eidss.openapi.contract.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\bin\Debug\eidss.openapi.contract.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.csproj.CopyComplete
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.contract\obj\Debug\eidss.openapi.contract.pdb

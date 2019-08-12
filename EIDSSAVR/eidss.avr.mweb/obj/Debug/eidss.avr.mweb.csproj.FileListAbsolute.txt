@@ -831,3 +831,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.mweb\bin\ru\DevExpress.Xp
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.mweb\obj\Debug\eidss.avr.mweb.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.mweb\obj\Debug\eidss.avr.mweb.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.mweb\obj\Debug\eidss.avr.mweb.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.mweb\obj\Debug\eidss.avr.mweb.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.mweb\obj\Debug\eidss.avr.mweb.csproj.CoreCompileInputs.cache

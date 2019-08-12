@@ -76,3 +76,17 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportDetail.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.ar-IQ.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.az-latn-az.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.hy-am.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.ka-ge.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.kk-kz.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.ru-RU.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.th-TH.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\eidss.winclient.WhoExport.WhoExportMasterDetail.uk-ua.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.csproj.GenerateResource.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.dll.licenses
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_WebServiceExport\obj\Debug\EIDSS_WebServiceExport.csproj.CoreCompileInputs.cache

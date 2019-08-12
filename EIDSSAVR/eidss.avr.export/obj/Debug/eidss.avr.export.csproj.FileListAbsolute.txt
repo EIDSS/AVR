@@ -482,3 +482,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.av
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.exe

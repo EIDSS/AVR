@@ -718,3 +718,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.webclient\bin\ru\DevExpress.X
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.webclient\obj\Debug\eidss.webclient.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.webclient\obj\Debug\eidss.webclient.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.webclient\obj\Debug\eidss.webclient.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.webclient\obj\Debug\eidss.webclient.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.webclient\obj\Debug\eidss.webclient.csproj.CoreCompileInputs.cache

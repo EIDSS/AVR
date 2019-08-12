@@ -657,3 +657,6 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.a
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.AVR.Service\obj\Debug\eidss.avr.service.exe

@@ -17,3 +17,5 @@ C:\NGDev\EIDSS61\eidss.main\bin\Debug\MapProjects\Default.TH.map
 C:\NGDev\EIDSS61\eidss.main\bin\Debug\fgdb.template
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.model.customization\obj\Debug\eidss.model.customization.csprojAssemblyReference.cache
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.model.customization\obj\Debug\eidss.model.customization.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.model.customization\obj\Debug\eidss.model.customization.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.model.customization\obj\Debug\eidss.model.customization.csproj.CoreCompileInputs.cache

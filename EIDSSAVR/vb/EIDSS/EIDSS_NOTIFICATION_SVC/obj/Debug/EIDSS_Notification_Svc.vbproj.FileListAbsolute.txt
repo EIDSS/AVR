@@ -24,3 +24,16 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.xml
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\EIDSS60_Ntfy.exe.config
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\EIDSS60_Ntfy.exe
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\EIDSS60_Ntfy.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\EIDSS60_Ntfy.xml
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS_Notification_Svc.vbprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS.NtfyServiceInstaller.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS.ServiceControl.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS_Notification_Svc.vbproj.GenerateResource.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS_Notification_Svc.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS_Notification_Svc.vbproj.CopyComplete
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.exe
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.xml
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_NOTIFICATION_SVC\obj\Debug\EIDSS60_Ntfy.pdb

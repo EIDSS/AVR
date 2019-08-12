@@ -22,3 +22,15 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolk
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\BLToolkit.4.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\BLToolkit.4.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.ComponentModel.Design.GetTypeDialog.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.ComponentModel.Design.TypePicker.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.ComponentModel.ObjectBinder.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.Properties.Resources.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.csproj.GenerateResource.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bltoolkit.3.2.dev\obj\Debug\BLToolkit.4.csproj.CopyComplete

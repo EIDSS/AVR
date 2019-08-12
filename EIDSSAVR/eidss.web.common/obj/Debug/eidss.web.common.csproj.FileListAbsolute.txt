@@ -515,3 +515,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.web.common\bin\Debug\ru\DevEx
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.web.common\obj\Debug\eidss.web.common.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.web.common\obj\Debug\eidss.web.common.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.web.common\obj\Debug\eidss.web.common.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.web.common\obj\Debug\eidss.web.common.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.web.common\obj\Debug\eidss.web.common.csproj.CoreCompileInputs.cache

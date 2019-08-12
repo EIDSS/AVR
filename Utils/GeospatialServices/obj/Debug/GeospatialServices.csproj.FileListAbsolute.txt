@@ -12,3 +12,10 @@ C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Debug\Geospatia
 C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Debug\GeospatialServices.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Debug\GeospatialServices.dll
 C:\Users\DanielS\source\repos\NGDev\Utils\GeospatialServices\obj\Debug\GeospatialServices.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSS\eidss.main\bin\Debug\GeospatialServices.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSS\eidss.main\bin\Debug\GeospatialServices.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\Utils\GeospatialServices\obj\Debug\GeospatialServices.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\Utils\GeospatialServices\obj\Debug\GeospatialServices.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\Utils\GeospatialServices\obj\Debug\GeospatialServices.csproj.CopyComplete
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\Utils\GeospatialServices\obj\Debug\GeospatialServices.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\Utils\GeospatialServices\obj\Debug\GeospatialServices.pdb

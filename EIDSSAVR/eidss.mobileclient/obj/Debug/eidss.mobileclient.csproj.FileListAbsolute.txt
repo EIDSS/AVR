@@ -533,3 +533,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.mobileclient\bin\ru\DevExpres
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.mobileclient\obj\Debug\eidss.mobileclient.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.mobileclient\obj\Debug\eidss.mobileclient.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.mobileclient\obj\Debug\eidss.mobileclient.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.mobileclient\obj\Debug\eidss.mobileclient.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.mobileclient\obj\Debug\eidss.mobileclient.csproj.CoreCompileInputs.cache

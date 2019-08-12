@@ -483,3 +483,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\bin\Debug\ru\DevE
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.csproj.CoreCompileInputs.cache

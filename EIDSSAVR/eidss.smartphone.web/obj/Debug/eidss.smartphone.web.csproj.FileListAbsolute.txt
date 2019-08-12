@@ -594,3 +594,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.smartphone.web\bin\ru\DevExpr
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.smartphone.web\obj\Debug\eidss.smartphone.web.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.smartphone.web\obj\Debug\eidss.smartphone.web.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.smartphone.web\obj\Debug\eidss.smartphone.web.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.smartphone.web\obj\Debug\eidss.smartphone.web.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.smartphone.web\obj\Debug\eidss.smartphone.web.csproj.CoreCompileInputs.cache

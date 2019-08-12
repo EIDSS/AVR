@@ -471,3 +471,5 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.oaservice\bin\ru\DevExpress.R
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.oaservice\obj\Debug\OaService.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.oaservice\obj\Debug\OaService.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.oaservice\obj\Debug\OaService.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.oaservice\obj\Debug\OaService.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.oaservice\obj\Debug\OaService.csproj.CoreCompileInputs.cache

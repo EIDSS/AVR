@@ -9,3 +9,8 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.WinClie
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.GenerateResource.cache
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.dll.licenses
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.tests\obj\Debug\bv.tests.WinClient.TestMainForm.resources
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.GenerateResource.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.tests\obj\Debug\bv.tests.dll.licenses
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.tests\obj\Debug\bv.tests.csproj.CoreCompileInputs.cache

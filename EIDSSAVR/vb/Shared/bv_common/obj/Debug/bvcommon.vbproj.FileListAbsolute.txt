@@ -10,3 +10,9 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bvcom
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bvcommon.vbproj.CoreCompileInputs.cache
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bv_common.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bv_common.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bv_common.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bv_common.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bvcommon.vbprojAssemblyReference.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bvcommon.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bv_common.dll
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_common\obj\Debug\bv_common.pdb

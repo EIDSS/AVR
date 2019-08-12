@@ -3378,3 +3378,4 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.Reports\obj\Debug\EI
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.Reports\obj\Debug\EIDSS.Reports.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.Reports\obj\Debug\EIDSS.Reports.pdb
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\fgdb.template
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.Reports\obj\Debug\EIDSS.Reports.csprojAssemblyReference.cache
