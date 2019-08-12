@@ -2,9 +2,6 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="Help">
-            <Component Id="cmpC644557B4493EBCE9B86A6E0D77B592A" Guid="*">
-                <File Id="fil64195467495854F5ADD715056F87A407" KeyPath="yes" Source="$(var.HelpPath)\Help.wxs" />
-            </Component>
             <Directory Id="dir513FB5DC1BCBCFC9E894304349FB71BC" Name="az">
                 <Component Id="cmpF997BDB0A8EDCBE6EBE58BA5E89A6DF8" Guid="*">
                     <File Id="fil280E86A1918AF1BB1FB1AF36F2FAB4E6" KeyPath="yes" Source="$(var.HelpPath)\az\$$HMSKINPREVIEW.PNG" />
@@ -11282,7 +11279,6 @@
     </Fragment>
     <Fragment>
         <ComponentGroup Id="Help.Harvested">
-            <ComponentRef Id="cmpC644557B4493EBCE9B86A6E0D77B592A" />
             <ComponentRef Id="cmpF997BDB0A8EDCBE6EBE58BA5E89A6DF8" />
             <ComponentRef Id="cmp09036EFD4BED7E4EAE77688A8A61783D" />
             <ComponentRef Id="cmp82AB97F022AA6B336356ECAA7D7B2CEF" />

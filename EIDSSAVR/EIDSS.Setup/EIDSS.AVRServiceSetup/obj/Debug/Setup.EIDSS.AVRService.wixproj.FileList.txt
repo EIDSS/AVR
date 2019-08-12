@@ -38,3 +38,4 @@ C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSet
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindContentsFileListen-US.txt
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindOutputsFileListen-US.txt
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\obj\Debug\Setup.EIDSS.AVRService.wixproj.BindBuiltOutputsFileListen-US.txt
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\EIDSS.Setup\EIDSS.AVRServiceSetup\bin\Debug\EIDSS.AVRService.ProductCodes

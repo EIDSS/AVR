@@ -58,8 +58,6 @@
     </Compile>
     <Compile Include="AVR.wxs" />
     <Compile Include="Binaries.wxs" />
-    <Compile Include="bin\Debug\Help\Setup.EIDSS.Desktop\Help.wxs" />
-    <Compile Include="bin\Release\Help\Setup.EIDSS.Desktop\Help.wxs" />
     <Compile Include="Components.wxs" />
     <Compile Include="DirectoryTree.wxs" />
     <Compile Include="Help\Help.wxs" />
