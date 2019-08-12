@@ -58,10 +58,7 @@
     <Compile Include="MsiDatabaseWrapper.cs" />
     <Compile Include="Port.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <AdditionalFiles Include="..\DependencyValidation1\DependencyValidation1.layerdiagram">
-      <Link>DependencyValidation1.layerdiagram</Link>
-      <Visible>False</Visible>
-    </AdditionalFiles>
+  
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

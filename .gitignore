@@ -5,7 +5,7 @@
 
 # User-specific files
 *.msi
-*.dll
+##*.dll
 *.rsuser
 *.suo
 *.user
