@@ -164,3 +164,4 @@ C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.common\obj\Debug\ru-RU\bv.co
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.common\obj\Debug\th-TH\bv.common.resources.dll
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.common\obj\Debug\bv.common.dll
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.common\obj\Debug\bv.common.pdb
+C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\bv.common\obj\Debug\bv.common.csprojAssemblyReference.cache
