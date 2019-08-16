@@ -10,9 +10,9 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remo
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csproj.CoreCompileInputs.cache
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csprojAssemblyReference.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csproj.CoreCompileInputs.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.remoting.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.remoting\obj\Debug\eidss.remoting.pdb

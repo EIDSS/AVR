@@ -12,10 +12,10 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss_common.p
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbprojAssemblyReference.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbproj.CoreCompileInputs.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss_common.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss_common.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbproj.CopyComplete
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss_common.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss_common.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\EIDSS_Common.vbproj.CopyComplete
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS_Common\obj\Debug\eidss_common.pdb

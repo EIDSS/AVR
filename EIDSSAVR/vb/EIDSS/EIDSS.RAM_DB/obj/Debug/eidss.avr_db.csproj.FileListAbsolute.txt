@@ -16,8 +16,7 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\eidss.avr_db.p
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csprojAssemblyReference.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csproj.CoreCompileInputs.cache
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProjects\Default.KZ.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProjects\Default.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProjects\Default.TH.map
@@ -26,6 +25,7 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\AccessTemp
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.avr_db.dll.config
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.avr_db.dll
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.avr_db.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csprojAssemblyReference.cache
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.csproj.CopyComplete
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.dll
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\EIDSS\EIDSS.RAM_DB\obj\Debug\eidss.avr_db.pdb

@@ -12,10 +12,10 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.main\bin\Debug\bvdb_common.pd
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.dll
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbprojAssemblyReference.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbproj.CoreCompileInputs.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bvdb_common.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bvdb_common.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbproj.CopyComplete
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.dll
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbprojAssemblyReference.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bvdb_common.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\bvdb_common.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.vbproj.CopyComplete
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\vb\Shared\bv_dbcommon\obj\Debug\bvdb_common.pdb

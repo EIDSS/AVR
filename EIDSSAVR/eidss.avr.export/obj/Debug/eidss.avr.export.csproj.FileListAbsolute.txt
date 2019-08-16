@@ -482,8 +482,7 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.av
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.exe
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.pdb
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CoreCompileInputs.cache
-C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.exe
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CoreCompileInputs.cache
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\MapProjects\Default.KZ.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\MapProjects\Default.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\MapProjects\Default.TH.map
@@ -570,6 +569,7 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\BLTo
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\DevExpress.Data.v15.1.xml
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\DevExpress.PivotGrid.v15.1.Core.xml
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\bvdb_common.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\eidss.model.pdb
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\DevExpress.XtraPivotGrid.v15.1.xml
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\DevExpress.XtraEditors.v15.1.xml
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\bv_common.pdb
@@ -720,4 +720,7 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\ja\D
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\ru\DevExpress.XtraGauges.v15.1.Core.resources.dll
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csprojAssemblyReference.cache
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.csproj.CopyComplete
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.exe
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\obj\Debug\eidss.avr.export.x64.pdb
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\Microsoft.SqlServer.Dmf.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
