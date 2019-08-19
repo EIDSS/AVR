@@ -420,6 +420,72 @@
     <Compile Include="BaseControls\Keeper\BaseIntervalLocationKeeper.Designer.cs">
       <DependentUpon>BaseIntervalLocationKeeper.cs</DependentUpon>
     </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.cs">
+      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.Designer.cs">
+      <DependentUpon>FormN85FirstDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.cs">
+      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.Designer.cs">
+      <DependentUpon>FormN85FourthDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.cs">
+      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.Designer.cs">
+      <DependentUpon>FormN85SecondDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.cs">
+      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.Designer.cs">
+      <DependentUpon>FormN85ThirdDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.Designer.cs">
+      <DependentUpon>FormN85Keeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85BaseReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85BaseReport.designer.cs">
+      <DependentUpon>FormN85BaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85FirstReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85FirstReport.designer.cs">
+      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85FourthReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85FourthReport.designer.cs">
+      <DependentUpon>FormN85FourthReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85JointReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85JointReport.designer.cs">
+      <DependentUpon>FormN85JointReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85SecondReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85SecondReport.designer.cs">
+      <DependentUpon>FormN85SecondReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.designer.cs">
+      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Parameterized\Human\UA\DataSets\EIDSS_UA_Seed_GISDataSet.cs">
       <DependentUpon>EIDSS_UA_Seed_GISDataSet.xsd</DependentUpon>
     </Compile>
@@ -1088,74 +1154,6 @@
       <DependentUpon>ZoonoticAZReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Parameterized\Human\AJ\Reports\ReportArchiveHelper.cs" />
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.cs">
-      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.cs">
-      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.cs">
-      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.cs">
-      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.Designer.cs">
-      <DependentUpon>FormN85Keeper.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85FourthReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85FourthReport.designer.cs">
-      <DependentUpon>FormN85FourthReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.designer.cs">
-      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85SecondReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85SecondReport.designer.cs">
-      <DependentUpon>FormN85SecondReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85BaseReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85BaseReport.designer.cs">
-      <DependentUpon>FormN85BaseReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85FirstReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85FirstReport.designer.cs">
-      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="Parameterized\Human\GG\DataSet\ComparativeGGDataSet.cs">
       <DependentUpon>ComparativeGGDataSet.xsd</DependentUpon>
     </Compile>
@@ -1432,12 +1430,6 @@
     </Compile>
     <Compile Include="Parameterized\Human\AJ\Reports\WhoMeaslesRubellaReport.Designer.cs">
       <DependentUpon>WhoMeaslesRubellaReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85JointReport.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Parameterized\Human\ARM\Report\FormN85JointReport.designer.cs">
-      <DependentUpon>FormN85JointReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Parameterized\Human\DToChangedD\DToChangedDKeeper.cs">
       <SubType>UserControl</SubType>
@@ -5503,58 +5495,57 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.resx">
       <DependentUpon>FormN85Keeper.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Keeper\FormN85Keeper.ru-RU.resx">
       <DependentUpon>FormN85Keeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85BaseReport.resx">
+      <DependentUpon>FormN85BaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.hy-AM.resx">
+      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.resx">
+      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.ru-RU.resx">
+      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FourthReport.hy-AM.resx">
       <DependentUpon>FormN85FourthReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FourthReport.resx">
       <DependentUpon>FormN85FourthReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FourthReport.ru-RU.resx">
       <DependentUpon>FormN85FourthReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.hy-AM.resx">
-      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.hy-AM.resx">
+      <DependentUpon>FormN85JointReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.resx">
-      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.resx">
+      <DependentUpon>FormN85JointReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.ru-RU.resx">
-      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.ru-RU.resx">
+      <DependentUpon>FormN85JointReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85SecondReport.hy-AM.resx">
       <DependentUpon>FormN85SecondReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85SecondReport.resx">
       <DependentUpon>FormN85SecondReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85BaseReport.resx">
-      <DependentUpon>FormN85BaseReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.hy-AM.resx">
-      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.resx">
-      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85FirstReport.ru-RU.resx">
-      <DependentUpon>FormN85FirstReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85SecondReport.ru-RU.resx">
       <DependentUpon>FormN85SecondReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.hy-AM.resx">
+      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.resx">
+      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85ThirdReport.ru-RU.resx">
+      <DependentUpon>FormN85ThirdReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\DToChangedD\DToChangedDKeeper.th-TH.resx">
       <DependentUpon>DToChangedDKeeper.cs</DependentUpon>
@@ -6428,17 +6419,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\AJ\Reports\WhoMeaslesRubellaReport.uk-UA.resx">
       <DependentUpon>WhoMeaslesRubellaReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.hy-AM.resx">
-      <DependentUpon>FormN85JointReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.resx">
-      <DependentUpon>FormN85JointReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parameterized\Human\ARM\Report\FormN85JointReport.ru-RU.resx">
-      <DependentUpon>FormN85JointReport.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Parameterized\Human\GG\Filter\Journal60Filter.ka-GE.resx">
       <SubType>Designer</SubType>
@@ -8720,6 +8700,34 @@
     <None Include="Document\Veterinary\LivestockInvestigation\VaccinationDataSet.xss">
       <DependentUpon>VaccinationDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xsc">
+      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xsd" />
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xss">
+      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xsc">
+      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xsd" />
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xss">
+      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xsc">
+      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xsd" />
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xss">
+      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xsc">
+      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xsd" />
+    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xss">
+      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Parameterized\Human\UA\DataSets\EIDSS_UA_Seed_GISDataSet.xsc">
       <DependentUpon>EIDSS_UA_Seed_GISDataSet.xsd</DependentUpon>
     </None>
@@ -9017,50 +9025,6 @@
     </None>
     <None Include="Parameterized\Human\AJ\DataSets\ZoonoticMonthsDataSet.xss">
       <DependentUpon>ZoonoticMonthsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xsc">
-      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FormN85FirstDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FirstDataSet.xss">
-      <DependentUpon>FormN85FirstDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xsc">
-      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FormN85FourthDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85FourthDataSet.xss">
-      <DependentUpon>FormN85FourthDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xsc">
-      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FormN85SecondDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85SecondDataSet.xss">
-      <DependentUpon>FormN85SecondDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xsc">
-      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FormN85ThirdDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Parameterized\Human\ARM\DataSet\FormN85ThirdDataSet.xss">
-      <DependentUpon>FormN85ThirdDataSet.xsd</DependentUpon>
     </None>
     <None Include="Parameterized\Human\DToChangedD\DToChangedDDataSet.xsc">
       <DependentUpon>DToChangedDDataSet.xsd</DependentUpon>
