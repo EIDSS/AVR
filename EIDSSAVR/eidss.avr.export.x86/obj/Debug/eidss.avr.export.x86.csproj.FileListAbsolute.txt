@@ -706,8 +706,3 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\obj\Debug\
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\obj\Debug\eidss.avr.export.x86.exe
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\Microsoft.SqlServer.Dmf.dll
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.KZ.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.TH.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\fgdb.template
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\AccessTemplate\template.mdb

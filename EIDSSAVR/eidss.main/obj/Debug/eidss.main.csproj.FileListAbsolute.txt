@@ -372,7 +372,6 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProject
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProjects\Default.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\MapProjects\Default.TH.map
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.avr.export.exe.config
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\fgdb.template
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\AccessTemplate\template.mdb
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.main.exe.config
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.main\bin\Debug\eidss.main.exe
