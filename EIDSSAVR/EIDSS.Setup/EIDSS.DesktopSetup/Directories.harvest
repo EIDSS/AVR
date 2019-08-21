@@ -25,7 +25,7 @@
     <PrepareDirectoryHarvestDependsOn>
       PrepareDirectory_GdalData;
       PrepareDirectory_PaperForms;
-      PrepareDirectory_Help;
+      <!--PrepareDirectory_Help;-->
     </PrepareDirectoryHarvestDependsOn>
   </PropertyGroup>
   <Target Name="PrepareDirectoryHarvest" DependsOnTargets="$(PrepareDirectoryHarvestDependsOn)">
