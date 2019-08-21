@@ -89,7 +89,7 @@
   </ItemGroup>
   <Import Project="$(SolutionDir)HelpBuilder.Common.targets" />
 
-  <Target Name="PrepareDirectory_Help" DependsOnTargets="BuildHelp">
+  <!--<Target Name="PrepareDirectory_Help" DependsOnTargets="BuildHelp">
     <PropertyGroup>
       <DefineConstants>HelpPath=$(BuiltHelpDirectory);$(DefineConstants)</DefineConstants>
     </PropertyGroup>
@@ -105,5 +105,5 @@
 
 
 
-  </Target>
+  </Target>-->
 </Project>
