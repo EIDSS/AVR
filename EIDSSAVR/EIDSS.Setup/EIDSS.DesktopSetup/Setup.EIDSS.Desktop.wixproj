@@ -7864,6 +7864,7 @@
     <Content Include="bin\Release\Help\Setup.EIDSS.Desktop\th\zoom_pageinfo.zdat" />
     <Content Include="bin\Release\Help\Setup.EIDSS.Desktop\th\zoom_pagetext.zdat" />
     <Content Include="bin\Release\Help\Setup.EIDSS.Desktop\th\zoom_wordmap.zdat" />
+    <Content Include="HelpBuilder.Common.targets" />
     <Content Include="ProductInfo.wxi" />
     <Content Include="Resources.wxi" />
     <Content Include="WHO resources.wxi" />
