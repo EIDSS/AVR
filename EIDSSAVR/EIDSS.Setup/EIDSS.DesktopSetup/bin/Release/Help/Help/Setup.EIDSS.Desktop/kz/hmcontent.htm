@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>АҚЭИЖ</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="eidss_configuration.htm" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">АҚЭИЖ теңшелімі</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="repository_schema.htm" target="hmcontent"><span class="heading2" id="s1.1">Қойма сұлбасы</span></a>
+</li>
+<li class="heading2" id="i1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="basic_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.2">Базалық анықтағыштар редакторы</span></a>
+</li>
+<li class="heading2" id="i1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="clinical_diagnosis_editor.htm" target="hmcontent"><span class="heading2" id="s1.3">Клиникалық диагноздар редакторы</span></a>
+</li>
+<li class="heading2" id="i1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.4" href="measure_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.4">Іс-шаралар редакторы</span></a>
+</li>
+<li class="heading2" id="i1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.5" href="sample_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.5">Сынама типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.6" href="vector_types_editor.htm" target="hmcontent"><span class="heading2" id="s1.6">Ауру жұқтырушылар типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.7" href="vector_species_types.htm" target="hmcontent"><span class="heading2" id="s1.7">Ауру жұқтырушылар болып табылатын биологиялық түрлер типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.8" href="species_type_reference_editor.htm" target="hmcontent"><span class="heading2" id="s1.8">Биологиялық түрлер типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.9" href="statistic_types_editor.htm" target="hmcontent"><span class="heading2" id="s1.9">Жалпы статистика типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.10" href="case_classification_editor.htm" target="hmcontent"><span class="heading2" id="s1.10">Ауру оқиғаларын жіктеу редакторы</span></a>
+</li>
+<li class="heading2" id="i1.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.11" href="report_diagnoses_groups_editor.htm" target="hmcontent"><span class="heading2" id="s1.11">Диагноз топтары есеп берулерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.12" href="age_groups_editor.htm" target="hmcontent"><span class="heading2" id="s1.12">Жас топтарының редакторы</span></a>
+</li>
+<li class="heading2" id="i1.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.13" href="human_aggregate_case_matrix_ed.htm" target="hmcontent"><span class="heading2" id="s1.13">«Адамдардың ауру оқиғалары туралы агрегацияланған деректер» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.14" href="vet_aggregate_case_matrix_edit.htm" target="hmcontent"><span class="heading2" id="s1.14">«Жануарлардың ауру оқиғалары туралы агрегацияланған деректер» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.15" href="vet_diag_invest_matrix_editor.htm" target="hmcontent"><span class="heading2" id="s1.15">«Ветеринарлық-диагностикалық зерттеулер» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.16" href="vet_prophylactic_measure_matri.htm" target="hmcontent"><span class="heading2" id="s1.16">«Ветеринарлық-профилактикалық шаралар» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.17" href="vet_sanitary_action_matrix_edi.htm" target="hmcontent"><span class="heading2" id="s1.17">«Ветеринарлық-санитарлық іс-шаралар» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.18" href="species-animal_age_matrix.htm" target="hmcontent"><span class="heading2" id="s1.18">«Биологиялық түр – жануарлардың жасы» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.19" href="sample_type-derivative_type_ma.htm" target="hmcontent"><span class="heading2" id="s1.19">«Сынама типі – дериват типі» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.20" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.20" href="diagnosis-sample_types_matrix.htm" target="hmcontent"><span class="heading2" id="s1.20">«Диагноз – сынамалар типі» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.21" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.21" href="diagnosis-lab_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s1.21">«Диагноз – зертханалық тесттер» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.22" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.22" href="diagnosis-penside_tests_matrix.htm" target="hmcontent"><span class="heading2" id="s1.22">«Диагноз – далалық тесттер» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.23" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.23" href="test_results_matrix.htm" target="hmcontent"><span class="heading2" id="s1.23">«Тест – тест нәтижесі» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.24" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.24" href="vector_type-collection_method_matrix.htm" target="hmcontent"><span class="heading2" id="s1.24">«Ауру жұқтырушы типі – ұстап алу әдісі» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.25" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.25" href="vector_type-sample_type_matrix.htm" target="hmcontent"><span class="heading2" id="s1.25">«Ауру жұқтырушы типі – сынама типі» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.26" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.26" href="vector_type-field_test_matrix.htm" target="hmcontent"><span class="heading2" id="s1.26">«Ауру жұқтырушы типі – далалық тест» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.27" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.27" href="diagnoses-age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s1.27">«Диагноз – жас топтары» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.28" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.28" href="report_diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s1.28">«Есеп берулер үшін диагноз топтары – диагноз» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.29" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.29" href="custom_report_rows.htm" target="hmcontent"><span class="heading2" id="s1.29">Пайдаланушылық есеп беру жолдарының селекторы</span></a>
+</li>
+<li class="heading2" id="i1.30" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.30" href="diagnoses_group-diagnosis_matrix.htm" target="hmcontent"><span class="heading2" id="s1.30">«Диагноздар тобы – диагноз» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.31" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.31" href="age_groups-statistical_age_groups_matrix.htm" target="hmcontent"><span class="heading2" id="s1.31">«Жас топтары – статистикалық жас топтары» матрицасы</span></a>
+</li>
+<li class="heading2" id="i1.32" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.32" href="unique_numbering_schema.htm" target="hmcontent"><span class="heading2" id="s1.32">Бірегей нөмірлеу сұлбасы</span></a>
+</li>
+<li class="heading2" id="i1.33" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.33" href="aggregatesettings.htm" target="hmcontent"><span class="heading2" id="s1.33">Агрегациялау теңшелімі</span></a>
+</li>
+<li class="heading2" id="i1.34" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.34" href="maps_configuration.htm" target="hmcontent"><span class="heading2" id="s1.34">Географиялық карталар теңшелімі</span></a>
+</li>
+<li class="heading2" id="i1.35" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.35" href="parameter_types_matrix.htm" target="hmcontent"><span class="heading2" id="s1.35">Параметр типтерінің редакторы</span></a>
+</li>
+<li class="heading2" id="i1.36" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.36" href="data_archiving_settings.htm" target="hmcontent"><span class="heading2" id="s1.36">Деректерді мұрағаттау теңшелімдері</span></a>
+</li>
+<li class="heading2" id="i1.37" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.37" href="form_design.htm" target="hmcontent"><span class="heading2" id="s1.37" ondblclick="return dblclicked(this)">Бапталатын нысандар конфигурациясы</span></a>
+<ul id="ul1.37" style="list-style-type:none">
+<li class="heading3" id="i1.37.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.1" href="ffd_to_edit_template.htm" target="hmcontent"><span class="heading3" id="s1.37.1">Бапталатын нысандар құрылымы – шаблонды редакциялау</span></a>
+</li>
+<li class="heading3" id="i1.37.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.2" href="ffd_to_add_template.htm" target="hmcontent"><span class="heading3" id="s1.37.2">Бапталатын нысандар құрылымы – жаңа шаблонды қосу</span></a>
+</li>
+<li class="heading3" id="i1.37.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.3" href="ffd_-_to_delete_a_template.htm" target="hmcontent"><span class="heading3" id="s1.37.3">Бапталатын нысандар құрылымы – шаблонды жою</span></a>
+</li>
+<li class="heading3" id="i1.37.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.37.4" href="ffd_fields_and_sections.htm" target="hmcontent"><span class="heading3" id="s1.37.4">Бапталатын нысандар құрылымы – шаблонның бөлімдері мен жолақтары</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.38" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.38" href=javascript:void(0);><span class="heading2" id="s1.38" ondblclick="return dblclicked(this)">Әкімшілік ету теңшелімі</span></a>
+<ul id="ul1.38" style="list-style-type:none">
+<li class="heading3" id="i1.38.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.1" href="farms.htm" target="hmcontent"><span class="heading3" id="s1.38.1">Фермалар&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.38.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.2" href="employees_users.htm" target="hmcontent"><span class="heading3" id="s1.38.2">Қызметкерлер / пайдаланушылар</span></a>
+</li>
+<li class="heading3" id="i1.38.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.3" href="persons_list.htm" target="hmcontent"><span class="heading3" id="s1.38.3">Тұлғалар тізімі</span></a>
+</li>
+<li class="heading3" id="i1.38.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.4" href="organisations.htm" target="hmcontent"><span class="heading3" id="s1.38.4">Ұйымдар</span></a>
+</li>
+<li class="heading3" id="i1.38.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.5" href="settlements.htm" target="hmcontent"><span class="heading3" id="s1.38.5">Елді мекендер&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.38.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.38.6" href="statistics.htm" target="hmcontent"><span class="heading3" id="s1.38.6">Статистика</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.39" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.39" href=javascript:void(0);><span class="heading2" id="s1.39" ondblclick="return dblclicked(this)">Қауіпсіздік теңшелімі</span></a>
+<ul id="ul1.39" style="list-style-type:none">
+<li class="heading3" id="i1.39.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.1" href="security_policy.htm" target="hmcontent"><span class="heading3" id="s1.39.1">Қауіпсіздік саясаты&nbsp;</span></a>
+</li>
+<li class="heading3" id="i1.39.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.2" href="user_groups.htm" target="hmcontent"><span class="heading3" id="s1.39.2">Пайдаланушылар топтары</span></a>
+</li>
+<li class="heading3" id="i1.39.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.3" href="security.htm" target="hmcontent"><span class="heading3" id="s1.39.3">Жүйелі функциялар</span></a>
+</li>
+<li class="heading3" id="i1.39.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.4" href="system_functions_list.htm" target="hmcontent"><span class="heading3" id="s1.39.4">Жүйелі функциялар тізімі</span></a>
+</li>
+<li class="heading3" id="i1.39.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.5" href="access_rights_management.htm" target="hmcontent"><span class="heading3" id="s1.39.5">Объект кластарының өкілеттіктері</span></a>
+</li>
+<li class="heading3" id="i1.39.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.39.6" href="eidss_sites.htm" target="hmcontent"><span class="heading3" id="s1.39.6">АҚЭИЖ сайттары</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.40" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.40" href="administrative_support.htm" target="hmcontent"><span class="heading2" id="s1.40" ondblclick="return dblclicked(this)">Әкімшілік құралдар</span></a>
+<ul id="ul1.40" style="list-style-type:none">
+<li class="heading3" id="i1.40.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.1" href="system_event_log.htm" target="hmcontent"><span class="heading3" id="s1.40.1">Жүйелі оқиғалар журналы</span></a>
+</li>
+<li class="heading3" id="i1.40.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.2" href="security_log.htm" target="hmcontent"><span class="heading3" id="s1.40.2">Қауіпсіздік оқиғаларының журналы</span></a>
+</li>
+<li class="heading3" id="i1.40.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.40.3" href="data_audit_management.htm" target="hmcontent"><span class="heading3" id="s1.40.3">Деректерді тексеру транзакцияларының журналы</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

@@ -581,3 +581,4 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.web\obj\Debug\eidss.o
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.web\obj\Debug\eidss.openapi.web.pdb
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.web\obj\Debug\eidss.openapi.web.csprojAssemblyReference.cache
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.web\obj\Debug\eidss.openapi.web.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.web\bin\eidss.openapi.web.XML

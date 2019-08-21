@@ -470,11 +470,6 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export.x86\bin\Debug\ru\D
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export.x86\obj\Debug\eidss.avr.export.x86.csprojAssemblyReference.cache
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export.x86\obj\Debug\eidss.avr.export.x86.csproj.CopyComplete
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.avr.export.x86\obj\Debug\eidss.avr.export.x86.exe
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.KZ.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.TH.map
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\fgdb.template
-C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\AccessTemplate\template.mdb
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\eidss.avr.export.x86.exe
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\eidss.avr.export.x64.exe
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\eidss.avr_db.dll
@@ -711,3 +706,8 @@ C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\obj\Debug\
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\obj\Debug\eidss.avr.export.x86.exe
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\Microsoft.SqlServer.Dmf.dll
 C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.KZ.map
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.map
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\MapProjects\Default.TH.map
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\fgdb.template
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.avr.export.x86\bin\Debug\AccessTemplate\template.mdb

@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Analysis, Visualization and Reporting &gt; Layouts &gt; Pivot grid &gt; Apply aggregate functions</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="In the pivot grid it is possible to select how to display the data - as a number of items, the maximum item, etc. A function that performs a computation on a set of values..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #ffffff; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "apply_aggregate_functions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="par5"><span class="fnt6">Apply aggregate functions</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?apply_aggregate_functions.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   Analysis, Visualization and Reporting &gt; <a href="layouts.htm">Layouts</a> &gt; <a href="constructworking_with_pivot_grid.htm">Pivot grid</a>&nbsp;&gt;</p>
+   <h1 class="par5"><span class="fnt6">Apply aggregate functions</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="rename_fields.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="constructworking_with_pivot_grid.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="group_date_function.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="par0">In the pivot grid it is possible to select how to display the data - as a number of items, the maximum item, etc. A function that performs a computation on a set of values rather than on a single value is called an aggregate function. For example, finding the average or mean of a list of numbers is an aggregate function.</p>
+<p class="par0">By default, each EIDSS field has an aggregate function applied to it. If the default aggregate function does not meet the requirements, either <a href="set_search_object_fields_defau.htm" class="topiclink">change the default aggregate function</a> (this should be done if the new aggregate function is going to be applied in most cases), or change the aggregate function is to be applied here and now. </p>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Change aggregate function</span></p>
+<p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="fnt11">Select the data in the Data Area for which an aggregate function needs to be changed.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="fnt11">Confirm the desired field is displayed in the read-only field </span><span class="fnt11" style="font-weight: bold;">for Data Field</span><span class="fnt11"> of the </span><span class="fnt11" style="font-weight: bold;">Pivot Grid Settings</span><span class="fnt11"> pane.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">3.</span><span class="fnt11">In the </span><span class="fnt11" style="font-weight: bold;">Aggregate Function</span><span class="fnt11"> field, select the aggregate function that should be used instead.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">4.</span><span class="fnt11">Enter the </span><span class="fnt11" style="font-weight: bold;">Precision</span><span class="fnt11"> for the resulting value.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">5.</span><span class="fnt11">In case a Rate function is used, in the </span><span class="fnt11" style="font-weight: bold;">Parameters: Administrative Unit Field</span><span class="fnt11"> select the administrative unit for the statistics used in the calculation.</span></p><p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Aggregate functions</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<thead>
+<tr style="text-align:left;vertical-align:top;">
+<th style="vertical-align:top; width:149px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Function</span></p>
+</th>
+<th style="vertical-align:top; width:665px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Description</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Average</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">In non-total cells the </span><span class="fnt19" style="font-style: italic;">Count </span><span class="fnt19">function is used, in the total cells the average of the values is used. </span></p>
+<p class="par18"><span class="fnt19">If n numbers are given, each number denoted by ai, where i = 1, ..., n. The arithmetic average value is the sum a1+a2+... +an divided by n or</span></p>
+<p class="par18"><img width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="average_formula.png"/></p>
+<p class="par18"><span class="fnt19">where </span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> is the number of cells covered by the total;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">a</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> is count in </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">'s cell.</span></p>
+<p class="par18"><span class="fnt19">The arithmetic average value, often simply called the mean, of two numbers, such as 2 and 8, is obtained by finding a value A such that 2 + 8 = A + A. One may find that A = (2 + 8)/2 = 5. </span></p>
+<p class="par18"><span class="fnt19">If we increase the number of terms in the list for which we want an average, we get, for example, that the arithmetic mean of 2, 8, and 11 is found by solving for the value of A in the equation 2 + 8 + 11 = A + A + A. One finds that A = (2 + 8 + 11)/3 = 7.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Count</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">The absolute number of values.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Distinct Count</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">The number of unique values. Usually used to calculate the number of root object items if data from both root and child search objects are used in the same grid.</span></p>
+<p class="par18"><span class="fnt19">For example, there are 12 cases displayed in a layout.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:157px"><img alt="Fig. 545 Cases List" title="Fig. 545 Cases List" width="157" height="211" style="width:157px;height:211px;border:none" src="case_sample_1_zoom70.png"/><p style="text-align:center"><span class="fnt14">Fig. 545 Cases List</span></p></div></div>
+<p class="par18"><span class="fnt19">If both the Human Case ID (root object) and Sample ID (Child object) are used in the same pivot grid, the </span><span class="fnt19" style="font-style: italic;">Count</span><span class="fnt19"> aggregate function will calculate the wrong number of Human Cases:</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:227px"><img alt="Fig. 546 The Count function result" title="Fig. 546 The Count function result" width="227" height="64" style="width:227px;height:64px;border:none" src="case_sample_3_zoom70.png"/><p style="text-align:center"><span class="fnt14">Fig. 546 The Count function result</span></p></div></div>
+<p class="par18"><span class="fnt19">It counts the cases with samples twice. Meanwhile the </span><span class="fnt19" style="font-style: italic;">Distinct Count</span><span class="fnt19"> function calculates the number of cases correctly.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:227px"><img alt="Fig. 547 The Distinct Count function result" title="Fig. 547 The Distinct Count function result" width="227" height="64" style="width:227px;height:64px;border:none" src="case_sample_2_zoom70.png"/><p style="text-align:center"><span class="fnt14">Fig. 547 The Distinct Count function result</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Rate per 10000</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Incidence Rate per 10000 population. Statistical population data for a country, its regions and rayons is stored in the database for each country. For information about the statistical data update, read the <a href="statistics.htm" class="topiclink">Statistics</a> section.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 10,000 = &nbsp; _</span><span class="fnt19" style="text-decoration: underline;">Count*10000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total Population</span></p>
+<p class="par18">For this function add the administrative unit (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) field in the rows. To calculate rates per region or per rayon, select the appropriate administrative unit. When calculating case rates per rayon or regions, change the <span style="font-style: italic; font-weight: bold;">Administrative Unit</span> <span style="font-style: italic; font-weight: bold;">Field</span> (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) appropriately to calculate case rates based on region or rayon total population.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100000</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Incidence Rate per 100000 population. Statistical population data for a country, its regions and rayons is stored in the database for each country. For information about the statistical data update, read the <a href="statistics.htm" class="topiclink">Statistics</a> section.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100,000 = &nbsp; _</span><span class="fnt19" style="text-decoration: underline;">Count*100000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total Population</span></p>
+<p class="par18">For this function add the administrative unit (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) field in the rows. To calculate rates per region or per rayon, select the appropriate administrative unit. When calculating rates per rayon or regions, change the <span style="font-style: italic; font-weight: bold;">Administrative Unit</span> <span style="font-style: italic; font-weight: bold;">Field</span> (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) appropriately to calculate rates based on region or rayon total population.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100000 by gender</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Incidence Rate per 100000 population by gender. Statistical population data for a country, its regions and rayons is stored in the database for each country. For information about the statistical data update, read the <a href="statistics.htm" class="topiclink">Statistics</a> section.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100,000 by gender (female) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count*100000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Female Total for the Specified Year</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100,000 by gender (male) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count*100000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Male Total for the Specified Year</span></p>
+<p class="par18">For this function add the administrative unit (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) field in the rows and <span style="font-weight: bold;">Gender</span> to the columns. When calculating rates per rayon or regions, change the <span style="font-style: italic; font-weight: bold;">Administrative Unit</span> <span style="font-style: italic; font-weight: bold;">Field</span> (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) appropriately to calculate rates based on region or rayon total population.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Rate per 10000 by age group and gender</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Incidence Rate per 10000 population by gender. Statistical population data for a country, its regions and rayons is stored in the database for each country. For information about the statistical data update, read the <a href="statistics.htm" class="topiclink">Statistics</a> section.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 10,000 by gender (female; age group) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count*10,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Female Total for the Specified Age Group for Specified Year</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 10,000 by gender (male; age group) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count*10,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Male Total for the Specified Age Group for Specified Year</span></p>
+<p class="par18">For this function add the administrative unit (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) field in the rows and <span style="font-weight: bold;">Gender</span> to the columns. When calculating rates per rayon or regions, change the <span style="font-style: italic; font-weight: bold;">Administrative Unit</span> <span style="font-style: italic; font-weight: bold;">Field</span> (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) appropriately to calculate rates based on region or rayon total population.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100000 by age group and gender</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Incidence Rate per 100000 population by age group and gender. Statistical population data for a country, its regions and rayons is stored in the database for each country. For information about the statistical data update, read the <a href="statistics.htm" class="topiclink">Statistics</a> section.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100,000 by gender (female; age group) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count*100,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Female Total for the Specified Age Group for the Specified Year</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Rate per 100,000 by age group and gender (male) =  </span><span class="fnt19" style="text-decoration: underline;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count*100,000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Male Total for the Specified Age Group for the Specified Year</span></p>
+<p class="par18">For this function add the administrative unit (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) field in the rows and <span style="font-weight: bold;">Gender</span> to the columns. When calculating rates per rayon or regions, change the <span style="font-style: italic; font-weight: bold;">Administrative Unit</span> <span style="font-style: italic; font-weight: bold;">Field</span> (<span style="font-weight: bold;">Rayon </span>or <span style="font-weight: bold;">Region</span>) appropriately to calculate rates based on region or rayon total population.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Maximum</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">The largest value. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Minimum</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">The smallest value. </span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Standard deviation</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">In non-total cells function </span><span class="fnt19" style="font-style: italic;">Count</span><span class="fnt19"> is used, in the total cells the standard deviation of the values of non-total calls covered by the total cells is calculated. </span></p>
+<p class="par18"><img width="193" height="85" style="margin:0;width:193px;height:85px;border:none" src="standard_deviation.png"/></p>
+<p class="par18"><span class="fnt19">where</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> is the number of cells covered by the total;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">is mean of all cells covered by the total;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> is count in </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">'s cell.</span></p>
+<p class="par18"><span class="fnt19">It shows how much variation there is from the &quot;average&quot; (mean) (or expected/ budgeted value). A low standard deviation indicates that the data points tend to be very close to the mean, whereas high standard deviation indicates that the data are spread out over a large range of values.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Sum</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">For numeric data cells, the sum value is the summation of all values that coincide with restrictions specified in rows and columns of the table.</span></p>
+<p class="par18"><span class="fnt19">For non-numeric data cells, the </span><span class="fnt19" style="font-style: italic;">Count</span><span class="fnt19"> function is used instead of the </span><span class="fnt19" style="font-style: italic;">Sum</span><span class="fnt19"> function.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Variance</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">In non-total cells function </span><span class="fnt19" style="font-style: italic;">Count</span><span class="fnt19"> is used, in the total cells the following function is used:</span></p>
+<p class="par18"><img width="183" height="59" style="margin:0;width:183px;height:59px;border:none" src="variation.png"/></p>
+<p class="par18"><span class="fnt19">where</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> is the number of cells covered by the total;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">is mean of all cells covered by the total;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19"> is count in </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19">'s cell.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Precision</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">-1</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">The result is not rounded up.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">The result is rounded up to the integer value.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">&gt;0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">1, 2, 3, etc. The result is rounded up to the specified digit.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

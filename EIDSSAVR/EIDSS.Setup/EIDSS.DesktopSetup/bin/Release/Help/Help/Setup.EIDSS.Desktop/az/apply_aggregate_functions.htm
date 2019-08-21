@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Analiz, Vizuallaşdırma və Hesabat &gt; Cədvəllər &gt; Tərtib cədvəli &gt; Qruplaşdırıcı funksiyalarının tətbiq edilməsi</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Tərtib cədvəldə məlumatları seçmək mümkündür, məsələn müəyyən, maksimum sayda və s. Birdən çox dəyəri hesablayan funksiya qruplaşdırıcı funksiya adlanır. Məsələn, rəqəmlərin..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #ffffff; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #ffffff; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #ffffff; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #ffffff; }
+      .sync-toc a:hover { text-decoration: underline; }
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "apply_aggregate_functions.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="par5"><span class="fnt6">Qruplaşdırıcı funksiyalarının tətbiq edilməsi</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?apply_aggregate_functions.htm" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   Analiz, Vizuallaşdırma və Hesabat &gt; <a href="layouts.htm">Cədvəllər</a> &gt; <a href="constructworking_with_pivot_grid.htm">Tərtib cədvəli</a>&nbsp;&gt;</p>
+   <h1 class="par5"><span class="fnt6">Qruplaşdırıcı funksiyalarının tətbiq edilməsi</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="rename_fields.htm"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" border=0 alt="Previous page"
+        ></a><a href="constructworking_with_pivot_grid.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img name=main src="hm_btn_navigate_top.png" border=0 alt="Return to chapter overview"
+        ></a><a href="group_date_function.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="par0">Tərtib cədvəldə məlumatları seçmək mümkündür, məsələn müəyyən, maksimum sayda və s. Birdən çox dəyəri hesablayan funksiya qruplaşdırıcı funksiya adlanır. Məsələn, rəqəmlərin orta dəyərini və ya orta həddi tapmaq qruplaşdırıcı funksiyadır.</p>
+<p class="par0">Standart üzrə hər bir YXEMS xanasında ona tətbiq olunan qruplaşdırıcı funksiyası vardır. Standart üzrə qruplaşdırıcı funksiyası tələblərə cavab vermədiyi halda <a href="set_search_object_fields_defau.htm" class="topiclink">standart qruplaşdırıcı funksiyasını</a> (yeni qruplaşdırıcı funksiyası bir çox xəstəlik hadisələrinə tətbiq olunacaqsa bunu etmək olar) və ya burada və indi tətbiq olunacaq qruplaşdırıcı funksiyasını dəyiş.</p>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Qruplaşdırıcı funksiyalarını dəyiş</span></p>
+<p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="fnt11">Məlumat sahəsində qruplaşdırıcı funksiyası dəyişilməli olan məlumatı seç.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="fnt11" style="font-weight: bold;">Tərtib cədvəl ayarları </span><span class="fnt11">panelinin</span><span class="fnt11" style="font-weight: bold;"> </span><span class="fnt11">oxunula bilən </span><span class="fnt11" style="font-weight: bold;">Məlumatlar sahəsi</span><span class="fnt11"> </span><span class="fnt11" style="font-weight: bold;">üçün </span><span class="fnt11">xanasında görünən sahə adının düzgünlüyü yoxla.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">3.</span><span class="fnt11" style="font-weight: bold;">Qruplaşdırıcı funksiyası </span><span class="fnt11">xanasından əvəzində istifadə olunacaq qruplaşdırıcı funksiyasını seç.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">4.</span><span class="fnt11">Yekun nəticə üzrə </span><span class="fnt11" style="font-weight: bold;">Dəqiqlik</span><span class="fnt11"> əlavə et.</span></p><p style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 20px; margin: 0px 0px 0px 14px;"><span style="font-size:11pt; font-family: 'Times New Roman';color:#000000;display:inline-block;width:20px;margin-left:-20px">5.</span><span class="fnt11">Qruplaşdırıcı funksiyasın dəyəri</span><span class="fnt11" style="font-weight: bold;"> Göstərici</span><span class="fnt11"> seçilibsə</span><span class="fnt11" style="font-weight: bold;">: İnzibati bölmə </span><span class="fnt11">xanasında</span><span class="fnt11"> hesablamada istifadə olunan statistika üçün inzibati vahidi seç.</span></p><p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Qruplaşdırıcı funksiyaları</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<thead>
+<tr style="text-align:left;vertical-align:top;">
+<th style="vertical-align:top; width:149px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Funksiya</span></p>
+</th>
+<th style="vertical-align:top; width:665px; background-color:#0000ff; padding:2px; border:solid thin #000000;"><p style="text-align: left; margin: 0px 0px 0px 0px;"><span class="fnt21">Təsvir</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Ortalama</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Qeyri ümumi özəklərdə </span><span class="fnt19" style="font-style: italic;">Say</span><span class="fnt19"> funksiyası , ümumi özəklərdə isə dəyərin orta rəqəmi istifadə olunur.</span></p>
+<p class="par18"><span class="fnt19">N nömrələri verildikdəi=1, ...,n riyazi hədd dəyəri ai n or bölünüən cəmi olduqda hər bir nömrə ai ilə işarə olunur</span></p>
+<p class="par18"><img width="128" height="48" style="margin:0;width:128px;height:48px;border:none" src="average_formula.png"/></p>
+<p class="par18"><span class="fnt19">harada</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> ümumi cəmə daxil olan özəklərin sayıdır;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">a</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19">'s özəyində </span><span class="fnt19" style="font-style: italic;">i</span><span class="fnt19"> hesablamadır.</span></p>
+<p class="par18"><span class="fnt19">Bir çox hallarda sadəcə 2 və 8 rəqəminin orta həddi adlanan riyazi orta rəqəm dəyəri 2=8=A+A kimi A dəyərini tapmaqla əldə olunur. Belə hesablamaq olar: A=(2+8)/2=5</span></p>
+<p class="par18"><span class="fnt19">Siyahıda orta rəqəm əldə etmək istədiyimiz həddlərin sayını artırdıqda 2, 8 və 11-in riyazi həddini A dəyəri üçün 2 + 8 + 11 = A + A + A tənliyini həll etməklə tapmaq olar. Belə hesablamaq olar:A = (2 + 8 + 11)/3 = 7.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Say</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Dəyərlərin mütləq sayı</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Fərqləndirici say</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:20px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Unikal dəyərlərin sayı Adətən əsas obyektlərini hesablamaq üçün əsas və tabelikdəki axtarış obyektlərdəki məlumatlar eyni cədvəldə istifadə olunduğu halda istifadə edilir.</span></p>
+<p class="par18"><span class="fnt19">Məsələn sxemdə 12 xəstəlik hadisəsi göstərilir.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:192px"><img alt="Şəkil 543 Xəstəlik hadisələrinin siyahısı" title="Şəkil 543 Xəstəlik hadisələrinin siyahısı" width="192" height="220" style="width:192px;height:220px;border:none" src="case_sample_1_zoom70.png"/><p style="text-align:center"><span class="fnt14">Şəkil 543 Xəstəlik hadisələrinin siyahısı</span></p></div></div>
+<p class="par18"><span class="fnt19">İnsan Xəsətlik Hadisələrinin nömrəsi (əsas obyektləri) və Nümunə nömrəsi (tabelikdəki obyekti) hər ikisi eyni pivot cədvəldə istifadə olunarsa </span><span class="fnt19" style="font-style: italic;">Say</span><span class="fnt19"> qruplaşdırıcı funksiyası vasitəsilə İnsan Xəstəlik Hadisələrinin sayı səhv hesablanacaqdır:</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:211px"><img alt="Şəkil 544 Say Funksiyasının nəticəsi" title="Şəkil 544 Say Funksiyasının nəticəsi" width="211" height="66" style="width:211px;height:66px;border:none" src="case_sample_3_zoom70.png"/><p style="text-align:center"><span class="fnt14">Şəkil 544 Say Funksiyasının nəticəsi</span></p></div></div>
+<p class="par18"><span class="fnt19">Nümunələri olan xəstəlik hadisələrini iki dəfə hesablayır. Bununla belə </span><span class="fnt19" style="font-style: italic;">Fərqləndirici Say</span><span class="fnt19"> funksiyası xəstəlik hadisələrinin sayını &nbsp;düzgün hesablayır.</span></p>
+<div class="par13"><div style="margin:0px auto 0px auto;width:227px"><img alt="Şəkil 545 Dəqiq Say Funksiyasının nəticəsi" title="Şəkil 545 Dəqiq Say Funksiyasının nəticəsi" width="227" height="64" style="width:227px;height:64px;border:none" src="case_sample_2_zoom70.png"/><p style="text-align:center"><span class="fnt14">Şəkil 545 Dəqiq Say Funksiyasının nəticəsi</span></p></div></div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">10000 əhalinin sayına görə</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Hər 10000 əhaliyə düşən yeni xəstəlik hadisələrinin sayı Hər bir ölkənin bölgə və rayonları üzrə əhaliyə dair statistik məlumatlar hər bir ölkə üzrə məlumat bazasında saxlanılır. Statistik məlumatların yenilikləri barədə informasiya əldə etmək üçün Statistika bölməsinə bax.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Hər 10 000 düşən xəstəlik hadisəsi = _</span><span class="fnt19" style="text-decoration: underline;">Say*10000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ümumi əhali</span></p>
+<p class="par18">Bu funksiya üçün cədvəlin sıralarına (<span style="font-weight: bold;">Rayon </span>və ya <span style="font-weight: bold;">Bölgə</span>) inzibati vahid əlavə et. Bölgə və ya rayon üzrə yeni xəstəlik hadisələrini hesablamaq üçün müvafiq inzibati vahidi seç. Bölgə və ya rayon üzrə xəstəlik hadisələrini hesablayarkən, rayon və bölgə əhalisinin ümumi sayına əsasən faizləri müəyyənləşdirmək məqsədilə <span style="font-style: italic; font-weight: bold;">İnzibati Vahid</span> <span style="font-style: italic; font-weight: bold;">xanasına</span> (<span style="font-weight: bold;">Rayon </span>və ya<span style="font-weight: bold;"> Bölgə</span>) müvafiq dəyişikliklər et.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">100000 əhalinin sayına görə</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Hər 100000 üzrə yeni xəstəlik hadisələrinin sayı Hər bir ölkənin bölgə və rayonları üzrə əhaliyə dair statistik məlumatlar hər bir ölkə üzrə məlumat bazasında saxlanılır. Statistik məlumat yeniliyi barədə informasiya əldə etmək üçün Statistika bölməsinə bax.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Hər 100,000 düşən xəstəlik hadisəsi = &nbsp; _</span><span class="fnt19" style="text-decoration: underline;">Say*100000__</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ümumi əhali</span></p>
+<p class="par18">Bu funksiya üçün cədvəlin sıralarına (<span style="font-weight: bold;">Rayon </span>və ya <span style="font-weight: bold;">Bölgə</span>) inzibati vahid əlavə et. Bölgə və ya rayon üzrə yeni xəstəlik hadisələrini hesablamaq üçün müvafiq inzibati vahidi seç. Bölgə və ya rayon üzrə xəstəlik hadisələrini hesablayarkən, rayon və bölgə əhalisinin ümumi sayına əsasən faizləri müəyyənləşdirmək məqsədilə <span style="font-style: italic; font-weight: bold;">İnzibati Vahid</span> <span style="font-style: italic; font-weight: bold;">xanasına</span> (<span style="font-weight: bold;">Rayon </span>və ya<span style="font-weight: bold;"> Bölgə</span>) müvafiq dəyişikliklər et.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Cinslər üzrə 100000 əhalinin sayına görə</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Hər 10000 əhaliyə düşən yeni xəstəlik hadisələrinin sayı Hər bir ölkənin bölgə və rayonları üzrə əhaliyə dair statistik məlumatlar hər bir ölkə üzrə məlumat bazasında saxlanılır. Statistik məlumatların yenilikləri barədə informasiya əldə etmək üçün Statistika bölməsinə bax.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender üzrə (qadın) hər 100,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000 </span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Təyin olunmuş il üzrə Qadınların ümumi sayı</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender üzrə (kişi) hər 100,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Təyin olunmuş il üzrə Kişilərin ümumi sayı</span></p>
+<p class="par18">Bu funksiya üçün (<span style="font-weight: bold;">Rayon</span> və ya <span style="font-weight: bold;">Bölgə</span>) sıralarına və <span style="font-weight: bold;">Gender</span> sütunarına inzibati vahid xanasını əlavə et.Bölgə və ya rayon üzrə xəstəlik hadisələrini hesablayarkən <span style="font-style: italic; font-weight: bold;">İnzibati Vahid</span> <span style="font-style: italic; font-weight: bold;">Xanasını</span> (<span style="font-weight: bold;">Rayon </span>və ya<span style="font-weight: bold;"> Bölgə</span>) rayon və bölgə əhalisinin ümumi sayına müvafiq olaraq xəstəlik hadisələrinin sayını hesablamaq üçün dəyiş.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Cinsi və yaş qrupu üzrə 10000 əhalinin sayına görə</span></p>
+</td>
+<td style="vertical-align:top; width:665px; height:36px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Hər 10000 əhaliyə düşən yeni xəstəlik hadisələrinin sayı Hər bir ölkənin bölgə və rayonları üzrə əhaliyə dair statistik məlumatlar hər bir ölkə üzrə məlumat bazasında saxlanılır. Statistik məlumatların yenilikləri barədə informasiya əldə etmək üçün Statistika bölməsinə bax.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender üzrə (qadın; yaş qrupu) hər 10,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Təyin olunmuş il üzrə Təyin olunmuş Yaş Qrupu və Qadınların ümumi sayı</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender üzrə (kişi; yaş qrupu) hər 10,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Təyin olunmuş il üzrə Təyin olunmuş Yaş Qrupu və Kişilərin ümumi sayı</span></p>
+<p class="par18">Bu funksiya üçün (<span style="font-weight: bold;">Rayon</span> və ya <span style="font-weight: bold;">Bölgə</span>) sıralarına və <span style="font-weight: bold;">Gender</span> sütunarına inzibati vahid xanasını əlavə et.Bölgə və ya rayon üzrə xəstəlik hadisələrini hesablayarkən <span style="font-style: italic; font-weight: bold;">İnzibati Vahid</span> <span style="font-style: italic; font-weight: bold;">Xanasını</span> (<span style="font-weight: bold;">Rayon </span>və ya<span style="font-weight: bold;"> Bölgə</span>) rayon və bölgə əhalisinin ümumi sayına müvafiq olaraq xəstəlik hadisələrinin sayını hesablamaq üçün dəyiş.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Cinsi və yaş qrupu üzrə 100000 əhalinin sayına görə</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;">Gender və yaş qrupu üzrə hər 10000 düşən yeni xəstəlik hadisələrinin sayı Hər bir ölkənin bölgə və rayonları üzrə əhaliyə dair statistik məlumatlar hər bir ölkə üzrə məlumat bazasında saxlanılır. Statistik məlumatların yenilikləri barədə informasiya əldə etmək üçün Statistika bölməsinə bax.</p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender üzrə (qadın; yaş qrupu) hər 100,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Təyin olunmuş il üzrə Təyin olunmuş Yaş Qrupu və Qadınların ümumi sayı</span></p>
+<p class="par18"><span class="fnt19">&nbsp;</span></p>
+<p class="par18" style="text-align: left;"><span class="fnt19">Gender (kişi) və yaş qrupu üzrə hər 100,000 = </span><span class="fnt19" style="text-decoration: underline;">düşən xəstəlik hadisələrinin sayı Say*100000</span></p>
+<p class="par18"><span class="fnt19"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Təyin olunmuş il üzrə Təyin olunmuş Yaş Qrupu və Kişilərin ümumi sayı</span></p>
+<p class="par18">Bu funksiya üçün (<span style="font-weight: bold;">Rayon</span> və ya <span style="font-weight: bold;">Bölgə</span>) sıralarına və <span style="font-weight: bold;">Gender</span> sütunarına inzibati vahid xanasını əlavə et.Bölgə və ya rayon üzrə xəstəlik hadisələrini hesablayarkən <span style="font-style: italic; font-weight: bold;">İnzibati Vahid</span> <span style="font-style: italic; font-weight: bold;">Xanasını</span> (<span style="font-weight: bold;">Rayon </span>və ya<span style="font-weight: bold;"> Bölgə</span>) rayon və bölgə əhalisinin ümumi sayına müvafiq olaraq xəstəlik hadisələrinin sayını hesablamaq üçün dəyiş.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Maksimum</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Ən böyük dəyər</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Minimum</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Ən kiçik dəyər</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Standart kənarlaşma</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Qeyri-ümumi özəklər funksiyasında </span><span class="fnt19" style="font-style: italic;">Say</span><span class="fnt19">, ümumi özəklərdə isə yalnız əhaliyə dair məlumatların ümumiləşdiriləcəyi əhalinin standart kənarlaşması istifadə olunur.</span></p>
+<p class="par18"><img width="193" height="85" style="margin:0;width:193px;height:85px;border:none" src="standard_deviation.png"/></p>
+<p class="par18"><span class="fnt19">harada</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> ümumi cəmə daxil olan özəklərin sayıdır;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">ümumi cəm ilə əhatə olunmuş bütün özəklərin orta sayıdır;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19">i</span><span class="fnt19" style="font-style: italic;"> özəklərinin </span><span class="fnt19">sayıdır.</span></p>
+<p class="par18"><span class="fnt19">&quot;Orta rəqəm&quot; (hədd) və ya (gözlənilən/nəzərdə tutulan dəyər) üzrə nə qədər fərq vardır. Aşağı standart kənarlaşdırma məlunmatların daxil etmə nöqtəsinin həddə daha yaxın olması və yüksək standart kənarlaşma isə məlumatın çox geniş dəyərlər diapazonunda yayılmasını göstərir.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Cəmi</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Rəqəmsal məlumat özəkləri üçün cəm dəyəri cədvəlin sıra və sütunlarında təyin olunmuş məhdudiyyətlərlə üst-üstə düşən bütün dəyərlərin cəmidir.</span></p>
+<p class="par18"><span class="fnt19">Qeyri-rəqəmli məlumat özəkləri üçün </span><span class="fnt19" style="font-style: italic;">Say</span><span class="fnt19"> funksiyası </span><span class="fnt19" style="font-style: italic;">Cəm</span><span class="fnt19"> funksiyasının əvəzinə işlədilir.</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:149px; padding:2px; border:solid thin #000000;"><p class="par18" style="text-align: left;"><span class="fnt19">Dispersiya</span></p>
+</td>
+<td style="vertical-align:top; width:665px; padding:2px; border:solid thin #000000;"><p class="par18"><span class="fnt19">Qeyri ümumi özəklərdə </span><span class="fnt19" style="font-style: italic;">Say</span><span class="fnt19"> funksiyası , ümumi özəklərdə isə aşağıdakı funksiya istifadə olunur.</span></p>
+<p class="par18"><img width="183" height="59" style="margin:0;width:183px;height:59px;border:none" src="variation.png"/></p>
+<p class="par18"><span class="fnt19">harada</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">n</span><span class="fnt19"> ümumi cəmə daxil olan özəklərin sayıdır;</span></p>
+<p class="par18"><img width="14" height="22" style="margin:0;width:14px;height:22px;border:none" src="mean.png"/><span class="fnt19">ümumi cəm ilə əhatə olunmuş bütün özəklərin orta sayıdır;</span></p>
+<p class="par18"><span class="fnt19" style="font-style: italic;">v</span><span class="fnt19" style="font-size: 7pt; font-style: italic; vertical-align: sub;">i</span><span class="fnt19">i</span><span class="fnt19" style="font-style: italic;"> özəklərinin </span><span class="fnt19">sayıdır.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="par14" style="page-break-inside: avoid; page-break-after: avoid;"><span class="fnt15">Dəqiqlik</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 3px 0px 3px 0px;"><table class="Table_White" style="width:100%; border:solid thin #000000; border-spacing:2px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">-1</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">Nəticə yuvarlaqlaşdırılmır.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">Nəticə tam ədəd üzrə yuvarlaqlaşdırılır.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:273px; padding:2px; border:solid thin #000000;"><p class="par0">0</p>
+</td>
+<td style="vertical-align:top; width:1240px; padding:2px; border:solid thin #000000;"><p class="par0">1,2,3, və s. Nəticə təyin olunmuş rəqəm üzrə yuvarlaqlanır.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

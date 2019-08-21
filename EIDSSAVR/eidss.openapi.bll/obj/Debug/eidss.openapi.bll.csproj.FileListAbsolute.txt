@@ -485,3 +485,4 @@ C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.o
 C:\Users\DanielS\source\repos\NGDev\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.pdb
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.csprojAssemblyReference.cache
 C:\Users\DanielS\Source\Repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.bll\obj\Debug\eidss.openapi.bll.csproj.CoreCompileInputs.cache
+C:\Users\DanielS\source\repos\EIDSS\AVR\EIDSSAVR\eidss.openapi.bll\bin\Debug\eidss.openapi.bll.XML

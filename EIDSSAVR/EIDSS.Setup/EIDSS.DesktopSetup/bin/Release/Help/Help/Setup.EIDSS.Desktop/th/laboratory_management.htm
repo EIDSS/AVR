@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>โมดูลห้องปฏิบัติการ</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=9" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="ตัวเลือกหัวข้อ" />
+   <meta name="description" content="โมดูลการจัดการห้องปฏิบัติการ (LM) ใช้เพื่อบันทึกรายการตัวอย่างเเละการทดสอบ ทางห้องปฏิบัติการลงในฐานข้อมูล EIDSS ซึ่งการทดสอบที่มีอาจได้มาจากหน่วยงานที่อยู่ในระบบ หรือนอกระบบ..." />
+   
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { 
+        margin:0; 
+        padding:0; 
+        background: #ffffff;
+      } 
+      #header { 
+        width:100%; 
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        padding: 0;
+        margin: 0 0 0.0625in 0;
+        background: #fff; 
+        z-index: 99;
+      } 
+      #header span.f_Heading1 { color: #FFFFFF }
+      #headerhead {  
+        padding: 0.0625in;
+        min-height: 0.5in;
+        color: #FFFFFF;
+        background: #23578A; 
+	opacity: 0.95;
+	box-shadow: 1px 1px 3px #888888;
+      } 
+      #headernav {  
+	width: 0.833in;
+        height: 0.2708in;
+        margin: 0;
+        padding: 0;
+        float: right; 
+      } 
+      #content { 
+        margin-top: 3.125em;
+        padding: 0.375em;
+      }
+      img.nav { width: 0.2708in; height: 0.2708in; border: none; }
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-0.1146in; left:-0.1146in;}
+      #callout-icon-flag {display:block; position:absolute; top:-0.1146in; left:-0.0833in;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.crumbs { font-size: 10pt; margin: 0 0 0.0625in 0 }      
+      p.crumbs a { text-decoration: none; color: #FFFFFF }      
+      #switchtoggles { width:100%; text-align: right; padding: 0 0.0208in 0 0; font-size: 10pt; } 
+      .sync-toc { color: #FFFFFF; font-size: 10pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFFFFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFFFFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+      
+   </style>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #header {
+              position: relative;
+      }
+      #headerhead {
+              background: none;
+	      color: #000;
+      }
+      #headernav {
+              display: none;
+      }
+      #switchtoggles {
+              display: none;
+      }
+      #content { 
+              margin-top: 0;
+      }
+     }
+   </style>   
+ 
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "laboratory_management.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="header">
+   <div id="headerhead">  
+     <p class="crumbs"><b>Navigation:</b>&nbsp;
+     &raquo;No topics above this level&laquo;
+     </p>
+
+     <div id="headernav">
+     
+     <img class="nav" src="hm_btn_navigate_prev_d.png" 
+        ><a href="laboratory_management.htm"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img class="nav" name="main" src="hm_btn_navigate_top.png" alt="Return to chapter overview"
+        ></a><a href="laboratory_management_overview.htm"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img class="nav" name="next" src="hm_btn_navigate_next.png" alt="Next page"
+        ></a>
+    </div>
+    <h1 class="par4"><span class="fnt5">โมดูลห้องปฏิบัติการ</span></h1>
+
+  </div>
+  <!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  <div id="switchtoggles"></div>
+</div>  
+
+
+<div id="content">
+     <!--ZOOMRESTART-->
+     <p class="par0">โมดูลการจัดการห้องปฏิบัติการ (LM) ใช้เพื่อบันทึกรายการตัวอย่างเเละการทดสอบ ทางห้องปฏิบัติการลงในฐานข้อมูล EIDSS ซึ่งการทดสอบที่มีอาจได้มาจากหน่วยงานที่อยู่ในระบบ หรือนอกระบบ ข้อมูลที่อยู่ในโมดูลการจัดการห้องปฏิบัติการนั้นปรากฏและสามารถใช้งานได้ในโมดูลอื่นที่เกี่ยวข้อง ระบบออกแบบให้ช่วยจัดการการใส่ข้อมูลที่อาจมีบางค่าใส่โดยอัติโนมัติเพื่อลดการการใส่ข้อมูลซ้ำๆ และลดความผิดพลาดที่อาจเกิดจากการใส่ข้อมูลผิด ข้อมูลที่มีอยู่ในโมดูลห้องปฏิบัติการจะเห็นได้ ในช่องที่สัมพันธ์กัน ในโมดูล EIDSS อื่นๆ</p>
+<p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>ในโมดูลการจัดการห้องปฏิบัติการ ตัวอย่างชีวภาพ การทดสอบจะถูกบันทึกลงผ่าน แบบฟอร์มห้องปฏิบัติการ (LS) ในตารางที่แสดงรายการของแต่ละตัวอย่าง การทดสอบ สถานะ และรายละเอียดเพิ่มเติมของรายการนั้น</p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>การแสดงรายการในลักษณะนี้อำนวยความสะดวกให้เห็นภาพรวมที่รวมรายการงานที่เกิดขึ้น และยังเห็นรายละเอียดที่มีการปฏิบัติงานในแต่ละรายการอยู่ในตารางเดียวกัน </p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>การบันทึกรายละเอียดโดยส่วนใหญ่ผู้ใช้สามารถทำได้จากหน้าตาราง โดยการเลือกรายการที่ต้องการทำ ผู้ใช้อาจเลือกหลายรายการตัวอย่างที่ถูกเลือกจะถูกไฮท์ไลท์ด้วยสีเหลือง และคลิกขวาเพื่อ เลือกการทำงาน ตัวเลือกนี้ระบบตั้งให้แสดงเฉพาะงานที่ทำได้ ซึ่งจำกัดงานบางอย่างเท่านั้น ที่ทำได้เมื่อผู้ใช้เลือกหลายรายการ</p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>การลงทะเบียนตัวอย่างใหม่ เเละการรับตัวอย่างบันทึกโดยใช้ปุ่มที่อยู่ด้านบน ในแบบฟอร์ม </p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>หากต้องการ ผู้ใช้ลบตัวอย่างที่ลงทะเบียนผิดได้โดยใช้ปุ่ม <span style="font-weight: bold;">ลบ</span> ในตาราง </p><p style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 13px; margin: 3px 0px 3px 0px;"><span style="font-size:16pt; font-family: 'TH Sarabun New';color:#000000;display:inline-block;width:13px;margin-left:-13px">&#8226;</span>สำหรับการใส่รายละเอียดการทดสอบตัวอย่าง ผู้ใช้งานต้องใส่ข้อมูลผ่าน <a href="sample_test_details_form.htm" class="topiclink">แบบฟอร์มรายละเอียดตัวอย่าง/การทดสอบ</a></p>
+     <!--ZOOMSTOP-->
+</div>
+<script>
+           var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+           if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+	   $(document).ready(function(){
+		   $(window).bind('resize', function() {
+				var y = $('#header').height();
+				$('#content').css('margin-top', y);
+				$('.hmanchor').css('margin-top', -y-20);
+				$('.hmanchor').css('padding-top', y+20);
+			});
+		   $(window).triggerHandler('resize');	
+		   $(window).triggerHandler('resize');	
+                   
+		});
+</script>
+</body>
+</html>

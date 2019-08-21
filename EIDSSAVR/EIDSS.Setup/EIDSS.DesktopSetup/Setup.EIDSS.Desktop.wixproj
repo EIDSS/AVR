@@ -77,14 +77,12 @@
     <Content Include="..\StructureMap.wxi">
       <Link>StructureMap.wxi</Link>
     </Content>
-    <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\%24HMSKINPREVIEW.PNG" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\accession_in_a_sample__linked_.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\accession_in_for_as_session.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\accession_in_for_human_case.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\accession_in_for_vet_case.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\accession_in_for_vs_session.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\access_rights.htm" />
-    <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\ac_create.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\ac_flocks.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\ac_opps.htm" />
     <Content Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\add_aggregate_column.htm" />
@@ -7878,7 +7876,6 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="bin\Debug\" />
-    <Folder Include="bin\Debug\en-US\" />
     <Folder Include="bin\Debug\Help\" />
     <Folder Include="bin\Debug\Help\Setup.EIDSS.Desktop\" />
     <Folder Include="bin\Debug\Help\Setup.EIDSS.Desktop\az\" />
